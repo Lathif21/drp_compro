@@ -3,8 +3,9 @@
 # Force apex (no www) — prevents duplicate content SEO penalties
 https://www.drpbuildlab.com/*    https://drpbuildlab.com/:splat    301!
 
-# Strip .html extensions for cleaner URLs (SEO best practice)
-/*.html    /:splat    301!
+# Canonicalise the one real HTML page. A wildcard /*.html rule here also
+# caught /404.html, which the catch-all below then rewrote straight back.
+/index.html    /    301!
 
 # Legacy anchors (in case old links still point here)
 /pakketten    /#diensten    301
