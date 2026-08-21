@@ -53,6 +53,22 @@
 /*.js
   Cache-Control: public, max-age=31536000, immutable
 
+# The three shared assets are unversioned filenames, so they must NOT inherit
+# the immutable year above — a returning visitor would be stuck on stale CSS
+# until 2027. One hour matches the HTML, and still caches them across every
+# page navigation within a visit.
+/styles.css
+  Cache-Control: public, max-age=3600
+  Content-Type: text/css; charset=utf-8
+
+/app.js
+  Cache-Control: public, max-age=3600
+  Content-Type: text/javascript; charset=utf-8
+
+/i18n.js
+  Cache-Control: public, max-age=3600
+  Content-Type: text/javascript; charset=utf-8
+
 # Icons & social card. 7 days, not `immutable` — long enough to be cheap,
 # short enough that a corrected icon reaches people who cached the old one.
 /favicon.svg
