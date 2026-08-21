@@ -3,7 +3,8 @@
 
 Plain `python -m http.server` is not enough here: the nav links point at
 extensionless URLs (/prijzen, /over-ons, /contact) which Netlify resolves to
-the matching .html file. This mimics that, plus the 404 page, so local
+the index.html inside the matching directory -- with no trailing-slash
+redirect, unlike http.server. This mimics that, plus the 404 page, so local
 navigation behaves like production.
 
     python serve.py            # http://127.0.0.1:8000
@@ -23,10 +24,18 @@ class PrettyURLHandler(SimpleHTTPRequestHandler):
 
     def translate_path(self, path):
         full = super().translate_path(path)
-        # /prijzen -> prijzen.html, the way Netlify's pretty URLs do it
-        if not os.path.exists(full) and not os.path.splitext(full)[1]:
-            if os.path.isfile(full + '.html'):
-                return full + '.html'
+        if os.path.splitext(full)[1]:
+            return full
+        # /prijzen -> prijzen/index.html, the way Netlify's pretty URLs do it.
+        # Resolved here rather than left to http.server's directory handling,
+        # which would 301 to /prijzen/ first -- a trailing slash Netlify does
+        # not add, and which would not match the page's own canonical URL.
+        index = os.path.join(full, 'index.html')
+        if os.path.isfile(index):
+            return index
+        # Any page still sitting flat at the root.
+        if os.path.isfile(full + '.html'):
+            return full + '.html'
         return full
 
     def send_error(self, code, message=None, explain=None):
