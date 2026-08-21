@@ -17,7 +17,7 @@ a{text-decoration:none;color:inherit}
 /* A6 — real cursor everywhere unless a fine pointer is present */
 @media (hover:hover) and (pointer:fine){
   body,.btn,.srow,.wcard,.plan,.ex,.crow,.pbtn,.fsubmit,
-  .soc-link,.disc-btn,.wa-float,.lang-btn,.nav-tog,.nav-ov a{cursor:none}
+  .soc-link,.wa-float,.lang-btn,.nav-tog,.nav-ov a{cursor:none}
 }
 /* A6 — the site had zero focus rings in 700 lines of CSS */
 :focus-visible{outline:2px solid var(--blue-d);outline-offset:3px}
@@ -496,10 +496,6 @@ section[id]{scroll-margin-top:90px}
 .cnote strong{color:var(--ink)}
 
 /* ─────────────────────────────────────────────
-   DISCOUNT STRIP
-───────────────────────────────────────────── */
-
-/* ─────────────────────────────────────────────
    PRICING
 ───────────────────────────────────────────── */
 .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:5rem}
@@ -754,7 +750,6 @@ body.nav-open{overflow:hidden}
 @media(max-width:768px){
   .sec{padding:5rem 6vw}
   .soc-sec{padding:6rem 6vw}
-  .disc{padding:4rem 6vw}
   .hero{padding:5.5rem 6vw 4rem}
   .hero-logomark{display:none}
   .hero-h1{font-size:clamp(3rem,11vw,5.5rem)}
@@ -771,7 +766,6 @@ body.nav-open{overflow:hidden}
   .exgrid{grid-template-columns:1fr 1fr}
   .chd,.crow{grid-template-columns:2fr 1fr 1fr}
   .chc:nth-child(n+4),.cc:nth-child(n+4){display:none}
-  .disc-r{min-width:unset;width:100%}
   .ft-cols{gap:2.5rem}
   .zoom-section{height:200vh}
   .zoom-inner{transform:scale(.65)}
