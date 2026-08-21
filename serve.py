@@ -9,6 +9,12 @@ navigation behaves like production.
 
     python serve.py            # http://127.0.0.1:8000
     python serve.py 9000       # pick another port
+
+`netlify dev` is the authoritative preview: it reads _redirects and _headers
+directly, so it is the only way to check cache headers, the apex redirect or
+the legacy /diensten-style paths. This script is the zero-install fallback --
+it only mimics pretty URLs and the 404 page, and knows nothing about either
+config file. If the two ever disagree, Netlify is right.
 """
 import os
 import sys
