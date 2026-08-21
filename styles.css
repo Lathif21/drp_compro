@@ -526,6 +526,8 @@ section[id]{scroll-margin-top:90px}
 .ex-p{font-size:.86rem;font-weight:700;color:var(--blue-d);flex-shrink:0}
 /* C2 — 11 items in a 4-col grid: the closer spans 2 so the last row is flush */
 .ex-wide{grid-column:span 2}
+/* Footer social row — three links now, so let them wrap on narrow screens */
+.ft-socials{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
 .addon{
   margin-top:1.6rem;border:1px solid var(--line);background:var(--bg2);
   padding:1.6rem 1.8rem;display:flex;justify-content:space-between;
