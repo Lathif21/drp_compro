@@ -17,7 +17,7 @@ a{text-decoration:none;color:inherit}
 /* A6 — real cursor everywhere unless a fine pointer is present */
 @media (hover:hover) and (pointer:fine){
   body,.btn,.srow,.wcard,.plan,.ex,.crow,.pbtn,.fsubmit,
-  .ig-link,.disc-btn,.wa-float,.lang-btn,.nav-tog,.nav-ov a{cursor:none}
+  .soc-link,.disc-btn,.wa-float,.lang-btn,.nav-tog,.nav-ov a{cursor:none}
 }
 /* A6 — the site had zero focus rings in 700 lines of CSS */
 :focus-visible{outline:2px solid var(--blue-d);outline-offset:3px}
@@ -543,29 +543,33 @@ section[id]{scroll-margin-top:90px}
 .addon-or{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.16em}
 
 /* ─────────────────────────────────────────────
-   INSTAGRAM
+   SOCIAL
 ───────────────────────────────────────────── */
-.ig-sec{background:var(--bg2);padding:8rem 5vw;display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center}
-.ig-card{
+.soc-sec{background:var(--bg2);padding:8rem 5vw;display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center}
+.soc-card{
   position:relative;aspect-ratio:1;max-width:400px;
   background:var(--blue);border-radius:18px;
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:.4rem;overflow:hidden;
   box-shadow:0 32px 80px rgba(74,144,226,.25);
 }
-.ig-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 40% 35%,rgba(255,255,255,.15) 0%,transparent 65%)}
-.ig-big{font-size:6rem;font-weight:800;letter-spacing:-.04em;color:#fff;line-height:1;position:relative;z-index:1}
-.ig-sub{font-size:1rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.8);position:relative;z-index:1}
-.ig-handle{font-size:.72rem;color:rgba(255,255,255,.55);letter-spacing:.06em;margin-top:.25rem;position:relative;z-index:1}
-.ig-text p{font-size:.92rem;color:var(--muted);line-height:1.9;margin-bottom:1.3rem}
-.ig-link{
+.soc-card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 40% 35%,rgba(255,255,255,.15) 0%,transparent 65%)}
+.soc-big{font-size:6rem;font-weight:800;letter-spacing:-.04em;color:#fff;line-height:1;position:relative;z-index:1}
+.soc-sub{font-size:1rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.8);position:relative;z-index:1}
+/* .soc-text IS the paragraph. The old rule was `.ig-text p`, a descendant
+   selector that matched nothing at all, so both paragraphs here rendered
+   with browser defaults: full-strength colour, tight leading, no gap. */
+.soc-text{font-size:.92rem;color:var(--muted);line-height:1.9;margin-bottom:1.3rem}
+/* Wraps rather than overflows: three buttons do not fit one line on a phone. */
+.soc-links{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+.soc-link{
   display:inline-flex;align-items:center;gap:.7rem;
   border:1.5px solid var(--line-b);color:var(--ink);
   padding:.88rem 1.7rem;font-size:.86rem;font-weight:600;
-  transition:all .25s;margin-top:.4rem;
+  transition:all .25s;
 }
-.ig-link:hover{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 8px 26px rgba(74,144,226,.28)}
-.ig-link svg{width:18px;height:18px}
+.soc-link:hover{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 8px 26px rgba(74,144,226,.28)}
+.soc-link svg{width:18px;height:18px}
 
 /* ─────────────────────────────────────────────
    CONTACT
@@ -739,9 +743,9 @@ body.nav-open{overflow:hidden}
 }
 @media(max-width:1100px){
   .ab-layout,.opp-layout,.ct-layout{grid-template-columns:1fr;gap:4rem}
-  .ig-sec{grid-template-columns:1fr;gap:3rem;padding:6rem 6vw}
-  .ig-card{max-width:100%;aspect-ratio:2.5/1}
-  .ig-big{font-size:4rem}
+  .soc-sec{grid-template-columns:1fr;gap:3rem;padding:6rem 6vw}
+  .soc-card{max-width:100%;aspect-ratio:2.5/1}
+  .soc-big{font-size:4rem}
 }
 @media(max-width:980px){
   .nlinks{display:none}
@@ -749,7 +753,7 @@ body.nav-open{overflow:hidden}
 }
 @media(max-width:768px){
   .sec{padding:5rem 6vw}
-  .ig-sec{padding:6rem 6vw}
+  .soc-sec{padding:6rem 6vw}
   .disc{padding:4rem 6vw}
   .hero{padding:5.5rem 6vw 4rem}
   .hero-logomark{display:none}

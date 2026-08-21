@@ -477,12 +477,13 @@ function applyLang(lang){
     const fh=fq.querySelector('.sh');if(fh){resetSh(fh);fh.innerHTML=t['faq.h2'];}
     const fd=fq.querySelectorAll('details'); t['faq.items'].forEach((item,i)=>{ if(!fd[i]) return; const sm=fd[i].querySelector('summary');if(sm)sm.textContent=item.q; const ap=fd[i].querySelector('p');if(ap)ap.innerHTML=item.a; });
   }
-  const ig=qs('.ig-sec');
-  if(ig){
-    const it=ig.querySelector('.stag');if(it)it.textContent=t['ig.tag'];
-    const ih=ig.querySelector('.sh');if(ih){resetSh(ih);ih.innerHTML=t['ig.h2'];}
-    const ip=ig.querySelectorAll('.ig-text'); if(ip[0])ip[0].textContent=t['ig.p1']; if(ip[1])ip[1].textContent=t['ig.p2'];
-    const il=ig.querySelector('.ig-link'); if(il) il.lastChild.textContent=t['ig.link'];
+  const so=qs('.soc-sec');
+  if(so){
+    const it=so.querySelector('.stag');if(it)it.textContent=t['soc.tag'];
+    const ih=so.querySelector('.sh');if(ih){resetSh(ih);ih.innerHTML=t['soc.h2'];}
+    const ip=so.querySelectorAll('.soc-text'); if(ip[0])ip[0].textContent=t['soc.p1']; if(ip[1])ip[1].textContent=t['soc.p2'];
+    /* The three button labels are network names, the same word in every
+       language, so they carry no translation key. */
   }
   const cn=document.getElementById('contact');
   if(cn){
