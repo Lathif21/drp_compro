@@ -196,7 +196,7 @@ if(heroEl) heroEl.addEventListener('mousemove', e=>{
 
 /* ══════════════════════════════════════════
    ZOOM SECTION — pinned, scale driven by scroll
-   Stats cycle: 48u → €499 → 100%
+   Stats cycle: €0 → €499 → 100%
 ══════════════════════════════════════════ */
 const zoomSec     = document.getElementById('zoomSec');
 const zoomInner   = document.getElementById('zoomInner');
@@ -514,7 +514,7 @@ function applyLang(lang){
     if(fcols[0]){ const h4=fcols[0].querySelector('h4');if(h4)h4.textContent=t['ft.nav'][0]; const as=fcols[0].querySelectorAll('a'); [1,2,3,4].forEach((k,i)=>{if(as[i])as[i].textContent=t['ft.nav'][k];}); }
     if(fcols[1]){ const h4=fcols[1].querySelector('h4');if(h4)h4.textContent=t['ft.ct']; }
     const fc=footer.querySelector('.ft-copy');if(fc)fc.textContent=t['ft.copy'];
-    const fi=footer.querySelector('.ft-ig');if(fi)fi.lastChild.textContent=' '+t['ft.ig'];
+    const ff=footer.querySelector('.ft-follow');if(ff)ff.textContent=t['ft.ig'];
   }
   const wa=qs('.wa-float');if(wa)wa.setAttribute('aria-label',t['wa']);
   qsa('.lang-btn').forEach(btn=>{

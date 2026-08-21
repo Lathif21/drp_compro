@@ -528,6 +528,7 @@ section[id]{scroll-margin-top:90px}
 .ex-wide{grid-column:span 2}
 /* Footer social row — three links now, so let them wrap on narrow screens */
 .ft-socials{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
+.ft-follow{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4)}
 .addon{
   margin-top:1.6rem;border:1px solid var(--line);background:var(--bg2);
   padding:1.6rem 1.8rem;display:flex;justify-content:space-between;
