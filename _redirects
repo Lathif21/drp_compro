@@ -22,5 +22,11 @@ https://www.drpbuildlab.com/*    https://drpbuildlab.com/:splat    301!
 /about        /over-ons       301
 /about-us     /over-ons       301
 
+# Social card. The image was .jpg on main, became .png on this branch, then
+# moved into assets/img/ — so both old URLs are already out in the wild with
+# anything that has scraped the page. Keep them resolving or the card breaks.
+/og-image.jpg    /assets/img/og-image.png    301
+/og-image.png    /assets/img/og-image.png    301
+
 # Catch-all 404 (must be last)
 /*    /404.html    404
