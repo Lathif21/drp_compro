@@ -447,6 +447,7 @@ section[id]{scroll-margin-top:90px}
    OPPORTUNITY COST
 ───────────────────────────────────────────── */
 .opp-layout{display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:start}
+.opp-layout>*{min-width:0}
 .opp-box{
   background:var(--bg2);border:1px solid var(--line-b);padding:3rem;
   position:relative;
@@ -480,9 +481,9 @@ section[id]{scroll-margin-top:90px}
 .crow:hover{background:var(--bg2)}
 .crow.us{background:rgba(74,144,226,.05);border-left:2.5px solid var(--blue)}
 .crow.us:hover{background:rgba(74,144,226,.1)}
-.chc{padding:.72rem 1.1rem;font-size:.58rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);border-right:1px solid var(--line);display:flex;align-items:center}
+.chc{padding:.72rem 1.1rem;font-size:.58rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);border-right:1px solid var(--line);display:flex;align-items:center;min-width:0}
 .chc:last-child{border-right:none}
-.cc{padding:1.1rem 1.1rem;font-size:.83rem;display:flex;align-items:center;border-right:1px solid var(--line)}
+.cc{padding:1.1rem 1.1rem;font-size:.83rem;display:flex;align-items:center;border-right:1px solid var(--line);min-width:0;overflow-wrap:break-word}
 .cc:last-child{border-right:none}
 .cnm{font-weight:700;color:var(--ink)}
 .cnm.u{color:var(--blue)}
@@ -794,6 +795,32 @@ body.nav-open{overflow:hidden}
   /* Footer columns stack on very small */
   .ft-cols{flex-direction:column;gap:2rem}
   .ft-top{flex-direction:column;gap:2.5rem}
+
+  /* Market overview — 1.1rem of cell padding left the value columns with
+     almost no room, so prices wrapped mid-figure. */
+  .chd,.crow{grid-template-columns:1.5fr 1fr 1fr}
+  .chc{font-size:.52rem;letter-spacing:.08em;padding:.62rem .55rem}
+  .cc{font-size:.78rem;padding:.85rem .55rem}
+  .cbdg{margin-left:0;margin-top:.32rem}
+  .cnm{display:flex;flex-direction:column;align-items:flex-start}
+
+  /* Cost calculation — 3rem of padding each side is 96px of a 320px screen.
+     The total also stacks: "+EUR7.473/jaar" is one unbreakable token and at
+     2rem it alone is wider than the remaining space. */
+  .opp-box{padding:1.5rem 1.2rem}
+  .orow{gap:.7rem}
+  .olbl{font-size:.78rem;min-width:0}
+  .oval{font-size:.85rem;flex-shrink:0}
+  .ototl{flex-direction:column;align-items:flex-start;gap:.45rem}
+  .otval{font-size:1.6rem}
+  .onote{padding:1rem 1.1rem;font-size:.78rem}
+}
+
+@media(max-width:360px){
+  .chc{font-size:.48rem;letter-spacing:.04em;padding:.55rem .42rem}
+  .cc{font-size:.72rem;padding:.75rem .42rem}
+  .otval{font-size:1.35rem}
+  .opp-box{padding:1.3rem 1rem}
 }
 
 /* ─────────────────────────────────────────────
