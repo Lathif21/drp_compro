@@ -373,9 +373,39 @@ function resetSh(el){
   });
 }
 
+/* Plus Jakarta Sans ships latin/latin-ext/vietnamese/cyrillic-ext only, so a
+   language needing other glyphs would silently fall back to a system font --
+   wrong weights, wrong metrics, broken typography. Loaded once per language,
+   on demand, so a Dutch/English/French/Spanish visitor -- the overwhelming
+   majority -- never fetches anything extra. */
+const WEBFONT_FAMILY={ja:'Noto Sans JP'};
+const WEBFONT_HREF={
+  ja:'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap',
+};
+const webfontsLoaded=new Set();
+function ensureWebFont(lang){
+  const family=WEBFONT_FAMILY[lang];
+  if(!family){
+    // Switching back to nl/en/fr/es/de/id after a language that needed an
+    // extra font: clear the inline override rather than leaving Noto set.
+    document.body.style.removeProperty('font-family');
+    return;
+  }
+  if(!webfontsLoaded.has(lang)){
+    webfontsLoaded.add(lang);
+    const link=document.createElement('link');
+    link.rel='stylesheet';
+    link.href=WEBFONT_HREF[lang];
+    document.head.appendChild(link);
+  }
+  document.body.style.setProperty('font-family',
+    "'Plus Jakarta Sans','"+family+"',sans-serif");
+}
+
 function applyLang(lang,persist){
   const t=TRANSLATIONS[lang]; if(!t) return;
   document.documentElement.lang=lang;
+  ensureWebFont(lang);
   const pg=document.body.dataset.page||'home';
   document.title=t['meta.title.'+pg]||t['meta.title'];
   const md=qs('meta[name="description"]');
@@ -547,6 +577,10 @@ function applyLang(lang,persist){
     const on=btn.dataset.lang===lang;
     btn.classList.toggle('active',on);
     btn.setAttribute('aria-pressed',on?'true':'false');
+    // The switcher now scrolls on narrow screens (seven languages do not fit
+    // in a hamburger-width row) -- without this, picking a language near the
+    // end could scroll it out of view again on the next repaint.
+    if(on) btn.scrollIntoView({inline:'nearest',block:'nearest'});
   });
   triggerWordReveals();
   if(persist) localStorage.setItem('drp-lang',lang);

@@ -93,55 +93,82 @@ Use `--lock` while testing. Drop it to test the switcher itself.
 
 ## Every language, and how to reach it
 
-There are two kinds. **Live** languages are written by hand, sit in
-`i18n.js`, and real visitors get them. **Drafts** are machine translations in
-`i18n.draft.js`; no page loads them and only `--draft` shows them.
+There are two kinds. **Live** languages are written or reviewed by a human,
+sit in `i18n.js`, and real visitors get them. **Drafts** are unreviewed
+machine translations in `assets/i18n.draft.js`; no page loads that file and
+only `--draft` shows them locally. Nothing is currently in draft — the three
+languages that were sitting there (German, Indonesian, Japanese) were
+promoted on 2026-09-03 and are live below.
 
-### Live — four languages, real visitors see these
+### Live — seven languages, real visitors see these
 
 | Language | Reached from | Test |
 |---|---|---|
 | Dutch `nl` | Belgium, Netherlands, Suriname, Aruba, Curacao, Sint Maarten, Caribbean NL | `python serve.py --cc=BE --lock` |
 | French `fr` | France, Monaco, Luxembourg, Switzerland, Haiti, overseas France, francophone Africa, Maghreb — 42 countries | `python serve.py --cc=FR --lock` |
 | Spanish `es` | Spain and Latin America — 21 countries | `python serve.py --cc=ES --lock` |
+| German `de` | Germany, Austria | `python serve.py --cc=DE --lock` |
+| Indonesian `id` | Indonesia | `python serve.py --cc=ID --lock` |
+| Japanese `ja` | Japan | `python serve.py --cc=JP --lock` |
 | English `en` | **every other country on earth** | `python serve.py --cc=US --lock` |
 
-English is the fallback, not a region: Germany, Japan, Brazil and India all
-get English because the site has no copy in their language. That is the
-behaviour to change by promoting a draft, not a bug.
+English is the fallback, not a region: Brazil, India and most of the world
+get English because the site has no copy in their language yet. That is the
+behaviour to change by drafting and promoting a language, not a bug.
 
-### Drafts — machine translated, need `--draft`
+No `--draft` flag is needed for German, Indonesian or Japanese any more —
+they resolve the same way nl/fr/es/en always have, straight out of
+`LANG_COUNTRIES` in `geo.js`.
 
-Currently generated: **German, Indonesian, Japanese**.
+### Japanese needs a font, and gets one automatically
+
+Plus Jakarta Sans has no CJK glyphs. Rather than always loading a second
+font for every visitor, `app.js` fetches Noto Sans JP only when
+`applyLang` actually sets `lang="ja"` — a Dutch, English, French, Spanish,
+German or Indonesian visitor never requests it. Check this rather than
+assume it:
 
 ```powershell
-python serve.py --cc=DE --lock --draft     # German
-python serve.py --cc=ID --lock --draft     # Indonesian
-python serve.py --cc=JP --lock --draft     # Japanese
+python serve.py --cc=JP --lock
 ```
 
-Drop `--draft` from any of those and you get English (or Dutch/French/Spanish
-if the country maps there) — which is exactly what production does today.
+Open DevTools → Network → filter `fonts` before loading the page. You
+should see a `Noto+Sans+JP` request only when the resolved language is
+Japanese, and the hero should read 貴社の事業 in real Noto glyphs, not a
+system fallback with mismatched weight.
+
+### Drafts — machine translated, need `--draft`, not yet reviewed
+
+None currently generated. Produce one with the translation pipeline:
+
+```powershell
+node tools/translate.js --langs=ko        # generate (merges with any existing drafts)
+python serve.py --cc=KR --lock --draft    # review it locally
+```
+
+Drop `--draft` and you get English (or Dutch/French/Spanish/German/
+Indonesian/Japanese if the country maps to one of those) — which is exactly
+what production does today, and exactly why a draft needs the flag to be
+seen at all: an unreviewed translation must not be one accidental flag away
+from what a real visitor sees.
 
 ### Countries wired for a draft
 
 Generate any of these with `node tools/translate.js --langs=xx` and the
-matching `--cc=` immediately previews it. Nothing else is needed.
+matching `--cc=` immediately previews it with `--draft`. Nothing else is
+needed until it is reviewed and promoted.
 
 | Code | Language | Test with `--cc=` |
 |---|---|---|
 | `ar` | Arabic *(RTL)* | AE EG JO KW QA SA |
 | `cs` | Czech | CZ |
 | `da` | Danish | DK |
-| `de` | German ✅ | AT DE |
 | `el` | Greek | GR |
 | `fi` | Finnish | FI |
 | `he` | Hebrew *(RTL)* | IL |
 | `hi` | Hindi | IN |
 | `hu` | Hungarian | HU |
-| `id` | Indonesian ✅ | ID |
 | `it` | Italian | IT |
-| `ja` | Japanese ✅ | JP |
 | `ko` | Korean | KR |
 | `nb` | Norwegian | NO |
 | `pl` | Polish | PL |
@@ -155,10 +182,9 @@ matching `--cc=` immediately previews it. Nothing else is needed.
 | `vi` | Vietnamese | VN |
 | `zh` | Chinese | CN HK TW |
 
-✅ = already generated. DeepL can target **110 languages**; run
-`node tools/translate.js --list` for the full set. Anything not in the table
-above needs a line adding to `DRAFT_CC` in `serve.py` before `--cc=` can
-preview it.
+DeepL can target **110 languages**; run `node tools/translate.js --list` for
+the full set. Anything not in the table above needs a line adding to
+`DRAFT_CC` in `serve.py` before `--cc=` can preview it.
 
 ### Adding a language, start to finish
 
@@ -167,29 +193,43 @@ node tools/translate.js --langs=ko        # generate (keeps existing drafts)
 python serve.py --cc=KR --lock --draft    # review it
 ```
 
-Then, once someone who reads it has signed it off: move the block from
-`i18n.draft.js` into `i18n.js`, map `KR: 'ko'` in `geo.js`, add a switcher
-button, and move the Noto font link into the real `<head>`.
+Then, once someone who reads the language has signed it off:
+
+1. Move the `ko` block out of `assets/i18n.draft.js` into `TRANSLATIONS`
+   in `assets/i18n.js`.
+2. Add `ko: ['KR']` to `LANG_COUNTRIES` in `netlify/edge-functions/geo.js`
+   — one map, not a new array and a new `if`.
+3. Add a switcher button to the `.lang-sw` block on all four pages.
+4. If the language needs glyphs Plus Jakarta Sans does not have (CJK,
+   Arabic, Hebrew, Thai, Devanagari), add it to the `WEBFONT_FAMILY` /
+   `WEBFONT_HREF` maps at the top of `applyLang` in `assets/app.js` —
+   the pattern Japanese already uses. Fetched only when that language is
+   actually resolved, not on every pageview.
+5. Delete the `KR` line from `DRAFT_CC` in `serve.py` — it is now live,
+   so the parser in `_load_geo_tables()` finds it in `geo.js` directly and
+   the draft-preview override would only hide a real bug if one existed.
+6. Remove the `ko` block from `assets/i18n.draft.js` (or delete the file
+   if nothing else is still in draft).
 
 ### Currency is separate from language
 
 They are decided independently, so a country can get English with local
-prices. Spot-check a spread:
+prices — Brazil and India both do. Spot-check a spread:
 
 ```powershell
-python serve.py --cc=BE --lock     # Dutch    €499
-python serve.py --cc=FR --lock     # French   499 €           eurozone, no conversion
-python serve.py --cc=ES --lock     # Spanish  499 €           eurozone, no conversion
-python serve.py --cc=DE --lock     # English  €499            no German live yet
-python serve.py --cc=US --lock     # English  $578
-python serve.py --cc=GB --lock     # English  £429
-python serve.py --cc=CH --lock     # French   470 CHF
-python serve.py --cc=MX --lock     # Spanish  $9,820
-python serve.py --cc=JP --lock     # English  ¥91,816
-python serve.py --cc=IN --lock     # English  ₹54,890         lakh grouping: 8,22,030
-python serve.py --cc=ID --lock     # English  Rp 10.258.941
-python serve.py --cc=BR --lock     # English  R$2,970
-python serve.py --cc=NG --lock     # English  ₦778,440
+python serve.py --cc=BE --lock     # Dutch      €499
+python serve.py --cc=FR --lock     # French     499 €           eurozone, no conversion
+python serve.py --cc=ES --lock     # Spanish    499 €           eurozone, no conversion
+python serve.py --cc=DE --lock     # German     €499
+python serve.py --cc=ID --lock     # Indonesian Rp 10.258.941
+python serve.py --cc=JP --lock     # Japanese   ￥91,816
+python serve.py --cc=US --lock     # English    $578
+python serve.py --cc=GB --lock     # English    £429
+python serve.py --cc=CH --lock     # French     470 CHF
+python serve.py --cc=MX --lock     # Spanish    $9,820
+python serve.py --cc=IN --lock     # English    ₹54,890         lakh grouping: 8,22,030
+python serve.py --cc=BR --lock     # English    R$2,970
+python serve.py --cc=NG --lock     # English    ₦778,440
 ```
 
 Figures come from a fixed rate snapshot in `serve.py`, so they will not match
@@ -295,3 +335,5 @@ If the two ever disagree, Netlify is right.
   the live provider except North Korean won, which falls back to EUR.
 - Prices, and the invoice, remain in EUR. The converted figure is a display
   convenience and says so.
+- 205 countries are mapped to seven languages (nl/en/fr/es/de/id/ja); every
+  country not covered by one of the other six gets English.

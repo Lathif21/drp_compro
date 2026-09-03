@@ -11,30 +11,40 @@
 
 /* ── Language ───────────────────────────────────────────────────────────
  * Every territory is mapped, so there is no such thing as an unrecognised
- * visitor. But the site only *has* four languages, so this routes each
- * country to the closest one that exists rather than to its own language:
- * a visitor in Japan or Germany gets English, not Japanese or German.
- * English is the international default; Dutch is reserved for the home
- * market and the Dutch-speaking Caribbean.
+ * visitor. But the site only *has* the languages listed below, so this maps each
+ * country to the closest one that exists rather than to its own language --
+ * a visitor in Vietnam or Poland still gets English, since there is no
+ * Vietnamese or Polish copy. English is the international default; Dutch
+ * is reserved for the home market and the Dutch-speaking Caribbean.
  *
  * Only countries that are NOT English are listed. Everything absent falls
  * through to 'en' at the bottom of resolve(). */
-const NL = ['BE', 'NL', 'SR', 'AW', 'CW', 'SX', 'BQ'];
+const LANG_COUNTRIES = {
+  nl: ['BE', 'NL', 'SR', 'AW', 'CW', 'SX', 'BQ'],
 
-const FR = [
-  'FR', 'MC', 'LU', 'CH', 'HT',
-  // Overseas France
-  'GF', 'GP', 'MQ', 'RE', 'YT', 'PM', 'BL', 'MF', 'NC', 'PF', 'WF', 'TF',
-  // Francophone Africa
-  'BJ', 'BF', 'BI', 'CM', 'CF', 'TD', 'KM', 'CD', 'CG', 'CI', 'DJ', 'GA',
-  'GN', 'ML', 'NE', 'RW', 'SN', 'SC', 'TG', 'MG', 'MR', 'DZ', 'MA', 'TN',
-  'VU',
-];
+  fr: [
+    'FR', 'MC', 'LU', 'CH', 'HT',
+    // Overseas France
+    'GF', 'GP', 'MQ', 'RE', 'YT', 'PM', 'BL', 'MF', 'NC', 'PF', 'WF', 'TF',
+    // Francophone Africa
+    'BJ', 'BF', 'BI', 'CM', 'CF', 'TD', 'KM', 'CD', 'CG', 'CI', 'DJ', 'GA',
+    'GN', 'ML', 'NE', 'RW', 'SN', 'SC', 'TG', 'MG', 'MR', 'DZ', 'MA', 'TN',
+    'VU',
+  ],
 
-const ES = [
-  'ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'EC', 'GT', 'CU', 'BO', 'DO',
-  'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY', 'PR', 'GQ',
-];
+  es: [
+    'ES', 'MX', 'AR', 'CO', 'CL', 'PE', 'VE', 'EC', 'GT', 'CU', 'BO', 'DO',
+    'HN', 'PY', 'SV', 'NI', 'CR', 'PA', 'UY', 'PR', 'GQ',
+  ],
+
+  // German, Indonesian and Japanese copy shipped 2026-09-03, machine
+  // translated via DeepL and reviewed before promotion out of
+  // assets/i18n.draft.js. AT is included with DE -- Austrian German is not
+  // a separate site language.
+  de: ['DE', 'AT'],
+  id: ['ID'],
+  ja: ['JP'],
+};
 
 /* ── Currency ───────────────────────────────────────────────────────────
  * ISO 3166-1 alpha-2 -> ISO 4217. Eurozone and euro-using territories are
@@ -88,10 +98,11 @@ const CURRENCY = {
 };
 
 function language(cc) {
-  if (NL.indexOf(cc) !== -1) return 'nl';
-  if (FR.indexOf(cc) !== -1) return 'fr';
-  if (ES.indexOf(cc) !== -1) return 'es';
-  return cc ? 'en' : null;   // null only when the country is unknown
+  if (!cc) return null;      // null only when the country is unknown
+  for (const lang in LANG_COUNTRIES) {
+    if (LANG_COUNTRIES[lang].indexOf(cc) !== -1) return lang;
+  }
+  return 'en';
 }
 
 export default async (request, context) => {

@@ -95,20 +95,28 @@ def _load_geo_tables():
               encoding='utf-8') as fh:
         src = fh.read()
 
-    def arr(name):
-        m = _re.search(r'const %s = \[(.*?)\];' % name, src, _re.S)
-        return set(_re.findall(r"'([A-Z]{2})'", m.group(1))) if m else set()
+    # LANG_COUNTRIES = { nl: [...], fr: [...], ... } -- one block per
+    # language, each holding its own bracketed country list. Matched by
+    # brace depth rather than a fixed set of names, so a new language block
+    # in geo.js needs no matching change here.
+    m = _re.search(r'const LANG_COUNTRIES = \{(.*?)\n\};', src, _re.S)
+    langs = {}
+    if m:
+        for lm in _re.finditer(r'(\w+):\s*\[(.*?)\]', m.group(1), _re.S):
+            langs[lm.group(1)] = set(_re.findall(r"'([A-Z]{2})'", lm.group(2)))
 
     m = _re.search(r'const CURRENCY = \{(.*?)\};', src, _re.S)
     cur = dict(_re.findall(r"([A-Z]{2}):\s*'([A-Z]{3})'", m.group(1))) if m else {}
-    return arr('NL'), arr('FR'), arr('ES'), cur
+    return langs, cur
 
 
 try:
-    _NL, _FR, _ES, _CURRENCY = _load_geo_tables()
-    _TABLES = 'from geo.js (%d countries)' % len(_CURRENCY)
+    _LANGS, _CURRENCY = _load_geo_tables()
+    if not _LANGS:
+        raise ValueError('LANG_COUNTRIES not found or empty')
+    _TABLES = 'from geo.js (%d languages, %d currencies)' % (len(_LANGS), len(_CURRENCY))
 except Exception as exc:                                  # noqa: BLE001
-    _NL, _FR, _ES = {'BE', 'NL'}, {'FR'}, {'ES'}
+    _LANGS = {'nl': {'BE', 'NL'}, 'fr': {'FR'}, 'es': {'ES'}}
     _CURRENCY = {'US': 'USD', 'GB': 'GBP', 'JP': 'JPY', 'ID': 'IDR'}
     _TABLES = 'BUILT-IN FALLBACK (geo.js parse failed: %s)' % exc
 
@@ -124,15 +132,15 @@ FAKE_CC = _CC_ARG
 LOCK_GEO = _LOCK_ARG
 DRAFT = _DRAFT_ARG
 
-# Countries whose own language exists as a draft. geo.js deliberately routes
-# every country to one of the four real languages, so this map is what lets a
-# reviewer see JP as Japanese rather than as English. It is preview scaffolding
-# and belongs here, not in the edge function -- when a draft is approved and
-# promoted, the mapping moves into geo.js properly.
+# Countries whose own language exists only as a draft, not yet in geo.js.
+# id/de/ja are no longer here -- they are real languages now, resolved from
+# _LANGS like any other. This map is what lets a reviewer see, say, Korean
+# for KR before Korean is promoted; once it is, the KR line moves out of
+# here and into LANG_COUNTRIES in geo.js.
 DRAFT_CC = {
-    'JP': 'ja', 'ID': 'id', 'CN': 'zh', 'TW': 'zh', 'HK': 'zh', 'KR': 'ko',
+    'CN': 'zh', 'TW': 'zh', 'HK': 'zh', 'KR': 'ko',
     'TH': 'th', 'VN': 'vi', 'IN': 'hi', 'IL': 'he', 'SA': 'ar', 'AE': 'ar',
-    'EG': 'ar', 'QA': 'ar', 'KW': 'ar', 'JO': 'ar', 'DE': 'de', 'AT': 'de',
+    'EG': 'ar', 'QA': 'ar', 'KW': 'ar', 'JO': 'ar',
     'IT': 'it', 'BR': 'pt', 'PT': 'pt', 'PL': 'pl', 'TR': 'tr', 'RU': 'ru',
     'UA': 'uk', 'SE': 'sv', 'NO': 'nb', 'DK': 'da', 'FI': 'fi', 'GR': 'el',
     'CZ': 'cs', 'RO': 'ro', 'HU': 'hu',
@@ -150,16 +158,14 @@ if DRAFT and os.path.isfile(DRAFT_PATH):
 
 
 def _lang_for(cc):
-    # A draft in the country's own language wins while previewing, so a
-    # reviewer sees Japanese for JP instead of the English fallback.
+    # Draft preview only kicks in for a language geo.js does not already
+    # have live -- once id/de/ja moved into LANG_COUNTRIES, the loop below
+    # finds them before this ever gets consulted.
     if DRAFT and DRAFT_CC.get(cc) in DRAFT_LANGS:
         return DRAFT_CC[cc]
-    if cc in _NL:
-        return 'nl'
-    if cc in _FR:
-        return 'fr'
-    if cc in _ES:
-        return 'es'
+    for lang, countries in _LANGS.items():
+        if cc in countries:
+            return lang
     return 'en' if cc else None
 
 
