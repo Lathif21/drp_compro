@@ -35,10 +35,10 @@ const DEFAULT = MARKETS.__default;
 
 /* source page -> path under a market directory */
 const PAGES = [
-  { src: 'index.html', out: 'index.html', route: '' },
-  { src: 'over-ons/index.html', out: 'over-ons/index.html', route: '/over-ons' },
-  { src: 'prijzen/index.html', out: 'prijzen/index.html', route: '/prijzen' },
-  { src: 'contact/index.html', out: 'contact/index.html', route: '/contact' },
+  { src: 'src/index.html', out: 'index.html', route: '' },
+  { src: 'src/over-ons/index.html', out: 'over-ons/index.html', route: '/over-ons' },
+  { src: 'src/prijzen/index.html', out: 'prijzen/index.html', route: '/prijzen' },
+  { src: 'src/contact/index.html', out: 'contact/index.html', route: '/contact' },
 ];
 
 /* Internal routes that must gain the market prefix. Ordered longest-first so

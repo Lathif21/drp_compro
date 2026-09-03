@@ -14,7 +14,7 @@ pounds, because that is what the link says.
 ## Start here
 
 ```powershell
-python serve.py
+python tools/serve.py
 ```
 
 Then open <http://127.0.0.1:8000/be/> and change the segment: `/gb/`,
@@ -24,9 +24,9 @@ A bare `/` redirects to a market. Locally `--cc` picks which one, standing
 in for the `Country` rules Netlify uses in production:
 
 ```powershell
-python serve.py --cc=GB     #  /  ->  /gb/
-python serve.py --cc=JP     #  /  ->  /jp/
-python serve.py             #  /  ->  /be/   (the default market)
+python tools/serve.py --cc=GB     #  /  ->  /gb/
+python tools/serve.py --cc=JP     #  /  ->  /jp/
+python tools/serve.py             #  /  ->  /be/   (the default market)
 ```
 
 ---

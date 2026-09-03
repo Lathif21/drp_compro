@@ -88,7 +88,7 @@
 
 # Icons & social card. 7 days, not `immutable` — long enough to be cheap,
 # short enough that a corrected icon reaches people who cached the old one.
-/favicon.svg
+/assets/icons/favicon.svg
   Cache-Control: public, max-age=604800
   Content-Type: image/svg+xml
 

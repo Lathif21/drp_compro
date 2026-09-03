@@ -1,50 +1,56 @@
 #!/usr/bin/env python3
 """Local preview server for the DRP BuildLab site.
 
-Plain `python -m http.server` is not enough here: the nav links point at
-extensionless URLs (/prijzen, /over-ons, /contact) which Netlify resolves to
-the index.html inside the matching directory -- with no trailing-slash
-redirect, unlike http.server. This mimics that, plus the 404 page, so local
-navigation behaves like production.
+Run from the repository root:
 
-    python serve.py            # http://127.0.0.1:8000
-    python serve.py 9000       # pick another port
+    python tools/serve.py            # http://127.0.0.1:8000
+    python tools/serve.py 9000       # pick another port
+
+Every page lives under a market -- /be/prijzen, /gb/prijzen, /jp/prijzen --
+and a market carries both a language and a currency (assets/markets.js).
+This server resolves those directories the way Netlify does, and sends a
+bare "/" to a market the way the Country rules in _redirects do.
+
+Plain `python -m http.server` is not enough: it would 301 /gb/prijzen to a
+trailing slash, which Netlify does not add and which would not match the
+page's own canonical.
 
 `netlify dev` is the authoritative preview: it reads _redirects and _headers
 directly and runs the real edge functions, so it is the only way to check
-cache headers, the apex redirect, the legacy /diensten-style paths or live
-exchange rates. This script is the zero-install fallback -- it mimics pretty
-URLs, the 404 page, and stubs /api/geo and /api/rates so the country and
-currency features are testable offline. It knows nothing about either config
-file. If the two ever disagree, Netlify is right.
+cache headers, the apex redirect or live exchange rates. This script is the
+zero-install fallback -- it mimics the market routing, serves the 404 page,
+and stubs /api/rates so prices convert offline. It knows nothing about
+either config file. If the two disagree, Netlify is right.
 """
 import json
 import os
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+# The site root is the parent: this script lives in tools/.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 USAGE = """DRP BuildLab preview server
 
-  python serve.py [port] [--cc=XX] [--lock]
+  python tools/serve.py [port] [--cc=XX] [--lock] [--draft]
 
   port        port to listen on (default 8000)
-  --cc=XX     pretend the visitor is in country XX, e.g. --cc=ID
-  --lock      hide the language switcher and clear any stored language, so
-              the country is the only thing deciding
-  --draft     also serve the machine-translated languages in
-              assets/i18n.draft.js, and load a CJK/Arabic font so they
-              actually render. Preview only -- production never loads them.
+  --cc=XX     which market a bare "/" redirects to, standing in for the
+              Country rules Netlify uses in production. Every other URL
+              states its own market, so this only affects "/".
+  --lock      clear any stored language on load. Rarely needed now that the
+              market in the URL is authoritative.
+  --draft     also serve machine translations from assets/i18n.draft.js,
+              with a CJK/Arabic font so they render. Only meaningful while a
+              language is still in draft; nothing is currently.
 
-Flags are used instead of environment variables because the syntax for
-setting those differs per shell -- `DRP_CC=ID python serve.py` is bash and
-fails in PowerShell. The DRP_CC and DRP_LOCK_GEO variables still work if
-you prefer them; a flag wins over the variable.
+Flags rather than environment variables, because the syntax for setting
+those differs per shell -- `DRP_CC=ID python tools/serve.py` is bash and
+fails in PowerShell. DRP_CC and DRP_LOCK_GEO still work; a flag wins.
 
-  python serve.py --cc=US                    English, prices in USD
-  python serve.py --cc=ID --lock             English, prices in IDR
-  python serve.py --cc=JP --lock --draft     the Japanese draft, in Japanese
+  python tools/serve.py                 /  ->  /be/   (the default market)
+  python tools/serve.py --cc=GB         /  ->  /gb/   English, GBP
+  python tools/serve.py --cc=JP         /  ->  /jp/   Japanese, JPY
 """
 
 

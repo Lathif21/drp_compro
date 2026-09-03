@@ -58,5 +58,11 @@ https://www.drpbuildlab.com/*    https://drpbuildlab.com/:splat    301!
 /og-image.jpg                     /assets/img/og-image.png          301
 /og-image.png                     /assets/img/og-image.png          301
 
+# The templates in src/ are inside the publish root, so they would otherwise
+# be reachable as real files. They are inputs to tools/build-locales.js, not
+# pages, and serving them would duplicate every market in Dutch at a URL with
+# no canonical pointing anywhere sensible.
+/src/*                            /404.html                         404!
+
 # Catch-all 404 (must be last)
 /*                                /404.html                         404
