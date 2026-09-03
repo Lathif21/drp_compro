@@ -12,3 +12,8 @@
 
 [build]
   publish = "."
+  # Explicit so the directory is not silently renamed out from under the two
+  # functions. Each file routes itself via its exported `config.path`:
+  #   geo.js   -> /api/geo    visitor country, from Netlify's own edge data
+  #   rates.js -> /api/rates  EUR rates, proxied and cached for an hour
+  edge_functions = "netlify/edge-functions"

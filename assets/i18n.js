@@ -80,6 +80,8 @@ nl:{
   'ft.tag':'Professionele websites voor lokale bedrijven · Volledig op maat',
   'ft.nav':['Navigatie','Home','Over ons','Prijzen','Contact'],
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, België · BTW BE 1033.313.383','ft.ig':'Volg ons',
+  'sticky.txt':'Beginnerspakket vanaf €499','sticky.btn':'Gratis demo →',
+  'cur.note':'Prijzen in {cur} zijn omgerekend vanuit euro tegen de koers van vandaag en zijn indicatief. Facturatie gebeurt in EUR.',
   'wa':'WhatsApp ons'
 },
 en:{
@@ -155,6 +157,8 @@ en:{
   'ft.tag':'Professional websites for local businesses · Fully custom',
   'ft.nav':['Navigation','Home','About us','Pricing','Contact'],
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgium · VAT BE 1033.313.383','ft.ig':'Follow us',
+  'sticky.txt':'Starter package from €499','sticky.btn':'Free demo →',
+  'cur.note':'Prices in {cur} are converted from euro at today’s rate and are indicative. Invoicing is in EUR.',
   'wa':'WhatsApp us'
 },
 fr:{
@@ -230,6 +234,8 @@ fr:{
   'ft.tag':'Sites web professionnels pour entreprises locales · Entièrement sur mesure',
   'ft.nav':['Navigation','Accueil','À propos','Tarifs','Contact'],
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgique · TVA BE 1033.313.383','ft.ig':'Suivez-nous',
+  'sticky.txt':'Forfait starter à partir de 499 €','sticky.btn':'Démo gratuite →',
+  'cur.note':'Les prix en {cur} sont convertis depuis l’euro au taux du jour et sont indicatifs. La facturation se fait en EUR.',
   'wa':'WhatsApp nous'
 },
 es:{
@@ -305,6 +311,8 @@ es:{
   'ft.tag':'Sitios web profesionales para negocios locales · Completamente a medida',
   'ft.nav':['Navegación','Inicio','Sobre nosotros','Precios','Contacto'],
   'ft.ct':'Contacto','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · IVA BE 1033.313.383','ft.ig':'Síguenos',
+  'sticky.txt':'Paquete inicial desde 499 €','sticky.btn':'Demo gratis →',
+  'cur.note':'Los precios en {cur} se convierten desde el euro al tipo de cambio de hoy y son indicativos. La facturación se realiza en EUR.',
   'wa':'Escríbenos por WhatsApp'
 }
 };

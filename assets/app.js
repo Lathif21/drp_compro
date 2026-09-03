@@ -357,7 +357,7 @@ function resetSh(el){
   });
 }
 
-function applyLang(lang){
+function applyLang(lang,persist){
   const t=TRANSLATIONS[lang]; if(!t) return;
   document.documentElement.lang=lang;
   const pg=document.body.dataset.page||'home';
@@ -518,25 +518,78 @@ function applyLang(lang){
     const ff=footer.querySelector('.ft-follow');if(ff)ff.textContent=t['ft.ig'];
   }
   const wa=qs('.wa-float');if(wa)wa.setAttribute('aria-label',t['wa']);
+  const sc=qs('#scta');
+  if(sc){
+    const sx=sc.querySelector('.scta-txt');if(sx)sx.textContent=t['sticky.txt'];
+    const sb=sc.querySelector('.scta-btn');if(sb)sb.textContent=t['sticky.btn'];
+  }
   qsa('.lang-btn').forEach(btn=>{
     const on=btn.dataset.lang===lang;
     btn.classList.toggle('active',on);
     btn.setAttribute('aria-pressed',on?'true':'false');
   });
   triggerWordReveals();
-  localStorage.setItem('drp-lang',lang);
+  if(persist) localStorage.setItem('drp-lang',lang);
+  document.dispatchEvent(new CustomEvent('drp:langapplied',{detail:{lang}}));
 }
+
+/* Read the active language's strings from outside this file (locale.js). */
+window.DRP_T=function(key){
+  const t=TRANSLATIONS[document.documentElement.lang]||TRANSLATIONS.nl;
+  return t&&t[key];
+};
+
+/* Sticky mobile CTA: in once the hero has scrolled by, out again over the
+   closing CTA and the contact form, where it would only repeat an action
+   already on screen. */
+(function stickyCta(){
+  const bar=document.getElementById('scta');
+  if(!bar) return;
+  const hero=document.querySelector('.hero');
+  const end=document.querySelector('.ctastrip,#contact,.ft');
+  let queued=false;
+  function update(){
+    queued=false;
+    const past=window.scrollY>(hero?hero.offsetHeight*0.8:600);
+    let covered=false;
+    if(end){const r=end.getBoundingClientRect();covered=r.top<window.innerHeight;}
+    const on=past&&!covered;
+    bar.classList.toggle('on',on);
+    document.body.classList.toggle('scta-on',on);
+  }
+  addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(update);}},{passive:true});
+  addEventListener('resize',update,{passive:true});
+  update();
+})();
 
 const langSwEl=document.getElementById('langSw');
 if(langSwEl) langSwEl.addEventListener('click',e=>{
   const btn=e.target.closest('.lang-btn');
-  if(btn) applyLang(btn.dataset.lang);
+  if(btn) applyLang(btn.dataset.lang,true);
 });
 
-(function initLang(){
+/* Precedence: an explicit click always wins, then the country the edge
+   resolved, then the browser's own preference, then Dutch. A visitor who
+   has chosen a language is never overridden by where they happen to be. */
+function pickLang(geoLang){
   const saved=localStorage.getItem('drp-lang');
-  if(saved&&TRANSLATIONS[saved]){applyLang(saved);return;}
+  if(saved&&TRANSLATIONS[saved]) return saved;
+  if(geoLang&&TRANSLATIONS[geoLang]) return geoLang;
   const br=(navigator.language||navigator.userLanguage||'nl').toLowerCase();
-  const detected=['en','fr','es'].find(l=>br.startsWith(l));
-  applyLang(detected||'nl');
+  return ['en','fr','es'].find(l=>br.startsWith(l))||'nl';
+}
+
+(function initLang(){
+  // Paint with what is already known -- a cached country, else the browser --
+  // so the page does not visibly change language a beat after it loads.
+  const L=window.DRP_LOCALE||{};
+  applyLang(pickLang(L.lang),false);
+
+  if(window.DRP_LOCALE_READY) window.DRP_LOCALE_READY.then(st=>{
+    const want=pickLang(st&&st.lang);
+    if(want!==document.documentElement.lang) applyLang(want,false);
+    // Same language, but rates have landed since the first pass: re-run the
+    // currency conversion that listens on this event.
+    else document.dispatchEvent(new CustomEvent('drp:langapplied',{detail:{lang:want}}));
+  });
 })();
