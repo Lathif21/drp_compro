@@ -371,7 +371,7 @@ id:{
      "tag": "Harga yang wajar"
     },
     {
-     "num": "100%",
+     "num": "100<span>%</span>",
      "lbl": "Situs web yang sepenuhnya disesuaikan — harga tergantung pada cakupan proyek",
      "tag": "Kustom"
     }
@@ -413,7 +413,7 @@ id:{
    "ab.tag": "Tentang Kami",
    "ab.h2": "Dibangun oleh<br>para wirausahawan,<br><em>untuk para wirausahawan.</em>",
    "ab.p1": "Semuanya berawal dari rasa frustrasi. Kami menyadari bahwa usaha-usaha lokal — penjual daging di sudut jalan, tukang ledeng yang selalu siap sedia, penata rambut yang sudah memotong rambut pelanggan yang sama selama bertahun-tahun — sama sekali tidak terlihat di dunia maya.",
-   "ab.p2": "Agen-agen besar mengenakan biaya <strong>€5,000 untuk sebuah situs web</strong> yang baru selesai dalam hitungan bulan. Oleh karena itu, kami mendirikan DRP BuildLab: sebuah studio yang percaya bahwa setiap usaha lokal <strong>berhak mendapatkan situs web yang dirancang khusus</strong> — terjangkau, jujur, dengan harga yang sesuai dengan usaha yang diperlukan.",
+   "ab.p2": "Agen-agen besar mengenakan biaya <strong>€5.000 untuk sebuah situs web</strong> yang baru selesai dalam hitungan bulan. Oleh karena itu, kami mendirikan DRP BuildLab: sebuah studio yang percaya bahwa setiap usaha lokal <strong>berhak mendapatkan situs web yang dirancang khusus</strong> — terjangkau, jujur, dengan harga yang sesuai dengan usaha yang diperlukan.",
    "ab.pillars": [
     {
      "t": "Kejujuran di atas segalanya",
@@ -490,7 +490,7 @@ id:{
     ],
     [
      "Kerugian per tahun tanpa situs web",
-     "−€8,320"
+     "−€8.320"
     ],
     [
      "Paket Investasi DRP BuildLab (Paket Pemula)",
@@ -502,7 +502,7 @@ id:{
     ]
    ],
    "opp.totlbl": "Manfaat bersih potensial",
-   "opp.totval": "+€7,473per tahun",
+   "opp.totval": "+€7.473 per tahun",
    "opp.note": "<strong>Kesimpulannya sederhana:</strong> biaya pembuatan situs web hanyalah sebagian kecil dari kerugian yang akan Anda alami jika tidak memilikinya. Menunda-nunda <strong>justru</strong> lebih mahal daripada berinvestasi.",
    "comp.tag": "Gambaran umum pasar",
    "comp.h2": "Tidak ada yang menawarkan harga<br>lebih murah <em>daripada kami.</em>",
@@ -523,17 +523,17 @@ id:{
     },
     {
      "n": "Pekerja lepas",
-     "p": "€800–€2,500",
+     "p": "€800–€2.500",
      "m": "Tidak termasuk"
     },
     {
      "n": "Agen digital",
-     "p": "€2,500–€8,000",
+     "p": "€2.500–€8.000",
      "m": "Biaya tambahan yang mahal"
     },
     {
      "n": "Agensi besar",
-     "p": "€8,000+",
+     "p": "€8.000+",
      "m": "Biaya tambahan yang mahal"
     },
     {
@@ -812,7 +812,7 @@ de:{
    "ab.tag": "Über uns",
    "ab.h2": "Von<br>Unternehmern entwickelt,<br><em>für Unternehmer.</em>",
    "ab.p1": "Alles begann mit einer Frustration. Wir stellten fest, dass lokale Unternehmen – der Metzger an der Ecke, der Klempner, der immer zur Stelle ist, der Friseur, der seit Jahren dieselben Kunden schneidet – im Internet völlig unsichtbar waren.",
-   "ab.p2": "Große Agenturen stellten „<strong>€5,000</strong>“ hohe Rechnungen<strong> für eine Website</strong>, deren Fertigstellung Monate dauerte. Deshalb haben wir DRP BuildLab gegründet: ein Studio, das davon überzeugt ist, dass jedes lokale Unternehmen <strong>eine maßgeschneiderte Website verdient</strong> – erschwinglich, fair und zu einem Preis, der dem Aufwand entspricht.",
+   "ab.p2": "Große Agenturen stellten „<strong>€5.000</strong>“ hohe Rechnungen<strong> für eine Website</strong>, deren Fertigstellung Monate dauerte. Deshalb haben wir DRP BuildLab gegründet: ein Studio, das davon überzeugt ist, dass jedes lokale Unternehmen <strong>eine maßgeschneiderte Website verdient</strong> – erschwinglich, fair und zu einem Preis, der dem Aufwand entspricht.",
    "ab.pillars": [
     {
      "t": "Ehrlichkeit geht vor",
@@ -889,7 +889,7 @@ de:{
     ],
     [
      "Jährlicher Verlust ohne Website",
-     "−€8,320"
+     "−€8.320"
     ],
     [
      "Investment-DRP BuildLab (Starterpaket)",
@@ -901,7 +901,7 @@ de:{
     ]
    ],
    "opp.totlbl": "Potentieller Nettonutzen",
-   "opp.totval": "+€7,473pro Jahr",
+   "opp.totval": "+€7.473 pro Jahr",
    "opp.note": "<strong>Die Schlussfolgerung ist einfach:</strong> Die Kosten für eine Website machen nur einen Bruchteil dessen aus, was Ihnen ohne eine solche entgeht. Abwarten kostet mehr als investieren.",
    "comp.tag": "Marktüberblick",
    "comp.h2": "Niemand bietet das<br>günstiger an <em>als wir.</em>",
@@ -922,17 +922,17 @@ de:{
     },
     {
      "n": "Freiberufler",
-     "p": "€800–€2,500",
+     "p": "€800–€2.500",
      "m": "Nicht enthalten"
     },
     {
      "n": "Digitalagentur",
-     "p": "€2,500–€8,000",
+     "p": "€2.500–€8.000",
      "m": "Teures Extra"
     },
     {
      "n": "Große Agentur",
-     "p": "€8,000+",
+     "p": "€8.000+",
      "m": "Teures Extra"
     },
     {
@@ -1169,7 +1169,7 @@ ja:{
      "tag": "適正な価格"
     },
     {
-     "num": "100％",
+     "num": "100<span>％</span>",
      "lbl": "完全オーダーメイドのウェブサイト — 価格は作業範囲に応じて決定されます",
      "tag": "カスタム"
     }

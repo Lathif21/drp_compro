@@ -14,15 +14,50 @@
 (function () {
   'use strict';
 
-  var LOCALES = { nl: 'nl-BE', en: 'en-GB', fr: 'fr-BE', es: 'es-ES' };
+  /* Formatting locale per language. en uses en-US so USD renders as "$578"
+   * rather than en-GB's "US$578"; the rest match the market whose
+   * currency they carry. */
+  var LOCALES = {
+    nl: 'nl-BE', en: 'en-US', fr: 'fr-BE', es: 'es-ES',
+    de: 'de-DE', id: 'id-ID', ja: 'ja-JP',
+  };
 
-  /* Thousands separators per language, so "€8.320" parses as 8320 in Dutch
-   * and "€8,320" as 8320 in English. No displayed price carries decimals,
-   * which is why the patterns below require groups of exactly three digits:
-   * it keeps a sentence-ending "€98." from being read as a separator. */
-  var GROUP = { nl: '.', en: ',', fr: '   ', es: '.' };
+  /* Any of these between digit groups is a thousands separator. No price
+   * on the site carries decimals, so there is nothing to disambiguate:
+   * "8.320", "8,320" and "8 320" all mean 8320. This replaced a
+   * per-language table that had to guess which separator each translation
+   * used -- it guessed wrong for German, Indonesian and Japanese, which
+   * all came back from DeepL with English-style commas, and silently
+   * produced wrong prices. Requiring exactly three digits after the
+   * separator keeps a sentence-ending "€98." from being read as one. */
+  var SEP_CLASS = '.,\u00a0\u202f ';
+  var SEP_RE = /[.,\u00a0\u202f ]/g;
 
-  var state = { country: null, currency: 'EUR', lang: null, rates: null, stale: false };
+  /* One currency per language. The site invoices in EUR, so every European
+   * language stays in EUR and shows no conversion at all; the rest convert
+   * and carry the "indicative" note. English is the international page and
+   * uses USD -- change it here if that should be EUR instead, it is the one
+   * genuinely arguable entry in this table. */
+  var LANG_CURRENCY = {
+    nl: 'EUR', fr: 'EUR', es: 'EUR', de: 'EUR',
+    en: 'USD', id: 'IDR', ja: 'JPY',
+  };
+
+  var state = { country: null, lang: null, rates: null, stale: false };
+
+  /* Derived, never stored. Currency used to be read from /api/geo and kept in
+   * a field, which meant a language change did not touch it -- switching to
+   * Dutch on an Indonesian IP left the prices in rupiah. Deriving it from the
+   * language on every read makes that state impossible to reach. */
+  Object.defineProperty(state, 'currency', {
+    enumerable: true,
+    get: function () {
+      var c = LANG_CURRENCY[document.documentElement.lang] || 'EUR';
+      // A currency the rate feed does not quote is not one we can price in.
+      if (c !== 'EUR' && (!state.rates || !state.rates[c])) return 'EUR';
+      return c;
+    },
+  });
   window.DRP_LOCALE = state;
 
   var snap = new WeakMap();
@@ -36,20 +71,14 @@
 
   /* ── price conversion ─────────────────────────────────────────────── */
 
-  function amountPattern(lang) {
-    var g = (GROUP[lang] || '.').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    var num = '[0-9]{1,3}(?:[' + g + '][0-9]{3})+|[0-9]+';
-    // Symbol before (nl/en) or after (fr/es) the figure.
+  function amountPattern() {
+    var num = '[0-9]{1,3}(?:[' + SEP_CLASS + '][0-9]{3})+|[0-9]+';
+    // Symbol before (nl/en/de/id/ja) or after (fr/es) the figure.
     return new RegExp('(€\\s*)(' + num + ')|(' + num + ')(\\s*€)', 'g');
   }
 
-  function parseAmount(raw, lang) {
-    var g = GROUP[lang] || '.';
-    var cleaned = '';
-    for (var i = 0; i < raw.length; i++) {
-      if (g.indexOf(raw[i]) === -1) cleaned += raw[i];
-    }
-    var n = parseInt(cleaned, 10);
+  function parseAmount(raw) {
+    var n = parseInt(String(raw).replace(SEP_RE, ''), 10);
     return isNaN(n) ? null : n;
   }
 
@@ -58,13 +87,11 @@
    * "$541", not en-GB's "US$541". Intl falls back sensibly for combinations
    * that are not real locales (en-JP resolves to English with yen). */
   function fmtLocale(lang) {
-    var base = LOCALES[lang] || 'nl-BE';
-    if (!state.country) return base;
-    try {
-      var tag = (lang || 'en') + '-' + state.country;
-      Intl.NumberFormat.supportedLocalesOf(tag);
-      return tag;
-    } catch (e) { return base; }
+    // Language decides this outright. It used to be qualified with the
+    // visitor's country, which was coherent while currency came from geo --
+    // but with currency following language, en on an Indonesian IP resolved
+    // to en-ID and rendered USD with Indonesian grouping: "US$8.656".
+    return LOCALES[lang] || LOCALES.nl;
   }
 
   function format(value, currency, lang) {
@@ -110,12 +137,12 @@
 
     if (!rate || cur === 'EUR') { note(null); return; }
 
-    var re = amountPattern(lang);
+    var re = amountPattern();
     walk(document.body, function (node) {
       var original = node.nodeValue;
       var out = original.replace(re, function (m, pre, a, b, post) {
         var raw = a || b;
-        var v = parseAmount(raw, lang);
+        var v = parseAmount(raw);
         if (v === null) return m;
         return format(Math.round(v * rate), cur, lang);
       });
@@ -284,8 +311,8 @@
     var trailTag = String(html).match(/<([a-zA-Z]+)>[^<]*<\/[a-zA-Z]+>$/);
     var text = String(html).replace(/<[^>]*>/g, '');
 
-    var out = text.replace(amountPattern(lang), function (m, pre, a, b) {
-      var v = parseAmount(a || b, lang);
+    var out = text.replace(amountPattern(), function (m, pre, a, b) {
+      var v = parseAmount(a || b);
       return v === null ? m : format(Math.round(v * rate), cur, lang);
     });
     if (out === text) return html;          // nothing to convert, e.g. "100%"
@@ -340,16 +367,14 @@
   // lookup below still runs and corrects it if they have moved.
   try {
     var cached = JSON.parse(localStorage.getItem('drp-geo') || 'null');
-    if (cached && cached.currency) {
+    if (cached && cached.country) {
       state.country = cached.country;
-      state.currency = cached.currency;
       state.lang = cached.lang;
     }
   } catch (e) { /* private mode, or corrupt value: fall through to defaults */ }
 
   var geo = get('/api/geo').then(function (g) {
     state.country = g.country;
-    state.currency = g.currency || 'EUR';
     state.lang = g.lang;
     try { localStorage.setItem('drp-geo', JSON.stringify(g)); } catch (e) {}
     return g;
@@ -364,10 +389,8 @@
   window.DRP_LOCALE_READY = Promise.all([geo, rates]).then(function (r) {
     var rt = r[1];
     if (rt && rt.rates) { state.rates = rt.rates; state.stale = !!rt.stale; }
-    // Currency we cannot price in is not a currency we should display.
-    if (state.currency !== 'EUR' && (!state.rates || !state.rates[state.currency])) {
-      state.currency = 'EUR';
-    }
+    // The EUR fallback for an unquoted currency now lives in the getter, so
+    // it applies on every read rather than once at boot.
     return state;
   });
 })();
