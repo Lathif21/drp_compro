@@ -200,6 +200,11 @@ if(heroEl) heroEl.addEventListener('mousemove', e=>{
 ══════════════════════════════════════════ */
 const zoomSec     = document.getElementById('zoomSec');
 const zoomInner   = document.getElementById('zoomInner');
+/* Currency-converts a statistic before it is written. No-op until the rates
+   land, and a no-op for euro visitors. */
+const money = html => (window.DRP_LOCALE && window.DRP_LOCALE.money)
+  ? window.DRP_LOCALE.money(html) : html;
+
 const zoomNum     = document.getElementById('zoomNum');
 const zoomLbl     = document.getElementById('zoomLbl');
 const zoomTag     = document.getElementById('zoomTag');
@@ -240,7 +245,7 @@ if(zoomSec) window.addEventListener('scroll',()=>{
   if(idx !== lastIdx){
     lastIdx = idx;
     const s = zStats[idx];
-    zoomNum.innerHTML = s.num;
+    zoomNum.innerHTML = money(s.num);
     zoomLbl.textContent = s.lbl;
     zoomTag.textContent = s.tag;
     if(zoomCounter) zoomCounter.textContent = `0${idx+1} / 03`;
@@ -292,16 +297,27 @@ const cntIO = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(!e.isIntersecting) return;
     const el = e.target;
-    const target = parseInt(el.dataset.count)||0;
+    const raw = parseInt(el.dataset.count)||0;
     const prefix = el.dataset.prefix||'';
     const suffix = el.dataset.suffix||'';
-    if(target===0){ cntIO.unobserve(el); return; }
+    if(raw===0){ cntIO.unobserve(el); return; }
+    /* A euro counter counts towards the converted figure and is written with
+       the visitor's own grouping and symbol placement, not prefix+digits --
+       "Rp 10.258.941", not "€10258941". formatAmount returns null for euro
+       visitors, which keeps the original behaviour. */
+    const L = window.DRP_LOCALE;
+    const isMoney = prefix.indexOf('€') !== -1;
+    const target = (isMoney && L && L.convertAmount) ? L.convertAmount(raw) : raw;
+    const paint = n => (isMoney && L && L.formatAmount && L.formatAmount(n))
+      || (prefix+n+suffix);
     let start=null;
     const run=ts=>{
       if(!start) start=ts;
       const p=Math.min((ts-start)/1300,1);
       const ease=1-Math.pow(1-p,3);
-      el.textContent = prefix+Math.round(ease*target)+suffix;
+      el.textContent = paint(Math.round(ease*target));
+      // Marks it as settled so a later rate change can correct the total.
+      if(p>=1) el.dataset.counted='1';
       if(p<1) requestAnimationFrame(run);
     };
     requestAnimationFrame(run);
@@ -398,6 +414,10 @@ function applyLang(lang,persist){
   const ci=Math.max(0,lastIdx);
   if(zoomLbl) zoomLbl.textContent=zStats[ci].lbl;
   if(zoomTag) zoomTag.textContent=zStats[ci].tag;
+  // The figure was previously left to the scroll handler, so it kept the old
+  // language's number until you scrolled past it -- and never picked up a
+  // currency at all.
+  if(zoomNum) zoomNum.innerHTML=money(zStats[ci].num);
   const how=document.getElementById('hoe-het-werkt');
   if(how){
     const ht=how.querySelector('.stag'); if(ht) ht.textContent=t['how.tag'];

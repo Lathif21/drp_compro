@@ -53,14 +53,29 @@
     return isNaN(n) ? null : n;
   }
 
+  /* Region-qualify the formatting locale with the visitor's own country, so
+   * a currency renders the way it does where they are: a US visitor sees
+   * "$541", not en-GB's "US$541". Intl falls back sensibly for combinations
+   * that are not real locales (en-JP resolves to English with yen). */
+  function fmtLocale(lang) {
+    var base = LOCALES[lang] || 'nl-BE';
+    if (!state.country) return base;
+    try {
+      var tag = (lang || 'en') + '-' + state.country;
+      Intl.NumberFormat.supportedLocalesOf(tag);
+      return tag;
+    } catch (e) { return base; }
+  }
+
   function format(value, currency, lang) {
     try {
-      return new Intl.NumberFormat(LOCALES[lang] || 'nl-BE', {
+      return new Intl.NumberFormat(fmtLocale(lang), {
         style: 'currency', currency: currency,
         minimumFractionDigits: 0, maximumFractionDigits: 0,
       }).format(value);
     } catch (e) {
-      return currency + ' ' + Math.round(value);
+      // Unknown ISO code, or a currency this runtime cannot format.
+      return currency + ' ' + Math.round(value).toLocaleString();
     }
   }
 
@@ -109,7 +124,121 @@
         node.nodeValue = out;
       }
     });
+    splitFigures(cur, rate, lang);
+    recount();
     note(cur);
+    fitTable();
+  }
+
+  /* Figures that wrap the currency symbol in its own tag for styling --
+   * "<sup>&euro;</sup>499" on the pricing card -- put the symbol and the
+   * digits in separate text nodes, so the walk above cannot see an amount.
+   * Converted whole instead, from a snapshot of the original markup. */
+  var snapHTML = new WeakMap();
+  function splitFigures(cur, rate, lang) {
+    var els = document.querySelectorAll('.pprice');
+    Array.prototype.forEach.call(els, function (el) {
+      if (!snapHTML.has(el)) snapHTML.set(el, el.innerHTML);
+      var original = snapHTML.get(el);
+      el.innerHTML = (cur === 'EUR' || !rate) ? original : state.money(original);
+    });
+  }
+
+  /* Counters that have already finished animating keep whatever they counted
+   * to, which is a euro figure if the rates landed after they ran. Rewrite
+   * those to the converted total; ones that have not run yet will pick the
+   * rate up when they do. */
+  function recount() {
+    var els = document.querySelectorAll('[data-count][data-counted]');
+    Array.prototype.forEach.call(els, function (el) {
+      var raw = parseInt(el.dataset.count, 10);
+      if (isNaN(raw) || (el.dataset.prefix || '').indexOf('€') === -1) return;
+      el.textContent = state.formatAmount(state.convertAmount(raw))
+        || ((el.dataset.prefix || '') + raw + (el.dataset.suffix || ''));
+    });
+  }
+
+  /* The comparison table's columns are fr-proportional and sized for euro
+   * figures. A converted price can be three times longer, which clipped the
+   * cells rather than widening them. Measure what each column actually needs
+   * and, only if the total exceeds the space available, pin every row to the
+   * same explicit template and let the table scroll -- identical templates
+   * are what keep the columns lined up once fr no longer applies. */
+  function fitTable() {
+    var tbl = document.querySelector('.ctbl');
+    if (!tbl) return;
+    tbl.classList.remove('scrolls');
+    tbl.style.removeProperty('--c1');
+    tbl.style.removeProperty('--c2');
+    tbl.style.removeProperty('--c3');
+
+    var rows = tbl.querySelectorAll('.chd, .crow');
+    if (!rows.length) return;
+
+    /* Engage only when the normal wrapping layout actually cuts something
+     * off. Euro figures wrap onto two lines and fit fine at 320px -- forcing
+     * a scroll for them would undo the narrow-screen work that made the
+     * table fit in the first place. Long converted prices cannot wrap small
+     * enough, and those are the ones that need the scroll. */
+    var clippedNow = false;
+    Array.prototype.forEach.call(rows, function (row) {
+      Array.prototype.forEach.call(row.children, function (cell) {
+        if (getComputedStyle(cell).display === 'none') return;
+        if (cell.scrollWidth > cell.clientWidth + 1) clippedNow = true;
+      });
+    });
+    if (!clippedNow) return;
+
+    tbl.classList.add('measuring');
+    var need = [], rng = document.createRange();
+    Array.prototype.forEach.call(rows, function (row) {
+      var i = 0;
+      Array.prototype.forEach.call(row.children, function (cell) {
+        var cs = getComputedStyle(cell);
+        if (cs.display === 'none') return;
+        // Measured with a Range over the cell's own contents rather than via
+        // scrollWidth: these cells are flex containers, where scrollWidth
+        // reported a few pixels under the real text width and left the
+        // column short enough to still clip. A Range measures the text
+        // itself, independently of the box it is currently squeezed into.
+        rng.selectNodeContents(cell);
+        var text = rng.getBoundingClientRect().width;
+        var box = (parseFloat(cs.paddingLeft) || 0) + (parseFloat(cs.paddingRight) || 0)
+                + (parseFloat(cs.borderLeftWidth) || 0) + (parseFloat(cs.borderRightWidth) || 0);
+        need[i] = Math.max(need[i] || 0, Math.ceil(text + box) + 2);
+        i++;
+      });
+    });
+    tbl.classList.remove('measuring');
+
+    if (!need.length) return;
+
+    var apply = function () {
+      need.forEach(function (w, i) { tbl.style.setProperty('--c' + (i + 1), w + 'px'); });
+    };
+    apply();
+    tbl.classList.add('scrolls');
+
+    /* Measuring inline content inside a flex cell is not exact -- both
+     * scrollWidth and a Range come up a few pixels short depending on the
+     * engine. So rather than trust the measurement, look at what actually
+     * clipped once applied and widen those columns by the shortfall. Two
+     * passes settle it; the loop exits as soon as nothing is cut off. */
+    for (var pass = 0; pass < 3; pass++) {
+      var extra = [], clipped = false;
+      Array.prototype.forEach.call(rows, function (row) {
+        var i = 0;
+        Array.prototype.forEach.call(row.children, function (cell) {
+          if (getComputedStyle(cell).display === 'none') return;
+          var over = cell.scrollWidth - cell.clientWidth;
+          if (over > 0) { extra[i] = Math.max(extra[i] || 0, over + 1); clipped = true; }
+          i++;
+        });
+      });
+      if (!clipped) break;
+      need = need.map(function (w, i) { return w + (extra[i] || 0); });
+      apply();
+    }
   }
 
   /* A converted figure is indicative: the invoice is issued in EUR under
@@ -131,7 +260,78 @@
     });
   }
 
+  /* Converts a short HTML fragment such as the zoom-section statistics.
+   *
+   * Those mark the currency symbol up in its own <span> for the blue accent
+   * -- "<span>&euro;</span>0" in Dutch, "0<span> &euro;</span>" in French --
+   * which splits the symbol from the digits into two separate text nodes.
+   * The text-node walk above can never see an amount in that shape, so these
+   * are converted from the element's text as a whole and the symbol is put
+   * back inside its span, on whichever side it started.
+   *
+   * Exposed because the zoom stats are also rewritten on scroll, straight
+   * from the translation strings; app.js runs the value through this on the
+   * way in, so a converted figure is never overwritten with a euro one. */
+  state.money = function (html) {
+    var cur = state.currency;
+    var rate = cur === 'EUR' ? 1 : (state.rates && state.rates[cur]);
+    if (!rate || cur === 'EUR' || !html) return html;
+
+    var lang = document.documentElement.lang || 'nl';
+    // Any single wrapping tag, not just <span>: the pricing card marks the
+    // symbol up as <sup>, the zoom statistics as <span>.
+    var leadTag = String(html).match(/^<([a-zA-Z]+)>[^<]*<\/[a-zA-Z]+>/);
+    var trailTag = String(html).match(/<([a-zA-Z]+)>[^<]*<\/[a-zA-Z]+>$/);
+    var text = String(html).replace(/<[^>]*>/g, '');
+
+    var out = text.replace(amountPattern(lang), function (m, pre, a, b) {
+      var v = parseAmount(a || b, lang);
+      return v === null ? m : format(Math.round(v * rate), cur, lang);
+    });
+    if (out === text) return html;          // nothing to convert, e.g. "100%"
+
+    var m2, tag;
+    if (leadTag && (m2 = out.match(/^([^0-9]+)([0-9].*)$/))) {
+      tag = leadTag[1];
+      return '<' + tag + '>' + m2[1] + '</' + tag + '>' + m2[2];
+    }
+    if (trailTag && (m2 = out.match(/^(.*[0-9])([^0-9]+)$/))) {
+      tag = trailTag[1];
+      return m2[1] + '<' + tag + '>' + m2[2] + '</' + tag + '>';
+    }
+    return out;
+  };
+
+  /* The animated statistics count towards a number and rebuild their own
+   * text each frame, so they need the figure and the formatter separately
+   * rather than a finished string. formatAmount returns null for euro, which
+   * tells the caller to keep its own prefix+digits formatting. */
+  state.convertAmount = function (n) {
+    var cur = state.currency;
+    var rate = cur === 'EUR' ? 1 : (state.rates && state.rates[cur]);
+    return (!rate || cur === 'EUR') ? n : Math.round(n * rate);
+  };
+  state.formatAmount = function (n) {
+    var cur = state.currency;
+    if (cur === 'EUR' || !state.rates || !state.rates[cur]) return null;
+    return format(n, cur, document.documentElement.lang || 'nl');
+  };
+
   document.addEventListener('drp:langapplied', convert);
+
+  /* The column measurement above is only as good as the font in use when it
+   * runs, and the webfont arrives after first paint -- measuring in the
+   * fallback face gave columns a few pixels too narrow, which is exactly how
+   * wide the clipping was. Re-fit once the real font is in, and again on
+   * resize or orientation change. */
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { fitTable(); });
+  }
+  var refit;
+  addEventListener('resize', function () {
+    clearTimeout(refit);
+    refit = setTimeout(fitTable, 150);
+  }, { passive: true });
 
   /* ── boot ─────────────────────────────────────────────────────────── */
 
