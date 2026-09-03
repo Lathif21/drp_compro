@@ -11,11 +11,14 @@ navigation behaves like production.
     python serve.py 9000       # pick another port
 
 `netlify dev` is the authoritative preview: it reads _redirects and _headers
-directly, so it is the only way to check cache headers, the apex redirect or
-the legacy /diensten-style paths. This script is the zero-install fallback --
-it only mimics pretty URLs and the 404 page, and knows nothing about either
-config file. If the two ever disagree, Netlify is right.
+directly and runs the real edge functions, so it is the only way to check
+cache headers, the apex redirect, the legacy /diensten-style paths or live
+exchange rates. This script is the zero-install fallback -- it mimics pretty
+URLs, the 404 page, and stubs /api/geo and /api/rates so the country and
+currency features are testable offline. It knows nothing about either config
+file. If the two ever disagree, Netlify is right.
 """
+import json
 import os
 import sys
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -23,10 +26,48 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
+# Stand-ins for the two Netlify edge functions, so the country/currency
+# feature can be exercised without deploying. Set DRP_CC to pretend to be
+# somewhere else:  DRP_CC=US python serve.py
+#
+# Rates here are fixed, not fetched -- this keeps the preview server working
+# offline, and the exact figure does not matter for checking that conversion
+# and formatting behave. `netlify dev` runs the real functions.
+FAKE_CC = os.environ.get('DRP_CC', 'BE').upper()
+FAKE_LANG = {'BE': 'nl', 'NL': 'nl', 'FR': 'fr', 'ES': 'es', 'MX': 'es',
+             'GB': 'en', 'US': 'en', 'CA': 'en', 'AU': 'en', 'IE': 'en'}
+FAKE_CURRENCY = {'GB': 'GBP', 'US': 'USD', 'CA': 'CAD', 'AU': 'AUD',
+                 'CH': 'CHF', 'JP': 'JPY', 'SE': 'SEK', 'PL': 'PLN'}
+FAKE_RATES = {'USD': 1.0842, 'GBP': 0.8461, 'CHF': 0.9375, 'CAD': 1.4715,
+              'AUD': 1.6298, 'JPY': 162.9, 'SEK': 11.28, 'PLN': 4.995}
+
 
 class PrettyURLHandler(SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
         super().__init__(*a, directory=ROOT, **kw)
+
+    def _json(self, payload):
+        body = json.dumps(payload).encode('utf-8')
+        self.send_response(200)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Length', str(len(body)))
+        self.end_headers()
+        if self.command != 'HEAD':
+            self.wfile.write(body)
+
+    def do_GET(self):
+        route = self.path.split('?')[0]
+        if route == '/api/geo':
+            return self._json({
+                'country': FAKE_CC,
+                'region': None,
+                'lang': FAKE_LANG.get(FAKE_CC),
+                'currency': FAKE_CURRENCY.get(FAKE_CC, 'EUR'),
+            })
+        if route == '/api/rates':
+            return self._json({'base': 'EUR', 'rates': FAKE_RATES,
+                               'updated': None, 'stale': True})
+        return super().do_GET()
 
     def translate_path(self, path):
         full = super().translate_path(path)
