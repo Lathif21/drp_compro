@@ -52,12 +52,42 @@ directories are output. Anything you change in `gb/` is gone the next time
 the generator runs:
 
 ```powershell
-node tools/build-locales.js
+npm run build          # both stages, in order
 ```
 
-Run that after editing any page in `src/`, or after adding a market to
-`assets/markets.js`. It rewrites all 68 pages and
-regenerates `sitemap.xml`.
+Two stages, and the order matters:
+
+1. **`tools/build-locales.js` — structure.** Rewrites every market directory
+   from `src/`: URLs, canonical, hreflang, market-prefixed links, the market
+   picker, and the social tags in that market's language. Also regenerates
+   `sitemap.xml`.
+2. **`tools/prerender.js` — text.** Loads each generated page in headless
+   Chromium, lets the real `applyLang` translate it, and writes the result
+   back. This is what puts the translated copy *in the HTML* rather than
+   applying it after load.
+
+Stage 1 overwrites everything stage 2 did, so never run it alone unless you
+mean to drop back to untranslated HTML. `npm run build` runs both.
+
+Prerendering needs Chromium:
+
+```powershell
+npm install
+npx playwright install chromium     # once, if you have none
+```
+
+Run after editing a page in `src/`, changing a translation, or adding a
+market to `assets/markets.js`.
+
+### Why prerender
+
+Before it, every market page shipped Dutch body text under a `<html lang>`
+claiming otherwise -- `/jp/` told crawlers it was Japanese and handed them
+"Jouw bedrijf". The pages were indexable in structure but not in content.
+
+Prices are deliberately **not** prerendered: they stay in EUR in the HTML and
+convert client-side from live rates. Baking a converted figure would freeze
+one moment's exchange rate into a static file.
 
 The generated output is committed rather than built on Netlify. A build
 command is one more thing that can fail on deploy — this site has already

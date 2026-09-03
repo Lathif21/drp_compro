@@ -94,12 +94,27 @@ no build step on Netlify, deliberately, because a build command is one more
 thing that can fail on deploy.
 
 ```powershell
-node tools/build-locales.js
+npm run build
 ```
 
-Run it after changing any of the four source pages at the repo root, or after
-adding a market to `assets/markets.js`. It rewrites every market directory
-and regenerates `sitemap.xml`.
+Two stages: `build-locales.js` writes the structure, `prerender.js` bakes the
+translated text into the HTML. Stage one overwrites stage two, so run them in
+that order -- `npm run build` does.
+
+Run it after changing a page in `src/`, changing a translation, or adding a
+market to `assets/markets.js`.
+
+### Checking the prerender worked
+
+The point of prerendering is what a crawler sees, so test with JavaScript
+off (DevTools -> Settings -> Debugger -> Disable JavaScript, then reload):
+
+- `/jp/` should still show Japanese copy, `/de/` German, `/mx/` Spanish.
+  If a page falls back to Dutch with JS disabled, prerendering did not run
+  for it.
+- Prices **should** still read EUR with JS off. They are converted
+  client-side on purpose, so a static file never holds a stale exchange
+  rate.
 
 Adding a market is one line in `assets/markets.js` plus a rerun:
 

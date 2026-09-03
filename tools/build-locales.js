@@ -28,6 +28,9 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const MARKETS = require(path.join(ROOT, 'assets', 'markets.js'));
+const TRANSLATIONS = eval(
+  fs.readFileSync(path.join(ROOT, 'assets', 'i18n.js'), 'utf8') + ';TRANSLATIONS');
+const PAGE_KEY = { '': 'home', '/over-ons': 'about', '/prijzen': 'pricing', '/contact': 'contact' };
 const ORIGIN = 'https://drpbuildlab.com';
 
 const CODES = Object.keys(MARKETS).filter(k => k !== '__default');
@@ -93,6 +96,34 @@ function marketPicker(current, route) {
   ].join('\n');
 }
 
+
+/* The social tags, in the market's language. Kept in step with <title> and
+ * the meta description, which applyLang sets at runtime from these same
+ * keys -- otherwise a shared link previews in a different language from the
+ * page it opens. */
+function socialTags(html, code, route) {
+  const lang = MARKETS[code].lang;
+  const t = TRANSLATIONS[lang];
+  const key = PAGE_KEY[route];
+  const title = t['meta.title.' + key] || t['meta.title'];
+  const desc = t['meta.desc.' + key] || t['meta.desc'];
+  const alt = 'DRP BuildLab — ' + [t['hero.l1'], t['hero.l2']].filter(Boolean).join(' ');
+
+  const set = (attr, name, value) => {
+    const re = new RegExp('(<meta ' + attr + '="' + name + '" content=")[^"]*(")');
+    html = html.replace(re, '$1' + value.replace(/"/g, '&quot;') + '$2');
+  };
+
+  set('property', 'og:title', title);
+  set('property', 'og:description', desc);
+  set('property', 'og:image:alt', alt);
+  set('property', 'og:locale', lang + '_' + code.toUpperCase());
+  set('name', 'twitter:title', title);
+  set('name', 'twitter:description', desc);
+  set('name', 'twitter:image:alt', alt);
+  return html;
+}
+
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -106,6 +137,9 @@ function build(code, page) {
     `<link rel="canonical" href="${self}">`);
   html = html.replace(/<meta property="og:url" content="[^"]*">/,
     `<meta property="og:url" content="${self}">`);
+
+  // 2b. social tags in this market's language
+  html = socialTags(html, code, page.route);
 
   // 3. replace the existing hreflang pair with the full market set
   html = html.replace(/<link rel="alternate" hreflang="nl-be"[^>]*>\s*\n\s*<link rel="alternate" hreflang="x-default"[^>]*>/,

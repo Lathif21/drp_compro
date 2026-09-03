@@ -1,0 +1,196 @@
+#!/usr/bin/env node
+/*
+ * Bakes the translated text into the generated market pages.
+ *
+ *   node tools/build-locales.js     # structure: URLs, canonical, hreflang
+ *   node tools/prerender.js         # text: this script
+ *
+ * Run the two in that order. build-locales.js rewrites the market
+ * directories from src/, which throws away anything this script did, so
+ * prerender always runs second.
+ *
+ * Why a browser rather than translating in Node: applyLang() in app.js maps
+ * 126 translation keys onto the DOM through a long list of selectors. Any
+ * reimplementation here would be a second copy of that mapping, and the two
+ * would drift the first time somebody edited one of them. Loading the page
+ * and letting the real applyLang run means the output is by construction
+ * whatever the site would have shown anyway.
+ *
+ * Before this, every market page shipped Dutch body text with a <html lang>
+ * claiming otherwise -- /jp/ told crawlers it was Japanese and handed them
+ * "Jouw bedrijf". The pages were indexable in structure but not in content.
+ *
+ * Requires playwright-core and a Chromium build:
+ *   npm install
+ *   npx playwright install chromium      (once, if you have no Chromium yet)
+ *
+ * Netlify never runs this. The output is committed, like build-locales.js.
+ */
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const http = require('http');
+const { chromium } = require('playwright-core');
+
+const ROOT = path.resolve(__dirname, '..');
+const MARKETS = require(path.join(ROOT, 'assets', 'markets.js'));
+const CODES = Object.keys(MARKETS).filter(k => k !== '__default');
+const ROUTES = ['', '/over-ons', '/prijzen', '/contact'];
+// Checked after each render: if applyLang did not run, the page would be
+// written back still in Dutch and the bug would look fixed.
+const LANG_OF = Object.fromEntries(CODES.map(c => [c, MARKETS[c].lang]));
+
+/* Proof that the translation actually ran, without which a page that failed
+ * to translate would be written back in Dutch -- the bug this script exists
+ * to fix. The title is the right thing to assert on: applyLang sets it on
+ * every page and it differs per language, where a nav label like "Home" is
+ * identical in Dutch and English and would prove nothing. */
+const TRANSLATIONS = eval(
+  fs.readFileSync(path.join(ROOT, 'assets', 'i18n.js'), 'utf8') + ';TRANSLATIONS');
+const PAGE_KEY = { '': 'home', '/over-ons': 'about', '/prijzen': 'pricing', '/contact': 'contact' };
+
+function expectedTitle(lang, route) {
+  const t = TRANSLATIONS[lang];
+  return t['meta.title.' + PAGE_KEY[route]] || t['meta.title'];
+}
+const PORT = 8123;
+
+/* Chromium locations playwright-core will not find on its own, because the
+ * package here is intentionally the "core" one with no bundled browser. */
+function findChromium() {
+  if (process.env.CHROMIUM_PATH) return process.env.CHROMIUM_PATH;
+  const home = process.env.USERPROFILE || process.env.HOME || '';
+  const candidates = [
+    path.join(home, 'AppData/Local/ms-playwright'),
+    path.join(home, '.cache/ms-playwright'),
+  ];
+  for (const base of candidates) {
+    if (!fs.existsSync(base)) continue;
+    for (const dir of fs.readdirSync(base)) {
+      if (!dir.startsWith('chromium-')) continue;
+      for (const rel of ['chrome-win64/chrome.exe', 'chrome-win/chrome.exe',
+                         'chrome-linux/chrome', 'chrome-mac/Chromium.app/Contents/MacOS/Chromium']) {
+        const p = path.join(base, dir, rel);
+        if (fs.existsSync(p)) return p;
+      }
+    }
+  }
+  return null;
+}
+
+/* A static server over the repo, so the pages load their real assets by the
+ * same absolute paths they use in production. */
+const TYPES = {
+  '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8', '.json': 'application/json',
+  '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon',
+  '.webmanifest': 'application/manifest+json',
+};
+
+function serve() {
+  return http.createServer((req, res) => {
+    const url = decodeURIComponent(req.url.split('?')[0]);
+    // Rates are deliberately unavailable: prices must stay in EUR in the
+    // committed HTML. Baking a converted figure would freeze one moment's
+    // exchange rate into a static file and quietly go stale.
+    if (url.startsWith('/api/')) { res.writeHead(503).end('{}'); return; }
+    let file = path.join(ROOT, url);
+    if (!path.extname(file)) file = path.join(file, 'index.html');
+    if (!fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404).end(); return; }
+    res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream' });
+    fs.createReadStream(file).pipe(res);
+  });
+}
+
+/* Everything app.js and locale.js write at runtime that must NOT end up in a
+ * static file: reveal state, animation transforms, the webfont override, and
+ * the comparison table's column widths, which are measured from the viewport
+ * this render happened to use. */
+function stripRuntimeState() {
+  document.querySelectorAll('.rv.vv').forEach(el => el.classList.remove('vv'));
+  document.body.classList.remove('scta-on');
+  document.querySelectorAll('.scta.on').forEach(el => el.classList.remove('on'));
+  document.querySelectorAll('[data-counted]').forEach(el => el.removeAttribute('data-counted'));
+
+  const zoom = document.getElementById('zoomInner');
+  if (zoom) { zoom.style.removeProperty('transform'); zoom.style.removeProperty('opacity'); }
+  const mq = document.getElementById('mqTrack');
+  if (mq) mq.style.removeProperty('transform');
+
+  // Webfont stack is applied per language at runtime; leaving it inline would
+  // pin it before the font has loaded.
+  document.body.style.removeProperty('font-family');
+
+  const tbl = document.querySelector('.ctbl');
+  if (tbl) {
+    tbl.classList.remove('scrolls', 'measuring');
+    ['--c1', '--c2', '--c3', '--c4'].forEach(v => tbl.style.removeProperty(v));
+    if (!tbl.getAttribute('style')) tbl.removeAttribute('style');
+  }
+  document.querySelectorAll('.cur-note').forEach(el => el.remove());
+  document.querySelectorAll('[style=""]').forEach(el => el.removeAttribute('style'));
+}
+
+(async () => {
+  const exe = findChromium();
+  if (!exe) {
+    console.error('No Chromium found. Set CHROMIUM_PATH, or run:\n  npx playwright install chromium');
+    process.exit(1);
+  }
+
+  const server = serve();
+  await new Promise(r => server.listen(PORT, '127.0.0.1', r));
+  const browser = await chromium.launch({ executablePath: exe });
+  // Wide viewport so the comparison table never enters its scrolling mode
+  // during the render; reduced motion so reveals settle without animating.
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 1200 }, reducedMotion: 'reduce' });
+  // One page for the whole run: opening sixty-eight was enough for Chromium
+  // to crash a target partway through.
+  const page = await ctx.newPage();
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message.slice(0, 80)));
+
+  let done = 0, failed = 0;
+  for (const code of CODES) {
+    for (const route of ROUTES) {
+      const rel = path.join(code, route.replace(/^\//, ''), 'index.html');
+      const dest = path.join(ROOT, rel);
+      if (!fs.existsSync(dest)) { console.log('  skip (missing) ' + rel); continue; }
+
+      errors.length = 0;
+      try {
+        // domcontentloaded, not networkidle: the webfonts and the marquee's
+        // animation loop keep the page permanently "busy", so networkidle
+        // never fires. The scripts are deferred, so applyLang has already run
+        // by this point anyway.
+        await page.goto(`http://127.0.0.1:${PORT}/${code}${route || '/'}`,
+          { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+        // Wait for the translation itself rather than a timeout, and fail
+        // loudly if it never lands.
+        const title = expectedTitle(LANG_OF[code], route);
+        await page.waitForFunction(
+          expected => document.title === expected, title, { timeout: 15000 });
+
+        const lang = await page.evaluate(() => document.documentElement.lang);
+        if (lang !== LANG_OF[code]) throw new Error(`lang came out ${lang}`);
+
+        await page.evaluate(stripRuntimeState);
+        const html = await page.evaluate(() => '<!DOCTYPE html>\n' + document.documentElement.outerHTML);
+        fs.writeFileSync(dest, html, 'utf8');
+        done++;
+        if (errors.length) console.log('  note ' + rel + ': ' + errors[0]);
+      } catch (err) {
+        failed++;
+        console.error('  FAILED ' + rel + ': ' + err.message);
+      }
+    }
+    process.stdout.write('.');
+  }
+
+  await browser.close();
+  server.close();
+  console.log(`\nprerendered ${done} pages` + (failed ? `, ${failed} FAILED` : ''));
+  process.exit(failed ? 1 : 0);
+})();
