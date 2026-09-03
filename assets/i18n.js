@@ -79,7 +79,7 @@ nl:{
   'f.err.h':'Verzenden is niet gelukt.','f.err.p':'Er ging iets mis bij het versturen. Probeer het opnieuw, of bereik ons rechtstreeks via <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a> of <a href="https://wa.me/32473744431" target="_blank" rel="noopener">WhatsApp</a>.',
   'ft.tag':'Professionele websites voor lokale bedrijven · Volledig op maat',
   'ft.nav':['Navigatie','Home','Over ons','Prijzen','Contact'],
-  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Beenhouwersstraat 32/1, 1000 Brussel, België · BTW BE 1033.313.383','ft.ig':'Volg ons',
+  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, België · BTW BE 1033.313.383','ft.ig':'Volg ons',
   'wa':'WhatsApp ons'
 },
 en:{
@@ -154,7 +154,7 @@ en:{
   'f.err.h':'Sending failed.','f.err.p':'Something went wrong while sending. Please try again, or reach us directly at <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a> or on <a href="https://wa.me/32473744431" target="_blank" rel="noopener">WhatsApp</a>.',
   'ft.tag':'Professional websites for local businesses · Fully custom',
   'ft.nav':['Navigation','Home','About us','Pricing','Contact'],
-  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Beenhouwersstraat 32/1, 1000 Brussels, Belgium · VAT BE 1033.313.383','ft.ig':'Follow us',
+  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgium · VAT BE 1033.313.383','ft.ig':'Follow us',
   'wa':'WhatsApp us'
 },
 fr:{
@@ -229,7 +229,7 @@ fr:{
   'f.err.h':'L\'envoi a échoué.','f.err.p':'Une erreur est survenue lors de l\'envoi. Réessayez, ou contactez-nous directement à <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a> ou via <a href="https://wa.me/32473744431" target="_blank" rel="noopener">WhatsApp</a>.',
   'ft.tag':'Sites web professionnels pour entreprises locales · Entièrement sur mesure',
   'ft.nav':['Navigation','Accueil','À propos','Tarifs','Contact'],
-  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Beenhouwersstraat 32/1, 1000 Bruxelles, Belgique · TVA BE 1033.313.383','ft.ig':'Suivez-nous',
+  'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgique · TVA BE 1033.313.383','ft.ig':'Suivez-nous',
   'wa':'WhatsApp nous'
 },
 es:{
@@ -304,7 +304,7 @@ es:{
   'f.err.h':'El envío ha fallado.','f.err.p':'Algo salió mal al enviar. Inténtalo de nuevo o contáctanos directamente en <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a> o por <a href="https://wa.me/32473744431" target="_blank" rel="noopener">WhatsApp</a>.',
   'ft.tag':'Sitios web profesionales para negocios locales · Completamente a medida',
   'ft.nav':['Navegación','Inicio','Sobre nosotros','Precios','Contacto'],
-  'ft.ct':'Contacto','ft.copy':'© 2026 DRP BuildLab · Beenhouwersstraat 32/1, 1000 Bruselas, Bélgica · IVA BE 1033.313.383','ft.ig':'Síguenos',
+  'ft.ct':'Contacto','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · IVA BE 1033.313.383','ft.ig':'Síguenos',
   'wa':'Escríbenos por WhatsApp'
 }
 };
