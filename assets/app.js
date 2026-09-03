@@ -625,17 +625,22 @@ if(langSwEl) langSwEl.addEventListener('click',e=>{
 /* Precedence: an explicit click always wins, then the country the edge
    resolved, then the browser's own preference, then Dutch. A visitor who
    has chosen a language is never overridden by where they happen to be. */
-function pickLang(geoLang){
+function pickLang(marketLang){
+  /* The market in the URL wins outright. /jp/prijzen is the Japanese page --
+   * a stored preference from an earlier visit to /be/ must not turn it back
+   * into Dutch, because the URL is what the visitor and any crawler were
+   * promised. Browser language is only consulted if the market somehow
+   * resolved to nothing. */
+  if(marketLang&&TRANSLATIONS[marketLang]) return marketLang;
   const saved=localStorage.getItem('drp-lang');
   if(saved&&TRANSLATIONS[saved]) return saved;
-  if(geoLang&&TRANSLATIONS[geoLang]) return geoLang;
   const br=(navigator.language||navigator.userLanguage||'nl').toLowerCase();
-  return ['en','fr','es'].find(l=>br.startsWith(l))||'nl';
+  return Object.keys(TRANSLATIONS).find(l=>br.startsWith(l))||'nl';
 }
 
 (function initLang(){
-  // Paint with what is already known -- a cached country, else the browser --
-  // so the page does not visibly change language a beat after it loads.
+  // The market is known synchronously from the page, so the first paint is
+  // already the right language -- there is no geo round-trip to wait for.
   const L=window.DRP_LOCALE||{};
   applyLang(pickLang(L.lang),false);
 

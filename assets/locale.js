@@ -1,11 +1,15 @@
-/* DRP BuildLab — visitor locale: country-driven language, live currency.
+/* DRP BuildLab -- market locale and live currency.
  *
- * Two edge endpoints feed this: /api/geo (country, from Netlify's own edge,
- * no third-party lookup) and /api/rates (ECB-derived EUR rates, cached an
- * hour). Both are optional -- if either is unreachable the page keeps the
- * Dutch/browser language and EUR prices it was authored with.
+ * The market comes from the URL: /gb/prijzen is the United Kingdom, English,
+ * priced in pounds, for anyone who opens that link. Language and currency are
+ * both properties of the market (assets/markets.js), which is why the UK and
+ * the US can share a language at different currencies.
  *
- * Prices live inside translated sentences ("...kost €29 per maand..."), not
+ * One endpoint feeds this: /api/rates (EUR rates, cached an hour at the
+ * edge). If it is unreachable, prices stay in EUR -- the currency invoicing
+ * happens in anyway -- rather than showing a figure from a stale rate.
+ *
+ * Prices live inside translated sentences ("...kost EUR29 per maand..."), not
  * in dedicated elements, so conversion works over text nodes. Every node it
  * touches is snapshotted first and restored before each re-run, because the
  * language switcher re-renders some text and leaves the rest -- converting a
@@ -33,32 +37,43 @@
   var SEP_CLASS = '.,\u00a0\u202f ';
   var SEP_RE = /[.,\u00a0\u202f ]/g;
 
-  /* One currency per language. The site invoices in EUR, so every European
-   * language stays in EUR and shows no conversion at all; the rest convert
-   * and carry the "indicative" note. English is the international page and
-   * uses USD -- change it here if that should be EUR instead, it is the one
-   * genuinely arguable entry in this table. */
-  var LANG_CURRENCY = {
-    nl: 'EUR', fr: 'EUR', es: 'EUR', de: 'EUR',
-    en: 'USD', id: 'IDR', ja: 'JPY',
-  };
+  /* The market is stated by the URL -- /gb/prijzen is the United Kingdom,
+   * in English, priced in pounds, for whoever opens it. Reading it from the
+   * page rather than geo-detecting per request is what makes a shared link
+   * mean the same thing to the person who receives it.
+   *
+   * __DRP_MARKET__ is written into each generated page; the path is parsed
+   * as a fallback so a hand-edited or proxied page still resolves. */
+  function resolveMarket() {
+    var M = window.DRP_MARKETS || {};
+    var fromPage = window.__DRP_MARKET__;
+    if (fromPage && M[fromPage]) return fromPage;
+    var seg = (location.pathname.split('/')[1] || '').toLowerCase();
+    if (M[seg]) return seg;
+    return M.__default || 'be';
+  }
 
-  var state = { country: null, lang: null, rates: null, stale: false };
+  var state = { market: null, lang: null, rates: null, stale: false };
 
-  /* Derived, never stored. Currency used to be read from /api/geo and kept in
-   * a field, which meant a language change did not touch it -- switching to
-   * Dutch on an Indonesian IP left the prices in rupiah. Deriving it from the
-   * language on every read makes that state impossible to reach. */
+  // Exposed for app.js (which reads currency when painting figures) and for
+  // the test suites. Dropped accidentally in the move to markets.
+  window.DRP_LOCALE = state;
+
+  /* Derived, never stored. Currency used to be read from /api/geo into a
+   * field that a language change did not touch, which left Dutch copy priced
+   * in rupiah for anyone whose IP resolved to Indonesia. Deriving it makes
+   * that state unreachable. */
   Object.defineProperty(state, 'currency', {
     enumerable: true,
     get: function () {
-      var c = LANG_CURRENCY[document.documentElement.lang] || 'EUR';
+      var M = window.DRP_MARKETS || {};
+      var m = M[state.market];
+      var c = (m && m.currency) || 'EUR';
       // A currency the rate feed does not quote is not one we can price in.
       if (c !== 'EUR' && (!state.rates || !state.rates[c])) return 'EUR';
       return c;
     },
   });
-  window.DRP_LOCALE = state;
 
   var snap = new WeakMap();
 
@@ -87,11 +102,16 @@
    * "$541", not en-GB's "US$541". Intl falls back sensibly for combinations
    * that are not real locales (en-JP resolves to English with yen). */
   function fmtLocale(lang) {
-    // Language decides this outright. It used to be qualified with the
-    // visitor's country, which was coherent while currency came from geo --
-    // but with currency following language, en on an Indonesian IP resolved
-    // to en-ID and rendered USD with Indonesian grouping: "US$8.656".
-    return LOCALES[lang] || LOCALES.nl;
+    /* Qualified with the market, not just the language: en-SG renders SGD as
+       "S$735" and en-CA renders CAD as "CA$802", where a bare en-US would
+       print "SGD 735". The market is exactly the region half of a locale tag,
+       which is what makes this correct rather than a guess. */
+    var base = LOCALES[lang] || LOCALES.nl;
+    if (!state.market) return base;
+    var tag = lang + '-' + state.market.toUpperCase();
+    try {
+      return Intl.NumberFormat.supportedLocalesOf(tag).length ? tag : base;
+    } catch (e) { return base; }
   }
 
   function format(value, currency, lang) {
@@ -362,35 +382,18 @@
 
   /* ── boot ─────────────────────────────────────────────────────────── */
 
-  // A previously-seen country is applied immediately so a returning visitor
-  // does not watch the page change language a beat after it paints; the live
-  // lookup below still runs and corrects it if they have moved.
-  try {
-    var cached = JSON.parse(localStorage.getItem('drp-geo') || 'null');
-    if (cached && cached.country) {
-      state.country = cached.country;
-      state.lang = cached.lang;
-    }
-  } catch (e) { /* private mode, or corrupt value: fall through to defaults */ }
+  state.market = resolveMarket();
+  var M = window.DRP_MARKETS || {};
+  state.lang = (M[state.market] && M[state.market].lang) || null;
 
-  var geo = get('/api/geo').then(function (g) {
-    state.country = g.country;
-    state.lang = g.lang;
-    try { localStorage.setItem('drp-geo', JSON.stringify(g)); } catch (e) {}
-    return g;
-  }).catch(function () { return null; });
-
-  // Fetched unconditionally and in parallel with the country: which currency
-  // is needed is not known until /api/geo answers, and gating on the cached
-  // value meant a first-time visitor never loaded rates at all. The response
-  // is edge-cached and about a kilobyte, so the parallel request is free.
-  var rates = get('/api/rates').catch(function () { return null; });
-
-  window.DRP_LOCALE_READY = Promise.all([geo, rates]).then(function (r) {
-    var rt = r[1];
-    if (rt && rt.rates) { state.rates = rt.rates; state.stale = !!rt.stale; }
-    // The EUR fallback for an unquoted currency now lives in the getter, so
-    // it applies on every read rather than once at boot.
-    return state;
-  });
+  /* Rates only. The country lookup is gone from the page entirely: the market
+   * decides language and currency, and Netlify's _redirects handles the one
+   * place geo still matters -- choosing where to send a bare "/". That is one
+   * fewer request per pageview, and no per-visitor data reaches the client. */
+  window.DRP_LOCALE_READY = get('/api/rates')
+    .then(function (rt) {
+      if (rt && rt.rates) { state.rates = rt.rates; state.stale = !!rt.stale; }
+      return state;
+    })
+    .catch(function () { return state; });
 })();

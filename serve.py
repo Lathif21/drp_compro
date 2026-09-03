@@ -122,6 +122,27 @@ except Exception as exc:                                  # noqa: BLE001
 
 FAKE_CC = _CC_ARG
 
+# The market table, read from assets/markets.js rather than duplicated, so a
+# market added there is immediately reachable here too.
+MARKETS = {}
+MARKET_DEFAULT = 'be'
+try:
+    with open(os.path.join(ROOT, 'assets', 'markets.js'), encoding='utf-8') as fh:
+        _m = fh.read()
+    for _code, _lang, _cur in _re.findall(
+            r"(\w{2}):\s*\{\s*lang:\s*'(\w+)',\s*currency:\s*'(\w+)'", _m):
+        MARKETS[_code] = {'lang': _lang, 'currency': _cur}
+    _d = _re.search(r"__default:\s*'(\w+)'", _m)
+    if _d:
+        MARKET_DEFAULT = _d.group(1)
+except Exception as _exc:                                 # noqa: BLE001
+    pass
+
+
+def _market_for(cc):
+    """Which market a bare '/' should land on, mirroring the Country rules."""
+    return cc.lower() if cc.lower() in MARKETS else MARKET_DEFAULT
+
 # --lock (or DRP_LOCK_GEO=1) makes the country the only thing that decides the language,
 # for testing. A stored language beats detection by design -- that is what
 # stops a visitor's own choice being overridden by where they are -- but it
@@ -287,6 +308,15 @@ class PrettyURLHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         route = self.path.split('?')[0]
+        # Production's _redirects sends "/" to a market based on Country.
+        # Same here, so the pre-market source page is unreachable in both.
+        if route == '/' and MARKETS:
+            target = '/%s/' % _market_for(FAKE_CC)
+            self.send_response(302)
+            self.send_header('Location', target)
+            self.send_header('Content-Length', '0')
+            self.end_headers()
+            return
         if route == '/api/geo':
             return self._json({
                 'country': FAKE_CC,
@@ -352,7 +382,9 @@ class PrettyURLHandler(SimpleHTTPRequestHandler):
 
 if __name__ == '__main__':
     print('DRP BuildLab preview  ->  http://127.0.0.1:%d' % PORT)
-    print('  /            home')
+    print('  /            -> /%s/  (market for --cc=%s)' % (_market_for(FAKE_CC), FAKE_CC))
+    print('  /<market>/   %d markets: %s'
+          % (len(MARKETS), ' '.join(sorted(MARKETS)) or '(markets.js not parsed)'))
     print('  /over-ons    about us')
     print('  /prijzen     pricing')
     print('  /contact     contact')

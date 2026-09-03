@@ -1,339 +1,174 @@
-# Testing the country and currency features locally
+# Testing the market localisation
 
-The site picks a language from the visitor's country and converts every price
-into their currency. Both depend on two endpoints, `/api/geo` and
-`/api/rates`, which are **Netlify edge functions**. They do not exist as
-files, so a plain static server returns 404 for them and you see the fallback
-— Dutch, euro — rather than the feature.
+Every page lives under a market: `/be/prijzen`, `/gb/prijzen`, `/jp/prijzen`.
+A market carries **both** a language and a currency, which is what lets
+`/gb/` and `/us/` share English at different prices — the same structure
+nike.com/gb/ and nike.com/mx/ use.
 
-`serve.py` stubs both, so the whole thing is testable offline.
+The market is stated by the URL, so a link means the same thing to whoever
+opens it. Someone in Jakarta opening `/gb/prijzen` sees the British page in
+pounds, because that is what the link says.
 
 ---
 
 ## Start here
 
 ```powershell
-python serve.py --cc=US --lock
+python serve.py
 ```
 
-Open <http://127.0.0.1:8000>. You should see the site **in English with
-dollar prices**, and a small black `DEV geo-lock` badge bottom-left telling
-you which country is being simulated.
+Then open <http://127.0.0.1:8000/be/> and change the segment: `/gb/`,
+`/jp/`, `/mx/`, `/id/`. No flags needed — the URL is the whole input.
 
-If that works, everything works. Change `--cc=` to test anywhere.
-
-### Why not `DRP_CC=US python serve.py`
-
-That is bash syntax and **fails in PowerShell**. The flags above work in every
-shell, which is why they exist. The environment variables still work if you
-want them:
+A bare `/` redirects to a market. Locally `--cc` picks which one, standing
+in for the `Country` rules Netlify uses in production:
 
 ```powershell
-$env:DRP_CC = "US"; python serve.py     # PowerShell
-set DRP_CC=US && python serve.py        # cmd.exe
-DRP_CC=US python serve.py               # bash / Git Bash
+python serve.py --cc=GB     #  /  ->  /gb/
+python serve.py --cc=JP     #  /  ->  /jp/
+python serve.py             #  /  ->  /be/   (the default market)
 ```
 
 ---
 
-## The flags
+## The markets
 
-| Flag | Meaning |
-|---|---|
-| `--cc=XX` | Pretend the visitor is in country `XX`. Any ISO code, e.g. `--cc=ID`. Default `BE`. |
-| `--lock` | Hide the language switcher and clear any stored language, so the country is the **only** input. |
-| `--draft` | Also serve the machine translations from `assets/i18n.draft.js`, and load a CJK/Arabic font so they render properly. |
-| `8080` | A bare number sets the port. Default 8000. |
+| URL | Market | Language | Currency |
+|---|---|---|---|
+| `/be/` | België | nl | EUR |
+| `/nl/` | Nederland | nl | EUR |
+| `/fr/` | France | fr | EUR |
+| `/lu/` | Luxembourg | fr | EUR |
+| `/ch/` | Suisse | fr | CHF |
+| `/de/` | Deutschland | de | EUR |
+| `/at/` | Österreich | de | EUR |
+| `/es/` | España | es | EUR |
+| `/gb/` | United Kingdom | en | GBP |
+| `/ie/` | Ireland | en | EUR |
+| `/us/` | United States | en | USD |
+| `/ca/` | Canada | en | CAD |
+| `/mx/` | México | es | MXN |
+| `/id/` | Indonesia | id | IDR |
+| `/jp/` | 日本 | ja | JPY |
+| `/sg/` | Singapore | en | SGD |
+| `/au/` | Australia | en | AUD |
 
-`python serve.py --help` prints the same.
+17 markets, 7 languages,
+10 currencies.
 
-### Reviewing a machine translation
+Languages shared across markets at different currencies: **nl** in `/be/`, `/nl/`; **fr** in `/fr/`, `/lu/`, `/ch/`; **de** in `/de/`, `/at/`; **es** in `/es/`, `/mx/`; **en** in `/gb/`, `/ie/`, `/us/`, `/ca/`, `/sg/`, `/au/`.
 
-Generated languages live in `assets/i18n.draft.js` and **no page loads that
-file** — they are drafts, not translations, until someone has read them. But a
-translation you cannot see is a translation you cannot review, so the dev
-server can serve them without promoting anything:
+That sharing is the reason for the market model. Binding currency to language
+instead would force every English market onto one currency, and the UK would
+be priced in dollars.
 
-```powershell
-python serve.py --cc=JP --lock --draft     # the Japanese draft, in Japanese
-python serve.py --cc=ID --lock --draft     # the Indonesian draft
-```
-
-Without `--draft` those same commands show **English**, and correctly so:
-`geo.js` routes every country to one of the four real languages, and a draft
-is not a real language yet.
-
-Two things `--draft` does beyond loading the file:
-
-- **Loads Noto** for CJK, Arabic, Hebrew, Thai and Devanagari. Plus Jakarta
-  Sans has none of those glyphs, so without it Japanese falls back to whatever
-  the OS provides and you would be reviewing the wrong typography entirely.
-  Noto is appended to the stack, so Latin text keeps the brand face.
-- **Flips `dir="rtl"`** for Arabic and Hebrew drafts.
-
-Generate more languages with `node tools/translate.js --langs=xx` — see
-`--help` on that script. Once a draft is signed off, move its block from
-`i18n.draft.js` into `i18n.js` and map the country in `geo.js`; only then does
-it reach real visitors.
-
-### Why `--lock` matters
-
-A language you have *clicked* deliberately beats the detected country — that
-is intentional, so a Belgian on holiday in Spain is not forced into Spanish.
-But it also means **one click on the switcher pins your language forever**,
-and from then on `--cc=` appears to do nothing at all.
-
-That is almost certainly what "I can't check this" looks like. `--lock` clears
-the stored choice on every load and hides the switcher, so you always see what
-a first-time visitor from that country would see.
-
-Use `--lock` while testing. Drop it to test the switcher itself.
+Defined in `assets/markets.js`, read by both the page and the generator.
 
 ---
 
-## Every language, and how to reach it
+## What to check
 
-There are two kinds. **Live** languages are written or reviewed by a human,
-sit in `i18n.js`, and real visitors get them. **Drafts** are unreviewed
-machine translations in `assets/i18n.draft.js`; no page loads that file and
-only `--draft` shows them locally. Nothing is currently in draft — the three
-languages that were sitting there (German, Indonesian, Japanese) were
-promoted on 2026-09-03 and are live below.
-
-### Live — seven languages, real visitors see these
-
-| Language | Reached from | Test |
-|---|---|---|
-| Dutch `nl` | Belgium, Netherlands, Suriname, Aruba, Curacao, Sint Maarten, Caribbean NL | `python serve.py --cc=BE --lock` |
-| French `fr` | France, Monaco, Luxembourg, Switzerland, Haiti, overseas France, francophone Africa, Maghreb — 42 countries | `python serve.py --cc=FR --lock` |
-| Spanish `es` | Spain and Latin America — 21 countries | `python serve.py --cc=ES --lock` |
-| German `de` | Germany, Austria | `python serve.py --cc=DE --lock` |
-| Indonesian `id` | Indonesia | `python serve.py --cc=ID --lock` |
-| Japanese `ja` | Japan | `python serve.py --cc=JP --lock` |
-| English `en` | **every other country on earth** | `python serve.py --cc=US --lock` |
-
-English is the fallback, not a region: Brazil, India and most of the world
-get English because the site has no copy in their language yet. That is the
-behaviour to change by drafting and promoting a language, not a bug.
-
-No `--draft` flag is needed for German, Indonesian or Japanese any more —
-they resolve the same way nl/fr/es/en always have, straight out of
-`LANG_COUNTRIES` in `geo.js`.
-
-### Japanese needs a font, and gets one automatically
-
-Plus Jakarta Sans has no CJK glyphs. Rather than always loading a second
-font for every visitor, `app.js` fetches Noto Sans JP only when
-`applyLang` actually sets `lang="ja"` — a Dutch, English, French, Spanish,
-German or Indonesian visitor never requests it. Check this rather than
-assume it:
-
-```powershell
-python serve.py --cc=JP --lock
-```
-
-Open DevTools → Network → filter `fonts` before loading the page. You
-should see a `Noto+Sans+JP` request only when the resolved language is
-Japanese, and the hero should read 貴社の事業 in real Noto glyphs, not a
-system fallback with mismatched weight.
-
-### Drafts — machine translated, need `--draft`, not yet reviewed
-
-None currently generated. Produce one with the translation pipeline:
-
-```powershell
-node tools/translate.js --langs=ko        # generate (merges with any existing drafts)
-python serve.py --cc=KR --lock --draft    # review it locally
-```
-
-Drop `--draft` and you get English (or Dutch/French/Spanish/German/
-Indonesian/Japanese if the country maps to one of those) — which is exactly
-what production does today, and exactly why a draft needs the flag to be
-seen at all: an unreviewed translation must not be one accidental flag away
-from what a real visitor sees.
-
-### Countries wired for a draft
-
-Generate any of these with `node tools/translate.js --langs=xx` and the
-matching `--cc=` immediately previews it with `--draft`. Nothing else is
-needed until it is reviewed and promoted.
-
-| Code | Language | Test with `--cc=` |
-|---|---|---|
-| `ar` | Arabic *(RTL)* | AE EG JO KW QA SA |
-| `cs` | Czech | CZ |
-| `da` | Danish | DK |
-| `el` | Greek | GR |
-| `fi` | Finnish | FI |
-| `he` | Hebrew *(RTL)* | IL |
-| `hi` | Hindi | IN |
-| `hu` | Hungarian | HU |
-| `it` | Italian | IT |
-| `ko` | Korean | KR |
-| `nb` | Norwegian | NO |
-| `pl` | Polish | PL |
-| `pt` | Portuguese | BR PT |
-| `ro` | Romanian | RO |
-| `ru` | Russian | RU |
-| `sv` | Swedish | SE |
-| `th` | Thai | TH |
-| `tr` | Turkish | TR |
-| `uk` | Ukrainian | UA |
-| `vi` | Vietnamese | VN |
-| `zh` | Chinese | CN HK TW |
-
-DeepL can target **110 languages**; run `node tools/translate.js --list` for
-the full set. Anything not in the table above needs a line adding to
-`DRAFT_CC` in `serve.py` before `--cc=` can preview it.
-
-### Adding a language, start to finish
-
-```powershell
-node tools/translate.js --langs=ko        # generate (keeps existing drafts)
-python serve.py --cc=KR --lock --draft    # review it
-```
-
-Then, once someone who reads the language has signed it off:
-
-1. Move the `ko` block out of `assets/i18n.draft.js` into `TRANSLATIONS`
-   in `assets/i18n.js`.
-2. Add `ko: ['KR']` to `LANG_COUNTRIES` in `netlify/edge-functions/geo.js`
-   — one map, not a new array and a new `if`.
-3. Add a switcher button to the `.lang-sw` block on all four pages.
-4. If the language needs glyphs Plus Jakarta Sans does not have (CJK,
-   Arabic, Hebrew, Thai, Devanagari), add it to the `WEBFONT_FAMILY` /
-   `WEBFONT_HREF` maps at the top of `applyLang` in `assets/app.js` —
-   the pattern Japanese already uses. Fetched only when that language is
-   actually resolved, not on every pageview.
-5. Delete the `KR` line from `DRAFT_CC` in `serve.py` — it is now live,
-   so the parser in `_load_geo_tables()` finds it in `geo.js` directly and
-   the draft-preview override would only hide a real bug if one existed.
-6. Remove the `ko` block from `assets/i18n.draft.js` (or delete the file
-   if nothing else is still in draft).
-
-### Currency is separate from language
-
-They are decided independently, so a country can get English with local
-prices — Brazil and India both do. Spot-check a spread:
-
-```powershell
-python serve.py --cc=BE --lock     # Dutch      €499
-python serve.py --cc=FR --lock     # French     499 €           eurozone, no conversion
-python serve.py --cc=ES --lock     # Spanish    499 €           eurozone, no conversion
-python serve.py --cc=DE --lock     # German     €499
-python serve.py --cc=ID --lock     # Indonesian Rp 10.258.941
-python serve.py --cc=JP --lock     # Japanese   ￥91,816
-python serve.py --cc=US --lock     # English    $578
-python serve.py --cc=GB --lock     # English    £429
-python serve.py --cc=CH --lock     # French     470 CHF
-python serve.py --cc=MX --lock     # Spanish    $9,820
-python serve.py --cc=IN --lock     # English    ₹54,890         lakh grouping: 8,22,030
-python serve.py --cc=BR --lock     # English    R$2,970
-python serve.py --cc=NG --lock     # English    ₦778,440
-```
-
-Figures come from a fixed rate snapshot in `serve.py`, so they will not match
-today's real rates. Production fetches live ones.
-
-### The four things worth checking
-
-1. **Language follows the country.** Germany and Japan get *English* without
-   `--draft` — the site has four live languages and routes every country to
-   the closest one that exists.
-2. **Prices convert everywhere**, not just the headline: the pricing cards,
-   the comparison table, the cost-calculation box, the FAQ answers, the
-   sticky mobile bar, and the big statistics in the scroll-zoom section.
-   That last one is worth scrolling slowly through — it shows three figures
-   in turn and each is re-rendered as you pass it, so a currency bug there
-   only appears once you scroll rather than on load.
-3. **A note appears under the prices** whenever the currency is not EUR,
-   saying the figure is indicative and invoicing is in euro. It must *not*
-   appear for BE/FR/ES/DE.
-4. **The comparison table scrolls sideways** for long currencies (IDR, VND,
-   KRW, NGN) and does **not** for short ones (EUR, USD, GBP). Nothing should
-   ever be cut off. Check at a phone width — DevTools device toolbar, 320px.
+1. **The URL alone decides.** Open `/gb/` from anywhere and it is English in
+   pounds. Nothing about the visitor's location changes a market page — geo
+   is consulted once, only to decide where a bare `/` lands.
+2. **Same language, different currency.** `/gb/` and `/us/` are both
+   English; one shows £429 and the other $578. If they ever show the same
+   currency, the market model has broken.
+3. **The canonical points at itself.** `/jp/prijzen` must canonicalise to
+   `/jp/prijzen`, not to the source page. Each market page also carries
+   hreflang alternates for all 17 markets plus x-default.
+4. **Internal links keep the market.** Clicking through `/jp/` must stay in
+   `/jp/` — a nav link that drops the segment silently returns the visitor
+   to the default market.
+5. **Prices convert everywhere**, not just the headline: pricing cards, the
+   comparison table, the cost-calculation box, FAQ answers, the sticky mobile
+   bar, and the scroll-zoom statistics. That last one re-renders as you
+   scroll past it, so a currency bug there only shows up once you scroll.
 
 ---
 
-## Testing the language switcher
+## Regenerating the market pages
 
-Run **without** `--lock`:
+The pages under each market directory are generated and committed — there is
+no build step on Netlify, deliberately, because a build command is one more
+thing that can fail on deploy.
 
 ```powershell
-python serve.py --cc=US
+node tools/build-locales.js
 ```
 
-- The page loads in English (country).
-- Click `FR`. It switches to French and stays French on reload — your choice
-  beats the country, which is the intended behaviour.
-- To get back to country-driven: clear site data in DevTools
-  (Application → Local Storage → delete `drp-lang`), or just restart with
-  `--lock`.
+Run it after changing any of the four source pages at the repo root, or after
+adding a market to `assets/markets.js`. It rewrites every market directory
+and regenerates `sitemap.xml`.
+
+Adding a market is one line in `assets/markets.js` plus a rerun:
+
+```js
+pt: { lang: 'en', currency: 'BRL', name: 'Brasil', region: 'Americas' },
+```
+
+Then add its `Country` rule to `_redirects` (or rerun the redirect
+generator) so a bare `/` from that country lands there.
 
 ---
 
-## Testing the failure paths
+## The language switcher is hidden
 
-These matter more than the happy path, because a broken rate provider must
-never produce a wrong price.
+`.lang-sw{display:none!important}` at the top of the switcher block in
+`assets/styles.css`. With markets in the URL, a JS toggle competes with the
+address bar — and a stored choice used to pin a language and make the
+automatic detection look broken.
+
+The markup and click handler are untouched, so deleting that one rule brings
+it back. The proper replacement is a market picker that navigates to
+`/gb/prijzen` rather than swapping text in place, which is what nike.com
+does.
+
+---
+
+## Currency comes from the market, not the IP
+
+`/api/geo` is no longer requested by the page at all. Currency and language
+both come from the market in the URL, so there is one fewer request per
+pageview and no per-visitor data reaches the client.
+
+`/api/rates` is still fetched — EUR rates, cached an hour at the edge. If it
+is unreachable, prices stay in EUR, which is the currency invoicing happens
+in anyway, rather than showing a figure derived from a stale rate.
 
 | To simulate | How | Expected |
 |---|---|---|
-| Rate provider down | DevTools → Network → block `/api/rates` | Prices stay in **EUR**. Never a converted price from a stale rate. |
-| Country lookup down | Block `/api/geo` | Falls back to browser language, prices in EUR. |
-| Currency with no rate | `--cc=KP` (North Korean won is not quoted) | Language English, prices in **EUR**. |
-| Offline entirely | Disconnect | Site still renders, Dutch/EUR. |
+| Rate feed down | DevTools → Network → block `/api/rates` | Prices stay in **EUR** in every market |
+| Currency not quoted | a market whose currency the feed omits | Falls back to EUR, no broken figure |
+| Offline | disconnect | Page still renders, EUR prices |
 
 ---
 
-## Live Server (port 5500/5501)
+## Old URLs
 
-Live Server **cannot** run this feature. It serves files only, so `/api/geo`
-and `/api/rates` return 404 and the page falls back to browser language and
-euro prices. Those two 404s in the console are expected there and are not a
-fault — but you will never see the localisation.
-
-Use `python serve.py` instead.
-
-An unrelated console error you may also see on any page:
+Everything that existed before the market structure 301s into the default
+market:
 
 ```
-content.883ade9e.js  Failed to update QuickPro worker preference
+/prijzen      ->  /be/prijzen
+/over-ons     ->  /be/over-ons
+/contact      ->  /be/contact
+/             ->  /<your market>/     302, varies by visitor
 ```
 
-That is a **browser extension**, not this site. Ignore it, or test in a
-private window.
+The root redirect is a **302** on purpose: its destination depends on who is
+asking, and a 301 would be cached and then served to the wrong country.
 
 ---
 
-## The real thing: `netlify dev`
+## `netlify dev` is still authoritative
 
-`serve.py` is a stand-in. It fakes the country and uses fixed rates, and it
-knows nothing about `_headers` or `_redirects`.
+`serve.py` mimics the market routing and stubs `/api/rates`, but knows
+nothing about `_headers` or the `Country` conditions in `_redirects`.
 
 ```powershell
-npm install -g netlify-cli
 netlify dev
 ```
 
-That runs the actual edge functions against **live** exchange rates, and
-applies the real cache headers and redirect rules. The country will be your
-own, since it comes from your real IP — which is exactly why `serve.py` has
-`--cc=`.
-
-If the two ever disagree, Netlify is right.
-
----
-
-## In production
-
-- Country comes from Netlify's own edge data. No third-party geo service, and
-  the visitor's IP is never forwarded or logged — only a country code.
-- Rates are fetched once an hour per edge region and cached, so the provider
-  never sees visitor traffic.
-- 205 countries are mapped to 153 currencies. Every one of them is quoted by
-  the live provider except North Korean won, which falls back to EUR.
-- Prices, and the invoice, remain in EUR. The converted figure is a display
-  convenience and says so.
-- 205 countries are mapped to seven languages (nl/en/fr/es/de/id/ja); every
-  country not covered by one of the other six gets English.
+That runs the real edge functions and the real redirect rules, including the
+geo routing for `/`. If the two disagree, Netlify is right.
