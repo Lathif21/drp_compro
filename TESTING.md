@@ -112,17 +112,30 @@ generator) so a bare `/` from that country lands there.
 
 ---
 
-## The language switcher is hidden
+## The market picker
 
-`.lang-sw{display:none!important}` at the top of the switcher block in
-`assets/styles.css`. With markets in the URL, a JS toggle competes with the
-address bar — and a stored choice used to pin a language and make the
-automatic detection look broken.
+The nav carries a market picker -- a native `<select>` grouped by region,
+each option labelled with its currency ("United Kingdom — GBP").
 
-The markup and click handler are untouched, so deleting that one rule brings
-it back. The proper replacement is a market picker that navigates to
-`/gb/prijzen` rather than swapping text in place, which is what nike.com
-does.
+It **navigates**; it does not swap text in place. Choosing Japan on
+`/gb/prijzen` takes you to `/jp/prijzen` -- the same page, that market's
+copy. A toggle that swapped text would have left `/gb/` showing Dutch copy
+at pound prices, with the URL and the content disagreeing.
+
+Worth checking:
+
+- It keeps you on the page you were on, rather than dropping you at the home
+  page of the new market. `/be/prijzen` goes to `/gb/prijzen`, not `/gb/`.
+- The current market is already selected on load. That is rendered
+  server-side into each generated page, so it is correct before any JS runs.
+- A native select rather than a row of codes: 17 markets do not fit a nav
+  bar, and the OS picker is better on a phone than anything custom. The old
+  row of seven language buttons pushed the hamburger off screen at 320px.
+
+The old language toggle is gone. It applied a language to the page you were
+already on, which cannot work once the URL states the market -- and a
+language stored from an earlier visit used to override the market, so
+`/jp/` could come back in Dutch.
 
 ---
 

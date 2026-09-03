@@ -65,6 +65,34 @@ function hreflangBlock(route) {
   return lines.join('\n');
 }
 
+
+/* The market picker, with this market preselected. Grouped by region because
+ * a flat list of every market is not scannable, and labelled with the
+ * currency because that is half of what a visitor is choosing. */
+function marketPicker(current, route) {
+  const byRegion = {};
+  for (const code of CODES) {
+    const m = MARKETS[code];
+    (byRegion[m.region] = byRegion[m.region] || []).push(code);
+  }
+  const groups = Object.keys(byRegion).map(region => {
+    const opts = byRegion[region].map(code => {
+      const m = MARKETS[code];
+      const sel = code === current ? ' selected' : '';
+      return `        <option value="${code}"${sel}>${m.name} — ${m.currency}</option>`;
+    }).join('\n');
+    return `      <optgroup label="${region}">\n${opts}\n      </optgroup>`;
+  }).join('\n');
+
+  return [
+    '    <div class="market-sw">',
+    `      <select id="marketSel" data-route="${route || '/'}" aria-label="Choose your market">`,
+    groups,
+    '      </select>',
+    '    </div>',
+  ].join('\n');
+}
+
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -95,6 +123,12 @@ function build(code, page) {
     `<script>window.__DRP_MARKET__=${JSON.stringify(code)};</script>\n`
     + '<script defer src="/assets/markets.js"></script>\n'
     + '<link rel="stylesheet" href="/assets/styles.css">');
+
+
+  // 6. the language toggle becomes a market picker that navigates
+  html = html.replace(
+    /[ \t]*<div class="lang-sw"[\s\S]*?<\/div>\n/,
+    marketPicker(code, page.route) + '\n');
 
   const dest = path.join(ROOT, code, page.out);
   fs.mkdirSync(path.dirname(dest), { recursive: true });

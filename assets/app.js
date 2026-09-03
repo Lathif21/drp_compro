@@ -616,11 +616,19 @@ window.DRP_T=function(key){
   update();
 })();
 
-const langSwEl=document.getElementById('langSw');
-if(langSwEl) langSwEl.addEventListener('click',e=>{
-  const btn=e.target.closest('.lang-btn');
-  if(btn) applyLang(btn.dataset.lang,true);
-});
+/* Market picker. Navigates rather than swapping text in place: the URL
+   states the market, so changing market means going to that market's copy of
+   the page you are on. Swapping text would leave /gb/ showing Dutch at pound
+   prices, with the URL and the content disagreeing. */
+const marketSel=document.getElementById('marketSel');
+if(marketSel){
+  marketSel.addEventListener('change',()=>{
+    const code=marketSel.value;
+    const route=marketSel.dataset.route||'/';
+    // route is '' for the home page, so normalise to a trailing slash
+    location.href='/'+code+(route==='/'?'/':route);
+  });
+}
 
 /* Precedence: an explicit click always wins, then the country the edge
    resolved, then the browser's own preference, then Dutch. A visitor who

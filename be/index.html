@@ -273,14 +273,32 @@
     <a href="/be/contact" data-nav="contact">Contact</a>
   </div>
   <div class="nav-right">
-    <div class="lang-sw" id="langSw" role="group" aria-label="Taal / Language">
-      <button type="button" class="lang-btn active" data-lang="nl" lang="nl" aria-label="Nederlands">NL</button>
-      <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English">EN</button>
-      <button type="button" class="lang-btn" data-lang="fr" lang="fr" aria-label="Fran&ccedil;ais">FR</button>
-      <button type="button" class="lang-btn" data-lang="es" lang="es" aria-label="Espa&ntilde;ol">ES</button>
-      <button type="button" class="lang-btn" data-lang="id" lang="id" aria-label="Bahasa Indonesia">ID</button>
-      <button type="button" class="lang-btn" data-lang="de" lang="de" aria-label="Deutsch">DE</button>
-      <button type="button" class="lang-btn" data-lang="ja" lang="ja" aria-label="日本語">JA</button>
+    <div class="market-sw">
+      <select id="marketSel" data-route="/" aria-label="Choose your market">
+      <optgroup label="Europe">
+        <option value="be" selected>België — EUR</option>
+        <option value="nl">Nederland — EUR</option>
+        <option value="fr">France — EUR</option>
+        <option value="lu">Luxembourg — EUR</option>
+        <option value="ch">Suisse — CHF</option>
+        <option value="de">Deutschland — EUR</option>
+        <option value="at">Österreich — EUR</option>
+        <option value="es">España — EUR</option>
+        <option value="gb">United Kingdom — GBP</option>
+        <option value="ie">Ireland — EUR</option>
+      </optgroup>
+      <optgroup label="Americas">
+        <option value="us">United States — USD</option>
+        <option value="ca">Canada — CAD</option>
+        <option value="mx">México — MXN</option>
+      </optgroup>
+      <optgroup label="Asia Pacific">
+        <option value="id">Indonesia — IDR</option>
+        <option value="jp">日本 — JPY</option>
+        <option value="sg">Singapore — SGD</option>
+        <option value="au">Australia — AUD</option>
+      </optgroup>
+      </select>
     </div>
     <button type="button" class="nav-tog" id="navTog" aria-expanded="false" aria-controls="navOverlay" aria-label="Menu">
       <span></span><span></span><span></span>
