@@ -113,6 +113,23 @@ function stripRuntimeState() {
   document.querySelectorAll('.scta.on').forEach(el => el.classList.remove('on'));
   document.querySelectorAll('[data-counted]').forEach(el => el.removeAttribute('data-counted'));
 
+  // Counters animate from zero, so serializing mid-run baked "€1" and
+  // "€19" in place of "€499" and "€29" -- a wrong price in the
+  // static HTML, which is what a crawler and a JS-disabled visitor read.
+  // Reset each to its resting value: prefix + the raw EUR figure + suffix,
+  // deliberately unconverted, matching the rule that prices stay in euro
+  // in the file and convert client-side.
+  document.querySelectorAll('[data-count]').forEach(el => {
+    var raw = parseInt(el.dataset.count) || 0;
+    if (!raw) return;
+    el.textContent = (el.dataset.prefix || '') + raw + (el.dataset.suffix || '');
+  });
+
+  // Word-by-word hero reveal staggers an "in" class over ~60ms per word, so
+  // whichever words had landed by serialization time were frozen visible
+  // while the rest stayed hidden -- a different subset every run.
+  document.querySelectorAll('.wr.in, .hl-i.in').forEach(el => el.classList.remove('in'));
+
   const zoom = document.getElementById('zoomInner');
   if (zoom) { zoom.style.removeProperty('transform'); zoom.style.removeProperty('opacity'); }
   const mq = document.getElementById('mqTrack');
@@ -176,8 +193,15 @@ function stripRuntimeState() {
         const lang = await page.evaluate(() => document.documentElement.lang);
         if (lang !== LANG_OF[code]) throw new Error(`lang came out ${lang}`);
 
-        await page.evaluate(stripRuntimeState);
-        const html = await page.evaluate(() => '<!DOCTYPE html>\n' + document.documentElement.outerHTML);
+        // Strip and serialize in ONE evaluate. As two calls the marquee's
+        // requestAnimationFrame loop got a frame in between and re-applied
+        // its transform, so a scroll offset was baked into whichever pages
+        // lost the race -- four of sixty-eight, differing per run. rAF cannot
+        // interleave with synchronous JS, so one turn makes this atomic.
+        const html = await page.evaluate(stripSrc => {
+          (0, eval)('(' + stripSrc + ')')();
+          return '<!DOCTYPE html>' + String.fromCharCode(10) + document.documentElement.outerHTML;
+        }, stripRuntimeState.toString());
         fs.writeFileSync(dest, html, 'utf8');
         done++;
         if (errors.length) console.log('  note ' + rel + ': ' + errors[0]);
