@@ -3,9 +3,9 @@
 const TRANSLATIONS = {
 "nl": {
   "meta.title": "DRP BuildLab — Websites op maat voor lokale bedrijven | Beginnerspakket vanaf €499",
-  "meta.desc": "DRP BuildLab bouwt websites volledig op maat voor lokale ondernemers in België. Beginnerspakket vanaf €499 voor starters, of een persoonlijke quotatie voor geavanceerde projecten — met optioneel maandelijks onderhoud vanaf €29 per maand.",
+  "meta.desc": "DRP BuildLab bouwt websites volledig op maat voor lokale ondernemers. Beginnerspakket vanaf €499 voor starters, of een persoonlijke quotatie voor geavanceerde projecten — met optioneel maandelijks onderhoud vanaf €29 per maand.",
   "meta.title.about": "Over ons — DRP BuildLab | Websitestudio voor lokale ondernemers",
-  "meta.desc.about": "Gebouwd door ondernemers, voor ondernemers. Het verhaal achter DRP BuildLab en waarom lokale bedrijven in België voor ons kiezen.",
+  "meta.desc.about": "Gebouwd door ondernemers, voor ondernemers. Het verhaal achter DRP BuildLab en waarom lokale bedrijven voor ons kiezen.",
   "meta.title.pricing": "Prijzen — DRP BuildLab | Beginnerspakket €499 of quotatie op maat",
   "meta.desc.pricing": "Beginnerspakket vanaf €499 of een persoonlijke quotatie voor geavanceerde projecten. Extra diensten en optioneel onderhoud vanaf €29 per maand.",
   "meta.title.contact": "Contact — DRP BuildLab | Vraag een gratis demo aan",
@@ -52,7 +52,7 @@ const TRANSLATIONS = {
   "ab.h2": "Gebouwd door<br>ondernemers,<br><em>voor ondernemers.</em>",
   "ab.p1": "Het begon met een frustratie. We zagen hoe lokale bedrijven — de slager op de hoek, de loodgieter die altijd bereikbaar is, de kapper die al jaren dezelfde klanten knipt — volledig onzichtbaar waren online.",
   "ab.p2": "Grote agencies vroegen <strong>€5.000 voor een website</strong> die maanden op zich liet wachten. Dus bouwden we DRP BuildLab: een studio die gelooft dat elke lokale zaak <strong>recht heeft op een website op maat</strong> — betaalbaar, eerlijk en met een prijs die past bij het werk dat erin gaat.",
-  "ab.pillars": [{"t":"Eerlijkheid boven alles","b":"Wat we beloven, leveren we. Geen verborgen kosten, geen vage offertes."},{"t":"Onderhoud wanneer u het wilt","b":"Maandelijks onderhoud is optioneel: €29 per maand of €250 per jaar. Neemt u het erbij, dan blijft uw site veilig, up-to-date en vindbaar — zonder dat u eraan hoeft te denken."},{"t":"Lokaal denken, digitaal bouwen","b":"Wij kennen uw regio, uw klanten en uw markt. Actief in heel België — van Brussel, Antwerpen, Gent en Leuven tot Brugge, Hasselt, Luik en alles daartussen."}],
+  "ab.pillars": [{"t":"Eerlijkheid boven alles","b":"Wat we beloven, leveren we. Geen verborgen kosten, geen vage offertes."},{"t":"Onderhoud wanneer u het wilt","b":"Maandelijks onderhoud is optioneel: €29 per maand of €250 per jaar. Neemt u het erbij, dan blijft uw site veilig, up-to-date en vindbaar — zonder dat u eraan hoeft te denken."},{"t":"Lokaal denken, digitaal bouwen","b":"Wij bouwen voor lokale bedrijven — bedrijven waarvan de klanten in de buurt zoeken. Wij werken op afstand vanuit België, dus waar u zit bepaalt niet of wij voor u kunnen bouwen."}],
   "why.tag": "Waarom DRP BuildLab",
   "why.h2": "Wat maakt ons anders?",
   "why.sub": "Gebouwd voor lokale bedrijven die online willen staan — zonder gedoe, zonder verrassingen.",

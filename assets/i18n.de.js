@@ -3,9 +3,9 @@
 const TRANSLATIONS = {
 "de": {
   "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für lokale Unternehmen | Starter-Paket von €499",
-  "meta.desc": "DRP BuildLab erstellt maßgeschneiderte Websites für lokale Unternehmer in Belgien. Starter-Paket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte – mit optionaler monatlicher Wartung ab €29 pro Monat.",
+  "meta.desc": "DRP BuildLab erstellt maßgeschneiderte Websites für lokale Unternehmer. Starter-Paket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte – mit optionaler monatlicher Wartung ab €29 pro Monat.",
   "meta.title.about": "Über uns — DRP BuildLab | Website-Agentur für lokale Unternehmen",
-  "meta.desc.about": "Von Unternehmern für Unternehmer gegründet. Die Geschichte hinter DRP BuildLab und warum sich lokale Unternehmen in Belgien für uns entscheiden.",
+  "meta.desc.about": "Von Unternehmern für Unternehmer gegründet. Die Geschichte hinter DRP BuildLab und warum sich lokale Unternehmen für uns entscheiden.",
   "meta.title.pricing": "Preise – DRP BuildLab | Starter-Paket €499 oder ein individuelles Angebot",
   "meta.desc.pricing": "Starterpaket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte. Zusätzliche Dienstleistungen und optionale Wartung unter €29 pro Monat.",
   "meta.title.contact": "Kontakt – DRP BuildLab | Kostenlose Demo anfordern",
@@ -52,7 +52,7 @@ const TRANSLATIONS = {
   "ab.h2": "Von<br>Unternehmern entwickelt,<br><em>für Unternehmer.</em>",
   "ab.p1": "Alles begann mit einer Frustration. Wir stellten fest, dass lokale Unternehmen – der Metzger an der Ecke, der Klempner, der immer zur Stelle ist, der Friseur, der seit Jahren dieselben Kunden schneidet – im Internet völlig unsichtbar waren.",
   "ab.p2": "Große Agenturen stellten „<strong>€5.000</strong>“ hohe Rechnungen<strong> für eine Website</strong>, deren Fertigstellung Monate dauerte. Deshalb haben wir DRP BuildLab gegründet: ein Studio, das davon überzeugt ist, dass jedes lokale Unternehmen <strong>eine maßgeschneiderte Website verdient</strong> – erschwinglich, fair und zu einem Preis, der dem Aufwand entspricht.",
-  "ab.pillars": [{"t":"Ehrlichkeit geht vor","b":"Was wir versprechen, halten wir auch ein. Keine versteckten Kosten, keine vagen Angebote."},{"t":"Wartung, wann immer Sie es wünschen","b":"Die monatliche Wartung ist optional: €29 pro Monat oder €250 pro Jahr. Wenn Sie diesen Service hinzubuchen, bleibt Ihre Website sicher, auf dem neuesten Stand und gut auffindbar – ohne dass Sie sich darum kümmern müssen."},{"t":"Lokal denken, digital gestalten","b":"Wir kennen Ihre Region, Ihre Kunden und Ihren Markt. Wir sind in ganz Belgien tätig – von Brüssel, Antwerpen, Gent und Leuven bis nach Brügge, Hasselt, Lüttich und überall dazwischen."}],
+  "ab.pillars": [{"t":"Ehrlichkeit geht vor","b":"Was wir versprechen, halten wir auch ein. Keine versteckten Kosten, keine vagen Angebote."},{"t":"Wartung, wann immer Sie es wünschen","b":"Die monatliche Wartung ist optional: €29 pro Monat oder €250 pro Jahr. Wenn Sie diesen Service hinzubuchen, bleibt Ihre Website sicher, auf dem neuesten Stand und gut auffindbar – ohne dass Sie sich darum kümmern müssen."},{"t":"Lokal denken, digital gestalten","b":"Wir bauen für lokale Unternehmen — für die, deren Kunden in der Nähe suchen. Wir arbeiten remote aus Belgien, Ihr Standort entscheidet also nicht darüber, ob wir für Sie bauen können."}],
   "why.tag": "Warum DRP BuildLab?",
   "why.h2": "Was zeichnet uns aus?",
   "why.sub": "Entwickelt für lokale Unternehmen, die im Internet präsent sein möchten – ohne Aufwand und ohne Überraschungen.",

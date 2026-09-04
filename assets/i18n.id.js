@@ -3,9 +3,9 @@
 const TRANSLATIONS = {
 "id": {
   "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis Lokal | Paket Pemula dari €499",
-  "meta.desc": "DRP BuildLab mengembangkan situs web yang sepenuhnya disesuaikan untuk para wirausahawan lokal di Belgia. Paket pemula mulai dari €499, atau penawaran harga khusus untuk proyek-proyek tingkat lanjut — dengan layanan pemeliharaan bulanan opsional seharga €29 per bulan.",
+  "meta.desc": "DRP BuildLab mengembangkan situs web yang sepenuhnya disesuaikan untuk para wirausahawan lokal. Paket pemula mulai dari €499, atau penawaran harga khusus untuk proyek-proyek tingkat lanjut — dengan layanan pemeliharaan bulanan opsional seharga €29 per bulan.",
   "meta.title.about": "Tentang Kami — DRP BuildLab | Studio pengembangan situs web untuk bisnis lokal",
-  "meta.desc.about": "Didirikan oleh para wirausahawan, untuk para wirausahawan. Kisah di balik DRP BuildLab dan alasan mengapa bisnis lokal di Belgia memilih kami.",
+  "meta.desc.about": "Didirikan oleh para wirausahawan, untuk para wirausahawan. Kisah di balik DRP BuildLab dan alasan mengapa bisnis lokal memilih kami.",
   "meta.title.pricing": "Harga — DRP BuildLab | Paket Pemula €499 atau penawaran harga khusus",
   "meta.desc.pricing": "Paket awal dari €499 atau penawaran harga khusus untuk proyek-proyek tingkat lanjut. Layanan tambahan dan pemeliharaan opsional dari €29 per bulan.",
   "meta.title.contact": "Hubungi Kami — DRP BuildLab | Ajukan permohonan demo gratis",
@@ -52,7 +52,7 @@ const TRANSLATIONS = {
   "ab.h2": "Dibangun oleh<br>para wirausahawan,<br><em>untuk para wirausahawan.</em>",
   "ab.p1": "Semuanya berawal dari rasa frustrasi. Kami menyadari bahwa usaha-usaha lokal — penjual daging di sudut jalan, tukang ledeng yang selalu siap sedia, penata rambut yang sudah memotong rambut pelanggan yang sama selama bertahun-tahun — sama sekali tidak terlihat di dunia maya.",
   "ab.p2": "Agen-agen besar mengenakan biaya <strong>€5.000 untuk sebuah situs web</strong> yang baru selesai dalam hitungan bulan. Oleh karena itu, kami mendirikan DRP BuildLab: sebuah studio yang percaya bahwa setiap usaha lokal <strong>berhak mendapatkan situs web yang dirancang khusus</strong> — terjangkau, jujur, dengan harga yang sesuai dengan usaha yang diperlukan.",
-  "ab.pillars": [{"t":"Kejujuran di atas segalanya","b":"Apa yang kami janjikan, pasti kami penuhi. Tanpa biaya tersembunyi, tanpa penawaran harga yang tidak jelas."},{"t":"Pemeliharaan sesuai keinginan Anda","b":"Pemeliharaan bulanan bersifat opsional: €29 per bulan atau €250 per tahun. Tambahkan layanan ini agar situs Anda tetap aman, selalu terupdate, dan mudah ditemukan — tanpa Anda perlu repot memikirkannya."},{"t":"Berpikir secara lokal, membangun secara digital","b":"Kami memahami wilayah Anda, pelanggan Anda, dan pasar Anda. Kami beroperasi di seluruh Belgia — mulai dari Brussel, Antwerpen, Gent, dan Leuven hingga Brugge, Hasselt, Liège, serta semua wilayah di antaranya."}],
+  "ab.pillars": [{"t":"Kejujuran di atas segalanya","b":"Apa yang kami janjikan, pasti kami penuhi. Tanpa biaya tersembunyi, tanpa penawaran harga yang tidak jelas."},{"t":"Pemeliharaan sesuai keinginan Anda","b":"Pemeliharaan bulanan bersifat opsional: €29 per bulan atau €250 per tahun. Tambahkan layanan ini agar situs Anda tetap aman, selalu terupdate, dan mudah ditemukan — tanpa Anda perlu repot memikirkannya."},{"t":"Berpikir secara lokal, membangun secara digital","b":"Kami membangun untuk bisnis lokal — bisnis yang pelanggannya mencari di sekitar. Kami bekerja secara jarak jauh dari Belgia, jadi lokasi Anda tidak menentukan apakah kami dapat membangun untuk Anda."}],
   "why.tag": "Mengapa DRP BuildLab?",
   "why.h2": "Apa yang membedakan kami?",
   "why.sub": "Diciptakan untuk bisnis lokal yang ingin hadir secara daring — tanpa kerumitan, tanpa kejutan.",

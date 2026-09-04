@@ -3,9 +3,9 @@
 const TRANSLATIONS = {
 "es": {
   "meta.title": "DRP BuildLab — Sitios web a medida para negocios locales | Paquete inicial desde 499 €",
-  "meta.desc": "DRP BuildLab crea sitios web completamente a medida para emprendedores locales en Bélgica. Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados — con mantenimiento mensual opcional desde 29 € al mes.",
+  "meta.desc": "DRP BuildLab crea sitios web completamente a medida para emprendedores locales. Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados — con mantenimiento mensual opcional desde 29 € al mes.",
   "meta.title.about": "Sobre nosotros — DRP BuildLab | Estudio web para negocios locales",
-  "meta.desc.about": "Creado por emprendedores, para emprendedores. La historia de DRP BuildLab y por qué los negocios locales en Bélgica nos eligen.",
+  "meta.desc.about": "Creado por emprendedores, para emprendedores. La historia de DRP BuildLab y por qué los negocios locales nos eligen.",
   "meta.title.pricing": "Precios — DRP BuildLab | Paquete inicial 499 € o presupuesto a medida",
   "meta.desc.pricing": "Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados. Servicios adicionales y mantenimiento opcional desde 29 € al mes.",
   "meta.title.contact": "Contacto — DRP BuildLab | Solicita una demo gratis",
@@ -52,7 +52,7 @@ const TRANSLATIONS = {
   "ab.h2": "Construido por<br>emprendedores,<br><em>para emprendedores.</em>",
   "ab.p1": "Todo comenzó con una frustración. Vimos cómo los negocios locales — el carnicero de la esquina, el fontanero siempre disponible, el peluquero que lleva años cortando el pelo a los mismos clientes — eran completamente invisibles en línea.",
   "ab.p2": "Las grandes agencias cobraban <strong>5.000 € por un sitio web</strong> que tardaba meses en entregarse. Así que creamos DRP BuildLab: un estudio que cree que cada negocio local <strong>merece un sitio web a medida</strong> — asequible, honesto, con un precio que se ajusta al trabajo.",
-  "ab.pillars": [{"t":"Honestidad ante todo","b":"Lo que prometemos, lo entregamos. Sin costes ocultos, sin presupuestos vagos."},{"t":"Mantenimiento cuando lo quieras","b":"El mantenimiento mensual es opcional: 29 € al mes o 250 € al año. Si lo añades, tu sitio se mantiene seguro, actualizado y visible — sin que tengas que pensar en ello."},{"t":"Pensar local, construir digital","b":"Conocemos tu región, tus clientes, tu mercado. Activos en toda Bélgica — desde Bruselas, Amberes, Gante y Lovaina hasta Brujas, Hasselt, Lieja y todo entre medias."}],
+  "ab.pillars": [{"t":"Honestidad ante todo","b":"Lo que prometemos, lo entregamos. Sin costes ocultos, sin presupuestos vagos."},{"t":"Mantenimiento cuando lo quieras","b":"El mantenimiento mensual es opcional: 29 € al mes o 250 € al año. Si lo añades, tu sitio se mantiene seguro, actualizado y visible — sin que tengas que pensar en ello."},{"t":"Pensar local, construir digital","b":"Creamos sitios para negocios locales, aquellos cuyos clientes buscan cerca. Trabajamos en remoto desde Bélgica, así que tu ubicación no determina si podemos construir para ti."}],
   "why.tag": "Por qué DRP BuildLab",
   "why.h2": "¿Qué nos hace diferentes?",
   "why.sub": "Construido para negocios locales que quieren estar en línea — sin complicaciones, sin sorpresas.",

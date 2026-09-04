@@ -3,9 +3,9 @@
 const TRANSLATIONS = {
 "en": {
   "meta.title": "DRP BuildLab — Custom Websites for Local Businesses | Starter Package from €499",
-  "meta.desc": "DRP BuildLab builds fully custom websites for local entrepreneurs in Belgium. Starter package from €499, or a custom quote for advanced projects — with optional monthly maintenance from €29 per month.",
+  "meta.desc": "DRP BuildLab builds fully custom websites for local entrepreneurs. Starter package from €499, or a custom quote for advanced projects — with optional monthly maintenance from €29 per month.",
   "meta.title.about": "About us — DRP BuildLab | Website studio for local businesses",
-  "meta.desc.about": "Built by entrepreneurs, for entrepreneurs. The story behind DRP BuildLab and why local businesses in Belgium choose us.",
+  "meta.desc.about": "Built by entrepreneurs, for entrepreneurs. The story behind DRP BuildLab and why local businesses choose us.",
   "meta.title.pricing": "Pricing — DRP BuildLab | Starter package €499 or a custom quote",
   "meta.desc.pricing": "Starter package from €499 or a personal quote for advanced projects. Extra services and optional maintenance from €29 per month.",
   "meta.title.contact": "Contact — DRP BuildLab | Request a free demo",
@@ -52,7 +52,7 @@ const TRANSLATIONS = {
   "ab.h2": "Built by<br>entrepreneurs,<br><em>for entrepreneurs.</em>",
   "ab.p1": "It started with a frustration. We saw how local businesses — the butcher on the corner, the plumber who's always available, the hairdresser who has cut the same clients' hair for years — were completely invisible online.",
   "ab.p2": "Large agencies charged <strong>€5,000 for a website</strong> that took months to deliver. So we built DRP BuildLab: a studio that believes every local business <strong>deserves a custom website</strong> — affordable, honest, with a price that matches the work it takes.",
-  "ab.pillars": [{"t":"Honesty above all","b":"What we promise, we deliver. No hidden costs, no vague quotes."},{"t":"Maintenance when you want it","b":"Monthly maintenance is optional: €29 per month or €250 per year. Add it and your site stays secure, up to date and findable — without you having to think about it."},{"t":"Think local, build digital","b":"We know your region, your customers, your market. Active across Belgium — from Brussels, Antwerp, Ghent and Leuven to Bruges, Hasselt, Liège and everywhere in between."}],
+  "ab.pillars": [{"t":"Honesty above all","b":"What we promise, we deliver. No hidden costs, no vague quotes."},{"t":"Maintenance when you want it","b":"Monthly maintenance is optional: €29 per month or €250 per year. Add it and your site stays secure, up to date and findable — without you having to think about it."},{"t":"Think local, build digital","b":"We build for local businesses — the ones whose customers are searching nearby. We work remotely from Belgium, so where you are does not decide whether we can help."}],
   "why.tag": "Why DRP BuildLab",
   "why.h2": "What makes us different?",
   "why.sub": "Built for local businesses that want to be online — without hassle, without surprises.",
