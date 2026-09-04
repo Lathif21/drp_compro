@@ -49,6 +49,8 @@
     es: { lang: 'es', currency: 'EUR', name: 'España',        region: 'Europe' },
     gb: { lang: 'en', currency: 'GBP', name: 'United Kingdom', region: 'Europe' },
     ie: { lang: 'en', currency: 'EUR', name: 'Ireland',       region: 'Europe' },
+    it: { lang: 'it', currency: 'EUR', name: 'Italia',        region: 'Europe' },
+    pl: { lang: 'pl', currency: 'PLN', name: 'Polska',        region: 'Europe' },
 
     us: { lang: 'en', currency: 'USD', name: 'United States', region: 'Americas' },
     ca: { lang: 'en', currency: 'CAD', name: 'Canada',        region: 'Americas' },

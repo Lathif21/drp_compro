@@ -157,6 +157,7 @@ function socialTags(html, code, route) {
 const LANG_NAME = {
   nl: 'Dutch', en: 'English', fr: 'French', de: 'German',
   es: 'Spanish', id: 'Indonesian', ja: 'Japanese', pt: 'Portuguese',
+  it: 'Italian', pl: 'Polish',
 };
 
 /* Replace everything from `open` to the first following `close`, inclusive.

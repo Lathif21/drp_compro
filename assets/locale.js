@@ -24,6 +24,7 @@
   var LOCALES = {
     nl: 'nl-BE', en: 'en-US', fr: 'fr-BE', es: 'es-ES',
     de: 'de-DE', id: 'id-ID', ja: 'ja-JP', pt: 'pt-BR',
+    it: 'it-IT', pl: 'pl-PL',
   };
 
   /* Any of these between digit groups is a thousands separator. No price
