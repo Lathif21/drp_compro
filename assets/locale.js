@@ -450,6 +450,17 @@
     state.stale = true;
   }
 
+  /* Convert from here rather than waiting to be asked.
+   *
+   * Conversion used to happen only on the drp:langapplied event, which
+   * app.js fires at the end of applyLang -- and applyLang returns early when
+   * its language block is missing. So if assets/i18n.<lang>.js failed to
+   * load, the page kept the prerendered copy and every price stayed in euro:
+   * a Brazilian visitor reading €499 because an unrelated file did not
+   * arrive. Prices do not depend on the translations, so they should not
+   * depend on the translations loading. */
+  convert();
+
   /* Rates only. The country lookup is gone from the page entirely: the market
    * decides language and currency, and Netlify's _redirects handles the one
    * place geo still matters -- choosing where to send a bare "/". That is one
@@ -457,6 +468,10 @@
   window.DRP_LOCALE_READY = get('/api/rates')
     .then(function (rt) {
       if (rt && rt.rates) { state.rates = rt.rates; state.stale = !!rt.stale; }
+      // Same reason as above: re-convert on the live rate without waiting for
+      // app.js to tell us to, so a missing translation file cannot leave a
+      // market priced in euro.
+      convert();
       return state;
     })
     .catch(function () { return state; });

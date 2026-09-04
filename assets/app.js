@@ -3,6 +3,14 @@
    LOADER  (A11) + HERO ENTRANCE (A12)
    DOMContentLoaded, ~400ms, once per session.
 ══════════════════════════════════════════ */
+/* The translations are a separate file per language, so they can fail to
+   load on their own. A bare reference to TRANSLATIONS is then a
+   ReferenceError, and it stops the rest of this script -- taking the
+   reveals, the marquee, the mobile menu and the market picker with it. That
+   turned one missing asset into a page that looked broken rather than a
+   page that was merely untranslated. Read through here instead. */
+const LANGS = () => (typeof TRANSLATIONS === 'undefined' ? {} : TRANSLATIONS);
+
 const loaderEl = document.getElementById('loader');
 let heroRevealed = false;
 
@@ -155,8 +163,23 @@ function triggerWordReveals(){
     wIO.observe(el);
   });
 }
+/* A figure and the currency symbol beside it count as one word here.
+ *
+ * French and Spanish write "0 €" with a space between them. Splitting on
+ * whitespace put the digits and the symbol into separate text nodes, and the
+ * converter matches an amount inside a single node -- so /ch/, /mx/ and /cl/
+ * kept a stray euro sign in one heading while every other figure on the page
+ * converted. Symbol-first languages were never affected: "€0" has no space
+ * and was already one token.
+ *
+ * The pattern sits inside the function on purpose: wrapWords runs from
+ * revealHero at the top of this file, and a module-level const further down
+ * is still in its temporal dead zone at that point -- which threw
+ * "Cannot access 'WORD' before initialization" and took the rest of app.js
+ * with it on twenty of twenty-one markets. */
 function wrapWords(str){
-  return str.replace(/([^\s]+)/g, w=>`<span class="wr-w"><span class="wr">${w}</span></span>`);
+  return str.replace(/\d[\d.,   ]*\s?[€$£]|[^\s]+/g,
+    w=>`<span class="wr-w"><span class="wr">${w}</span></span>`);
 }
 // Re-run after DOM ready for below-fold headings
 document.addEventListener('DOMContentLoaded', triggerWordReveals);
@@ -408,7 +431,7 @@ function ensureWebFont(lang){
 }
 
 function applyLang(lang,persist){
-  const t=TRANSLATIONS[lang]; if(!t) return;
+  const t=LANGS()[lang]; if(!t) return;
   document.documentElement.lang=lang;
   ensureWebFont(lang);
   const pg=document.body.dataset.page||'home';
@@ -594,7 +617,7 @@ function applyLang(lang,persist){
 
 /* Read the active language's strings from outside this file (locale.js). */
 window.DRP_T=function(key){
-  const t=TRANSLATIONS[document.documentElement.lang]||TRANSLATIONS.nl;
+  const L=LANGS(); const t=L[document.documentElement.lang]||L.nl;
   return t&&t[key];
 };
 
@@ -644,11 +667,11 @@ function pickLang(marketLang){
    * into Dutch, because the URL is what the visitor and any crawler were
    * promised. Browser language is only consulted if the market somehow
    * resolved to nothing. */
-  if(marketLang&&TRANSLATIONS[marketLang]) return marketLang;
+  if(marketLang&&LANGS()[marketLang]) return marketLang;
   const saved=localStorage.getItem('drp-lang');
-  if(saved&&TRANSLATIONS[saved]) return saved;
+  if(saved&&LANGS()[saved]) return saved;
   const br=(navigator.language||navigator.userLanguage||'nl').toLowerCase();
-  return Object.keys(TRANSLATIONS).find(l=>br.startsWith(l))||'nl';
+  return Object.keys(LANGS()).find(l=>br.startsWith(l))||'nl';
 }
 
 (function initLang(){

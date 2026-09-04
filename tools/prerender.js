@@ -136,6 +136,34 @@ function stripRuntimeState() {
   // while the rest stayed hidden -- a different subset every run.
   document.querySelectorAll('.wr.in, .hl-i.in').forEach(el => el.classList.remove('in'));
 
+  /* Then undo the word split itself, and put the plain heading text back.
+   *
+   * Removing "in" above is right but was not enough. A .wr is
+   * translateY(110%) inside an overflow:hidden box, so without "in" every
+   * heading shipped invisible -- and the split also bakes data-wr="1", which
+   * makes triggerWordReveals() return before it creates the observer that
+   * would have revealed them. The only thing that recovered a heading was
+   * applyLang re-splitting it from the translations.
+   *
+   * So if assets/i18n.<lang>.js was slow or failed, every heading on the page
+   * stayed blank and every price stayed in euro. Reproduced by blocking that
+   * one file: the page renders, and the largest text on it is simply gone.
+   *
+   * Prerendering exists so the page works before and without JavaScript.
+   * Shipping the headings pre-split defeated that for the most prominent
+   * copy on the site, so the split is undone here. app.js splits and animates
+   * them on load exactly as it did, and because data-wr is gone it now builds
+   * the observer even when applyLang never runs. */
+  document.querySelectorAll('[data-wr]').forEach(el => {
+    el.querySelectorAll('.wr-w').forEach(w => {
+      const inner = w.querySelector('.wr');
+      const frag = document.createDocumentFragment();
+      if (inner) { while (inner.firstChild) frag.appendChild(inner.firstChild); }
+      w.replaceWith(frag);
+    });
+    el.removeAttribute('data-wr');
+  });
+
   const zoom = document.getElementById('zoomInner');
   if (zoom) { zoom.style.removeProperty('transform'); zoom.style.removeProperty('opacity'); }
   const mq = document.getElementById('mqTrack');
