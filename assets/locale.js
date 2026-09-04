@@ -86,15 +86,56 @@
 
   /* ── price conversion ─────────────────────────────────────────────── */
 
+  var NUM = '[0-9]{1,3}(?:[' + SEP_CLASS + '][0-9]{3})+|[0-9]+';
+
   function amountPattern() {
-    var num = '[0-9]{1,3}(?:[' + SEP_CLASS + '][0-9]{3})+|[0-9]+';
     // Symbol before (nl/en/de/id/ja) or after (fr/es) the figure.
-    return new RegExp('(€\\s*)(' + num + ')|(' + num + ')(\\s*€)', 'g');
+    return new RegExp('(€\\s*)(' + NUM + ')|(' + NUM + ')(\\s*€)', 'g');
+  }
+
+  /* A range that carries one symbol for both ends -- "800–2 500 €", which is
+   * how French and Spanish write it and where repeating the sign on each
+   * figure would be wrong typography.
+   *
+   * amountPattern only ever saw the end that touched the symbol, so the other
+   * end stayed in euro: /ch/ printed "800–2 350 CHF" and /mx/ "800–$49,500",
+   * an unconverted low end beside a converted high one. Nothing looked broken
+   * -- the number was still there -- while every competitor's cheap end was
+   * understated by whatever the day's rate happened to be. */
+  function rangePattern() {
+    return new RegExp(
+      '(' + NUM + ')(\\s*[-–—]\\s*)(' + NUM + ')(\\s*€)', 'g');
   }
 
   function parseAmount(raw) {
     var n = parseInt(String(raw).replace(SEP_RE, ''), 10);
     return isNaN(n) ? null : n;
+  }
+
+  /* The low end of such a range: converted, but bare. The source wrote one
+   * symbol for both ends, so only the end that carried it gets one back. */
+  function plainAmount(value, lang) {
+    try {
+      return new Intl.NumberFormat(fmtLocale(lang)).format(value);
+    } catch (e) {
+      return String(value);
+    }
+  }
+
+  /* Every euro figure in a plain string, converted. Ranges go first: once one
+   * is rewritten it carries the target currency, so the single-amount pass
+   * finds nothing left to do in it. */
+  function convertText(text, cur, rate, lang) {
+    var out = String(text).replace(rangePattern(), function (m, a, dash, b) {
+      var lo = parseAmount(a), hi = parseAmount(b);
+      if (lo === null || hi === null) return m;
+      return plainAmount(Math.round(lo * rate), lang) + dash
+        + format(Math.round(hi * rate), cur, lang);
+    });
+    return out.replace(amountPattern(), function (m, pre, a, b) {
+      var v = parseAmount(a || b);
+      return v === null ? m : format(Math.round(v * rate), cur, lang);
+    });
   }
 
   /* Region-qualify the formatting locale with the visitor's own country, so
@@ -157,15 +198,9 @@
 
     if (!rate || cur === 'EUR') { note(null); return; }
 
-    var re = amountPattern();
     walk(document.body, function (node) {
       var original = node.nodeValue;
-      var out = original.replace(re, function (m, pre, a, b, post) {
-        var raw = a || b;
-        var v = parseAmount(raw);
-        if (v === null) return m;
-        return format(Math.round(v * rate), cur, lang);
-      });
+      var out = convertText(original, cur, rate, lang);
       if (out !== original) {
         if (!snap.has(node)) snap.set(node, original);
         node.nodeValue = out;
@@ -331,10 +366,7 @@
     var trailTag = String(html).match(/<([a-zA-Z]+)>[^<]*<\/[a-zA-Z]+>$/);
     var text = String(html).replace(/<[^>]*>/g, '');
 
-    var out = text.replace(amountPattern(), function (m, pre, a, b) {
-      var v = parseAmount(a || b);
-      return v === null ? m : format(Math.round(v * rate), cur, lang);
-    });
+    var out = convertText(text, cur, rate, lang);
     if (out === text) return html;          // nothing to convert, e.g. "100%"
 
     var m2, tag;

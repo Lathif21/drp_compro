@@ -80,10 +80,13 @@ const API = KEY && KEY.endsWith(':fx')
 
 /* ── protecting things that must survive translation ───────────────────── */
 
-/* Prices and placeholders are wrapped in <x>...</x> and DeepL is told to
- * ignore that tag, so "€499" comes back as "€499" rather than being
- * reformatted, localised or quietly dropped. HTML in the copy (<strong>,
- * <br>, <em>) is handled by tag_handling=html and needs no wrapper. */
+/* Prices, placeholders and the VAT number are held back from the request and
+ * put in again afterwards, with <x>...</x> marking where each one goes and
+ * ignore_tags keeping DeepL out of it. HTML in the copy (<strong>, <br>,
+ * <em>) is handled by tag_handling=html and needs no wrapper.
+ *
+ * See protect() below for why the value is substituted rather than merely
+ * wrapped: an ignored tag is not as inviolable as it looks. */
 // A figure: digits with optional grouping, always ending on a digit, so a
 // sentence's comma or full stop is never pulled inside the span.
 const NUM = '\\d(?:[\\d.,\u00a0 ]*\\d)?';
@@ -99,8 +102,46 @@ const PROTECT = new RegExp(
   '|\\s?BE\\s?\\d[\\d.]*\\d',
   'g');
 
-const protect = s => String(s).replace(PROTECT, m => '<x>' + m + '</x>');
-const unprotect = s => String(s).replace(/<\/?x>/g, '');
+/* Substitution, not pass-through.
+ *
+ * This used to wrap the value itself -- "<x>€499</x>" -- and trust
+ * ignore_tags to hand it back untouched. Mostly it does. But DeepL has been
+ * observed returning "<x>499</x>" for exactly that input: the euro sign
+ * dropped from inside the tag that existed to protect it.
+ *
+ * That failure is invisible downstream. The sentence still reads, the number
+ * is still there, and only locale.js notices -- it converts figures that
+ * carry the symbol and skips the ones that do not, so the price silently
+ * stays in euro in every market. A visitor in Tokyo reads "499".
+ *
+ * So the value is replaced by its index and never leaves this process. An
+ * integer has nothing DeepL might want to localise, and what gets restored
+ * afterwards is byte-for-byte what went in. */
+function protect(s) {
+  const held = [];
+  const text = String(s).replace(PROTECT, m => '<x>' + (held.push(m) - 1) + '</x>');
+  return { text, held };
+}
+
+/* Puts the held values back, and refuses to guess if one went missing.
+ *
+ * A dropped token means a figure that would never convert, so this throws
+ * rather than returning a string with a hole in it -- failing the run costs
+ * a re-translation, shipping it costs a wrong price on a live page. */
+function restore(translated, held, where) {
+  let out = String(translated);
+  for (let i = 0; i < held.length; i++) {
+    // Anchored on the closing tag, so token 1 cannot match inside token 10.
+    const token = new RegExp('<x>\\s*' + i + '\\s*</x>', 'g');
+    if (!token.test(out)) {
+      throw new Error('lost a protected value while translating ' + where + '.'
+        + '\n  expected back: ' + held[i]
+        + '\n  DeepL returned: ' + out.slice(0, 200));
+    }
+    out = out.replace(token, () => held[i]);
+  }
+  return out.replace(/<\/?x>/g, '');
+}
 
 /* ── walking the translation object ────────────────────────────────────── */
 
@@ -174,10 +215,16 @@ async function deepl(texts, target) {
     body.set('source_lang', OPTS.source.toUpperCase());
     body.set('tag_handling', 'html');
     body.set('ignore_tags', 'x');
-    batch.forEach(t => body.append('text', protect(t)));
+    // Held per text, in request order, which is the order DeepL answers in.
+    const held = batch.map(t => {
+      const p = protect(t);
+      body.append('text', p.text);
+      return p.held;
+    });
 
     const json = await send(body);
-    json.translations.forEach(t => out.push(unprotect(t.text)));
+    json.translations.forEach((t, j) => out.push(
+      restore(t.text, held[j], target + ' string #' + (i + j + 1))));
     process.stdout.write('.');
   }
   return out;
@@ -187,7 +234,7 @@ async function deepl(texts, target) {
  * protected figures, HTML tags -- without a key or a single API call. */
 async function mock(texts, target) {
   return texts.map(t => {
-    const protectedOnly = protect(t).replace(/<x>.*?<\/x>/g, ' ');
+    const protectedOnly = protect(t).text.replace(/<x>.*?<\/x>/g, ' ');
     const tagless = protectedOnly.replace(/<[^>]+>/g, '');
     const words = tagless.replace(/ /g, '').trim();
     // keep tags and figures exactly, prefix the visible words
@@ -235,7 +282,7 @@ async function supported() {
 
   if (OPTS.dryRun) {
     console.log('\n--dry-run, nothing sent. First five strings as they would go out:\n');
-    texts.slice(0, 5).forEach(t => console.log('  ' + protect(t).slice(0, 150)));
+    texts.slice(0, 5).forEach(t => console.log('  ' + protect(t).text.slice(0, 150)));
     process.exit(0);
   }
 
