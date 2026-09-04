@@ -28,7 +28,10 @@ https://www.drpbuildlab.com/*    https://drpbuildlab.com/:splat    301!
 /                                 /jp/                              302!  Country=jp
 /                                 /sg/                              302!  Country=sg
 /                                 /au/                              302!  Country=au
-/                                 /be/                              302!
+# Every country without a market of its own. English at euro prices rather
+# than Dutch: the studio is Belgian, but Dutch is the wrong greeting for the
+# ~180 countries above, and euro is the currency actually quoted.
+/                                 /ie/                              302!
 
 # ── Pre-market URLs move into the default market ─────────────────────────
 # Permanent: these are the addresses that were indexed and shared before the

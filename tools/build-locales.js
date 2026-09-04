@@ -33,8 +33,12 @@ const TRANSLATIONS = eval(
 const PAGE_KEY = { '': 'home', '/over-ons': 'about', '/prijzen': 'pricing', '/contact': 'contact' };
 const ORIGIN = 'https://drpbuildlab.com';
 
-const CODES = Object.keys(MARKETS).filter(k => k !== '__default');
+const META_KEYS = ['__default', '__fallback'];
+const CODES = Object.keys(MARKETS).filter(k => META_KEYS.indexOf(k) === -1);
 const DEFAULT = MARKETS.__default;
+// x-default is advice to a crawler about the unmatched visitor, so it names
+// the fallback market rather than the home one.
+const FALLBACK = MARKETS.__fallback || MARKETS.__default;
 
 /* source page -> path under a market directory */
 const PAGES = [
@@ -64,7 +68,7 @@ function hreflangBlock(route) {
     const tag = `${MARKETS[code].lang}-${code.toUpperCase()}`;
     return `<link rel="alternate" hreflang="${tag}" href="${ORIGIN}/${code}${route || '/'}">`;
   });
-  lines.push(`<link rel="alternate" hreflang="x-default" href="${ORIGIN}/${DEFAULT}${route || '/'}">`);
+  lines.push(`<link rel="alternate" hreflang="x-default" href="${ORIGIN}/${FALLBACK}${route || '/'}">`);
   return lines.join('\n');
 }
 
@@ -192,7 +196,7 @@ for (const code of CODES) {
       + `    <changefreq>${page.route ? 'monthly' : 'weekly'}</changefreq>\n`
       + `    <priority>${page.route ? '0.8' : '1.0'}</priority>\n`
       + alts + '\n'
-      + `    <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}/${DEFAULT}${page.route || '/'}"/>\n`
+      + `    <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}/${FALLBACK}${page.route || '/'}"/>\n`
       + '  </url>'
     );
   }

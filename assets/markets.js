@@ -48,5 +48,13 @@
      * pre-existing URL redirects into. Belgium, because that is where the
      * business is and Dutch is the language the copy was written in. */
     __default: 'be',
+
+    /* Where a visitor whose country has no market of its own is sent, and
+       what x-default advertises. Deliberately not __default: the home
+       market is Dutch, and Dutch is the wrong first impression for the
+       ~180 countries not listed above. Ireland is English and prices in
+       euro, which is the currency the studio actually quotes -- /gb/ would
+       be English too but would misprice every non-UK visitor in sterling. */
+    __fallback: 'ie',
   };
 }));

@@ -11,3 +11,6 @@ docs/
 # Python bytecode from serve.py
 __pycache__/
 *.pyc
+
+# Python bytecode from tools/serve.py
+__pycache__/
