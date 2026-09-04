@@ -353,6 +353,38 @@ document.querySelectorAll('[data-count]').forEach(el=>cntIO.observe(el));
    CONTACT FORM — Netlify Forms (AJAX submit)
    Submissions arrive at info@drpbuildlab.com
 ══════════════════════════════════════════ */
+/* The conversion signal, for whatever the tag manager wants to do with it.
+ *
+ * Fired on the 2xx and nowhere else. There is no thank-you page to trigger on
+ * -- the success panel replaces the form in place -- and GTM's built-in form
+ * trigger fires on the attempt, which would have counted every failed send as
+ * a lead.
+ *
+ * No field values travel. The form carries a first name, a surname, a company,
+ * an email, a phone number and a free-text message; putting any of that in a
+ * dataLayer push would turn an analytics tool into a processor of personal
+ * data, with a lawful basis nobody has thought about. What goes is which of
+ * six fixed options was chosen, plus the market and language, none of which
+ * identifies anybody.
+ *
+ * As a slug rather than the option's own text: the labels are translated, so
+ * the raw value would report one choice under ten different names and the
+ * report would be useless across twenty-one markets. The index is stable
+ * because f.sel has the same order in every language. */
+const DEMO_SERVICE = ['none','starter','custom','update','extras','undecided'];
+
+function pushDemoRequest(){
+  const sel = document.getElementById('f-pakket');
+  const i = sel ? sel.selectedIndex : -1;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'demo_request',
+    demo_service: DEMO_SERVICE[i] || 'unknown',
+    demo_market: window.__DRP_MARKET__ || '',
+    demo_language: document.documentElement.lang || '',
+  });
+}
+
 const demoForm = document.getElementById('formWrap');
 if(demoForm){
   const ferrBox = document.getElementById('ferr');
@@ -370,6 +402,7 @@ if(demoForm){
       if(!res.ok) throw new Error('HTTP '+res.status);
       demoForm.style.display = 'none';
       document.getElementById('succ').classList.add('on');
+      pushDemoRequest();
     })
     .catch(()=>{
       if(submitBtn) submitBtn.disabled = false;
