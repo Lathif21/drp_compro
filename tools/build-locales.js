@@ -223,6 +223,58 @@ function marketSchema(html, code) {
   html = html.replace(/"paymentAccepted": "[^"]*"/,
     () => '"paymentAccepted": ' + JSON.stringify(pay));
 
+  /* The descriptive copy, taken from the translations instead of the Dutch it
+   * was hardcoded in.
+   *
+   * All of it shipped in Dutch to every market -- the business description a
+   * crawler reads, the services it knows about, both package names and both
+   * package descriptions. Invisible to a visitor, and the strongest reason
+   * Google had to treat nineteen markets as one Belgian page.
+   *
+   * Not one of these needed a new translation key. The site already says all
+   * of it, in every language, in copy a human wrote or reviewed: meta.desc is
+   * the business description, hero.eye the one-liner, p1/p2 the packages,
+   * ex.items the service list. Reusing them means no new machine translation
+   * enters the schema, and the schema cannot drift from the page. */
+  const plain = s => String(s).replace(/<[^>]*>/g, '');
+  const setJson = (key, value, was) => {
+    const from = '"' + key + '": ' + JSON.stringify(was);
+    if (!html.includes(from)) {
+      throw new Error('src no longer contains ' + key + ' = ' + JSON.stringify(was).slice(0, 60)
+        + '\n  (market ' + code + '; update marketSchema in build-locales.js)');
+    }
+    html = html.split(from).join('"' + key + '": ' + JSON.stringify(value));
+  };
+
+  /* Only the home page carries ProfessionalService, Organization and WebSite;
+   * the other three have a BreadcrumbList and, on pricing, an FAQPage. So the
+   * copy below is skipped where those blocks do not exist -- but where they
+   * do, every literal must still be found, which is what setJson enforces.
+   * A silent no-op on all four pages would hide the day someone edits the
+   * Dutch in src and the schema quietly stops being translated. */
+  if (html.includes('"@type": "ProfessionalService"')) {
+  setJson('description', t['meta.desc'],
+    'DRP BuildLab ontwerpt en bouwt websites volledig op maat voor lokale ondernemers in België. Beginnerspakket vanaf €499 of quotatie op maat voor geavanceerde projecten — met optioneel maandelijks onderhoud vanaf €29 per maand.');
+  setJson('description', t['hero.eye'],
+    'Websites op maat voor lokale ondernemers in België.');
+  setJson('alternateName', 'DRP BuildLab — ' + plain(t['ab.logotag']),
+    'DRP BuildLab — Webdesign op maat');
+
+  // What the studio does, from the extra-services list it already publishes.
+  html = html.replace(/"knowsAbout": \[[^\]]*\]/,
+    () => '"knowsAbout": [' + t['ex.items'].map(i => JSON.stringify(i.n)).join(',') + ']');
+
+  // The two offers, from the two package blocks on the pricing page.
+  setJson('name', t['p1.name'], 'Beginnerspakket — Website op maat');
+  setJson('description', plain(t['p1.desc']),
+    'Ideaal voor lokale ondernemers die net starten zonder website, of een bestaande website willen laten aanpassen. Website op maat; maandelijks onderhoud optioneel vanaf €29 per maand.');
+  setJson('name', t['p1.name'], 'Website op maat — Beginnerspakket');
+  setJson('name', t['p2.name'], 'Maatwerk website — quotatie op maat');
+  setJson('description', plain(t['p2.desc']),
+    'Geavanceerde websites volledig op maat. Prijs wordt bepaald op basis van de omvang van het project. Maandelijks onderhoud optioneel: €29 per maand of €250 per jaar.');
+  setJson('name', t['p2.name'], 'Maatwerk website op maat');
+  }
+
   /* The contactPoint's own areaServed, which is a country code, not a list. */
   html = html.replace(/"areaServed": "[A-Z]{2}"/,
     () => '"areaServed": ' + JSON.stringify(code.toUpperCase()));
