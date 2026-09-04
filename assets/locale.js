@@ -168,7 +168,17 @@
     }
   }
 
-  function walk(root, fn) {
+  /* `all` visits every text node, not only the ones still carrying a euro
+   * sign.
+   *
+   * The euro filter is right for finding amounts to convert, and wrong for
+   * putting the originals back: once a node has been converted it says
+   * "R$ 2.951" and the filter can no longer see it. That did not matter while
+   * every page began in euro, because the restore pass had nothing to do on
+   * the first run. With a bootstrap rate the first run converts, and the
+   * second pass -- the one carrying the live rate -- found nothing to restore
+   * and so nothing to re-convert. The bootstrap silently became final. */
+  function walk(root, fn, all) {
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode: function (n) {
         var p = n.parentNode;
@@ -176,6 +186,7 @@
         var tag = p.nodeName;
         if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') return NodeFilter.FILTER_REJECT;
         if (p.closest && p.closest('[data-no-currency]')) return NodeFilter.FILTER_REJECT;
+        if (all) return NodeFilter.FILTER_ACCEPT;
         return n.nodeValue && n.nodeValue.indexOf('€') !== -1
           ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
       },
@@ -192,10 +203,12 @@
 
     // Restore originals first: the language switcher rewrites some nodes from
     // source and leaves others untouched, so without this a second pass would
-    // convert an already-converted figure.
+    // convert an already-converted figure. Every text node, not just the ones
+    // still showing euro -- an already-converted one is exactly what needs
+    // putting back.
     walk(document.body, function (node) {
       if (snap.has(node)) node.nodeValue = snap.get(node);
-    });
+    }, true);
 
     if (!rate || cur === 'EUR') { note(null); return; }
 
@@ -418,6 +431,24 @@
   state.market = resolveMarket();
   var M = window.DRP_MARKETS || {};
   state.lang = (M[state.market] && M[state.market].lang) || null;
+
+  /* A rate to start from, written into assets/rates.boot.js at build time.
+   *
+   * Without it every non-euro market painted "€499" and sat there for over a
+   * second -- 2.9s on a slow connection -- because conversion could not begin
+   * until /api/rates came back. A visitor in São Paulo read a euro price for
+   * the first second of every pageview.
+   *
+   * This is a starting value, never the answer: the live rate is still
+   * fetched below and re-converts the page when it lands. So nothing here
+   * fixes a rate in place -- it only stops the first paint being wrong.
+   *
+   * Absent during prerendering, where the build deliberately starves the page
+   * of rates so that euro, not a frozen conversion, is what gets committed. */
+  if (window.__DRP_RATES__) {
+    state.rates = window.__DRP_RATES__;
+    state.stale = true;
+  }
 
   /* Rates only. The country lookup is gone from the page entirely: the market
    * decides language and currency, and Netlify's _redirects handles the one

@@ -95,6 +95,12 @@ function serve() {
     // committed HTML. Baking a converted figure would freeze one moment's
     // exchange rate into a static file and quietly go stale.
     if (url.startsWith('/api/')) { res.writeHead(503).end('{}'); return; }
+    /* Same reasoning for the bootstrap rate: it exists so a visitor never
+     * sees euro, but here it would convert the prices and this script would
+     * serialise the result -- freezing today's rate into a committed file,
+     * which is the thing the line above exists to prevent. The page keeps
+     * its <script> tag either way; it just gets nothing to work with. */
+    if (url === '/assets/rates.boot.js') { res.writeHead(503).end('') ; return; }
     let file = path.join(ROOT, url);
     if (!path.extname(file)) file = path.join(file, 'index.html');
     if (!fs.existsSync(file) || !fs.statSync(file).isFile()) { res.writeHead(404).end(); return; }
