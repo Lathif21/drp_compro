@@ -122,7 +122,7 @@ const TRANSLATIONS = {
   "ft.tag": "地元企業向けのプロフェッショナルなウェブサイト · 完全オーダーメイド",
   "ft.nav": ["ナビゲーション","ホーム","当社について","価格","お問い合わせ"],
   "ft.ct": "お問い合わせ",
-  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, ベルギー · VATBE 1033.313.383",
+  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, ベルギー · VAT BE 1033.313.383",
   "ft.ig": "フォローしてください",
   "sticky.txt": "€499のスターターパッケージ",
   "sticky.btn": "無料体験版 →",

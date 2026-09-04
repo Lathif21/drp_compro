@@ -707,7 +707,7 @@ id:{
     "Hubungi Kami"
    ],
    "ft.ct": "Hubungi Kami",
-   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Nomor PPNBE 1033.313.383",
+   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Nomor PPN BE 1033.313.383",
    "ft.ig": "Ikuti kami",
    "sticky.txt": "Paket pemula dari €499",
    "sticky.btn": "Demo gratis →",
@@ -1106,7 +1106,7 @@ de:{
     "Kontakt"
    ],
    "ft.ct": "Kontakt",
-   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgien · Umsatzsteuer-BE 1033.313.383",
+   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgien · USt-IdNr. BE 1033.313.383",
    "ft.ig": "Folgen Sie uns",
    "sticky.txt": "Starterpaket von €499",
    "sticky.btn": "Kostenlose Demo →",
@@ -1505,7 +1505,7 @@ ja:{
     "お問い合わせ"
    ],
    "ft.ct": "お問い合わせ",
-   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, ベルギー · VATBE 1033.313.383",
+   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, ベルギー · VAT BE 1033.313.383",
    "ft.ig": "フォローしてください",
    "sticky.txt": "€499のスターターパッケージ",
    "sticky.btn": "無料体験版 →",

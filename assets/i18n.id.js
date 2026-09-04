@@ -122,7 +122,7 @@ const TRANSLATIONS = {
   "ft.tag": "Situs web profesional untuk bisnis lokal · Disesuaikan sepenuhnya",
   "ft.nav": ["Navigasi","Beranda","Tentang Kami","Harga","Hubungi Kami"],
   "ft.ct": "Hubungi Kami",
-  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Nomor PPNBE 1033.313.383",
+  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Nomor PPN BE 1033.313.383",
   "ft.ig": "Ikuti kami",
   "sticky.txt": "Paket pemula dari €499",
   "sticky.btn": "Demo gratis →",

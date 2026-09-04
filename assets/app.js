@@ -375,17 +375,18 @@ function resetSh(el){
 
 /* Plus Jakarta Sans ships latin/latin-ext/vietnamese/cyrillic-ext only, so a
    language needing other glyphs would silently fall back to a system font --
-   wrong weights, wrong metrics, broken typography. Loaded once per language,
-   on demand, so a Dutch/English/French/Spanish visitor -- the overwhelming
-   majority -- never fetches anything extra. */
-const WEBFONT_FAMILY={ja:'Noto Sans JP'};
-const WEBFONT_HREF={
-  ja:'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap',
-};
+   wrong weights, wrong metrics, broken typography.
+
+   The table lives in markets.js because the generator needs it too:
+   build-locales.js writes the stylesheet link and the font rule straight
+   into each generated page, so the first paint is already correct. This is
+   the runtime path for a page that was not generated, and the belt-and-braces
+   for a language change that never happens now the picker navigates. */
+const WEBFONTS=(window.DRP_MARKETS&&window.DRP_MARKETS.__webfonts)||{};
 const webfontsLoaded=new Set();
 function ensureWebFont(lang){
-  const family=WEBFONT_FAMILY[lang];
-  if(!family){
+  const wf=WEBFONTS[lang];
+  if(!wf){
     // Switching back to nl/en/fr/es/de/id after a language that needed an
     // extra font: clear the inline override rather than leaving Noto set.
     document.body.style.removeProperty('font-family');
@@ -393,13 +394,17 @@ function ensureWebFont(lang){
   }
   if(!webfontsLoaded.has(lang)){
     webfontsLoaded.add(lang);
-    const link=document.createElement('link');
-    link.rel='stylesheet';
-    link.href=WEBFONT_HREF[lang];
-    document.head.appendChild(link);
+    // The generated page already declares this link. Adding a second one
+    // would re-request the same stylesheet on every market that needs it.
+    if(!document.querySelector('link[rel="stylesheet"][href="'+wf.href+'"]')){
+      const link=document.createElement('link');
+      link.rel='stylesheet';
+      link.href=wf.href;
+      document.head.appendChild(link);
+    }
   }
   document.body.style.setProperty('font-family',
-    "'Plus Jakarta Sans','"+family+"',sans-serif");
+    "'Plus Jakarta Sans','"+wf.family+"',sans-serif");
 }
 
 function applyLang(lang,persist){

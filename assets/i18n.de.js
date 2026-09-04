@@ -122,7 +122,7 @@ const TRANSLATIONS = {
   "ft.tag": "Professionelle Websites für lokale Unternehmen · Vollständig individuell gestaltet",
   "ft.nav": ["Navigation","Startseite","Über uns","Preise","Kontakt"],
   "ft.ct": "Kontakt",
-  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgien · Umsatzsteuer-BE 1033.313.383",
+  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgien · USt-IdNr. BE 1033.313.383",
   "ft.ig": "Folgen Sie uns",
   "sticky.txt": "Starterpaket von €499",
   "sticky.btn": "Kostenlose Demo →",

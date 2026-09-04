@@ -59,6 +59,24 @@
     sg: { lang: 'en', currency: 'SGD', name: 'Singapore',     region: 'Asia Pacific' },
     au: { lang: 'en', currency: 'AUD', name: 'Australia',     region: 'Asia Pacific' },
 
+    /* Languages whose script the body face does not cover.
+     *
+     * Declared here because both sides need it: build-locales.js writes the
+     * stylesheet link and the font rule into each generated page, and app.js
+     * reads the same table at runtime. It used to live only in app.js, which
+     * meant /jp/ downloaded Noto Sans JP on every visit and then rendered
+     * Japanese in the browser's fallback anyway -- prerender baked the <link>
+     * into the page but stripped the inline font-family that used it, so the
+     * font arrived and was never applied. With JS off it never applied at all.
+     *
+     * Adding a script means adding a line here, nothing else. */
+    __webfonts: {
+      ja: {
+        family: 'Noto Sans JP',
+        href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&display=swap',
+      },
+    },
+
     /* The market served when geo says nothing useful, and the one every
      * pre-existing URL redirects into. Belgium, because that is where the
      * business is and Dutch is the language the copy was written in. */

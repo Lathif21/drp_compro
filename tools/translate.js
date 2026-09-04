@@ -91,7 +91,12 @@ const PROTECT = new RegExp(
   '(?:&euro;|€)\\s?' + NUM +        // €499, € 8.320
   '|' + NUM + '\\s?(?:&euro;|€)' +  // 499 €   (French and Spanish order)
   '|\\{[a-zA-Z]+\\}' +                  // {cur} and friends
-  '|BE\\s?\\d[\\d.]*\\d',            // the VAT number
+  // The VAT number, with the space in front of it pulled inside: DeepL
+  // drops whitespace that sits outside an ignored tag, which glued the
+  // translated label to the country code -- "Numer VATBE 1033.313.383" in
+  // Polish, "Nomor PPNBE" in Indonesian, "VATBE" in Japanese. Inside the
+  // tag the space comes back verbatim.
+  '|\\s?BE\\s?\\d[\\d.]*\\d',
   'g');
 
 const protect = s => String(s).replace(PROTECT, m => '<x>' + m + '</x>');

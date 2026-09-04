@@ -35,8 +35,10 @@ const TRANSLATIONS = eval(
 const PAGE_KEY = { '': 'home', '/over-ons': 'about', '/prijzen': 'pricing', '/contact': 'contact' };
 const ORIGIN = 'https://drpbuildlab.com';
 
-const META_KEYS = ['__default', '__fallback'];
-const CODES = Object.keys(MARKETS).filter(k => META_KEYS.indexOf(k) === -1);
+// Everything __-prefixed is metadata, not a market: __default, __fallback
+// and __webfonts. Matched by prefix so the next one added does not have to
+// be remembered here.
+const CODES = Object.keys(MARKETS).filter(k => !k.startsWith('__'));
 const DEFAULT = MARKETS.__default;
 // x-default is advice to a crawler about the unmatched visitor, so it names
 // the fallback market rather than the home one.
@@ -248,6 +250,33 @@ function breadcrumb(html, code, route) {
     '"itemListElement": [' + LF + items.join(',' + LF) + LF + '  ]');
 }
 
+/* The webfont for a script the body face does not cover, declared in the
+ * page instead of injected by JS.
+ *
+ * app.js loads it at runtime, which turned out to be too late to matter:
+ * prerender bakes the <link> into the page but strips the inline
+ * font-family that used it, so /jp/ pulled Noto Sans JP on every visit and
+ * still rendered Japanese in whatever the browser fell back to. With
+ * JavaScript off it downloaded the font and never applied it at all.
+ *
+ * The rule is keyed on html[lang] so it outranks the plain body rule in
+ * styles.css whichever order the two load in. */
+const SHEET = '<link rel="stylesheet" href="/assets/styles.css">';
+
+function webfont(html, code) {
+  const lang = MARKETS[code].lang;
+  const wf = (MARKETS.__webfonts || {})[lang];
+  if (!wf) return html;
+  const href = wf.href.split('&').join('&amp;');
+  return html.split(SHEET).join([
+    `<link rel="stylesheet" href="${href}">`,
+    '<style>',
+    `html[lang="${lang}"] body{font-family:'Plus Jakarta Sans','${wf.family}',sans-serif}`,
+    '</style>',
+    SHEET,
+  ].join('\n'));
+}
+
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -291,6 +320,9 @@ function build(code, page) {
     `<script>window.__DRP_MARKET__=${JSON.stringify(code)};</script>\n`
     + '<script defer src="/assets/markets.js"></script>\n'
     + '<link rel="stylesheet" href="/assets/styles.css">');
+
+  // 5b. and the font its script needs, in the page rather than via JS
+  html = webfont(html, code);
 
 
   // 6. the language toggle becomes a market picker that navigates

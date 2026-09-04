@@ -35,7 +35,7 @@ const { chromium } = require('playwright-core');
 
 const ROOT = path.resolve(__dirname, '..');
 const MARKETS = require(path.join(ROOT, 'assets', 'markets.js'));
-const CODES = Object.keys(MARKETS).filter(k => k !== '__default');
+const CODES = Object.keys(MARKETS).filter(k => !k.startsWith('__'));
 const ROUTES = ['', '/over-ons', '/prijzen', '/contact'];
 // Checked after each render: if applyLang did not run, the page would be
 // written back still in Dutch and the bug would look fixed.
