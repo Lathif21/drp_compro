@@ -82,7 +82,8 @@ nl:{
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, België · BTW BE 1033.313.383','ft.ig':'Volg ons',
   'sticky.txt':'Beginnerspakket vanaf €499','sticky.btn':'Gratis demo →',
   'cur.note':'Prijzen in {cur} zijn omgerekend vanuit euro tegen de koers van vandaag en zijn indicatief. Facturatie gebeurt in EUR.',
-  'wa':'WhatsApp ons'
+  'wa':'WhatsApp ons',
+  'pay.methods':'Bankoverschrijving'
 },
 en:{
   'meta.title':'DRP BuildLab — Custom Websites for Local Businesses | Starter Package from €499',
@@ -159,7 +160,8 @@ en:{
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgium · VAT BE 1033.313.383','ft.ig':'Follow us',
   'sticky.txt':'Starter package from €499','sticky.btn':'Free demo →',
   'cur.note':'Prices in {cur} are converted from euro at today’s rate and are indicative. Invoicing is in EUR.',
-  'wa':'WhatsApp us'
+  'wa':'WhatsApp us',
+  'pay.methods':'Bank transfer'
 },
 fr:{
   'meta.title':'DRP BuildLab — Sites web sur mesure pour entreprises locales | Forfait débutant à partir de 499 €',
@@ -236,7 +238,8 @@ fr:{
   'ft.ct':'Contact','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgique · TVA BE 1033.313.383','ft.ig':'Suivez-nous',
   'sticky.txt':'Forfait starter à partir de 499 €','sticky.btn':'Démo gratuite →',
   'cur.note':'Les prix en {cur} sont convertis depuis l’euro au taux du jour et sont indicatifs. La facturation se fait en EUR.',
-  'wa':'WhatsApp nous'
+  'wa':'WhatsApp nous',
+  'pay.methods':'Virement bancaire'
 },
 es:{
   'meta.title':'DRP BuildLab — Sitios web a medida para negocios locales | Paquete inicial desde 499 €',
@@ -313,7 +316,8 @@ es:{
   'ft.ct':'Contacto','ft.copy':'© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · IVA BE 1033.313.383','ft.ig':'Síguenos',
   'sticky.txt':'Paquete inicial desde 499 €','sticky.btn':'Demo gratis →',
   'cur.note':'Los precios en {cur} se convierten desde el euro al tipo de cambio de hoy y son indicativos. La facturación se realiza en EUR.',
-  'wa':'Escríbenos por WhatsApp'
+  'wa':'Escríbenos por WhatsApp',
+  'pay.methods':'Transferencia bancaria'
 },
 id:{
    "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis Lokal | Paket Pemula dari €499",
@@ -712,7 +716,8 @@ id:{
    "sticky.txt": "Paket pemula dari €499",
    "sticky.btn": "Demo gratis →",
    "cur.note": "Harga di {cur} dikonversi dari euro berdasarkan kurs hari ini dan bersifat perkiraan. Penagihan dilakukan dalam EUR.",
-   "wa": "Hubungi kami melalui WhatsApp"
+   "wa": "Hubungi kami melalui WhatsApp",
+   "pay.methods": "Transfer bank"
   },
 de:{
    "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für lokale Unternehmen | Starter-Paket von €499",
@@ -1111,7 +1116,8 @@ de:{
    "sticky.txt": "Starterpaket von €499",
    "sticky.btn": "Kostenlose Demo →",
    "cur.note": "Die Preise auf {cur} wurden zum heutigen Wechselkurs aus Euro umgerechnet und dienen nur als Anhaltspunkt. Die Rechnungsstellung erfolgt in EUR.",
-   "wa": "Schreib uns auf WhatsApp"
+   "wa": "Schreib uns auf WhatsApp",
+   "pay.methods": "Banküberweisung"
   },
 ja:{
    "meta.title": "DRP BuildLab — 地元企業向けカスタムウェブサイト | €499 のスターターパッケージ",
@@ -1510,7 +1516,8 @@ ja:{
    "sticky.txt": "€499のスターターパッケージ",
    "sticky.btn": "無料体験版 →",
    "cur.note": "{cur} における価格は、本日の為替レートでユーロから換算されたものであり、あくまで目安です。請求書はユーロ建てとなります。",
-   "wa": "WhatsAppでメッセージをお送りください"
+   "wa": "WhatsAppでメッセージをお送りください",
+   "pay.methods": "銀行振込"
   },
 pt:{
    "meta.title": "DRP BuildLab — Sites personalizados para empresas locais | Pacote Inicial em €499",
@@ -1638,6 +1645,7 @@ pt:{
    "sticky.txt": "Pacote inicial da €499",
    "sticky.btn": "Demonstração gratuita →",
    "cur.note": "Os preços em {cur} são convertidos do euro à taxa de câmbio de hoje e são meramente informativos. O faturamento é feito em euros.",
-   "wa": "Envie-nos uma mensagem pelo WhatsApp"
+   "wa": "Envie-nos uma mensagem pelo WhatsApp",
+   "pay.methods": "Transferência bancária"
   }
 };

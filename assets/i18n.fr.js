@@ -127,6 +127,7 @@ const TRANSLATIONS = {
   "sticky.txt": "Forfait starter à partir de 499 €",
   "sticky.btn": "Démo gratuite →",
   "cur.note": "Les prix en {cur} sont convertis depuis l’euro au taux du jour et sont indicatifs. La facturation se fait en EUR.",
-  "wa": "WhatsApp nous"
+  "wa": "WhatsApp nous",
+  "pay.methods": "Virement bancaire"
 }
 };

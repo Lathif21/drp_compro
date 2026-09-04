@@ -127,6 +127,7 @@ const TRANSLATIONS = {
   "sticky.txt": "Paquete inicial desde 499 €",
   "sticky.btn": "Demo gratis →",
   "cur.note": "Los precios en {cur} se convierten desde el euro al tipo de cambio de hoy y son indicativos. La facturación se realiza en EUR.",
-  "wa": "Escríbenos por WhatsApp"
+  "wa": "Escríbenos por WhatsApp",
+  "pay.methods": "Transferencia bancaria"
 }
 };

@@ -127,6 +127,7 @@ const TRANSLATIONS = {
   "sticky.txt": "Starterpaket von €499",
   "sticky.btn": "Kostenlose Demo →",
   "cur.note": "Die Preise auf {cur} wurden zum heutigen Wechselkurs aus Euro umgerechnet und dienen nur als Anhaltspunkt. Die Rechnungsstellung erfolgt in EUR.",
-  "wa": "Schreib uns auf WhatsApp"
+  "wa": "Schreib uns auf WhatsApp",
+  "pay.methods": "Banküberweisung"
 }
 };

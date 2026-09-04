@@ -408,7 +408,8 @@ const TRANSLATIONS_DRAFT = {
   "sticky.txt": "Pacchetto iniziale su €499",
   "sticky.btn": "Prova gratuita →",
   "cur.note": "I prezzi indicati su {cur} sono convertiti dall&#x27;euro al tasso di cambio odierno e sono puramente indicativi. La fatturazione avviene in EUR.",
-  "wa": "Contattaci su WhatsApp"
+  "wa": "Contattaci su WhatsApp",
+  "pay.methods": "Bonifico bancario"
  },
  "pl": {
   "meta.title": "DRP BuildLab — Strony internetowe dostosowane do potrzeb lokalnych firm | Pakiet startowy z €499",
@@ -807,7 +808,8 @@ const TRANSLATIONS_DRAFT = {
   "sticky.txt": "Pakiet startowy z serwisu €499",
   "sticky.btn": "Bezpłatna wersja demonstracyjna →",
   "cur.note": "Ceny podane na stronie {cur} zostały przeliczone z euro według dzisiejszego kursu i mają charakter orientacyjny. Faktury wystawiane są w euro.",
-  "wa": "Napisz do nas na WhatsAppie"
+  "wa": "Napisz do nas na WhatsAppie",
+  "pay.methods": "Przelew bankowy"
  }
 };
 

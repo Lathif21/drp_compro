@@ -173,6 +173,7 @@ function spliceBetween(html, open, close, replacement) {
 
 function marketSchema(html, code) {
   const m = MARKETS[code];
+  const t = TRANSLATIONS[m.lang];
   const LF = String.fromCharCode(10);
 
   /* areaServed: the country, whatever administrative areas the market
@@ -203,6 +204,24 @@ function marketSchema(html, code) {
     || [LANG_NAME[m.lang], 'English'].filter((v, i, a) => a.indexOf(v) === i);
   html = spliceBetween(html, '"availableLanguage": [', ']',
     '"availableLanguage": [' + langs.map(l => JSON.stringify(l)).join(',') + ']');
+
+  /* How the studio is paid.
+   *
+   * This read "Bankoverschrijving, Bancontact" on all nineteen markets: Dutch
+   * everywhere, and naming a Belgian-only debit scheme that a visitor in
+   * eighteen of them cannot use. The same shape of error as a translated tax
+   * term -- a real thing, correctly named, asserted where it does not exist.
+   *
+   * Now the market's own language, and bank transfer alone, which is the one
+   * payment fact the site can stand behind: it invoices, in euro. Nothing is
+   * claimed that has not been confirmed. */
+  const pay = t['pay.methods'];
+  if (!pay) {
+    throw new Error('no pay.methods for language "' + m.lang + '" (market '
+      + code + '). Every language block needs one.');
+  }
+  html = html.replace(/"paymentAccepted": "[^"]*"/,
+    () => '"paymentAccepted": ' + JSON.stringify(pay));
 
   /* The contactPoint's own areaServed, which is a country code, not a list. */
   html = html.replace(/"areaServed": "[A-Z]{2}"/,

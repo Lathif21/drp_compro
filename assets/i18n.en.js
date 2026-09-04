@@ -127,6 +127,7 @@ const TRANSLATIONS = {
   "sticky.txt": "Starter package from €499",
   "sticky.btn": "Free demo →",
   "cur.note": "Prices in {cur} are converted from euro at today’s rate and are indicative. Invoicing is in EUR.",
-  "wa": "WhatsApp us"
+  "wa": "WhatsApp us",
+  "pay.methods": "Bank transfer"
 }
 };

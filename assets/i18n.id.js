@@ -127,6 +127,7 @@ const TRANSLATIONS = {
   "sticky.txt": "Paket pemula dari €499",
   "sticky.btn": "Demo gratis →",
   "cur.note": "Harga di {cur} dikonversi dari euro berdasarkan kurs hari ini dan bersifat perkiraan. Penagihan dilakukan dalam EUR.",
-  "wa": "Hubungi kami melalui WhatsApp"
+  "wa": "Hubungi kami melalui WhatsApp",
+  "pay.methods": "Transfer bank"
 }
 };
