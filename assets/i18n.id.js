@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Demo gratis →",
   "cur.note": "Harga di {cur} dikonversi dari euro berdasarkan kurs hari ini dan bersifat perkiraan. Penagihan dilakukan dalam EUR.",
   "wa": "Hubungi kami melalui WhatsApp",
-  "pay.methods": "Transfer bank"
+  "pay.methods": "Transfer bank",
+  "lang.offer": "Lihat halaman ini dalam bahasa Indonesia",
+  "lang.dismiss": "Tutup"
 }
 };

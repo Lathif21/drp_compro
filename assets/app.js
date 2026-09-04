@@ -658,6 +658,69 @@ if(marketSel){
   });
 }
 
+/* ══════════════════════════════════════════
+   LANGUAGE OFFER — suggest, never switch
+══════════════════════════════════════════ */
+/* The market decides the language, and the market comes from the URL. That is
+   right for a shared link and for a crawler, but it leaves a French-speaking
+   Belgian reading Dutch on /be/ with nothing telling them there is a French
+   version one click away.
+
+   So: if the browser asks for a language the site has, and this market does
+   not serve it, offer it. Offer only -- the URL is never changed on the
+   visitor's behalf, because the URL is what they were promised. The bar is
+   written in the language being offered, since the reader is by definition
+   not reading this one well. */
+(function languageOffer(){
+  const M = window.DRP_MARKETS || {};
+  const here = document.documentElement.lang;
+  const codes = Object.keys(M).filter(k => !k.startsWith('__'));
+  if (!codes.length || !here) return;
+
+  const remember = (v) => { try {
+    return v === undefined ? localStorage.getItem('drp-langbar')
+                           : localStorage.setItem('drp-langbar', v);
+  } catch(e){ return null; } };
+  if (remember()) return;                       // dismissed before, stay quiet
+
+  // What the browser actually asks for, in order, reduced to a bare language.
+  const wanted = (navigator.languages || [navigator.language || ''])
+    .map(t => String(t).toLowerCase().split('-')[0]);
+  const langs = new Set(codes.map(c => M[c].lang));
+  const want = wanted.find(l => langs.has(l) && l !== here);
+  if (!want) return;                            // already the best we have
+
+  /* Which market to send them to. Prefer one that keeps the price in the
+     currency they are already seeing -- a French speaker on /be/ should land
+     on a euro market, not be repriced because they changed language. */
+  const cur = (M[window.__DRP_MARKET__] || {}).currency;
+  const opts = codes.filter(c => M[c].lang === want);
+  const target = opts.find(c => M[c].currency === cur) || opts[0];
+  if (!target) return;
+
+  /* Not from LANGS(): a page carries only its own language, so the French
+     string is not on /be/. assets/lang-offer.js carries these two strings in
+     every language for exactly this. */
+  const t = (window.__DRP_LANG_OFFER__ || {})[want];
+  if (!t || !t.o) return;
+
+  const route = (document.getElementById('marketSel') || {}).dataset?.route || '/';
+  const bar = document.createElement('div');
+  bar.className = 'lang-offer';
+  bar.setAttribute('lang', want);
+  const a = document.createElement('a');
+  a.href = '/' + target + (route === '/' ? '/' : route);
+  a.textContent = t.o;
+  const x = document.createElement('button');
+  x.type = 'button';
+  x.className = 'lang-offer-x';
+  x.setAttribute('aria-label', t.d || 'Dismiss');
+  x.textContent = '×';
+  x.addEventListener('click', () => { remember('1'); bar.remove(); });
+  bar.append(a, x);
+  document.body.appendChild(bar);
+})();
+
 /* Precedence: an explicit click always wins, then the country the edge
    resolved, then the browser's own preference, then Dutch. A visitor who
    has chosen a language is never overridden by where they happen to be. */

@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Kostenlose Demo →",
   "cur.note": "Die Preise auf {cur} wurden zum heutigen Wechselkurs aus Euro umgerechnet und dienen nur als Anhaltspunkt. Die Rechnungsstellung erfolgt in EUR.",
   "wa": "Schreib uns auf WhatsApp",
-  "pay.methods": "Banküberweisung"
+  "pay.methods": "Banküberweisung",
+  "lang.offer": "Diese Seite auf Deutsch ansehen",
+  "lang.dismiss": "Schließen"
 }
 };

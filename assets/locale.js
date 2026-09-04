@@ -54,7 +54,7 @@
     return M.__default || 'be';
   }
 
-  var state = { market: null, lang: null, rates: null, stale: false };
+  var state = { market: null, lang: null, rates: null, stale: false, geo: null };
 
   // Exposed for app.js (which reads currency when painting figures) and for
   // the test suites. Dropped accidentally in the move to markets.
@@ -70,6 +70,24 @@
       var M = window.DRP_MARKETS || {};
       var m = M[state.market];
       var c = (m && m.currency) || 'EUR';
+
+      /* The fallback market is every country that has no market of its own --
+       * roughly 180 of them, all reading English and, until now, all reading
+       * euro even though the rate feed quotes their currency.
+       *
+       * There is no URL segment to carry a currency for them, so it comes
+       * from the visitor instead. This is the one page where that is right:
+       * every other market states its currency in the URL and keeps it, which
+       * is what makes a shared link mean the same thing to whoever opens it.
+       * Here there is nothing to be inconsistent with.
+       *
+       * The page stays English and stays /ie/ either way; only the indicative
+       * figure follows the reader. Invoicing is in euro regardless, which
+       * cur.note says on the page. */
+      if (state.market === M.__fallback && state.geo && state.geo.currency) {
+        c = state.geo.currency;
+      }
+
       // A currency the rate feed does not quote is not one we can price in.
       if (c !== 'EUR' && (!state.rates || !state.rates[c])) return 'EUR';
       return c;
@@ -150,7 +168,13 @@
        which is what makes this correct rather than a guess. */
     var base = LOCALES[lang] || LOCALES.nl;
     if (!state.market) return base;
-    var tag = lang + '-' + state.market.toUpperCase();
+    /* On the fallback market the region comes from the visitor rather than
+     * the URL, so rupees render the way they do in India (en-IN) instead of
+     * the way Ireland would render a foreign currency. */
+    var M = window.DRP_MARKETS || {};
+    var region = (state.market === M.__fallback && state.geo && state.geo.country)
+      ? state.geo.country : state.market;
+    var tag = lang + '-' + region.toUpperCase();
     try {
       return Intl.NumberFormat.supportedLocalesOf(tag).length ? tag : base;
     } catch (e) { return base; }
@@ -461,10 +485,25 @@
    * depend on the translations loading. */
   convert();
 
-  /* Rates only. The country lookup is gone from the page entirely: the market
-   * decides language and currency, and Netlify's _redirects handles the one
-   * place geo still matters -- choosing where to send a bare "/". That is one
-   * fewer request per pageview, and no per-visitor data reaches the client. */
+  /* Who is asking -- but only on the market that has to ask.
+   *
+   * Twenty of the twenty-one markets state their currency in the URL and need
+   * nothing from geo. The fallback serves every country without a market of
+   * its own, so it is the only page where the visitor's own currency is not
+   * already known, and the only one that spends a request finding out.
+   *
+   * Netlify resolves the country at the edge from the connecting IP; the IP
+   * never reaches the page and the response is no-store, because a cached
+   * country is somebody else's location. */
+  if (state.market === (window.DRP_MARKETS || {}).__fallback) {
+    get('/api/geo')
+      .then(function (g) { if (g && g.currency) { state.geo = g; convert(); } })
+      .catch(function () { /* stays euro, which is what it was anyway */ });
+  }
+
+  /* Rates. Netlify's _redirects handles the other place geo matters --
+   * choosing where to send a bare "/" -- so for every market but the fallback
+   * this is the only request the page makes. */
   window.DRP_LOCALE_READY = get('/api/rates')
     .then(function (rt) {
       if (rt && rt.rates) { state.rates = rt.rates; state.stale = !!rt.stale; }

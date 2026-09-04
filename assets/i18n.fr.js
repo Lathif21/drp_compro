@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Démo gratuite →",
   "cur.note": "Les prix en {cur} sont convertis depuis l’euro au taux du jour et sont indicatifs. La facturation se fait en EUR.",
   "wa": "WhatsApp nous",
-  "pay.methods": "Virement bancaire"
+  "pay.methods": "Virement bancaire",
+  "lang.offer": "Voir cette page en français",
+  "lang.dismiss": "Fermer"
 }
 };

@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Gratis demo →",
   "cur.note": "Prijzen in {cur} zijn omgerekend vanuit euro tegen de koers van vandaag en zijn indicatief. Facturatie gebeurt in EUR.",
   "wa": "WhatsApp ons",
-  "pay.methods": "Bankoverschrijving"
+  "pay.methods": "Bankoverschrijving",
+  "lang.offer": "Bekijk deze pagina in het Nederlands",
+  "lang.dismiss": "Sluiten"
 }
 };

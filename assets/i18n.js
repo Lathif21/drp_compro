@@ -83,7 +83,9 @@ nl:{
   'sticky.txt':'Beginnerspakket vanaf €499','sticky.btn':'Gratis demo →',
   'cur.note':'Prijzen in {cur} zijn omgerekend vanuit euro tegen de koers van vandaag en zijn indicatief. Facturatie gebeurt in EUR.',
   'wa':'WhatsApp ons',
-  'pay.methods':'Bankoverschrijving'
+  'pay.methods':'Bankoverschrijving',
+  'lang.offer':'Bekijk deze pagina in het Nederlands',
+  'lang.dismiss':'Sluiten'
 },
 en:{
   'meta.title':'DRP BuildLab — Custom Websites for Local Businesses | Starter Package from €499',
@@ -161,7 +163,9 @@ en:{
   'sticky.txt':'Starter package from €499','sticky.btn':'Free demo →',
   'cur.note':'Prices in {cur} are converted from euro at today’s rate and are indicative. Invoicing is in EUR.',
   'wa':'WhatsApp us',
-  'pay.methods':'Bank transfer'
+  'pay.methods':'Bank transfer',
+  'lang.offer':'View this page in English',
+  'lang.dismiss':'Dismiss'
 },
 fr:{
   'meta.title':'DRP BuildLab — Sites web sur mesure pour entreprises locales | Forfait débutant à partir de 499 €',
@@ -239,7 +243,9 @@ fr:{
   'sticky.txt':'Forfait starter à partir de 499 €','sticky.btn':'Démo gratuite →',
   'cur.note':'Les prix en {cur} sont convertis depuis l’euro au taux du jour et sont indicatifs. La facturation se fait en EUR.',
   'wa':'WhatsApp nous',
-  'pay.methods':'Virement bancaire'
+  'pay.methods':'Virement bancaire',
+  'lang.offer':'Voir cette page en français',
+  'lang.dismiss':'Fermer'
 },
 es:{
   'meta.title':'DRP BuildLab — Sitios web a medida para negocios locales | Paquete inicial desde 499 €',
@@ -317,7 +323,9 @@ es:{
   'sticky.txt':'Paquete inicial desde 499 €','sticky.btn':'Demo gratis →',
   'cur.note':'Los precios en {cur} se convierten desde el euro al tipo de cambio de hoy y son indicativos. La facturación se realiza en EUR.',
   'wa':'Escríbenos por WhatsApp',
-  'pay.methods':'Transferencia bancaria'
+  'pay.methods':'Transferencia bancaria',
+  'lang.offer':'Ver esta página en español',
+  'lang.dismiss':'Cerrar'
 },
 id:{
    "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis Lokal | Paket Pemula dari €499",
@@ -717,7 +725,9 @@ id:{
    "sticky.btn": "Demo gratis →",
    "cur.note": "Harga di {cur} dikonversi dari euro berdasarkan kurs hari ini dan bersifat perkiraan. Penagihan dilakukan dalam EUR.",
    "wa": "Hubungi kami melalui WhatsApp",
-   "pay.methods": "Transfer bank"
+   "pay.methods": "Transfer bank",
+   "lang.offer": "Lihat halaman ini dalam bahasa Indonesia",
+   "lang.dismiss": "Tutup"
   },
 de:{
    "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für lokale Unternehmen | Starter-Paket von €499",
@@ -1117,7 +1127,9 @@ de:{
    "sticky.btn": "Kostenlose Demo →",
    "cur.note": "Die Preise auf {cur} wurden zum heutigen Wechselkurs aus Euro umgerechnet und dienen nur als Anhaltspunkt. Die Rechnungsstellung erfolgt in EUR.",
    "wa": "Schreib uns auf WhatsApp",
-   "pay.methods": "Banküberweisung"
+   "pay.methods": "Banküberweisung",
+   "lang.offer": "Diese Seite auf Deutsch ansehen",
+   "lang.dismiss": "Schließen"
   },
 ja:{
    "meta.title": "DRP BuildLab — 地元企業向けカスタムウェブサイト | €499 のスターターパッケージ",
@@ -1517,7 +1529,9 @@ ja:{
    "sticky.btn": "無料体験版 →",
    "cur.note": "{cur} における価格は、本日の為替レートでユーロから換算されたものであり、あくまで目安です。請求書はユーロ建てとなります。",
    "wa": "WhatsAppでメッセージをお送りください",
-   "pay.methods": "銀行振込"
+   "pay.methods": "銀行振込",
+   "lang.offer": "このページを日本語で表示する",
+   "lang.dismiss": "閉じる"
   },
 pt:{
    "meta.title": "DRP BuildLab — Sites personalizados para empresas locais | Pacote Inicial em €499",
@@ -1646,7 +1660,9 @@ pt:{
    "sticky.btn": "Demonstração gratuita →",
    "cur.note": "Os preços em {cur} são convertidos do euro à taxa de câmbio de hoje e são meramente informativos. O faturamento é feito em euros.",
    "wa": "Envie-nos uma mensagem pelo WhatsApp",
-   "pay.methods": "Transferência bancária"
+   "pay.methods": "Transferência bancária",
+   "lang.offer": "Ver esta página em português",
+   "lang.dismiss": "Fechar"
   },
 it:{
    "meta.title": "DRP BuildLab — Siti web personalizzati per aziende locali | Pacchetto base su €499",
@@ -1775,7 +1791,9 @@ it:{
    "sticky.btn": "Prova gratuita →",
    "cur.note": "I prezzi indicati in {cur} sono convertiti dall'euro al tasso di cambio odierno e sono puramente indicativi. La fatturazione è in EUR.",
    "wa": "Contattaci su WhatsApp",
-   "pay.methods": "Bonifico bancario"
+   "pay.methods": "Bonifico bancario",
+   "lang.offer": "Vedi questa pagina in italiano",
+   "lang.dismiss": "Chiudi"
   },
 pl:{
    "meta.title": "DRP BuildLab — Strony internetowe dostosowane do potrzeb lokalnych firm | Pakiet startowy z €499",
@@ -1904,6 +1922,8 @@ pl:{
    "sticky.btn": "Bezpłatna wersja demonstracyjna →",
    "cur.note": "Ceny w {cur} zostały przeliczone z euro według dzisiejszego kursu i mają charakter orientacyjny. Faktury wystawiane są w euro.",
    "wa": "Napisz do nas na WhatsApp",
-   "pay.methods": "Przelew bankowy"
+   "pay.methods": "Przelew bankowy",
+   "lang.offer": "Zobacz tę stronę po polsku",
+   "lang.dismiss": "Zamknij"
   }
 };

@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Bezpłatna wersja demonstracyjna →",
   "cur.note": "Ceny w {cur} zostały przeliczone z euro według dzisiejszego kursu i mają charakter orientacyjny. Faktury wystawiane są w euro.",
   "wa": "Napisz do nas na WhatsApp",
-  "pay.methods": "Przelew bankowy"
+  "pay.methods": "Przelew bankowy",
+  "lang.offer": "Zobacz tę stronę po polsku",
+  "lang.dismiss": "Zamknij"
 }
 };

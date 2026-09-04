@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "無料体験版 →",
   "cur.note": "{cur} における価格は、本日の為替レートでユーロから換算されたものであり、あくまで目安です。請求書はユーロ建てとなります。",
   "wa": "WhatsAppでメッセージをお送りください",
-  "pay.methods": "銀行振込"
+  "pay.methods": "銀行振込",
+  "lang.offer": "このページを日本語で表示する",
+  "lang.dismiss": "閉じる"
 }
 };

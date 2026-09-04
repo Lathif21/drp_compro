@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Free demo →",
   "cur.note": "Prices in {cur} are converted from euro at today’s rate and are indicative. Invoicing is in EUR.",
   "wa": "WhatsApp us",
-  "pay.methods": "Bank transfer"
+  "pay.methods": "Bank transfer",
+  "lang.offer": "View this page in English",
+  "lang.dismiss": "Dismiss"
 }
 };

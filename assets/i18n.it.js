@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Prova gratuita →",
   "cur.note": "I prezzi indicati in {cur} sono convertiti dall'euro al tasso di cambio odierno e sono puramente indicativi. La fatturazione è in EUR.",
   "wa": "Contattaci su WhatsApp",
-  "pay.methods": "Bonifico bancario"
+  "pay.methods": "Bonifico bancario",
+  "lang.offer": "Vedi questa pagina in italiano",
+  "lang.dismiss": "Chiudi"
 }
 };

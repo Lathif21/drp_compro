@@ -180,6 +180,10 @@ function stripRuntimeState() {
     if (!tbl.getAttribute('style')) tbl.removeAttribute('style');
   }
   document.querySelectorAll('.cur-note').forEach(el => el.remove());
+  /* The language offer depends on the visitor's own browser languages, and
+   * headless Chromium has its own. Baking it would show every visitor an
+   * offer chosen for the build machine. */
+  document.querySelectorAll('.lang-offer').forEach(el => el.remove());
   document.querySelectorAll('[style=""]').forEach(el => el.removeAttribute('style'));
 }
 

@@ -128,6 +128,8 @@ const TRANSLATIONS = {
   "sticky.btn": "Demonstração gratuita →",
   "cur.note": "Os preços em {cur} são convertidos do euro à taxa de câmbio de hoje e são meramente informativos. O faturamento é feito em euros.",
   "wa": "Envie-nos uma mensagem pelo WhatsApp",
-  "pay.methods": "Transferência bancária"
+  "pay.methods": "Transferência bancária",
+  "lang.offer": "Ver esta página em português",
+  "lang.dismiss": "Fechar"
 }
 };
