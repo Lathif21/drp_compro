@@ -147,9 +147,16 @@ function socialTags(html, code, route) {
  * keep their formatting and /be/ comes out byte-for-byte what it was before
  * this function existed -- which is the check that the generator reproduces
  * the hand-written original rather than merely something close to it. */
+/* The English name of each language, for contactPoint.availableLanguage.
+ *
+ * A language missing from here used to sail straight through: JSON.stringify
+ * of undefined is undefined, so the join produced "availableLanguage": [,"
+ * English"] -- invalid JSON that no page would parse, in a block a human only
+ * reads when something has already gone wrong. Adding Portuguese found it.
+ * Hence the check below rather than a shrug. */
 const LANG_NAME = {
   nl: 'Dutch', en: 'English', fr: 'French', de: 'German',
-  es: 'Spanish', id: 'Indonesian', ja: 'Japanese',
+  es: 'Spanish', id: 'Indonesian', ja: 'Japanese', pt: 'Portuguese',
 };
 
 /* Replace everything from `open` to the first following `close`, inclusive.
@@ -188,6 +195,10 @@ function marketSchema(html, code) {
 
   /* The market's language plus English, unless the market names its own set.
    * Belgium does, because the studio really does answer in French too. */
+  if (!m.languages && !LANG_NAME[m.lang]) {
+    throw new Error('no English name for language "' + m.lang + '" (market '
+      + code + '). Add it to LANG_NAME, or give the market its own `languages`.');
+  }
   const langs = m.languages
     || [LANG_NAME[m.lang], 'English'].filter((v, i, a) => a.indexOf(v) === i);
   html = spliceBetween(html, '"availableLanguage": [', ']',
