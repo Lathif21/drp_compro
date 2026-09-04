@@ -24,6 +24,7 @@ https://www.drpbuildlab.com/*    https://drpbuildlab.com/:splat    301!
 /                                 /us/                              302!  Country=us
 /                                 /ca/                              302!  Country=ca
 /                                 /mx/                              302!  Country=mx
+/                                 /cl/                              302!  Country=cl
 /                                 /id/                              302!  Country=id
 /                                 /jp/                              302!  Country=jp
 /                                 /sg/                              302!  Country=sg

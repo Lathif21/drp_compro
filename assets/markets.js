@@ -53,6 +53,7 @@
     us: { lang: 'en', currency: 'USD', name: 'United States', region: 'Americas' },
     ca: { lang: 'en', currency: 'CAD', name: 'Canada',        region: 'Americas' },
     mx: { lang: 'es', currency: 'MXN', name: 'México',        region: 'Americas' },
+    cl: { lang: 'es', currency: 'CLP', name: 'Chile',         region: 'Americas' },
 
     id: { lang: 'id', currency: 'IDR', name: 'Indonesia',     region: 'Asia Pacific' },
     jp: { lang: 'ja', currency: 'JPY', name: '日本',           region: 'Asia Pacific' },

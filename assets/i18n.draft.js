@@ -12,54 +12,54 @@
  */
 const TRANSLATIONS_DRAFT = {
  "pt": {
-  "meta.title": "DRP BuildLab — Sites personalizados para empresas locais | Pacote inicial em €499",
-  "meta.desc": "A DRP BuildLab cria sites totalmente personalizados para empresários locais. Pacote inicial a partir de €499, ou um orçamento personalizado para projetos avançados — com manutenção mensal opcional a partir de €29 por mês.",
+  "meta.title": "DRP BuildLab — Sites personalizados para empresas locais | Pacote Inicial em €499",
+  "meta.desc": "A DRP BuildLab desenvolve sites totalmente personalizados para empreendedores locais. Pacote inicial a partir de €499, ou um orçamento personalizado para projetos avançados — com manutenção mensal opcional a partir de €29 por mês.",
   "meta.title.about": "Sobre nós — DRP BuildLab | Estúdio de criação de sites para empresas locais",
-  "meta.desc.about": "Criado por empreendedores, para empreendedores. A história por trás do DRP BuildLab e as razões pelas quais as empresas locais nos escolhem.",
-  "meta.title.pricing": "Preços — DRP BuildLab | Pacote inicial €499 ou um orçamento personalizado",
+  "meta.desc.about": "Criado por empreendedores, para empreendedores. A história por trás do DRP BuildLab e por que as empresas locais nos escolhem.",
+  "meta.title.pricing": "Preços — DRP BuildLab | Pacote inicial €499 ou solicite um orçamento personalizado",
   "meta.desc.pricing": "Pacote inicial em €499 ou um orçamento personalizado para projetos avançados. Serviços adicionais e manutenção opcional em €29 por mês.",
-  "meta.title.contact": "Contacto — DRP BuildLab | Solicitar uma demonstração gratuita",
-  "meta.desc.contact": "Solicite uma demonstração gratuita. Entraremos em contacto consigo e mostrar-lhe-emos imediatamente um exemplo personalizado. Sem compromisso.",
+  "meta.title.contact": "Contato — DRP BuildLab | Solicite uma demonstração gratuita",
+  "meta.desc.contact": "Solicite uma demonstração gratuita. Entraremos em contato com você e mostraremos um exemplo personalizado imediatamente. Sem compromisso.",
   "phero.about.eye": "Sobre o DRP BuildLab",
   "phero.about.h": "As pessoas por<br>trás <em>do seu site.</em>",
-  "phero.about.sub": "Quem somos, por que razão começámos e o que pode esperar de nós.",
+  "phero.about.sub": "Quem somos, por que começamos e o que você pode esperar de nós.",
   "phero.pricing.eye": "Preços e pacotes",
   "phero.pricing.h": "Preços justos,<br><em>sem surpresas.</em>",
-  "phero.pricing.sub": "Um pacote inicial em €499 ou um orçamento personalizado. A manutenção fica a seu cargo.",
-  "phero.contact.eye": "Contacto",
-  "phero.contact.h": "Pronto para entrar<br><em>na Internet?</em>",
-  "phero.contact.sub": "Solicite uma demonstração gratuita. Entraremos em contacto consigo e mostrar-lhe-emos imediatamente um exemplo personalizado.",
-  "cta.h": "Pronto para entrar<br><em>na Internet?</em>",
-  "cta.sub": "Solicite uma demonstração gratuita. Entraremos em contacto consigo e mostrar-lhe-emos imediatamente um exemplo personalizado. Sem compromisso.",
-  "cta.btn": "Solicitar uma demonstração gratuita →",
-  "loader": "A carregar...",
+  "phero.pricing.sub": "Um pacote inicial no site €499 ou um orçamento personalizado. A manutenção fica por sua conta.",
+  "phero.contact.eye": "Contato",
+  "phero.contact.h": "Pronto para entrar<br><em>na internet?</em>",
+  "phero.contact.sub": "Solicite uma demonstração gratuita. Entraremos em contato com você e mostraremos um exemplo personalizado imediatamente.",
+  "cta.h": "Pronto para entrar<br><em>na internet?</em>",
+  "cta.sub": "Solicite uma demonstração gratuita. Entraremos em contato com você e apresentaremos um exemplo personalizado imediatamente. Sem compromisso.",
+  "cta.btn": "Solicite uma demonstração gratuita →",
+  "loader": "Carregando...",
   "nav.home": "Página inicial",
   "nav.pricing": "Preços",
   "nav.about": "Sobre nós",
-  "nav.contact": "Contacto",
+  "nav.contact": "Contato",
   "nav.cta": "Demonstração gratuita →",
   "hero.eye": "Sites personalizados para empresas locais",
-  "hero.l1": "A sua empresa",
+  "hero.l1": "Sua empresa",
   "hero.l2": "online.",
-  "hero.l3": "<span class=\"h-accent\">Encontrei-o</span> <span class=\"h-light\">finalmente.</span>",
-  "hero.sub": "Não tem um site? Então não existe na Internet. A DRP BuildLab cria <strong>sites totalmente personalizados</strong> para empresários locais — o preço baseia-se na quantidade de trabalho que o seu projeto exige. Sempre honesta, sempre transparente.",
-  "hero.cta1": "Solicitar uma demonstração gratuita →",
-  "hero.cta2": "Conheça a nossa abordagem",
-  "hero.scroll": "Deslizar",
+  "hero.l3": "<span class=\"h-accent\">Encontrei,</span> <span class=\"h-light\">finalmente.</span>",
+  "hero.sub": "Não tem site? Então você não existe na internet. A DRP BuildLab cria <strong>sites totalmente personalizados</strong> para empreendedores locais — o preço é baseado na quantidade de trabalho que seu projeto exige. Sempre com honestidade, sempre com transparência.",
+  "hero.cta1": "Solicite uma demonstração gratuita →",
+  "hero.cta2": "Conheça nossa abordagem",
+  "hero.scroll": "Rolar a tela",
   "mq": [
    "Foco local",
    "Preços justos",
    "Otimizado para dispositivos móveis",
    "Otimizado para o Google",
-   "Sem qualquer preocupação"
+   "Sem nenhuma preocupação"
   ],
-  "zoom.bl": "Os nossos números",
-  "zoom.br": "Continue a percorrer a página",
+  "zoom.bl": "Nossos números",
+  "zoom.br": "Role a página para baixo",
   "zs": [
    {
-    "num": "0 <span>€</span>",
-    "lbl": "Quanto custam a sua demonstração e a sua primeira proposta",
-    "tag": "Sem barreiras"
+    "num": "<span>€</span>0",
+    "lbl": "Quanto custam sua demonstração e sua primeira proposta",
+    "tag": "Sem barreira"
    },
    {
     "num": "€499",
@@ -68,113 +68,113 @@ const TRANSLATIONS_DRAFT = {
    },
    {
     "num": "100%",
-    "lbl": "Sites totalmente personalizados — preço em função do âmbito do projeto",
+    "lbl": "Sites totalmente personalizados — preço com base no escopo",
     "tag": "Personalizado"
    }
   ],
   "how.tag": "Como funciona",
-  "how.h2": "Do zero à presença online<br><em>em 4 passos.</em>",
-  "how.sub": "Não é necessário ter conhecimentos técnicos. Nós tratamos de tudo, desde o primeiro contacto até ao lançamento do site.",
+  "how.h2": "Do zero à presença online<br><em>em 4 etapas.</em>",
+  "how.sub": "Não é necessário ter conhecimento técnico. Cuidamos de tudo, desde o primeiro contato até a publicação do site.",
   "how.steps": [
    {
-    "t": "Primeira chamada",
-    "b": "Entramos em contacto consigo e mostramos-lhe imediatamente um exemplo personalizado. É totalmente gratuito e sem compromisso.",
+    "t": "Primeira ligação",
+    "b": "Entraremos em contato com você e mostraremos um exemplo personalizado imediatamente. Totalmente gratuito e sem compromisso.",
     "d": "Juntos"
    },
    {
     "t": "Design personalizado",
-    "b": "Com base nos seus desejos, criamos o seu site. Não precisa de fazer nada.",
+    "b": "Com base no que você deseja, criamos seu site. Você não precisa fazer nada.",
     "d": "Nós"
    },
    {
     "t": "Pré-visualização e aprovação",
-    "b": "Receberá uma pré-visualização para aprovação, incluindo as alterações. Em seguida, o seu site será publicado com o seu próprio domínio.",
+    "b": "Você recebe uma prévia para aprovação, incluindo as revisões. Em seguida, seu site entra no ar com seu próprio domínio.",
     "d": "Juntos"
    },
    {
-    "t": "Ao vivo — e ficamos por aqui",
-    "b": "Depois do lançamento, continuamos aqui para o ajudar. Atualizações, alterações, dúvidas — nós tratamos de tudo.",
+    "t": "Ao vivo — e a gente fica",
+    "b": "Depois do lançamento, continuamos à sua disposição. Atualizações, alterações, dúvidas — nós cuidamos de tudo.",
     "d": "Nós"
    }
   ],
-  "ab.logotag": "Sites · criados à medida",
-  "ab.quote": "«Todas as empresas locais merecem uma oportunidade justa de serem encontradas <em>na Internet</em>.»",
-  "ab.sig": "— Os fundadores da DRP BuildLab",
+  "ab.logotag": "Sites · desenvolvidos sob medida",
+  "ab.quote": "\"Toda empresa local merece uma chance justa de ser encontrada <em>na internet.</em>\"",
+  "ab.sig": "— Os fundadores do DRP BuildLab",
   "ab.nums": [
    "Manutenção mensal (opcional)",
    "Site do pacote inicial",
-   "Feito à medida",
+   "Feito sob medida",
    "Custos ocultos"
   ],
   "ab.tag": "Sobre nós",
   "ab.h2": "Criado por<br>empreendedores,<br><em>para empreendedores.</em>",
-  "ab.p1": "Tudo começou com uma frustração. Percebemos que os negócios locais — o talho da esquina, o canalizador que está sempre disponível, o cabeleireiro que há anos corta o cabelo aos mesmos clientes — eram completamente invisíveis na Internet.",
-  "ab.p2": "Grandes agências cobravam a <strong>€5,000 por um site</strong> que demorava meses a ficar pronto. Por isso, criámos o DRP BuildLab: um estúdio que acredita que todas as empresas locais <strong>merecem um site personalizado</strong> — acessível, honesto e com um preço que corresponda ao trabalho envolvido.",
+  "ab.p1": "Tudo começou com uma frustração. Percebemos que as empresas locais — o açougueiro da esquina, o encanador que está sempre disponível, o cabeleireiro que corta o cabelo dos mesmos clientes há anos — eram completamente invisíveis na internet.",
+  "ab.p2": "Grandes agências cobravam de <strong>€5,000 por um site</strong> que levava meses para ficar pronto. Por isso, criamos o DRP BuildLab: um estúdio que acredita que toda empresa local <strong>merece um site personalizado</strong> — acessível, honesto e com um preço que corresponda ao trabalho envolvido.",
   "ab.pillars": [
    {
     "t": "A honestidade acima de tudo",
     "b": "O que prometemos, cumprimos. Sem custos ocultos, sem orçamentos vagos."
    },
    {
-    "t": "Manutenção quando quiser",
-    "b": "A manutenção mensal é opcional: €29 por mês ou €250 por ano. Adicione-a e o seu site permanecerá seguro, atualizado e fácil de encontrar — sem que tenha de se preocupar com isso."
+    "t": "Manutenção quando você quiser",
+    "b": "A manutenção mensal é opcional: €29 por mês ou €250 por ano. Adicione esse serviço e seu site permanecerá seguro, atualizado e fácil de ser encontrado — sem que você precise se preocupar com isso."
    },
    {
-    "t": "Pensar localmente, construir digitalmente",
-    "b": "Criamos soluções para empresas locais — aquelas cujos clientes procuram serviços nas proximidades. Trabalhamos remotamente a partir da Bélgica, pelo que a sua localização não determina se podemos ajudá-lo."
+    "t": "Pense localmente, construa digitalmente",
+    "b": "Trabalhamos com empresas locais — aquelas cujos clientes estão procurando por serviços nas proximidades. Trabalhamos remotamente da Bélgica, portanto, não importa onde você esteja: isso não determina se podemos ajudá-lo."
    }
   ],
-  "why.tag": "Porquê o DRP BuildLab",
-  "why.h2": "O que nos distingue?",
-  "why.sub": "Concebido para empresas locais que pretendem marcar presença na Internet — sem complicações, sem surpresas.",
+  "why.tag": "Por que o DRP BuildLab?",
+  "why.h2": "O que nos diferencia?",
+  "why.sub": "Criado para empresas locais que querem estar na internet — sem complicações, sem surpresas.",
   "why.cards": [
    {
-    "t": "Um ponto de contacto",
-    "b": "Sem sistema de tickets, sem gestores de conta que vão mudando. Tem o nosso nome e o nosso número — desde a primeira chamada até anos após o lançamento."
+    "t": "Um único ponto de contato",
+    "b": "Sem sistema de tickets, sem troca de gerentes de conta. Você tem nosso nome e nosso número — desde a primeira ligação até anos após o lançamento."
    },
    {
     "t": "Foco local",
-    "b": "A sua região, os seus clientes, uma equipa dedicada. Compreendemos o mercado local por dentro."
+    "b": "Sua região, seus clientes, uma equipe dedicada. Conhecemos o mercado local por dentro."
    },
    {
     "t": "Preços justos",
-    "b": "Sem custos ocultos. Sempre fixos antecipadamente. Sabe exatamente quanto vai pagar."
+    "b": "Sem custos ocultos. Sempre definidos com antecedência. Você sabe exatamente quanto vai pagar."
    },
    {
     "t": "Sempre pronto para dispositivos móveis",
-    "b": "Mais de 70% dos seus clientes fazem pesquisas pelo telemóvel. Todos os sites do DRP BuildLab funcionam na perfeição em qualquer dispositivo."
+    "b": "Mais de 70% dos seus clientes fazem pesquisas pelo celular. Todos os sites do DRP BuildLab funcionam perfeitamente em qualquer dispositivo."
    },
    {
     "t": "Otimizado para o Google",
-    "b": "SEO integrado para que os clientes o encontrem. Asseguramos que o Google o reconheça e o indexe."
+    "b": "SEO integrado para que os clientes encontrem você. Nós garantimos que o Google reconheça e indexe seu site."
    },
    {
     "t": "Parceiro para toda a vida",
-    "b": "Depois do lançamento, continuamos aqui para o ajudar. Não somos um fornecedor pontual, mas sim um verdadeiro parceiro."
+    "b": "Mesmo após o lançamento, continuaremos à sua disposição. Não somos apenas um fornecedor pontual, mas um verdadeiro parceiro."
    }
   ],
   "opp.tag": "O custo oculto",
-  "opp.h2": "Quanto <em>custa realmente</em> a presença<br>online<br>de uma empresa do tipo «€0»<em>?</em>",
-  "opp.sub": "Não ter um site não sai de graça. Por cada dia que passa sem uma presença online, perde-se clientes para os concorrentes que são fáceis de encontrar.",
+  "opp.h2": "Quanto <em>custa, na verdade,</em> a presença<br>online<br>de uma empresa do tipo “€0”<em>?</em>",
+  "opp.sub": "Não ter um site não sai de graça. A cada dia que passa sem uma presença online, você perde clientes para os concorrentes que podem ser encontrados na internet.",
   "opp.pts": [
    {
-    "t": "78% fazem primeiro uma pesquisa online",
-    "b": "Antes de visitar um estabelecimento local, as pessoas pesquisam-no no Google. Não aparece? Para esse cliente, não existes."
+    "t": "78% fazem uma pesquisa online primeiro",
+    "b": "Antes de visitar um estabelecimento local, as pessoas pesquisam no Google. Não aparece lá? Para esse cliente, você não existe."
    },
    {
-    "t": "Cada dia que passa representa receitas perdidas",
-    "b": "Os clientes não conseguem encontrar-te na Internet e acabam por recorrer à concorrência. Cada dia sem um site é um dia em que o teu concorrente sai a ganhar."
+    "t": "Cada dia que passa representa uma perda de receita",
+    "b": "Os clientes não conseguem encontrá-lo na internet e acabam indo para a concorrência. Cada dia sem um site é um dia em que seu concorrente sai ganhando."
    },
    {
-    "t": "O teu concorrente está online",
-    "b": "Enquanto espera, o seu concorrente vai construindo a sua reputação online. Quanto mais tempo esperar, mais difícil será recuperar o atraso."
+    "t": "Seu concorrente está online",
+    "b": "Enquanto você espera, seu concorrente constrói sua reputação online. Quanto mais você demora, mais difícil fica recuperar o atraso."
    },
    {
-    "t": "A credibilidade traduz-se em receitas",
-    "b": "Um site profissional inspira confiança. Os clientes tendem a optar mais facilmente por uma empresa que transmita seriedade."
+    "t": "Credibilidade é receita",
+    "b": "Um site profissional inspira confiança. Os clientes tendem a escolher mais facilmente uma empresa que transmita seriedade."
    }
   ],
-  "opp.boxtitle": "Cálculo dos custos anuais",
+  "opp.boxtitle": "Cálculo dos custos por ano",
   "opp.rows": [
    [
     "Clientes perdidos por semana (estimativa)",
@@ -199,15 +199,15 @@ const TRANSLATIONS_DRAFT = {
   ],
   "opp.totlbl": "Benefício líquido potencial",
   "opp.totval": "+€7,473/ano",
-  "opp.note": "<strong>A conclusão é simples:</strong> o custo de um site é uma fração do que se perde por não o ter. Esperar custa mais do que investir.",
-  "comp.tag": "Panorâmica do mercado",
-  "comp.h2": "Ninguém o<br>faz mais barato <em>do que nós.</em>",
-  "comp.sub": "Não escondemos isso — temos orgulho nisso. Veja por si mesmo quanto custam sites semelhantes noutros sítios.",
+  "opp.note": "<strong>A conclusão é simples:</strong> o custo de um site é uma fração do que você deixa de ganhar por não ter um. Esperar custa mais do que investir.",
+  "comp.tag": "Visão geral do mercado",
+  "comp.h2": "Ninguém oferece preços<br>mais baixos <em>do que nós.</em>",
+  "comp.sub": "Não escondemos isso — temos orgulho disso. Veja por si mesmo quanto custam sites semelhantes em outros lugares.",
   "comp.cols": [
-   "Fornecedor",
+   "Provedor",
    "Preço inicial",
    "Manutenção",
-   "Móvel"
+   "Celular"
   ],
   "comp.us": "Nós",
   "comp.rows": [
@@ -225,60 +225,60 @@ const TRANSLATIONS_DRAFT = {
    {
     "n": "Agência digital",
     "p": "€2,500–€8,000",
-    "m": "Extrato dispendioso"
+    "m": "Extrato caro"
    },
    {
     "n": "Grande agência",
     "p": "€8,000+",
-    "m": "Extrato dispendioso"
+    "m": "Extrato caro"
    },
    {
     "n": "Wix / Squarespace",
     "p": "€200 –€500/ano",
-    "m": "Faz tu mesmo"
+    "m": "Faça você mesmo"
    }
   ],
-  "comp.note": "<strong>Nota:</strong> os criadores de sites como o Wix têm um custo anual igualmente elevado — mas é o próprio que trata de tudo, sem ajuda nem apoio profissional. No DRP BuildLab, o próprio não tem de fazer nada e há sempre alguém disponível para o ajudar.",
-  "srv.tag": "A nossa abordagem",
-  "srv.h2": "Sites <em>criados</em><br><em>à medida</em> para cada empresário.",
-  "srv.sub": "Na DRP BuildLab, todos os sites são <strong>totalmente personalizados</strong>. O preço baseia-se sempre na quantidade de trabalho que dedicamos ao seu projeto. Sem pacotes obrigatórios, sem surpresas — apenas um orçamento justo que se adapta às suas necessidades reais.",
+  "comp.note": "<strong>Observação:</strong> criadores de sites como o Wix têm um custo anual semelhante — mas você faz tudo sozinho, sem ajuda ou suporte profissional. No DRP BuildLab, você não precisa fazer nada sozinho e sempre há alguém à sua disposição.",
+  "srv.tag": "Nossa abordagem",
+  "srv.h2": "Sites <em>criados</em><br><em>sob medida</em> para cada empresário.",
+  "srv.sub": "Na DRP BuildLab, cada site é <strong>totalmente personalizado</strong>. O preço é sempre baseado na quantidade de trabalho que dedicamos ao seu projeto. Sem pacotes obrigatórios, sem surpresas — apenas um orçamento justo que atende às suas necessidades reais.",
   "p1.badge": "Para começar",
   "p1.name": "Pacote Inicial",
   "p1.period": "único — manutenção opcional",
-  "p1.desc": "Ideal para <strong>empreendedores locais que estão a dar os primeiros passos</strong> e ainda não têm um site — ou para empreendedores que pretendem atualizar o seu site atual para uma versão moderna e profissional.",
+  "p1.desc": "Ideal para <strong>empreendedores locais que estão apenas começando</strong> e ainda não têm um site — ou para aqueles que desejam atualizar seu site atual para uma versão moderna e profissional.",
   "p1.feats": [
    "Site totalmente personalizado para o seu negócio",
    "Otimizado para dispositivos móveis (design responsivo)",
-   "Formulário de contacto + integração com o WhatsApp",
+   "Formulário de contato + integração com o WhatsApp",
    "Google Maps e otimização básica de SEO",
-   "Acompanhamento personalizado desde o início até à entrada em funcionamento"
+   "Acompanhamento personalizado do início até a entrada em operação"
   ],
-  "p1.btn": "Solicitar uma demonstração gratuita →",
+  "p1.btn": "Solicite uma demonstração gratuita →",
   "p2.name": "Personalização avançada",
   "p2.price": "Orçamento personalizado<br>",
   "p2.period": "citação pessoal — manutenção opcional",
-  "p2.desc": "Para empreendedores com <strong>projetos de maior dimensão ou mais complexos</strong>: lojas online, sistemas de reservas, sites multilingues, integrações ou funcionalidades exclusivas. O preço é determinado pelo âmbito do seu projeto.",
+  "p2.desc": "Para empreendedores com <strong>projetos maiores ou mais complexos</strong>: lojas virtuais, sistemas de reservas, sites multilíngues, integrações ou funcionalidades exclusivas. O preço é determinado pelo escopo do seu projeto.",
   "p2.feats": [
    "Páginas personalizadas ilimitadas",
-   "Loja online, sistema de reservas ou portal de membros",
+   "Loja virtual, sistema de reservas ou portal de membros",
    "SEO avançado e Google Ads",
-   "É possível criar sítios Web multilingues",
+   "É possível criar sites multilíngues",
    "Integrações personalizadas complexas"
   ],
-  "p2.btn": "Solicitar um orçamento →",
+  "p2.btn": "Solicite um orçamento →",
   "addon.tag": "Complemento opcional",
   "addon.n": "Manutenção mensal",
   "addon.or": "ou",
   "addon.pm": "€29<span>/mês</span>",
   "addon.py": "€250<span>/ano</span>",
-  "addon.b": "Atualizações, cópias de segurança, verificações de segurança e de SEO. Não incluídas nos pacotes — cabe-lhe a si decidir se deseja adicioná-las.",
-  "srv.how": "<strong>Como funciona:</strong> diga-nos o que precisa, nós avaliamos o âmbito <strong>do projeto</strong> e definimos um preço justo com base no trabalho a realizar. A manutenção mensal está disponível como opção — €29 por mês ou €250 por ano — para que o seu site se mantenha seguro, atualizado e otimizado para SEO.",
+  "addon.b": "Atualizações, backups, segurança e verificações de SEO. Não incluídos nos pacotes — você decide se deseja adicioná-los.",
+  "srv.how": "<strong>Como funciona:</strong> você nos diz o que precisa, a gente avalia o escopo e define um preço justo com base no trabalho. A manutenção mensal está disponível como opção — €29 por mês ou €250 por ano — para que seu site permaneça seguro, atualizado e otimizado para SEO.",
   "ex.tag": "Serviços adicionais",
   "ex.h3": "Serviços<br>adicionais <em>para acelerar o seu crescimento online.</em>",
-  "ex.sub": "Encomende separadamente ou em conjunto com o seu site. Os preços são indicativos e serão sempre confirmados no seu orçamento personalizado.",
+  "ex.sub": "Encomende separadamente ou em conjunto com o seu site. Os preços são meramente indicativos e sempre confirmados no seu orçamento personalizado.",
   "ex.items": [
    {
-    "n": "Design de logótipos",
+    "n": "Design de logotipo",
     "p": "€149"
    },
    {
@@ -286,7 +286,7 @@ const TRANSLATIONS_DRAFT = {
     "p": "€79"
    },
    {
-    "n": "Pacote inicial de SEO",
+    "n": "Pacote básico de SEO",
     "p": "€199"
    },
    {
@@ -294,15 +294,15 @@ const TRANSLATIONS_DRAFT = {
     "p": "€149"
    },
    {
-    "n": "Site multilingue",
+    "n": "Site multilíngue",
     "p": "€199"
    },
    {
-    "n": "Adicionar loja online",
+    "n": "Adicionar loja virtual",
     "p": "Personalizado"
    },
    {
-    "n": "Reparação de emergência (24 horas)",
+    "n": "Reparo de emergência (24 horas)",
     "p": "€99"
    },
    {
@@ -310,16 +310,16 @@ const TRANSLATIONS_DRAFT = {
     "p": "€199"
    },
    {
-    "n": "Integrações (sistema de reservas, prestador de serviços de pagamento, contabilidade)",
+    "n": "Integrações (sistema de reservas, provedor de pagamentos, contabilidade)",
     "p": "€149"
    },
    {
-    "n": "CMS — gere o seu próprio conteúdo",
+    "n": "CMS — gerencie seu próprio conteúdo",
     "p": "€149"
    },
    {
-    "n": "Pedidos personalizados — adaptados às suas necessidades",
-    "p": "A pedido"
+    "n": "Solicitações personalizadas — adaptadas às suas necessidades",
+    "p": "Mediante solicitação"
    }
   ],
   "faq.tag": "Perguntas frequentes",
@@ -327,36 +327,36 @@ const TRANSLATIONS_DRAFT = {
   "faq.items": [
    {
     "q": "Quanto custa um site na DRP BuildLab?",
-    "a": "Todos os sites são totalmente personalizados. O preço depende da quantidade de trabalho necessária para o seu projeto. Para empresários locais que estão a dar os primeiros passos ou que pretendem atualizar um site já existente, disponibilizamos um pacote inicial em <strong>€499</strong>. Para projetos mais complexos, elaboramos sempre um <strong>orçamento personalizado</strong>. A manutenção mensal é opcional: <strong>€29 por mês</strong> ou <strong>€250 por ano</strong>."
+    "a": "Cada site é totalmente personalizado. O preço depende da quantidade de trabalho necessária para o seu projeto. Para empreendedores locais que estão começando ou querem atualizar um site já existente, oferecemos um pacote inicial em <strong>€499</strong>. Para projetos mais complexos, sempre elaboramos um <strong>orçamento personalizado</strong>. A manutenção mensal é opcional: <strong>€29 por mês</strong> ou <strong>€250 por ano</strong>."
    },
    {
-    "q": "A quem se destina o pacote inicial «€499»?",
-    "a": "Destina-se especificamente a empreendedores locais que estão a dar os primeiros passos e ainda não têm um site, ou a empreendedores que pretendem atualizar o seu site atual para uma versão moderna e profissional."
+    "q": "Para quem é destinado o pacote inicial do “€499”?",
+    "a": "Especialmente para empreendedores locais que estão apenas começando e ainda não têm um site, ou para aqueles que desejam atualizar seu site atual para uma versão moderna e profissional."
    },
    {
     "q": "Quanto custa a manutenção mensal?",
-    "a": "A manutenção é opcional e custa <strong>€29 por mês</strong>, ou <strong>€250 por ano</strong> — a opção anual permite-lhe poupar €98. Mantém o seu site seguro, rápido e otimizado para SEO. Não há compromisso: pode cancelar mensalmente e o site continua sempre a ser seu."
+    "a": "A manutenção é opcional e custa <strong>€29 por mês</strong>, ou <strong>€250 por ano</strong> — a opção anual economiza €98. Ela mantém seu site seguro, rápido e otimizado para SEO. Você não fica preso a nenhum contrato: pode cancelar a qualquer momento, e o site sempre continuará sendo seu."
    },
    {
-    "q": "Em quanto tempo é que o meu site ficará online?",
-    "a": "Assim que recebermos o seu texto, as fotografias e o logótipo, podemos avançar rapidamente. No início, acordamos uma <strong>data de entrega concreta</strong> que se adapte ao âmbito do seu projeto — e cumprimos essa data. Ao longo do processo, receberá uma pré-visualização para aprovação, para que nunca tenha de ficar à espera."
+    "q": "Em quanto tempo meu site estará no ar?",
+    "a": "Assim que recebermos seu texto, suas fotos e seu logotipo, poderemos avançar rapidamente. Logo no início, combinamos uma <strong>data de entrega concreta</strong> que se adapte ao escopo do seu projeto — e a cumprimos. Ao longo do processo, você receberá uma prévia para aprovação, para que nunca fique esperando."
    },
    {
     "q": "Como funciona um orçamento personalizado?",
-    "a": "Para projetos mais complexos, começamos por analisar as suas necessidades numa chamada introdutória gratuita. Em seguida, elaboramos um orçamento personalizado com base no volume de trabalho: número de páginas, funcionalidades, integrações e manutenção. Sem custos ocultos — sabe antecipadamente quanto vai pagar."
+    "a": "Para projetos mais complexos, começamos analisando suas necessidades em uma ligação introdutória gratuita. Em seguida, elaboramos um orçamento personalizado com base no volume de trabalho: número de páginas, funcionalidades, integrações e manutenção. Sem custos ocultos — você sabe com antecedência quanto vai pagar."
    }
   ],
   "soc.tag": "Siga-nos",
-  "soc.h2": "Mantenha-se a par<br><em>do que estamos a desenvolver.</em>",
+  "soc.h2": "Fique por dentro<br><em>do que estamos desenvolvendo.</em>",
   "soc.p1": "Siga-nos no Facebook, Instagram e TikTok para conhecer novos projetos, dicas para empreendedores locais e ver os bastidores do DRP BuildLab.",
-  "soc.p2": "Tem alguma dúvida ou apenas quer conversar sobre o assunto? Envie-nos uma mensagem pelo canal que lhe for mais conveniente — respondemos sempre pessoalmente.",
+  "soc.p2": "Tem alguma dúvida ou só quer conversar sobre o assunto? Mande uma mensagem para a gente pelo canal que for mais conveniente para você — sempre respondemos pessoalmente.",
   "ct.tag": "Demonstração gratuita",
-  "ct.h2": "Pronto para entrar<br><em>na Internet?</em>",
-  "ct.lede": "Solicite uma demonstração gratuita. Entraremos em contacto consigo e mostrar-lhe-emos imediatamente um exemplo personalizado. Sem compromisso.",
+  "ct.h2": "Pronto para entrar<br><em>na internet?</em>",
+  "ct.lede": "Solicite uma demonstração gratuita. Entraremos em contato com você por telefone e mostraremos um exemplo personalizado imediatamente. Sem compromisso.",
   "ct.lbls": [
    "Telefone",
    "E-mail",
-   "Morada",
+   "Endereço",
    "Número da empresa",
    "WhatsApp",
    "Instagram",
@@ -364,50 +364,50 @@ const TRANSLATIONS_DRAFT = {
    "TikTok"
   ],
   "f.labels": [
-   "Nome próprio",
-   "Apelido",
+   "Nome",
+   "Sobrenome",
    "Nome da empresa",
    "Número de telefone",
    "E-mail",
-   "Que serviço tem em mente?",
+   "Qual serviço você tem em mente?",
    "Mensagem (opcional)"
   ],
   "f.phs": [
    "John",
    "Smith",
-   "A sua empresa",
+   "Sua empresa",
    "+32 ...",
    "john@yourcompany.com",
-   "Fale-nos mais sobre o seu projeto..."
+   "Conte-nos mais sobre o seu projeto..."
   ],
   "f.sel": [
    "Escolha um serviço",
    "Pacote inicial — €499",
    "Personalização avançada — orçamento",
    "Atualizar o site existente",
-   "Apenas serviços adicionais (logótipo, SEO, …)",
-   "Ainda não tenho a certeza"
+   "Apenas serviços adicionais (logotipo, SEO, …)",
+   "Ainda não tenho certeza"
   ],
-  "f.btn": "Solicitar uma demonstração gratuita →",
-  "f.succ.h": "Pedido recebido!",
-  "f.succ.p": "Entraremos em contacto consigo no prazo de 24 horas para marcar a sua demonstração gratuita.",
-  "f.consent": "Concordo que a DRP BuildLab possa utilizar os dados constantes deste formulário para me contactar relativamente a este pedido.",
-  "f.err.h": "O envio falhou.",
-  "f.err.p": "Ocorreu um erro durante o envio. Por favor, tente novamente ou contacte-nos diretamente através do endereço <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> ou pelo <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
+  "f.btn": "Solicite uma demonstração gratuita →",
+  "f.succ.h": "Solicitação recebida!",
+  "f.succ.p": "Entraremos em contato com você em até 24 horas para agendar sua demonstração gratuita.",
+  "f.consent": "Concordo que a DRP BuildLab possa utilizar os dados contidos neste formulário para entrar em contato comigo a respeito desta solicitação.",
+  "f.err.h": "Falha no envio.",
+  "f.err.p": "Ocorreu um erro durante o envio. Tente novamente ou entre em contato conosco diretamente pelo e-mail <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> ou pelo <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
   "ft.tag": "Sites profissionais para empresas locais · Totalmente personalizados",
   "ft.nav": [
    "Navegação",
    "Página inicial",
    "Sobre nós",
    "Preços",
-   "Contacto"
+   "Contato"
   ],
-  "ft.ct": "Contacto",
-  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · N.º de IVABE 1033.313.383",
+  "ft.ct": "Contato",
+  "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · VAT BE 1033.313.383",
   "ft.ig": "Siga-nos",
   "sticky.txt": "Pacote inicial da €499",
   "sticky.btn": "Demonstração gratuita →",
-  "cur.note": "Os preços em {cur} são convertidos a partir do euro à taxa de câmbio de hoje e são meramente indicativos. A faturação é efetuada em EUR.",
+  "cur.note": "Os preços em {cur} são convertidos do euro à taxa de câmbio de hoje e são meramente informativos. O faturamento é feito em euros.",
   "wa": "Envie-nos uma mensagem pelo WhatsApp"
  },
  "it": {

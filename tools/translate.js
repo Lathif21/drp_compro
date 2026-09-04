@@ -143,6 +143,30 @@ function restore(translated, held, where) {
   return out.replace(/<\/?x>/g, '');
 }
 
+/* ── which DeepL variant a language key asks for ───────────────────────── */
+
+/* The key stays a bare language, and the regional choice is made here.
+ *
+ * That split is not cosmetic. build-locales.js writes hreflang as
+ * `${lang}-${MARKET}`, so a key of "pt-br" serving /br/ would come out
+ * "pt-br-BR", which is not a language tag. The same would happen to
+ * "es-419". Keeping the key bare keeps hreflang, the payload filenames and
+ * the LOCALES table all in one shape.
+ *
+ * Portuguese needs an entry because DeepL no longer has a bare PT: it
+ * resolves to European Portuguese, and the Portuguese market on the roadmap
+ * is Brazil. European Portuguese reads as foreign there -- "estão a dar"
+ * where Brazil says "estão dando", "telemóvel" for "celular" -- so the
+ * default was quietly the wrong language rather than a rough edge.
+ *
+ * Add an entry only where the bare code is wrong or ambiguous. ES-419 would
+ * belong here too if Latin America ever outgrows European Spanish. */
+const TARGET = {
+  pt: 'PT-BR',
+};
+
+const targetFor = lang => TARGET[lang.toLowerCase()] || lang.toUpperCase();
+
 /* ── walking the translation object ────────────────────────────────────── */
 
 /* Values are strings, arrays of strings, arrays of arrays, and arrays of
@@ -276,7 +300,7 @@ async function supported() {
 
   console.log('source          : ' + OPTS.source + '  (' + Object.keys(source).length + ' keys, '
     + texts.length + ' strings, ' + chars.toLocaleString() + ' chars)');
-  console.log('targets         : ' + OPTS.langs.join(', '));
+  console.log('targets         : ' + OPTS.langs.map(l => l + (targetFor(l) !== l.toUpperCase() ? ' → ' + targetFor(l) : '')).join(', '));
   console.log('provider        : ' + OPTS.provider + (OPTS.provider === 'deepl' ? (KEY ? ' (key found)' : ' (NO KEY)') : ''));
   console.log('billable chars  : ' + (chars * OPTS.langs.length).toLocaleString());
 
@@ -308,7 +332,7 @@ async function supported() {
 
   for (const lang of OPTS.langs) {
     process.stdout.write('\n' + lang + ' ');
-    const translated = await translate(texts, lang.toUpperCase());
+    const translated = await translate(texts, targetFor(lang));
     if (translated.length !== entries.length) {
       throw new Error('got ' + translated.length + ' strings back, expected ' + entries.length);
     }

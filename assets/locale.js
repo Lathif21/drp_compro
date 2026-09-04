@@ -23,7 +23,7 @@
    * currency they carry. */
   var LOCALES = {
     nl: 'nl-BE', en: 'en-US', fr: 'fr-BE', es: 'es-ES',
-    de: 'de-DE', id: 'id-ID', ja: 'ja-JP',
+    de: 'de-DE', id: 'id-ID', ja: 'ja-JP', pt: 'pt-BR',
   };
 
   /* Any of these between digit groups is a thousands separator. No price
