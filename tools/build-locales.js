@@ -217,6 +217,37 @@ function marketSchema(html, code) {
   return html;
 }
 
+/* The breadcrumb trail, per market.
+ *
+ * Every market published the root crumb as https://drpbuildlab.com/ and the
+ * page crumb as the unprefixed route, so /jp/prijzen told Google its parent
+ * was a URL that redirects away from Japan and that its own address belonged
+ * to no market at all. The labels were Dutch on all seventeen too: applyLang
+ * rewrites the visible navigation but never the JSON-LD sitting behind it.
+ *
+ * Names come from the same nav.* keys the visible nav uses, so a crumb and
+ * the link it describes cannot drift apart. In Dutch they are already the
+ * words that were hard-coded here, which is why /be/ only gains the prefix. */
+const CRUMB_KEY = {
+  '': 'nav.home', '/over-ons': 'nav.about',
+  '/prijzen': 'nav.pricing', '/contact': 'nav.contact',
+};
+
+function breadcrumb(html, code, route) {
+  const t = TRANSLATIONS[MARKETS[code].lang];
+  const LF = String.fromCharCode(10);
+  const crumb = (pos, name, path) => '    '
+    + '{"@type":"ListItem","position":' + pos
+    + ',' + '"name":' + JSON.stringify(name)
+    + ',' + '"item":' + JSON.stringify(ORIGIN + '/' + code + path) + '}';
+
+  const items = [crumb(1, t['nav.home'], '/')];
+  if (route) items.push(crumb(2, t[CRUMB_KEY[route]], route));
+
+  return spliceBetween(html, '"itemListElement": [', LF + '  ]',
+    '"itemListElement": [' + LF + items.join(',' + LF) + LF + '  ]');
+}
+
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -236,6 +267,9 @@ function build(code, page) {
 
   // 2c. structured data describing this market, not Belgium
   html = marketSchema(html, code);
+
+  // 2d. breadcrumbs that point into this market, labelled in its language
+  html = breadcrumb(html, code, page.route);
 
   // 3. replace the existing hreflang pair with the full market set
   html = html.replace(/<link rel="alternate" hreflang="nl-be"[^>]*>\s*\n\s*<link rel="alternate" hreflang="x-default"[^>]*>/,
