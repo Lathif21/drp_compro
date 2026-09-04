@@ -63,6 +63,15 @@
     sg: { lang: 'en', currency: 'SGD', name: 'Singapore',     region: 'Asia Pacific' },
     au: { lang: 'en', currency: 'AUD', name: 'Australia',     region: 'Asia Pacific' },
 
+    /* Google Tag Manager container. Empty means GTM never loads at all --
+     * no script, no request, nothing. Paste the GTM-XXXXXXX here and it goes
+     * live on the next build; that is the only edit needed.
+     *
+     * It lives here because this is already the file both the browser and
+     * the generator read, and because a tracking container belongs where
+     * somebody looking for it would think to look. */
+    __gtm: '',
+
     /* Languages whose script the body face does not cover.
      *
      * Declared here because both sides need it: build-locales.js writes the

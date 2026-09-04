@@ -130,6 +130,19 @@ const TRANSLATIONS = {
   "wa": "Contattaci su WhatsApp",
   "pay.methods": "Bonifico bancario",
   "lang.offer": "Vedi questa pagina in italiano",
-  "lang.dismiss": "Chiudi"
+  "lang.dismiss": "Chiudi",
+  "cc.title": "Cookie",
+  "cc.body": "Usiamo i cookie per capire come viene usato il sito e per misurare la nostra pubblicità. Scegli tu.",
+  "cc.accept": "Accetta tutto",
+  "cc.reject": "Rifiuta tutto",
+  "cc.prefs": "Scegli",
+  "cc.save": "Salva scelte",
+  "cc.nec": "Necessari",
+  "cc.nec.d": "Indispensabili al funzionamento del sito. Sempre attivi.",
+  "cc.ana": "Statistiche",
+  "cc.ana.d": "Come i visitatori usano il sito, per poterlo migliorare.",
+  "cc.mkt": "Marketing",
+  "cc.mkt.d": "Misurare il rendimento della nostra pubblicità.",
+  "cc.manage": "Impostazioni cookie"
 }
 };

@@ -130,6 +130,19 @@ const TRANSLATIONS = {
   "wa": "WhatsApp us",
   "pay.methods": "Bank transfer",
   "lang.offer": "View this page in English",
-  "lang.dismiss": "Dismiss"
+  "lang.dismiss": "Dismiss",
+  "cc.title": "Cookies",
+  "cc.body": "We use cookies to see how the site is used and to measure our advertising. You choose which.",
+  "cc.accept": "Accept all",
+  "cc.reject": "Reject all",
+  "cc.prefs": "Choose",
+  "cc.save": "Save choices",
+  "cc.nec": "Necessary",
+  "cc.nec.d": "Needed for the site to work. Always on.",
+  "cc.ana": "Analytics",
+  "cc.ana.d": "How visitors use the site, so we can improve it.",
+  "cc.mkt": "Marketing",
+  "cc.mkt.d": "Measuring how well our advertising works.",
+  "cc.manage": "Cookie settings"
 }
 };

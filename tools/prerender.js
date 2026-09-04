@@ -184,6 +184,23 @@ function stripRuntimeState() {
    * headless Chromium has its own. Baking it would show every visitor an
    * offer chosen for the build machine. */
   document.querySelectorAll('.lang-offer').forEach(el => el.remove());
+
+  /* The cookie banner and anything Google Tag Manager injected.
+   *
+   * Both are created by script at runtime, so serialising the DOM baked them
+   * into the committed page -- and both are actively harmful there. The
+   * banner arrived inert: no listeners, and consent.js then added a second,
+   * live one beside it, so the visitor met two banners and clicked the dead
+   * one. The tag manager was worse: its own loader inserts a <script src>
+   * high in the head, which serialised ABOVE the consent defaults, so the
+   * committed page loaded GTM before anything had said 'denied'.
+   *
+   * The requests are refused during prerendering as well, so in practice
+   * there is nothing left to remove -- this is the belt to that braces. */
+  // .ccb-manage too: baked, it is a dead button, and addFooterLink sees it
+  // and declines to add the live one.
+  document.querySelectorAll('.ccb, .ccb-manage').forEach(el => el.remove());
+  document.querySelectorAll('script[src*="googletagmanager"]').forEach(el => el.remove());
   document.querySelectorAll('[style=""]').forEach(el => el.removeAttribute('style'));
 }
 
@@ -203,6 +220,10 @@ function stripRuntimeState() {
   // One page for the whole run: opening sixty-eight was enough for Chromium
   // to crash a target partway through.
   const page = await ctx.newPage();
+  /* No build should contact Google. Prices and the language offer are
+   * already starved of their inputs here for the same reason: whatever the
+   * page does with a live service, the committed file must not carry. */
+  await page.route('**://*.googletagmanager.com/**', r => r.abort());
   const errors = [];
   page.on('pageerror', e => errors.push(e.message.slice(0, 80)));
 

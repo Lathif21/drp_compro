@@ -360,6 +360,70 @@ function webfont(html, code) {
   ].join('\n'));
 }
 
+/* Consent Mode, then Google Tag Manager -- in that order, inline, and before
+ * anything else on the page.
+ *
+ * The order is the whole feature. gtag('consent','default', ... denied) has
+ * to have executed before the container loads, or GTM's tags fire once with
+ * no consent state and set an identifier that no later update can recall.
+ * That is why this is inline in <head> and not in a deferred file: a deferred
+ * script is by definition too late.
+ *
+ * A stored choice is replayed here too. Without that, a returning visitor who
+ * accepted last week would spend the first moments of every page denied,
+ * because assets/consent.js -- which knows about their choice -- has not run
+ * yet.
+ *
+ * With no container ID in markets.js nothing is emitted at all: no dataLayer,
+ * no snippet, no request to Google. The site tracks nobody until somebody
+ * pastes an ID in on purpose.
+ *
+ * functionality_storage is granted because that is the necessary bucket, and
+ * the necessary bucket is what this site was already doing before any of
+ * this: remembering that a banner was dismissed. Everything a visitor could
+ * reasonably object to -- analytics, ads, personalisation -- starts denied. */
+function consentHead(html) {
+  const gtm = (MARKETS.__gtm || '').trim();
+
+  const consent = [
+    '<script>',
+    '/* Consent Mode v2 defaults. Denied until the visitor says otherwise. */',
+    'window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}',
+    "gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',"
+      + "ad_personalization:'denied',analytics_storage:'denied',"
+      + "personalization_storage:'denied',functionality_storage:'granted',"
+      + "security_storage:'granted',wait_for_update:500});",
+    "gtag('set','ads_data_redaction',true);",
+    '/* Replay a stored choice before the container loads. */',
+    "try{var c=JSON.parse(localStorage.getItem('drp-consent')||'null');"
+      + "if(c&&c.v===1){gtag('consent','update',{"
+      + "analytics_storage:c.analytics?'granted':'denied',"
+      + "ad_storage:c.marketing?'granted':'denied',"
+      + "ad_user_data:c.marketing?'granted':'denied',"
+      + "ad_personalization:c.marketing?'granted':'denied',"
+      + "personalization_storage:c.marketing?'granted':'denied'});}}catch(e){}",
+    '<\/script>',
+  ].join('\n');
+
+  const container = [
+    '<!-- Google Tag Manager -->',
+    '<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":',
+    'new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],',
+    "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=",
+    "'https://www.googletagmanager.com/gtm.js?id='+i+dl;",
+    "f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','" + gtm + "');<\/script>",
+  ].join('\n');
+
+  const block = gtm ? (consent + '\n' + container) : '';
+  if (!block) return html;
+  /* Before the market script, which is the first thing in this head that
+   * build-locales writes -- so the consent defaults are the earliest
+   * executable code on the page. */
+  const marker = '<script>window.__DRP_MARKET__=';
+  const at = html.indexOf(marker);
+  if (at === -1) throw new Error('market marker not found; consentHead must run after step 5');
+  return html.slice(0, at) + block + '\n' + html.slice(at);
+}
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -409,6 +473,9 @@ function build(code, page) {
     `<script>window.__DRP_MARKET__=${JSON.stringify(code)};</script>\n`
     + '<script defer src="/assets/markets.js"></script>\n'
     + '<link rel="stylesheet" href="/assets/styles.css">');
+
+  // 5a. consent defaults and the tag container, before anything else runs
+  html = consentHead(html);
 
   // 5b. and the font its script needs, in the page rather than via JS
   html = webfont(html, code);

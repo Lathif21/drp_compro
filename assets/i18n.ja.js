@@ -130,6 +130,19 @@ const TRANSLATIONS = {
   "wa": "WhatsAppでメッセージをお送りください",
   "pay.methods": "銀行振込",
   "lang.offer": "このページを日本語で表示する",
-  "lang.dismiss": "閉じる"
+  "lang.dismiss": "閉じる",
+  "cc.title": "Cookie",
+  "cc.body": "サイトの利用状況の把握と広告の効果測定のために Cookie を使用します。選択はお客様にお任せします。",
+  "cc.accept": "すべて許可",
+  "cc.reject": "すべて拒否",
+  "cc.prefs": "選択する",
+  "cc.save": "選択を保存",
+  "cc.nec": "必須",
+  "cc.nec.d": "サイトの動作に必要です。常に有効です。",
+  "cc.ana": "分析",
+  "cc.ana.d": "サイトの利用状況を把握し、改善に役立てます。",
+  "cc.mkt": "マーケティング",
+  "cc.mkt.d": "広告の効果を測定します。",
+  "cc.manage": "Cookie 設定"
 }
 };

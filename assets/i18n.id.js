@@ -130,6 +130,19 @@ const TRANSLATIONS = {
   "wa": "Hubungi kami melalui WhatsApp",
   "pay.methods": "Transfer bank",
   "lang.offer": "Lihat halaman ini dalam bahasa Indonesia",
-  "lang.dismiss": "Tutup"
+  "lang.dismiss": "Tutup",
+  "cc.title": "Cookie",
+  "cc.body": "Kami menggunakan cookie untuk melihat bagaimana situs digunakan dan untuk mengukur iklan kami. Anda yang memilih.",
+  "cc.accept": "Terima semua",
+  "cc.reject": "Tolak semua",
+  "cc.prefs": "Pilih",
+  "cc.save": "Simpan pilihan",
+  "cc.nec": "Diperlukan",
+  "cc.nec.d": "Dibutuhkan agar situs berfungsi. Selalu aktif.",
+  "cc.ana": "Statistik",
+  "cc.ana.d": "Bagaimana pengunjung menggunakan situs, agar kami dapat memperbaikinya.",
+  "cc.mkt": "Pemasaran",
+  "cc.mkt.d": "Mengukur seberapa efektif iklan kami.",
+  "cc.manage": "Pengaturan cookie"
 }
 };

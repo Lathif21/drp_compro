@@ -130,6 +130,19 @@ const TRANSLATIONS = {
   "wa": "WhatsApp ons",
   "pay.methods": "Bankoverschrijving",
   "lang.offer": "Bekijk deze pagina in het Nederlands",
-  "lang.dismiss": "Sluiten"
+  "lang.dismiss": "Sluiten",
+  "cc.title": "Cookies",
+  "cc.body": "We gebruiken cookies om te zien hoe de site gebruikt wordt en om onze advertenties te meten. U kiest zelf.",
+  "cc.accept": "Alles accepteren",
+  "cc.reject": "Alles weigeren",
+  "cc.prefs": "Zelf kiezen",
+  "cc.save": "Keuze opslaan",
+  "cc.nec": "Noodzakelijk",
+  "cc.nec.d": "Nodig om de site te laten werken. Altijd aan.",
+  "cc.ana": "Statistieken",
+  "cc.ana.d": "Hoe bezoekers de site gebruiken, zodat we die kunnen verbeteren.",
+  "cc.mkt": "Marketing",
+  "cc.mkt.d": "Meten hoe goed onze advertenties werken.",
+  "cc.manage": "Cookie-instellingen"
 }
 };
