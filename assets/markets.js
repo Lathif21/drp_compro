@@ -22,31 +22,61 @@
 }(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
+  /* `cities` and `areas` feed the ProfessionalService schema's areaServed,
+   * and `languages` its contactPoint. They are the market's own major
+   * cities, named in the market's language, following the pattern the
+   * Belgian list already set -- so /jp/ tells Google it serves Japan and
+   * Japanese cities rather than Brussels and Antwerp.
+   *
+   * `areas` and `languages` are optional and default sensibly: no
+   * administrative areas, and the market's language plus English. Belgium
+   * declares both explicitly because it has regions worth naming and the
+   * studio genuinely answers in French as well as Dutch.
+   *
+   * These are service-area claims in structured data. Adding a city here
+   * asserts the studio serves it -- so this list is the client's to revise,
+   * and revising it is a one-line edit that the next build picks up. */
   return {
-    //        language   currency  English name (for the market picker)
-    be: { lang: 'nl', currency: 'EUR', name: 'België',        region: 'Europe' },
-    nl: { lang: 'nl', currency: 'EUR', name: 'Nederland',     region: 'Europe' },
-    fr: { lang: 'fr', currency: 'EUR', name: 'France',        region: 'Europe' },
-    lu: { lang: 'fr', currency: 'EUR', name: 'Luxembourg',    region: 'Europe' },
-    ch: { lang: 'fr', currency: 'CHF', name: 'Suisse',        region: 'Europe' },
-    de: { lang: 'de', currency: 'EUR', name: 'Deutschland',   region: 'Europe' },
-    at: { lang: 'de', currency: 'EUR', name: 'Österreich',    region: 'Europe' },
-    es: { lang: 'es', currency: 'EUR', name: 'España',        region: 'Europe' },
-    gb: { lang: 'en', currency: 'GBP', name: 'United Kingdom', region: 'Europe' },
-    ie: { lang: 'en', currency: 'EUR', name: 'Ireland',       region: 'Europe' },
+    //        language   currency  the market's own name (also the picker label)
+    be: { lang: 'nl', currency: 'EUR', name: 'België',        region: 'Europe',
+          areas: ['Vlaanderen', 'Wallonië'],
+          languages: ['Dutch', 'English', 'French'],
+          cities: ['Brussel', 'Antwerpen', 'Gent', 'Leuven', 'Mechelen', 'Hasselt', 'Brugge', 'Kortrijk', 'Namen', 'Luik'] },
+    nl: { lang: 'nl', currency: 'EUR', name: 'Nederland',     region: 'Europe',
+          cities: ['Amsterdam', 'Rotterdam', 'Den Haag', 'Utrecht', 'Eindhoven', 'Groningen', 'Tilburg', 'Breda'] },
+    fr: { lang: 'fr', currency: 'EUR', name: 'France',        region: 'Europe',
+          cities: ['Paris', 'Marseille', 'Lyon', 'Toulouse', 'Nice', 'Nantes', 'Strasbourg', 'Bordeaux', 'Lille'] },
+    lu: { lang: 'fr', currency: 'EUR', name: 'Luxembourg',    region: 'Europe',
+          cities: ['Luxembourg', 'Esch-sur-Alzette', 'Differdange', 'Dudelange'] },
+    ch: { lang: 'fr', currency: 'CHF', name: 'Suisse',        region: 'Europe',
+          cities: ['Zurich', 'Genève', 'Bâle', 'Lausanne', 'Berne', 'Winterthour', 'Lucerne'] },
+    de: { lang: 'de', currency: 'EUR', name: 'Deutschland',   region: 'Europe',
+          cities: ['Berlin', 'Hamburg', 'München', 'Köln', 'Frankfurt am Main', 'Stuttgart', 'Düsseldorf', 'Leipzig'] },
+    at: { lang: 'de', currency: 'EUR', name: 'Österreich',    region: 'Europe',
+          cities: ['Wien', 'Graz', 'Linz', 'Salzburg', 'Innsbruck', 'Klagenfurt'] },
+    es: { lang: 'es', currency: 'EUR', name: 'España',        region: 'Europe',
+          cities: ['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Zaragoza', 'Málaga', 'Bilbao'] },
+    gb: { lang: 'en', currency: 'GBP', name: 'United Kingdom', region: 'Europe',
+          cities: ['London', 'Manchester', 'Birmingham', 'Leeds', 'Glasgow', 'Edinburgh', 'Bristol', 'Liverpool'] },
+    ie: { lang: 'en', currency: 'EUR', name: 'Ireland',       region: 'Europe',
+          cities: ['Dublin', 'Cork', 'Limerick', 'Galway', 'Waterford'] },
 
-    us: { lang: 'en', currency: 'USD', name: 'United States', region: 'Americas' },
-    ca: { lang: 'en', currency: 'CAD', name: 'Canada',        region: 'Americas' },
-    mx: { lang: 'es', currency: 'MXN', name: 'México',        region: 'Americas' },
+    us: { lang: 'en', currency: 'USD', name: 'United States', region: 'Americas',
+          cities: ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'Philadelphia', 'San Diego', 'Dallas'] },
+    ca: { lang: 'en', currency: 'CAD', name: 'Canada',        region: 'Americas',
+          cities: ['Toronto', 'Montreal', 'Vancouver', 'Calgary', 'Edmonton', 'Ottawa', 'Winnipeg'] },
+    mx: { lang: 'es', currency: 'MXN', name: 'México',        region: 'Americas',
+          cities: ['Ciudad de México', 'Guadalajara', 'Monterrey', 'Puebla', 'Tijuana', 'León', 'Querétaro'] },
 
-    id: { lang: 'id', currency: 'IDR', name: 'Indonesia',     region: 'Asia Pacific' },
-    jp: { lang: 'ja', currency: 'JPY', name: '日本',           region: 'Asia Pacific' },
-    sg: { lang: 'en', currency: 'SGD', name: 'Singapore',     region: 'Asia Pacific' },
-    au: { lang: 'en', currency: 'AUD', name: 'Australia',     region: 'Asia Pacific' },
+    id: { lang: 'id', currency: 'IDR', name: 'Indonesia',     region: 'Asia Pacific',
+          cities: ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Semarang', 'Makassar', 'Palembang', 'Denpasar'] },
+    jp: { lang: 'ja', currency: 'JPY', name: '日本',           region: 'Asia Pacific',
+          cities: ['東京', '大阪', '名古屋', '横浜', '福岡', '札幌', '京都', '神戸'] },
+    sg: { lang: 'en', currency: 'SGD', name: 'Singapore',     region: 'Asia Pacific',
+          cities: ['Singapore'] },
+    au: { lang: 'en', currency: 'AUD', name: 'Australia',     region: 'Asia Pacific',
+          cities: ['Sydney', 'Melbourne', 'Brisbane', 'Perth', 'Adelaide', 'Canberra', 'Gold Coast'] },
 
-    /* The market served when geo says nothing useful, and the one every
-     * pre-existing URL redirects into. Belgium, because that is where the
-     * business is and Dutch is the language the copy was written in. */
     __default: 'be',
 
     /* Where a visitor whose country has no market of its own is sent, and

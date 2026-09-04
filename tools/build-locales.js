@@ -130,6 +130,93 @@ function socialTags(html, code, route) {
   return html;
 }
 
+/* The structured data, per market.
+ *
+ * Every market shipped Belgium's schema. /jp/ told Google areaServed BE,
+ * named Brussels and Antwerp and accepted euro, so a crawler read a Belgian
+ * business that happened to be written in Japanese -- the page indexed but
+ * had no reason to rank in the market it was written for.
+ *
+ * What stays Belgian is what actually is Belgian: the KBO number, the VAT
+ * ID, the registered address and the phone number all describe one legal
+ * entity in Hallaar, and that stays true whichever market is reading.
+ *
+ * Edited as text rather than parsed and re-serialised, so untouched lines
+ * keep their formatting and /be/ comes out byte-for-byte what it was before
+ * this function existed -- which is the check that the generator reproduces
+ * the hand-written original rather than merely something close to it. */
+const LANG_NAME = {
+  nl: 'Dutch', en: 'English', fr: 'French', de: 'German',
+  es: 'Spanish', id: 'Indonesian', ja: 'Japanese',
+};
+
+/* Replace everything from `open` to the first following `close`, inclusive.
+ * Index surgery rather than a multi-line regex: the thing being matched is a
+ * JSON block whose own punctuation would need escaping either way, and this
+ * says plainly where the edit starts and stops. */
+function spliceBetween(html, open, close, replacement) {
+  const i = html.indexOf(open);
+  if (i === -1) return html;
+  const j = html.indexOf(close, i + open.length);
+  if (j === -1) return html;
+  return html.slice(0, i) + replacement + html.slice(j + close.length);
+}
+
+function marketSchema(html, code) {
+  const m = MARKETS[code];
+  const LF = String.fromCharCode(10);
+
+  /* areaServed: the country, whatever administrative areas the market
+   * declares, then its cities -- each named in the market's own language,
+   * because the page around them is. */
+  const node = (type, name) =>
+    `{"@type":"${type}","name":${JSON.stringify(name)}}`;
+  const nodes = [node('Country', m.name)]
+    .concat((m.areas || []).map(a => node('AdministrativeArea', a)))
+    .concat((m.cities || []).map(c => node('City', c)));
+  html = spliceBetween(html, '"areaServed": [', LF + '  ]',
+    '"areaServed": [' + LF + nodes.map(n => '    ' + n).join(',' + LF) + LF + '  ]');
+
+  /* The currency the market is quoted in. Deliberately not the offers'
+   * priceCurrency, which stays EUR: that is the currency invoiced in, and
+   * baking a converted figure into a static file would freeze one day's
+   * exchange rate. */
+  html = html.replace(/"currenciesAccepted": "[^"]*"/,
+    () => '"currenciesAccepted": ' + JSON.stringify(m.currency));
+
+  /* The market's language plus English, unless the market names its own set.
+   * Belgium does, because the studio really does answer in French too. */
+  const langs = m.languages
+    || [LANG_NAME[m.lang], 'English'].filter((v, i, a) => a.indexOf(v) === i);
+  html = spliceBetween(html, '"availableLanguage": [', ']',
+    '"availableLanguage": [' + langs.map(l => JSON.stringify(l)).join(',') + ']');
+
+  /* The contactPoint's own areaServed, which is a country code, not a list. */
+  html = html.replace(/"areaServed": "[A-Z]{2}"/,
+    () => '"areaServed": ' + JSON.stringify(code.toUpperCase()));
+
+  /* Scope the entity ids to the market.
+   *
+   * All seventeen markets published the same three @ids while now making
+   * different claims under them -- one #business simultaneously serving
+   * Belgium, Japan and the United States in three currencies. An @id is a
+   * global identifier, so a crawler is entitled to merge those into one
+   * node and keep whichever it saw last.
+   *
+   * Per-market ids let each page describe the studio as that market meets
+   * it. The pages are still tied to one company by the things that identify
+   * a company -- the same vatID, the same BE-KBO number, the same telephone
+   * and the same registered address on every one of them. */
+  const base = ORIGIN + '/' + code + '/#';
+  html = html.split(ORIGIN + '/#').join(base);
+
+  /* WebSite.inLanguage, which claimed nl-BE on all seventeen. */
+  html = html.replace(/"inLanguage": "[^"]*"/,
+    () => '"inLanguage": ' + JSON.stringify(m.lang + '-' + code.toUpperCase()));
+
+  return html;
+}
+
 function build(code, page) {
   const m = MARKETS[code];
   let html = fs.readFileSync(path.join(ROOT, page.src), 'utf8');
@@ -146,6 +233,9 @@ function build(code, page) {
 
   // 2b. social tags in this market's language
   html = socialTags(html, code, page.route);
+
+  // 2c. structured data describing this market, not Belgium
+  html = marketSchema(html, code);
 
   // 3. replace the existing hreflang pair with the full market set
   html = html.replace(/<link rel="alternate" hreflang="nl-be"[^>]*>\s*\n\s*<link rel="alternate" hreflang="x-default"[^>]*>/,
