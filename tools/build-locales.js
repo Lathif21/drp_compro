@@ -458,11 +458,42 @@ function marketSchema(html, code) {
    *
    * Not one of these needed a new translation key. The site already says all
    * of it, in every language, in copy a human wrote or reviewed: meta.desc is
-   * the business description, hero.eye the one-liner, p1/p2 the packages,
-   * ex.items the service list. Reusing them means no new machine translation
-   * enters the schema, and the schema cannot drift from the page. */
+   * the business description, p1/p2 the packages, ex.items the service list.
+   * Reusing them means no new machine translation enters the schema, and the
+   * schema cannot drift from the page.
+   *
+   * WebSite.description takes meta.desc as well. The Dutch source gives it a
+   * shorter line of its own, but no reviewed key holds that line in twelve
+   * languages, and writing one would mean new machine translation entering
+   * the schema -- the one thing this block exists to avoid. Two nodes
+   * carrying the same description is valid and says nothing untrue. */
   const plain = s => String(s).replace(/<[^>]*>/g, '');
+
+  /* A translation key, read loudly.
+   *
+   * The WebSite description used to be read from a key named hero.eye, which
+   * no language has ever had. JSON.stringify of undefined is undefined -- not
+   * a string -- so the concatenation below put the bare word undefined into
+   * the JSON-LD. That is not a JSON value, so the whole WebSite block failed
+   * to parse, which Search Console reported as an unparsable "Incorrect value
+   * type" on every market home page.
+   *
+   * A missing key now names itself and stops the build, the same way a
+   * missing breadcrumb label does. */
+  const tr = key => {
+    const value = t[key];
+    if (typeof value !== 'string' || !value.trim()) {
+      throw new Error('no ' + key + ' for language "' + m.lang + '" (market '
+        + code + '). Every language block needs one.');
+    }
+    return value;
+  };
+
   const setJson = (key, value, was) => {
+    if (typeof value !== 'string' || !value.trim()) {
+      throw new Error('refusing to write ' + key + ' = ' + String(value)
+        + ' into the JSON-LD (market ' + code + ')');
+    }
     const from = '"' + key + '": ' + JSON.stringify(was);
     if (!html.includes(from)) {
       throw new Error('src no longer contains ' + key + ' = ' + JSON.stringify(was).slice(0, 60)
@@ -478,26 +509,33 @@ function marketSchema(html, code) {
    * A silent no-op on all four pages would hide the day someone edits the
    * Dutch in src and the schema quietly stops being translated. */
   if (html.includes('"@type": "ProfessionalService"')) {
-  setJson('description', t['meta.desc'],
+  setJson('description', tr('meta.desc'),
     'DRP BuildLab ontwerpt en bouwt websites volledig op maat voor lokale ondernemers in België. Beginnerspakket vanaf €499 of quotatie op maat voor geavanceerde projecten — met optioneel maandelijks onderhoud vanaf €29 per maand.');
-  setJson('description', t['hero.eye'],
+  setJson('description', tr('meta.desc'),
     'Websites op maat voor lokale ondernemers in België.');
-  setJson('alternateName', 'DRP BuildLab — ' + plain(t['ab.logotag']),
+  setJson('alternateName', 'DRP BuildLab — ' + plain(tr('ab.logotag')),
     'DRP BuildLab — Webdesign op maat');
 
   // What the studio does, from the extra-services list it already publishes.
+  // A list, not a string, so tr() cannot vouch for it -- and an empty one
+  // would write an empty knowsAbout rather than fail.
+  const services = t['ex.items'];
+  if (!Array.isArray(services) || !services.length) {
+    throw new Error('no ex.items for language "' + m.lang + '" (market '
+      + code + '). Every language block needs one.');
+  }
   html = html.replace(/"knowsAbout": \[[^\]]*\]/,
-    () => '"knowsAbout": [' + t['ex.items'].map(i => JSON.stringify(i.n)).join(',') + ']');
+    () => '"knowsAbout": [' + services.map(i => JSON.stringify(i.n)).join(',') + ']');
 
   // The two offers, from the two package blocks on the pricing page.
-  setJson('name', t['p1.name'], 'Beginnerspakket — Website op maat');
-  setJson('description', plain(t['p1.desc']),
+  setJson('name', tr('p1.name'), 'Beginnerspakket — Website op maat');
+  setJson('description', plain(tr('p1.desc')),
     'Ideaal voor lokale ondernemers die net starten zonder website, of een bestaande website willen laten aanpassen. Website op maat; maandelijks onderhoud optioneel vanaf €29 per maand.');
-  setJson('name', t['p1.name'], 'Website op maat — Beginnerspakket');
-  setJson('name', t['p2.name'], 'Maatwerk website — quotatie op maat');
-  setJson('description', plain(t['p2.desc']),
+  setJson('name', tr('p1.name'), 'Website op maat — Beginnerspakket');
+  setJson('name', tr('p2.name'), 'Maatwerk website — quotatie op maat');
+  setJson('description', plain(tr('p2.desc')),
     'Geavanceerde websites volledig op maat. Prijs wordt bepaald op basis van de omvang van het project. Maandelijks onderhoud optioneel: €29 per maand of €250 per jaar.');
-  setJson('name', t['p2.name'], 'Maatwerk website op maat');
+  setJson('name', tr('p2.name'), 'Maatwerk website op maat');
   }
 
   /* The contactPoint's own areaServed, which is a country code, not a list. */
