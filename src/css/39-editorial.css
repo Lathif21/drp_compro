@@ -100,6 +100,41 @@
 .phero-h1{font-size:clamp(2.6rem,6.4vw,5.4rem);line-height:.96}
 .phero-sub{max-width:620px;font-size:1rem}
 
+/* ── The opening fills the window ────────────────────────────────────────
+   The four inner pages opened at whatever height 11rem of padding and two
+   lines of headline came to -- about 640px of a 900px window -- so the
+   section beneath showed as a pale strip along the bottom edge. It read as
+   the opening having been cut off rather than as the page continuing, which
+   is the one thing an opening must not do. The home page never had the
+   fault: .hero has carried min-height:100svh since this file was written.
+   Phones were fixed in 46-mobile-hero-fit.css; this is the desktop half of
+   the same rule, and the four pages now open the way the home page does.
+
+   A minimum, not a height: fill the window, and grow rather than crop when
+   a headline sets deeper than the Dutch it was drawn against -- German and
+   Indonesian both run a line longer here.
+
+   The copy is centred in whatever height the window turns out to have, so
+   the padding above stops being what positions it and becomes what it
+   should have been all along: the clearance that keeps the headline clear
+   of the fixed nav on the day the content is tall enough to set the height
+   itself.
+
+   Scoped above 960px because 46-mobile-hero-fit.css owns everything below
+   it, and owns it in lvh rather than svh for a reason that has no desktop
+   equivalent -- a window has no toolbar floating over the page. The two
+   files meet at 960/961 with no gap and no overlap, so which one applies is
+   readable from either side without holding both in mind. */
+@media(min-width:961px){
+  .phero{
+    min-height:100vh;
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+}
+
 /* ── The bar over a dark opening ─────────────────────────────────────────
    Every page now opens dark, so until the bar takes its white ground at 50px
    it is sitting on near-black and its ink-coloured type is invisible. It gets
