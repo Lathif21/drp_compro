@@ -26,6 +26,10 @@
 }
 @media(max-width:768px){
   .scta{display:flex}
-  /* Lift the WhatsApp button clear of the bar instead of stacking the two. */
-  body.scta-on .wa-float{bottom:5.6rem}
+  /* Lift the dock clear of the bar. This used to name .wa-float and move
+     that button alone, which left the chat launcher at the height it had
+     and put the two of them in the same place -- the collision this rule
+     was trying to prevent, caused by it. Moving the anchor moves every
+     rung, so the stack arrives above the bar with its spacing intact. */
+  body.scta-on{--dock-bottom:5.6rem}
 }

@@ -41,7 +41,14 @@
    700px it already spans the width. Its padding follows the bar's own
    direction rather than the page's, because an Arabic offer can appear on a
    Latin page and the other way round. */
-[dir="rtl"] .wa-float{right:auto;left:2rem}
+[dir="rtl"] .wa-float,[dir="rtl"] .chat-toggle{right:auto;left:var(--dock-right)}
+/* The panel changes corner with them, but only while it has a corner to be
+   in: below 480px 47-chat.css spreads it across the full width with left:0,
+   and an attribute selector out-specifies that no matter which file is read
+   last. Held above the width where that takes over. */
+@media(min-width:481px){
+  [dir="rtl"] .chat-panel{right:auto;left:var(--dock-right)}
+}
 @media(min-width:701px){[dir="rtl"] .lang-offer{left:auto;right:1rem}}
 .lang-offer[dir="rtl"]{padding:.15rem 1rem .15rem .35rem}
 
