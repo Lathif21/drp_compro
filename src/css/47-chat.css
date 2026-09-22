@@ -1,10 +1,12 @@
 /* ── AI Chat Widget ─────────────────────────────────────────────────── */
 
-/* Toggle button — sits above the WhatsApp float */
+/* Toggle button — rung 1 of the dock, directly above WhatsApp.
+   Stated as a rung rather than a measurement, so it keeps its place when
+   the sticky mobile bar lifts the dock. See 02-tokens.css. */
 .chat-toggle {
   position: fixed;
-  bottom: 6.5rem;
-  right: 2rem;
+  bottom: calc(var(--dock-bottom) + var(--dock-step));
+  right: var(--dock-right);
   z-index: 810;
   width: 54px;
   height: 54px;
@@ -46,14 +48,20 @@
 }
 .chat-badge.on { display: block; }
 
-/* Panel */
+/* Panel — clears the two rungs of the dock and then some.
+   Stated against the dock anchor for the same reason the launcher is: at a
+   fixed 12rem it stayed put while the sticky bar lifted the stack, and the
+   launcher rose into it. Two steps plus a rem is exactly the 12rem it was
+   written with, so a desktop is unchanged; the max-height is the same 14rem
+   of clearance re-expressed, so the panel cannot grow past the top of the
+   window once the dock has been lifted. */
 .chat-panel {
   position: fixed;
-  bottom: 12rem;
-  right: 2rem;
+  bottom: calc(var(--dock-bottom) + var(--dock-step) * 2 + 1rem);
+  right: var(--dock-right);
   z-index: 809;
   width: 380px;
-  max-height: calc(100vh - 14rem);
+  max-height: calc(100vh - var(--dock-bottom) - 12rem);
   min-height: 360px;
   border-radius: 16px;
   overflow: hidden;
@@ -269,8 +277,8 @@
   .chat-panel-open .chat-panel {
     transform: translateY(0);
   }
-  .chat-toggle {
-    bottom: 5.5rem;
-    right: 1rem;
-  }
+  /* The launcher used to be repositioned here to bottom:5.5rem/right:1rem,
+     which put it within 2px of the WhatsApp button's height and 16px inside
+     its right edge. It now takes its place from the dock like everything
+     else, and the narrow-screen inset applies to the whole stack. */
 }

@@ -27,4 +27,39 @@
   --muted2:rgba(26,31,54,.64);
   --line:rgba(26,31,54,.09);
   --line-b:rgba(74,144,226,.2);
+
+  /* ── The floating dock ────────────────────────────────────────────────
+     Where the round buttons in the bottom corner sit, and how they stack.
+
+     There are two of them -- WhatsApp and the chat launcher -- and each
+     used to state its own corner: 21-whatsapp-float.css put one at
+     bottom:2rem, 47-chat.css put the other at 6.5rem, and
+     27-sticky-mobile-cta.css lifted only the first of the two when the
+     sticky bar appeared. Three files, three opinions, and nothing holding
+     them to the same answer. So the moment the bar came up on a phone the
+     two buttons were drawn on top of each other.
+
+     Declared here instead, as the anchor and the step. A button states
+     which rung of the stack it is on and nothing else, so anything that
+     moves the dock -- the sticky bar, a narrow screen, the reading
+     direction -- moves both of them together and cannot move one without
+     the other.
+
+     The step is the button plus the gap, and 18px is the gap the desktop
+     already had: 2rem + 54 + 18 is the 6.5rem the chat launcher was
+     written with. Keeping it exact means this rewrites how the positions
+     are arrived at without changing where anything lands on a desktop. */
+  --dock-right:2rem;
+  --dock-bottom:2rem;
+  --dock-size:54px;
+  --dock-gap:18px;
+  --dock-step:calc(var(--dock-size) + var(--dock-gap));
+}
+
+/* A narrow phone pulls the whole dock in, rather than one button of it.
+   47-chat.css used to bring the chat launcher to right:1rem below 480px and
+   leave WhatsApp at 2rem, which is half of why the two overlapped there
+   rather than merely touching. */
+@media(max-width:480px){
+  :root{--dock-right:1rem}
 }
