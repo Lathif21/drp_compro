@@ -95,6 +95,7 @@ nl:{
   'ct.tag':"Gratis offerte",'ct.h2':'Klaar om online<br><em>te gaan?</em>','ct.lede':"Vraag een gratis offerte aan. We bellen u op en tonen meteen een voorbeeld op maat. Geen verplichtingen.",
   'ct.lbls':['Telefoon','E-mail','Adres','Ondernemingsnummer','WhatsApp','Instagram','Facebook','TikTok'],
   'f.labels':["Voornaam","Achternaam","Bedrijfsnaam","Telefoonnummer","E-mail","Welke dienst heeft u in gedachten?","Partnerkortingscode (optioneel)","Bericht (optioneel)"],
+  'f.kind':'U vraagt aan als','f.kind.biz':'Bedrijf','f.kind.priv':'Particulier','f.kbo':'Ondernemingsnummer of btw-nummer (optioneel)','f.kbo.ph':'Bijv. BE 0123.456.789',
   'f.phs':["Jan","Peeters","Jouw bedrijf","+32 ...","jan@jouwbedrijf.be","Vertel ons meer over uw project...","Bijv. LOTTE24"],
   'f.sel':['Kies een dienst','Beginnerspakket — €499','Geavanceerd op maat — quotatie','Aanpassing bestaande website','Enkel extra diensten (logo, SEO, …)','Ik weet het nog niet'],
   'f.btn':"Gratis offerte aanvragen",'f.succ.h':'Aanvraag ontvangen!','f.succ.p':"We nemen binnen 24 uur contact met u op met uw offerte op maat.",
@@ -208,6 +209,7 @@ en:{
   'ct.tag':"Free quote",'ct.h2':'Ready to go<br><em>online?</em>','ct.lede':"Request a free quote. We'll call you and show a custom example right away. No obligations.",
   'ct.lbls':['Phone','Email','Address','Company number','WhatsApp','Instagram','Facebook','TikTok'],
   'f.labels':["First name","Last name","Company name","Phone number","Email","Which service do you have in mind?","Partner discount code (optional)","Message (optional)"],
+  'f.kind':'Requesting as','f.kind.biz':'Business','f.kind.priv':'Private person','f.kbo':'Company or VAT number (optional)','f.kbo.ph':'e.g. BE 0123.456.789',
   'f.phs':["John","Smith","Your company","+32 ...","john@yourcompany.com","Tell us more about your project...","e.g. LOTTE24"],
   'f.sel':['Choose a service','Starter package — €499','Advanced custom — quote','Update existing website','Extra services only (logo, SEO, …)','I\'m not sure yet'],
   'f.btn':"Request free quote",'f.succ.h':'Request received!','f.succ.p':"We'll get back to you within 24 hours with your custom quote.",
@@ -301,6 +303,7 @@ fr:{
   'ct.tag':"Devis gratuit",'ct.h2':'Prêt à aller<br><em>en ligne ?</em>','ct.lede':"Demandez un devis gratuit. Nous vous appellerons et vous présenterons immédiatement un exemple sur mesure. Sans engagement.",
   'ct.lbls':['Téléphone','E-mail','Adresse','Numéro d\'entreprise','WhatsApp','Instagram','Facebook','TikTok'],
   'f.labels':["Prénom","Nom de famille","Nom de l'entreprise","Numéro de téléphone","E-mail","Quel service avez-vous en tête ?","Code de réduction partenaire (facultatif)","Message (optionnel)"],
+  'f.kind':'Vous faites la demande en tant que','f.kind.biz':'Entreprise','f.kind.priv':'Particulier','f.kbo':'Numéro d\'entreprise ou de TVA (facultatif)','f.kbo.ph':'Ex. BE 0123.456.789',
   'f.phs':["Jean","Dupont","Votre entreprise","+32 ...","jean@votreentreprise.be","Parlez-nous de votre projet...","par exemple : LOTTE24"],
   'f.sel':['Choisissez un service','Forfait débutant — 499 €','Avancé sur mesure — devis','Mise à jour site existant','Services supplémentaires uniquement (logo, SEO, …)','Je ne sais pas encore'],
   'f.btn':"Demander un devis gratuit",'f.succ.h':'Demande reçue !','f.succ.p':"Nous vous répondrons dans les 24 heures avec votre devis personnalisé.",
@@ -436,6 +439,7 @@ es:{
   'ct.tag':"Presupuesto gratuito",'ct.h2':'¿Listo para estar<br><em>en línea?</em>','ct.lede':"Solicita un presupuesto gratuito. Te llamaremos y te mostraremos un ejemplo personalizado de inmediato. Sin compromiso.",
   'ct.lbls':['Teléfono','E-mail','Dirección','Número de empresa','WhatsApp','Instagram','Facebook','TikTok'],
   'f.labels':["Nombre","Apellido","Nombre de empresa","Número de teléfono","E-mail","¿Qué servicio tienes en mente?","Código de descuento para socios (opcional)","Mensaje (opcional)"],
+  'f.kind':'Solicita como','f.kind.biz':'Empresa','f.kind.priv':'Particular','f.kbo':'Número de empresa o de IVA (opcional)','f.kbo.ph':'Ej.: BE 0123.456.789',
   'f.phs':["Juan","García","Tu empresa","+32 ...","juan@tuempresa.es","Cuéntanos más sobre tu proyecto...","p. ej., LOTTE24"],
   'f.sel':['Elige un servicio','Paquete inicial — 499 €','Avanzado a medida — presupuesto','Actualizar sitio existente','Solo servicios extra (logo, SEO, …)','Aún no lo sé'],
   'f.btn':"Solicita un presupuesto gratuito",'f.succ.h':'¡Solicitud recibida!','f.succ.p':"Nos pondremos en contacto contigo en un plazo de 24 horas para facilitarte tu presupuesto personalizado.",
@@ -842,6 +846,7 @@ id:{
     "TikTok"
    ],
    "f.labels": ["Nama depan","Nama keluarga","Nama perusahaan","Nomor telepon","Email","Layanan mana yang Anda maksud?","Kode diskon mitra (opsional)","Pesan (opsional)"],
+   "f.kind": "Mengajukan sebagai", "f.kind.biz": "Perusahaan", "f.kind.priv": "Perorangan", "f.kbo": "Nomor perusahaan atau nomor PPN (opsional)", "f.kbo.ph": "Mis. BE 0123.456.789",
    "f.phs": ["John","Smith","Perusahaan Anda","+32 ...","john@yourcompany.com","Ceritakan lebih banyak tentang proyek Anda...","misalnya LOTTE24"],
    "f.sel": [
     "Pilih layanan",
@@ -1267,6 +1272,7 @@ de:{
     "TikTok"
    ],
    "f.labels": ["Vorname","Nachname","Firmenname","Telefonnummer","E-Mail","An welchen Service denken Sie?","Partner-Rabattcode (optional)","Nachricht (optional)"],
+   "f.kind": "Anfrage als", "f.kind.biz": "Unternehmen", "f.kind.priv": "Privatperson", "f.kbo": "Unternehmens- oder USt-IdNr. (optional)", "f.kbo.ph": "z. B. BE 0123.456.789",
    "f.phs": ["John","Smith","Ihr Unternehmen","+32 ...","john@yourcompany.com","Erzählen Sie uns mehr über Ihr Projekt...","z. B. LOTTE24"],
    "f.sel": [
     "Wählen Sie einen Dienst aus",
@@ -1692,6 +1698,7 @@ ja:{
     "TikTok"
    ],
    "f.labels": ["名","姓","会社名","電話番号","電子メール","どのサービスをお考えですか？","パートナー向け割引コード（任意）","メッセージ（任意）"],
+   "f.kind": "ご依頼の区分", "f.kind.biz": "法人", "f.kind.priv": "個人", "f.kbo": "法人番号またはVAT番号（任意）", "f.kbo.ph": "例：BE 0123.456.789",
    "f.phs": ["ジョン","スミス","御社","+32 ...","john@yourcompany.com","そのプロジェクトについて、もっと詳しく教えてください…","例：LOTTE24"],
    "f.sel": [
     "サービスを選択してください",
@@ -1890,6 +1897,7 @@ pt:{
    "ct.lede": "Solicite um orçamento gratuito. Entraremos em contato com você e apresentaremos um exemplo personalizado imediatamente. Sem compromisso.",
    "ct.lbls": ["Telefone","E-mail","Endereço","Número da empresa","WhatsApp","Instagram","Facebook","TikTok"],
    "f.labels": ["Nome","Sobrenome","Nome da empresa","Número de telefone","E-mail","Qual serviço você tem em mente?","Código de desconto para parceiros (opcional)","Mensagem (opcional)"],
+   "f.kind": "Solicitando como", "f.kind.biz": "Empresa", "f.kind.priv": "Pessoa física", "f.kbo": "CNPJ ou número de IVA (opcional)", "f.kbo.ph": "Ex.: BE 0123.456.789",
    "f.phs": ["John","Smith","Sua empresa","+32 ...","john@yourcompany.com","Conte-nos mais sobre o seu projeto...","por exemplo, LOTTE24"],
    "f.sel": ["Escolha um serviço","Pacote inicial — €499","Personalização avançada — orçamento","Atualizar o site existente","Apenas serviços adicionais (logotipo, SEO, …)","Ainda não tenho certeza"],
    "f.btn": "Solicite um orçamento gratuito",
@@ -2075,6 +2083,7 @@ it:{
    "ct.lede": "Richiedi un preventivo gratuito. Ti chiameremo e ti mostreremo subito un esempio personalizzato. Senza alcun impegno.",
    "ct.lbls": ["Telefono","E-mail","Indirizzo","Numero di registrazione della società","WhatsApp","Instagram","Facebook","TikTok"],
    "f.labels": ["Nome","Cognome","Nome dell'azienda","Numero di telefono","E-mail","A quale servizio ti riferisci?","Codice sconto per i partner (facoltativo)","Messaggio (facoltativo)"],
+   "f.kind": "Richiesta come", "f.kind.biz": "Azienda", "f.kind.priv": "Privato", "f.kbo": "Partita IVA o numero d'impresa (facoltativo)", "f.kbo.ph": "Es. BE 0123.456.789",
    "f.phs": ["John","Smith","La vostra azienda","+32 ...","john@yourcompany.com","Raccontaci qualcosa in più sul tuo progetto...","ad es. LOTTE24"],
    "f.sel": ["Scegli un servizio","Pacchetto iniziale — €499","Personalizzazione avanzata — preventivo","Aggiornare il sito web esistente","Solo servizi aggiuntivi (logo, SEO, …)","Non ne sono ancora sicuro"],
    "f.btn": "Richiedi un preventivo gratuito",
@@ -2260,6 +2269,7 @@ pl:{
    "ct.lede": "Poproś o bezpłatną wycenę. Skontaktujemy się z Tobą telefonicznie i od razu przedstawimy indywidualny przykład. Bez żadnych zobowiązań.",
    "ct.lbls": ["Telefon","E-mail","Adres","Numer rejestracji spółki","WhatsApp","Instagram","Facebook","TikTok"],
    "f.labels": ["Imię","Nazwisko","Nazwa firmy","Numer telefonu","E-mail","O jaką usługę chodzi?","Kod rabatowy dla partnerów (opcjonalnie)","Wiadomość (opcjonalnie)"],
+   "f.kind": "Zapytanie jako", "f.kind.biz": "Firma", "f.kind.priv": "Osoba prywatna", "f.kbo": "NIP lub numer firmy (opcjonalnie)", "f.kbo.ph": "Np. BE 0123.456.789",
    "f.phs": ["John","Smith","Państwa firma","+32 ...","john@yourcompany.com","Opowiedz nam więcej o swoim projekcie...","np. LOTTE24"],
    "f.sel": ["Wybierz usługę","Pakiet startowy — €499","Zaawansowane opcje niestandardowe — wycena","Zaktualizuj istniejącą stronę internetową","Wyłącznie usługi dodatkowe (logo, SEO itp.)","Jeszcze nie jestem pewien"],
    "f.btn": "Poproś o bezpłatną wycenę",
@@ -2677,6 +2687,7 @@ pl:{
       "تيك توك"
    ],
    "f.labels": ["الاسم الأول","اللقب","اسم الشركة","رقم الهاتف","البريد الإلكتروني","ما هي الخدمة التي تفكر فيها؟","رمز الخصم الخاص بالشريك (اختياري)","رسالة (اختياري)"],
+   "f.kind": "تقديم الطلب بصفة", "f.kind.biz": "شركة", "f.kind.priv": "فرد", "f.kbo": "رقم الشركة أو الرقم الضريبي (اختياري)", "f.kbo.ph": "مثال: BE 0123.456.789",
    "f.phs": ["جون","سميث","شركتكم","+32 ...","john@yourcompany.com","أخبرنا بالمزيد عن مشروعك...","على سبيل المثال: LOTTE24"],
    "f.sel": [
       "اختر خدمة",
@@ -3105,6 +3116,7 @@ pl:{
       "TikTok"
    ],
    "f.labels": ["Voorname","Van","Maatskappynaam","Foon nommer","E-pos","Watter diens het jy in gedagte?","Vennoot-afslagkode (opsioneel)","Boodskap (opsioneel)"],
+   "f.kind": "Aansoek as", "f.kind.biz": "Besigheid", "f.kind.priv": "Privaat persoon", "f.kbo": "Maatskappy- of BTW-nommer (opsioneel)", "f.kbo.ph": "Bv. BE 0123.456.789",
    "f.phs": ["Johannes","Smith","U maatskappy","+32 ...","john@yourcompany.com","Vertel ons meer oor jou projek...","bv. LOTTE24"],
    "f.sel": [
       "Kies 'n diens",
