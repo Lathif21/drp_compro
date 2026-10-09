@@ -786,11 +786,13 @@ function applyLang(lang,persist){
     const pl=ab.querySelectorAll('.pillar'); t['ab.pillars'].forEach((p,i)=>{ if(!pl[i]) return; const pt=pl[i].querySelector('.ptitle');if(pt)pt.textContent=p.t; const pb=pl[i].querySelector('.pbody');if(pb)pb.textContent=p.b; });
   }
   /* ── The team ─────────────────────────────────────────────────────────
-     Every lookup is guarded, the way the partner programme's are: the four
-     entries are placeholders and were written in Dutch and English only, so
-     on the other ten languages the section keeps the words it was
-     prerendered with rather than emptying itself. The names are not
-     translated on purpose -- a person's name is the same in every market. */
+     Every lookup is guarded, the way the partner programme's are, so a
+     language missing a key keeps the words the page was prerendered with
+     rather than emptying itself. Name, role and address are not translated
+     on purpose: they are the same in every market, so they live in the
+     markup. The contact line carries {mail}, which becomes the link to the
+     address on the card's data-mail -- the sentence moves around it from
+     language to language ("…までご連絡ください" puts it first). */
   const tmw=document.getElementById('team');
   if(tmw){
     const tt=tmw.querySelector('.stag'); if(tt&&t['team.tag']) tt.textContent=t['team.tag'];
@@ -799,8 +801,9 @@ function applyLang(lang,persist){
     const tc=tmw.querySelectorAll('.tm');
     (t['team.members']||[]).forEach((p,i)=>{
       if(!tc[i]) return;
-      const r=tc[i].querySelector('.tm-role'); if(r) r.innerHTML=p.r;
-      const b=tc[i].querySelector('.tm-body'); if(b) b.innerHTML=p.b;
+      const b=tc[i].querySelector('.tm-body'); if(b&&p.b) b.textContent=p.b;
+      const c=tc[i].querySelector('.tm-mail'), m=tc[i].dataset.mail;
+      if(c&&p.c&&m) c.innerHTML=p.c.replace('{mail}','<a href="mailto:'+m+'" dir="ltr">'+m+'</a>');
     });
   }
   const wy=document.getElementById('waarom');

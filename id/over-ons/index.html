@@ -121,15 +121,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
 f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T5V7GG6G');</script>
 <script>window.__DRP_MARKET__="id";</script>
-<script defer="" src="/assets/build/markets.4e4bec21.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/markets.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
-<link rel="stylesheet" href="/assets/build/styles.21c3ca28.css" onerror="this.onerror=null;this.href='/assets/styles.css'">
+<script defer="" src="/assets/build/markets.20fe24cf.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/markets.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
+<link rel="stylesheet" href="/assets/build/styles.b8602004.css" onerror="this.onerror=null;this.href='/assets/styles.css'">
 <script defer="" src="/assets/build/rates.boot.666956ce.js"></script>
 <script defer="" src="/assets/build/lang-offer.5221b308.js"></script>
-<script defer="" src="/assets/build/i18n.id.be808621.js"></script>
+<script defer="" src="/assets/build/i18n.id.cd388979.js"></script>
 <script defer="" src="/assets/build/locale.2dc5d3c6.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/locale.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 <script defer="" src="/assets/build/referral.48098cbf.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/referral.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
-<script defer="" src="/assets/build/app.3d6a977c.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/app.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
-<script defer="" src="/assets/build/consent.e6589981.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/consent.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
+<script defer="" src="/assets/build/app.12781f56.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/app.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
+<script defer="" src="/assets/build/consent.2530d27c.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/consent.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 <script defer="" src="/assets/build/chat.3ed07a27.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/chat.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 </head>
 <body data-page="about">
@@ -280,18 +280,10 @@ f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T5V7
 <section id="over-ons" class="sec">
   <div class="ab-layout">
     <div class="rv fl">
-      <!-- One logo, integrated as a branded card -->
-      <div class="ab-logo-wrap">
-        <svg aria-hidden="true" width="72" height="72" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <rect width="200" height="200" rx="20" fill="#4A90E2"></rect>
-          <text x="100" y="120" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="90" font-weight="900" fill="white">DRP</text>
-          <text x="100" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="rgba(255,255,255,0.82)" letter-spacing="6">BUILDLAB</text>
-        </svg>
-        <div class="ab-logo-text">
-          <span class="ab-logo-name">DRP BuildLab</span>
-          <span class="ab-logo-tag">Situs web · dibuat sesuai pesanan</span>
-        </div>
-      </div>
+      <!-- The three founders, above the line they sign -->
+      <figure class="ab-photo">
+        <img src="/assets/img/team/founders-700.webp" srcset="/assets/img/team/founders-700.webp 700w, /assets/img/team/founders-1200.webp 1200w" sizes="(max-width:960px) 92vw, 45vw" width="700" height="489" loading="lazy" decoding="async" alt="Dries De Smedt, Par Volckaerts, Roan Bal">
+      </figure>
       <div class="ab-quote">"Setiap usaha lokal berhak mendapatkan kesempatan yang adil untuk ditemukan <em>di internet.</em>"</div>
       <div class="ab-sig">— Para pendiri DRP BuildLab</div>
     </div>
@@ -309,7 +301,54 @@ f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T5V7
   </div>
 </section>
 
-<!-- The team section belongs here. See src/css/44-page-art.css. -->
+<!-- ── TEAM ──────────────────────────────────────────
+     The three founders: the D, the R and the P. Name, role and address
+     are the same in every market and live here; the bio and the contact
+     line are in assets/i18n.js under team.members, which is what every
+     other market reads, so changing them here alone changes the Dutch page
+     only.
+
+     Portraits are 4:5 crops in assets/img/team at 400 and 800 wide, with
+     the head at the same height in each so the three line up. -->
+<section id="team" class="sec sec-alt">
+  <div class="rv">
+    <span class="stag">Tim kami</span>
+    <h2 class="sh">Tiga orang,<br><em>satu narahubung.</em></h2>
+    <p class="ssub">Tanpa sistem tiket dan tanpa manajer akun yang berganti-ganti. Inilah semua orang yang mengerjakan situs web Anda.</p>
+  </div>
+  <div class="team-grid">
+      <div class="tm rv si" data-mail="dries.de-smedt@drpbuildlab.com">
+        <div class="tm-ph">
+          <img src="/assets/img/team/dries-400.webp" srcset="/assets/img/team/dries-400.webp 400w, /assets/img/team/dries-800.webp 800w" sizes="(max-width:520px) 92vw, (max-width:900px) 200px, 30vw" width="400" height="500" loading="lazy" decoding="async" alt="Dries De Smedt">
+        </div>
+        <span class="tm-n"></span>
+        <div class="tm-name">Dries De Smedt</div>
+        <div class="tm-role">Co-founder &amp; VP of Legal</div>
+        <p class="tm-body">Kesepakatan yang baik menghasilkan kolaborasi yang baik, dan itulah cara Dries menangani aspek hukum di DRP BuildLab. Mulai dari penawaran harga dan kontrak hingga kerahasiaan, kemitraan, dan penanganan data yang cermat, ia menerjemahkan ketentuan-ketentuan rumit menjadi bahasa yang mudah dipahami, sehingga Anda selalu tahu posisi Anda. Ia juga senang ikut memikirkan solusi ketika sebuah kolaborasi membutuhkan lebih dari sekadar templat standar.</p>
+        <p class="tm-mail">Ada pertanyaan mengenai perjanjian, penawaran harga, atau kemitraan? Silakan kirim pesan kepadanya di <a href="mailto:dries.de-smedt@drpbuildlab.com" dir="ltr">dries.de-smedt@drpbuildlab.com</a>.</p>
+      </div>
+      <div class="tm rv si d1" data-mail="roan.bal@drpbuildlab.com">
+        <div class="tm-ph">
+          <img src="/assets/img/team/roan-400.webp" srcset="/assets/img/team/roan-400.webp 400w, /assets/img/team/roan-800.webp 800w" sizes="(max-width:520px) 92vw, (max-width:900px) 200px, 30vw" width="400" height="500" loading="lazy" decoding="async" alt="Roan Bal">
+        </div>
+        <span class="tm-n"></span>
+        <div class="tm-name">Roan Bal</div>
+        <div class="tm-role">Co-founder &amp; VP of Operations</div>
+        <p class="tm-body">Sebuah ide yang bagus baru akan menjadi berharga jika direalisasikan tepat waktu, dengan penuh perhatian, dan tanpa hambatan. Itulah yang menjadi tanggung jawab Roan di DRP BuildLab. Ia terus memantau perencanaan, tindak lanjut, dan cara kerja kami, mulai dari percakapan pertama hingga hari peluncuran situs web Anda, serta memastikan seluruh tim tetap selaras. Dengan begitu, Anda selalu tahu apa langkah selanjutnya dan kapan hal tersebut akan terlaksana.</p>
+        <p class="tm-mail">Ada pertanyaan mengenai perencanaan, perkembangan, atau kerja sama? Silakan kirim pesan kepadanya di <a href="mailto:roan.bal@drpbuildlab.com" dir="ltr">roan.bal@drpbuildlab.com</a>.</p>
+      </div>
+      <div class="tm rv si d2" data-mail="par.volckaerts@drpbuildlab.com">
+        <div class="tm-ph">
+          <img src="/assets/img/team/par-400.webp" srcset="/assets/img/team/par-400.webp 400w, /assets/img/team/par-800.webp 800w" sizes="(max-width:520px) 92vw, (max-width:900px) 200px, 30vw" width="400" height="500" loading="lazy" decoding="async" alt="Par Volckaerts">
+        </div>
+        <span class="tm-n"></span>
+        <div class="tm-name">Par Volckaerts</div>
+        <div class="tm-role">Co-founder &amp; VP of Marketing &amp; Communications</div>
+        <p class="tm-body">Produk yang unggul layak mendapatkan cerita yang berkesan, dan itulah yang dikembangkan oleh Par di DRP BuildLab. Ia bertanggung jawab atas citra dan penampilan kami, mulai dari situs web dan media sosial hingga kemitraan serta cara kami berkomunikasi dengan klien. Tujuannya adalah agar Anda langsung memahami apa yang kami lakukan, mengapa hal itu penting, dan apa manfaatnya bagi bisnis Anda.</p>
+        <p class="tm-mail">Ada ide untuk kerja sama, pertanyaan tentang komunikasi kita, atau kisah yang ingin Anda bagikan bersama? Silakan kirim pesan kepadanya di <a href="mailto:par.volckaerts@drpbuildlab.com" dir="ltr">par.volckaerts@drpbuildlab.com</a>.</p>
+      </div>
+  </div>
+</section>
 
 <!-- ── WHY ── -->
 <section id="waarom" class="sec dark">
