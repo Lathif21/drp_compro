@@ -2,8 +2,8 @@
    The it slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "it": {
-  "meta.title": "DRP BuildLab — Siti web personalizzati per aziende locali | Pacchetto base su €499",
-  "meta.desc": "DRP BuildLab realizza siti web completamente personalizzati per imprenditori locali. Pacchetto base disponibile su €499 oppure preventivo personalizzato per progetti avanzati — con servizio di manutenzione mensile opzionale su €29 al mese.",
+  "meta.title": "DRP BuildLab — Siti web personalizzati per aziende di tutto il mondo | Pacchetto base su €499",
+  "meta.desc": "DRP BuildLab realizza siti web completamente personalizzati per imprenditori, ovunque si trovino. Pacchetto base disponibile su €499 oppure preventivo personalizzato per progetti avanzati — con servizio di manutenzione mensile opzionale su €29 al mese.",
   "meta.title.about": "Chi siamo — DRP BuildLab | Agenzia di sviluppo siti web per aziende locali",
   "meta.desc.about": "Creato da imprenditori, per gli imprenditori. La storia di DRP BuildLab e i motivi per cui le aziende locali ci scelgono.",
   "meta.title.pricing": "Prezzi — DRP BuildLab | Pacchetto base €499 oppure richiedi un preventivo personalizzato",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Richiedi un preventivo gratuito",
   "hero.cta2": "Scopri il nostro approccio",
   "hero.scroll": "Scorri",
-  "mq": ["Attenzione al territorio","Prezzi equi","Ottimizzato per dispositivi mobili","Ottimizzato per Google","Senza alcuna preoccupazione"],
+  "mq": ["Attivi in tutto il mondo","Prezzi equi","Ottimizzato per dispositivi mobili","Ottimizzato per Google","Senza alcuna preoccupazione"],
   "how.tag": "Come funziona",
   "how.h2": "Da zero al web<br><em>in 4 passaggi.</em>",
   "how.sub": "Non è richiesta alcuna competenza tecnica. Ci occupiamo di tutto, dalla prima chiamata alla messa online del sito web.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Quanto costa un sito web presso DRP BuildLab?","a":"Ogni sito web è realizzato interamente su misura. Il prezzo dipende dal carico di lavoro richiesto dal vostro progetto. Per gli imprenditori locali che sono agli inizi o che desiderano aggiornare un sito web esistente, proponiamo un pacchetto base disponibile all’indirizzo <strong>€499</strong>. Per i progetti più complessi, elaboriamo sempre un <strong>preventivo personalizzato</strong>. La manutenzione mensile è facoltativa: <strong>€29 al mese</strong> oppure <strong>€250 all’anno</strong>."},{"q":"A chi è rivolto il pacchetto iniziale \"€499\"?","a":"In particolare per gli imprenditori locali che stanno muovendo i primi passi e non dispongono ancora di un sito web, oppure per coloro che desiderano aggiornare il proprio sito web esistente rendendolo più moderno e professionale."},{"q":"Quanto costa la manutenzione mensile?","a":"Il servizio di manutenzione è facoltativo e costa <strong>€29 al mese</strong>, oppure <strong>€250 all’anno</strong> — l’opzione annuale ti fa risparmiare €98. Mantiene il tuo sito web sicuro, veloce e ottimizzato per la SEO. Non sei vincolato: puoi disdire ogni mese e il sito web rimane sempre tuo."},{"q":"In quanto tempo il mio sito web sarà online?","a":"Una volta ricevuti il testo, le foto e il logo, possiamo procedere rapidamente. All’inizio concordiamo una <strong>data di consegna precisa</strong>, adeguata alla portata del vostro progetto, e la rispettiamo. Durante il processo di lavorazione vi invieremo un’anteprima da approvare, così non sarete mai lasciati in attesa."},{"q":"Come funziona un preventivo personalizzato?","a":"Per i progetti più complessi, iniziamo con una chiamata introduttiva gratuita per valutare le tue esigenze. Successivamente, elaboriamo un preventivo personalizzato in base al volume di lavoro: numero di pagine, funzionalità, integrazioni e manutenzione. Nessun costo nascosto: saprai in anticipo quanto dovrai pagare."}],
   "soc.tag": "Seguici",
   "soc.h2": "Rimani aggiornato<br><em>su ciò che realizziamo.</em>",
-  "soc.p1": "Seguiteci su Facebook, Instagram e TikTok per scoprire i nuovi progetti, i consigli per gli imprenditori locali e uno sguardo dietro le quinte del DRP BuildLab.",
+  "soc.p1": "Seguiteci su Facebook, Instagram e TikTok per scoprire i nuovi progetti, i consigli per gli imprenditori e uno sguardo dietro le quinte del DRP BuildLab.",
   "soc.p2": "Hai una domanda o vuoi semplicemente parlarne? Mandaci un messaggio tramite il canale che preferisci: ti rispondiamo sempre personalmente.",
   "prt.tag": "Collaborazioni",
   "prt.h2": "Aziende che<br><em>contano su di noi.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Acconsento a che DRP BuildLab utilizzi i dati riportati nel presente modulo per contattarmi in merito alla presente richiesta.",
   "f.err.h": "L'invio non è andato a buon fine.",
   "f.err.p": "Si è verificato un errore durante l'invio. Prova a riprovare oppure contattaci direttamente all'indirizzo <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> o su <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Siti web professionali per aziende locali · Completamente personalizzati",
+  "ft.tag": "Siti web professionali su misura · Per aziende di tutto il mondo",
   "ft.nav": ["Navigazione","Home","Chi siamo","Prezzi","Contatti"],
   "ft.ct": "Contatti",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgio · Partita IVA BE 1033.313.383",

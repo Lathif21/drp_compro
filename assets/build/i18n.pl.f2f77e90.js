@@ -2,8 +2,8 @@
    The pl slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "pl": {
-  "meta.title": "DRP BuildLab — Strony internetowe dostosowane do potrzeb lokalnych firm | Pakiet startowy z €499",
-  "meta.desc": "DRP BuildLab tworzy w pełni dostosowane do indywidualnych potrzeb strony internetowe dla lokalnych przedsiębiorców. Pakiet startowy dostępny na stronie €499 lub indywidualna wycena dla zaawansowanych projektów — z opcjonalną miesięczną obsługą techniczną dostępną na stronie €29 miesięcznie.",
+  "meta.title": "DRP BuildLab — Strony internetowe dostosowane do potrzeb firm na całym świecie | Pakiet startowy z €499",
+  "meta.desc": "DRP BuildLab tworzy w pełni dostosowane do indywidualnych potrzeb strony internetowe dla przedsiębiorców, gdziekolwiek są. Pakiet startowy dostępny na stronie €499 lub indywidualna wycena dla zaawansowanych projektów — z opcjonalną miesięczną obsługą techniczną dostępną na stronie €29 miesięcznie.",
   "meta.title.about": "O nas — DRP BuildLab | Studio tworzenia stron internetowych dla lokalnych firm",
   "meta.desc.about": "Stworzone przez przedsiębiorców dla przedsiębiorców. Historia powstania DRP BuildLab i powody, dla których lokalne firmy wybierają właśnie nas.",
   "meta.title.pricing": "Ceny — DRP BuildLab | Pakiet startowy €499 lub indywidualna wycena",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Poproś o bezpłatną wycenę",
   "hero.cta2": "Zobacz nasze podejście",
   "hero.scroll": "Przewiń",
-  "mq": ["Skupienie się na sprawach lokalnych","Uczciwe ceny","Dostosowane do urządzeń mobilnych","Zoptymalizowane pod kątem Google","Całkowicie bez zmartwień"],
+  "mq": ["Działamy na całym świecie","Uczciwe ceny","Dostosowane do urządzeń mobilnych","Zoptymalizowane pod kątem Google","Całkowicie bez zmartwień"],
   "how.tag": "Jak to działa",
   "how.h2": "Od zera do obecności<br>w sieci <em>w 4 krokach.</em>",
   "how.sub": "Nie jest wymagana żadna wiedza techniczna. Zajmujemy się wszystkim – od pierwszego zgłoszenia aż po uruchomienie strony internetowej.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Ile kosztuje strona internetowa w DRP BuildLab?","a":"Każda strona internetowa jest w całości tworzona na zamówienie. Cena zależy od nakładu pracy związanego z danym projektem. Dla lokalnych przedsiębiorców, którzy dopiero rozpoczynają działalność lub chcą zaktualizować istniejącą stronę internetową, oferujemy pakiet startowy dostępny pod adresem <strong>€499</strong>. W przypadku bardziej zaawansowanych projektów zawsze przygotowujemy <strong>indywidualną wycenę</strong>. Miesięczna konserwacja jest opcjonalna: <strong>€29 miesięcznie</strong> lub <strong>€250 rocznie</strong>."},{"q":"Dla kogo przeznaczony jest pakiet startowy „€499”?","a":"W szczególności dla lokalnych przedsiębiorców, którzy dopiero rozpoczynają działalność i nie mają jeszcze strony internetowej, oraz dla tych, którzy chcą zmodernizować swoją dotychczasową stronę, nadając jej nowoczesny i profesjonalny wygląd."},{"q":"Ile kosztuje miesięczna konserwacja?","a":"Konserwacja jest opcjonalna i kosztuje <strong>€29 miesięcznie</strong> lub <strong>€250 rocznie</strong> — opcja roczna pozwala zaoszczędzić €98. Dzięki niej Twoja strona internetowa jest bezpieczna, szybka i zoptymalizowana pod kątem SEO. Nie jesteś związany żadną umową: możesz zrezygnować w dowolnym momencie, a strona internetowa zawsze pozostaje Twoją własnością."},{"q":"Jak szybko moja strona internetowa zostanie uruchomiona?","a":"Gdy tylko otrzymamy od Państwa tekst, zdjęcia i logo, możemy szybko przystąpić do pracy. Na początku ustalamy <strong>konkretny termin realizacji</strong>, dostosowany do zakresu Państwa projektu — i dotrzymujemy go. W trakcie pracy otrzymują Państwo podgląd do zatwierdzenia, dzięki czemu nigdy nie muszą Państwo czekać."},{"q":"Jak działa wycena indywidualna?","a":"W przypadku bardziej zaawansowanych projektów najpierw omawiamy Państwa potrzeby podczas bezpłatnej rozmowy wstępnej. Następnie przygotowujemy indywidualną wycenę w oparciu o zakres prac: liczbę stron, funkcje, integracje i obsługę techniczną. Nie ma żadnych ukrytych kosztów — z góry wiedzą Państwo, ile zapłacą."}],
   "soc.tag": "Śledź nas",
   "soc.h2": "Bądź na bieżąco<br><em>z tym, co tworzymy.</em>",
-  "soc.p1": "Śledź nas na Facebooku, Instagramie i TikToku, aby być na bieżąco z nowymi projektami, poradami dla lokalnych przedsiębiorców oraz zajrzeć za kulisy DRP BuildLab.",
+  "soc.p1": "Śledź nas na Facebooku, Instagramie i TikToku, aby być na bieżąco z nowymi projektami, poradami dla przedsiębiorców oraz zajrzeć za kulisy DRP BuildLab.",
   "soc.p2": "Masz pytanie, a może po prostu chcesz to omówić? Wyślij nam wiadomość przez dowolny kanał komunikacji — zawsze odpowiadamy osobiście.",
   "prt.tag": "Partnerstwo",
   "prt.h2": "Firmy, które<br><em>nam zaufały.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Wyrażam zgodę na to, aby firma DRP BuildLab wykorzystała dane podane w niniejszym formularzu w celu skontaktowania się ze mną w sprawie tego zgłoszenia.",
   "f.err.h": "Wysyłanie nie powiodło się.",
   "f.err.p": "Wystąpił błąd podczas wysyłania. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio pod adresem <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> lub przez <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Profesjonalne strony internetowe dla lokalnych firm · W pełni dostosowane do indywidualnych potrzeb",
+  "ft.tag": "Profesjonalne strony internetowe na zamówienie · Dla firm na całym świecie",
   "ft.nav": ["Nawigacja","Strona główna","O nas","Ceny","Kontakt"],
   "ft.ct": "Kontakt",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Numer VAT BE 1033.313.383",

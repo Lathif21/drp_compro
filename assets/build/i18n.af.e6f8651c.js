@@ -2,8 +2,8 @@
    The af slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "af": {
-  "meta.title": "DRP BuildLab — Pasgemaakte webwerwe vir plaaslike besighede | Beginpakket vanaf €499",
-  "meta.desc": "DRP BuildLab bou heeltemal pasgemaakte webwerwe vir plaaslike entrepreneurs. Beginpakket vanaf €499, of 'n pasgemaakte kwotasie vir gevorderde projekte — met opsionele maandelikse instandhouding vanaf €29 per maand.",
+  "meta.title": "DRP BuildLab — Pasgemaakte webwerwe vir besighede wêreldwyd | Beginpakket vanaf €499",
+  "meta.desc": "DRP BuildLab bou heeltemal pasgemaakte webwerwe vir entrepreneurs, waar ook al in die wêreld. Beginpakket vanaf €499, of 'n pasgemaakte kwotasie vir gevorderde projekte — met opsionele maandelikse instandhouding vanaf €29 per maand.",
   "meta.title.about": "Oor ons — DRP BuildLab | Webwerfstudio vir plaaslike besighede",
   "meta.desc.about": "Gebou deur entrepreneurs, vir entrepreneurs. Die storie agter DRP BuildLab en waarom plaaslike besighede ons kies.",
   "meta.title.pricing": "Pryse — DRP BuildLab | Startpakket €499 of 'n pasgemaakte kwotasie",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Vra 'n gratis kwotasie aan",
   "hero.cta2": "Sien ons benadering",
   "hero.scroll": "Gly",
-  "mq": ["Plaaslike fokus","Regverdige pryse","Mobielgereed","Google-geoptimaliseer","Heeltemal sorgvry"],
+  "mq": ["Wêreldwyd aktief","Regverdige pryse","Mobielgereed","Google-geoptimaliseer","Heeltemal sorgvry"],
   "how.tag": "Hoe dit werk",
   "how.h2": "Van nul tot aanlyn<br><em>in 4 stappe.</em>",
   "how.sub": "Geen tegniese kennis nodig nie. Ons hanteer alles van die eerste oproep tot die lewendige webwerf.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Hoeveel kos 'n webwerf by DRP BuildLab?","a":"Elke webwerf word heeltemal op maat gemaak. Die prys hang af van die hoeveelheid werk wat in jou projek gaan. Vir plaaslike entrepreneurs wat net begin of 'n bestaande webwerf wil opdateer, het ons 'n beginpakket vanaf <strong>€499</strong>. Vir gevorderde projekte stel ons altyd 'n <strong>pasgemaakte kwotasie</strong> op. Maandelikse instandhouding is opsioneel: <strong>€29 per maand</strong> of <strong>€250 per jaar</strong>."},{"q":"Vir wie is die €499-beginpakket?","a":"Spesifiek vir plaaslike entrepreneurs wat net begin sonder 'n webwerf, of vir entrepreneurs wat hul bestaande webwerf na 'n moderne, professionele weergawe wil opdateer."},{"q":"Wat kos maandelikse instandhouding?","a":"Onderhoud is opsioneel en kos <strong>€29 per maand</strong>, of <strong>€250 per jaar</strong> — die jaarlikse opsie bespaar jou €98. Dit hou jou webwerf veilig, vinnig en SEO-geoptimaliseer. Jy is nie vasgekeer nie: jy kan maandeliks kanselleer, en die webwerf bly altyd joune."},{"q":"Hoe gou sal my webwerf aanlyn wees?","a":"Sodra ons jou kopie, foto's en logo in ontvangs het, kan ons vinnig optree. Aan die begin stem ons 'n <strong>konkrete afleweringsdatum</strong> wat by die omvang van jou projek pas — en ons hou daaraan vas. Onderweg kry jy 'n voorskou om goed te keur, sodat jy nooit hoef te wag nie."},{"q":"Hoe werk 'n pasgemaakte kwotasie?","a":"Vir gevorderde projekte hersien ons eers jou behoeftes in 'n gratis inleidende oproep. Dan stel ons 'n persoonlike kwotasie op gebaseer op die hoeveelheid werk: aantal bladsye, funksies, integrasies en instandhouding. Geen verborge koste nie — jy weet vooraf wat jy betaal."}],
   "soc.tag": "Volg ons",
   "soc.h2": "Bly op hoogte<br><em>van wat ons bou.</em>",
-  "soc.p1": "Volg ons op Facebook, Instagram en TikTok vir nuwe projekte, wenke vir plaaslike entrepreneurs en 'n blik agter die skerms by DRP BuildLab.",
+  "soc.p1": "Volg ons op Facebook, Instagram en TikTok vir nuwe projekte, wenke vir entrepreneurs en 'n blik agter die skerms by DRP BuildLab.",
   "soc.p2": "Het jy 'n vraag, of wil jy dit net deurpraat? Stuur vir ons 'n boodskap op watter kanaal jou ook al pas — ons antwoord altyd persoonlik.",
   "prt.tag": "Vennootskap",
   "prt.h2": "Besighede wat<br><em>op ons bou.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Ek stem saam dat DRP BuildLab die besonderhede in hierdie vorm mag gebruik om my oor hierdie versoek te kontak.",
   "f.err.h": "Stuur het misluk.",
   "f.err.p": "Iets het verkeerd geloop tydens die stuur. Probeer asseblief weer, of kontak ons direk by <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> of op <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Professionele webwerwe vir plaaslike besighede · Volledig pasgemaak",
+  "ft.tag": "Professionele pasgemaakte webwerwe · Vir besighede wêreldwyd",
   "ft.nav": ["Navigasie","Tuiste","Oor ons","Pryse","Kontak"],
   "ft.ct": "Kontak",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, België · BTW BE 1033.313.383",

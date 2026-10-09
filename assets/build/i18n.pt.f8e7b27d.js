@@ -2,8 +2,8 @@
    The pt slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "pt": {
-  "meta.title": "DRP BuildLab — Sites personalizados para empresas locais | Pacote Inicial em €499",
-  "meta.desc": "A DRP BuildLab desenvolve sites totalmente personalizados para empreendedores locais. Pacote inicial a partir de €499, ou um orçamento personalizado para projetos avançados — com manutenção mensal opcional a partir de €29 por mês.",
+  "meta.title": "DRP BuildLab — Sites personalizados para empresas de todo o mundo | Pacote Inicial em €499",
+  "meta.desc": "A DRP BuildLab desenvolve sites totalmente personalizados para empreendedores, onde quer que estejam. Pacote inicial a partir de €499, ou um orçamento personalizado para projetos avançados — com manutenção mensal opcional a partir de €29 por mês.",
   "meta.title.about": "Sobre nós — DRP BuildLab | Estúdio de criação de sites para empresas locais",
   "meta.desc.about": "Criado por empreendedores, para empreendedores. A história por trás do DRP BuildLab e por que as empresas locais nos escolhem.",
   "meta.title.pricing": "Preços — DRP BuildLab | Pacote inicial €499 ou solicite um orçamento personalizado",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Solicite um orçamento gratuito",
   "hero.cta2": "Conheça nossa abordagem",
   "hero.scroll": "Rolar a tela",
-  "mq": ["Foco local","Preços justos","Otimizado para dispositivos móveis","Otimizado para o Google","Sem nenhuma preocupação"],
+  "mq": ["Atuação mundial","Preços justos","Otimizado para dispositivos móveis","Otimizado para o Google","Sem nenhuma preocupação"],
   "how.tag": "Como funciona",
   "how.h2": "Do zero à presença online<br><em>em 4 etapas.</em>",
   "how.sub": "Não é necessário ter conhecimento técnico. Cuidamos de tudo, desde o primeiro contato até a publicação do site.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Quanto custa um site na DRP BuildLab?","a":"Cada site é totalmente personalizado. O preço depende da quantidade de trabalho necessária para o seu projeto. Para empreendedores locais que estão começando ou querem atualizar um site já existente, oferecemos um pacote inicial em <strong>€499</strong>. Para projetos mais complexos, sempre elaboramos um <strong>orçamento personalizado</strong>. A manutenção mensal é opcional: <strong>€29 por mês</strong> ou <strong>€250 por ano</strong>."},{"q":"Para quem é destinado o pacote inicial do “€499”?","a":"Especialmente para empreendedores locais que estão apenas começando e ainda não têm um site, ou para aqueles que desejam atualizar seu site atual para uma versão moderna e profissional."},{"q":"Quanto custa a manutenção mensal?","a":"A manutenção é opcional e custa <strong>€29 por mês</strong>, ou <strong>€250 por ano</strong> — a opção anual economiza €98. Ela mantém seu site seguro, rápido e otimizado para SEO. Você não fica preso a nenhum contrato: pode cancelar a qualquer momento, e o site sempre continuará sendo seu."},{"q":"Em quanto tempo meu site estará no ar?","a":"Assim que recebermos seu texto, suas fotos e seu logotipo, poderemos avançar rapidamente. Logo no início, combinamos uma <strong>data de entrega concreta</strong> que se adapte ao escopo do seu projeto — e a cumprimos. Ao longo do processo, você receberá uma prévia para aprovação, para que nunca fique esperando."},{"q":"Como funciona um orçamento personalizado?","a":"Para projetos mais complexos, começamos analisando suas necessidades em uma ligação introdutória gratuita. Em seguida, elaboramos um orçamento personalizado com base no volume de trabalho: número de páginas, funcionalidades, integrações e manutenção. Sem custos ocultos — você sabe com antecedência quanto vai pagar."}],
   "soc.tag": "Siga-nos",
   "soc.h2": "Fique por dentro<br><em>do que estamos desenvolvendo.</em>",
-  "soc.p1": "Siga-nos no Facebook, Instagram e TikTok para conhecer novos projetos, dicas para empreendedores locais e ver os bastidores do DRP BuildLab.",
+  "soc.p1": "Siga-nos no Facebook, Instagram e TikTok para conhecer novos projetos, dicas para empreendedores e ver os bastidores do DRP BuildLab.",
   "soc.p2": "Tem alguma dúvida ou só quer conversar sobre o assunto? Mande uma mensagem para a gente pelo canal que for mais conveniente para você — sempre respondemos pessoalmente.",
   "prt.tag": "Parceria",
   "prt.h2": "Empresas que<br><em>contam com a gente.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Concordo que a DRP BuildLab possa utilizar os dados contidos neste formulário para entrar em contato comigo a respeito desta solicitação.",
   "f.err.h": "Falha no envio.",
   "f.err.p": "Ocorreu um erro durante o envio. Tente novamente ou entre em contato conosco diretamente pelo e-mail <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> ou pelo <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Sites profissionais para empresas locais · Totalmente personalizados",
+  "ft.tag": "Sites profissionais personalizados · Para empresas de todo o mundo",
   "ft.nav": ["Navegação","Página inicial","Sobre nós","Preços","Contato"],
   "ft.ct": "Contato",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · VAT BE 1033.313.383",

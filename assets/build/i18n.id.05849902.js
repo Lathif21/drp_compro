@@ -2,8 +2,8 @@
    The id slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "id": {
-  "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis Lokal | Paket Pemula dari €499",
-  "meta.desc": "DRP BuildLab mengembangkan situs web yang sepenuhnya disesuaikan untuk para wirausahawan lokal. Paket pemula mulai dari €499, atau penawaran harga khusus untuk proyek-proyek tingkat lanjut — dengan layanan pemeliharaan bulanan opsional seharga €29 per bulan.",
+  "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis di Seluruh Dunia | Paket Pemula dari €499",
+  "meta.desc": "DRP BuildLab mengembangkan situs web yang sepenuhnya disesuaikan untuk para wirausahawan, di mana pun mereka berada. Paket pemula mulai dari €499, atau penawaran harga khusus untuk proyek-proyek tingkat lanjut — dengan layanan pemeliharaan bulanan opsional seharga €29 per bulan.",
   "meta.title.about": "Tentang Kami — DRP BuildLab | Studio pengembangan situs web untuk bisnis lokal",
   "meta.desc.about": "Didirikan oleh para wirausahawan, untuk para wirausahawan. Kisah di balik DRP BuildLab dan alasan mengapa bisnis lokal memilih kami.",
   "meta.title.pricing": "Harga — DRP BuildLab | Paket Pemula €499 atau penawaran harga khusus",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Minta penawaran gratis",
   "hero.cta2": "Lihat pendekatan kami",
   "hero.scroll": "Gulir",
-  "mq": ["Fokus lokal","Penetapan harga yang wajar","Dapat diakses melalui perangkat seluler","Dioptimalkan untuk Google","Benar-benar bebas dari kekhawatiran"],
+  "mq": ["Melayani seluruh dunia","Penetapan harga yang wajar","Dapat diakses melalui perangkat seluler","Dioptimalkan untuk Google","Benar-benar bebas dari kekhawatiran"],
   "how.tag": "Cara kerjanya",
   "how.h2": "Dari nol hingga online<br><em>dalam 4 langkah.</em>",
   "how.sub": "Tidak diperlukan pengetahuan teknis. Kami menangani semuanya, mulai dari panggilan pertama hingga situs web siap online.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Berapa biaya pembuatan situs web di DRP BuildLab?","a":"Setiap situs web dibuat sepenuhnya sesuai pesanan. Harganya bergantung pada besarnya volume pekerjaan yang diperlukan untuk proyek Anda. Bagi pengusaha lokal yang baru memulai atau ingin memperbarui situs web yang sudah ada, kami menawarkan paket pemula dari <strong>€499</strong>. Untuk proyek-proyek yang lebih kompleks, kami selalu menyusun <strong>penawaran</strong> <strong>harga</strong> <strong>khusus</strong>. Layanan pemeliharaan bulanan bersifat opsional: <strong>€29 per bulan</strong> atau <strong>€250 per tahun</strong>."},{"q":"Untuk siapa paket pemula “€499” ini ditujukan?","a":"Khususnya bagi para pengusaha lokal yang baru memulai usaha tanpa memiliki situs web, atau bagi para pengusaha yang ingin memperbarui situs web mereka yang sudah ada menjadi versi yang lebih modern dan profesional."},{"q":"Berapa biaya pemeliharaan bulanan?","a":"Layanan pemeliharaan bersifat opsional dengan biaya <strong>€29 per bulan</strong>, atau <strong>€250 per tahun</strong> — opsi tahunan ini menghemat €98. Layanan ini menjaga situs web Anda tetap aman, cepat, dan dioptimalkan untuk SEO. Anda tidak terikat kontrak: Anda dapat membatalkan langganan setiap bulan, dan situs web tersebut akan selalu menjadi milik Anda."},{"q":"Seberapa cepat situs web saya akan online?","a":"Begitu kami menerima naskah, foto, dan logo Anda, kami bisa segera mulai bekerja. Di awal, kami akan menyepakati <strong>tanggal penyelesaian</strong> yang <strong>pasti</strong> sesuai dengan cakupan proyek Anda — dan kami akan mematuhinya. Selama proses berlangsung, Anda akan menerima pratinjau untuk disetujui, sehingga Anda tidak perlu menunggu lama."},{"q":"Bagaimana cara kerja penawaran harga khusus?","a":"Untuk proyek-proyek tingkat lanjut, kami akan meninjau kebutuhan Anda terlebih dahulu melalui panggilan perkenalan gratis. Selanjutnya, kami akan menyusun penawaran harga khusus berdasarkan volume pekerjaan: jumlah halaman, fitur, integrasi, dan pemeliharaan. Tidak ada biaya tersembunyi — Anda sudah tahu sebelumnya berapa yang harus dibayarkan."}],
   "soc.tag": "Ikuti kami",
   "soc.h2": "Ikuti terus perkembangan terbaru<br><em>dari apa yang kami kembangkan.</em>",
-  "soc.p1": "Ikuti kami di Facebook, Instagram, dan TikTok untuk mengetahui proyek-proyek terbaru, tips bagi para wirausahawan lokal, serta sekilas tentang apa yang terjadi di balik layar DRP BuildLab.",
+  "soc.p1": "Ikuti kami di Facebook, Instagram, dan TikTok untuk mengetahui proyek-proyek terbaru, tips bagi para wirausahawan, serta sekilas tentang apa yang terjadi di balik layar DRP BuildLab.",
   "soc.p2": "Ada pertanyaan, atau sekadar ingin mendiskusikannya? Kirimkan pesan kepada kami melalui saluran mana pun yang Anda inginkan — kami selalu membalasnya secara langsung.",
   "prt.tag": "Kemitraan",
   "prt.h2": "Bisnis yang<br><em>mengandalkan kami.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Saya setuju bahwa DRP BuildLab dapat menggunakan data yang tercantum dalam formulir ini untuk menghubungi saya terkait permintaan ini.",
   "f.err.h": "Pengiriman gagal.",
   "f.err.p": "Terjadi kesalahan saat pengiriman. Silakan coba lagi, atau hubungi kami langsung melalui <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> atau <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Situs web profesional untuk bisnis lokal · Disesuaikan sepenuhnya",
+  "ft.tag": "Situs web profesional sesuai pesanan · Untuk bisnis di seluruh dunia",
   "ft.nav": ["Navigasi","Beranda","Tentang Kami","Harga","Hubungi Kami"],
   "ft.ct": "Hubungi Kami",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgia · Nomor PPN BE 1033.313.383",

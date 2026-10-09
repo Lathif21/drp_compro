@@ -2,8 +2,8 @@
    The de slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "de": {
-  "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für lokale Unternehmen | Starter-Paket von €499",
-  "meta.desc": "DRP BuildLab erstellt maßgeschneiderte Websites für lokale Unternehmer. Starter-Paket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte – mit optionaler monatlicher Wartung ab €29 pro Monat.",
+  "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für Unternehmen weltweit | Starter-Paket von €499",
+  "meta.desc": "DRP BuildLab erstellt maßgeschneiderte Websites für Unternehmer, wo auf der Welt sie auch sind. Starter-Paket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte – mit optionaler monatlicher Wartung ab €29 pro Monat.",
   "meta.title.about": "Über uns — DRP BuildLab | Website-Agentur für lokale Unternehmen",
   "meta.desc.about": "Von Unternehmern für Unternehmer gegründet. Die Geschichte hinter DRP BuildLab und warum sich lokale Unternehmen für uns entscheiden.",
   "meta.title.pricing": "Preise – DRP BuildLab | Starter-Paket €499 oder ein individuelles Angebot",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Kostenloses Angebot anfordern",
   "hero.cta2": "Erfahren Sie mehr über unseren Ansatz",
   "hero.scroll": "Scrollen",
-  "mq": ["Lokaler Fokus","Faire Preisgestaltung","Für Mobilgeräte optimiert","Für Google optimiert","Völlig sorgenfrei"],
+  "mq": ["Weltweit tätig","Faire Preisgestaltung","Für Mobilgeräte optimiert","Für Google optimiert","Völlig sorgenfrei"],
   "how.tag": "So funktioniert es",
   "how.h2": "<em>In 4 Schritten</em> von null auf online<br><em>.</em>",
   "how.sub": "Es sind keine technischen Kenntnisse erforderlich. Wir kümmern uns um alles – vom ersten Anruf bis zur Live-Schaltung der Website.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Wie viel kostet eine Website bei DRP BuildLab?","a":"Jede Website wird vollständig individuell erstellt. Der Preis hängt vom Arbeitsaufwand für Ihr Projekt ab. Für lokale Unternehmer, die gerade erst anfangen oder eine bestehende Website aktualisieren möchten, bieten wir ein Einsteigerpaket unter <strong>€499</strong> an. Für komplexere Projekte erstellen wir stets ein <strong>individuelles Angebot</strong>. Die monatliche Wartung ist optional: <strong>€29 pro Monat</strong> oder <strong>€250 pro Jahr</strong>."},{"q":"Für wen ist das „€499“-Starterpaket gedacht?","a":"Insbesondere für lokale Unternehmer, die gerade erst anfangen und noch keine Website haben, oder für Unternehmer, die ihre bestehende Website auf eine moderne, professionelle Version umgestalten möchten."},{"q":"Wie hoch sind die monatlichen Wartungskosten?","a":"Die Wartung ist optional und kostet <strong>€29 pro Monat</strong> oder <strong>€250 pro Jahr</strong> – mit der Jahresoption sparen Sie €98. Sie sorgt dafür, dass Ihre Website sicher, schnell und SEO-optimiert bleibt. Es gibt keine Bindung: Sie können monatlich kündigen, und die Website bleibt immer Ihr Eigentum."},{"q":"Wie schnell wird meine Website online sein?","a":"Sobald wir Ihren Text, Ihre Fotos und Ihr Logo erhalten haben, können wir zügig vorgehen. Zu Beginn vereinbaren wir einen <strong>konkreten Liefertermin</strong>, der zum Umfang Ihres Projekts passt – und den halten wir ein. Im Laufe des Prozesses erhalten Sie eine Vorschau zur Freigabe, sodass Sie nie lange warten müssen."},{"q":"Wie funktioniert ein individuelles Angebot?","a":"Bei komplexeren Projekten besprechen wir zunächst in einem kostenlosen Erstgespräch Ihre Anforderungen. Anschließend erstellen wir ein individuelles Angebot auf Basis des Arbeitsaufwands: Seitenanzahl, Funktionen, Integrationen und Wartung. Keine versteckten Kosten – Sie wissen im Voraus, was Sie bezahlen."}],
   "soc.tag": "Folgen Sie uns",
   "soc.h2": "Bleiben Sie auf dem Laufenden<br><em>, was wir entwickeln.</em>",
-  "soc.p1": "Folgen Sie uns auf Facebook, Instagram und TikTok, um mehr über neue Projekte, Tipps für lokale Unternehmer und einen Blick hinter die Kulissen des DRP BuildLab zu erfahren.",
+  "soc.p1": "Folgen Sie uns auf Facebook, Instagram und TikTok, um mehr über neue Projekte, Tipps für Unternehmer und einen Blick hinter die Kulissen des DRP BuildLab zu erfahren.",
   "soc.p2": "Hast du eine Frage oder möchtest du einfach nur darüber reden? Schreib uns eine Nachricht über den Kanal, der dir am besten passt – wir antworten immer persönlich.",
   "prt.tag": "Partnerschaft",
   "prt.h2": "Unternehmen, die<br><em>auf uns bauen.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Ich bin damit einverstanden, dass DRP BuildLab die Angaben in diesem Formular verwendet, um mich bezüglich dieser Anfrage zu kontaktieren.",
   "f.err.h": "Das Senden ist fehlgeschlagen.",
   "f.err.p": "Beim Versenden ist ein Fehler aufgetreten. Bitte versuche es erneut oder wende dich direkt an uns unter <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> oder über <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Professionelle Websites für lokale Unternehmen · Vollständig individuell gestaltet",
+  "ft.tag": "Professionelle, individuell gestaltete Websites · Für Unternehmen weltweit",
   "ft.nav": ["Navigation","Startseite","Über uns","Preise","Kontakt"],
   "ft.ct": "Kontakt",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgien · USt-IdNr. BE 1033.313.383",

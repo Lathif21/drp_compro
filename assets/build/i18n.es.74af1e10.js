@@ -2,8 +2,8 @@
    The es slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "es": {
-  "meta.title": "DRP BuildLab — Sitios web a medida para negocios locales | Paquete inicial desde 499 €",
-  "meta.desc": "DRP BuildLab crea sitios web completamente a medida para emprendedores locales. Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados — con mantenimiento mensual opcional desde 29 € al mes.",
+  "meta.title": "DRP BuildLab — Sitios web a medida para negocios de todo el mundo | Paquete inicial desde 499 €",
+  "meta.desc": "DRP BuildLab crea sitios web completamente a medida para emprendedores, estén donde estén. Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados — con mantenimiento mensual opcional desde 29 € al mes.",
   "meta.title.about": "Sobre nosotros — DRP BuildLab | Estudio web para negocios locales",
   "meta.desc.about": "Creado por emprendedores, para emprendedores. La historia de DRP BuildLab y por qué los negocios locales nos eligen.",
   "meta.title.pricing": "Precios — DRP BuildLab | Paquete inicial 499 € o presupuesto a medida",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Solicita un presupuesto gratuito",
   "hero.cta2": "Ver nuestro enfoque",
   "hero.scroll": "Scroll",
-  "mq": ["Enfoque local","Precio justo","Optimizado para móvil","Optimizado para Google","Sin preocupaciones"],
+  "mq": ["Presentes en todo el mundo","Precio justo","Optimizado para móvil","Optimizado para Google","Sin preocupaciones"],
   "how.tag": "Cómo funciona",
   "how.h2": "De cero a en línea<br><em>en 4 pasos.</em>",
   "how.sub": "No se necesita conocimiento técnico. Gestionamos todo, desde la primera llamada hasta el sitio web en vivo.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"¿Cuánto cuesta un sitio web en DRP BuildLab?","a":"Cada sitio web es completamente a medida. El precio depende de la cantidad de trabajo que requiere tu proyecto. Para emprendedores locales que están empezando o quieren actualizar un sitio existente, tenemos un paquete inicial desde <strong>499 €</strong>. Para proyectos avanzados siempre creamos un <strong>presupuesto a medida</strong>. El mantenimiento mensual es opcional: <strong>29 € al mes</strong> o <strong>250 € al año</strong>."},{"q":"¿Para quién es el paquete inicial de 499 €?","a":"Específicamente para emprendedores locales que están empezando sin sitio web, o para emprendedores que quieren actualizar su sitio existente a una versión moderna y profesional."},{"q":"¿Cuánto cuesta el mantenimiento mensual?","a":"El mantenimiento es opcional y cuesta <strong>29 € al mes</strong>, o <strong>250 € al año</strong> — la opción anual te ahorra 98 €. Mantiene tu sitio web seguro, rápido y optimizado para SEO. No hay compromiso: puedes cancelar cada mes y el sitio siempre es tuyo."},{"q":"¿En cuánto tiempo estará mi sitio web en línea?","a":"En cuanto tengamos tus textos, fotos y logo, podemos avanzar rápido. Al inicio acordamos juntos una <strong>fecha de entrega concreta</strong> adaptada al alcance de tu proyecto — y la cumplimos. Por el camino recibes una vista previa para aprobar, así nunca te quedas esperando."},{"q":"¿Cómo funciona un presupuesto a medida?","a":"Para proyectos avanzados, primero revisamos tus necesidades en una llamada de presentación gratuita. Luego creamos un presupuesto personal basado en la cantidad de trabajo: número de páginas, funcionalidades, integraciones y mantenimiento. Sin costes ocultos — sabes de antemano lo que pagas."}],
   "soc.tag": "Síguenos",
   "soc.h2": "Mantente al día<br><em>de lo que construimos.</em>",
-  "soc.p1": "Síguenos en Facebook, Instagram y TikTok para ver nuevos proyectos, consejos para emprendedores locales y un vistazo entre bastidores de DRP BuildLab.",
+  "soc.p1": "Síguenos en Facebook, Instagram y TikTok para ver nuevos proyectos, consejos para emprendedores y un vistazo entre bastidores de DRP BuildLab.",
   "soc.p2": "¿Una pregunta o simplemente quieres comentarlo? Envíanos un mensaje por el canal que prefieras — siempre respondemos personalmente.",
   "prt.tag": "Colaboración",
   "prt.h2": "Empresas que<br><em>confían en nosotros.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "Acepto que DRP BuildLab utilice los datos de este formulario para contactarme sobre esta solicitud.",
   "f.err.h": "El envío ha fallado.",
   "f.err.p": "Algo salió mal al enviar. Inténtalo de nuevo o contáctanos directamente en <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> o por <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Sitios web profesionales para negocios locales · Completamente a medida",
+  "ft.tag": "Sitios web profesionales a medida · Para negocios de todo el mundo",
   "ft.nav": ["Navegación","Inicio","Sobre nosotros","Precios","Contacto"],
   "ft.ct": "Contacto",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Bélgica · IVA BE 1033.313.383",

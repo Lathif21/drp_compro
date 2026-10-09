@@ -2,8 +2,8 @@
    The fr slice of assets/i18n.js, which is the file to edit. */
 const TRANSLATIONS = {
 "fr": {
-  "meta.title": "DRP BuildLab — Sites web sur mesure pour entreprises locales | Forfait débutant à partir de 499 €",
-  "meta.desc": "DRP BuildLab crée des sites web entièrement sur mesure pour les entrepreneurs locaux. Forfait débutant à partir de 499 € ou devis personnalisé pour des projets avancés — avec maintenance mensuelle en option à partir de 29 € par mois.",
+  "meta.title": "DRP BuildLab — Sites web sur mesure pour entreprises du monde entier | Forfait débutant à partir de 499 €",
+  "meta.desc": "DRP BuildLab crée des sites web entièrement sur mesure pour les entrepreneurs, où qu’ils soient dans le monde. Forfait débutant à partir de 499 € ou devis personnalisé pour des projets avancés — avec maintenance mensuelle en option à partir de 29 € par mois.",
   "meta.title.about": "À propos — DRP BuildLab | Studio web pour entreprises locales",
   "meta.desc.about": "Créé par des entrepreneurs, pour des entrepreneurs. L’histoire de DRP BuildLab et pourquoi les entreprises locales nous choisissent.",
   "meta.title.pricing": "Tarifs — DRP BuildLab | Forfait débutant 499 € ou devis sur mesure",
@@ -32,7 +32,7 @@ const TRANSLATIONS = {
   "hero.cta1": "Demander un devis gratuit",
   "hero.cta2": "Voir notre approche",
   "hero.scroll": "Défiler",
-  "mq": ["Focus local","Prix équitable","Mobile-ready","Optimisé Google","Entièrement géré"],
+  "mq": ["Actifs dans le monde entier","Prix équitable","Mobile-ready","Optimisé Google","Entièrement géré"],
   "how.tag": "Comment ça marche",
   "how.h2": "De zéro à en ligne<br><em>en 4 étapes.</em>",
   "how.sub": "Aucune connaissance technique requise. Nous gérons tout, du premier appel au site web en ligne.",
@@ -103,7 +103,7 @@ const TRANSLATIONS = {
   "faq.items": [{"q":"Combien coûte un site web chez DRP BuildLab ?","a":"Chaque site web est entièrement sur mesure. Le prix dépend de la quantité de travail que votre projet requiert. Pour les entrepreneurs locaux qui démarrent ou veulent mettre à jour un site existant, nous avons un forfait débutant à partir de <strong>499 €</strong>. Pour les projets avancés, nous créons toujours un <strong>devis sur mesure</strong>. La maintenance mensuelle est en option : <strong>29 € par mois</strong> ou <strong>250 € par an</strong>."},{"q":"À qui s'adresse le forfait débutant à 499 € ?","a":"Spécifiquement aux entrepreneurs locaux qui démarrent sans site web, ou aux entrepreneurs qui souhaitent moderniser leur site existant vers une version professionnelle."},{"q":"Combien coûte la maintenance mensuelle ?","a":"La maintenance est en option et coûte <strong>29 € par mois</strong>, ou <strong>250 € par an</strong> — la formule annuelle vous fait économiser 98 €. Elle maintient votre site sécurisé, rapide et optimisé SEO. Vous n’êtes engagé à rien : résiliable chaque mois, et le site reste toujours le vôtre."},{"q":"En combien de temps mon site sera-t-il en ligne ?","a":"Dès que nous avons vos textes, photos et logo, nous pouvons avancer rapidement. Au démarrage, nous convenons ensemble d'une <strong>date de livraison concrète</strong> adaptée à la portée de votre projet — et nous la tenons. En cours de route, vous recevez un aperçu à approuver, vous n'êtes donc jamais dans l'attente."},{"q":"Comment fonctionne un devis sur mesure ?","a":"Pour les projets avancés, nous examinons d'abord vos besoins lors d'un appel de présentation gratuit. Ensuite, nous créons un devis personnel basé sur la quantité de travail : nombre de pages, fonctionnalités, intégrations et maintenance. Pas de frais cachés — vous savez à l'avance ce que vous payez."}],
   "soc.tag": "Suivez-nous",
   "soc.h2": "Restez informé<br><em>de ce que nous construisons.</em>",
-  "soc.p1": "Suivez-nous sur Facebook, Instagram et TikTok pour nos nouveaux projets, des conseils pour les entrepreneurs locaux et un aperçu des coulisses de DRP BuildLab.",
+  "soc.p1": "Suivez-nous sur Facebook, Instagram et TikTok pour nos nouveaux projets, des conseils pour les entrepreneurs et un aperçu des coulisses de DRP BuildLab.",
   "soc.p2": "Une question, ou simplement envie de discuter ? Envoyez-nous un message sur le canal qui vous convient — nous répondons toujours personnellement.",
   "prt.tag": "Partenariat",
   "prt.h2": "Des entreprises qui<br><em>comptent sur nous.</em>",
@@ -126,7 +126,7 @@ const TRANSLATIONS = {
   "f.consent": "J'accepte que DRP BuildLab utilise les données de ce formulaire pour me contacter au sujet de cette demande.",
   "f.err.h": "L'envoi a échoué.",
   "f.err.p": "Une erreur est survenue lors de l'envoi. Réessayez, ou contactez-nous directement à <a href=\"mailto:info@drpbuildlab.com\">info@drpbuildlab.com</a> ou via <a href=\"https://wa.me/32473744431\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
-  "ft.tag": "Sites web professionnels pour entreprises locales · Entièrement sur mesure",
+  "ft.tag": "Sites web professionnels sur mesure · Pour les entreprises du monde entier",
   "ft.nav": ["Navigation","Accueil","À propos","Tarifs","Contact"],
   "ft.ct": "Contact",
   "ft.copy": "© 2026 DRP BuildLab · Honingstraat 1D, 2220 Hallaar, Belgique · TVA BE 1033.313.383",
