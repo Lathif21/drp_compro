@@ -533,7 +533,7 @@ section[id]{scroll-margin-top:90px}
 .ex-n{font-size:.83rem;color:var(--muted);line-height:1.45;min-width:0;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .ex-p{font-size:.86rem;font-weight:700;color:var(--blue-t);flex-shrink:0}
 /* C2 — 11 items in a 4-col grid: the closer spans 2 so the last row is flush */
-.ex-wide{grid-column:span 2}
+.ex-wide{grid-column:span 3}
 /* Footer social row — three links now, so let them wrap on narrow screens */
 .ft-socials{display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap}
 .ft-follow{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55)}
@@ -858,8 +858,10 @@ body.nav-open{overflow:hidden}
   .nlinks a{font-size:.76rem}
   /* Four extras per row needs about 250px a cell once a price is converted
      or a label is German. Below 1180px that is not there, so two per row,
-     which is what the grid already falls back to on a tablet. */
+     which is what the grid already falls back to on a tablet. Ten cells
+     fill five rows of two, so the wide one is a plain cell here. */
   .exgrid{grid-template-columns:1fr 1fr}
+  .ex-wide{grid-column:span 1}
 }
 @media(max-width:1100px){
   .ab-layout,.opp-layout,.ct-layout{grid-template-columns:1fr;gap:4rem}
