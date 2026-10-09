@@ -3279,8 +3279,30 @@ html.ph-motion .ph-rv.ph-in img,html.ph-motion .w-ph.ph-in img{clip-path:inset(0
   object-fit:contain;object-position:right bottom;
 }
 [dir="rtl"] .phero-media .phero-founders{right:auto;left:3vw;object-position:left bottom}
+/* Making a studio photo belong on black. The light it was shot in is
+   bright and flat, so on its own the cut-out reads as pasted on. Three
+   things settle it into the scene: a DRP-blue spotlight behind them with
+   a faint pool of the same light at the floor line, a blue rim glow
+   around the silhouette (drop-shadow follows the alpha edge), and the
+   photo brought down a little so the white shirt stops being the
+   brightest thing on the screen. The fade at the bottom is long enough
+   that they rise out of the dark rather than stop at a cut. */
+.phero-full .phero-media::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 34% 58% at 71% 60%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.12) 46%,rgba(0,0,0,0) 74%),
+    radial-gradient(ellipse 32% 9% at 71% 100%,rgba(74,144,226,.32) 0%,rgba(0,0,0,0) 100%);
+}
+[dir="rtl"] .phero-full .phero-media::before{
+  background:
+    radial-gradient(ellipse 34% 58% at 29% 60%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.12) 46%,rgba(0,0,0,0) 74%),
+    radial-gradient(ellipse 32% 9% at 29% 100%,rgba(74,144,226,.32) 0%,rgba(0,0,0,0) 100%);
+}
+.phero-media .phero-founders{
+  filter:brightness(.86) contrast(1.06) saturate(.92) drop-shadow(0 0 26px rgba(74,144,226,.30));
+}
 .phero-full .phero-media::after,[dir="rtl"] .phero-full .phero-media::after{
-  background:linear-gradient(0deg,#000 0%,rgba(0,0,0,0) 16%);
+  background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.82) 7%,rgba(0,0,0,.35) 18%,rgba(0,0,0,0) 32%);
 }
 /* The headline keeps to its own side of the founders: a column of at most
    40% of the screen, and type that scales with the width so the longest
@@ -3292,6 +3314,11 @@ html.ph-motion .ph-rv.ph-in img,html.ph-motion .w-ph.ph-in img{clip-path:inset(0
   .phero.phero-full{align-items:flex-start;padding-top:7.5rem}
   .phero.phero-full .phero-copy{max-width:none}
   .phero.phero-full .phero-h1{font-size:clamp(2.2rem,10vw,3.6rem)}
+  .phero-full .phero-media::before,[dir="rtl"] .phero-full .phero-media::before{
+    background:
+      radial-gradient(ellipse 70% 34% at 50% 80%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.10) 50%,rgba(0,0,0,0) 76%),
+      radial-gradient(ellipse 60% 6% at 50% 100%,rgba(74,144,226,.30) 0%,rgba(0,0,0,0) 100%);
+  }
   .phero-media .phero-founders,[dir="rtl"] .phero-media .phero-founders{
     left:50%;right:auto;transform:translate3d(-50%,var(--py,0px),0);
     width:min(118vw,620px);height:auto;max-width:none;
