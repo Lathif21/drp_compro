@@ -271,3 +271,36 @@ html.ph-motion .ph-rv.ph-in img,html.ph-motion .w-ph.ph-in img{clip-path:inset(0
   .soc-ph{max-width:none;aspect-ratio:4/3}
   .car-ctl{margin-top:2rem}
 }
+
+/* ── About header: the founders, full screen ─────────────────────────────
+   The photo is a cut-out on transparency, so there is no frame to fill:
+   the three stand on the header's own black, anchored to the bottom edge
+   and to the side away from the headline. The side shade the full-bleed
+   photos need is not needed here; a short fade at the bottom keeps the
+   cut at their waists from reading as an edge. */
+.phero.phero-full{min-height:100vh;min-height:100svh;align-items:center}
+.phero-media .phero-founders{
+  top:auto;bottom:-3%;left:auto;right:3vw;
+  width:auto;height:86%;max-width:54%;
+  object-fit:contain;object-position:right bottom;
+}
+[dir="rtl"] .phero-media .phero-founders{right:auto;left:3vw;object-position:left bottom}
+.phero-full .phero-media::after,[dir="rtl"] .phero-full .phero-media::after{
+  background:linear-gradient(0deg,#000 0%,rgba(0,0,0,0) 16%);
+}
+/* The headline keeps to its own side of the founders: a column of at most
+   40% of the screen, and type that scales with the width so the longest
+   line (ACHTER, or the Arabic first line) fits it rather than running
+   under the photo. */
+.phero.phero-full .phero-copy{max-width:min(620px,40vw)}
+.phero.phero-full .phero-h1{font-size:clamp(2.4rem,5vw,5.2rem)}
+@media(max-width:900px){
+  .phero.phero-full{align-items:flex-start;padding-top:7.5rem}
+  .phero.phero-full .phero-copy{max-width:none}
+  .phero.phero-full .phero-h1{font-size:clamp(2.2rem,10vw,3.6rem)}
+  .phero-media .phero-founders,[dir="rtl"] .phero-media .phero-founders{
+    left:50%;right:auto;transform:translate3d(-50%,var(--py,0px),0);
+    width:min(118vw,620px);height:auto;max-width:none;
+    object-position:center bottom;
+  }
+}
