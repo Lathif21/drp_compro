@@ -242,14 +242,13 @@ f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T5V7
 <style>
 html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-serif}
 </style>
-<link rel="stylesheet" href="/assets/build/styles.b8602004.css" onerror="this.onerror=null;this.href='/assets/styles.css'">
+<link rel="stylesheet" href="/assets/build/styles.6167e919.css" onerror="this.onerror=null;this.href='/assets/styles.css'">
 <script defer="" src="/assets/build/rates.boot.666956ce.js"></script>
 <script defer="" src="/assets/build/lang-offer.5221b308.js"></script>
-<script defer="" src="/assets/build/i18n.ar.5129783c.js"></script>
+<script defer="" src="/assets/build/i18n.ar.915d8653.js"></script>
 <script defer="" src="/assets/build/locale.2dc5d3c6.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/locale.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 <script defer="" src="/assets/build/referral.48098cbf.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/referral.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
-<script defer="" src="/assets/build/app.12781f56.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/app.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
-<script defer="" src="/assets/build/hero3d.f70d9c1b.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/hero3d.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
+<script defer="" src="/assets/build/app.65b86b8d.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/app.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 <script defer="" src="/assets/build/consent.2530d27c.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/consent.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 <script defer="" src="/assets/build/chat.3ed07a27.js" onerror="this.onerror=null;var s=document.createElement('script');s.src='/assets/chat.js';s.async=false;s.defer=true;this.parentNode.insertBefore(s,this.nextSibling)"></script>
 </head>
@@ -372,10 +371,13 @@ html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-ser
 
 <!-- ── HERO ── -->
 <section class="hero dark" id="hero">
-  <!-- The turning lattice. Decorative and empty of text: assets/hero3d.js
-       fills it if the browser has WebGL, and if it does not the hero is
-       unchanged. aria-hidden so it is never announced as an image. -->
-  <canvas id="hero3d" aria-hidden="true"></canvas>
+  <!-- The photo behind the headline. Decorative -- the headline says what
+       the page is for -- so empty alt and aria-hidden. Eager and high
+       priority because it is the first thing painted. See
+       src/css/49-photo-layout.css; the motion is in app.js, PHOTO MOTION. -->
+  <div class="hero-media" aria-hidden="true">
+    <img src="/assets/img/photos/hero-1000.webp" srcset="/assets/img/photos/hero-1000.webp 1000w, /assets/img/photos/hero-2000.webp 2000w" sizes="100vw" width="2000" height="1125" alt="" fetchpriority="high" decoding="async" data-parallax=".16">
+  </div>
   <div class="hero-content" id="heroContent">
     <h1 class="hero-h1" id="heroH1"><span class="hl"><span class="hl-i">نحن نتولى</span></span>
 <span class="hl"><span class="hl-i d1">حضورك</span></span>
@@ -396,6 +398,37 @@ html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-ser
   </div>
 </section>
 
+<!-- ── PHOTO STRIP ───────────────────────────────────
+     The businesses we build for, moving past slowly. Decorative: the
+     section after it says the same thing in words, so the whole strip is
+     hidden from assistive technology. The set is written twice so the loop
+     has no seam -- the track slides exactly one set's width and starts
+     again. It stands still for reduced motion and while a pointer is on it. -->
+<div class="ph-strip" aria-hidden="true">
+  <div class="ph-track">
+      <img src="/assets/img/photos/barber-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/bakery-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/fishmonger-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/florist-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/barista-600.webp" width="600" height="336" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/hairsalon-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/trades-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/bakers-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/street-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/duo-600.webp" width="600" height="338" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/barber-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/bakery-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/fishmonger-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/florist-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/barista-600.webp" width="600" height="336" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/hairsalon-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/trades-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/bakers-600.webp" width="600" height="400" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/street-600.webp" width="600" height="401" loading="lazy" decoding="async" alt="">
+      <img src="/assets/img/photos/duo-600.webp" width="600" height="338" loading="lazy" decoding="async" alt="">
+  </div>
+</div>
+
 <!-- ── HOW IT WORKS ── -->
 <section id="hoe-het-werkt" class="sec sec-alt">
   <div class="proc-head">
@@ -407,21 +440,25 @@ html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-ser
   </div>
   <div class="steps">
     <div class="srow rv">
+      <div class="s-ph ph-rv"><img src="/assets/img/photos/call-600.webp" srcset="/assets/img/photos/call-600.webp 600w, /assets/img/photos/call-1200.webp 1200w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 23vw" width="600" height="419" loading="lazy" decoding="async" alt=""></div>
       <div class="sn">٠١</div>
       <div class="sbody"><div class="stitle">المكالمة الأولى</div><div class="stxt">سنتصل بك ونعرض عليك مثالاً مخصصاً على الفور. الخدمة مجانية تمامًا وغير ملزمة.</div></div>
       <div class="stime">معًا</div>
     </div>
     <div class="srow rv d1">
+      <div class="s-ph ph-rv"><img src="/assets/img/photos/design-600.webp" srcset="/assets/img/photos/design-600.webp 600w, /assets/img/photos/design-1200.webp 1200w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 23vw" width="600" height="400" loading="lazy" decoding="async" alt=""></div>
       <div class="sn">٠٢</div>
       <div class="sbody"><div class="stitle">تصميم مخصص</div><div class="stxt">نقوم بإنشاء موقعك الإلكتروني وفقًا لرغباتك. لا يتعين عليك القيام بأي شيء.</div></div>
       <div class="stime">نحن</div>
     </div>
     <div class="srow rv d2">
+      <div class="s-ph ph-rv"><img src="/assets/img/photos/laptops-600.webp" srcset="/assets/img/photos/laptops-600.webp 600w, /assets/img/photos/laptops-1200.webp 1200w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 23vw" width="600" height="400" loading="lazy" decoding="async" alt=""></div>
       <div class="sn">٠٣</div>
       <div class="sbody"><div class="stitle">المعاينة والموافقة</div><div class="stxt">ستتلقى نسخة مسبقة للمراجعة والموافقة عليها، متضمنةً التعديلات. بعد ذلك، سيتم إطلاق موقعك على الإنترنت باستخدام نطاقك الخاص.</div></div>
       <div class="stime">معًا</div>
     </div>
     <div class="srow rv d3">
+      <div class="s-ph ph-rv"><img src="/assets/img/photos/live-600.webp" srcset="/assets/img/photos/live-600.webp 600w, /assets/img/photos/live-1200.webp 1200w" sizes="(max-width:600px) 92vw, (max-width:1100px) 46vw, 23vw" width="600" height="338" loading="lazy" decoding="async" alt=""></div>
       <div class="sn">٠٤</div>
       <div class="sbody"><div class="stitle">نعيش — ونبقى</div><div class="stxt">بعد الإطلاق، سنظل دائمًا في خدمتك. سواء كانت تحديثات أو تغييرات أو أسئلة — سنتولى الأمر.</div></div>
       <div class="stime">نحن</div>
@@ -462,9 +499,12 @@ html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-ser
 <!-- ── SOCIAL ── -->
 <section class="soc-sec">
   <div class="rv fl si">
-    <div class="soc-card">
-      <div class="soc-big">DRP</div>
-      <div class="soc-sub">BuildLab</div>
+    <!-- Two business owners behind their own counter: who the posts are
+         for. Decorative, and the small mark in the corner is the account
+         the links below go to. -->
+    <div class="soc-ph ph-rv" aria-hidden="true">
+      <img src="/assets/img/photos/owners-600.webp" srcset="/assets/img/photos/owners-600.webp 600w, /assets/img/photos/owners-1200.webp 1200w" sizes="(max-width:900px) 92vw, 44vw" width="600" height="338" loading="lazy" decoding="async" alt="">
+      <span class="soc-tag">@drp_buildlab</span>
     </div>
   </div>
   <div class="rv fr d2">
@@ -490,7 +530,8 @@ html[lang="ar"] body{font-family:'Plus Jakarta Sans','Noto Sans Arabic',sans-ser
 </section>
 
 <!-- ── CLOSING CTA ─────────────────────────────────── -->
-<section class="ctastrip dark">
+<section class="ctastrip dark has-media">
+  <div class="cta-media" aria-hidden="true"><img src="/assets/img/photos/cafe-1000.webp" srcset="/assets/img/photos/cafe-1000.webp 1000w, /assets/img/photos/cafe-2000.webp 2000w" sizes="100vw" width="1000" height="667" loading="lazy" decoding="async" alt="" data-parallax=".12"></div>
   <h2 class="sh">هل أنت مستعد للاتصال<br><em>بالإنترنت؟</em></h2>
   <p class="ssub">اطلب عرض أسعار مجاني. سنتصل بك ونعرض عليك مثالاً مخصصاً على الفور. دون أي التزامات.</p>
   <a href="/sa/contact" class="btn btn-p mag">اطلب عرض أسعار مجاني</a>
