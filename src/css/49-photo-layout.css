@@ -273,61 +273,46 @@ html.ph-motion .ph-rv.ph-in img,html.ph-motion .w-ph.ph-in img{clip-path:inset(0
 }
 
 /* ── About header: the founders, full screen ─────────────────────────────
-   The photo is a cut-out on transparency, so there is no frame to fill:
-   the three stand on the header's own black, anchored to the bottom edge
-   and to the side away from the headline. The side shade the full-bleed
-   photos need is not needed here; a short fade at the bottom keeps the
-   cut at their waists from reading as an edge. */
+   The image is a finished scene (see the note in the markup): lit, graded
+   and vignetted to pure black at every edge. So it needs no shade, glow or
+   filter here, and it never has to fill the frame -- it is pinned to the
+   bottom corner on the founders' side and the header's own black does the
+   rest, at any screen shape.
+
+   Its height is capped at 52vw so the group stays clear of the headline
+   column from a 4:3 laptop up to a wide monitor. The header itself is not
+   flat black -- it carries the faint grid and grain of every dark section
+   -- so the image's own top and inner edges are masked to transparent,
+   and the scene dissolves into that texture instead of ending on a line. */
 .phero.phero-full{min-height:100vh;min-height:100svh;align-items:center}
-.phero-media .phero-founders{
-  top:auto;bottom:-3%;left:auto;right:3vw;
-  width:auto;height:86%;max-width:54%;
-  object-fit:contain;object-position:right bottom;
+.phero-media.phero-scene::after{display:none}
+.phero-scene picture{display:contents}
+.phero-scene .ph-rtl{display:none}
+[dir="rtl"] .phero-scene .ph-ltr{display:none}
+[dir="rtl"] .phero-scene .ph-rtl{display:contents}
+.phero-media.phero-scene img{
+  position:absolute;top:auto;bottom:0;right:0;left:auto;
+  width:auto;height:min(100%,52vw);max-width:none;
+  object-fit:contain;transform:none;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 24%),linear-gradient(to right,transparent 0,#000 22%);
+  -webkit-mask-composite:source-in;
+          mask-image:linear-gradient(to bottom,transparent 0,#000 24%),linear-gradient(to right,transparent 0,#000 22%);
+          mask-composite:intersect;
 }
-[dir="rtl"] .phero-media .phero-founders{right:auto;left:3vw;object-position:left bottom}
-/* Making a studio photo belong on black. The light it was shot in is
-   bright and flat, so on its own the cut-out reads as pasted on. Three
-   things settle it into the scene: a DRP-blue spotlight behind them with
-   a faint pool of the same light at the floor line, a blue rim glow
-   around the silhouette (drop-shadow follows the alpha edge), and the
-   photo brought down a little so the white shirt stops being the
-   brightest thing on the screen. The fade at the bottom is long enough
-   that they rise out of the dark rather than stop at a cut. */
-.phero-full .phero-media::before{
-  content:'';position:absolute;inset:0;pointer-events:none;
-  background:
-    radial-gradient(ellipse 34% 58% at 71% 60%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.12) 46%,rgba(0,0,0,0) 74%),
-    radial-gradient(ellipse 32% 9% at 71% 100%,rgba(74,144,226,.32) 0%,rgba(0,0,0,0) 100%);
+[dir="rtl"] .phero-media.phero-scene img{
+  right:auto;left:0;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 24%),linear-gradient(to left,transparent 0,#000 22%);
+          mask-image:linear-gradient(to bottom,transparent 0,#000 24%),linear-gradient(to left,transparent 0,#000 22%);
 }
-[dir="rtl"] .phero-full .phero-media::before{
-  background:
-    radial-gradient(ellipse 34% 58% at 29% 60%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.12) 46%,rgba(0,0,0,0) 74%),
-    radial-gradient(ellipse 32% 9% at 29% 100%,rgba(74,144,226,.32) 0%,rgba(0,0,0,0) 100%);
-}
-.phero-media .phero-founders{
-  filter:brightness(.86) contrast(1.06) saturate(.92) drop-shadow(0 0 26px rgba(74,144,226,.30));
-}
-.phero-full .phero-media::after,[dir="rtl"] .phero-full .phero-media::after{
-  background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.82) 7%,rgba(0,0,0,.35) 18%,rgba(0,0,0,0) 32%);
-}
-/* The headline keeps to its own side of the founders: a column of at most
-   40% of the screen, and type that scales with the width so the longest
-   line (ACHTER, or the Arabic first line) fits it rather than running
-   under the photo. */
-.phero.phero-full .phero-copy{max-width:min(620px,40vw)}
-.phero.phero-full .phero-h1{font-size:clamp(2.4rem,5vw,5.2rem)}
+.phero.phero-full .phero-copy{max-width:min(620px,36vw)}
+.phero.phero-full .phero-h1{font-size:clamp(2.4rem,4.8vw,5.2rem)}
 @media(max-width:900px){
   .phero.phero-full{align-items:flex-start;padding-top:7.5rem}
   .phero.phero-full .phero-copy{max-width:none}
   .phero.phero-full .phero-h1{font-size:clamp(2.2rem,10vw,3.6rem)}
-  .phero-full .phero-media::before,[dir="rtl"] .phero-full .phero-media::before{
-    background:
-      radial-gradient(ellipse 70% 34% at 50% 80%,rgba(74,144,226,.30) 0%,rgba(46,116,201,.10) 50%,rgba(0,0,0,0) 76%),
-      radial-gradient(ellipse 60% 6% at 50% 100%,rgba(74,144,226,.30) 0%,rgba(0,0,0,0) 100%);
-  }
-  .phero-media .phero-founders,[dir="rtl"] .phero-media .phero-founders{
-    left:50%;right:auto;transform:translate3d(-50%,var(--py,0px),0);
-    width:min(118vw,620px);height:auto;max-width:none;
-    object-position:center bottom;
+  .phero-media.phero-scene img,[dir="rtl"] .phero-media.phero-scene img{
+    left:0;right:0;width:100%;height:auto;
+    -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 30%);
+            mask-image:linear-gradient(to bottom,transparent 0,#000 30%);
   }
 }
