@@ -70,6 +70,17 @@ html.ph-motion .hero-media.ph-in,html.ph-motion .phero-media.ph-in{transform:non
      behind the headline is one surface; only the photo moves right. */
   .hero-media img,.phero-media img{left:36%;width:64%;top:4%;height:112%;object-position:50% 0%}
   [dir="rtl"] .hero-media img,[dir="rtl"] .phero-media img{left:0}
+  /* The photo's inner edge dissolves rather than ends: at 36% the shade is
+     not yet fully opaque, and a bright photo (paper, a window) drew a
+     hard vertical line there. */
+  .hero-media img,.phero-media img{
+    -webkit-mask-image:linear-gradient(to right,transparent 0,#000 18%);
+            mask-image:linear-gradient(to right,transparent 0,#000 18%);
+  }
+  [dir="rtl"] .hero-media img,[dir="rtl"] .phero-media img{
+    -webkit-mask-image:linear-gradient(to left,transparent 0,#000 18%);
+            mask-image:linear-gradient(to left,transparent 0,#000 18%);
+  }
   .hero-media::after,.phero-media::after{
     background:
       linear-gradient(90deg,#000 0%,#000 35%,rgba(0,0,0,.7) 46%,rgba(0,0,0,.18) 72%,rgba(0,0,0,.06) 100%),
@@ -315,4 +326,24 @@ html.ph-motion .ph-rv.ph-in img,html.ph-motion .w-ph.ph-in img{clip-path:inset(0
     -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 30%);
             mask-image:linear-gradient(to bottom,transparent 0,#000 30%);
   }
+}
+
+/* ── Prijzen, Contact, Partner worden: full-screen photo headers ─────────
+   The same full-screen header as About, with an ordinary photo of the
+   work instead of the founders' scene: it fills the right of the frame
+   under the shade every header photo gets (.phero-media above), and the
+   headline column is wider than About's, because these headlines are
+   longer -- "Faire Preise, keine Überraschungen" has to fit in caps.
+   Each photo is held on its subject with object-position. */
+.phero.phero-full.phero-photo .phero-copy{max-width:min(680px,44vw)}
+.phero.phero-full.phero-photo .phero-h1{font-size:clamp(2.4rem,4.4vw,5rem)}
+.phero-photo .phero-media img[src*="web-prijzen"]{object-position:68% 40%}
+.phero-photo .phero-media img[src*="web-contact"]{object-position:60% 45%}
+.phero-photo .phero-media img[src*="web-partner"]{object-position:55% 30%}
+@media(max-width:900px){
+  /* On a phone the photo fills the screen and is darkest at the bottom,
+     so the headline sits there rather than at the top. */
+  .phero.phero-full.phero-photo{align-items:flex-end;padding-top:6rem;padding-bottom:3.5rem}
+  .phero.phero-full.phero-photo .phero-copy{max-width:none}
+  .phero.phero-full.phero-photo .phero-h1{font-size:clamp(2.1rem,9.4vw,3.4rem)}
 }
