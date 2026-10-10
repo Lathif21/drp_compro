@@ -31,7 +31,7 @@ nl:{
   'meta.title.partner':'Marketingpartner worden \u2014 DRP BuildLab | 10% voor jouw publiek, 5% voor jou','meta.desc.partner':'Word marketingpartner van DRP BuildLab. Je krijgt een persoonlijke link: jouw publiek krijgt 10% korting op de quotatie, jij 5% commissie op elke betaalde factuur. Maandelijks uitbetaald, te volgen in je eigen dashboard.',
   'meta.title':'DRP BuildLab — Websites op maat voor bedrijven wereldwijd | Beginnerspakket vanaf €499',
   'meta.desc':'DRP BuildLab bouwt websites volledig op maat voor ondernemers, waar ter wereld ze ook zitten. Beginnerspakket vanaf €499 voor starters, of een persoonlijke quotatie voor geavanceerde projecten — met optioneel maandelijks onderhoud vanaf €29 per maand.',
-  'meta.title.about':'Over ons — DRP BuildLab | Websitestudio voor lokale ondernemers','meta.desc.about':'Gebouwd door ondernemers, voor ondernemers. Het verhaal achter DRP BuildLab en waarom lokale bedrijven voor ons kiezen.',
+  'meta.title.about':'Over ons — DRP BuildLab | Websitestudio voor ondernemers wereldwijd','meta.desc.about':'Gebouwd door ondernemers, voor ondernemers. Het verhaal achter DRP BuildLab en waarom bedrijven wereldwijd voor ons kiezen.',
   'meta.title.pricing':'Prijzen — DRP BuildLab | Beginnerspakket €499 of quotatie op maat','meta.desc.pricing':'Beginnerspakket vanaf €499 of een persoonlijke quotatie voor geavanceerde projecten. Extra diensten en optioneel onderhoud vanaf €29 per maand.',
   'meta.title.contact':"Contact — DRP BuildLab | Vraag een gratis offerte aan",'meta.desc.contact':"Vraag een gratis offerte aan. We bellen u op en tonen meteen een voorbeeld op maat. Geen verplichtingen.",
 'phero.about.h':'De mensen achter<br><em>uw website</em>','phero.about.sub':'Wie we zijn, waarom we begonnen en wat u van ons mag verwachten.',
@@ -47,21 +47,21 @@ nl:{
   'how.tag':'Hoe het werkt','how.h2':'Van niets naar online<br><em>in 4 stappen.</em>','how.sub':'Geen technische kennis nodig. Wij regelen alles van eerste gesprek tot live website.',
   'how.steps':[{t:'Eerste gesprek',b:'We bellen u op en tonen meteen een voorbeeld op maat. Volledig vrijblijvend.',d:'Samen'},{t:'Ontwerp op maat',b:'Op basis van uw wensen bouwen we uw website. U hoeft zelf niets te doen.',d:'Wij'},{t:'Preview & goedkeuring',b:'U krijgt een preview ter goedkeuring. Aanpassingen inbegrepen. Daarna gaat uw site live met eigen domein.',d:'Samen'},{t:'Live — en wij blijven',b:'Na de lancering staan wij nog steeds voor u klaar. Updates, aanpassingen, vragen — wij regelen het.',d:'Wij'}],
   'ab.logotag':'Websites · op maat',
-  'ab.quote':'"Elke lokale zaak verdient een eerlijke kans om online <em>gevonden te worden.</em>"',
+  'ab.quote':'"Elke zaak verdient een eerlijke kans om online <em>gevonden te worden.</em>"',
   'ab.sig':'— De founders van DRP BuildLab',
   'ab.nums':['Onderhoud per maand (optioneel)','Beginnerspakket website','Op maat gemaakt','Verborgen kosten'],
   'ab.tag':'Over ons','ab.h2':'Gebouwd door<br>ondernemers,<br><em>voor ondernemers.</em>',
-  'ab.p1':'Het begon met een frustratie. We zagen hoe lokale bedrijven — de slager op de hoek, de loodgieter die altijd bereikbaar is, de kapper die al jaren dezelfde klanten knipt — volledig onzichtbaar waren online.',
-  'ab.p2':'Grote agencies vroegen <strong>€5.000 voor een website</strong> die maanden op zich liet wachten. Dus bouwden we DRP BuildLab: een studio die gelooft dat elke lokale zaak <strong>recht heeft op een website op maat</strong> — betaalbaar, eerlijk en met een prijs die past bij het werk dat erin gaat.',
-  'ab.pillars':[{t:'Eerlijkheid boven alles',b:'Wat we beloven, leveren we. Geen verborgen kosten, geen vage offertes.'},{t:'Onderhoud wanneer u het wilt',b:'Maandelijks onderhoud is optioneel: €29 per maand of €250 per jaar. Neemt u het erbij, dan blijft uw site veilig, up-to-date en vindbaar — zonder dat u eraan hoeft te denken.'},{t:'Lokaal denken, digitaal bouwen',b:'Wij bouwen voor lokale bedrijven — bedrijven waarvan de klanten in de buurt zoeken. Wij werken op afstand vanuit België, dus waar u zit bepaalt niet of wij voor u kunnen bouwen.'}],
+  'ab.p1':'Het begon met een frustratie. We zagen hoe kleine bedrijven — de slager op de hoek, de loodgieter die altijd bereikbaar is, de kapper die al jaren dezelfde klanten knipt — volledig onzichtbaar waren online.',
+  'ab.p2':'Grote agencies vroegen <strong>€5.000 voor een website</strong> die maanden op zich liet wachten. Dus bouwden we DRP BuildLab: een studio die gelooft dat elke zaak <strong>recht heeft op een website op maat</strong> — betaalbaar, eerlijk en met een prijs die past bij het werk dat erin gaat.',
+  'ab.pillars':[{t:'Eerlijkheid boven alles',b:'Wat we beloven, leveren we. Geen verborgen kosten, geen vage offertes.'},{t:'Onderhoud wanneer u het wilt',b:'Maandelijks onderhoud is optioneel: €29 per maand of €250 per jaar. Neemt u het erbij, dan blijft uw site veilig, up-to-date en vindbaar — zonder dat u eraan hoeft te denken.'},{t:'Wereldwijd bereikbaar, persoonlijk gebouwd',b:'Wij bouwen voor bedrijven, waar hun klanten ook zoeken. Wij werken op afstand vanuit België, dus waar u zit bepaalt niet of wij voor u kunnen bouwen.'}],
   /* The team. The three founders on the About page: bio (b) and contact
      line (c) here; name, role and address in the markup, because those are
      the same in every market. {mail} in c becomes the person's address. */
   'team.tag':'Ons team','team.h2':'Vier mensen,<br><em>één aanspreekpunt.</em>','team.sub':'Geen ticketsysteem en geen wisselende accountmanagers. Dit is iedereen die aan uw website werkt.',
   'team.members':[{b:'Goede afspraken maken goede samenwerkingen. Dat is het uitgangspunt van Dries, die bij DRP BuildLab waakt over de juridische kant: van offertes en contracten tot geheimhouding, partnerschappen en een zorgvuldige omgang met gegevens. Hij vertaalt het kleine lettertje naar gewone taal, zodat u altijd weet waar u aan toe bent, en denkt graag mee wanneer een samenwerking net iets meer vraagt dan een standaardformule.',c:'Een vraag over een afspraak, een offerte of een samenwerking? Schrijf hem gerust op {mail}.'},{b:'Een goed idee wordt pas waardevol als het op tijd, netjes en zonder gedoe af is. Daar zorgt Roan voor bij DRP BuildLab. Hij houdt het overzicht over planning, opvolging en werkwijze, van het eerste gesprek tot de dag dat uw website live gaat, en zorgt dat iedereen in het team op elkaar afgestemd blijft. Zo weet u altijd wat de volgende stap is en wanneer u die mag verwachten.',c:'Een vraag over de planning, de voortgang of de samenwerking? Schrijf hem gerust op {mail}.'},{b:'Een sterk product verdient een verhaal dat blijft hangen. Daar werkt Par aan bij DRP BuildLab. Hij bewaakt hoe we klinken en eruitzien, van de website en sociale media tot partnerschappen en de manier waarop we met klanten communiceren. Zijn doel is dat u meteen begrijpt wat we doen, waarom het ertoe doet en wat het voor uw zaak kan betekenen.',c:'Een idee voor een samenwerking, een vraag over onze communicatie of zin om samen iets te delen? Schrijf hem gerust op {mail}.'},{b:'Een website is pas zo goed als wat er gebeurt wanneer iemand hem opent. Daar werkt Lathif aan bij DRP BuildLab. Hij bouwt de sites, van het eerste ontwerp tot de dag dat ze live gaan, en zorgt dat ze snel laden, op elke telefoon werken en goed vindbaar zijn op Google. Ook daarna houdt hij ze draaiende, zodat u nooit aan de technische kant hoeft te denken.',c:'Een technische vraag over uw website? Schrijf hem gerust op {mail}.'}],
   'car.prev':'Vorige','car.next':'Volgende',
-  'why.tag':'Waarom DRP BuildLab','why.h2':'Wat maakt ons anders?','why.sub':'Gebouwd voor lokale bedrijven die online willen staan — zonder gedoe, zonder verrassingen.',
-  'why.cards':[{t:'Één vast aanspreekpunt',b:'Geen ticketsysteem, geen wisselende accountmanagers. U hebt onze naam en ons nummer — van eerste gesprek tot jaren na de lancering.'},{t:'Lokale focus',b:'Uw regio, uw klanten, een persoonlijk team. Wij begrijpen de lokale markt van binnenuit.'},{t:'Eerlijke prijs',b:'Geen verborgen kosten. Altijd vast op voorhand. U weet precies wat u betaalt.'},{t:'Altijd mobiel-klaar',b:'70%+ van uw klanten zoekt via telefoon. Elke DRP BuildLab site werkt perfect op elk apparaat.'},{t:'Google-geoptimaliseerd',b:'SEO ingebouwd zodat klanten u vinden. Wij zorgen dat Google u herkent en indexeert.'},{t:'Levenslange partner',b:'Na de lancering staan wij nog voor u klaar. Geen eenmalige leverancier, maar een echte partner.'}],
+  'why.tag':'Waarom DRP BuildLab','why.h2':'Wat maakt ons anders?','why.sub':'Gebouwd voor bedrijven die online willen staan — zonder gedoe, zonder verrassingen.',
+  'why.cards':[{t:'Één vast aanspreekpunt',b:'Geen ticketsysteem, geen wisselende accountmanagers. U hebt onze naam en ons nummer — van eerste gesprek tot jaren na de lancering.'},{t:'Wereldwijd actief',b:'Uw markt, uw klanten, een persoonlijk team. Wij werken op afstand, waar ter wereld u ook zit.'},{t:'Eerlijke prijs',b:'Geen verborgen kosten. Altijd vast op voorhand. U weet precies wat u betaalt.'},{t:'Altijd mobiel-klaar',b:'70%+ van uw klanten zoekt via telefoon. Elke DRP BuildLab site werkt perfect op elk apparaat.'},{t:'Google-geoptimaliseerd',b:'SEO ingebouwd zodat klanten u vinden. Wij zorgen dat Google u herkent en indexeert.'},{t:'Levenslange partner',b:'Na de lancering staan wij nog voor u klaar. Geen eenmalige leverancier, maar een echte partner.'}],
   'opp.tag':'De verborgen kost','opp.h2':'Wat kost €0<br>online aanwezigheid<br><em>écht?</em>','opp.sub':'Geen website is niet gratis. Elke dag zonder online aanwezigheid verliest u klanten aan concurrenten die wel vindbaar zijn.',
   'opp.pts':[{t:'78% zoekt eerst online',b:'Voordat iemand een lokale zaak bezoekt, googelt hij. Staat u er niet? Dan bestaat u niet voor die klant.'},{t:'Elke dag is gemiste omzet',b:'Klanten vinden u niet online en gaan hierdoor naar de concurrentie. Elke dag zonder website is een dag dat uw concurrent wint.'},{t:'Uw concurrent staat wel online',b:'Terwijl u wacht, bouwt uw concurrent zijn online reputatie op. Hoe langer u wacht, hoe moeilijker in te halen.'},{t:'Geloofwaardigheid is omzet',b:'Een professionele website geeft vertrouwen. Klanten kiezen sneller voor een bedrijf dat er serieus uitziet.'}],
   'opp.boxtitle':'Kostenberekening per jaar',
@@ -150,7 +150,7 @@ en:{
   'meta.title.partner':'Become a marketing partner \u2014 DRP BuildLab | 10% for your audience, 5% for you','meta.desc.partner':'Become a marketing partner of DRP BuildLab. You get a personal link: your audience gets 10% off their quote, you get 5% commission on every invoice paid. Paid monthly, tracked in your own dashboard.',
   'meta.title':'DRP BuildLab — Custom Websites for Businesses Worldwide | Starter Package from €499',
   'meta.desc':'DRP BuildLab builds fully custom websites for entrepreneurs wherever they are in the world. Starter package from €499, or a custom quote for advanced projects — with optional monthly maintenance from €29 per month.',
-  'meta.title.about':'About us — DRP BuildLab | Website studio for local businesses','meta.desc.about':'Built by entrepreneurs, for entrepreneurs. The story behind DRP BuildLab and why local businesses choose us.',
+  'meta.title.about':'About us — DRP BuildLab | Website studio for businesses worldwide','meta.desc.about':'Built by entrepreneurs, for entrepreneurs. The story behind DRP BuildLab and why businesses worldwide choose us.',
   'meta.title.pricing':'Pricing — DRP BuildLab | Starter package €499 or a custom quote','meta.desc.pricing':'Starter package from €499 or a personal quote for advanced projects. Extra services and optional maintenance from €29 per month.',
   'meta.title.contact':"Contact — DRP BuildLab | Request a free quote",'meta.desc.contact':"Request a free quote. We call you and show a custom example right away. No obligations.",
 'phero.about.h':'The people behind<br><em>your website</em>','phero.about.sub':'Who we are, why we started and what you can expect from us.',
@@ -166,18 +166,18 @@ en:{
   'how.tag':'How it works','how.h2':'From zero to online<br><em>in 4 steps.</em>','how.sub':'No technical knowledge needed. We handle everything from first call to live website.',
   'how.steps':[{t:'First call',b:'We call you and show a custom example right away. Completely free and non-binding.',d:'Together'},{t:'Custom design',b:'Based on your wishes, we build your website. You don\'t have to do anything.',d:'Us'},{t:'Preview & approval',b:'You receive a preview for approval. Revisions included. Then your site goes live with your own domain.',d:'Together'},{t:'Live — and we stay',b:'After launch, we\'re still here for you. Updates, changes, questions — we handle it.',d:'Us'}],
   'ab.logotag':'Websites · custom built',
-  'ab.quote':'"Every local business deserves a fair chance to be found <em>online.</em>"',
+  'ab.quote':'"Every business deserves a fair chance to be found <em>online.</em>"',
   'ab.sig':'— The founders of DRP BuildLab',
   'ab.nums':['Maintenance per month (optional)','Starter package website','Custom made','Hidden costs'],
   'ab.tag':'About us','ab.h2':'Built by<br>entrepreneurs,<br><em>for entrepreneurs.</em>',
-  'ab.p1':'It started with a frustration. We saw how local businesses — the butcher on the corner, the plumber who\'s always available, the hairdresser who has cut the same clients\' hair for years — were completely invisible online.',
-  'ab.p2':'Large agencies charged <strong>€5,000 for a website</strong> that took months to deliver. So we built DRP BuildLab: a studio that believes every local business <strong>deserves a custom website</strong> — affordable, honest, with a price that matches the work it takes.',
-  'ab.pillars':[{t:'Honesty above all',b:'What we promise, we deliver. No hidden costs, no vague quotes.'},{t:'Maintenance when you want it',b:'Monthly maintenance is optional: €29 per month or €250 per year. Add it and your site stays secure, up to date and findable — without you having to think about it.'},{t:'Think local, build digital',b:'We build for local businesses — the ones whose customers are searching nearby. We work remotely from Belgium, so where you are does not decide whether we can help.'}],
+  'ab.p1':'It started with a frustration. We saw how small businesses — the butcher on the corner, the plumber who\'s always available, the hairdresser who has cut the same clients\' hair for years — were completely invisible online.',
+  'ab.p2':'Large agencies charged <strong>€5,000 for a website</strong> that took months to deliver. So we built DRP BuildLab: a studio that believes every business <strong>deserves a custom website</strong> — affordable, honest, with a price that matches the work it takes.',
+  'ab.pillars':[{t:'Honesty above all',b:'What we promise, we deliver. No hidden costs, no vague quotes.'},{t:'Maintenance when you want it',b:'Monthly maintenance is optional: €29 per month or €250 per year. Add it and your site stays secure, up to date and findable — without you having to think about it.'},{t:'Reachable worldwide, built personally',b:'We build for businesses, wherever their customers are searching. We work remotely from Belgium, so where you are does not decide whether we can help.'}],
   'team.tag':'Our team','team.h2':'Four people,<br><em>one point of contact.</em>','team.sub':'No ticketing system and no rotating account managers. This is everyone who works on your website.',
   'team.members':[{b:'Good agreements make good collaborations, and that is how Dries approaches the legal side of DRP BuildLab. From quotes and contracts to confidentiality, partnerships and the careful handling of data, he turns the fine print into plain language, so you always know where you stand. He also enjoys thinking along when a collaboration needs more than a standard template.',c:'Questions about an agreement, a quote or a partnership? Write to him at {mail}.'},{b:'A good idea only becomes valuable when it is delivered on time, with care and without friction. That is what Roan looks after at DRP BuildLab. He keeps a clear view of planning, follow-up and the way we work, from the first conversation to the day your website goes live, and makes sure the whole team stays in step. That way you always know what the next step is and when to expect it.',c:'Questions about planning, progress or working together? Write to him at {mail}.'},{b:'A strong product deserves a story that sticks, and that is what Par shapes at DRP BuildLab. He looks after how we sound and look, from the website and social media to partnerships and the way we talk with clients. His aim is that you immediately understand what we do, why it matters and what it can mean for your business.',c:'An idea for a collaboration, a question about our communication, or a story you would like to share together? Write to him at {mail}.'},{b:'A website is only as good as what happens when someone opens it. That is what Lathif works on at DRP BuildLab. He builds the sites, from the first design to the day they go live, and makes sure they load fast, work on every phone and are easy to find on Google. He keeps them running afterwards too, so you never have to think about the technical side.',c:'A technical question about your website? Write to him at {mail}.'}],
   'car.prev':'Previous','car.next':'Next',
-  'why.tag':'Why DRP BuildLab','why.h2':'What makes us different?','why.sub':'Built for local businesses that want to be online — without hassle, without surprises.',
-  'why.cards':[{t:'One point of contact',b:'No ticket system, no rotating account managers. You have our name and our number — from the first call to years after launch.'},{t:'Local focus',b:'Your region, your customers, a personal team. We understand the local market from the inside.'},{t:'Fair pricing',b:'No hidden costs. Always fixed in advance. You know exactly what you pay.'},{t:'Always mobile-ready',b:'70%+ of your customers search by phone. Every DRP BuildLab site works perfectly on every device.'},{t:'Google-optimized',b:'SEO built in so customers find you. We make sure Google recognizes and indexes you.'},{t:'Lifelong partner',b:'After launch we\'re still here for you. Not a one-time vendor, but a true partner.'}],
+  'why.tag':'Why DRP BuildLab','why.h2':'What makes us different?','why.sub':'Built for businesses that want to be online — without hassle, without surprises.',
+  'why.cards':[{t:'One point of contact',b:'No ticket system, no rotating account managers. You have our name and our number — from the first call to years after launch.'},{t:'Working worldwide',b:'Your market, your customers, a personal team. We work remotely, wherever in the world you are.'},{t:'Fair pricing',b:'No hidden costs. Always fixed in advance. You know exactly what you pay.'},{t:'Always mobile-ready',b:'70%+ of your customers search by phone. Every DRP BuildLab site works perfectly on every device.'},{t:'Google-optimized',b:'SEO built in so customers find you. We make sure Google recognizes and indexes you.'},{t:'Lifelong partner',b:'After launch we\'re still here for you. Not a one-time vendor, but a true partner.'}],
   'opp.tag':'The hidden cost','opp.h2':'What does €0 online<br>presence<br><em>really cost?</em>','opp.sub':'Having no website isn\'t free. Every day without an online presence, you lose customers to competitors who are findable.',
   'opp.pts':[{t:'78% search online first',b:'Before visiting a local business, people Google it. Not there? You don\'t exist for that customer.'},{t:'Every day is missed revenue',b:'Customers can\'t find you online and go to the competition. Every day without a website is a day your competitor wins.'},{t:'Your competitor is online',b:'While you wait, your competitor builds their online reputation. The longer you wait, the harder it is to catch up.'},{t:'Credibility is revenue',b:'A professional website builds trust. Customers more readily choose a business that looks serious.'}],
   'opp.boxtitle':'Cost calculation per year',
@@ -245,7 +245,7 @@ en:{
 fr:{
   'meta.title':'DRP BuildLab — Sites web sur mesure pour entreprises du monde entier | Forfait débutant à partir de 499 €',
   'meta.desc':'DRP BuildLab crée des sites web entièrement sur mesure pour les entrepreneurs, où qu’ils soient dans le monde. Forfait débutant à partir de 499 € ou devis personnalisé pour des projets avancés — avec maintenance mensuelle en option à partir de 29 € par mois.',
-  'meta.title.about':'À propos — DRP BuildLab | Studio web pour entreprises locales','meta.desc.about':'Créé par des entrepreneurs, pour des entrepreneurs. L’histoire de DRP BuildLab et pourquoi les entreprises locales nous choisissent.',
+  'meta.title.about':'À propos — DRP BuildLab | Studio web pour entreprises du monde entier','meta.desc.about':'Créé par des entrepreneurs, pour des entrepreneurs. L’histoire de DRP BuildLab et pourquoi des entreprises du monde entier nous choisissent.',
   'meta.title.pricing':'Tarifs — DRP BuildLab | Forfait débutant 499 € ou devis sur mesure','meta.desc.pricing':'Forfait débutant à partir de 499 € ou devis personnalisé pour projets avancés. Services supplémentaires et maintenance en option à partir de 29 € par mois.',
   'meta.title.contact':"Contact — DRP BuildLab | Demander un devis gratuit",'meta.desc.contact':"Demandez un devis gratuit. Nous vous appelons et vous présentons immédiatement un exemple sur mesure. Sans engagement.",
 'phero.about.h':'Les personnes derrière<br><em>votre site web</em>','phero.about.sub':'Qui nous sommes, pourquoi nous avons commencé et ce que vous pouvez attendre de nous.',
@@ -261,18 +261,18 @@ fr:{
   'how.tag':'Comment ça marche','how.h2':'De zéro à en ligne<br><em>en 4 étapes.</em>','how.sub':'Aucune connaissance technique requise. Nous gérons tout, du premier appel au site web en ligne.',
   'how.steps':[{t:'Premier appel',b:'Nous vous appelons et vous montrons un exemple sur mesure immédiatement. Entièrement gratuit et sans engagement.',d:'Ensemble'},{t:'Design sur mesure',b:'Selon vos souhaits, nous construisons votre site web. Vous n\'avez rien à faire.',d:'Nous'},{t:'Aperçu & approbation',b:'Vous recevez un aperçu pour approbation. Révisions incluses. Ensuite votre site est mis en ligne avec votre propre domaine.',d:'Ensemble'},{t:'En ligne — et nous restons',b:'Après le lancement, nous sommes toujours là pour vous. Mises à jour, modifications, questions — nous nous en occupons.',d:'Nous'}],
   'ab.logotag':'Sites web · sur mesure',
-  'ab.quote':'"Chaque entreprise locale mérite une chance équitable d\'être trouvée <em>en ligne.</em>"',
+  'ab.quote':'"Chaque entreprise mérite une chance équitable d\'être trouvée <em>en ligne.</em>"',
   'ab.sig':'— Les fondateurs de DRP BuildLab',
   'ab.nums':['Maintenance par mois (en option)','Forfait débutant site web','Sur mesure','Frais cachés'],
   'ab.tag':'À propos','ab.h2':'Construit par des<br>entrepreneurs,<br><em>pour des entrepreneurs.</em>',
-  'ab.p1':'Tout a commencé par une frustration. Nous avons vu comment les entreprises locales — le boucher du coin, le plombier toujours disponible, le coiffeur qui coiffe les mêmes clients depuis des années — étaient complètement invisibles en ligne.',
-  'ab.p2':'Les grandes agences demandaient <strong>5 000 € pour un site web</strong> qui prenait des mois à livrer. Nous avons donc créé DRP BuildLab : un studio qui croit que chaque entreprise locale <strong>mérite un site web sur mesure</strong> — abordable, honnête, avec un prix qui correspond au travail fourni.',
-  'ab.pillars':[{t:'L\'honnêteté avant tout',b:'Ce que nous promettons, nous le livrons. Pas de frais cachés, pas de devis vagues.'},{t:'La maintenance quand vous le voulez',b:'La maintenance mensuelle est en option : 29 € par mois ou 250 € par an. Si vous l’ajoutez, votre site reste sécurisé, à jour et visible — sans que vous ayez à y penser.'},{t:'Penser local, construire digital',b:'Nous concevons des sites pour les entreprises locales — celles dont les clients cherchent à proximité. Nous travaillons à distance depuis la Belgique : votre emplacement ne détermine pas si nous pouvons vous aider.'}],
+  'ab.p1':'Tout a commencé par une frustration. Nous avons vu comment les petites entreprises — le boucher du coin, le plombier toujours disponible, le coiffeur qui coiffe les mêmes clients depuis des années — étaient complètement invisibles en ligne.',
+  'ab.p2':'Les grandes agences demandaient <strong>5 000 € pour un site web</strong> qui prenait des mois à livrer. Nous avons donc créé DRP BuildLab : un studio qui croit que chaque entreprise <strong>mérite un site web sur mesure</strong> — abordable, honnête, avec un prix qui correspond au travail fourni.',
+  'ab.pillars':[{t:'L\'honnêteté avant tout',b:'Ce que nous promettons, nous le livrons. Pas de frais cachés, pas de devis vagues.'},{t:'La maintenance quand vous le voulez',b:'La maintenance mensuelle est en option : 29 € par mois ou 250 € par an. Si vous l’ajoutez, votre site reste sécurisé, à jour et visible — sans que vous ayez à y penser.'},{t:'Accessibles partout, construits sur mesure',b:'Nous concevons des sites pour les entreprises, où que leurs clients cherchent. Nous travaillons à distance depuis la Belgique : votre emplacement ne détermine pas si nous pouvons vous aider.'}],
   'team.tag':'Notre équipe','team.h2':'Quatre personnes,<br><em>un seul interlocuteur.</em>','team.sub':'Pas de système de tickets, pas de gestionnaires de compte qui changent. Voici toutes les personnes qui travaillent sur votre site web.',
   'team.members':[{"b":"De bons accords sont la clé d'une collaboration fructueuse, et c'est ainsi que Dries aborde les aspects juridiques de DRP BuildLab. Qu'il s'agisse de devis, de contrats, de confidentialité, de partenariats ou du traitement rigoureux des données, il traduit les clauses en petits caractères en un langage clair, pour que vous sachiez toujours exactement à quoi vous en tenir. Il aime également réfléchir avec vous lorsqu'une collaboration nécessite plus qu'un simple modèle standard.","c":"Vous avez des questions concernant un contrat, un devis ou un partenariat ? Écrivez-lui à l'adresse {mail}."},{"b":"Une bonne idée ne prend toute sa valeur que lorsqu’elle est mise en œuvre dans les délais, avec soin et sans heurts. C’est précisément ce dont Roan s’occupe chez DRP BuildLab. Il supervise de près la planification, le suivi et nos méthodes de travail, depuis le premier entretien jusqu’au jour de la mise en ligne de votre site web, et veille à ce que toute l’équipe avance à l’unisson. Ainsi, vous savez toujours quelle est la prochaine étape et quand elle aura lieu.","c":"Vous avez des questions concernant la planification, l'avancement du projet ou la collaboration ? Écrivez-lui à l'adresse {mail}."},{"b":"Un produit de qualité mérite une histoire qui marque les esprits, et c'est précisément ce que Par met en œuvre chez DRP BuildLab. Il veille à notre image et à notre communication, du site web aux réseaux sociaux, en passant par les partenariats et la manière dont nous dialoguons avec nos clients. Son objectif est que vous compreniez immédiatement ce que nous faisons, pourquoi c'est important et ce que cela peut apporter à votre entreprise.","c":"Une idée de collaboration, une question concernant notre communication ou une histoire que vous aimeriez partager ensemble ? Écrivez-lui à l'adresse {mail}."},{"b":"La qualité d’un site web se mesure à ce qui se passe lorsque quelqu’un le consulte. C'est précisément ce à quoi Lathif travaille chez DRP BuildLab. Il développe les sites, de la conception initiale jusqu'à leur mise en ligne, et veille à ce qu'ils se chargent rapidement, fonctionnent sur tous les téléphones et soient faciles à trouver sur Google. Il assure également leur maintenance par la suite, afin que vous n'ayez jamais à vous soucier de l'aspect technique.","c":"Vous avez une question technique concernant votre site web ? Écrivez-lui à l'adresse {mail}."}],
   'car.prev':'Précédent','car.next':'Suivant',
-  'why.tag':'Pourquoi DRP BuildLab','why.h2':'Qu\'est-ce qui nous différencie ?','why.sub':'Conçu pour les entreprises locales qui veulent être en ligne — sans tracas, sans surprises.',
-  'why.cards':[{t:'Un seul interlocuteur',b:'Pas de système de tickets, pas de gestionnaires de compte qui changent. Vous avez notre nom et notre numéro — du premier appel jusqu\'à des années après le lancement.'},{t:'Focus local',b:'Votre région, vos clients, une équipe personnelle. Nous comprenons le marché local de l\'intérieur.'},{t:'Prix équitable',b:'Pas de frais cachés. Toujours fixe à l\'avance. Vous savez exactement ce que vous payez.'},{t:'Toujours mobile-ready',b:'70 %+ de vos clients cherchent par téléphone. Chaque site DRP BuildLab fonctionne parfaitement sur chaque appareil.'},{t:'Optimisé Google',b:'SEO intégré pour que les clients vous trouvent. Nous veillons à ce que Google vous reconnaisse et vous indexe.'},{t:'Partenaire à vie',b:'Après le lancement, nous sommes toujours là pour vous. Pas un fournisseur ponctuel, mais un vrai partenaire.'}],
+  'why.tag':'Pourquoi DRP BuildLab','why.h2':'Qu\'est-ce qui nous différencie ?','why.sub':'Conçu pour les entreprises qui veulent être en ligne — sans tracas, sans surprises.',
+  'why.cards':[{t:'Un seul interlocuteur',b:'Pas de système de tickets, pas de gestionnaires de compte qui changent. Vous avez notre nom et notre numéro — du premier appel jusqu\'à des années après le lancement.'},{t:'Actifs dans le monde entier',b:'Votre marché, vos clients, une équipe personnelle. Nous travaillons à distance, où que vous soyez dans le monde.'},{t:'Prix équitable',b:'Pas de frais cachés. Toujours fixe à l\'avance. Vous savez exactement ce que vous payez.'},{t:'Toujours mobile-ready',b:'70 %+ de vos clients cherchent par téléphone. Chaque site DRP BuildLab fonctionne parfaitement sur chaque appareil.'},{t:'Optimisé Google',b:'SEO intégré pour que les clients vous trouvent. Nous veillons à ce que Google vous reconnaisse et vous indexe.'},{t:'Partenaire à vie',b:'Après le lancement, nous sommes toujours là pour vous. Pas un fournisseur ponctuel, mais un vrai partenaire.'}],
   'opp.tag':'Le coût caché','opp.h2':'Que coûte vraiment<br>0 € de présence<br><em>en ligne ?</em>','opp.sub':'Ne pas avoir de site web n\'est pas gratuit. Chaque jour sans présence en ligne, vous perdez des clients au profit de concurrents qui sont trouvables.',
   'opp.pts':[{t:'78 % cherchent d\'abord en ligne',b:'Avant de visiter une entreprise locale, les gens la cherchent sur Google. Pas là ? Vous n\'existez pas pour ce client.'},{t:'Chaque jour est du chiffre d\'affaires manqué',b:'Les clients ne vous trouvent pas en ligne et vont à la concurrence. Chaque jour sans site web est un jour où votre concurrent gagne.'},{t:'Votre concurrent est en ligne',b:'Pendant que vous attendez, votre concurrent construit sa réputation en ligne. Plus vous attendez, plus il est difficile de rattraper.'},{t:'La crédibilité c\'est du chiffre d\'affaires',b:'Un site web professionnel inspire confiance. Les clients choisissent plus facilement une entreprise qui paraît sérieuse.'}],
   'opp.boxtitle':'Calcul des coûts par an',
@@ -383,7 +383,7 @@ fr:{
 es:{
   'meta.title':'DRP BuildLab — Sitios web a medida para negocios de todo el mundo | Paquete inicial desde 499 €',
   'meta.desc':'DRP BuildLab crea sitios web completamente a medida para emprendedores, estén donde estén. Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados — con mantenimiento mensual opcional desde 29 € al mes.',
-  'meta.title.about':'Sobre nosotros — DRP BuildLab | Estudio web para negocios locales','meta.desc.about':'Creado por emprendedores, para emprendedores. La historia de DRP BuildLab y por qué los negocios locales nos eligen.',
+  'meta.title.about':'Sobre nosotros — DRP BuildLab | Estudio web para negocios de todo el mundo','meta.desc.about':'Creado por emprendedores, para emprendedores. La historia de DRP BuildLab y por qué negocios de todo el mundo nos eligen.',
   'meta.title.pricing':'Precios — DRP BuildLab | Paquete inicial 499 € o presupuesto a medida','meta.desc.pricing':'Paquete inicial desde 499 € o presupuesto personalizado para proyectos avanzados. Servicios adicionales y mantenimiento opcional desde 29 € al mes.',
   'meta.title.contact':"Contacto — DRP BuildLab | Solicita un presupuesto gratuito",'meta.desc.contact':"Solicita un presupuesto gratuito. Te llamaremos y te mostraremos un ejemplo personalizado al instante. Sin compromiso.",
 'phero.about.h':'Las personas detrás<br><em>de tu sitio web</em>','phero.about.sub':'Quiénes somos, por qué empezamos y qué puedes esperar de nosotros.',
@@ -399,18 +399,18 @@ es:{
   'how.tag':'Cómo funciona','how.h2':'De cero a en línea<br><em>en 4 pasos.</em>','how.sub':'No se necesita conocimiento técnico. Gestionamos todo, desde la primera llamada hasta el sitio web en vivo.',
   'how.steps':[{t:'Primera llamada',b:'Te llamamos y te mostramos un ejemplo personalizado de inmediato. Completamente gratuito y sin compromiso.',d:'Juntos'},{t:'Diseño a medida',b:'Según tus deseos, construimos tu sitio web. No tienes que hacer nada.',d:'Nosotros'},{t:'Vista previa & aprobación',b:'Recibes una vista previa para aprobación. Revisiones incluidas. Luego tu sitio se lanza con tu propio dominio.',d:'Juntos'},{t:'En vivo — y nos quedamos',b:'Después del lanzamiento, seguimos aquí para ti. Actualizaciones, cambios, preguntas — lo gestionamos.',d:'Nosotros'}],
   'ab.logotag':'Sitios web · a medida',
-  'ab.quote':'"Cada negocio local merece una oportunidad justa para ser encontrado <em>en línea.</em>"',
+  'ab.quote':'"Cada negocio merece una oportunidad justa para ser encontrado <em>en línea.</em>"',
   'ab.sig':'— Los fundadores de DRP BuildLab',
   'ab.nums':['Mantenimiento al mes (opcional)','Paquete inicial sitio web','Hecho a medida','Costes ocultos'],
   'ab.tag':'Sobre nosotros','ab.h2':'Construido por<br>emprendedores,<br><em>para emprendedores.</em>',
-  'ab.p1':'Todo comenzó con una frustración. Vimos cómo los negocios locales — el carnicero de la esquina, el fontanero siempre disponible, el peluquero que lleva años cortando el pelo a los mismos clientes — eran completamente invisibles en línea.',
-  'ab.p2':'Las grandes agencias cobraban <strong>5.000 € por un sitio web</strong> que tardaba meses en entregarse. Así que creamos DRP BuildLab: un estudio que cree que cada negocio local <strong>merece un sitio web a medida</strong> — asequible, honesto, con un precio que se ajusta al trabajo.',
-  'ab.pillars':[{t:'Honestidad ante todo',b:'Lo que prometemos, lo entregamos. Sin costes ocultos, sin presupuestos vagos.'},{t:'Mantenimiento cuando lo quieras',b:'El mantenimiento mensual es opcional: 29 € al mes o 250 € al año. Si lo añades, tu sitio se mantiene seguro, actualizado y visible — sin que tengas que pensar en ello.'},{t:'Pensar local, construir digital',b:'Creamos sitios para negocios locales, aquellos cuyos clientes buscan cerca. Trabajamos en remoto desde Bélgica, así que tu ubicación no determina si podemos construir para ti.'}],
+  'ab.p1':'Todo comenzó con una frustración. Vimos cómo los pequeños negocios — el carnicero de la esquina, el fontanero siempre disponible, el peluquero que lleva años cortando el pelo a los mismos clientes — eran completamente invisibles en línea.',
+  'ab.p2':'Las grandes agencias cobraban <strong>5.000 € por un sitio web</strong> que tardaba meses en entregarse. Así que creamos DRP BuildLab: un estudio que cree que cada negocio <strong>merece un sitio web a medida</strong> — asequible, honesto, con un precio que se ajusta al trabajo.',
+  'ab.pillars':[{t:'Honestidad ante todo',b:'Lo que prometemos, lo entregamos. Sin costes ocultos, sin presupuestos vagos.'},{t:'Mantenimiento cuando lo quieras',b:'El mantenimiento mensual es opcional: 29 € al mes o 250 € al año. Si lo añades, tu sitio se mantiene seguro, actualizado y visible — sin que tengas que pensar en ello.'},{t:'Accesibles en todo el mundo, hechos a medida',b:'Creamos sitios para negocios, dondequiera que busquen sus clientes. Trabajamos en remoto desde Bélgica, así que tu ubicación no determina si podemos construir para ti.'}],
   'team.tag':'Nuestro equipo','team.h2':'Cuatro personas,<br><em>un único contacto.</em>','team.sub':'Sin sistema de tickets y sin gestores de cuenta que cambian. Estas son todas las personas que trabajan en tu sitio web.',
   'team.members':[{"b":"Los buenos acuerdos dan lugar a buenas colaboraciones, y así es como Dries aborda los aspectos jurídicos de DRP BuildLab. Desde presupuestos y contratos hasta la confidencialidad, las colaboraciones y el tratamiento cuidadoso de los datos, convierte la letra pequeña en un lenguaje sencillo, para que siempre sepas a qué atenerte. Además, le gusta aportar ideas cuando una colaboración requiere algo más que una plantilla estándar.","c":"¿Tienes alguna pregunta sobre un acuerdo, un presupuesto o una colaboración? Escríbele a {mail}."},{"b":"Una buena idea solo cobra valor cuando se lleva a cabo a tiempo, con esmero y sin contratiempos. De eso se encarga Roan en DRP BuildLab. Mantiene una visión clara de la planificación, el seguimiento y nuestra forma de trabajar, desde la primera conversación hasta el día en que tu página web se pone en marcha, y se asegura de que todo el equipo vaya a la misma onda. De este modo, siempre sabrás cuál es el siguiente paso y cuándo puedes esperarlo.","c":"¿Tienes alguna pregunta sobre la planificación, el progreso o cómo trabajar juntos? Escríbele a {mail}."},{"b":"Un producto sólido merece una historia que cale, y eso es precisamente lo que crea Par en DRP BuildLab. Se encarga de nuestra imagen y nuestro mensaje, desde la página web y las redes sociales hasta las colaboraciones y la forma en que nos comunicamos con los clientes. Su objetivo es que comprendas de inmediato qué hacemos, por qué es importante y qué puede significar para tu negocio.","c":"¿Tienes alguna idea para una colaboración, alguna pregunta sobre nuestra comunicación o alguna historia que te gustaría compartir con nosotros? Escríbele a {mail}."},{"b":"Una página web solo es tan buena como lo que ocurre cuando alguien la abre. Eso es en lo que trabaja Lathif en DRP BuildLab. Crea las páginas web, desde el diseño inicial hasta el día en que se publican, y se asegura de que se carguen rápido, funcionen en cualquier móvil y sean fáciles de encontrar en Google. Además, se encarga de mantenerlas en funcionamiento después, para que nunca tengas que preocuparte por los aspectos técnicos.","c":"¿Tienes alguna duda técnica sobre tu página web? Escríbele a {mail}."}],
   'car.prev':'Anterior','car.next':'Siguiente',
-  'why.tag':'Por qué DRP BuildLab','why.h2':'¿Qué nos hace diferentes?','why.sub':'Construido para negocios locales que quieren estar en línea — sin complicaciones, sin sorpresas.',
-  'why.cards':[{t:'Un único interlocutor',b:'Sin sistema de tickets, sin gestores de cuenta que cambian. Tienes nuestro nombre y nuestro número — desde la primera llamada hasta años después del lanzamiento.'},{t:'Enfoque local',b:'Tu región, tus clientes, un equipo personal. Entendemos el mercado local desde dentro.'},{t:'Precio justo',b:'Sin costes ocultos. Siempre fijo de antemano. Sabes exactamente lo que pagas.'},{t:'Siempre optimizado para móvil',b:'El 70 %+ de tus clientes buscan por teléfono. Cada sitio DRP BuildLab funciona perfectamente en cualquier dispositivo.'},{t:'Optimizado para Google',b:'SEO integrado para que los clientes te encuentren. Nos aseguramos de que Google te reconozca e indexe.'},{t:'Socio de por vida',b:'Después del lanzamiento seguimos aquí para ti. No un proveedor puntual, sino un socio de verdad.'}],
+  'why.tag':'Por qué DRP BuildLab','why.h2':'¿Qué nos hace diferentes?','why.sub':'Construido para negocios que quieren estar en línea — sin complicaciones, sin sorpresas.',
+  'why.cards':[{t:'Un único interlocutor',b:'Sin sistema de tickets, sin gestores de cuenta que cambian. Tienes nuestro nombre y nuestro número — desde la primera llamada hasta años después del lanzamiento.'},{t:'Presentes en todo el mundo',b:'Tu mercado, tus clientes, un equipo personal. Trabajamos en remoto, estés donde estés en el mundo.'},{t:'Precio justo',b:'Sin costes ocultos. Siempre fijo de antemano. Sabes exactamente lo que pagas.'},{t:'Siempre optimizado para móvil',b:'El 70 %+ de tus clientes buscan por teléfono. Cada sitio DRP BuildLab funciona perfectamente en cualquier dispositivo.'},{t:'Optimizado para Google',b:'SEO integrado para que los clientes te encuentren. Nos aseguramos de que Google te reconozca e indexe.'},{t:'Socio de por vida',b:'Después del lanzamiento seguimos aquí para ti. No un proveedor puntual, sino un socio de verdad.'}],
   'opp.tag':'El coste oculto','opp.h2':'¿Cuánto cuesta realmente<br>0 € de presencia<br><em>en línea?</em>','opp.sub':'No tener sitio web no es gratis. Cada día sin presencia en línea pierdes clientes ante competidores que sí son localizables.',
   'opp.pts':[{t:'El 78 % busca primero en línea',b:'Antes de visitar un negocio local, la gente lo busca en Google. ¿No estás? No existes para ese cliente.'},{t:'Cada día son ingresos perdidos',b:'Los clientes no te encuentran en línea y van a la competencia. Cada día sin sitio web es un día que tu competidor gana.'},{t:'Tu competidor está en línea',b:'Mientras esperas, tu competidor construye su reputación en línea. Cuanto más esperas, más difícil es alcanzarle.'},{t:'La credibilidad son ingresos',b:'Un sitio web profesional genera confianza. Los clientes eligen más fácilmente una empresa que parece seria.'}],
   'opp.boxtitle':'Cálculo de costes por año',
@@ -521,8 +521,8 @@ es:{
 id:{
    "meta.title": "DRP BuildLab — Situs Web Sesuai Pesanan untuk Bisnis di Seluruh Dunia | Paket Pemula dari €499",
    "meta.desc": "DRP BuildLab mengembangkan situs web yang sepenuhnya disesuaikan untuk para wirausahawan, di mana pun mereka berada. Paket pemula mulai dari €499, atau penawaran harga khusus untuk proyek-proyek tingkat lanjut — dengan layanan pemeliharaan bulanan opsional seharga €29 per bulan.",
-   "meta.title.about": "Tentang Kami — DRP BuildLab | Studio pengembangan situs web untuk bisnis lokal",
-   "meta.desc.about": "Didirikan oleh para wirausahawan, untuk para wirausahawan. Kisah di balik DRP BuildLab dan alasan mengapa bisnis lokal memilih kami.",
+   "meta.title.about": "Tentang Kami — DRP BuildLab | Studio pengembangan situs web untuk bisnis di seluruh dunia",
+   "meta.desc.about": "Didirikan oleh para wirausahawan, untuk para wirausahawan. Kisah di balik DRP BuildLab dan alasan mengapa bisnis di seluruh dunia memilih kami.",
    "meta.title.pricing": "Harga — DRP BuildLab | Paket Pemula €499 atau penawaran harga khusus",
    "meta.desc.pricing": "Paket awal dari €499 atau penawaran harga khusus untuk proyek-proyek tingkat lanjut. Layanan tambahan dan pemeliharaan opsional dari €29 per bulan.",
    "meta.title.contact": "Hubungi Kami — DRP BuildLab | Ajukan permintaan penawaran gratis",
@@ -582,7 +582,7 @@ id:{
     }
    ],
    "ab.logotag": "Situs web · dibuat sesuai pesanan",
-   "ab.quote": "&quot;Setiap usaha lokal berhak mendapatkan kesempatan yang adil untuk ditemukan <em>di internet.</em>&quot;",
+   "ab.quote": "&quot;Setiap usaha berhak mendapatkan kesempatan yang adil untuk ditemukan <em>di internet.</em>&quot;",
    "ab.sig": "— Para pendiri DRP BuildLab",
    "ab.nums": [
     "Biaya pemeliharaan per bulan (opsional)",
@@ -592,8 +592,8 @@ id:{
    ],
    "ab.tag": "Tentang Kami",
    "ab.h2": "Dibangun oleh<br>para wirausahawan,<br><em>untuk para wirausahawan.</em>",
-   "ab.p1": "Semuanya berawal dari rasa frustrasi. Kami menyadari bahwa usaha-usaha lokal — penjual daging di sudut jalan, tukang ledeng yang selalu siap sedia, penata rambut yang sudah memotong rambut pelanggan yang sama selama bertahun-tahun — sama sekali tidak terlihat di dunia maya.",
-   "ab.p2": "Agen-agen besar mengenakan biaya <strong>€5.000 untuk sebuah situs web</strong> yang baru selesai dalam hitungan bulan. Oleh karena itu, kami mendirikan DRP BuildLab: sebuah studio yang percaya bahwa setiap usaha lokal <strong>berhak mendapatkan situs web yang dirancang khusus</strong> — terjangkau, jujur, dengan harga yang sesuai dengan usaha yang diperlukan.",
+   "ab.p1": "Semuanya berawal dari rasa frustrasi. Kami menyadari bahwa usaha-usaha kecil — penjual daging di sudut jalan, tukang ledeng yang selalu siap sedia, penata rambut yang sudah memotong rambut pelanggan yang sama selama bertahun-tahun — sama sekali tidak terlihat di dunia maya.",
+   "ab.p2": "Agen-agen besar mengenakan biaya <strong>€5.000 untuk sebuah situs web</strong> yang baru selesai dalam hitungan bulan. Oleh karena itu, kami mendirikan DRP BuildLab: sebuah studio yang percaya bahwa setiap usaha <strong>berhak mendapatkan situs web yang dirancang khusus</strong> — terjangkau, jujur, dengan harga yang sesuai dengan usaha yang diperlukan.",
    "ab.pillars": [
     {
      "t": "Kejujuran di atas segalanya",
@@ -604,8 +604,8 @@ id:{
      "b": "Pemeliharaan bulanan bersifat opsional: €29 per bulan atau €250 per tahun. Tambahkan layanan ini agar situs Anda tetap aman, selalu terupdate, dan mudah ditemukan — tanpa Anda perlu repot memikirkannya."
     },
     {
-     "t": "Berpikir secara lokal, membangun secara digital",
-     "b": "Kami membangun untuk bisnis lokal — bisnis yang pelanggannya mencari di sekitar. Kami bekerja secara jarak jauh dari Belgia, jadi lokasi Anda tidak menentukan apakah kami dapat membangun untuk Anda."
+     "t": "Terjangkau di seluruh dunia, dibangun secara personal",
+     "b": "Kami membangun untuk bisnis, di mana pun pelanggannya mencari. Kami bekerja secara jarak jauh dari Belgia, jadi lokasi Anda tidak menentukan apakah kami dapat membangun untuk Anda."
     }
    ],
    "team.tag": "Tim kami",
@@ -616,15 +616,15 @@ id:{
    "car.next": "Berikutnya",
    "why.tag": "Mengapa DRP BuildLab?",
    "why.h2": "Apa yang membedakan kami?",
-   "why.sub": "Diciptakan untuk bisnis lokal yang ingin hadir secara daring — tanpa kerumitan, tanpa kejutan.",
+   "why.sub": "Diciptakan untuk bisnis yang ingin hadir secara daring — tanpa kerumitan, tanpa kejutan.",
    "why.cards": [
     {
      "t": "Satu titik kontak",
      "b": "Tanpa sistem tiket, tanpa manajer akun yang berganti-ganti. Anda memiliki nama dan nomor telepon kami — mulai dari panggilan pertama hingga bertahun-tahun setelah peluncuran."
     },
     {
-     "t": "Fokus lokal",
-     "b": "Wilayah Anda, pelanggan Anda, tim khusus untuk Anda. Kami memahami pasar lokal secara mendalam."
+     "t": "Melayani seluruh dunia",
+     "b": "Pasar Anda, pelanggan Anda, tim khusus untuk Anda. Kami bekerja jarak jauh, di mana pun Anda berada di dunia."
     },
     {
      "t": "Penetapan harga yang wajar",
@@ -946,8 +946,8 @@ id:{
 de:{
    "meta.title": "DRP BuildLab – Maßgeschneiderte Websites für Unternehmen weltweit | Starter-Paket von €499",
    "meta.desc": "DRP BuildLab erstellt maßgeschneiderte Websites für Unternehmer, wo auf der Welt sie auch sind. Starter-Paket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte – mit optionaler monatlicher Wartung ab €29 pro Monat.",
-   "meta.title.about": "Über uns — DRP BuildLab | Website-Agentur für lokale Unternehmen",
-   "meta.desc.about": "Von Unternehmern für Unternehmer gegründet. Die Geschichte hinter DRP BuildLab und warum sich lokale Unternehmen für uns entscheiden.",
+   "meta.title.about": "Über uns — DRP BuildLab | Website-Agentur für Unternehmen weltweit",
+   "meta.desc.about": "Von Unternehmern für Unternehmer gegründet. Die Geschichte hinter DRP BuildLab und warum sich Unternehmen weltweit für uns entscheiden.",
    "meta.title.pricing": "Preise – DRP BuildLab | Starter-Paket €499 oder ein individuelles Angebot",
    "meta.desc.pricing": "Starterpaket unter €499 oder ein individuelles Angebot für anspruchsvolle Projekte. Zusätzliche Dienstleistungen und optionale Wartung unter €29 pro Monat.",
    "meta.title.contact": "Kontakt – DRP BuildLab | Kostenloses Angebot anfordern",
@@ -1007,7 +1007,7 @@ de:{
     }
    ],
    "ab.logotag": "Websites · maßgeschneidert",
-   "ab.quote": "„Jedes lokale Unternehmen verdient eine faire Chance, <em>online</em> gefunden zu werden.“",
+   "ab.quote": "„Jedes Unternehmen verdient eine faire Chance, <em>online</em> gefunden zu werden.“",
    "ab.sig": "— Die Gründer von DRP BuildLab",
    "ab.nums": [
     "Monatliche Wartung (optional)",
@@ -1017,8 +1017,8 @@ de:{
    ],
    "ab.tag": "Über uns",
    "ab.h2": "Von<br>Unternehmern entwickelt,<br><em>für Unternehmer.</em>",
-   "ab.p1": "Alles begann mit einer Frustration. Wir stellten fest, dass lokale Unternehmen – der Metzger an der Ecke, der Klempner, der immer zur Stelle ist, der Friseur, der seit Jahren dieselben Kunden schneidet – im Internet völlig unsichtbar waren.",
-   "ab.p2": "Große Agenturen stellten „<strong>€5.000</strong>“ hohe Rechnungen<strong> für eine Website</strong>, deren Fertigstellung Monate dauerte. Deshalb haben wir DRP BuildLab gegründet: ein Studio, das davon überzeugt ist, dass jedes lokale Unternehmen <strong>eine maßgeschneiderte Website verdient</strong> – erschwinglich, fair und zu einem Preis, der dem Aufwand entspricht.",
+   "ab.p1": "Alles begann mit einer Frustration. Wir stellten fest, dass kleine Unternehmen – der Metzger an der Ecke, der Klempner, der immer zur Stelle ist, der Friseur, der seit Jahren dieselben Kunden schneidet – im Internet völlig unsichtbar waren.",
+   "ab.p2": "Große Agenturen stellten „<strong>€5.000</strong>“ hohe Rechnungen<strong> für eine Website</strong>, deren Fertigstellung Monate dauerte. Deshalb haben wir DRP BuildLab gegründet: ein Studio, das davon überzeugt ist, dass jedes Unternehmen <strong>eine maßgeschneiderte Website verdient</strong> – erschwinglich, fair und zu einem Preis, der dem Aufwand entspricht.",
    "ab.pillars": [
     {
      "t": "Ehrlichkeit geht vor",
@@ -1029,8 +1029,8 @@ de:{
      "b": "Die monatliche Wartung ist optional: €29 pro Monat oder €250 pro Jahr. Wenn Sie diesen Service hinzubuchen, bleibt Ihre Website sicher, auf dem neuesten Stand und gut auffindbar – ohne dass Sie sich darum kümmern müssen."
     },
     {
-     "t": "Lokal denken, digital gestalten",
-     "b": "Wir bauen für lokale Unternehmen — für die, deren Kunden in der Nähe suchen. Wir arbeiten remote aus Belgien, Ihr Standort entscheidet also nicht darüber, ob wir für Sie bauen können."
+     "t": "Weltweit erreichbar, persönlich gebaut",
+     "b": "Wir bauen für Unternehmen, wo auch immer ihre Kunden suchen. Wir arbeiten remote aus Belgien, Ihr Standort entscheidet also nicht darüber, ob wir für Sie bauen können."
     }
    ],
    "team.tag": "Unser Team",
@@ -1041,15 +1041,15 @@ de:{
    "car.next": "Weiter",
    "why.tag": "Warum DRP BuildLab?",
    "why.h2": "Was zeichnet uns aus?",
-   "why.sub": "Entwickelt für lokale Unternehmen, die im Internet präsent sein möchten – ohne Aufwand und ohne Überraschungen.",
+   "why.sub": "Entwickelt für Unternehmen, die im Internet präsent sein möchten – ohne Aufwand und ohne Überraschungen.",
    "why.cards": [
     {
      "t": "Ein Ansprechpartner",
      "b": "Kein Ticket-System, keine wechselnden Kundenbetreuer. Sie haben unseren Namen und unsere Telefonnummer – vom ersten Anruf bis Jahre nach dem Start."
     },
     {
-     "t": "Lokaler Fokus",
-     "b": "Ihre Region, Ihre Kunden, ein persönliches Team. Wir kennen den lokalen Markt von Grund auf."
+     "t": "Weltweit tätig",
+     "b": "Ihr Markt, Ihre Kunden, ein persönliches Team. Wir arbeiten remote, wo auch immer auf der Welt Sie sind."
     },
     {
      "t": "Faire Preisgestaltung",
@@ -1371,8 +1371,8 @@ de:{
 ja:{
    "meta.title": "DRP BuildLab — 世界中の企業向けカスタムウェブサイト | €499 のスターターパッケージ",
    "meta.desc": "DRP BuildLabは、世界中のどこにいる起業家にも、完全にカスタマイズされたウェブサイトを構築しています。「€499」のスターターパッケージや、高度なプロジェクト向けの個別見積もりが利用可能です。また、オプションとして月額€29の月額メンテナンスサービスもご用意しています。",
-   "meta.title.about": "会社概要 — DRP BuildLab | 地元企業向けウェブサイト制作スタジオ",
-   "meta.desc.about": "起業家によって、起業家のために築かれた。DRP BuildLabの誕生秘話と、地元企業が当社を選ぶ理由。",
+   "meta.title.about": "会社概要 — DRP BuildLab | 世界中の企業向けウェブサイト制作スタジオ",
+   "meta.desc.about": "起業家によって、起業家のために築かれた。DRP BuildLabの誕生秘話と、世界中の企業が当社を選ぶ理由。",
    "meta.title.pricing": "価格 — DRP BuildLab | スターターパッケージ €499 または個別のお見積もり",
    "meta.desc.pricing": "€499 のスターターパッケージ、または大規模プロジェクト向けの個別見積もり。€29 による追加サービスおよびオプションのメンテナンス（月額）。",
    "meta.title.contact": "お問い合わせ — DRP BuildLab | 無料見積もりのご依頼",
@@ -1432,7 +1432,7 @@ ja:{
     }
    ],
    "ab.logotag": "ウェブサイト・オーダーメイド制作",
-   "ab.quote": "「どの地元企業にも、<em>オンライン上で発見されるための公平な機会</em>が与えられるべきです。」",
+   "ab.quote": "「どの企業にも、<em>オンライン上で発見されるための公平な機会</em>が与えられるべきです。」",
    "ab.sig": "— DRP BuildLabの創設者たち",
    "ab.nums": [
     "月額メンテナンス費用（任意）",
@@ -1442,8 +1442,8 @@ ja:{
    ],
    "ab.tag": "当社について",
    "ab.h2": "起業家によって、<br><em>起業家のために作られた。</em>",
-   "ab.p1": "すべては、ある不満から始まりました。私たちは、地元の店――角にある精肉店、いつでも頼れる配管工、長年にわたり同じ常連客の髪を切り続けてきた美容師――が、ネット上ではまったく目立たない存在であることに気づいたのです。",
-   "ab.p2": "大手代理店は、完成までに数ヶ月もかかった<strong>ウェブサイトに対し</strong>、<strong>€5,000</strong>に高額な料金を請求しました。そこで私たちは「DRP BuildLab」を立ち上げました。このスタジオは、すべての地元企業に、手頃な価格で、誠実な対応、そして必要な作業に見合った価格設定の<strong>オーダーメイドウェブサイトを提供すべきだと</strong>考えています。",
+   "ab.p1": "すべては、ある不満から始まりました。私たちは、小さなお店――角にある精肉店、いつでも頼れる配管工、長年にわたり同じ常連客の髪を切り続けてきた美容師――が、ネット上ではまったく目立たない存在であることに気づいたのです。",
+   "ab.p2": "大手代理店は、完成までに数ヶ月もかかった<strong>ウェブサイトに対し</strong>、<strong>€5,000</strong>に高額な料金を請求しました。そこで私たちは「DRP BuildLab」を立ち上げました。このスタジオは、すべての企業に、手頃な価格で、誠実な対応、そして必要な作業に見合った価格設定の<strong>オーダーメイドウェブサイトを提供すべきだと</strong>考えています。",
    "ab.pillars": [
     {
      "t": "何よりも誠実さを重んじる",
@@ -1454,8 +1454,8 @@ ja:{
      "b": "毎月のメンテナンスはオプションです：月額 €29 または年額 €250。これを追加すれば、手間をかけずに、サイトのセキュリティを確保し、常に最新の状態を保ち、検索エンジンに適切にインデックスされる状態を維持できます。"
     },
     {
-     "t": "地域に根ざし、デジタルを築く",
-     "b": "私たちは地域に根ざしたビジネスのために制作しています。ベルギーからリモートで対応しているため、所在地を問わずお手伝いできます。"
+     "t": "世界中に対応し、一社ずつ丁寧に",
+     "b": "私たちは、顧客がどこで検索していても、そのビジネスのために制作しています。ベルギーからリモートで対応しているため、所在地を問わずお手伝いできます。"
     }
    ],
    "team.tag": "私たちのチーム",
@@ -1466,15 +1466,15 @@ ja:{
    "car.next": "次へ",
    "why.tag": "DRP BuildLabを選ぶ理由",
    "why.h2": "当社の強みとは？",
-   "why.sub": "オンラインでのビジネス展開を目指す地元企業のために設計されました。面倒な手間も、予期せぬトラブルもありません。",
+   "why.sub": "オンラインでのビジネス展開を目指す企業のために設計されました。面倒な手間も、予期せぬトラブルもありません。",
    "why.cards": [
     {
      "t": "窓口は1か所",
      "b": "チケットシステムも、担当者の入れ替わりもありません。最初の電話からサービス開始後数年経っても、当社の社名と電話番号は変わりません。"
     },
     {
-     "t": "地域に焦点を当てて",
-     "b": "お客様の地域、お客様の顧客、そして専任のチーム。私たちは現地市場を内側から深く理解しています。"
+     "t": "世界中で対応",
+     "b": "お客様の市場、お客様の顧客、そして専任のチーム。世界のどこにいらっしゃっても、リモートで対応します。"
     },
     {
      "t": "適正な価格設定",
@@ -1796,8 +1796,8 @@ ja:{
 pt:{
    "meta.title": "DRP BuildLab — Sites personalizados para empresas de todo o mundo | Pacote Inicial em €499",
    "meta.desc": "A DRP BuildLab desenvolve sites totalmente personalizados para empreendedores, onde quer que estejam. Pacote inicial a partir de €499, ou um orçamento personalizado para projetos avançados — com manutenção mensal opcional a partir de €29 por mês.",
-   "meta.title.about": "Sobre nós — DRP BuildLab | Estúdio de criação de sites para empresas locais",
-   "meta.desc.about": "Criado por empreendedores, para empreendedores. A história por trás do DRP BuildLab e por que as empresas locais nos escolhem.",
+   "meta.title.about": "Sobre nós — DRP BuildLab | Estúdio de criação de sites para empresas de todo o mundo",
+   "meta.desc.about": "Criado por empreendedores, para empreendedores. A história por trás do DRP BuildLab e por que empresas de todo o mundo nos escolhem.",
    "meta.title.pricing": "Preços — DRP BuildLab | Pacote inicial €499 ou solicite um orçamento personalizado",
    "meta.desc.pricing": "Pacote inicial em €499 ou um orçamento personalizado para projetos avançados. Serviços adicionais e manutenção opcional em €29 por mês.",
    "meta.title.contact": "Contato — DRP BuildLab | Solicite um orçamento gratuito",
@@ -1830,14 +1830,14 @@ pt:{
    "how.sub": "Não é necessário ter conhecimento técnico. Cuidamos de tudo, desde o primeiro contato até a publicação do site.",
    "how.steps": [{"t":"Primeira ligação","b":"Entraremos em contato com você e mostraremos um exemplo personalizado imediatamente. Totalmente gratuito e sem compromisso.","d":"Juntos"},{"t":"Design personalizado","b":"Com base no que você deseja, criamos seu site. Você não precisa fazer nada.","d":"Nós"},{"t":"Pré-visualização e aprovação","b":"Você recebe uma prévia para aprovação, incluindo as revisões. Em seguida, seu site entra no ar com seu próprio domínio.","d":"Juntos"},{"t":"Ao vivo — e a gente fica","b":"Depois do lançamento, continuamos à sua disposição. Atualizações, alterações, dúvidas — nós cuidamos de tudo.","d":"Nós"}],
    "ab.logotag": "Sites · desenvolvidos sob medida",
-   "ab.quote": "\"Toda empresa local merece uma chance justa de ser encontrada <em>na internet.</em>\"",
+   "ab.quote": "\"Toda empresa merece uma chance justa de ser encontrada <em>na internet.</em>\"",
    "ab.sig": "— Os fundadores do DRP BuildLab",
    "ab.nums": ["Manutenção mensal (opcional)","Site do pacote inicial","Feito sob medida","Custos ocultos"],
    "ab.tag": "Sobre nós",
    "ab.h2": "Criado por<br>empreendedores,<br><em>para empreendedores.</em>",
-   "ab.p1": "Tudo começou com uma frustração. Percebemos que as empresas locais — o açougueiro da esquina, o encanador que está sempre disponível, o cabeleireiro que corta o cabelo dos mesmos clientes há anos — eram completamente invisíveis na internet.",
-   "ab.p2": "Grandes agências cobravam de <strong>€5,000 por um site</strong> que levava meses para ficar pronto. Por isso, criamos o DRP BuildLab: um estúdio que acredita que toda empresa local <strong>merece um site personalizado</strong> — acessível, honesto e com um preço que corresponda ao trabalho envolvido.",
-   "ab.pillars": [{"t":"A honestidade acima de tudo","b":"O que prometemos, cumprimos. Sem custos ocultos, sem orçamentos vagos."},{"t":"Manutenção quando você quiser","b":"A manutenção mensal é opcional: €29 por mês ou €250 por ano. Adicione esse serviço e seu site permanecerá seguro, atualizado e fácil de ser encontrado — sem que você precise se preocupar com isso."},{"t":"Pense localmente, construa digitalmente","b":"Trabalhamos com empresas locais — aquelas cujos clientes estão procurando por serviços nas proximidades. Trabalhamos remotamente da Bélgica, portanto, não importa onde você esteja: isso não determina se podemos ajudá-lo."}],
+   "ab.p1": "Tudo começou com uma frustração. Percebemos que as pequenas empresas — o açougueiro da esquina, o encanador que está sempre disponível, o cabeleireiro que corta o cabelo dos mesmos clientes há anos — eram completamente invisíveis na internet.",
+   "ab.p2": "Grandes agências cobravam de <strong>€5,000 por um site</strong> que levava meses para ficar pronto. Por isso, criamos o DRP BuildLab: um estúdio que acredita que toda empresa <strong>merece um site personalizado</strong> — acessível, honesto e com um preço que corresponda ao trabalho envolvido.",
+   "ab.pillars": [{"t":"A honestidade acima de tudo","b":"O que prometemos, cumprimos. Sem custos ocultos, sem orçamentos vagos."},{"t":"Manutenção quando você quiser","b":"A manutenção mensal é opcional: €29 por mês ou €250 por ano. Adicione esse serviço e seu site permanecerá seguro, atualizado e fácil de ser encontrado — sem que você precise se preocupar com isso."},{"t":"Acessíveis no mundo todo, feitos sob medida","b":"Trabalhamos com empresas, onde quer que seus clientes estejam procurando. Trabalhamos remotamente da Bélgica, portanto, não importa onde você esteja: isso não determina se podemos ajudá-lo."}],
    "team.tag": "Nossa equipe",
    "team.h2": "Quatro pessoas,<br><em>um único contato.</em>",
    "team.sub": "Sem sistema de tickets e sem gerentes de conta que mudam. Estas são todas as pessoas que trabalham no seu site.",
@@ -1846,8 +1846,8 @@ pt:{
    "car.next": "Próximo",
    "why.tag": "Por que o DRP BuildLab?",
    "why.h2": "O que nos diferencia?",
-   "why.sub": "Criado para empresas locais que querem estar na internet — sem complicações, sem surpresas.",
-   "why.cards": [{"t":"Um único ponto de contato","b":"Sem sistema de tickets, sem troca de gerentes de conta. Você tem nosso nome e nosso número — desde a primeira ligação até anos após o lançamento."},{"t":"Foco local","b":"Sua região, seus clientes, uma equipe dedicada. Conhecemos o mercado local por dentro."},{"t":"Preços justos","b":"Sem custos ocultos. Sempre definidos com antecedência. Você sabe exatamente quanto vai pagar."},{"t":"Sempre pronto para dispositivos móveis","b":"Mais de 70% dos seus clientes fazem pesquisas pelo celular. Todos os sites do DRP BuildLab funcionam perfeitamente em qualquer dispositivo."},{"t":"Otimizado para o Google","b":"SEO integrado para que os clientes encontrem você. Nós garantimos que o Google reconheça e indexe seu site."},{"t":"Parceiro para toda a vida","b":"Mesmo após o lançamento, continuaremos à sua disposição. Não somos apenas um fornecedor pontual, mas um verdadeiro parceiro."}],
+   "why.sub": "Criado para empresas que querem estar na internet — sem complicações, sem surpresas.",
+   "why.cards": [{"t":"Um único ponto de contato","b":"Sem sistema de tickets, sem troca de gerentes de conta. Você tem nosso nome e nosso número — desde a primeira ligação até anos após o lançamento."},{"t":"Atuação mundial","b":"Seu mercado, seus clientes, uma equipe dedicada. Trabalhamos remotamente, onde quer que você esteja no mundo."},{"t":"Preços justos","b":"Sem custos ocultos. Sempre definidos com antecedência. Você sabe exatamente quanto vai pagar."},{"t":"Sempre pronto para dispositivos móveis","b":"Mais de 70% dos seus clientes fazem pesquisas pelo celular. Todos os sites do DRP BuildLab funcionam perfeitamente em qualquer dispositivo."},{"t":"Otimizado para o Google","b":"SEO integrado para que os clientes encontrem você. Nós garantimos que o Google reconheça e indexe seu site."},{"t":"Parceiro para toda a vida","b":"Mesmo após o lançamento, continuaremos à sua disposição. Não somos apenas um fornecedor pontual, mas um verdadeiro parceiro."}],
    "opp.tag": "O custo oculto",
    "opp.h2": "Quanto <em>custa, na verdade,</em><br>a presença online<br>de uma empresa do tipo “€0”?",
    "opp.sub": "Não ter um site não sai de graça. A cada dia que passa sem uma presença online, você perde clientes para os concorrentes que podem ser encontrados na internet.",
@@ -1985,8 +1985,8 @@ pt:{
 it:{
    "meta.title": "DRP BuildLab — Siti web personalizzati per aziende di tutto il mondo | Pacchetto base su €499",
    "meta.desc": "DRP BuildLab realizza siti web completamente personalizzati per imprenditori, ovunque si trovino. Pacchetto base disponibile su €499 oppure preventivo personalizzato per progetti avanzati — con servizio di manutenzione mensile opzionale su €29 al mese.",
-   "meta.title.about": "Chi siamo — DRP BuildLab | Agenzia di sviluppo siti web per aziende locali",
-   "meta.desc.about": "Creato da imprenditori, per gli imprenditori. La storia di DRP BuildLab e i motivi per cui le aziende locali ci scelgono.",
+   "meta.title.about": "Chi siamo — DRP BuildLab | Agenzia di sviluppo siti web per aziende di tutto il mondo",
+   "meta.desc.about": "Creato da imprenditori, per gli imprenditori. La storia di DRP BuildLab e i motivi per cui aziende di tutto il mondo ci scelgono.",
    "meta.title.pricing": "Prezzi — DRP BuildLab | Pacchetto base €499 oppure richiedi un preventivo personalizzato",
    "meta.desc.pricing": "Pacchetto base disponibile su €499 oppure preventivo personalizzato per progetti avanzati. Servizi aggiuntivi e manutenzione opzionale disponibili su €29 al mese.",
    "meta.title.contact": "Contatti — DRP BuildLab | Richiedi un preventivo gratuito",
@@ -2019,14 +2019,14 @@ it:{
    "how.sub": "Non è richiesta alcuna competenza tecnica. Ci occupiamo di tutto, dalla prima chiamata alla messa online del sito web.",
    "how.steps": [{"t":"Prima chiamata","b":"Ti chiameremo subito per mostrarti un esempio personalizzato. È completamente gratuito e senza alcun impegno.","d":"Insieme"},{"t":"Design personalizzato","b":"In base alle tue richieste, realizziamo il tuo sito web. Non devi fare nulla.","d":"Noi"},{"t":"Anteprima e approvazione","b":"Riceverai un'anteprima da approvare, con le modifiche già incluse. Successivamente, il tuo sito verrà pubblicato con il tuo dominio.","d":"Insieme"},{"t":"In diretta — e restiamo qui","b":"Anche dopo il lancio, continueremo a essere al tuo fianco. Aggiornamenti, modifiche, domande: ci pensiamo noi.","d":"Noi"}],
    "ab.logotag": "Siti web · realizzati su misura",
-   "ab.quote": "\"Ogni azienda locale merita un'opportunità equa di farsi trovare <em>online.</em>\"",
+   "ab.quote": "\"Ogni azienda merita un'opportunità equa di farsi trovare <em>online.</em>\"",
    "ab.sig": "— I fondatori di DRP BuildLab",
    "ab.nums": ["Manutenzione mensile (facoltativa)","Pacchetto iniziale per siti web","Su misura","Costi nascosti"],
    "ab.tag": "Chi siamo",
    "ab.h2": "Creato da<br>imprenditori,<br><em>per gli imprenditori.</em>",
-   "ab.p1": "Tutto è iniziato da una frustrazione. Abbiamo notato come le attività commerciali locali — il macellaio all’angolo, l’idraulico sempre disponibile, il parrucchiere che da anni taglia i capelli agli stessi clienti — fossero completamente invisibili online.",
-   "ab.p2": "Le grandi agenzie facevano pagare <strong>€5,000 per un sito web</strong> che richiedeva mesi per essere realizzato. Per questo abbiamo creato DRP BuildLab: uno studio che crede che ogni attività locale <strong>meriti un sito web su misura</strong> — conveniente, trasparente, con un prezzo commisurato al lavoro necessario.",
-   "ab.pillars": [{"t":"L'onestà prima di tutto","b":"Quello che promettiamo, lo manteniamo. Nessun costo nascosto, nessun preventivo vago."},{"t":"Manutenzione quando vuoi tu","b":"La manutenzione mensile è facoltativa: €29 al mese oppure €250 all’anno. Aggiungila e il tuo sito rimarrà sicuro, aggiornato e facilmente reperibile, senza che tu debba preoccupartene."},{"t":"Pensare in chiave locale, costruire in chiave digitale","b":"Realizziamo soluzioni per le aziende locali, ovvero quelle i cui clienti effettuano ricerche nelle vicinanze. Lavoriamo da remoto dal Belgio, quindi la tua ubicazione non influisce sulla nostra capacità di aiutarti."}],
+   "ab.p1": "Tutto è iniziato da una frustrazione. Abbiamo notato come le piccole attività commerciali — il macellaio all’angolo, l’idraulico sempre disponibile, il parrucchiere che da anni taglia i capelli agli stessi clienti — fossero completamente invisibili online.",
+   "ab.p2": "Le grandi agenzie facevano pagare <strong>€5,000 per un sito web</strong> che richiedeva mesi per essere realizzato. Per questo abbiamo creato DRP BuildLab: uno studio che crede che ogni attività <strong>meriti un sito web su misura</strong> — conveniente, trasparente, con un prezzo commisurato al lavoro necessario.",
+   "ab.pillars": [{"t":"L'onestà prima di tutto","b":"Quello che promettiamo, lo manteniamo. Nessun costo nascosto, nessun preventivo vago."},{"t":"Manutenzione quando vuoi tu","b":"La manutenzione mensile è facoltativa: €29 al mese oppure €250 all’anno. Aggiungila e il tuo sito rimarrà sicuro, aggiornato e facilmente reperibile, senza che tu debba preoccupartene."},{"t":"Raggiungibili in tutto il mondo, costruiti su misura","b":"Realizziamo soluzioni per le aziende, ovunque cerchino i loro clienti. Lavoriamo da remoto dal Belgio, quindi la tua ubicazione non influisce sulla nostra capacità di aiutarti."}],
    "team.tag": "Il nostro team",
    "team.h2": "Quattro persone,<br><em>un solo referente.</em>",
    "team.sub": "Nessun sistema di ticket e nessun account manager che cambia. Queste sono tutte le persone che lavorano al tuo sito web.",
@@ -2035,8 +2035,8 @@ it:{
    "car.next": "Successivo",
    "why.tag": "Perché DRP BuildLab",
    "why.h2": "Cosa ci contraddistingue?",
-   "why.sub": "Pensato per le aziende locali che vogliono essere presenti online — senza complicazioni, senza sorprese.",
-   "why.cards": [{"t":"Un unico punto di contatto","b":"Nessun sistema di ticket, nessun responsabile di conto a rotazione. Hai il nostro nome e il nostro numero — dalla prima chiamata fino a anni dopo il lancio."},{"t":"Attenzione alle realtà locali","b":"La tua regione, i tuoi clienti, un team dedicato. Conosciamo il mercato locale dall’interno."},{"t":"Prezzi equi","b":"Nessun costo nascosto. Prezzi sempre fissati in anticipo. Sai esattamente quanto pagherai."},{"t":"Sempre ottimizzato per i dispositivi mobili","b":"Oltre il 70% dei tuoi clienti effettua ricerche tramite telefono. Ogni sito DRP BuildLab funziona perfettamente su qualsiasi dispositivo."},{"t":"Ottimizzato per Google","b":"SEO integrato per far sì che i clienti ti trovino. Ci assicuriamo che Google ti riconosca e ti indicizzi."},{"t":"Compagno di vita","b":"Anche dopo il lancio, continueremo a essere al vostro fianco. Non siamo un semplice fornitore occasionale, ma un vero e proprio partner."}],
+   "why.sub": "Pensato per le aziende che vogliono essere presenti online — senza complicazioni, senza sorprese.",
+   "why.cards": [{"t":"Un unico punto di contatto","b":"Nessun sistema di ticket, nessun responsabile di conto a rotazione. Hai il nostro nome e il nostro numero — dalla prima chiamata fino a anni dopo il lancio."},{"t":"Attivi in tutto il mondo","b":"Il tuo mercato, i tuoi clienti, un team dedicato. Lavoriamo da remoto, ovunque tu sia nel mondo."},{"t":"Prezzi equi","b":"Nessun costo nascosto. Prezzi sempre fissati in anticipo. Sai esattamente quanto pagherai."},{"t":"Sempre ottimizzato per i dispositivi mobili","b":"Oltre il 70% dei tuoi clienti effettua ricerche tramite telefono. Ogni sito DRP BuildLab funziona perfettamente su qualsiasi dispositivo."},{"t":"Ottimizzato per Google","b":"SEO integrato per far sì che i clienti ti trovino. Ci assicuriamo che Google ti riconosca e ti indicizzi."},{"t":"Compagno di vita","b":"Anche dopo il lancio, continueremo a essere al vostro fianco. Non siamo un semplice fornitore occasionale, ma un vero e proprio partner."}],
    "opp.tag": "Il costo nascosto",
    "opp.h2": "Quanto costa <em>davvero</em><br>la presenza online<br>di “€0”?",
    "opp.sub": "Non avere un sito web non è gratuito. Ogni giorno che trascorri senza una presenza online, perdi clienti a vantaggio dei concorrenti che invece sono facilmente reperibili.",
@@ -2174,8 +2174,8 @@ it:{
 pl:{
    "meta.title": "DRP BuildLab — Strony internetowe dostosowane do potrzeb firm na całym świecie | Pakiet startowy z €499",
    "meta.desc": "DRP BuildLab tworzy w pełni dostosowane do indywidualnych potrzeb strony internetowe dla przedsiębiorców, gdziekolwiek są. Pakiet startowy dostępny na stronie €499 lub indywidualna wycena dla zaawansowanych projektów — z opcjonalną miesięczną obsługą techniczną dostępną na stronie €29 miesięcznie.",
-   "meta.title.about": "O nas — DRP BuildLab | Studio tworzenia stron internetowych dla lokalnych firm",
-   "meta.desc.about": "Stworzone przez przedsiębiorców dla przedsiębiorców. Historia powstania DRP BuildLab i powody, dla których lokalne firmy wybierają właśnie nas.",
+   "meta.title.about": "O nas — DRP BuildLab | Studio tworzenia stron internetowych dla firm na całym świecie",
+   "meta.desc.about": "Stworzone przez przedsiębiorców dla przedsiębiorców. Historia powstania DRP BuildLab i powody, dla których firmy na całym świecie wybierają właśnie nas.",
    "meta.title.pricing": "Ceny — DRP BuildLab | Pakiet startowy €499 lub indywidualna wycena",
    "meta.desc.pricing": "Pakiet startowy dostępny na stronie €499 lub indywidualna wycena dla zaawansowanych projektów. Dodatkowe usługi i opcjonalna konserwacja dostępne na stronie €29 w ramach miesięcznego abonamentu.",
    "meta.title.contact": "Kontakt — DRP BuildLab | Poproś o bezpłatną wycenę",
@@ -2208,14 +2208,14 @@ pl:{
    "how.sub": "Nie jest wymagana żadna wiedza techniczna. Zajmujemy się wszystkim – od pierwszego zgłoszenia aż po uruchomienie strony internetowej.",
    "how.steps": [{"t":"Pierwsza rozmowa","b":"Skontaktujemy się z Państwem telefonicznie i od razu zaprezentujemy indywidualny przykład. Usługa jest całkowicie bezpłatna i niezobowiązująca.","d":"Razem"},{"t":"Projekt na zamówienie","b":"Zgodnie z Państwa życzeniami stworzymy Państwa stronę internetową. Nie muszą Państwo nic robić.","d":"My"},{"t":"Podgląd i zatwierdzenie","b":"Otrzymasz wersję próbną do zatwierdzenia wraz z wprowadzonymi poprawkami. Następnie Twoja strona zostanie uruchomiona pod Twoją własną domeną.","d":"Razem"},{"t":"Na żywo — i zostajemy","b":"Po uruchomieniu nadal jesteśmy do Twojej dyspozycji. Aktualizacje, zmiany, pytania — zajmiemy się tym.","d":"My"}],
    "ab.logotag": "Strony internetowe · tworzone na zamówienie",
-   "ab.quote": "„Każda lokalna firma zasługuje na uczciwą szansę, by można ją było znaleźć <em>w Internecie”.</em>",
+   "ab.quote": "„Każda firma zasługuje na uczciwą szansę, by można ją było znaleźć <em>w Internecie”.</em>",
    "ab.sig": "— Założyciele DRP BuildLab",
    "ab.nums": ["Koszty utrzymania miesięczne (opcjonalnie)","Strona internetowa poświęcona pakietowi startowemu","Wykonane na zamówienie","Ukryte koszty"],
    "ab.tag": "O nas",
    "ab.h2": "Stworzone przez<br>przedsiębiorców,<br><em>dla przedsiębiorców.</em>",
-   "ab.p1": "Wszystko zaczęło się od pewnej frustracji. Zauważyliśmy, że lokalne firmy — rzeźnik z rogu ulicy, hydraulik, który zawsze jest pod ręką, fryzjer, który od lat strzyże tych samych klientów — były w sieci zupełnie niewidoczne.",
-   "ab.p2": "Duże agencje naliczały firmie <strong>„€5,000” opłaty za stronę internetową</strong>, której realizacja trwała miesiące. Dlatego stworzyliśmy DRP BuildLab: studio, które wierzy, że każda lokalna firma <strong>zasługuje na stronę internetową dostosowaną do jej potrzeb</strong> — niedrogą, uczciwą, której cena odpowiada nakładowi pracy.",
-   "ab.pillars": [{"t":"Szczerość ponad wszystko","b":"To, co obiecujemy, to realizujemy. Żadnych ukrytych kosztów, żadnych niejasnych wycen."},{"t":"Serwis wtedy, kiedy tego potrzebujesz","b":"Miesięczna usługa konserwacji jest opcjonalna: €29 miesięcznie lub €250 rocznie. Dodaj ją, a Twoja strona będzie bezpieczna, aktualna i łatwa do znalezienia — bez konieczności martwienia się o to."},{"t":"Myśl lokalnie, twórz cyfrowo","b":"Tworzymy rozwiązania dla lokalnych firm — tych, których klienci szukają ich w okolicy. Pracujemy zdalnie z Belgii, więc to, gdzie się znajdujesz, nie ma wpływu na to, czy możemy Ci pomóc."}],
+   "ab.p1": "Wszystko zaczęło się od pewnej frustracji. Zauważyliśmy, że małe firmy — rzeźnik z rogu ulicy, hydraulik, który zawsze jest pod ręką, fryzjer, który od lat strzyże tych samych klientów — były w sieci zupełnie niewidoczne.",
+   "ab.p2": "Duże agencje naliczały firmie <strong>„€5,000” opłaty za stronę internetową</strong>, której realizacja trwała miesiące. Dlatego stworzyliśmy DRP BuildLab: studio, które wierzy, że każda firma <strong>zasługuje na stronę internetową dostosowaną do jej potrzeb</strong> — niedrogą, uczciwą, której cena odpowiada nakładowi pracy.",
+   "ab.pillars": [{"t":"Szczerość ponad wszystko","b":"To, co obiecujemy, to realizujemy. Żadnych ukrytych kosztów, żadnych niejasnych wycen."},{"t":"Serwis wtedy, kiedy tego potrzebujesz","b":"Miesięczna usługa konserwacji jest opcjonalna: €29 miesięcznie lub €250 rocznie. Dodaj ją, a Twoja strona będzie bezpieczna, aktualna i łatwa do znalezienia — bez konieczności martwienia się o to."},{"t":"Dostępni na całym świecie, tworzymy osobiście","b":"Tworzymy rozwiązania dla firm, gdziekolwiek szukają ich klienci. Pracujemy zdalnie z Belgii, więc to, gdzie się znajdujesz, nie ma wpływu na to, czy możemy Ci pomóc."}],
    "team.tag": "Nasz zespół",
    "team.h2": "Cztery osoby,<br><em>jeden punkt kontaktu.</em>",
    "team.sub": "Żadnego systemu zgłoszeń i żadnych zmieniających się opiekunów klienta. To wszyscy, którzy pracują nad Twoją stroną.",
@@ -2224,8 +2224,8 @@ pl:{
    "car.next": "Następny",
    "why.tag": "Dlaczego DRP BuildLab?",
    "why.h2": "Co nas wyróżnia?",
-   "why.sub": "Stworzony z myślą o lokalnych firmach, które chcą zaistnieć w sieci — bez kłopotów i niespodzianek.",
-   "why.cards": [{"t":"Jedna osoba kontaktowa","b":"Żadnego systemu zgłoszeń, żadnych zmieniających się opiekunów klienta. Masz nasze nazwisko i numer telefonu — od pierwszego telefonu aż po lata po uruchomieniu projektu."},{"t":"Skupienie się na sprawach lokalnych","b":"Twój region, Twoi klienci, Twój osobisty zespół. Doskonale znamy lokalny rynek od podszewki."},{"t":"Uczciwe ceny","b":"Żadnych ukrytych kosztów. Ceny są zawsze ustalane z góry. Dokładnie wiesz, ile zapłacisz."},{"t":"Zawsze dostosowane do urządzeń mobilnych","b":"Ponad 70% Twoich klientów korzysta z wyszukiwania na telefonie. Każda strona stworzona w DRP BuildLab działa bez zarzutu na każdym urządzeniu."},{"t":"Zoptymalizowane pod kątem wyszukiwarki Google","b":"Wbudowane funkcje SEO, dzięki którym klienci mogą Cię znaleźć. Dbamy o to, by Google rozpoznało Twoją stronę i zindeksowało ją."},{"t":"Partner na całe życie","b":"Po wdrożeniu nadal jesteśmy do Państwa dyspozycji. Nie jesteśmy dostawcą, który działa tylko raz, ale prawdziwym partnerem."}],
+   "why.sub": "Stworzony z myślą o firmach, które chcą zaistnieć w sieci — bez kłopotów i niespodzianek.",
+   "why.cards": [{"t":"Jedna osoba kontaktowa","b":"Żadnego systemu zgłoszeń, żadnych zmieniających się opiekunów klienta. Masz nasze nazwisko i numer telefonu — od pierwszego telefonu aż po lata po uruchomieniu projektu."},{"t":"Działamy na całym świecie","b":"Twój rynek, Twoi klienci, Twój osobisty zespół. Pracujemy zdalnie, gdziekolwiek na świecie jesteś."},{"t":"Uczciwe ceny","b":"Żadnych ukrytych kosztów. Ceny są zawsze ustalane z góry. Dokładnie wiesz, ile zapłacisz."},{"t":"Zawsze dostosowane do urządzeń mobilnych","b":"Ponad 70% Twoich klientów korzysta z wyszukiwania na telefonie. Każda strona stworzona w DRP BuildLab działa bez zarzutu na każdym urządzeniu."},{"t":"Zoptymalizowane pod kątem wyszukiwarki Google","b":"Wbudowane funkcje SEO, dzięki którym klienci mogą Cię znaleźć. Dbamy o to, by Google rozpoznało Twoją stronę i zindeksowało ją."},{"t":"Partner na całe życie","b":"Po wdrożeniu nadal jesteśmy do Państwa dyspozycji. Nie jesteśmy dostawcą, który działa tylko raz, ale prawdziwym partnerem."}],
    "opp.tag": "Ukryty koszt",
    "opp.h2": "Ile <em>naprawdę kosztuje</em><br>prowadzenie strony internetowej<br>€0?",
    "opp.sub": "Brak strony internetowej nie jest darmowy. Każdego dnia, w którym nie jesteś obecny w sieci, tracisz klientów na rzecz konkurencji, którą łatwo znaleźć.",
@@ -2368,8 +2368,8 @@ pl:{
  "ar": {
    "meta.title": "DRP BuildLab — مواقع إلكترونية مخصصة للشركات حول العالم | الباقة المبدئية من €499",
    "meta.desc": "تقوم شركة DRP BuildLab بإنشاء مواقع إلكترونية مخصصة بالكامل لرواد الأعمال أينما كانوا في العالم. تتوفر باقة البداية بسعر يبدأ من €499، أو عرض أسعار مخصص للمشاريع المتقدمة — مع خدمة صيانة شهرية اختيارية بسعر يبدأ من €29 شهريًّا.",
-   "meta.title.about": "نبذة عنا — DRP BuildLab | استوديو تصميم مواقع إلكترونية للشركات المحلية",
-   "meta.desc.about": "صُمم من قبل رواد الأعمال، من أجل رواد الأعمال. القصة وراء DRP BuildLab والأسباب التي تدفع الشركات المحلية إلى اختيارنا.",
+   "meta.title.about": "نبذة عنا — DRP BuildLab | استوديو تصميم مواقع إلكترونية للشركات حول العالم",
+   "meta.desc.about": "صُمم من قبل رواد الأعمال، من أجل رواد الأعمال. القصة وراء DRP BuildLab والأسباب التي تدفع الشركات حول العالم إلى اختيارنا.",
    "meta.title.pricing": "الأسعار — DRP BuildLab | الباقة المبدئية €499 أو طلب عرض أسعار مخصص",
    "meta.desc.pricing": "باقة البداية من €499 أو عرض أسعار مخصص للمشاريع المتقدمة. خدمات إضافية وصيانة اختيارية من €29 شهريًّا.",
    "meta.title.contact": "الاتصال — DRP BuildLab | اطلب عرض أسعار مجاني",
@@ -2429,7 +2429,7 @@ pl:{
       }
    ],
    "ab.logotag": "مواقع الويب · مصممة حسب الطلب",
-   "ab.quote": "\"تستحق كل شركة محلية فرصة عادلة لتكون مرئية <em>عبر الإنترنت.</em>\"",
+   "ab.quote": "\"تستحق كل شركة فرصة عادلة لتكون مرئية <em>عبر الإنترنت.</em>\"",
    "ab.sig": "— مؤسسو DRP BuildLab",
    "ab.nums": [
       "رسوم الصيانة الشهرية (اختياري)",
@@ -2439,8 +2439,8 @@ pl:{
    ],
    "ab.tag": "نبذة عنا",
    "ab.h2": "صُممت من<br>قبل رواد الأعمال،<br><em>ولأجل رواد الأعمال.</em>",
-   "ab.p1": "بدأ الأمر بشعور بالإحباط. فقد لاحظنا أن الشركات المحلية — مثل الجزار الذي يقع محله في الزاوية، والسباك الذي يمكن الاعتماد عليه دائمًا، ومصفف الشعر الذي يصفف شعر نفس العملاء منذ سنوات — كانت غير مرئية تمامًا على الإنترنت.",
-   "ab.p2": "فرضت الوكالات الكبرى رسومًا على<strong> موقع </strong>«<strong>€5,000» مقابل إنشاء موقع إلكتروني</strong> استغرق إنجازه شهورًا. ولذلك أنشأنا «DRP BuildLab»: وهو استوديو يؤمن بأن كل شركة محلية <strong>تستحق موقعًا إلكترونيًّا مصممًا خصيصًا لها</strong> — بأسعار معقولة، وبأمانة، وبسعر يتناسب مع الجهد المبذول في إنجازه.",
+   "ab.p1": "بدأ الأمر بشعور بالإحباط. فقد لاحظنا أن الشركات الصغيرة — مثل الجزار الذي يقع محله في الزاوية، والسباك الذي يمكن الاعتماد عليه دائمًا، ومصفف الشعر الذي يصفف شعر نفس العملاء منذ سنوات — كانت غير مرئية تمامًا على الإنترنت.",
+   "ab.p2": "فرضت الوكالات الكبرى رسومًا على<strong> موقع </strong>«<strong>€5,000» مقابل إنشاء موقع إلكتروني</strong> استغرق إنجازه شهورًا. ولذلك أنشأنا «DRP BuildLab»: وهو استوديو يؤمن بأن كل شركة <strong>تستحق موقعًا إلكترونيًّا مصممًا خصيصًا لها</strong> — بأسعار معقولة، وبأمانة، وبسعر يتناسب مع الجهد المبذول في إنجازه.",
    "ab.pillars": [
       {
          "t": "الصدق قبل كل شيء",
@@ -2451,8 +2451,8 @@ pl:{
          "b": "الصيانة الشهرية اختيارية: €29 شهريًّا أو €250 سنويًّا. قم بإضافتها ليظل موقعك آمنًا ومُحدَّثًا ويمكن العثور عليه — دون الحاجة إلى القلق بشأن ذلك."
       },
       {
-         "t": "فكر محليًّا، وابني رقميًّا",
-         "b": "نحن نقدم خدماتنا للشركات المحلية — تلك التي يبحث عملاؤها عن خدماتها في المناطق المجاورة. نحن نعمل عن بُعد من بلجيكا، لذا فإن مكان تواجدك لا يؤثر على قدرتنا على مساعدتك."
+         "t": "متاحون حول العالم، ونبني بعناية شخصية",
+         "b": "نحن نقدم خدماتنا للشركات، أينما كان عملاؤها يبحثون. نحن نعمل عن بُعد من بلجيكا، لذا فإن مكان تواجدك لا يؤثر على قدرتنا على مساعدتك."
       }
    ],
    "team.tag": "فريقنا",
@@ -2463,15 +2463,15 @@ pl:{
    "car.next": "التالي",
    "why.tag": "لماذا DRP BuildLab؟",
    "why.h2": "ما الذي يميزنا؟",
-   "why.sub": "صُمم خصيصًا للشركات المحلية التي ترغب في التواجد عبر الإنترنت — دون عناء ودون مفاجآت.",
+   "why.sub": "صُمم خصيصًا للشركات التي ترغب في التواجد عبر الإنترنت — دون عناء ودون مفاجآت.",
    "why.cards": [
       {
          "t": "جهة اتصال واحدة",
          "b": "لا يوجد نظام تذاكر، ولا مديري حسابات يتناوبون على خدمة العملاء. لدينا اسمنا ورقمنا — بدءًا من المكالمة الأولى وحتى سنوات بعد الإطلاق."
       },
       {
-         "t": "التركيز على الشؤون المحلية",
-         "b": "منطقتك، عملاؤك، فريق مخصص لك. نحن نفهم السوق المحلية من الداخل."
+         "t": "نعمل حول العالم",
+         "b": "سوقك، عملاؤك، فريق مخصص لك. نعمل عن بُعد، أينما كنت في العالم."
       },
       {
          "t": "التسعير العادل",
@@ -2796,8 +2796,8 @@ pl:{
  "af": {
    "meta.title": "DRP BuildLab — Pasgemaakte webwerwe vir besighede wêreldwyd | Beginpakket vanaf €499",
    "meta.desc": "DRP BuildLab bou heeltemal pasgemaakte webwerwe vir entrepreneurs, waar ook al in die wêreld. Beginpakket vanaf €499, of 'n pasgemaakte kwotasie vir gevorderde projekte — met opsionele maandelikse instandhouding vanaf €29 per maand.",
-   "meta.title.about": "Oor ons — DRP BuildLab | Webwerfstudio vir plaaslike besighede",
-   "meta.desc.about": "Gebou deur entrepreneurs, vir entrepreneurs. Die storie agter DRP BuildLab en waarom plaaslike besighede ons kies.",
+   "meta.title.about": "Oor ons — DRP BuildLab | Webwerfstudio vir besighede wêreldwyd",
+   "meta.desc.about": "Gebou deur entrepreneurs, vir entrepreneurs. Die storie agter DRP BuildLab en waarom besighede wêreldwyd ons kies.",
    "meta.title.pricing": "Pryse — DRP BuildLab | Startpakket €499 of 'n pasgemaakte kwotasie",
    "meta.desc.pricing": "Beginpakket vanaf €499, of 'n persoonlike kwotasie vir gevorderde projekte. Ekstraservices en opsionele instandhouding vanaf €29 per maand.",
    "meta.title.contact": "Kontak — DRP BuildLab | Versoek 'n gratis kwotasie",
@@ -2857,7 +2857,7 @@ pl:{
       }
    ],
    "ab.logotag": "Webwerwe · pasgemaak",
-   "ab.quote": "Elke plaaslike besigheid verdien 'n regverdige kans om <em>aanlyn</em> gevind te word<em>.</em>",
+   "ab.quote": "Elke besigheid verdien 'n regverdige kans om <em>aanlyn</em> gevind te word<em>.</em>",
    "ab.sig": "— Die stigters van DRP BuildLab",
    "ab.nums": [
       "Onderhoud per maand (opsioneel)",
@@ -2867,8 +2867,8 @@ pl:{
    ],
    "ab.tag": "Oor ons",
    "ab.h2": "Gebou deur<br>entrepreneurs,<br><em>vir entrepreneurs.</em>",
-   "ab.p1": "Dit het begin met 'n frustrasie. Ons het gesien hoe plaaslike besighede — die slagter om die draai, die loodgieters wat altyd beskikbaar is, die haarkapper wat al jare lank dieselfde kliënte se hare knip — heeltemal onsigbaar aanlyn was.",
-   "ab.p2": "Groot agentskappe het <strong>€5,000</strong> gehef <strong>vir 'n webwerf</strong> wat maande geneem het om af te lewer. Daarom het ons DRP BuildLab gestig: 'n ateljee wat glo elke plaaslike besigheid <strong>verdien 'n pasgemaakte webwerf</strong> — bekostigbaar, eerlik, met 'n prys wat ooreenstem met die werk wat dit verg.",
+   "ab.p1": "Dit het begin met 'n frustrasie. Ons het gesien hoe klein besighede — die slagter om die draai, die loodgieters wat altyd beskikbaar is, die haarkapper wat al jare lank dieselfde kliënte se hare knip — heeltemal onsigbaar aanlyn was.",
+   "ab.p2": "Groot agentskappe het <strong>€5,000</strong> gehef <strong>vir 'n webwerf</strong> wat maande geneem het om af te lewer. Daarom het ons DRP BuildLab gestig: 'n ateljee wat glo elke besigheid <strong>verdien 'n pasgemaakte webwerf</strong> — bekostigbaar, eerlik, met 'n prys wat ooreenstem met die werk wat dit verg.",
    "ab.pillars": [
       {
          "t": "Eerlikheid bo alles",
@@ -2879,8 +2879,8 @@ pl:{
          "b": "Maandelikse instandhouding is opsioneel: €29 per maand of €250 per jaar. Voeg dit by en jou webwerf bly veilig, op datum en vindbaar — sonder dat jy daaroor hoef te dink."
       },
       {
-         "t": "Dink plaaslik, bou digitaal",
-         "b": "Ons bou webwerwe vir plaaslike besighede — dié wie se kliënte in die omgewing soek. Ons werk op afstand vanuit België, so jou ligging bepaal nie of ons kan help nie."
+         "t": "Wêreldwyd bereikbaar, persoonlik gebou",
+         "b": "Ons bou webwerwe vir besighede, waar hulle kliënte ook al soek. Ons werk op afstand vanuit België, so jou ligging bepaal nie of ons kan help nie."
       }
    ],
    "team.tag": "Ons span",
@@ -2891,15 +2891,15 @@ pl:{
    "car.next": "Volgende",
    "why.tag": "Waarom DRP BuildLab",
    "why.h2": "Wat maak ons anders?",
-   "why.sub": "Gebou vir plaaslike besighede wat aanlyn wil wees — sonder gesukkel, sonder verrassings.",
+   "why.sub": "Gebou vir besighede wat aanlyn wil wees — sonder gesukkel, sonder verrassings.",
    "why.cards": [
       {
          "t": "Een aanspreekpunt",
          "b": "Geen kaartjiestelsel, geen roterende rekeningbestuurders nie. Jy het ons naam en ons nommer — van die eerste oproep tot jare ná die bekendstelling."
       },
       {
-         "t": "Plaaslike fokus",
-         "b": "Jou streek, jou kliënte, 'n persoonlike span. Ons verstaan die plaaslike mark van binne af."
+         "t": "Wêreldwyd aktief",
+         "b": "Jou mark, jou kliënte, 'n persoonlike span. Ons werk op afstand, waar ook al ter wêreld jy is."
       },
       {
          "t": "Regverdige pryse",
