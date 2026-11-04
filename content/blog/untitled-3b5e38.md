@@ -12,8 +12,15 @@ langs:
   - en
   - nl
   - fr
+  - de
+  - it
   - es
+  - pl
+  - pt
   - id
+  - ja
+  - ar
+  - af
 excerpt: There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me.
 cover:
   src: ./media/untitled-3b5e38/8542d90b-logo-drpbl.png
