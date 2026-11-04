@@ -2499,10 +2499,6 @@
   "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
   "t": "Il y a quelque chose de discrètement magique dans cette première heure du matin, avant que les e-mails ne commencent à affluer et que le monde ne réclame votre attention. J’ai passé ces derniers mois à tester différentes façons d’utiliser ce temps, et les résultats m’ont surpris. Au lieu de saisir mon téléphone dès mon réveil, j’ai commencé à préparer tranquillement une cafetière, à ouvrir un cahier et à écrire tout simplement ce qui me passe par la tête. Certains jours, il s’agit d’une liste de tâches ; d’autres jours, ce sont des idées encore vagues pour des projets que je ne commencerai peut-être jamais. Mais ce petit rituel est devenu un point d’ancrage, un rappel que ma journée peut commencer comme je l’entends. Si vous vous sentez un peu dispersé ces derniers temps, essayez de vous réserver seulement quinze minutes sans écran demain matin et voyez ce qui se passe."
  },
- "70f9ab8e1f75937b": {
-  "en": "mourning",
-  "t": "deuil"
- },
  "fedbf5d04c2f91ee": {
   "en": "routine",
   "t": "routine"
@@ -2786,5 +2782,9 @@
  "a9697baaf6e5fd43": {
   "en": "1 min read",
   "t": "1 minute de lecture"
+ },
+ "27be6e8258c229a5": {
+  "en": "morning",
+  "t": "le matin"
  }
 }

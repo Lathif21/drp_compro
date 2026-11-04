@@ -2515,10 +2515,6 @@
   "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
   "t": "Daar is iets stilweg magies aan die eerste uur van die oggend, voordat die e-posse begin instroom en die wêreld jou aandag eis. Ek het die afgelope paar maande geëksperimenteer met hoe ek daardie tyd gebruik, en die resultate het my verras. In plaas daarvan om my foon te gryp die oomblik as ek wakker word, het ek begin om &#x27;n stadige pot koffie te brou, &#x27;n notaboek oop te maak en net te skryf wat ook al by my opkom. Sommige dae is dit &#x27;n taaklys; ander dae is dit halfgevormde idees vir projekte wat ek dalk nooit sal begin nie. Maar daardie klein ritueel het &#x27;n anker geword, &#x27;n herinnering dat my dag op my eie voorwaardes kan begin. As jy deesdae verstrooid voel, probeer môreoggend net vyftien minute ongestoorde tyd uithou en kyk wat gebeur."
  },
- "70f9ab8e1f75937b": {
-  "en": "mourning",
-  "t": "roue"
- },
  "fedbf5d04c2f91ee": {
   "en": "routine",
   "t": "roetine"
@@ -2558,5 +2554,9 @@
  "e6d047a059ca10de": {
   "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
   "t": "Van webwerf tot aanlynwinkel: ons help jou om &#x27;n storie te vertel wat waar is en wat mense graag lees."
+ },
+ "27be6e8258c229a5": {
+  "en": "morning",
+  "t": "oggend"
  }
 }

@@ -2515,10 +2515,6 @@
   "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
   "t": "Die erste Stunde des Morgens hat etwas still Magisches an sich – noch bevor die E-Mails hereinströmen und die Welt Ihre Aufmerksamkeit einfordert. In den letzten Monaten habe ich damit experimentiert, wie ich diese Zeit nutze, und die Ergebnisse haben mich überrascht. Anstatt gleich nach dem Aufwachen nach meinem Handy zu greifen, habe ich begonnen, in aller Ruhe eine Kanne Kaffee zu brühen, ein Notizbuch aufzuschlagen und einfach alles aufzuschreiben, was mir in den Sinn kommt. An manchen Tagen ist es eine To-do-Liste; an anderen Tagen sind es noch unausgereifte Ideen für Projekte, die ich vielleicht nie in Angriff nehmen werde. Doch dieses kleine Ritual ist zu einem Anker geworden, einer Erinnerung daran, dass mein Tag nach meinen eigenen Vorstellungen beginnen kann. Wenn Sie sich in letzter Zeit etwas zerstreut gefühlt haben, versuchen Sie doch, sich morgen früh nur fünfzehn Minuten Zeit ohne elektronische Geräte zu nehmen – und beobachten Sie, was passiert."
  },
- "70f9ab8e1f75937b": {
-  "en": "mourning",
-  "t": "Trauer"
- },
  "fedbf5d04c2f91ee": {
   "en": "routine",
   "t": "Routine"
@@ -2558,5 +2554,9 @@
  "e6d047a059ca10de": {
   "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
   "t": "Von der Website zum Webshop: Wir helfen Ihnen dabei, eine Geschichte zu erzählen, die authentisch ist und die die Menschen gerne lesen."
+ },
+ "27be6e8258c229a5": {
+  "en": "morning",
+  "t": "Morgen"
  }
 }

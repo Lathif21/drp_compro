@@ -2499,10 +2499,6 @@
   "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
   "t": "Er schuilt iets stilletjes magisch in het eerste uur van de ochtend, voordat de e-mails binnenstromen en de wereld uw aandacht opeist. De afgelopen maanden heb ik geëxperimenteerd met hoe ik die tijd besteed, en de resultaten hebben mij verrast. In plaats van meteen naar mijn telefoon te grijpen zodra ik wakker word, ben ik begonnen met het rustig zetten van een pot koffie, het openen van een notitieboekje en het gewoon opschrijven van alles wat in me opkomt. Sommige dagen is het een takenlijst; andere dagen zijn het nog onuitgewerkte ideeën voor projecten waaraan ik misschien nooit zal beginnen. Maar dat kleine ritueel is een houvast geworden, een herinnering dat mijn dag op mijn eigen voorwaarden kan beginnen. Als u zich de laatste tijd wat verstrooid voelt, probeer dan morgenochtend eens vijftien minuten tijd vrij te maken zonder uw telefoon en kijk wat er gebeurt."
  },
- "70f9ab8e1f75937b": {
-  "en": "mourning",
-  "t": "rouw"
- },
  "fedbf5d04c2f91ee": {
   "en": "routine",
   "t": "routine"
@@ -2786,5 +2782,9 @@
  "a9697baaf6e5fd43": {
   "en": "1 min read",
   "t": "Leestijd: 1 minuut"
+ },
+ "27be6e8258c229a5": {
+  "en": "morning",
+  "t": "&#x27;s ochtends"
  }
 }
