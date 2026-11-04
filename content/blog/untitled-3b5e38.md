@@ -5,7 +5,7 @@ date: 2026-11-04
 author: Hilmi Billah
 category: technical
 tags:
-  - mourning
+  - morning
   - routine
   - daily
 langs:
