@@ -24,6 +24,12 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const eur = n => '€' + n.toLocaleString('en-GB', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2 });
 const arr = '<span class="arr" aria-hidden="true">→</span>';
 
+/* blog articles from content/blog/ (see tools/concept/blog.js); throws on a malformed file */
+const blog = require('./blog');
+const POSTS = blog.loadPosts();
+/* the date as written in English; localize.js rewrites it per market (translate="no" keeps DeepL off it) */
+const pdate = d => `<time class="pd" datetime="${d}" translate="no">${new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time>`;
+
 /* ── Data ─────────────────────────────────────────────────────────────── */
 
 const CASES_RAW = [
@@ -180,6 +186,8 @@ const NOT_DONE = ['Printed matter such as business cards, flyers and brochures. 
 /* ── Shared pieces ────────────────────────────────────────────────────── */
 
 const NAV = [['work', 'Work', '/werk/'], ['services', 'Services', '/diensten/'], ['about', 'About us', '/over-ons/'], ['pricing', 'Pricing', '/prijzen/'], ['partner', 'Partners', '/partner-worden/'], ['contact', 'Contact', '/contact/']];
+/* the blog joins the menu once there is something to read */
+if (POSTS.length) NAV.splice(NAV.length - 1, 0, ['blog', 'Blog', '/blog/']);
 const LANGS = [['NL', 'Nederlands'], ['EN', 'English'], ['FR', 'Français'], ['ES', 'Español'], ['DE', 'Deutsch'], ['ID', 'Bahasa Indonesia'], ['JA', '日本語']];
 
 
@@ -242,7 +250,7 @@ const footer = () => `<footer class="ftr"><div class="wrap">
   </div>
 </div></footer>`;
 
-function page({ title, desc, nav, body, cursor }) {
+function page({ title, desc, nav, body, cursor, head = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -250,7 +258,7 @@ function page({ title, desc, nav, body, cursor }) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!--HEAD-->
 <title>${esc(title)}</title>
-<meta name="description" content="${esc(desc)}">
+<meta name="description" content="${esc(desc)}">${head}
 <meta name="theme-color" content="#0b0b0c">
 <link rel="icon" href="${B}/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -472,6 +480,50 @@ CASES.forEach((c, i) => {
 ${ctaBand()}`
   });
 });
+
+/* blog: an index and one page per article. Each article lists the languages it
+   is published in; localize.js writes it only to those markets and drops the
+   index cards a market's language does not have (data-langs). */
+const FEED = '\n<link rel="alternate" type="application/rss+xml" title="DRP BuildLab blog" href="/feed.xml">';
+if (POSTS.length) {
+  const card = p => `<li class="post-card rv" data-langs="${p.langs.join(' ')}"><a href="${B}/blog/${p.slug}/">
+    <div class="pc-img">${p.cover ? `<img src="${p.cover.src}" alt="${esc(p.cover.alt)}" loading="lazy" decoding="async">` : ''}</div>
+    <p class="pc-meta"><span>${p.categoryLabel}</span>${pdate(p.date)}</p>
+    <h2>${esc(p.title)}</h2>
+    <p>${esc(p.excerpt)}</p>
+  </a></li><!--/post-card-->`;
+  pages['blog'] = page({
+    title: 'Blog | DRP BuildLab', desc: 'How we build websites, webshops and automations, the businesses we work with and the creators we team up with.', nav: 'blog', head: FEED,
+    body: `${phero({ h1: 'News and <em>insights</em>', lede: 'How we build websites, webshops and automations, the businesses we work with, and the creators we team up with.' })}
+<section class="sec light posts-sec"><div class="wrap">
+  <ul class="posts">${POSTS.map(card).join('')}</ul>
+  <p class="post-empty" hidden>There are no articles in this language yet.</p>
+</div></section>
+${ctaBand()}`
+  });
+  POSTS.forEach(p => {
+    /* read by localize.js for the Article JSON-LD and og:image, then removed */
+    const meta = JSON.stringify({ date: p.date, updated: p.updated, author: p.author, image: p.cover ? p.cover.src : null, section: p.categoryLabel }).replace(/</g, '\\u003c');
+    pages['blog/' + p.slug] = page({
+      title: `${p.title} | Blog | DRP BuildLab`, desc: p.excerpt, nav: 'blog',
+      head: FEED + `\n<script type="application/drp-article">${meta}</script>`,
+      body: `
+<section class="phero"><div class="wrap">
+  <ol class="crumb"><li><a href="${B}/blog/">Blog</a></li><li aria-current="page">${p.categoryLabel}</li></ol>
+  <h1 class="h1 md post-h1">${esc(p.title)}</h1>
+  <div class="phero-row"><p class="lede">${esc(p.excerpt)}</p><p class="post-meta"><span>By <span translate="no">${esc(p.author)}</span></span>${pdate(p.date)}</p></div>
+</div></section>
+<section class="light post"><div class="wrap post-wrap">
+  ${p.cover ? `<figure class="post-cover"><img src="${p.cover.src}" alt="${esc(p.cover.alt)}" decoding="async"></figure>` : ''}
+  ${p.video}
+  <div class="prose">${p.html}</div>
+  ${p.tags.length ? `<ul class="tags">${p.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+  <p class="post-back"><a class="tlink" href="${B}/blog/">All articles</a></p>
+</div></section>
+${ctaBand()}`
+    });
+  });
+}
 
 pages['diensten'] = page({
   title: 'Services | DRP BuildLab', desc: 'Custom websites, webshops and Shopify, redesigns, maintenance plans and add-ons, with prices shown up front.', nav: 'services',
@@ -764,6 +816,8 @@ const notFound = page({
 }
 
 /* ── Write ────────────────────────────────────────────────────────────── */
+/* start clean, so a removed or unpublished article cannot linger in the base pages */
+fs.rmSync(OUT, { recursive: true, force: true });
 for (const [p, html] of Object.entries(pages)) {
   const dir = path.join(OUT, p);
   fs.mkdirSync(dir, { recursive: true });
@@ -771,4 +825,11 @@ for (const [p, html] of Object.entries(pages)) {
 }
 fs.mkdirSync(path.join(OUT, '404'), { recursive: true });
 fs.writeFileSync(path.join(OUT, '404', 'index.html'), notFound);
+/* what localize.js needs to know about the blog: the languages of each article page, and the feed */
+fs.writeFileSync(path.join(OUT, '__blog.json'), JSON.stringify({
+  pages: Object.fromEntries(POSTS.map(p => ['blog/' + p.slug, p.langs])),
+  posts: POSTS.map(({ slug, title, excerpt, date, updated, author, categoryLabel }) => ({ slug, title, excerpt, date, updated, author, category: categoryLabel }))
+}, null, 1));
+blog.copyMedia(POSTS);
+if (POSTS.length) console.log(`blog: ${POSTS.length} article(s): ${POSTS.map(p => `${p.slug} [${p.langs.join(',')}]`).join(', ')}`);
 console.log(`concept: wrote ${Object.keys(pages).length} English base pages to ${path.relative(ROOT, OUT)}/ (run tools/concept/localize.js next)`);

@@ -144,7 +144,23 @@ Never commit the real key; `.env.example` shows the expected name.
 `src/css/47-chat.css` contains all widget styles (compiled into `assets/styles.css`
 by the build tool along with the rest of the CSS).
 
+## Blog
+
+Articles are Markdown files in `content/blog/`, usually committed by the team
+CMS at cms.drpbuildlab.com (repo drp_cms). `tools/concept/build.js` turns them
+into `/blog/` and `/blog/<slug>/` (via `tools/concept/blog.js`), and
+`localize.js` publishes each article only in the languages it lists. The
+format and its rules are in [content/blog/README.md](content/blog/README.md).
+
+A push that touches `content/blog/` on `main` runs
+`.github/workflows/blog.yml`: the same build and localize steps as a local
+release, then a commit of `concept/` and the translation cache. Netlify deploys
+that commit as usual.
+
 ## Secrets
 
 `DEEPL_API_KEY` goes in `.env`, which is gitignored.
 `ANTHROPIC_API_KEY` goes in Netlify's environment variables UI, not in any file.
+For the blog workflow, `DEEPL_API_KEY` also goes in GitHub → Settings → Secrets
+and variables → Actions. Without it the workflow still runs, but new text stays
+in English.

@@ -642,3 +642,53 @@ a[href^="tel:"],a[href^="mailto:"],a[href*="wa.me"],.url,.money,.clist a,.clist 
 :root[lang="ja"] .hero .h1{word-break:auto-phrase}
 [dir="rtl"] .logo{direction:ltr}
 .ft-pay li.klarna{background:#ffa8cd}
+
+/* ── blog (generated from content/blog/ by tools/concept/blog.js) ── */
+.posts-sec{padding-top:clamp(48px,6vw,90px)}
+.posts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:clamp(28px,3vw,44px)}
+.post-card a{display:flex;flex-direction:column;gap:12px;text-decoration:none;height:100%}
+.post-card .pc-img{aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:linear-gradient(135deg,var(--ink-2),var(--electric))}
+.post-card .pc-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.post-card a:hover .pc-img img{transform:scale(1.03)}
+.post-card h2{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:clamp(24px,2.1vw,30px);line-height:1.05;margin:4px 0 0;text-wrap:balance}
+.post-card a:hover h2{color:var(--electric)}
+.post-card p{margin:0;color:var(--mute-l);max-width:52ch}
+.pc-meta,.post-meta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:13px;letter-spacing:.02em;text-transform:uppercase}
+.post-card .pc-meta{color:var(--electric)}
+.post-meta{color:var(--mute-d);margin:0;align-self:end}
+.post-empty{color:var(--mute-l);margin:0}
+.post-h1.h1.md{font-size:clamp(40px,6vw,92px);line-height:.92}
+.post{padding-block:clamp(48px,6vw,96px)}
+.post-wrap{max-width:860px}
+.post-cover{margin:0 0 clamp(32px,4vw,56px)}
+.post-cover img{width:100%;border-radius:16px}
+.prose{font-size:clamp(17px,1.25vw,19px);line-height:1.7}
+.prose>*{max-width:68ch}
+.prose h2{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:clamp(28px,2.6vw,40px);line-height:1;margin:1.8em 0 .5em}
+.prose h3,.prose h4{font-family:var(--display);font-weight:700;font-stretch:90%;font-size:clamp(21px,1.7vw,26px);margin:1.5em 0 .4em}
+.prose p,.prose ul,.prose ol,.prose blockquote,.prose pre,.prose table{margin:0 0 1.1em}
+.prose a{color:var(--electric);text-underline-offset:3px}
+.prose img{width:100%;max-width:100%;border-radius:12px;margin:1.6em 0}
+.prose blockquote{border-inline-start:3px solid var(--electric);padding-inline-start:20px;color:var(--mute-l);font-style:italic}
+.prose code{font-family:var(--mono);font-size:.88em;background:var(--fog);border-radius:5px;padding:.1em .35em}
+.prose pre{background:var(--ink);color:#e7e8ec;border-radius:12px;padding:18px 20px;overflow-x:auto;max-width:100%;font-size:14px;line-height:1.6}
+.prose pre code{background:none;padding:0;font-size:inherit}
+.prose table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%}
+.prose th,.prose td{border-bottom:1px solid var(--line-l);padding:8px 14px 8px 0;text-align:start}
+.prose hr{border:0;border-top:1px solid var(--line-l);margin:2.4em 0}
+.post .tags{margin:clamp(32px,4vw,48px) 0 0}
+.post .tags li{border-color:var(--line-l);color:var(--mute-l)}
+.post-back{margin:clamp(32px,4vw,48px) 0 0}
+/* click-to-load video: nothing from the host loads before the visitor presses play */
+.vembed{margin:0 0 clamp(32px,4vw,56px)}
+.vembed-play{position:relative;display:block;width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;cursor:pointer;background:linear-gradient(135deg,var(--ink),var(--ink-2));aspect-ratio:16/9}
+.vembed[data-aspect="9:16"] .vembed-play,.vembed[data-aspect="9:16"] iframe,.vembed[data-aspect="9:16"] video{aspect-ratio:9/16;max-width:min(100%,400px);margin-inline:auto}
+.vembed[data-aspect="1:1"] .vembed-play,.vembed[data-aspect="1:1"] iframe,.vembed[data-aspect="1:1"] video{aspect-ratio:1;max-width:min(100%,560px);margin-inline:auto}
+.vembed-play img{width:100%;height:100%;object-fit:cover}
+.vembed-icon{position:absolute;inset:0;margin:auto;width:76px;height:76px;border-radius:50%;background:var(--electric);transition:transform .3s var(--ease)}
+.vembed-icon::after{content:"";position:absolute;inset:0;margin:auto;width:0;height:0;border-style:solid;border-width:13px 0 13px 22px;border-color:transparent transparent transparent #fff;transform:translateX(3px)}
+.vembed-play:hover .vembed-icon{transform:scale(1.08)}
+.vembed iframe,.vembed video{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:16px;background:#000}
+.vembed figcaption{margin-top:12px;font-size:14px;color:var(--mute-l)}
+.vembed.link{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.light .vembed.link .btn.ghost{--c:var(--ink);--h:var(--ink);--hc:#fff;box-shadow:inset 0 0 0 1px var(--line-l)}
