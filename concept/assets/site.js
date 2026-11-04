@@ -191,6 +191,25 @@ if (reelBox && vid) {
   addEventListener('scroll', grow, { passive: true }); addEventListener('resize', grow); grow();
 }
 
+/* blog video: a poster until the visitor presses play, then the player from
+   the host (YouTube without cookies, Vimeo with do-not-track) or the file */
+$$('.vembed-play').forEach(btn => btn.addEventListener('click', () => {
+  const src = btn.dataset.src;
+  if (!/^https:\/\//.test(src)) return;
+  let el;
+  if (btn.dataset.kind === 'video') {
+    el = document.createElement('video');
+    Object.assign(el, { src, controls: true, autoplay: true, playsInline: true });
+  } else {
+    el = document.createElement('iframe');
+    Object.assign(el, { src, title: btn.getAttribute('aria-label') || 'Video', allowFullscreen: true });
+    el.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    el.referrerPolicy = 'strict-origin-when-cross-origin';
+  }
+  btn.replaceWith(el);
+  el.focus();
+}));
+
 /* about: team tabs (click, arrow keys, and hover with a mouse) */
 const tm = $('#tm');
 if (tm) {
