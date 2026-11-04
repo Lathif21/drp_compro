@@ -49,4 +49,4 @@ draft: false                            # true: kept in git, never built
 - Images must live in `media/<slug>/` and be referenced as `./media/<slug>/<file>`. They are served once from `/media/blog/<slug>/`, not copied into every market. A missing image fails the build.
 - Links are absolute (`https://…`) or site-relative (`/contact/`). Site-relative links get the market prefix automatically.
 - **Videos are never committed.** Put them on YouTube, Vimeo or a video CDN. The page shows the poster, and nothing from the video host loads until the visitor presses play.
-- The Blog menu item appears once at least one article is published.
+- Blog is always in the main menu and footer. Before the first article is published, `/blog/` says the first articles are on their way.
