@@ -186,8 +186,8 @@ const NOT_DONE = ['Printed matter such as business cards, flyers and brochures. 
 /* ── Shared pieces ────────────────────────────────────────────────────── */
 
 const NAV = [['work', 'Work', '/werk/'], ['services', 'Services', '/diensten/'], ['about', 'About us', '/over-ons/'], ['pricing', 'Pricing', '/prijzen/'], ['partner', 'Partners', '/partner-worden/'], ['contact', 'Contact', '/contact/']];
-/* the blog joins the menu once there is something to read */
-if (POSTS.length) NAV.splice(NAV.length - 1, 0, ['blog', 'Blog', '/blog/']);
+/* the blog is always in the menu; before the first article its page says so */
+NAV.splice(NAV.length - 1, 0, ['blog', 'Blog', '/blog/']);
 const LANGS = [['NL', 'Nederlands'], ['EN', 'English'], ['FR', 'Français'], ['ES', 'Español'], ['DE', 'Deutsch'], ['ID', 'Bahasa Indonesia'], ['JA', '日本語']];
 
 
@@ -484,8 +484,8 @@ ${ctaBand()}`
 /* blog: an index and one page per article. Each article lists the languages it
    is published in; localize.js writes it only to those markets and drops the
    index cards a market's language does not have (data-langs). */
-const FEED = '\n<link rel="alternate" type="application/rss+xml" title="DRP BuildLab blog" href="/feed.xml">';
-if (POSTS.length) {
+const FEED = POSTS.length ? '\n<link rel="alternate" type="application/rss+xml" title="DRP BuildLab blog" href="/feed.xml">' : '';
+{
   const card = p => `<li class="post-card rv" data-langs="${p.langs.join(' ')}"><a href="${B}/blog/${p.slug}/">
     <div class="pc-img">${p.cover ? `<img src="${p.cover.src}" alt="${esc(p.cover.alt)}" loading="lazy" decoding="async">` : ''}</div>
     <p class="pc-meta"><span>${p.categoryLabel}</span>${pdate(p.date)}</p>
@@ -497,7 +497,7 @@ if (POSTS.length) {
     body: `${phero({ h1: 'News and <em>insights</em>', lede: 'How we build websites, webshops and automations, the businesses we work with, and the creators we team up with.' })}
 <section class="sec light posts-sec"><div class="wrap">
   <ul class="posts">${POSTS.map(card).join('')}</ul>
-  <p class="post-empty" hidden>There are no articles in this language yet.</p>
+  <p class="post-empty" hidden>${POSTS.length ? 'There are no articles in this language yet.' : 'Our first articles are on their way.'}</p>
 </div></section>
 ${ctaBand()}`
   });
