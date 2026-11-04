@@ -501,26 +501,37 @@ const FEED = POSTS.length ? '\n<link rel="alternate" type="application/rss+xml" 
 </div></section>
 ${ctaBand()}`
   });
+  /* Article pages follow the editorial layout of our PDF articles: a navy
+     masthead, then a white page where the Markdown is styled in site.css
+     (numbered ## sections, pull-quote blockquotes, comparison tables, square
+     bullets, big-number ordered lists) and a closing call to action. */
+  const ART_FONTS = '\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;1,8..60,400&display=swap">';
   POSTS.forEach(p => {
     /* read by localize.js for the Article JSON-LD and og:image, then removed */
     const meta = JSON.stringify({ date: p.date, updated: p.updated, author: p.author, image: p.cover ? p.cover.src : null, section: p.categoryLabel }).replace(/</g, '\\u003c');
     pages['blog/' + p.slug] = page({
       title: `${p.title} | Blog | DRP BuildLab`, desc: p.excerpt, nav: 'blog',
-      head: FEED + `\n<script type="application/drp-article">${meta}</script>`,
-      body: `
-<section class="phero"><div class="wrap">
-  <ol class="crumb"><li><a href="${B}/blog/">Blog</a></li><li aria-current="page">${p.categoryLabel}</li></ol>
-  <h1 class="h1 md post-h1">${esc(p.title)}</h1>
-  <div class="phero-row"><p class="lede">${esc(p.excerpt)}</p><p class="post-meta"><span>By <span translate="no">${esc(p.author)}</span></span>${pdate(p.date)}</p></div>
+      head: FEED + ART_FONTS + `\n<script type="application/drp-article">${meta}</script>`,
+      body: `<div class="post-page">
+<section class="ahero"><div class="wrap ahero-in">
+  <ol class="crumb akick"><li><a href="${B}/blog/">Blog</a></li><li aria-current="page">${p.categoryLabel}</li></ol>
+  <h1 class="ah1">${esc(p.title)}</h1>
+  <p class="asub">${esc(p.excerpt)}</p>
+  <p class="ameta"><span>By <span translate="no">${esc(p.author)}</span></span>${pdate(p.date)}<span>${p.minutes} min read</span></p>
 </div></section>
 <section class="light post"><div class="wrap post-wrap">
   ${p.cover ? `<figure class="post-cover"><img src="${p.cover.src}" alt="${esc(p.cover.alt)}" decoding="async"></figure>` : ''}
   ${p.video}
   <div class="prose">${p.html}</div>
   ${p.tags.length ? `<ul class="tags">${p.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+  <aside class="acta">
+    <h2>Need help with your online presence?</h2>
+    <p>From website to webshop: we help you tell a story that is true, and that people enjoy reading.</p>
+    <p class="acta-links"><a class="btn" href="${B}/contact/">Request your free demo website ${arr}</a><a class="acta-mail" href="mailto:info@drpbuildlab.com" translate="no">info@drpbuildlab.com</a></p>
+  </aside>
   <p class="post-back"><a class="tlink" href="${B}/blog/">All articles</a></p>
 </div></section>
-${ctaBand()}`
+</div>`
     });
   });
 }

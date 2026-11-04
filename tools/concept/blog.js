@@ -136,7 +136,10 @@ function loadPosts() {
       langs,
       cover: fm.cover ? { src: mediaSrc(fm.cover.src, fm.slug, where), alt: String(fm.cover.alt) } : null,
       video: fm.video ? videoBlock(fm.video, fm.slug, where) : '',
-      html: renderer(fm.slug, where).parse(body)
+      /* reading time at 200 words a minute, shown in the article masthead */
+      minutes: Math.max(1, Math.round(body.replace(/!\[[^\]]*\]\([^)]*\)/g, '').split(/\s+/).filter(Boolean).length / 200)),
+      /* tables scroll sideways inside their own box on narrow screens */
+      html: renderer(fm.slug, where).parse(body).replace(/<table>/g, '<div class="tbl"><table>').replace(/<\/table>/g, '</table></div>')
     });
   }
   return posts.sort((a, b) => (b.date + b.slug).localeCompare(a.date + a.slug));
