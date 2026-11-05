@@ -2558,5 +2558,93 @@
  "27be6e8258c229a5": {
   "en": "morning",
   "t": "おはようございます"
+ },
+ "f6af7ad52205a96c": {
+  "en": "Like",
+  "t": "「いいね！」"
+ },
+ "5c58cd85018e00c7": {
+  "en": "Share",
+  "t": "シェア"
+ },
+ "dbcd9b51e0f4d64c": {
+  "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
+  "t": "コメント <span class=\"cm-n\" translate=\"no\"></span>"
+ },
+ "979a9c806342a1a4": {
+  "en": "No comments yet. Be the first to share your thoughts.",
+  "t": "まだコメントはありません。ぜひ、最初に感想を投稿してください。"
+ },
+ "33ca11efcde9da6e": {
+  "en": "Your comment",
+  "t": "ご意見"
+ },
+ "6f07d68b2ef277ba": {
+  "en": "No account needed. We read every comment before it appears, usually within one working day. Please don't share personal details.",
+  "t": "アカウント登録は不要です。コメントは公開前にすべて確認しており、通常は1営業日以内に処理いたします。個人情報の掲載はお控えください。"
+ },
+ "b5ab5643299a82b2": {
+  "en": "Post comment",
+  "t": "コメントを投稿する"
+ },
+ "639ec264efc57977": {
+  "en": "Link copied.",
+  "t": "リンクがコピーされました。"
+ },
+ "acf48e16cebbaa25": {
+  "en": "Link copied. Paste it in your Instagram story, bio or a direct message.",
+  "t": "リンクがコピーされました。Instagramのストーリー、プロフィール、またはダイレクトメッセージに貼り付けてください。"
+ },
+ "de177ad61be91bc6": {
+  "en": "Please fill in your name.",
+  "t": "お名前をご記入ください。"
+ },
+ "5a34c15f0fffbcbf": {
+  "en": "Please write a comment.",
+  "t": "コメントをご記入ください。"
+ },
+ "d5b8b0dd5019f71f": {
+  "en": "Thank you! Your comment will appear here once we have read it.",
+  "t": "ありがとうございます！コメントは、確認次第、ここに表示されます。"
+ },
+ "f01c5f797d2d6165": {
+  "en": "You are commenting a little fast. Please try again in a few minutes.",
+  "t": "コメントの投稿が少し早すぎます。数分後に再度お試しください。"
+ },
+ "00a3a80458bb81a5": {
+  "en": "Sending failed. Please try again later.",
+  "t": "送信に失敗しました。後ほどもう一度お試しください。"
+ },
+ "9c6152e6ce9a6889": {
+  "en": "Reactions",
+  "t": "反応"
+ },
+ "7e5626f99940e87b": {
+  "en": "Share on WhatsApp",
+  "t": "WhatsAppでシェアする"
+ },
+ "4a14fbf54f1d692a": {
+  "en": "WhatsApp",
+  "t": "WhatsApp"
+ },
+ "0e25f125adb71705": {
+  "en": "Share on X",
+  "t": "Xでシェアする"
+ },
+ "05493f8800c33306": {
+  "en": "X",
+  "t": "X"
+ },
+ "bc2967d69f0c01b5": {
+  "en": "Share on Instagram",
+  "t": "Instagramでシェアする"
+ },
+ "ed89ebcb6349a38e": {
+  "en": "Instagram",
+  "t": "Instagram"
+ },
+ "bad709117fa0a119": {
+  "en": "Copy the link",
+  "t": "リンクをコピーしてください"
  }
 }

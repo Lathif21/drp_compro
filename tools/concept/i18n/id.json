@@ -2558,5 +2558,93 @@
  "27be6e8258c229a5": {
   "en": "morning",
   "t": "pagi"
+ },
+ "f6af7ad52205a96c": {
+  "en": "Like",
+  "t": "Suka"
+ },
+ "5c58cd85018e00c7": {
+  "en": "Share",
+  "t": "Bagikan"
+ },
+ "dbcd9b51e0f4d64c": {
+  "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
+  "t": "Komentar <span class=\"cm-n\" translate=\"no\"></span>"
+ },
+ "979a9c806342a1a4": {
+  "en": "No comments yet. Be the first to share your thoughts.",
+  "t": "Belum ada komentar. Jadilah yang pertama untuk berbagi pendapat Anda."
+ },
+ "33ca11efcde9da6e": {
+  "en": "Your comment",
+  "t": "Komentar Anda"
+ },
+ "6f07d68b2ef277ba": {
+  "en": "No account needed. We read every comment before it appears, usually within one working day. Please don't share personal details.",
+  "t": "Tidak perlu membuat akun. Kami memeriksa setiap komentar sebelum ditampilkan, biasanya dalam waktu satu hari kerja. Mohon jangan membagikan informasi pribadi."
+ },
+ "b5ab5643299a82b2": {
+  "en": "Post comment",
+  "t": "Tulis komentar"
+ },
+ "639ec264efc57977": {
+  "en": "Link copied.",
+  "t": "Tautan telah disalin."
+ },
+ "acf48e16cebbaa25": {
+  "en": "Link copied. Paste it in your Instagram story, bio or a direct message.",
+  "t": "Tautan telah disalin. Tempelkan tautan tersebut di Instagram Story, bio, atau pesan langsung Anda."
+ },
+ "de177ad61be91bc6": {
+  "en": "Please fill in your name.",
+  "t": "Silakan isi nama Anda."
+ },
+ "5a34c15f0fffbcbf": {
+  "en": "Please write a comment.",
+  "t": "Silakan tulis komentar."
+ },
+ "d5b8b0dd5019f71f": {
+  "en": "Thank you! Your comment will appear here once we have read it.",
+  "t": "Terima kasih! Komentar Anda akan muncul di sini setelah kami membacanya."
+ },
+ "f01c5f797d2d6165": {
+  "en": "You are commenting a little fast. Please try again in a few minutes.",
+  "t": "Anda memberikan komentar terlalu cepat. Silakan coba lagi beberapa menit lagi."
+ },
+ "00a3a80458bb81a5": {
+  "en": "Sending failed. Please try again later.",
+  "t": "Pengiriman gagal. Silakan coba lagi nanti."
+ },
+ "9c6152e6ce9a6889": {
+  "en": "Reactions",
+  "t": "Reaksi"
+ },
+ "7e5626f99940e87b": {
+  "en": "Share on WhatsApp",
+  "t": "Bagikan di WhatsApp"
+ },
+ "4a14fbf54f1d692a": {
+  "en": "WhatsApp",
+  "t": "WhatsApp"
+ },
+ "0e25f125adb71705": {
+  "en": "Share on X",
+  "t": "Bagikan di X"
+ },
+ "05493f8800c33306": {
+  "en": "X",
+  "t": "X"
+ },
+ "bc2967d69f0c01b5": {
+  "en": "Share on Instagram",
+  "t": "Bagikan di Instagram"
+ },
+ "ed89ebcb6349a38e": {
+  "en": "Instagram",
+  "t": "Instagram"
+ },
+ "bad709117fa0a119": {
+  "en": "Copy the link",
+  "t": "Salin tautan tersebut"
  }
 }

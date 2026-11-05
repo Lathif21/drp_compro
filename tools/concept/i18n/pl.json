@@ -2558,5 +2558,93 @@
  "27be6e8258c229a5": {
   "en": "morning",
   "t": "rano"
+ },
+ "f6af7ad52205a96c": {
+  "en": "Like",
+  "t": "Podobnie jak"
+ },
+ "5c58cd85018e00c7": {
+  "en": "Share",
+  "t": "Udostępnij"
+ },
+ "dbcd9b51e0f4d64c": {
+  "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
+  "t": "Komentarze <span class=\"cm-n\" translate=\"no\"></span>"
+ },
+ "979a9c806342a1a4": {
+  "en": "No comments yet. Be the first to share your thoughts.",
+  "t": "Nie ma jeszcze żadnych komentarzy. Proszę jako pierwszy podzielić się swoimi przemyśleniami."
+ },
+ "33ca11efcde9da6e": {
+  "en": "Your comment",
+  "t": "Pański komentarz"
+ },
+ "6f07d68b2ef277ba": {
+  "en": "No account needed. We read every comment before it appears, usually within one working day. Please don't share personal details.",
+  "t": "Nie jest wymagane posiadanie konta. Sprawdzamy każdy komentarz przed jego opublikowaniem, zazwyczaj w ciągu jednego dnia roboczego. Prosimy nie podawać danych osobowych."
+ },
+ "b5ab5643299a82b2": {
+  "en": "Post comment",
+  "t": "Dodaj komentarz"
+ },
+ "639ec264efc57977": {
+  "en": "Link copied.",
+  "t": "Link został skopiowany."
+ },
+ "acf48e16cebbaa25": {
+  "en": "Link copied. Paste it in your Instagram story, bio or a direct message.",
+  "t": "Link został skopiowany. Proszę wkleić go w swojej relacji na Instagramie, w opisie profilu lub w prywatnej wiadomości."
+ },
+ "de177ad61be91bc6": {
+  "en": "Please fill in your name.",
+  "t": "Proszę wpisać swoje imię i nazwisko."
+ },
+ "5a34c15f0fffbcbf": {
+  "en": "Please write a comment.",
+  "t": "Proszę o pozostawienie komentarza."
+ },
+ "d5b8b0dd5019f71f": {
+  "en": "Thank you! Your comment will appear here once we have read it.",
+  "t": "Dziękujemy! Pański komentarz pojawi się w tym miejscu, gdy tylko go przeczytamy."
+ },
+ "f01c5f797d2d6165": {
+  "en": "You are commenting a little fast. Please try again in a few minutes.",
+  "t": "Wypowiada się Pan/Pani nieco zbyt szybko. Proszę spróbować ponownie za kilka minut."
+ },
+ "00a3a80458bb81a5": {
+  "en": "Sending failed. Please try again later.",
+  "t": "Wysyłanie nie powiodło się. Proszę spróbować ponownie później."
+ },
+ "9c6152e6ce9a6889": {
+  "en": "Reactions",
+  "t": "Reakcje"
+ },
+ "7e5626f99940e87b": {
+  "en": "Share on WhatsApp",
+  "t": "Udostępnij na WhatsApp"
+ },
+ "4a14fbf54f1d692a": {
+  "en": "WhatsApp",
+  "t": "WhatsApp"
+ },
+ "0e25f125adb71705": {
+  "en": "Share on X",
+  "t": "Udostępnij na X"
+ },
+ "05493f8800c33306": {
+  "en": "X",
+  "t": "X"
+ },
+ "bc2967d69f0c01b5": {
+  "en": "Share on Instagram",
+  "t": "Udostępnij na Instagramie"
+ },
+ "ed89ebcb6349a38e": {
+  "en": "Instagram",
+  "t": "Instagram"
+ },
+ "bad709117fa0a119": {
+  "en": "Copy the link",
+  "t": "Skopiuj link"
  }
 }

@@ -2558,5 +2558,93 @@
  "27be6e8258c229a5": {
   "en": "morning",
   "t": "oggend"
+ },
+ "f6af7ad52205a96c": {
+  "en": "Like",
+  "t": "Soos"
+ },
+ "5c58cd85018e00c7": {
+  "en": "Share",
+  "t": "Deel"
+ },
+ "dbcd9b51e0f4d64c": {
+  "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
+  "t": "Kommentaar <span class=\"cm-n\" translate=\"no\"></span>"
+ },
+ "979a9c806342a1a4": {
+  "en": "No comments yet. Be the first to share your thoughts.",
+  "t": "Nog geen kommentaar nie. Wees die eerste om jou gedagtes te deel."
+ },
+ "33ca11efcde9da6e": {
+  "en": "Your comment",
+  "t": "Jou kommentaar"
+ },
+ "6f07d68b2ef277ba": {
+  "en": "No account needed. We read every comment before it appears, usually within one working day. Please don't share personal details.",
+  "t": "Geen rekening nodig. Ons lees elke kommentaar voordat dit verskyn, gewoonlik binne een werksdag. Deel asseblief nie persoonlike besonderhede nie."
+ },
+ "b5ab5643299a82b2": {
+  "en": "Post comment",
+  "t": "Plaas kommentaar"
+ },
+ "639ec264efc57977": {
+  "en": "Link copied.",
+  "t": "Skakel gekopieer."
+ },
+ "acf48e16cebbaa25": {
+  "en": "Link copied. Paste it in your Instagram story, bio or a direct message.",
+  "t": "Skakel gekopieer. Plak dit in jou Instagram-storie, biografie of &#x27;n direkte boodskap."
+ },
+ "de177ad61be91bc6": {
+  "en": "Please fill in your name.",
+  "t": "Vul asseblief jou naam in."
+ },
+ "5a34c15f0fffbcbf": {
+  "en": "Please write a comment.",
+  "t": "Skryf asseblief &#x27;n opmerking."
+ },
+ "d5b8b0dd5019f71f": {
+  "en": "Thank you! Your comment will appear here once we have read it.",
+  "t": "Dankie! Jou kommentaar sal hier verskyn sodra ons dit gelees het."
+ },
+ "f01c5f797d2d6165": {
+  "en": "You are commenting a little fast. Please try again in a few minutes.",
+  "t": "Jy kommentarieer &#x27;n bietjie te vinnig. Probeer asseblief oor &#x27;n paar minute weer."
+ },
+ "00a3a80458bb81a5": {
+  "en": "Sending failed. Please try again later.",
+  "t": "Stuur het misluk. Probeer asseblief later weer."
+ },
+ "9c6152e6ce9a6889": {
+  "en": "Reactions",
+  "t": "Reaksies"
+ },
+ "7e5626f99940e87b": {
+  "en": "Share on WhatsApp",
+  "t": "Deel op WhatsApp"
+ },
+ "4a14fbf54f1d692a": {
+  "en": "WhatsApp",
+  "t": "Waatsap"
+ },
+ "0e25f125adb71705": {
+  "en": "Share on X",
+  "t": "Deel op X"
+ },
+ "05493f8800c33306": {
+  "en": "X",
+  "t": "X"
+ },
+ "bc2967d69f0c01b5": {
+  "en": "Share on Instagram",
+  "t": "Deel op Instagram"
+ },
+ "ed89ebcb6349a38e": {
+  "en": "Instagram",
+  "t": "Instagram"
+ },
+ "bad709117fa0a119": {
+  "en": "Copy the link",
+  "t": "Kopieer die skakel"
  }
 }
