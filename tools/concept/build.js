@@ -481,6 +481,38 @@ ${ctaBand()}`
   });
 });
 
+/* Under every article: like and share, then comments. Nothing needs an account.
+   site.js fetches the counts and approved comments from /api/blog
+   (netlify/edge-functions/blog.js) and reveals the like button and comments
+   only when that answers, so without JavaScript or before the function is
+   configured, only the share links show. Every text is in the page so that
+   localize.js translates it; site.js reads its messages from #bui. */
+const reactBar = `<div class="react" aria-label="Reactions">
+  <button type="button" class="like" aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.4 2.4h1.8c.8-1.3 2.3-2.4 4.4-2.4 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span>Like</span><span class="like-n" translate="no"></span></button>
+  <div class="share">
+    <span class="share-t">Share</span>
+    <a class="sh" data-net="whatsapp" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.7A13 13 0 0 0 16 29c7.2 0 13-5.8 13-13S23.2 3 16 3zm6.4 18.3c-.3.8-1.6 1.5-2.2 1.6-.6.1-1.3.1-2-.1-.5-.1-1.1-.4-1.9-.7-3.3-1.4-5.5-4.8-5.6-5-.2-.2-1.3-1.8-1.3-3.4s.8-2.4 1.1-2.7c.3-.3.7-.4.9-.4h.6c.2 0 .5-.1.7.6.3.7.9 2.3 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-1 1-1.3.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.1.1.8-.2 1.5z"/></svg></a>
+    <a class="sh" data-net="x" href="https://x.com/intent/post" target="_blank" rel="noopener" aria-label="Share on X" title="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+    <button type="button" class="sh" data-net="instagram" aria-label="Share on Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.9a4.9 4.9 0 1 0 0 9.8 4.9 4.9 0 0 0 0-9.8zm0 8.1a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zm5.1-9.4a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg></button>
+    <button type="button" class="sh" data-net="copy" aria-label="Copy the link" title="Copy the link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a4 4 0 0 0 5.7 0l3.5-3.5a4 4 0 0 0-5.7-5.7l-1.3 1.3 1.4 1.4 1.3-1.3a2 2 0 1 1 2.9 2.9l-3.5 3.5a2 2 0 0 1-2.9 0l-1.4 1.4zm2.8-2.8a4 4 0 0 0-5.7 0l-3.5 3.5a4 4 0 0 0 5.7 5.7l1.3-1.3-1.4-1.4-1.3 1.3a2 2 0 1 1-2.9-2.9l3.5-3.5a2 2 0 0 1 2.9 0l1.4-1.4z"/></svg></button>
+  </div>
+  <p class="share-msg" role="status" aria-live="polite"></p>
+</div>`;
+const comments = slug => `<section class="cm" id="comments" data-slug="${slug}" hidden>
+  <h2 class="cm-h">Comments <span class="cm-n" translate="no"></span></h2>
+  <ol class="cm-list" translate="no"></ol>
+  <p class="cm-empty">No comments yet. Be the first to share your thoughts.</p>
+  <form class="cm-form" novalidate>
+    <div class="fld"><label for="cm-name">Your name</label><input id="cm-name" maxlength="60" autocomplete="name" required></div>
+    <div class="fld"><label for="cm-body">Your comment</label><textarea id="cm-body" rows="4" maxlength="2000" required></textarea></div>
+    <p class="hp" aria-hidden="true"><label>Leave this empty <input id="cm-web" tabindex="-1" autocomplete="off"></label></p>
+    <p class="cm-note">No account needed. We read every comment before it appears, usually within one working day. Please don't share personal details.</p>
+    <p class="cm-act"><button type="submit" class="btn">Post comment</button></p>
+    <p class="cm-msg" role="status" aria-live="polite"></p>
+  </form>
+  <div id="bui" hidden><span data-k="copied">Link copied.</span><span data-k="insta">Link copied. Paste it in your Instagram story, bio or a direct message.</span><span data-k="name">Please fill in your name.</span><span data-k="body">Please write a comment.</span><span data-k="thanks">Thank you! Your comment will appear here once we have read it.</span><span data-k="slow">You are commenting a little fast. Please try again in a few minutes.</span><span data-k="failed">Sending failed. Please try again later.</span></div>
+</section>`;
+
 /* blog: an index and one page per article. Each article lists the languages it
    is published in; localize.js writes it only to those markets and drops the
    index cards a market's language does not have (data-langs). */
@@ -511,7 +543,7 @@ ${ctaBand()}`
     const meta = JSON.stringify({ date: p.date, updated: p.updated, author: p.author, image: p.cover ? p.cover.src : null, section: p.categoryLabel }).replace(/</g, '\\u003c');
     pages['blog/' + p.slug] = page({
       title: `${p.title} | Blog | DRP BuildLab`, desc: p.excerpt, nav: 'blog',
-      head: FEED + ART_FONTS + `\n<script type="application/drp-article">${meta}</script>`,
+      head: FEED + ART_FONTS + `\n<script type="application/drp-article">${meta}</script>\n<meta name="drp-rev" content="${p.rev}">`,
       body: `<div class="post-page">
 <section class="ahero"><div class="wrap ahero-in">
   <ol class="crumb akick"><li><a href="${B}/blog/">Blog</a></li><li aria-current="page">${p.categoryLabel}</li></ol>
@@ -524,11 +556,13 @@ ${ctaBand()}`
   ${p.video}
   <div class="prose">${p.html}</div>
   ${p.tags.length ? `<ul class="tags">${p.tags.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+  ${reactBar}
   <aside class="acta">
     <h2>Need help with your online presence?</h2>
     <p>From website to webshop: we help you tell a story that is true, and that people enjoy reading.</p>
     <p class="acta-links"><a class="btn" href="${B}/contact/">Request your free demo website ${arr}</a><a class="acta-mail" href="mailto:info@drpbuildlab.com" translate="no">info@drpbuildlab.com</a></p>
   </aside>
+  ${comments(p.slug)}
   <p class="post-back"><a class="tlink" href="${B}/blog/">All articles</a></p>
 </div></section>
 </div>`

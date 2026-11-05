@@ -50,3 +50,4 @@ draft: false                            # true: kept in git, never built
 - Links are absolute (`https://…`) or site-relative (`/contact/`). Site-relative links get the market prefix automatically.
 - **Videos are never committed.** Put them on YouTube, Vimeo or a video CDN. The page shows the poster, and nothing from the video host loads until the visitor presses play.
 - Blog is always in the main menu and footer. Before the first article is published, `/blog/` says the first articles are on their way.
+- Every article page gets like, share and comment blocks (build.js `reactBar`/`comments`, site.js, `/api/blog`). Comments are moderated in the CMS, and nothing about them is in git. See the Blog section of the main README.
