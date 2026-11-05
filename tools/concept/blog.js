@@ -13,6 +13,7 @@
    like the showreel in concept/media/). localize.js reads the per-article
    languages from .concept-base/__blog.json. */
 'use strict';
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 const { Marked } = require('marked');
@@ -95,6 +96,11 @@ function renderer(slug, file) {
   return md;
 }
 
+/* What `git hash-object` prints for the file. The CMS stores the same hash for
+   what it published, and finds it in <meta name="drp-rev"> once that version
+   is live on the site. */
+const gitBlobSha = bytes => crypto.createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+
 function parse(file) {
   const raw = fs.readFileSync(path.join(DIR, file), 'utf8').replace(/\r\n/g, '\n');
   const m = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(raw);
@@ -113,7 +119,8 @@ function parse(file) {
   const bad = langs.filter(l => !LANGS.includes(l));
   need('langs', !bad.length, `has unknown language(s): ${bad.join(', ')}`);
   if (fm.cover) need('cover.alt', fm.cover.alt, 'is required when there is a cover image');
-  return { fm, body: m[2], langs, where };
+  /* hashed with LF line ends, as git stores it, so a Windows checkout gives the same hash */
+  return { fm, body: m[2], langs, where, rev: gitBlobSha(Buffer.from(raw, 'utf8')) };
 }
 
 /* Every published article (draft: true is skipped), newest first. */
@@ -121,10 +128,11 @@ function loadPosts() {
   if (!fs.existsSync(DIR)) return [];
   const posts = [];
   for (const file of fs.readdirSync(DIR).filter(f => f.endsWith('.md') && f !== 'README.md')) {
-    const { fm, body, langs, where } = parse(file);
+    const { fm, body, langs, where, rev } = parse(file);
     if (fm.draft === true) continue;
     posts.push({
       slug: fm.slug,
+      rev,
       title: fm.title.trim(),
       excerpt: fm.excerpt.trim(),
       date: String(fm.date),
