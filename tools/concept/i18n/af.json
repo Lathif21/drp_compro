@@ -2463,6 +2463,126 @@
   "en": "Partnership visual: DRP BuildLab and BarBabet",
   "t": "Vennootskapsvisuele voorstelling: DRP BuildLab en BarBabet"
  },
+ "617c03b2aa503f0d": {
+  "en": "Website · Concrete staircases",
+  "t": "Webwerf · Betonstrappe"
+ },
+ "4015579284fc718d": {
+  "en": "Website · Garden maintenance",
+  "t": "Webwerf · Tuinonderhoud"
+ },
+ "5e0979223cdeffa4": {
+  "en": "Concrete staircases",
+  "t": "Betontrappe"
+ },
+ "596a92e152f19191": {
+  "en": "Raf Geerts builds concrete staircases from Westerlo. They do not come from a catalogue: he builds the formwork on site, step by step, between the walls of the house, and strips it once the concrete has set.",
+  "t": "Raf Geerts bou betontrappe vanaf Westerlo. Hulle kom nie uit &#x27;n katalogus nie: hy bou die bekisting op die perseel, tree vir tree, tussen die mure van die huis, en verwyder dit sodra die beton gestol het."
+ },
+ "3e82bec2ef59a7d9": {
+  "en": "His clients are building or renovating, so the site has to explain that craft and turn it into a request for a quote.",
+  "t": "Sy kliënte bou of renovasieer, so die webwerf moet daardie vakmanskap verduidelik en dit omskep in &#x27;n versoek om &#x27;n kwotasie."
+ },
+ "e2bbfea52b5ba883": {
+  "en": "We built a bold, dark site in concrete grey and signal red, with the work in four steps: measure, build the formwork, reinforce, strip. A gallery sorted by type of staircase shows the stairs at every stage, because the formwork is where the craft is.",
+  "t": "Ons het &#x27;n gewaagde, donker webwerf in betongrys en seinrooi opgerig, met die werk in vier stappe: meet, vormwerk bou, versterk, afstrip. &#x27;n Galery, gesorteer volgens trapsoort, wys die trappe in elke fase, want die vormwerk is waar die vakmanskap lê."
+ },
+ "e33c3dfc4a2a3b3d": {
+  "en": "The quote form asks for what Raf needs to price a staircase: the type of stair, the floor-to-floor height and a plan or photo, which clients can upload straight from their phone.",
+  "t": "Die kwotasieformulier vra wat Raf nodig het om &#x27;n trap te prys: die tipe trap, die vloer-tot-vloer-hoogte en &#x27;n plan of foto wat kliënte direk vanaf hul foon kan oplaai."
+ },
+ "c90af30df282cc8d": {
+  "en": "Quote form with plan upload",
+  "t": "Aanhalingsvorm met planoplaai"
+ },
+ "7ed6e9663fb07904": {
+  "en": "Garden maintenance",
+  "t": "Tuinonderhoud"
+ },
+ "3e94ac9a8df99cde": {
+  "en": "TuinZorg DP looks after gardens for homeowners and businesses across East Flanders, from regular mowing and pruning to new lawns, privacy screens and garden edging.",
+  "t": "TuinZorg DP sorg vir tuine vir huiseienaars en besighede regoor Oos-Vlaandere, van gereelde maai en snoei tot nuwe grasperke, privaatheidsskerms en tuinrande."
+ },
+ "48c898d35e9dc705": {
+  "en": "Most jobs start with a question about one garden, so the site has to show real work and make asking for a quote easy.",
+  "t": "Die meeste werke begin met &#x27;n vraag oor een tuin, dus moet die webwerf werklike werk wys en dit maklik maak om &#x27;n kwotasie aan te vra."
+ },
+ "cd0c858d91bdf4d0": {
+  "en": "We designed a fresh, green site that lets the gardens do the talking: every service with its own photo, a gallery of real jobs sorted by type of work, and reviews from clients in the area.",
+  "t": "Ons het &#x27;n vars, groen webwerf ontwerp wat die tuine die praatwerk laat doen: elke diens met sy eie foto, &#x27;n galery van werklike projekte gerangskik volgens werktipe, en resensies van kliënte in die omgewing."
+ },
+ "d1973ad79e055da8": {
+  "en": "The quote form asks for the job, the size of the garden and the timing, and takes photos of the garden, so the first answer can already be a concrete one.",
+  "t": "Die kwotasieformulier vra na die werk, die grootte van die tuin en die tydsberekening, en neem foto&#x27;s van die tuin, sodat die eerste antwoord reeds &#x27;n konkrete een kan wees."
+ },
+ "f99aa0804b395219": {
+  "en": "Quote form with photos",
+  "t": "Aanhaling met foto&#x27;s"
+ },
+ "e79c5ccd810a0664": {
+  "en": "Raf Geerts Betontrappen case study",
+  "t": "Raf Geerts betontrappe gevallestudie"
+ },
+ "17d6dfb46b9258af": {
+  "en": "Raf Geerts Betontrappen homepage on desktop",
+  "t": "Raf Geerts Betontrappen tuisblad op desktop"
+ },
+ "b9230f3e998d3c06": {
+  "en": "Raf Geerts Betontrappen on a phone",
+  "t": "Raf Geerts Betontrappen op 'n foon"
+ },
+ "9357e1fe115538f9": {
+  "en": "TuinZorg DP case study",
+  "t": "TuinZorg DP gevallestudie"
+ },
+ "acca4c77860849f1": {
+  "en": "TuinZorg DP homepage on desktop",
+  "t": "TuinZorg DP tuisblad op desktop"
+ },
+ "3902f26b80b7f95e": {
+  "en": "TuinZorg DP on a phone",
+  "t": "TuinZorg DP op 'n foon"
+ },
+ "db01ef5139dd6d7d": {
+  "en": "The full Raf Geerts Betontrappen homepage on desktop",
+  "t": "Die volledige Raf Geerts Betontrappen-tuisblad op rekenaar"
+ },
+ "fb69ae24940175b0": {
+  "en": "Raf Geerts Betontrappen on a phone, top of the page",
+  "t": "Raf Geerts Betontrappen op 'n foon, bo-aan die bladsy"
+ },
+ "2eac752dade90a67": {
+  "en": "Raf Geerts Betontrappen on a phone, further down the page",
+  "t": "Raf Geerts Betontrappen op 'n foon, verder af op die bladsy"
+ },
+ "3c7026421eae13b7": {
+  "en": "Raf Geerts Betontrappen | Work | DRP BuildLab",
+  "t": "Raf Geerts Betontrappe | Werk | DRP BuildLab"
+ },
+ "cb949705dae511b1": {
+  "en": "A website for Raf Geerts, who casts concrete staircases on site: indoor, outdoor and basement stairs, each one made to fit the house it stands in.",
+  "t": "'n Webwerf vir Raf Geerts, wat betontrappe op die perseel giet: binne-, buite- en keldertrappe, elkeen gemaak om by die huis waarin dit staan te pas."
+ },
+ "6a91021cb2c4f4ee": {
+  "en": "The full TuinZorg DP homepage on desktop",
+  "t": "Die volledige TuinZorg DP-tuisblad op rekenaar"
+ },
+ "391482f62a475fa8": {
+  "en": "TuinZorg DP on a phone, top of the page",
+  "t": "TuinZorg DP op 'n foon, bo-aan die bladsy"
+ },
+ "fad65b9b278f2085": {
+  "en": "TuinZorg DP on a phone, further down the page",
+  "t": "TuinZorg DP op 'n foon, verder af op die bladsy"
+ },
+ "06b11441c32346d2": {
+  "en": "TuinZorg DP | Work | DRP BuildLab",
+  "t": "TuinZorg DP | Werk | DRP BuildLab"
+ },
+ "f6ec3b97adca51e8": {
+  "en": "A website for a garden maintenance business in East Flanders: mowing, pruning, new lawns, privacy screens and neat borders, with a free quote one tap away.",
+  "t": "'n Webwerf vir 'n tuinonderhoudsonderneming in Oos-Vlaandere: maaiwerk, snoeiwerk, nuwe grasperke, privaatheidsskerms en netjiese rande, met 'n gratis kwotasie net een tik weg."
+ },
  "1676180c17b6ddd4": {
   "en": "Blog",
   "t": "Blog"
@@ -2479,85 +2599,17 @@
   "en": "Technical",
   "t": "Tegnies"
  },
- "648ff62341d5334f": {
-  "en": "Morning Routine",
-  "t": "Môre-roetine"
- },
- "0d9011521bacc777": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me.",
-  "t": "Daar is iets stilweg magies aan die eerste uur van die oggend, voordat die e-posse begin instroom en die wêreld jou aandag eis. Ek het die afgelope paar maande geëksperimenteer met hoe ek daardie tyd gebruik, en die resultate het my verras."
- },
- "d5f3abfcee4bd063": {
-  "en": "There are no articles in this language yet.",
-  "t": "Daar is nog geen artikels in hierdie taal nie."
- },
- "015403fb037dd71c": {
-  "en": "DRP BuildLab blog",
-  "t": "DRP BuildLab-blog"
- },
- "ea4d1c278823d2e0": {
-  "en": "Blog | DRP BuildLab",
-  "t": "Blog | DRP BuildLab"
- },
- "3464d4a673d9b34f": {
-  "en": "How we build websites, webshops and automations, the businesses we work with and the creators we team up with.",
-  "t": "Hoe ons webwerwe, webwinkels en outomatiseringsprosesse bou, die besighede waarmee ons saamwerk en die skeppers met wie ons saamspan."
- },
- "8e83778ea6a8491e": {
-  "en": "logo drpbl",
-  "t": "logo drpbl"
- },
- "0dcf98f684e551ce": {
-  "en": "By <span translate=\"no\">Hilmi Billah</span>",
-  "t": "Deur <span translate=\"no\">Hilmi Billah</span>"
- },
- "8f1f2230a89a1bac": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
-  "t": "Daar is iets stilweg magies aan die eerste uur van die oggend, voordat die e-posse begin instroom en die wêreld jou aandag eis. Ek het die afgelope paar maande geëksperimenteer met hoe ek daardie tyd gebruik, en die resultate het my verras. In plaas daarvan om my foon te gryp die oomblik as ek wakker word, het ek begin om &#x27;n stadige pot koffie te brou, &#x27;n notaboek oop te maak en net te skryf wat ook al by my opkom. Sommige dae is dit &#x27;n taaklys; ander dae is dit halfgevormde idees vir projekte wat ek dalk nooit sal begin nie. Maar daardie klein ritueel het &#x27;n anker geword, &#x27;n herinnering dat my dag op my eie voorwaardes kan begin. As jy deesdae verstrooid voel, probeer môreoggend net vyftien minute ongestoorde tyd uithou en kyk wat gebeur."
- },
- "fedbf5d04c2f91ee": {
-  "en": "routine",
-  "t": "roetine"
- },
- "04f1cb5e6ae6bbb6": {
-  "en": "daily",
-  "t": "daagliks"
- },
- "cb7069f979c05962": {
-  "en": "All articles",
-  "t": "Alle artikels"
- },
- "18d9019fb0edc98a": {
-  "en": "Morning Routine | Blog | DRP BuildLab",
-  "t": "Môre-roetine | Blog | DRP BuildLab"
- },
- "504be530d49df541": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me.",
-  "t": "Daar is iets stilweg magies aan die eerste uur van die oggend, voordat die e-posse begin instroom en die wêreld jou aandag eis. Ek het die afgelope paar maande geëksperimenteer met hoe ek daardie tyd gebruik, en die resultate het my verras."
- },
  "2b98e7860dd66317": {
   "en": "Checking out without the hassle: what customers expect in 2026",
   "t": "Afbetaal sonder gedoe: wat kliënte in 2026 verwag"
  },
  "5a422175445cd5d0": {
   "en": "On payment methods, drop-off moments and why the checkout of your webshop matters as much as your shop window. What customers expect in 2026, and how to build a payment flow that does not get in the way.",
-  "t": "Oor betaalmetodes, afleweringsmomente en waarom die betaalproses van jou webwinkel net so belangrik is soos jou winkelvenster. Wat kliënte in 2026 verwag, en hoe om &#x27;n betaalvloei te bou wat nie in die pad staan nie."
+  "t": "Oor betaalmetodes, afleweringsmomente en waarom die betaalproses van jou webwinkel net so belangrik is soos jou winkelvenster. Wat kliënte in 2026 verwag, en hoe om &#x27;n betaalstroom te bou wat nie in die pad staan nie."
  },
- "a9697baaf6e5fd43": {
-  "en": "1 min read",
-  "t": "1 minuut se leesstof"
- },
- "f04a64ec720335fe": {
-  "en": "Need help with your online presence?",
-  "t": "Het jy hulp nodig met jou aanlyn-teenwoordigheid?"
- },
- "e6d047a059ca10de": {
-  "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
-  "t": "Van webwerf tot aanlynwinkel: ons help jou om &#x27;n storie te vertel wat waar is en wat mense graag lees."
- },
- "27be6e8258c229a5": {
-  "en": "morning",
-  "t": "oggend"
+ "d5f3abfcee4bd063": {
+  "en": "There are no articles in this language yet.",
+  "t": "Daar is nog geen artikels in hierdie taal nie."
  },
  "f6af7ad52205a96c": {
   "en": "Like",
@@ -2566,6 +2618,14 @@
  "5c58cd85018e00c7": {
   "en": "Share",
   "t": "Deel"
+ },
+ "f04a64ec720335fe": {
+  "en": "Need help with your online presence?",
+  "t": "Het jy hulp nodig met jou aanlyn-teenwoordigheid?"
+ },
+ "e6d047a059ca10de": {
+  "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
+  "t": "Van webwerf tot aanlynwinkel: ons help jou om &#x27;n storie te vertel wat waar is en wat mense graag lees."
  },
  "dbcd9b51e0f4d64c": {
   "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
@@ -2609,11 +2669,27 @@
  },
  "f01c5f797d2d6165": {
   "en": "You are commenting a little fast. Please try again in a few minutes.",
-  "t": "Jy kommentarieer &#x27;n bietjie te vinnig. Probeer asseblief oor &#x27;n paar minute weer."
+  "t": "Jy kommentaar lewer &#x27;n bietjie te vinnig. Probeer asseblief oor &#x27;n paar minute weer."
  },
  "00a3a80458bb81a5": {
   "en": "Sending failed. Please try again later.",
   "t": "Stuur het misluk. Probeer asseblief later weer."
+ },
+ "cb7069f979c05962": {
+  "en": "All articles",
+  "t": "Alle artikels"
+ },
+ "015403fb037dd71c": {
+  "en": "DRP BuildLab blog",
+  "t": "DRP BuildLab-blog"
+ },
+ "ea4d1c278823d2e0": {
+  "en": "Blog | DRP BuildLab",
+  "t": "Blog | DRP BuildLab"
+ },
+ "3464d4a673d9b34f": {
+  "en": "How we build websites, webshops and automations, the businesses we work with and the creators we team up with.",
+  "t": "Hoe ons webwerwe, webwinkels en outomatiseringsprosesse bou, die besighede waarmee ons saamwerk en die skeppers met wie ons saamspan."
  },
  "9c6152e6ce9a6889": {
   "en": "Reactions",
@@ -2657,7 +2733,7 @@
  },
  "86ccd2822fbe3ae5": {
   "en": "Jef fills his basket, taps checkout and is then faced with a form of twelve fields and one payment method he never uses. He closes the tab. You have lost him in the very last metre.",
-  "t": "Jef vul sy mandjie, tik afreken en word dan gekonfronteer met &#x27;n vorm van twaalf velde en &#x27;n betaalmetode wat hy nooit gebruik nie. Hy sluit die oortjie. Jy het hom in die heel laaste meter verloor."
+  "t": "Jef vul sy mandjie, tik afreken en word toe gekonfronteer met &#x27;n vorm van twaalf velde en &#x27;n betaalmetode wat hy nooit gebruik nie. Hy maak die oortjie toe. Jy het hom in die heel laaste meter verloor."
  },
  "c20f5ca22f7aff95": {
   "en": "That is the nasty thing about selling online: the hardest work, convincing the customer, is done, and then the checkout throws it away.",
@@ -2673,11 +2749,11 @@
  },
  "ab2dc0d372e90af4": {
   "en": "Almost every webshop knows the same five reasons why a customer stops halfway:",
-  "t": "Byna elke aanlynwinkel ken dieselfde vyf redes waarom &#x27;n kliënt halverwege stilstaan:"
+  "t": "Byna elke aanlynwinkel ken dieselfde vyf redes waarom &#x27;n kliënt halverwege ophou:"
  },
  "f445b5c1df111791": {
   "en": "<strong>Surprise costs.</strong> Shipping or extras that only appear in the last step.",
-  "t": "<strong>Verrasende koste.</strong> Versendingskoste of ekstra&#x27;s wat eers in die laaste stap verskyn."
+  "t": "<strong>Verrasende koste.</strong> Versendingskoste of bykomende koste wat eers in die laaste stap verskyn."
  },
  "d544a11053e2daf4": {
   "en": "<strong>A mandatory account.</strong> Someone who wants to buy something does not want a new relationship.",
@@ -2717,7 +2793,7 @@
  },
  "6ce1fe4346224566": {
   "en": "<strong>A clear way out when something goes wrong.</strong> An email address or a button, not a maze.",
-  "t": "<strong>&#x27;n Duidelike uitweg wanneer iets verkeerd gaan.</strong> &#x27;n E-posadres of &#x27;n knoppie, nie &#x27;n doolhof nie."
+  "t": "<strong>&#x27;n Duidelike uitweg wanneer iets verkeerd loop.</strong> &#x27;n E-posadres of &#x27;n knoppie, nie &#x27;n doolhof nie."
  },
  "87060c3377e07a6c": {
   "en": "Why payment integration is more than a button",
@@ -2757,11 +2833,11 @@
  },
  "5ac12ddc6bb1c2e8": {
   "en": "When a customer pays, a lot happens that they never see. The payment provider confirms the payment with a signal to your website. Your website checks that signal and updates the order. The rest follows: the email, the invoice, the stock.",
-  "t": "Wanneer &#x27;n kliënt betaal, gebeur daar baie dinge wat hulle nooit sien nie. Die betalingsverskaffer bevestig die betaling met &#x27;n sein aan jou webwerf. Jou webwerf kontroleer daardie sein en werk die bestelling by. Die res volg: die e-pos, die faktuur, die voorraad."
+  "t": "Wanneer &#x27;n kliënt betaal, gebeur daar baie dinge wat hulle nooit sien nie. Die betaalverskaffer bevestig die betaling met &#x27;n sein aan jou webwerf. Jou webwerf kontroleer daardie sein en werk die bestelling by. Die res volg: die e-pos, die faktuur, die voorraad."
  },
  "c2353491e552baa0": {
   "en": "If that signal does not arrive, or arrives twice, you end up with empty orders or duplicate invoices. That is why we build this with checks at every step and with retries for when something fails.",
-  "t": "As daardie sein nie aankom nie, of twee keer aankom, beland jy met leë bestellings of dubbel fakture. Daarom bou ons dit met kontroles by elke stap en met herproewe wanneer iets misluk."
+  "t": "As daardie sein nie aankom nie, of twee keer aankom, beland jy met leë bestellings of dubbel gefaktureerde fakture. Daarom bou ons dit met kontroles by elke stap en met herproewe wanneer iets misluk."
  },
  "c4ccc67b1c2b2aa5": {
   "en": "Refunds and disputes",
@@ -2769,7 +2845,7 @@
  },
  "b7c0d4643a13b44f": {
   "en": "A refund should be a small action, not a project. Keep your records in good order: who, what and when. When a customer disputes a payment, a tidy administration is what wins it.",
-  "t": "&#x27;n Terugbetaling behoort &#x27;n klein handeling te wees, nie &#x27;n projek nie. Hou jou rekords in goeie orde: wie, wat en wanneer. Wanneer &#x27;n kliënt &#x27;n betaling betwis, is &#x27;n netjiese administrasie wat die saak besleg."
+  "t": "&#x27;n Terugbetaling behoort &#x27;n klein handeling te wees, nie &#x27;n projek nie. Hou jou rekords in goeie orde: wie, wat en wanneer. Wanneer &#x27;n kliënt &#x27;n betaling betwis, is &#x27;n netjiese administrasie wat dit besleg."
  },
  "5f2775f081cf14ae": {
   "en": "Paying safely",
@@ -2777,7 +2853,7 @@
  },
  "55b9b3b5edcb0b61": {
   "en": "<strong>Strong customer authentication.</strong> In the EU it is required for most online card payments (the PSD2 rules). Choose a provider that handles it.",
-  "t": "<strong>Sterk kliëntoutentisering.</strong> In die EU word dit vereis vir die meeste aanlynkaartbetalings (die PSD2-reëls). Kies &#x27;n verskaffer wat dit hanteer."
+  "t": "<strong>Sterk kliënt-outentikasie.</strong> In die EU word dit vereis vir die meeste aanlynkaartbetalings (die PSD2-reëls). Kies &#x27;n verskaffer wat dit hanteer."
  },
  "02943b04dde59301": {
   "en": "<strong>Do not store card details yourself.</strong> Leave that to the provider.",
@@ -2793,7 +2869,7 @@
  },
  "87fae33056b2e9ad": {
   "en": "The payment world is shifting",
-  "t": "Die betaalwêreld verander"
+  "t": "Die betaalwêreld verander."
  },
  "8a47454ed9c40576": {
   "en": "Payment methods change faster than websites. Europe is working on its own options, such as Wero, which are meant to replace existing apps and systems over time. The details and dates keep moving, so check what your payment provider supports now and later. Ideally, choose one that adds new methods quickly.",
@@ -2817,7 +2893,7 @@
  },
  "0734358a31151555": {
   "en": "Do they get a confirmation by email straight away?",
-  "t": "Ontvang hulle onmiddellik &#x27;n bevestiging per e-pos?"
+  "t": "Kry hulle dadelik &#x27;n bevestiging per e-pos?"
  },
  "c0235f4beb1f51cf": {
   "en": "Can you refund an amount in one click?",
@@ -2873,10 +2949,2102 @@
  },
  "6b1a2fa18752447e": {
   "en": "Checking out without the hassle: what customers expect in 2026 | Blog | DRP BuildLab",
-  "t": "Afbetaal sonder gedoe: wat kliënte in 2026 verwag | Blog | DRP BuildLab"
+  "t": "Betaling sonder rompslomp: wat kliënte in 2026 verwag | Blog | DRP BuildLab"
  },
  "cb4f85d99edd1f29": {
   "en": "On payment methods, drop-off moments and why the checkout of your webshop matters as much as your shop window. What customers expect in 2026, and how to build a payment flow that does not get in the way.",
-  "t": "Oor betaalmetodes, afleweringsmomente en waarom die betaalproses van jou webwinkel net so belangrik is soos jou winkelvenster. Wat kliënte in 2026 verwag, en hoe om 'n betaalvloei te bou wat nie in die pad staan nie."
+  "t": "Oor betaalmetodes, afleweringsmomente en waarom die betaalproses van jou aanlynwinkel net so belangrik is soos jou winkelvenster. Wat kliënte in 2026 verwag, en hoe om 'n betaalvloei te bou wat nie in die pad staan nie."
+ },
+ "60f80f4fce33ff8b": {
+  "en": "Why we don't start at nine o'clock",
+  "t": "Waarom ons nie om nege-uur begin nie"
+ },
+ "9eb09ab8ebb27777": {
+  "en": "On working when you are sharp, and why at our place the clock mostly ticks for the client. How we agree on results instead of hours, what can go wrong, and how to start yourself.",
+  "t": "Oor werk wanneer jy skerp is, en waarom by ons die klok meestal vir die kliënt tik. Hoe ons ooreengekom oor resultate in plaas van ure, wat verkeerd kan gaan, en hoe om self te begin."
+ },
+ "130eea0d85449f7e": {
+  "en": "5 min read",
+  "t": "5 minute leestyd"
+ },
+ "c6315d22d1a6ade5": {
+  "en": "At nine in the morning, most people are sitting at their screens. Some are awake. Others are reading the same sentence in an email for the third time. Everyone is at work. Not everyone is working.",
+  "t": "Om nege in die oggend sit die meeste mense voor hul skerms. Sommige is wakker. Ander lees dieselfde sin in &#x27;n e-pos vir die derde keer. Almal is by die werk. Nie almal werk nie."
+ },
+ "1288e0f9c1e60c76": {
+  "en": "We think that is a strange trade. You pay someone to be present, while what you actually want is results. It is like paying a baker per hour he stands in the shop, and then being surprised the bread doesn't get any better.",
+  "t": "Ons dink dit is &#x27;n vreemde ruil. Jy betaal iemand om teenwoordig te wees, terwyl jy eintlik resultate wil hê. Dit is soos om &#x27;n bakker per uur te betaal wat in die winkel staan, en dan verras te wees dat die brood nie beter word nie."
+ },
+ "6166713ca9f95f01": {
+  "en": "That is why at DRP BuildLab we work with a simple idea: the work counts, not the clock.",
+  "t": "Daarom werk ons by DRP BuildLab met &#x27;n eenvoudige idee: die werk tel, nie die klok nie."
+ },
+ "f2e8ca7e96ff4e40": {
+  "en": "Presence is not performance. Finished work is.",
+  "t": "Aanwesigheid is nie prestasie nie. Voltooide werk is."
+ },
+ "67d5752b55e758c9": {
+  "en": "Where the idea comes from",
+  "t": "Waar die idee vandaan kom"
+ },
+ "2dcec8ecfb0f4f48": {
+  "en": "Knowledge work is strange work. A good idea doesn't fit in a nine-to-five box, and a bad day can't be fixed by sitting there longer. People also really differ in when they are sharp: one is up at six in the morning, the other only gets going after dinner. That is not laziness. That is simply how people are wired.",
+  "t": "Kenniswerk is vreemde werk. &#x27;n Goeie idee pas nie in &#x27;n nege-tot-vyf-boks nie, en &#x27;n slegte dag kan nie reggemaak word deur langer daar te sit nie. Mense verskil ook regtig in wanneer hulle skerp is: een is al om ses in die oggend op, die ander kom eers ná aandete op dreef. Dit is nie luiheid nie. Dit is net hoe mense inmekaargesit is."
+ },
+ "df7782bb430bd679": {
+  "en": "Most companies know that, and still put everyone on the same schedule. Out of habit, out of convenience, and because a schedule is easier to check than a result. We choose the harder option: checking the result.",
+  "t": "Die meeste maatskappye weet dit, en sit steeds almal op dieselfde skedule. Uit gewoonte, uit gerief, en omdat &#x27;n skedule makliker is om te kontroleer as &#x27;n resultaat. Ons kies die moeiliker opsie: om die resultaat te kontroleer."
+ },
+ "c0c49bb83b8dc815": {
+  "en": "What it looks like in practice",
+  "t": "Hoe dit in die praktyk lyk"
+ },
+ "2ef1ecda7ca6a8d9": {
+  "en": "Take Jonas, a made-up developer with a very real problem: at half past eight in the morning he is about as sharp as a chair. At ten at night he solves in twenty minutes a bug he stared at for half a day.",
+  "t": "Neem Jonas, &#x27;n denkbeeldige ontwikkelaar met &#x27;n baie werklike probleem: om half nege in die oggend is hy so skerp soos &#x27;n stoel. Om tien in die aand los hy in twintig minute &#x27;n fout op waarna hy &#x27;n halwe dag lank gestaar het."
+ },
+ "ccb5e5c01980273e": {
+  "en": "His colleague Sanne (also made up, also recognisable) is the opposite. She is awake at six, three tasks in by eight and done by two. Then she goes to play padel, where, in her own words, she gets the best ideas of the week. Mostly against a wall.",
+  "t": "Sy kollega Sanne (ook opgemaak, ook herkenbaar) is die teenoorgestelde. Sy is om ses wakker, het teen agt al drie take ingedien en is teen twee klaar. Dan gaan sy padel speel, waar sy, in haar eie woorde, die beste idees van die week kry. Meestal teen &#x27;n muur."
+ },
+ "83ee5d105965d650": {
+  "en": "A time clock forces the two to work together in the middle: both half-hearted, both from nine o'clock. We let them work when they are good, and we ask one thing: that it is finished, that it is right, and that the client knows where they stand.",
+  "t": "&#x27;n klok dwing die twee om saam in die middel te werk: albei halfhartig, albei vanaf nege-uur. Ons laat hulle werk wanneer hulle goed is, en ons vra net een ding: dat dit klaar is, dat dit reg is, en dat die kliënt weet waar hy staan."
+ },
+ "3afe2249967d3c84": {
+  "en": "Sounds soft? It is actually stricter than a time clock. A time clock asks you to be there. We ask that it is done. For the client, one thing changes as a result: they get a fixed response time and a delivery date that is met, instead of office hours.",
+  "t": "Klink dit sag? Dit is eintlik strenger as &#x27;n klok. &#x27;n Klok vra dat jy daar is. Ons vra dat dit gedoen word. Vir die kliënt verander een ding as gevolg hiervan: hulle kry &#x27;n vaste reaksietyd en &#x27;n afleweringsdatum wat nagekom word, in plaas van kantoorure."
+ },
+ "efd3b178a301d54b": {
+  "en": "How we make agreements",
+  "t": "Hoe ons ooreenkomste maak"
+ },
+ "908a820c3ef9a7e0": {
+  "en": "Freedom starts with clarity. For every piece of work we answer three questions in advance:",
+  "t": "Vryheid begin met duidelikheid. Vir elke stuk werk beantwoord ons drie vrae vooraf:"
+ },
+ "6b7bece09761290b": {
+  "en": "<strong>What is done?</strong> We describe the result in one sentence, so nobody can say later that they understood it differently.",
+  "t": "<strong>Wat word gedoen?</strong> Ons beskryf die resultaat in een sin, sodat niemand later kan sê dat hulle dit anders verstaan het nie."
+ },
+ "a358429d954acbf2": {
+  "en": "<strong>When?</strong> A date, not 'soon'.",
+  "t": "<strong>Wanneer?</strong> &#x27;n Datum, nie &#x27;binnekort&#x27; nie."
+ },
+ "72e38ae668c5e99f": {
+  "en": "<strong>Who decides?</strong> One owner, who knows when they may ask for help.",
+  "t": "<strong>Wie besluit?</strong> Een eienaar wat weet wanneer hy om hulp kan vra."
+ },
+ "adf208d9f3b7453b": {
+  "en": "After that it is up to the owner. When they work is their business. What they deliver is not.",
+  "t": "Daarna is dit aan die eienaar. Wanneer hulle werk, is hul saak. Wat hulle lewer, is nie hul saak nie."
+ },
+ "ff5f672b7f1c3bd2": {
+  "en": "What it can deliver",
+  "t": "Wat dit kan lewer"
+ },
+ "69c70038110779d0": {
+  "en": "<strong>Sharper work.</strong> You do the hard work when you are ready for it, not when the calendar says so.",
+  "t": "<strong>Skerper werk.</strong> Jy doen die moeilike werk wanneer jy daarvoor gereed is, nie wanneer die kalender dit sê nie."
+ },
+ "97491db715b34d7d": {
+  "en": "<strong>Less drudgery.</strong> No sitting out hours on a day when nothing comes out of your hands. We all know the day of three coffees and one line of code.",
+  "t": "<strong>Minder eentonige,</strong> vervelende <strong>werk.</strong> Geen ure sit en wag op &#x27;n dag wanneer niks uit jou hande kom nie. Ons ken almal die dag van drie koppies koffie en een reël kode."
+ },
+ "fd6e7938e8f17e45": {
+  "en": "<strong>Fairer agreements.</strong> You measure the work, not the chair.",
+  "t": "<strong>Regverdiger ooreenkomste.</strong> Jy meet die werk, nie die stoel nie."
+ },
+ "9155620b018306ff": {
+  "en": "<strong>More responsibility.</strong> People who are given freedom usually handle it more carefully.",
+  "t": "<strong>Meer verantwoordelikheid.</strong> Mense aan wie vryheid gegee word, hanteer dit gewoonlik meer versigtig."
+ },
+ "c6821b60525455ae": {
+  "en": "<strong>A wider choice of people.</strong> Talent doesn't only live within thirty kilometres and a 9-to-5 rhythm.",
+  "t": "<strong>&#x27;n wyer keuse mense.</strong> Talente woon nie net binne dertig kilometer en &#x27;n nege-tot-vyf-ritme nie."
+ },
+ "caef9c73a5f84195": {
+  "en": "Where it goes wrong, and how to prevent it",
+  "t": "Waar dit verkeerd loop, en hoe om dit te voorkom"
+ },
+ "8a36da7500f3d229": {
+  "en": "Freedom without agreements is called chaos. A liberal work schedule only works if the edges are sharp. These are the rules of thumb:",
+  "t": "Vryheid sonder ooreenkomste word chaos genoem. &#x27;n Vrye werkskedule werk net as die rande skerp is. Dit is die vuistregels:"
+ },
+ "ca9edeb587ab1a82": {
+  "en": "<strong>One owner per task.</strong> Everyone knows who signs for what.",
+  "t": "<strong>Een eienaar per taak.</strong> Almal weet wie vir wat verantwoordelik is."
+ },
+ "a085349f90653cb8": {
+  "en": "<strong>A short fixed check-in.</strong> So nobody sits guessing alone.",
+  "t": "<strong>&#x27;n Kort vaste incheck.</strong> Sodoende hoef niemand alleen te raai nie."
+ },
+ "e9357143f9c6c011": {
+  "en": "<strong>An agreed response time for clients.</strong> Even if you work late yourself. A response time is not a reply at two in the morning.",
+  "t": "<strong>&#x27;n Ooreengekome reaksietyd vir kliënte.</strong> Selfs al werk jy self laat. &#x27;n Reaksietyd is nie &#x27;n antwoord om twee in die oggend nie."
+ },
+ "5824e8d9d241091c": {
+  "en": "<strong>A tidy handover.</strong> What is done, what is open, what the next person needs.",
+  "t": "<strong>&#x27;n netjiese oorhandiging.</strong> Wat gedoen is, wat nog oop is, wat die volgende persoon nodig het."
+ },
+ "a851974bf70e172b": {
+  "en": "<strong>Trust is a credit.</strong> Whoever doesn't keep agreements gets less freedom, until it works again.",
+  "t": "<strong>Vertroue is &#x27;n krediet.</strong> Wie nie ooreenkomste nakom nie, kry minder vryheid totdat dit weer werk."
+ },
+ "282681fc99e1408c": {
+  "en": "There are also moments when fixed hours do work better: the first weeks of a new colleague, a crisis at a client, a day full of appointments. Then we simply work at the same time, and let nobody guess.",
+  "t": "Daar is ook oomblikke wanneer vaste ure beter werk: die eerste weke van &#x27;n nuwe kollega, &#x27;n krisis by &#x27;n kliënt, &#x27;n dag vol afsprake. Dan werk ons eenvoudig op dieselfde tyd en laat niemand raai nie."
+ },
+ "8c65d0afbc2b1623": {
+  "en": "Questions we always get",
+  "t": "Vrae wat ons altyd kry"
+ },
+ "622bb9c8906ac8aa": {
+  "en": "<strong>But how do you know they are really working?</strong> By what they deliver. A warm chair proves nothing.",
+  "t": "<strong>Maar hoe weet jy dat hulle regtig werk?</strong> Aan wat hulle lewer. &#x27;n Warm stoel bewys niks."
+ },
+ "c61b463bc7c00a51": {
+  "en": "<strong>How do you measure performance then?</strong> By delivered work, quality and the client's reaction. Not by the number of hours in a system.",
+  "t": "<strong>Hoe meet jy dan prestasie?</strong> Deur gelewerde werk, kwaliteit en die kliënt se reaksie. Nie deur die aantal ure in &#x27;n stelsel nie."
+ },
+ "e7ef873d91c720f9": {
+  "en": "<strong>And meetings?</strong> As few as possible, and always with an agenda. Whoever invites without an agenda buys the coffee.",
+  "t": "<strong>En vergaderings?</strong> Soveel as moontlik min, en altyd met &#x27;n agenda. Wie sonder &#x27;n agenda uitnooi, koop die koffie."
+ },
+ "d34661e92fc81e52": {
+  "en": "<strong>What if someone abuses it?</strong> Then you see it quickly, because the agreements are visible. Then we talk, and the freedom adjusts.",
+  "t": "<strong>Wat as iemand dit misbruik?</strong> Dan sien jy dit gou, want die ooreenkomste is sigbaar. Dan praat ons, en pas die vryheid aan."
+ },
+ "f53657ea4c74e383": {
+  "en": "<strong>Does it suit everyone?</strong> No. For some tasks and some people fixed hours work better. That is why it is an agreement and not a dogma.",
+  "t": "<strong>Pas dit by almal?</strong> Nee. Vir sommige take en sommige mense werk vaste ure beter. Daarom is dit &#x27;n ooreenkoms en nie &#x27;n dogma nie."
+ },
+ "268028fadc6bc2dc": {
+  "en": "How to start yourself",
+  "t": "Hoe om jouself te begin"
+ },
+ "c3677994a474b8f0": {
+  "en": "<strong>Start small.</strong> One team or one type of task, not the whole company at once.",
+  "t": "<strong>Begin klein.</strong> Een span of een tipe taak, nie die hele maatskappy op een slag nie."
+ },
+ "3f108584ccc51126": {
+  "en": "<strong>Agree a core overlap.</strong> For example two hours a day when everyone is reachable.",
+  "t": "<strong>Ooreenkom oor &#x27;n kernoorvleueling.</strong> Byvoorbeeld twee uur per dag wanneer almal bereikbaar is."
+ },
+ "8cb03c1b6eb9d15b": {
+  "en": "<strong>Write down what 'done' means,</strong> per task.",
+  "t": "<strong>Skryf neer wat &#x27;klaar&#x27;</strong> per taak <strong>beteken</strong>."
+ },
+ "7f1da070620ff902": {
+  "en": "<strong>Make the handover visible.</strong> A shared board or document where everyone can see what is running.",
+  "t": "<strong>Maak die oorhandiging sigbaar.</strong> &#x27;n Gedeelde bord of dokument waar almal kan sien wat aan die gang is."
+ },
+ "797a568bd9f27493": {
+  "en": "<strong>Evaluate after four weeks.</strong> What went well, where did something get stuck?",
+  "t": "<strong>Evalueer na vier weke.</strong> Wat het goed gegaan, waar het iets vasgeloop?"
+ },
+ "68c5d063796e1fba": {
+  "en": "<strong>Adjust.</strong> A rule that doesn't work may change.",
+  "t": "<strong>Pas aan.</strong> &#x27;n Reël wat nie werk nie, kan verander."
+ },
+ "7a27df5fa57cb0f1": {
+  "en": "And yes, we also answer emails at nine in the morning. If we are awake by then.",
+  "t": "En ja, ons beantwoord ook e-posse om nege in die oggend. As ons teen daardie tyd wakker is."
+ },
+ "2b5cc281d516e73a": {
+  "en": "Jonas and Sanne don't exist. Their working rhythm does.",
+  "t": "Jonas en Sanne bestaan nie. Hul werkritme wel."
+ },
+ "52537e8150d972a0": {
+  "en": "Fancy doing it this way?",
+  "t": "Wil jy dit op hierdie manier doen?"
+ },
+ "c2e02a43dd97a026": {
+  "en": "Do you want to work with us, or are you considering trying this in your own company? Talk to us, we are happy to explain how we approach it.",
+  "t": "Wil jy saam met ons werk, of oorweeg jy om dit in jou eie maatskappy te probeer? Praat met ons, ons verduidelik graag hoe ons dit benader."
+ },
+ "4ee302780cdb7981": {
+  "en": "OpenAI Playground 2026 11 06 at 11.52.31",
+  "t": "OpenAI-speelgrond 2026 11 06 om 11.52.31"
+ },
+ "70a42747ffd34b74": {
+  "en": "Why we don't start at nine o'clock | Blog | DRP BuildLab",
+  "t": "Waarom ons nie om nege-uur begin nie | Blog | DRP BuildLab"
+ },
+ "4819ba9333e5ddcc": {
+  "en": "On working when you are sharp, and why at our place the clock mostly ticks for the client. How we agree on results instead of hours, what can go wrong, and how to start yourself.",
+  "t": "Oor werk wanneer jy skerp is, en waarom by ons die klok meestal vir die kliënt tik. Hoe ons oor resultate in plaas van ure ooreengekom, wat verkeerd kan gaan, en hoe jy self kan begin."
+ },
+ "673dca72d248d622": {
+  "en": "Almost done. We have sent you an email: click the link in it to confirm your subscription.",
+  "t": "Byna klaar. Ons het jou &#x27;n e-pos gestuur: klik op die skakel daarin om jou intekening te bevestig."
+ },
+ "22fb9ed7e0e7b791": {
+  "en": "Subscribing did not work. Please try again in a moment.",
+  "t": "Die intekening het nie gewerk nie. Probeer asseblief oor &#x27;n oomblik weer."
+ },
+ "6aca1eba60a1a1fb": {
+  "en": "Get our new articles <em>by email</em>",
+  "t": "Ontvang ons nuwe artikels <em>per e-pos</em>"
+ },
+ "45711858dfc63351": {
+  "en": "One email whenever we publish a new article. No spam, and you can unsubscribe at any time.",
+  "t": "Een e-pos elke keer as ons &#x27;n nuwe artikel publiseer. Geen rommelpos nie, en jy kan te eniger tyd afmeld."
+ },
+ "0da9f02d9c1ed311": {
+  "en": "Your email address",
+  "t": "Jou e-posadres"
+ },
+ "e51ca203ca4f00c3": {
+  "en": "Subscribe to the blog",
+  "t": "Teken in op die blog"
+ },
+ "00e1df239ae9897a": {
+  "en": "Newsletter",
+  "t": "Nuusbrief"
+ },
+ "31f37182527f93bd": {
+  "en": "Confirm my subscription <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bevestig my intekening <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "650c8873464704c9": {
+  "en": "One moment, we are confirming your subscription.",
+  "t": "Een oomblik, ons bevestig jou intekening."
+ },
+ "3c52eaf9e800d705": {
+  "en": "You are subscribed. We will email you when we publish a new article.",
+  "t": "Jy is ingeteken. Ons sal jou per e-pos inlig wanneer ons &#x27;n nuwe artikel publiseer."
+ },
+ "cc117ff1647fb0d8": {
+  "en": "This confirmation link has expired. Subscribe again on the blog and we will send you a new link.",
+  "t": "Hierdie bevestigingskakel het verval. Teken weer in op die blog en ons stuur vir jou &#x27;n nuwe skakel."
+ },
+ "0bf684b0f53de7c6": {
+  "en": "This confirmation link is not valid. Use the link from the email we sent you, or subscribe again on the blog.",
+  "t": "Hierdie bevestigingskakel is nie geldig nie. Gebruik die skakel uit die e-pos wat ons vir jou gestuur het, of teken weer in op die blog."
+ },
+ "2ba72a0403d12bfb": {
+  "en": "Something went wrong while confirming your subscription. Please try again in a moment.",
+  "t": "Iets het verkeerd geloop terwyl jou intekening bevestig is. Probeer asseblief oor &#x27;n oomblik weer."
+ },
+ "017d59261d11b963": {
+  "en": "Back to the blog",
+  "t": "Terug na die blog"
+ },
+ "8478e3715efe7def": {
+  "en": "Please confirm your subscription to the DRP BuildLab blog",
+  "t": "Bevestig asseblief jou intekening op die DRP BuildLab-blog."
+ },
+ "2a216a9187bb6aa9": {
+  "en": "Confirm your subscription",
+  "t": "Bevestig jou intekening"
+ },
+ "5ae791b09a8256c0": {
+  "en": "You asked to receive new articles from the DRP BuildLab blog by email. Click the button below to confirm your email address.",
+  "t": "U het versoek om nuwe artikels van die DRP BuildLab-blog per e-pos te ontvang. Klik op die knoppie hieronder om u e-posadres te bevestig."
+ },
+ "7c39279ff9d2a16d": {
+  "en": "Confirm my subscription",
+  "t": "Bevestig my intekening"
+ },
+ "049d0210bae380bf": {
+  "en": "This link is valid for 7 days.",
+  "t": "Hierdie skakel is geldig vir 7 dae."
+ },
+ "df3612aecdb4be16": {
+  "en": "Did you not ask for this? Then you can ignore this email. We will not send you anything else.",
+  "t": "Het jy nie hiervoor gevra nie? Dan kan jy hierdie e-pos ignoreer. Ons sal jou niks anders stuur nie."
+ },
+ "45e67976d33e8f88": {
+  "en": "New on the DRP BuildLab blog",
+  "t": "Nuut op die DRP BuildLab-blog"
+ },
+ "8789b1afbd46bdce": {
+  "en": "Read the full article",
+  "t": "Lees die volledige artikel"
+ },
+ "e2298f2e9de01c3b": {
+  "en": "You receive this email because you subscribed to the DRP BuildLab blog.",
+  "t": "Jy ontvang hierdie e-pos omdat jy jou ingeskryf het vir die DRP BuildLab-blog."
+ },
+ "295eccb47390a4cd": {
+  "en": "Unsubscribe from these emails",
+  "t": "Ontsê vir hierdie e-posse"
+ },
+ "3f85b2cd26f9675a": {
+  "en": "Confirm that you want to receive new articles from the DRP BuildLab blog by email.",
+  "t": "Bevestig dat jy nuwe artikels van die DRP BuildLab-blog per e-pos wil ontvang."
+ },
+ "579dddcaf51b8d21": {
+  "en": "Is your visitor talking to a human? Say so honestly.",
+  "t": "Praat jou besoeker met &#x27;n mens? Sê dit eerlik."
+ },
+ "9d8fd4837be12999": {
+  "en": "Why a chatbot on your website should play with open cards, and how to do that without it getting awkward. What the rules say, how to test your bot and which questions to ask your supplier.",
+  "t": "Waarom &#x27;n chatbot op jou webwerf met oop kaarte moet speel, en hoe om dit te doen sonder dat dit ongemaklik raak. Wat die reëls sê, hoe om jou bot te toets en watter vrae jy aan jou verskaffer moet stel."
+ },
+ "335a0776c61c97ab": {
+  "en": "A visitor types: 'Hi Sarah, can I still order today?' Sarah answers within a second, friendly and flawless. Too flawless. Sarah turns out to be a script. And the visitor doesn't feel helped, but deceived.",
+  "t": "&#x27;n besoeker tik: &quot;Hi Sarah, kan ek vandag nog bestel?&quot; Sarah antwoord binne &#x27;n sekonde, vriendelik en foutloos. Te foutloos. Sarah blyk &#x27;n skrip te wees. En die besoeker voel nie gehelp nie, maar mislei."
+ },
+ "82ca628fb4b900c8": {
+  "en": "Chatbots have become much better in recent years. That makes the temptation big to give them a human name, a profile photo and a friendly little sigh. Bad idea.",
+  "t": "Chatbots het in die afgelope jare baie beter geword. Dit maak die versoeking groot om hulle &#x27;n menslike naam, &#x27;n profielfoto en &#x27;n vriendelike klein sug te gee. Slegte idee."
+ },
+ "825fe4c3007bbc4b": {
+  "en": "A bot that pretends to be human wins a conversation and loses a customer.",
+  "t": "&#x27;n bot wat voorgee om mens te wees, wen &#x27;n gesprek en verloor &#x27;n kliënt."
+ },
+ "927170ca75216705": {
+  "en": "What the rules say",
+  "t": "Wat die reëls sê"
+ },
+ "c5c1493d1ce06e1b": {
+  "en": "In essence, the European AI Act requires that people know they are talking to an AI, unless that is obvious. The exact dates and exceptions are still being adjusted and your situation may differ, so check them with your legal adviser or the authorities. One thing doesn't change: being honest costs nothing.",
+  "t": "In wese vereis die Europese KI-wet dat mense weet dat hulle met &#x27;n KI praat, tensy dit voor die hand liggend is. Die presiese datums en uitsonderings word nog aangepas en jou situasie kan verskil, so kontroleer dit by jou regsadviseur of die owerhede. Een ding bly dieselfde: eerlik wees kos niks."
+ },
+ "4c42bb5a92e7c8fa": {
+  "en": "Why honesty is also good sales",
+  "t": "Waarom eerlikheid ook goeie verkope is"
+ },
+ "b0308d650c8bbc71": {
+  "en": "Honesty is not only an obligation. Visitors who know they are talking to a bot expect less of it and are therefore less easily disappointed. Visitors who discover they have been misled tell others.",
+  "t": "Eerlikheid is nie net &#x27;n verpligting nie. Besoekers wat weet dat hulle met &#x27;n bot praat, verwag minder daarvan en is daarom minder gou teleurgesteld. Besoekers wat agterkom dat hulle mislei is, vertel dit aan ander."
+ },
+ "f6a21347c6361d26": {
+  "en": "A bot that knows its limits also comes across as more reliable than a bot that has an answer for everything. 'I don't know that, I'll connect you with a colleague' is sometimes the best sentence it can say.",
+  "t": "&#x27;n Bot wat sy perke ken, kom ook meer betroubaar oor as &#x27;n bot wat vir alles &#x27;n antwoord het. &#x27;Ek weet dit nie, ek sal jou met &#x27;n kollega in kontak bring&#x27; is soms die beste sin wat dit kan sê."
+ },
+ "d13879894791e003": {
+  "en": "Don't, do",
+  "t": "Moenie, doen"
+ },
+ "9e233dd3968cf1ac": {
+  "en": "Don't",
+  "t": "Moenie"
+ },
+ "db907b2dd303595d": {
+  "en": "'Hi, I'm Sarah!'",
+  "t": "Hallo, ek is Sarah!"
+ },
+ "4c92bd2b6a577881": {
+  "en": "'I think you'll definitely get twenty percent off.'",
+  "t": "Ek dink jy sal beslis twintig persent afslag kry."
+ },
+ "41aaa7968cf76cf1": {
+  "en": "'I'll always help you, until the end of time.'",
+  "t": "Ek sal jou altyd help, tot die einde van tyd."
+ },
+ "5959ee951cc241bf": {
+  "en": "Do",
+  "t": "Doen"
+ },
+ "8a4cdbbd7c2cb003": {
+  "en": "'Hi, I'm this company's AI assistant. How can I help?'",
+  "t": "Hallo, ek is hierdie maatskappy se KI-assistent. Hoe kan ek help?"
+ },
+ "28acaf6d9de9968c": {
+  "en": "'For prices and discounts, a colleague will gladly help you further.'",
+  "t": "Vir pryse en afslag sal &#x27;n kollega jou graag verder help."
+ },
+ "b4baf3e661396f3a": {
+  "en": "'If I can't work it out, I'll say so and bring in a human.'",
+  "t": "As ek dit nie kan uitwerk nie, sal ek dit sê en &#x27;n mens inbring."
+ },
+ "618c95c9a1b5fc45": {
+  "en": "What your bot had better not answer itself",
+  "t": "Wat jou bot beter nie self moet beantwoord nie"
+ },
+ "c5b714c905ae10f7": {
+  "en": "<strong>Prices and discounts,</strong> unless they are fixed and up to date.",
+  "t": "<strong>Pryse en afslag,</strong> tensy hulle vasgestel en op datum is."
+ },
+ "adcf5d5bea0d58c4": {
+  "en": "Legal, medical or financial advice.",
+  "t": "Regs-, mediese of finansiële advies."
+ },
+ "775d30de5d4dfe39": {
+  "en": "<strong>Complaints and conflicts.</strong> A human belongs there.",
+  "t": "<strong>Klachten en konflikte.</strong> &#x27;n Mens behoort daar."
+ },
+ "108eb59c476b9ba8": {
+  "en": "<strong>Data about other customers,</strong> in any form.",
+  "t": "<strong>Data oor ander kliënte,</strong> in enige vorm."
+ },
+ "e623f791f54c7929": {
+  "en": "<strong>Promises about delivery times</strong> it can't check.",
+  "t": "<strong>Beloftes oor afleweringstye wat</strong> dit nie kan nagaan nie."
+ },
+ "6a2be2d10eedb045": {
+  "en": "Your checklist for an honest chatbot",
+  "t": "Jou kontrolelys vir &#x27;n eerlike chatbot"
+ },
+ "a7ecce39070abe6f": {
+  "en": "<strong>Give it an honest name.</strong> 'Assistant' or 'Concierge', not Sarah.",
+  "t": "<strong>Gee dit &#x27;n eerlike naam.</strong> &#x27;Assistent&#x27; of &#x27;Konsiërge&#x27;, nie Sarah nie."
+ },
+ "d02a87eec8850a23": {
+  "en": "<strong>Say it in the first sentence.</strong> That it is an AI, and what it can do.",
+  "t": "<strong>Sê dit in die eerste sin.</strong> Dat dit &#x27;n KI is, en wat dit kan doen."
+ },
+ "29bd201d3ff4aa82": {
+  "en": "<strong>Always leave a way to a human open.</strong> A button, an email address, a phone number.",
+  "t": "<strong>Laat altyd &#x27;n manier vir &#x27;n mens oop.</strong> &#x27;n knoppie, &#x27;n e-posadres, &#x27;n telefoonnommer."
+ },
+ "bfb2c83a36d8ccf0": {
+  "en": "<strong>Be clear about privacy.</strong> What do you do with the conversations? And let the chat load only after consent for cookies.",
+  "t": "<strong>Wees duidelik oor privaatheid.</strong> Wat doen jy met die gesprekke? En laat die klets slegs ná toestemming vir koekies laai."
+ },
+ "f88c1cd273a30a64": {
+  "en": "<strong>Limit what it talks about.</strong> Prices, legal and medical advice: refer onwards.",
+  "t": "<strong>Beperk waaroor dit praat.</strong> Pryse, regs- en mediese advies: verwys na ander bronne."
+ },
+ "79ec56b8ff18136a": {
+  "en": "How to test it before you let it loose",
+  "t": "Hoe om dit te toets voordat jy dit loslaat"
+ },
+ "bc7b0258bb54aca8": {
+  "en": "<strong>Make a list of twenty real customer questions</strong> and look at the answers.",
+  "t": "<strong>Maak &#x27;n lys van twintig werklike vrae van kliënte</strong> en kyk na die antwoorde."
+ },
+ "d51bd9918d5595a6": {
+  "en": "<strong>Try to mislead it.</strong> Ask questions it must not answer, and see if it politely declines.",
+  "t": "<strong>Probeer dit te mislei.</strong> Vra vrae wat dit nie mag beantwoord nie, en kyk of dit beleefd weier."
+ },
+ "023eb49944d89ad0": {
+  "en": "<strong>Check the tone.</strong> Does it sound like you, or like a leaflet?",
+  "t": "<strong>Kontroleer die toon.</strong> Klink dit soos jy, of soos &#x27;n pamflet?"
+ },
+ "235e7f33eea2658e": {
+  "en": "<strong>Read every conversation in the first weeks,</strong> with respect for privacy.",
+  "t": "<strong>Lees elke gesprek in die eerste weke,</strong> met respek vir privaatheid."
+ },
+ "f0f3d344ac36eaf5": {
+  "en": "<strong>Adjust and repeat.</strong> A bot is never finished.",
+  "t": "<strong>Pas aan en herhaal.</strong> &#x27;n bot is nooit klaar nie."
+ },
+ "773679df53a4dff1": {
+  "en": "Questions for your supplier",
+  "t": "Vrae vir jou verskaffer"
+ },
+ "02742b2856ff8298": {
+  "en": "Where is the data stored, and in which country?",
+  "t": "Waar word die data gestoor, en in watter land?"
+ },
+ "7106fdeadaee763e": {
+  "en": "Are conversations used to train models?",
+  "t": "Word gesprekke gebruik om modelle op te lei?"
+ },
+ "de4d31642f93f37d": {
+  "en": "Who helps with a wrong answer, and how fast?",
+  "t": "Wie help met &#x27;n verkeerde antwoord, en hoe vinnig?"
+ },
+ "c9a7539f31b9fd00": {
+  "en": "Can I view, export and delete conversations?",
+  "t": "Kan ek gesprekke besigtig, uitvoer en verwyder?"
+ },
+ "ef9d4cc4e72c0244": {
+  "en": "Does the contract say who is liable for a mistake?",
+  "t": "Sê die kontrak wie aanspreeklik is vir &#x27;n fout?"
+ },
+ "a83701c307f24626": {
+  "en": "Can I set myself what the bot may not talk about?",
+  "t": "Kan ek vir myself instel wat die bot nie oor mag praat nie?"
+ },
+ "7cd6543cee3139bd": {
+  "en": "Who is responsible if the bot gets it wrong?",
+  "t": "Wie is verantwoordelik as die bot dit verkeerd kry?"
+ },
+ "112fdd8d29662c92": {
+  "en": "You are. To your customer, you are the sender, even if someone else's system writes the sentences. So agree in advance who gives support for a wrong answer and how fast. A bot may be funny. It may not lie about who it is.",
+  "t": "Jy is. Vir jou kliënt is jy die sender, selfs al skryf iemand anders se stelsel die sinne. Ooreen dus vooraf wie ondersteuning bied vir &#x27;n verkeerde antwoord en hoe vinnig. &#x27;n Bot kan snaaks wees. Dit mag nie lieg oor wie dit is nie."
+ },
+ "e9c250d76134d7fb": {
+  "en": "These are also our own requirements when we put an assistant on a website.",
+  "t": "Dit is ook ons eie vereistes wanneer ons &#x27;n assistent op &#x27;n webwerf plaas."
+ },
+ "d1ec149055da28bc": {
+  "en": "Sarah doesn't exist. Her sigh of relief doesn't either.",
+  "t": "Sarah bestaan nie. Haar sug van verligting bestaan ook nie."
+ },
+ "b71db57a139445c6": {
+  "en": "An assistant on your website?",
+  "t": "&#x27;n assistent op jou webwerf?"
+ },
+ "0feefa4142470f99": {
+  "en": "We are happy to think along about an approach that is honest, clear and legally sensible.",
+  "t": "Ons is graag bereid om saam te dink oor &#x27;n benadering wat eerlik, duidelik en regs sinvol is."
+ },
+ "29ec8d63dfa0e93f": {
+  "en": "Woman talking with AI Chat",
+  "t": "Vrou wat met KI-klets praat"
+ },
+ "123462fd20c5fa9c": {
+  "en": "Is your visitor talking to a human? Say so honestly. | Blog | DRP BuildLab",
+  "t": "Praat jou besoeker met 'n mens? Sê dit eerlik. | Blog | DRP BuildLab"
+ },
+ "ef3767c060e68a90": {
+  "en": "Why a chatbot on your website should play with open cards, and how to do that without it getting awkward. What the rules say, how to test your bot and which questions to ask your supplier.",
+  "t": "Waarom 'n chatbot op jou webwerf met oop kaarte moet speel, en hoe om dit te doen sonder dat dit ongemaklik raak. Wat die reëls sê, hoe om jou bot te toets en watter vrae jy aan jou verskaffer moet stel."
+ },
+ "b5eea3de3080bdc6": {
+  "en": "Thank you for <em>subscribing</em>",
+  "t": "Dankie dat u <em>ingeteken het</em>"
+ },
+ "bafaa0d59efa875c": {
+  "en": "Your subscription is <em>not confirmed</em>",
+  "t": "U intekening is <em>nie bevestig nie</em>"
+ },
+ "3b5970733445889d": {
+  "en": "Thank you for subscribing | Blog | DRP BuildLab",
+  "t": "Dankie dat u inteken | Blog | DRP BuildLab"
+ },
+ "6943b6614ce422b7": {
+  "en": "Your customer no longer googles. They ask.",
+  "t": "Jou kliënt googel nie meer nie. Hulle vra."
+ },
+ "5f7a85efe3604494": {
+  "en": "What changes for your website when people increasingly ask an AI instead of searching, and what you can do about it tomorrow. A checklist, an example service page and a way to check whether it works.",
+  "t": "Wat verander vir jou webwerf wanneer mense toenemend &#x27;n KI vra in plaas daarvan om te soek, en wat jy daaroor môre kan doen. &#x27;n Kontrolelys, &#x27;n voorbeeld-diensbladsy en &#x27;n manier om te kyk of dit werk."
+ },
+ "646e19ee405002ed": {
+  "en": "4 min read",
+  "t": "4 min lees"
+ },
+ "b9fc8b798befebd4": {
+  "en": "Saturday evening, a quarter to nine. The water in Els's bathroom is a centimetre deep. She doesn't open Google, doesn't scroll past four ads and doesn't click through ten websites. She types one sentence into a chat window: 'My bathroom is flooding, who can still come tonight in Mechelen?' And one answer comes back. With three names.",
+  "t": "Saterdag­aand, kwart voor nege. Die water in Els se badkamer is &#x27;n sentimeter diep. Sy maak nie Google oop nie, blaai nie verby vier advertensies nie en klik nie deur tien webwerwe nie. Sy tik een sin in &#x27;n kletsvenster: &#x27;My badkamer loop oor, wie kan vanaand nog na Mechelen kom?&#x27; En daar kom een antwoord terug. Met drie name."
+ },
+ "6402dc9a705ea0f0": {
+  "en": "Whether your business is among them depends on something most entrepreneurs have never looked at: can a machine read your website?",
+  "t": "Of jou besigheid daarby ingesluit is, hang af van iets wat die meeste entrepreneurs nog nooit bekyk het nie: kan &#x27;n masjien jou webwerf lees?"
+ },
+ "c9842ff747227b14": {
+  "en": "Your website has two kinds of visitors: people, and machines that read on behalf of people.",
+  "t": "Jou webwerf het twee soorte besoekers: mense en masjiene wat namens mense lees."
+ },
+ "9a87e902228a93ea": {
+  "en": "What is changing",
+  "t": "Wat verander"
+ },
+ "99155a1c3e7f957e": {
+  "en": "More and more people let an AI assistant, such as ChatGPT, Perplexity, Gemini or Claude, look up the answer instead of browsing themselves. Such an assistant reads websites, pulls out the facts and summarises them. The clearer your facts, the easier it is for it to use them.",
+  "t": "Meer en meer mense laat &#x27;n KI-assistent, soos ChatGPT, Perplexity, Gemini of Claude, die antwoord opspoor in plaas daarvan om self te blaai. So &#x27;n assistent lees webwerwe, haal die feite uit en som dit op. Hoe duideliker jou feite is, hoe makliker is dit vir hom om dit te gebruik."
+ },
+ "255204c3f6698871": {
+  "en": "Nobody can promise that an AI will mention you. But a site that a machine understands is also understood faster by people. And a photo of your van tells a machine nothing. A sentence under that photo does.",
+  "t": "Niemand kan belowe dat &#x27;n KI jou sal noem nie. Maar &#x27;n webwerf wat &#x27;n masjien verstaan, word ook vinniger deur mense verstaan. En &#x27;n foto van jou bus vertel &#x27;n masjien niks. &#x27;n Sin onder daardie foto wel."
+ },
+ "6b21387bf0ae989a": {
+  "en": "How an assistant arrives at its answer",
+  "t": "Hoe &#x27;n assistent by sy antwoord uitkom"
+ },
+ "e00088f8355f0e7d": {
+  "en": "How an assistant works exactly differs per product and changes quickly. Some search the web live and name their sources, others answer mostly from what they learned earlier. For you it comes down to the same thing: the clearer, more current and more consistent your information is on the web, the greater the chance an assistant reflects it well. There is no guarantee.",
+  "t": "Hoe &#x27;n assistent presies werk, verskil per produk en verander vinnig. Sommige deursoek die web in realtime en noem hul bronne, ander antwoord meestal op grond van wat hulle vroeër geleer het. Vir jou kom dit op dieselfde neer: hoe duideliker, meer aktueel en meer konsekwent jou inligting op die web is, hoe groter is die kans dat &#x27;n assistent dit goed weerspieël. Daar is geen waarborg nie."
+ },
+ "a7a34ef4546e3ae2": {
+  "en": "What a machine wants to find on your site",
+  "t": "Wat &#x27;n masjien op jou webwerf wil vind"
+ },
+ "7833ffa02cc17844": {
+  "en": "What you do, in plain words.",
+  "t": "Wat jy doen, in eenvoudige woorde."
+ },
+ "eb20a39a1fb87882": {
+  "en": "Where you work: municipalities or region.",
+  "t": "Waar jy werk: munisipaliteite of streek."
+ },
+ "bcb10aea1bc0fa19": {
+  "en": "Who you work for.",
+  "t": "Vir wie jy werk."
+ },
+ "08352f8b82058e53": {
+  "en": "Roughly what it costs, or how a customer can work that out.",
+  "t": "Ongeveer wat dit kos, of hoe &#x27;n kliënt dit kan uitwerk."
+ },
+ "e40d3d6ac30188ef": {
+  "en": "How and when you can be reached.",
+  "t": "Hoe en wanneer jy bereik kan word."
+ },
+ "f93fde615ec17a5e": {
+  "en": "The questions you always get, with an honest answer.",
+  "t": "Die vrae wat jy altyd kry, met &#x27;n eerlike antwoord."
+ },
+ "6817e745234df520": {
+  "en": "A service page that machines understand",
+  "t": "&#x27;n diensbladsy wat masjiene verstaan"
+ },
+ "7d075a0b966026d3": {
+  "en": "An example, for a made-up plumber in Mechelen. Note how each part is a short, factual sentence:",
+  "t": "&#x27;n voorbeeld vir &#x27;n denkbeeldige loodgietersman in Mechelen. Let op hoe elke deel &#x27;n kort, feitelike sin is:"
+ },
+ "3d9b3d6becfddb25": {
+  "en": "<strong>What:</strong> Leak detection, repairs and emergency call-outs for homes and small businesses.",
+  "t": "<strong>Wat:</strong> Lekopsporing, herstelwerk en nooduitroepe vir huise en klein besighede."
+ },
+ "5ab9ac8a15fd3508": {
+  "en": "<strong>Where:</strong> Mechelen, Duffel and surrounding municipalities.",
+  "t": "<strong>Waar:</strong> Mechelen, Duffel en omliggende munisipaliteite."
+ },
+ "d72006170458e3d8": {
+  "en": "<strong>For whom:</strong> Private customers and small businesses.",
+  "t": "<strong>Vir wie:</strong> Privaatkliënte en klein ondernemings."
+ },
+ "f30aa740f1350efb": {
+  "en": "<strong>Price:</strong> Call-out from [amount], travel included. Quote for larger jobs.",
+  "t": "<strong>Prys:</strong> Uurloon vanaf [bedrag], reis ingesluit. Kwotasie vir groter werke."
+ },
+ "0cb90021be67f303": {
+  "en": "<strong>Reachable:</strong> Every day from 7 am to 9 pm, emergency number day and night.",
+  "t": "<strong>Bereikbaar:</strong> Elke dag van 7 vm tot 9 nm, noodnommer dag en nag."
+ },
+ "3e1318e45bb678f9": {
+  "en": "<strong>Questions:</strong> What does an emergency call-out cost? When can you be there? Does my insurance cover this?",
+  "t": "<strong>Vrae:</strong> Wat kos &#x27;n noodgeval-uitry? Wanneer kan julle daar wees? Dek my versekering dit?"
+ },
+ "12aba7d91721871a": {
+  "en": "What doesn't work",
+  "t": "Wat nie werk nie"
+ },
+ "6015aa65949fd471": {
+  "en": "<strong>Stuffing words.</strong> 'Cheap plumber Mechelen, plumber Mechelen cheap.' Nobody reads that, human or machine.",
+  "t": "<strong>Vulwoorde.</strong> &#x27;Goedkoop loodgieters Mechelen, loodgieters Mechelen goedkoop.&#x27; Niemand lees dit nie, mens of masjien."
+ },
+ "04dd82460845a935": {
+  "en": "<strong>Contradictory details.</strong> A different address on your site, your Google profile and your social media.",
+  "t": "<strong>Teenwoordige besonderhede.</strong> &#x27;n Ander adres op jou webwerf, jou Google-profiel en jou sosiale media."
+ },
+ "c3fc1bcf2df713bd": {
+  "en": "<strong>Outdated prices and hours.</strong> An assistant that repeats your old details does neither you nor your customer any favours.",
+  "t": "<strong>Verouderde pryse en openingstye.</strong> &#x27;n Assistent wat jou ou besonderhede herhaal, doen nie jou of jou kliënt &#x27;n guns nie."
+ },
+ "1b5bf0f2f11c5ff8": {
+  "en": "<strong>Everything in images or PDFs.</strong> Without plain text there is nothing to read.",
+  "t": "<strong>Alles is in beelde of PDF&#x27;s.</strong> Sonder gewone teks is daar niks om te lees nie."
+ },
+ "9e7e1fae341734d8": {
+  "en": "What you can do tomorrow",
+  "t": "Wat jy môre kan doen"
+ },
+ "389c43ee23a000e4": {
+  "en": "<strong>Put the basics in plain text on your homepage.</strong> No text that only exists inside an image.",
+  "t": "<strong>Plaas die basiese in gewone teks op jou tuisblad.</strong> Geen teks wat slegs binne &#x27;n beeld bestaan nie."
+ },
+ "b6dd8f231f80499f": {
+  "en": "<strong>Write a page with frequently asked questions.</strong> With the real questions customers ask, and honest answers.",
+  "t": "<strong>Skryf &#x27;n bladsy met gereeld gestelde vrae.</strong> Met die werklike vrae wat kliënte vra, en eerlike antwoorde."
+ },
+ "6bda111c47686653": {
+  "en": "<strong>Add structured data.</strong> These are labels that tell machines what a service is, where you are and what it costs.",
+  "t": "<strong>Voeg gestruktureerde data by.</strong> Dit is etikette wat aan masjiene vertel wat &#x27;n diens is, waar jy is en wat dit kos."
+ },
+ "8ad65de4f4868aaf": {
+  "en": "<strong>Keep your details the same everywhere.</strong> Website, Google Business Profile and social media must say the same thing.",
+  "t": "<strong>Hou jou besonderhede oral dieselfde.</strong> Jou webwerf, Google Business Profile en sosiale media moet dieselfde inligting gee."
+ },
+ "1a0010419d4c68d2": {
+  "en": "<strong>Don't block assistants.</strong> Check your robots.txt, and consider a short plain-text summary for assistants. A proposal for that is called llms.txt. Whether it works is not yet proven.",
+  "t": "<strong>Moenie assistente blokkeer nie.</strong> Kontroleer jou robots.txt en oorweeg &#x27;n kort, eenvoudige tekssamevatting vir assistente. &#x27;n Voorstel daarvoor word llms.txt genoem. Of dit werk, is nog nie bewys nie."
+ },
+ "8b3ec85d14d0206a": {
+  "en": "How to check whether it works",
+  "t": "Hoe om te kontroleer of dit werk"
+ },
+ "9145a2ab72e8f828": {
+  "en": "Ask a few assistants the questions your customers ask, for example: 'Who is a good plumber in Mechelen?' See whether you are mentioned, and above all whether the facts are right. Do this every month, write down what you see and don't count on a single result: answers differ per day and per assistant.",
+  "t": "Vra &#x27;n paar assistente die vrae wat jou kliënte vra, byvoorbeeld: &#x27;Wie is &#x27;n goeie loodgieters in Mechelen?&#x27; Kyk of jy genoem word, en veral of die feite korrek is. Doen dit elke maand, skryf neer wat jy sien en moenie op net een resultaat staatmaak nie: antwoorde verskil per dag en per assistent."
+ },
+ "740478e9866e3778": {
+  "en": "An honest note",
+  "t": "&#x27;n Eerlike nota"
+ },
+ "8af519254a734c12": {
+  "en": "Whoever promises to put you at the top of ChatGPT is selling hot air. Nobody controls the answers of an AI. What you can do is offer clear information. That always wins, with people and with machines. A website that a robot understands, your aunt understands too.",
+  "t": "Wie ook al belowe om jou bo-aan ChatGPT te plaas, verkoop warm lug. Niemand beheer die antwoorde van &#x27;n KI nie. Wat jy kan doen, is om duidelike inligting te verskaf. Dit behaal altyd sukses by mense en by masjiene. &#x27;n Webwerf wat &#x27;n robot verstaan, verstaan jou tannie ook."
+ },
+ "8410d802b61e95f4": {
+  "en": "Els doesn't exist. Her flooded bathroom does, for someone, right now.",
+  "t": "Els bestaan nie. Haar oorstroomde badkamer bestaan wel, vir iemand, reg nou."
+ },
+ "e71294b44bc5048b": {
+  "en": "How readable is your site for machines?",
+  "t": "Hoe leesbaar is jou webwerf vir masjiene?"
+ },
+ "ed978a50257e02e5": {
+  "en": "We are happy to look at your website through the eyes of an AI assistant, and tell you honestly what could be better.",
+  "t": "Ons kyk graag na jou webwerf deur die oë van &#x27;n KI-assistent en vertel jou eerlik wat beter kan wees."
+ },
+ "b17c7b5b75eef581": {
+  "en": "OpenAI Playground 2026 11 09 at 12.44.26",
+  "t": "OpenAI-speelgrond 2026 11 09 om 12.44.26"
+ },
+ "ef641c900ac9bbf0": {
+  "en": "Your customer no longer googles. They ask. | Blog | DRP BuildLab",
+  "t": "Jou kliënt googel nie meer nie. Hulle vra. | Blog | DRP BuildLab"
+ },
+ "595294e20ebc453a": {
+  "en": "What changes for your website when people increasingly ask an AI instead of searching, and what you can do about it tomorrow. A checklist, an example service page and a way to check whether it works.",
+  "t": "Wat verander vir jou webwerf wanneer mense toenemend 'n KI vra in plaas daarvan om te soek, en wat jy daaroor môre kan doen. 'n Kontrolelys, 'n voorbeeld-diensbladsy en 'n manier om te kyk of dit werk."
+ },
+ "89ceac33ca4bd7ee": {
+  "en": "Short video is not a hype. You just don't have to dance in it.",
+  "t": "Kort video is nie &#x27;n hype nie. Jy hoef net nie daaraan te dans nie."
+ },
+ "abd01dbbc8cbabe6": {
+  "en": "Why short video is here to stay for small businesses, what to film, what to skip and how to fit it into your week. A scenario in four sentences, a practical five-step guide and a note on rights and consent.",
+  "t": "Waarom kortvideo hier is om te bly vir klein besighede, wat om te film, wat om oor te slaan en hoe om dit in jou week in te pas. &#x27;n Scenario in vier sinne, &#x27;n praktiese gids in vyf stappe en &#x27;n nota oor regte en toestemming."
+ },
+ "5a6b315b18aff18b": {
+  "en": "There comes a moment in every entrepreneur's life when someone says: you should do something with video. A silence usually follows, and an image of yourself dancing in your workshop.",
+  "t": "Daar kom &#x27;n oomblik in elke entrepreneur se lewe wanneer iemand sê: jy moet iets met video doen. Gewoonlik volg daar &#x27;n stilte, en jy sien jouself dans in jou werkswinkel."
+ },
+ "2f4daf27bf18eb11": {
+  "en": "We believe short video is here to stay. Not because an algorithm wants it, but because people want to see who they are going to buy from. That is an opinion, and one we apply ourselves. Just without the choreography.",
+  "t": "Ons glo dat kortvideo hier is om te bly. Nie omdat &#x27;n algoritme dit wil hê nie, maar omdat mense wil sien by wie hulle gaan koop. Dit is &#x27;n mening, en een wat ons self toepas. Net sonder die choreografie."
+ },
+ "04832bef22360e60": {
+  "en": "A customer buys from a person. A video shows that the person exists.",
+  "t": "&#x27;n Kliënt koop by &#x27;n persoon. &#x27;n Video wys dat die persoon bestaan."
+ },
+ "f7550f33cdf4b364": {
+  "en": "Why it works",
+  "t": "Waarom dit werk"
+ },
+ "cd2a4f561099d903": {
+  "en": "<strong>People want to see who you are.</strong> A face and a voice do in thirty seconds what text can't do in three pages.",
+  "t": "<strong>Mense wil sien wie jy is.</strong> &#x27;n Gesig en &#x27;n stem doen in dertig sekondes wat teks nie in drie bladsye kan doen nie."
+ },
+ "ccf2d5b1977009aa": {
+  "en": "<strong>It is low-threshold.</strong> Watching thirty seconds costs nobody any effort.",
+  "t": "<strong>Dit is laagdrempelig.</strong> Om dertig sekondes te kyk kos niemand enige moeite nie."
+ },
+ "e231410cb9d6f483": {
+  "en": "<strong>You can reuse it.</strong> The same video fits on your site, in a newsletter and on social media.",
+  "t": "<strong>Jy kan dit hergebruik.</strong> Dieselfde video pas op jou webwerf, in &#x27;n nuusbrief en op sosiale media."
+ },
+ "0d6d0fb164bf0b4e": {
+  "en": "What you can film",
+  "t": "Wat jy kan film"
+ },
+ "f0e3b777b7f498c7": {
+  "en": "<strong>A day in your workshop,</strong> in thirty seconds.",
+  "t": "<strong>&#x27;n dag in jou werkswinkel,</strong> in dertig sekondes."
+ },
+ "70066c86eaacf3cb": {
+  "en": "<strong>Before and after.</strong> A bare garden and a garden with life. An old website and a new one.",
+  "t": "<strong>Voor en ná.</strong> &#x27;n Kaal tuin en &#x27;n tuin met lewe. &#x27;n Ou webwerf en &#x27;n nuwe een."
+ },
+ "6cbc0d32c35fb324": {
+  "en": "<strong>A customer's question,</strong> answered in one minute.",
+  "t": "<strong>&#x27;n Kliënt se vraag,</strong> beantwoord in een minuut."
+ },
+ "bdd4872c67edeee9": {
+  "en": "<strong>A mistake you almost made,</strong> and what you learned from it.",
+  "t": "<strong>&#x27;n fout wat jy amper gemaak het,</strong> en wat jy daaruit geleer het."
+ },
+ "82018f6bfe7daa0e": {
+  "en": "<strong>How something is made.</strong> People enjoy watching craftsmanship.",
+  "t": "<strong>Hoe iets gemaak word.</strong> Mense geniet dit om handwerk te kyk."
+ },
+ "8c1ca16a672e6f83": {
+  "en": "A scenario in four sentences",
+  "t": "&#x27;n scenario in vier sinne"
+ },
+ "e8a0c7e1153f71a8": {
+  "en": "Suppose you have a garden company. A video of thirty seconds can go like this: a corner of a bare garden (the hook), what the customer wanted (the problem), two days of work in ten seconds (the work), and the finished garden with one sentence from the customer (the result).",
+  "t": "Stel jou voor jy het &#x27;n tuinmaatskappy. &#x27;n Video van dertig sekondes kan soos volg wees: &#x27;n hoek van &#x27;n kaal tuin (die haak), wat die kliënt wou hê (die probleem), twee dae se werk in tien sekondes (die werk), en die voltooide tuin met een sin van die kliënt (die resultaat)."
+ },
+ "5c642424664788bc": {
+  "en": "Four pieces, one story. You don't need more.",
+  "t": "Vier stukke, een storie. Jy het nie meer nodig nie."
+ },
+ "b89cdaf37060a30d": {
+  "en": "What to skip",
+  "t": "Wat om oor te slaan"
+ },
+ "614db28a7da75676": {
+  "en": "Copy a trend that has nothing to do with your trade.",
+  "t": "Kopieer &#x27;n tendens wat niks met jou vak te doen het nie."
+ },
+ "ce60eb729a81d202": {
+  "en": "Open with a ten-second intro with music.",
+  "t": "Begin met &#x27;n tien sekonde lange intro met musiek."
+ },
+ "512b4fa2904e4697": {
+  "en": "Let AI invent and edit everything.",
+  "t": "Laat KI alles uitvind en redigeer."
+ },
+ "04af33153eee799c": {
+  "en": "Film something only you can: your work.",
+  "t": "Filem iets wat net jy kan: jou werk."
+ },
+ "7be2903693cb254a": {
+  "en": "Start with the result or the question.",
+  "t": "Begin met die resultaat of die vraag."
+ },
+ "b6142ef9815e6e90": {
+  "en": "Use an honest image with a short sentence of your own.",
+  "t": "Gebruik &#x27;n egte prent met &#x27;n kort sin van jou eie."
+ },
+ "87d943fca9c9daf5": {
+  "en": "How to fit it into your week",
+  "t": "Hoe om dit in jou week in te pas"
+ },
+ "8090285e5a80295a": {
+  "en": "<strong>Film in batches.</strong> One hour, five videos.",
+  "t": "<strong>Filmeer in bondels.</strong> Een uur, vyf video&#x27;s."
+ },
+ "06e634137242b247": {
+  "en": "<strong>Use a fixed template.</strong> Hook, problem, work, result.",
+  "t": "<strong>Gebruik &#x27;n vaste sjabloon.</strong> Haak, probleem, werk, resultaat."
+ },
+ "f667fc53f8089159": {
+  "en": "<strong>Pick a fixed moment each week</strong> to film or edit.",
+  "t": "<strong>Kies elke week &#x27;n vaste oomblik</strong> om op te neem of te redigeer."
+ },
+ "0274fceba8bad1a2": {
+  "en": "<strong>Keep everything in one place,</strong> with a clear file name.",
+  "t": "<strong>Hou alles op een plek,</strong> met &#x27;n duidelike lêernaam."
+ },
+ "ac117b0ba1b3a938": {
+  "en": "<strong>Let someone else edit</strong> if that saves you time.",
+  "t": "<strong>Laat iemand anders redigeer</strong> as dit jou tyd bespaar."
+ },
+ "1dc4ad39b0e354e2": {
+  "en": "What to measure",
+  "t": "Wat om te meet"
+ },
+ "b13bbc50c1d57d0d": {
+  "en": "Views are nice, enquiries are better. Look at how long people keep watching, who responds and above all how many people get in touch afterwards. A video with few views and three quote requests is a better video than one with thousands of views and none.",
+  "t": "Kykgetalle is lekker, navrae is beter. Kyk hoe lank mense aanhou kyk, wie reageer en veral hoeveel mense daarna in kontak tree. &#x27;n Video met min kykgetalle en drie versoeke om aanhalings is &#x27;n beter video as een met duisende kykgetalle en geen navrae nie."
+ },
+ "fbff6dec31abcf8c": {
+  "en": "Rights and consent",
+  "t": "Regte en toestemming"
+ },
+ "cd49f2681bf8487d": {
+  "en": "<strong>People on camera.</strong> Ask permission, especially from customers and employees.",
+  "t": "<strong>Mense op kamera.</strong> Vra toestemming, veral by kliënte en werknemers."
+ },
+ "c096ed3c01b1a20a": {
+  "en": "<strong>Music.</strong> Only use music you have the rights to, for example from the platform's library.",
+  "t": "<strong>Musiek.</strong> Gebruik slegs musiek waarvoor jy die regte het, byvoorbeeld uit die platform se biblioteek."
+ },
+ "bb178f407c154b79": {
+  "en": "<strong>Brands and other people's work.</strong> Leave out third-party logos and photos, or ask.",
+  "t": "<strong>Merke en ander mense se werk.</strong> Laat derdeparty-logo&#x27;s en foto&#x27;s weg, of vra."
+ },
+ "305bb71bfc702612": {
+  "en": "<strong>Children.</strong> Don't film them without explicit permission from their parents.",
+  "t": "<strong>Kinders.</strong> Moenie hulle film sonder uitdruklike toestemming van hul ouers nie."
+ },
+ "fdcaf506a8999000": {
+  "en": "Practical, in five steps",
+  "t": "Prakties, in vyf stappe"
+ },
+ "258dbc82c92be7c8": {
+  "en": "<strong>Hold your phone upright.</strong> Vertical is the norm.",
+  "t": "<strong>Hou jou foon regop.</strong> Vertikaal is die norm."
+ },
+ "b9ddeff003e42bee": {
+  "en": "<strong>Find light by a window.</strong> You need nothing more.",
+  "t": "<strong>Vind lig by &#x27;n venster.</strong> Jy het niks meer nodig nie."
+ },
+ "29eeebc793d0c47e": {
+  "en": "<strong>One idea per video,</strong> no longer than a minute.",
+  "t": "<strong>Een idee per video,</strong> nie langer as &#x27;n minuut nie."
+ },
+ "213addb343bf60df": {
+  "en": "<strong>Add subtitles.</strong> Many people watch without sound.",
+  "t": "<strong>Voeg onderskrifte by.</strong> Baie mense kyk sonder klank."
+ },
+ "955dcde2066a6f2d": {
+  "en": "<strong>Put it on your website too,</strong> with the right service or project.",
+  "t": "<strong>Sit dit ook op jou webwerf,</strong> saam met die regte diens of projek."
+ },
+ "ac136cf5881f6c21": {
+  "en": "The worst thing you can do is wait until your video is perfect. The second worst is dancing.",
+  "t": "Die slegste ding wat jy kan doen, is om te wag totdat jou video perfek is. Die tweede slegste ding is om te dans."
+ },
+ "5074e8a91e5ab3e9": {
+  "en": "Video on your website?",
+  "t": "Video op jou webwerf?"
+ },
+ "a8f6c84992dd7c31": {
+  "en": "We build the place where your short videos look their best, on your site and with your projects.",
+  "t": "Ons bou die plek waar jou kort video&#x27;s op jou webwerf en met jou projekte hul beste lyk."
+ },
+ "20b5bff2ec25909d": {
+  "en": "Social media content creating entrepreneur",
+  "t": "Ondernemer wat sosiale media-inhoud skep"
+ },
+ "32228651aa31b4be": {
+  "en": "Short video is not a hype. You just don't have to dance in it. | Blog | DRP BuildLab",
+  "t": "Kort video is nie 'n hype nie. Jy hoef net nie daarin te dans nie. | Blog | DRP BuildLab"
+ },
+ "81b1fc11a9a41ff4": {
+  "en": "Why short video is here to stay for small businesses, what to film, what to skip and how to fit it into your week. A scenario in four sentences, a practical five-step guide and a note on rights and consent.",
+  "t": "Waarom kortvideo hier is om te bly vir klein besighede, wat om te film, wat om oor te slaan en hoe om dit in jou week in te pas. 'n Scenario in vier sinne, 'n praktiese gids in vyf stappe en 'n nota oor regte en toestemming."
+ },
+ "07bab5adae42eaa0": {
+  "en": "Small business, big target? Cybersecurity in plain language",
+  "t": "Klein besigheid, groot teiken? Kubersekuriteit in eenvoudige taal"
+ },
+ "013cc87e86b9ca17": {
+  "en": "Why small businesses are in the picture too, why most attacks start with a person, and what you can do about it. Plus what we check and set up on your website, explained in plain language.",
+  "t": "Waarom klein besighede ook in die prentjie is, waarom die meeste aanvalle by &#x27;n persoon begin, en wat jy daaraan kan doen. Boonop wat ons op jou webwerf nagaan en opstel, verduidelik in eenvoudige taal."
+ },
+ "d12511991517cef7": {
+  "en": "Also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. Optional; withdraw any time.",
+  "t": "Stuur my ook af en toe aanbiedings van DRP BuildLab en geselekteerde vennote, soos Tinrate, gebaseer op die artikels wat ek lees. Opsioneel; kan te eniger tyd intrekk word."
+ },
+ "4214127a3b866b09": {
+  "en": "Without the box ticked, we only use your email address to send you new articles. <a href=\"/privacy/\">Privacy policy</a> · <a href=\"/offers-terms/\">Offers terms</a>",
+  "t": "As die blokkie nie aangemerk is nie, gebruik ons jou e-posadres slegs om jou nuwe artikels te stuur. <a href=\"/privacy/\">Privaatheidsbeleid</a> · <a href=\"/offers-terms/\">Aanbiedingsvoorwaardes</a>"
+ },
+ "4a1e1946b99bfdc1": {
+  "en": "Offers",
+  "t": "Aanbiedings"
+ },
+ "7aebf959c4012066": {
+  "en": "Offers from DRP BuildLab <em>and partners</em>",
+  "t": "Aanbiedings van DRP BuildLab <em>en vennote</em>"
+ },
+ "5fa8aebd9955113a": {
+  "en": "Your choice is <em>not saved</em>",
+  "t": "Jou keuse is <em>nie gestoor nie</em>"
+ },
+ "c3c79053b4be44fc": {
+  "en": "You already receive every new article from the DRP BuildLab blog. That does not change, whatever you choose here.",
+  "t": "Jy ontvang reeds elke nuwe artikel van die DRP BuildLab-blog. Dit verander nie, wat jy hier ook al kies."
+ },
+ "1c2e041b9cfc1a82": {
+  "en": "If you agree, we may also email you occasional offers from DRP BuildLab and from selected partners, such as Tinrate. To choose offers that suit you, we look at which blog articles you click in our emails. We do not give your email address to partners: offers always come from us.",
+  "t": "As jy saamstem, mag ons jou ook af en toe aanbiedings per e-pos stuur van DRP BuildLab en van geselekteerde vennote, soos Tinrate. Om aanbiedings te kies wat by jou pas, kyk ons na watter blogartikels jy in ons e-posse klik. Ons gee nie jou e-posadres aan vennote nie: aanbiedings kom altyd van ons af."
+ },
+ "f7c1d3cf8adddb50": {
+  "en": "This is optional. Every offer email has a link to withdraw, and then we delete the record of the articles you clicked. <a href=\"/offers-terms/\">Offers terms</a> · <a href=\"/privacy/\">Privacy policy</a>",
+  "t": "Dit is opsioneel. Elke aanbod-e-pos bevat &#x27;n skakel om uit te teken, en dan verwyder ons die rekord van die artikels waarop jy geklik het. <a href=\"/offers-terms/\">Aanbodvoorwaardes</a> · <a href=\"/privacy/\">Privaatheidsbeleid</a>"
+ },
+ "3bdc0957f7fdf48d": {
+  "en": "Yes, also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. I can withdraw any time.",
+  "t": "Ja, stuur my ook af en toe aanbiedings van DRP BuildLab en geselekteerde vennote, soos Tinrate, gebaseer op die artikels wat ek lees. Ek kan te eniger tyd terugtrek."
+ },
+ "65bf204c1bf9b148": {
+  "en": "Save my choice <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bewaar my keuse <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "86c0e6335ffb00d0": {
+  "en": "One moment, we are saving your choice.",
+  "t": "Een oomblik, ons stoor jou keuse."
+ },
+ "75cf7de8113e96bc": {
+  "en": "Saved. Besides new articles, we may now also email you offers. Each offer email has a link to withdraw.",
+  "t": "Gespaar. Benewens nuwe artikels, mag ons jou nou ook aanbiedings per e-pos stuur. Elke aanbod-e-pos bevat &#x27;n skakel om jou intekening te kanselleer."
+ },
+ "b2ebd63f4648fb05": {
+  "en": "This link has expired, and nothing was changed. Ask us for a new link at info@drpbuildlab.com.",
+  "t": "Hierdie skakel het verval, en niks is verander nie. Vra ons vir &#x27;n nuwe skakel by info@drpbuildlab.com."
+ },
+ "6032971e17c3bf30": {
+  "en": "This link is not valid, and nothing was changed. Use the link from the email we sent you.",
+  "t": "Hierdie skakel is nie geldig nie, en niks is verander nie. Gebruik die skakel uit die e-pos wat ons vir jou gestuur het."
+ },
+ "6fffcb13bdc60736": {
+  "en": "This email address is not subscribed to the blog (any more), so nothing was saved. Subscribe again on the blog if you want our articles.",
+  "t": "Hierdie e-posadres is nie meer op die blog ingeteken nie, daarom is niks gestoor nie. Teken weer op die blog in as jy ons artikels wil hê."
+ },
+ "6628934fda0ccf61": {
+  "en": "Something went wrong while saving your choice. Please try again in a moment.",
+  "t": "Iets het verkeerd geloop terwyl jy jou keuse gestoor het. Probeer asseblief oor &#x27;n oomblik weer."
+ },
+ "f39c5e07aba23f8e": {
+  "en": "Would you also like offers from DRP BuildLab and our partners?",
+  "t": "Wil u ook aanbiedings van DRP BuildLab en ons vennote ontvang?"
+ },
+ "e1828996bd717972": {
+  "en": "Offers that match what you read",
+  "t": "Aanbiedings wat ooreenstem met wat jy lees"
+ },
+ "3561948313899ef0": {
+  "en": "You receive new articles from the DRP BuildLab blog. We would also like to email you occasional offers from DRP BuildLab and selected partners, such as Tinrate, chosen by the articles you click in our emails. This is optional: you keep receiving every new article either way. To agree, open the page below and tick the box.",
+  "t": "U ontvang nuwe artikels vanaf die DRP BuildLab-blog. Ons wil u ook graag af en toe aanbiedings van DRP BuildLab en geselekteerde vennote, soos Tinrate, per e-pos stuur, gebaseer op die artikels waarop u in ons e-posse klik. Dit is opsioneel: u bly in elk geval elke nuwe artikel ontvang. Om in te stem, maak die bladsy hieronder oop en merk die blokkie aan."
+ },
+ "3d1075b0fd2a6de0": {
+  "en": "Choose on our website",
+  "t": "Kies op ons webwerf"
+ },
+ "f393177bccae069a": {
+  "en": "This link is valid for 30 days.",
+  "t": "Hierdie skakel is geldig vir 30 dae."
+ },
+ "b19efcfbe22a7330": {
+  "en": "Not interested? Then ignore this email. Nothing changes.",
+  "t": "Nie geïnteresseerd nie? Ignoreer dan hierdie e-pos. Niks verander nie."
+ },
+ "811360f25e4e0da3": {
+  "en": "An offer from our partner",
+  "t": "&#x27;n aanbod van ons vennoot"
+ },
+ "cb42b79759aebee1": {
+  "en": "You receive this email because you agreed to receive offers from DRP BuildLab and selected partners. We chose it based on the articles you clicked in our emails.",
+  "t": "Jy ontvang hierdie e-pos omdat jy ingestem het om aanbiedings van DRP BuildLab en gekose vennote te ontvang. Ons het dit gekies op grond van die artikels waarop jy in ons e-posse geklik het."
+ },
+ "d88513c5fa41cb86": {
+  "en": "Stop offers or manage your emails",
+  "t": "Stel aanbiedings in of bestuur jou e-posse"
+ },
+ "f4fd5b726ceefbdc": {
+  "en": "Most people picture a cyberattack as hackers in hoodies breaking into a bank. Reality is more mundane. It is an email that looks like an invoice. A password used on five different sites. A message 'from the boss' asking for an urgent payment.",
+  "t": "Die meeste mense stel &#x27;n kuberaanval voor as hakers in hoodies wat &#x27;n bank inbreek. Die werklikheid is meer alledaags. Dit is &#x27;n e-pos wat soos &#x27;n faktuur lyk. &#x27;n Wagwoord wat op vyf verskillende webwerwe gebruik word. &#x27;n Boodskap &#x27;van die baas&#x27; wat om &#x27;n dringende betaling vra."
+ },
+ "4683a1ff931b9225": {
+  "en": "The weak point is rarely the software. It is usually a Tuesday afternoon and someone in a hurry.",
+  "t": "Die swak punt is selde die sagteware. Dit is gewoonlik &#x27;n Dinsdagmiddag en iemand wat haastig is."
+ },
+ "92fe5fbe2ee09b6f": {
+  "en": "Why small businesses are in the picture too",
+  "t": "Waarom klein besighede ook in die prentjie is"
+ },
+ "9f5ee380cfcd0e91": {
+  "en": "Criminals scan the internet automatically. They don't care how big you are, only how easy you are to get into. A small business with a forgotten admin page, a reused password or an outdated plugin is as interesting as a big one, and sometimes a stepping stone to a bigger partner.",
+  "t": "Misdadigers skandeer die internet outomaties. Hulle gee nie om hoe groot jy is nie, net hoe maklik dit is om by jou in te kom. &#x27;n Klein besigheid met &#x27;n vergeete adminbladsy, &#x27;n hergebruikte wagwoord of &#x27;n verouderde inprop is net so interessant soos &#x27;n groot een, en soms &#x27;n springplank na &#x27;n groter vennoot."
+ },
+ "ab4c37422ee5ffb7": {
+  "en": "Cyberattacks keep making the news, and that is a good reason to look at your own situation calmly, not with panic.",
+  "t": "Kuberattake bly in die nuus, en dit is &#x27;n goeie rede om jou eie situasie kalm te beskou, nie met paniek nie."
+ },
+ "cfaa4bddb2e4f877": {
+  "en": "Most attacks start with a person",
+  "t": "Die meeste aanvalle begin met &#x27;n persoon."
+ },
+ "3bd3087991b516f3": {
+  "en": "Industry reports consistently find a human element in most breaches. In daily life that looks like this:",
+  "t": "Bedryfsverslae vind konsekwent &#x27;n menslike faktor in die meeste datalekke. In die daaglikse lewe lyk dit soos volg:"
+ },
+ "5c4ce99e480ff976": {
+  "en": "<strong>A convincing email</strong> that asks you to log in, pay or open an attachment.",
+  "t": "<strong>&#x27;n oortuigende e-pos</strong> wat jou vra om aan te meld, te betaal of &#x27;n aanhangsel oop te maak."
+ },
+ "3c49748493196614": {
+  "en": "<strong>A password used everywhere,</strong> so one leak opens many doors.",
+  "t": "<strong>&#x27;n Wagwoord wat oral gebruik word,</strong> maak dat een lek baie deure oopmaak."
+ },
+ "67f6a13df63cf6ac": {
+  "en": "<strong>A fake invoice,</strong> or a real one with changed bank details.",
+  "t": "<strong>&#x27;n vervalste faktuur,</strong> of &#x27;n egte een met veranderde bankbesonderhede."
+ },
+ "7fd02739aa247fc6": {
+  "en": "<strong>Access given by mistake,</strong> such as a shared login or a link clicked in a hurry.",
+  "t": "<strong>Toegang wat per ongeluk verleen is,</strong> soos &#x27;n gedeelde aanmelding of &#x27;n skakel wat in &#x27;n haastigheid geklik is."
+ },
+ "8ecab51cf1debb48": {
+  "en": "Fixing the website alone isn't enough. Protection has to cover both the systems and the people who use them.",
+  "t": "Om net die webwerf reg te stel, is nie genoeg nie. Beskerming moet beide die stelsels en die mense wat dit gebruik, dek."
+ },
+ "b867539b1e4d7785": {
+  "en": "AI makes scams look better",
+  "t": "Kunsmatige intelligensie laat bedrogskemas beter lyk."
+ },
+ "77f3a5eb6c78c593": {
+  "en": "Criminals also use AI tools to write emails with no typos, in fluent Dutch, French or English, and some experiment with tools that have fewer safeguards. Voices can be imitated too.",
+  "t": "Misdadigers gebruik ook KI-gereedskap om e-posse sonder tikfoute te skryf in vlot Nederlands, Frans of Engels, en sommige eksperimenteer met gereedskap wat minder veiligheidsmaatreëls het. Stem kan ook nageboots word."
+ },
+ "b2bf3e3dac7fbee1": {
+  "en": "That changes one rule of thumb: <strong>looking professional is no longer proof that something is real.</strong> What helps is checking through a second channel. A message from the boss asking for an urgent payment is confirmed by a phone call to a number you already know.",
+  "t": "Dit verander een vuistregel: <strong>professioneel lyk is nie meer bewys dat iets werklik is nie.</strong> Wat help, is om dit via &#x27;n tweede kanaal te verifieer. &#x27;n Boodskap van die baas wat om &#x27;n dringende betaling vra, word bevestig deur &#x27;n telefoongesprek na &#x27;n nommer wat jy reeds ken."
+ },
+ "046def236adbe50d": {
+  "en": "Six habits that help this week",
+  "t": "Ses gewoontes wat hierdie week help"
+ },
+ "447b276485168b71": {
+  "en": "<strong>Use a password manager</strong> and a unique password for every account.",
+  "t": "<strong>Gebruik &#x27;n wagwoordbestuurder</strong> en &#x27;n unieke wagwoord vir elke rekening."
+ },
+ "4f64db2a1d38aa65": {
+  "en": "<strong>Turn on two-step login</strong> (MFA), especially for email and for admin accounts.",
+  "t": "<strong>Skakel twee-stap-aanmelding</strong> (MFA) <strong>in</strong>, veral vir e-pos en administrateurrekeninge."
+ },
+ "5e98aee348c23bfe": {
+  "en": "<strong>Check every change of bank details by phone,</strong> using a number you already have.",
+  "t": "<strong>Verifieer elke verandering van bankbesonderhede per telefoon</strong> met &#x27;n nommer wat jy reeds het."
+ },
+ "db365c4e08b95bdb": {
+  "en": "<strong>Make it easy to report suspicious mail,</strong> and never blame the person who clicked.",
+  "t": "<strong>Maak dit maklik om verdagte e-posse aan te meld,</strong> en moenie die persoon wat geklik het, die skuld gee nie."
+ },
+ "f4dc554d34de2119": {
+  "en": "<strong>Keep software up to date,</strong> including plugins and the system behind your website.",
+  "t": "<strong>Hou sagteware op datum,</strong> insluitend inproppe en die stelsel agter jou webwerf."
+ },
+ "c44b8af839107262": {
+  "en": "<strong>Have a backup that has been tested,</strong> not only one that exists.",
+  "t": "<strong>Maak seker dat jou rugsteun getoets is,</strong> nie net dat dit bestaan nie."
+ },
+ "7c9ee7fbf41c7eea": {
+  "en": "What we do for your website, in plain words",
+  "t": "Wat ons vir jou webwerf doen, in eenvoudige woorde"
+ },
+ "399b110d8e6d4ea1": {
+  "en": "We look at the part of security we can influence: your website and the systems behind it.",
+  "t": "Ons kyk na die deel van sekuriteit wat ons kan beïnvloed: jou webwerf en die stelsels daaragter."
+ },
+ "5a012c768b020585": {
+  "en": "<strong>Forms that resist abuse.</strong> Input is checked on the server, the number of requests is limited and bot protection stops automated spam and attacks.",
+  "t": "<strong>Vorms wat misbruik weerstaan.</strong> Invoer word op die bediener nagegaan, die aantal versoeke word beperk en botbeskerming stop geoutomatiseerde strooipos en aanvalle."
+ },
+ "ee658d5e55bef41a": {
+  "en": "<strong>A check of what is exposed.</strong> We look at databases, API access rules, admin pages and dashboards, and make sure important accounts use two-step login.",
+  "t": "<strong>&#x27;n Ondersoek na wat blootgestel is.</strong> Ons kyk na databasisse, API-toegangsreëls, adminbladsye en dashboards, en maak seker dat belangrike rekeninge twee-stap-aanmelding gebruik."
+ },
+ "82ca1cf03883a5ed": {
+  "en": "<strong>A firewall that is set up properly.</strong> We put a protective layer in front of your site (Cloudflare) and tune its rules, instead of leaving defaults on.",
+  "t": "<strong>&#x27;n firewall wat behoorlik opgestel is.</strong> Ons plaas &#x27;n beskermende laag voor jou webwerf (Cloudflare) en stel sy reëls af, in plaas daarvan om die verstekwaardes aan te laat."
+ },
+ "024997123f656982": {
+  "en": "<strong>Updates and alerts.</strong> We monitor the building blocks of your site and warn you when one has a known weak spot.",
+  "t": "<strong>Opdaterings en waarskuwings.</strong> Ons monitor die boustene van jou webwerf en waarsku jou wanneer een &#x27;n bekende swakpunt het."
+ },
+ "818684d0ce60d4bd": {
+  "en": "<strong>Backups we actually test.</strong> We check the backups your provider makes, keep independent copies and test restoring them on a regular basis.",
+  "t": "<strong>Rugsteun wat ons werklik toets.</strong> Ons kontroleer die rugsteun wat jou verskaffer maak, hou onafhanklike kopieë en toets gereeld of ons dit kan herstel."
+ },
+ "7388a071cdad0462": {
+  "en": "<strong>A monthly report in plain language,</strong> built from the data of the tools we use, so you can see what happened and what we did.",
+  "t": "<strong>&#x27;n Maandelikse verslag in eenvoudige taal,</strong> opgebou uit die data van die gereedskap wat ons gebruik, sodat jy kan sien wat gebeur het en wat ons gedoen het."
+ },
+ "ae0e906c778060f0": {
+  "en": "An honest note: nobody can promise zero risk. The goal is to make you a harder target, to notice problems sooner and to recover quickly when something goes wrong.",
+  "t": "&#x27;n Eerlike nota: niemand kan nulrisiko belowe nie. Die doel is om jou &#x27;n moeiliker teiken te maak, om probleme vroeër op te spoor en om vinnig te herstel wanneer iets verkeerd loop."
+ },
+ "daa792eaca9cc1b1": {
+  "en": "If something does go wrong",
+  "t": "As iets verkeerd loop"
+ },
+ "feff65a5cc87c32a": {
+  "en": "<strong>Stay calm and stop the damage.</strong> Disconnect the affected device, change passwords and tell your colleagues.",
+  "t": "<strong>Bly kalm en stop die skade.</strong> Ontkoppel die besmette toestel, verander jou wagwoorde en vertel jou kollegas."
+ },
+ "4c5053d865a2e63e": {
+  "en": "<strong>Call your bank straight away</strong> if money or payment details are involved.",
+  "t": "<strong>Bel jou bank onmiddellik</strong> as geld of betaalbesonderhede betrokke is."
+ },
+ "9d693a17e1c6ad2c": {
+  "en": "<strong>Report suspicious emails</strong> to <a href=\"mailto:suspect@safeonweb.be\">suspect@safeonweb.be</a>, the address of the Belgian Centre for Cybersecurity (check safeonweb.be for the current instructions).",
+  "t": "<strong>Meld verdagte e-posse</strong> aan <a href=\"mailto:suspect@safeonweb.be\">suspect@safeonweb.be</a>, die adres van die Belgiese Sentrum vir Kubersekuriteit (kyk safeonweb.be vir die huidige instruksies)."
+ },
+ "01bc8b433be9a8a0": {
+  "en": "<strong>Think about personal data.</strong> If customer data may be affected, you may have to notify the Data Protection Authority within 72 hours. Ask your adviser.",
+  "t": "<strong>Dink aan persoonlike data.</strong> As kliëntedata geraak kan word, moet jy dalk die Gegewingsbeskermingsowerheid binne 72 uur in kennis stel. Vra jou adviseur."
+ },
+ "bb315f3aaba922f7": {
+  "en": "How exposed is your website?",
+  "t": "Hoe blootgestel is jou webwerf?"
+ },
+ "ef350a55805704cb": {
+  "en": "We are happy to look at your website with you and explain what we find in plain language.",
+  "t": "Ons kyk graag saam met jou na jou webwerf en verduidelik in eenvoudige taal wat ons vind."
+ },
+ "153125c282ff37b3": {
+  "en": "Offers terms",
+  "t": "Bied bepalings aan"
+ },
+ "3b3372911839c2a1": {
+  "en": "Version <span translate=\"no\">2026-11-v1</span>, <span translate=\"no\">10 November 2026</span>. These terms exist in English only.",
+  "t": "Weergawe <span translate=\"no\">2026-11-v1</span>, <span translate=\"no\">10 November 2026</span>. Hierdie bepalings bestaan slegs in Engels."
+ },
+ "d8ce0e4269354452": {
+  "en": "Cyberattack protection, woman behind laptop with hacker",
+  "t": "Kuberaanvalsbeskerming, vrou agter 'n skootrekenaar met 'n hacker"
+ },
+ "0b7187dc02a8ddcb": {
+  "en": "Offers from DRP BuildLab and partners | Blog | DRP BuildLab",
+  "t": "Aanbiedings van DRP BuildLab en vennote | Blog | DRP BuildLab"
+ },
+ "2a867ba949608305": {
+  "en": "Choose whether you also want to receive offers from DRP BuildLab and selected partners by email.",
+  "t": "Kies of jy ook aanbiedings van DRP BuildLab en geselekteerde vennote per e-pos wil ontvang."
+ },
+ "fa1585d8796aa250": {
+  "en": "Small business, big target? Cybersecurity in plain language | Blog | DRP BuildLab",
+  "t": "Klein besigheid, groot teiken? Kubersekuriteit in eenvoudige taal | Blog | DRP BuildLab"
+ },
+ "f59308c3a43d9f36": {
+  "en": "Why small businesses are in the picture too, why most attacks start with a person, and what you can do about it. Plus what we check and set up on your website, explained in plain language.",
+  "t": "Waarom klein besighede ook in die prentjie is, waarom die meeste aanvalle by 'n persoon begin, en wat jy daaraan kan doen. Boonop wat ons op jou webwerf nagaan en opstel, verduidelik in eenvoudige taal."
+ },
+ "2bedd19131fc66db": {
+  "en": "Offers terms | DRP BuildLab",
+  "t": "Bied voorwaardes aan | DRP BuildLab"
+ },
+ "1a240a718b4e0037": {
+  "en": "The terms of the optional offers emails from DRP BuildLab and selected partners, for subscribers to the DRP BuildLab blog.",
+  "t": "Die bepalings van die opsionele aanbod-e-posse van DRP BuildLab en geselekteerde vennote vir intekenare op die DRP BuildLab-blog."
+ },
+ "27b842ac3d41707c": {
+  "en": "What a CRM actually does for a small business (and when you don't need one)",
+  "t": "Wat &#x27;n CRM eintlik vir &#x27;n klein besigheid doen (en wanneer jy nie een nodig het nie)"
+ },
+ "9d611f519aa67130": {
+  "en": "What a CRM really does for a small business, five signs you have outgrown the spreadsheet, when you don't need one yet, and how to start in one week.",
+  "t": "Wat &#x27;n CRM regtig vir &#x27;n klein besigheid doen, vyf tekens dat jy die sigblad oorgroei het, wanneer jy nog nie een nodig het nie, en hoe om binne &#x27;n week te begin."
+ },
+ "c00740f2ac6f6273": {
+  "en": "Ask ten small business owners what a CRM is and you will get eleven answers. A fancy address book. An expensive spreadsheet. Something the sales team of a big company uses.",
+  "t": "Vra tien klein sake-eienaars wat &#x27;n CRM is en jy sal elf antwoorde kry. &#x27;n Luukse adresboek. &#x27;n Duur sigblad. Iets wat die verkoopsspan van &#x27;n groot maatskappy gebruik."
+ },
+ "0432f9631cd852cb": {
+  "en": "The honest answer is simpler: a CRM is a shared memory. It remembers who you talked to, what you promised and what happens next, so that it does not all live in one person's head.",
+  "t": "Die eerlike antwoord is eenvoudiger: &#x27;n CRM is &#x27;n gedeelde geheue. Dit onthou met wie jy gepraat het, wat jy belowe het en wat volgende gebeur, sodat dit nie alles in een persoon se kop hoef te wees nie."
+ },
+ "70a7f0086bdb457a": {
+  "en": "A CRM does not win you customers. It stops you from forgetting the ones you already have.",
+  "t": "&#x27;n CRM wen nie kliënte vir jou nie. Dit keer jou daarvan om die kliënte wat jy reeds het, te vergeet."
+ },
+ "5df7b932d9cf80a5": {
+  "en": "Signs you have outgrown the spreadsheet",
+  "t": "Tekens dat jy die sigblad oorgroei het"
+ },
+ "06a42c4579fee014": {
+  "en": "If three of these sound familiar, your customers deserve better than a tab called 'Sheet2':",
+  "t": "As drie hiervan bekend klink, verdien jou kliënte beter as &#x27;n oortjie met die naam &#x27;Sheet2&#x27;:"
+ },
+ "6d70dd919f3a3859": {
+  "en": "Two people keep their own list of the same customers.",
+  "t": "Twee mense hou hul eie lys van dieselfde kliënte by."
+ },
+ "00b7b2258c159487": {
+  "en": "Follow-ups depend on someone remembering to 'call them next week'.",
+  "t": "Opvolgafsprake hang af van iemand wat onthou om hulle volgende week te bel."
+ },
+ "8947f59e902f1221": {
+  "en": "You cannot answer 'how many quotes are still open?' without asking around.",
+  "t": "Jy kan nie die vraag &#x27;hoe baie aanhalings is nog oop?&#x27; beantwoord sonder om rond te vra nie."
+ },
+ "e504ebd6e6cc31b6": {
+  "en": "A customer asks for a copy of an invoice and it takes three people and two inboxes.",
+  "t": "&#x27;n Kliënt vra om &#x27;n afskrif van &#x27;n faktuur en dit verg drie mense en twee inkassies."
+ },
+ "cb354cb739b7db35": {
+  "en": "When someone goes on holiday, their customers go quiet.",
+  "t": "Wanneer iemand op vakansie gaan, word hul kliënte stil."
+ },
+ "5a7f444ca9d6e4fb": {
+  "en": "What a good CRM does for a small business",
+  "t": "Wat &#x27;n goeie CRM vir &#x27;n klein besigheid doen"
+ },
+ "88520cb1c248b182": {
+  "en": "Five things, in plain words:",
+  "t": "Vyf dinge, in eenvoudige woorde:"
+ },
+ "5c4844f95f431ba3": {
+  "en": "<strong>One place per customer.</strong> Contact details, emails, quotes, invoices and notes together.",
+  "t": "<strong>Een plek per kliënt.</strong> Kontakbesonderhede, e-posse, kwotasies, fakture en aantekeninge saam."
+ },
+ "dfc0fb3c24c2b682": {
+  "en": "<strong>A history you can read in thirty seconds.</strong> Before a call you see what was said last time.",
+  "t": "<strong>&#x27;n Geskiedenis wat jy in dertig sekondes kan lees.</strong> Voordat jy &#x27;n oproep maak, sien jy wat laas gesê is."
+ },
+ "41cc07e5fecdb5fb": {
+  "en": "<strong>Follow-ups that remind you.</strong> You set a date once, and the system nudges you instead of your memory.",
+  "t": "<strong>Opvolgherinnerings wat jou in kennis stel.</strong> Jy stel &#x27;n datum net een keer in, en die stelsel gee jou &#x27;n herinnering in plaas van jou eie geheue."
+ },
+ "a055809f11bd2d53": {
+  "en": "<strong>A simple pipeline.</strong> Stages such as new request, quote sent, accepted and done, so you can see where work gets stuck.",
+  "t": "<strong>&#x27;n eenvoudige pyplyn.</strong> Stadiums soos nuwe versoek, kwotasie gestuur, aanvaar en voltooi, sodat jy kan sien waar werk vassteek."
+ },
+ "0615f11f0cafed06": {
+  "en": "<strong>Connections to the tools you already use.</strong> Website forms, email, calendar, invoicing and payments, so nobody retypes the same data.",
+  "t": "<strong>Koppelvinnings met die gereedskap wat jy reeds gebruik.</strong> Webvorms, e-pos, kalender, fakturering en betalings, sodat niemand dieselfde data weer moet intik nie."
+ },
+ "6e55d72b6004b437": {
+  "en": "A small example",
+  "t": "&#x27;n klein voorbeeld"
+ },
+ "876ef0ab47d2fe70": {
+  "en": "Marc runs a three-person tiling company. (Marc is made up, his problem is not.) Requests arrive through the website form, WhatsApp and the phone. Quotes live in Word documents with names like quote_final_v3_FINAL.docx.",
+  "t": "Marc bestuur &#x27;n teëlmaatskappy met drie persone. (Marc is fiktief, sy probleem is nie.) Versoeke kom in via die webwerfvorm, WhatsApp en die telefoon. Kwotasies lê in Word-dokumente met name soos quote_final_v3_FINAL.docx."
+ },
+ "519a800eeeb204eb": {
+  "en": "With a CRM, every request becomes one card. A website request appears automatically, the quote is attached, a reminder is set for three days later and the status moves to 'accepted' when the customer says yes. An accepted quote can start an invoice draft. What used to be a weekly hunt through messages becomes a short look at one screen.",
+  "t": "Met &#x27;n CRM word elke versoek een kaart. &#x27;n Webwerfversoek verskyn outomaties, die kwotasie word aangeheg, &#x27;n herinnering word vir drie dae later ingestel en die status skuif na &#x27;aanvaar&#x27; wanneer die kliënt ja sê. &#x27;n Aanvaarde kwotasie kan &#x27;n faktuurontwerp begin. Wat voorheen &#x27;n weeklikse soektog deur boodskappe was, word nou &#x27;n kort blik op een skerm."
+ },
+ "df246e01df469fc4": {
+  "en": "When you don't need a CRM",
+  "t": "Wanneer jy nie &#x27;n CRM nodig het nie"
+ },
+ "1099d027ba5a8496": {
+  "en": "Be honest with yourself. You can skip it if:",
+  "t": "Wees eerlik met jouself. Jy kan dit oorslaan as:"
+ },
+ "eb7134e99aee2a22": {
+  "en": "You have a handful of repeat customers and know them all by heart.",
+  "t": "Jy het &#x27;n handjievol herhaalde kliënte en ken hulle almal uit die kop."
+ },
+ "c36457a2a3c57cfc": {
+  "en": "Only one person ever talks to customers.",
+  "t": "Net een persoon praat ooit met kliënte."
+ },
+ "a7bcba95f4a8c9a0": {
+  "en": "You will not keep it up to date. A CRM with empty fields is worse than a spreadsheet.",
+  "t": "Jy sal dit nie op datum hou nie. &#x27;n CRM met leë velde is erger as &#x27;n sigblad."
+ },
+ "00283a8542104f76": {
+  "en": "Start with a plain spreadsheet that has five columns: name, contact details, last contact, next step and the date of that next step. If you keep that tidy for a month, you know what you need.",
+  "t": "Begin met &#x27;n eenvoudige sigblad met vyf kolomme: naam, kontakbesonderhede, laaste kontak, volgende stap en die datum van daardie volgende stap. As jy dit vir &#x27;n maand netjies hou, weet jy wat jy nodig het."
+ },
+ "9c8cfea56f2ba73f": {
+  "en": "Buy or build?",
+  "t": "Koop of bou?"
+ },
+ "08196bb834341a85": {
+  "en": "Ready-made tools are cheap to start with and fine for standard sales processes. They get awkward when your process is not standard: you quote by area, you need an approval step, or you have to connect to a supplier system. Then you spend more time bending the tool than using it.",
+  "t": "Klaargemaakte gereedskap is goedkoop om mee te begin en geskik vir standaard verkoopsprosesse. Hulle raak onhandig wanneer jou proses nie standaard is nie: jy gee kwotasies per area, jy het &#x27;n goedkeuringsstap nodig, of jy moet aan &#x27;n verskafferstelsel koppel. Dan spandeer jy meer tyd daaraan om die gereedskap aan te pas as om dit te gebruik."
+ },
+ "56de7c83cd54083f": {
+  "en": "A custom CRM is built around your process. It holds only the fields and steps you actually use and connects directly to your website, invoicing and payments. The price is a higher upfront cost and someone who maintains it. Whether that is worth it depends on how much of your day goes into admin that a system could do.",
+  "t": "&#x27;n Pasgemaakte CRM word rondom jou proses opgebou. Dit bevat slegs die velde en stappe wat jy werklik gebruik en koppel direk aan jou webwerf, fakturering en betalings. Die prys is &#x27;n hoër voorafkoste en iemand wat dit onderhou. Of dit die moeite werd is, hang af van hoeveel van jou dag in administratiewe take gaan wat &#x27;n stelsel vir jou kan doen."
+ },
+ "8b4194c38d4aefec": {
+  "en": "Start in one week",
+  "t": "Begin oor &#x27;n week"
+ },
+ "424255555b69e8c6": {
+  "en": "<strong>Monday:</strong> write down your real process in five steps, from first request to paid invoice.",
+  "t": "<strong>Maandag:</strong> skryf jou werklike proses in vyf stappe neer, van die eerste versoek tot die betaalde faktuur."
+ },
+ "01cb68d36159accf": {
+  "en": "<strong>Tuesday:</strong> list what you want to see at a glance, such as open quotes and overdue follow-ups.",
+  "t": "<strong>Dinsdag:</strong> lys wat jy op &#x27;n oogopslag wil sien, soos oop aanhalings en agterstallige opvolgaksies."
+ },
+ "80ab7ff25b5b1409": {
+  "en": "<strong>Wednesday:</strong> move your customers into one list and remove duplicates.",
+  "t": "<strong>Woensdag:</strong> skuif jou kliënte in een lys en verwyder duplikate."
+ },
+ "bc1460c88dd8d1a3": {
+  "en": "<strong>Thursday:</strong> make one rule: every contact gets a next step and a date.",
+  "t": "<strong>Donderdag:</strong> stel een reël: elke kontak kry &#x27;n volgende stap en &#x27;n datum."
+ },
+ "3accd850ff4be1b8": {
+  "en": "<strong>Friday:</strong> review for ten minutes. Decide whether a spreadsheet is enough or whether you need a tool.",
+  "t": "<strong>Vrydag:</strong> hersien vir tien minute. Bepaal of &#x27;n sigblad voldoende is of dat jy &#x27;n hulpmiddel nodig het."
+ },
+ "42ffed47c87a5ba9": {
+  "en": "No tool fixes a process nobody follows. A CRM only works if the habit comes first: write it down, set the next step, look at it once a week. The software just makes that habit easier.",
+  "t": "Geen hulpmiddel herstel &#x27;n proses wat niemand volg nie. &#x27;n CRM werk net as die gewoonte eers kom: skryf dit neer, stel die volgende stap in, kyk dit een keer per week na. Die sagteware maak daardie gewoonte net makliker."
+ },
+ "c75be7156da7daa4": {
+  "en": "Marc does not exist. His quote_final_v3_FINAL.docx does, in someone's folder.",
+  "t": "Marc bestaan nie. Sy quote_final_v3_FINAL.docx bestaan wel, in iemand se vouer."
+ },
+ "91950f4987446089": {
+  "en": "Not sure what you need?",
+  "t": "Nie seker wat jy nodig het nie?"
+ },
+ "5f4f954266c1bd92": {
+  "en": "We are happy to look at your process with you and tell you honestly whether a spreadsheet is enough or whether a custom CRM would pay off.",
+  "t": "Ons is graag bereid om saam met u na u proses te kyk en u eerlik te vertel of &#x27;n sigblad voldoende is of dat &#x27;n pasgemaakte CRM die moeite werd sal wees."
+ },
+ "e4cb6fde468e384c": {
+  "en": "pexels b s 78158866 27155428",
+  "t": "pexels b s 78158866 27155428"
+ },
+ "d9bad97dcce274d3": {
+  "en": "What a CRM actually does for a small business (and when you don't need one) | Blog | DRP BuildLab",
+  "t": "Wat 'n CRM eintlik vir 'n klein besigheid doen (en wanneer jy nie een nodig het nie) | Blog | DRP BuildLab"
+ },
+ "e99e0c4794ea55c7": {
+  "en": "What a CRM really does for a small business, five signs you have outgrown the spreadsheet, when you don't need one yet, and how to start in one week.",
+  "t": "Wat 'n CRM regtig vir 'n klein besigheid doen, vyf tekens dat jy die sigblad oorgroei het, wanneer jy nog nie een nodig het nie, en hoe om binne 'n week te begin."
+ },
+ "8fd92af153d7bda8": {
+  "en": "Your new intern never sleeps, never doubts and has no idea what 'confidential' means",
+  "t": "Jou nuwe stagiair slaap nooit, twyfel nooit en het geen idee wat 'vertroulik' beteken nie."
+ },
+ "1837a886063d8fd5": {
+  "en": "Your team is probably already using AI. Treat it like a brilliant intern: five simple rules to keep customer data safe and your company out of trouble.",
+  "t": "Jou span gebruik waarskynlik reeds KI. Behandel dit soos 'n briljante intern: vyf eenvoudige reëls om kliëntedata veilig te hou en jou maatskappy uit die moeilikheid te hou."
+ },
+ "0a82afc2c20767e4": {
+  "en": "Meet the best intern you have ever had. Starts at six in the morning. Never complains. Has read most of the internet. Writes a decent email in four seconds.",
+  "t": "Ontmoet die beste stagiair wat jy nog ooit gehad het. Begin om ses in die oggend. Klaag nooit. Het die meeste van die internet gelees. Skryf 'n ordentlike e-pos in vier sekondes."
+ },
+ "596d6732925edb37": {
+  "en": "There are three small problems. The intern is very sure of itself, even when it is wrong. It does not know what 'confidential' means. And it will happily work with whatever you hand over, without asking who else might see it.",
+  "t": "Daar is drie klein probleme. Die intern is baie seker van homself, selfs wanneer dit verkeerd is. Dit weet nie wat 'vertroulik' beteken nie. En dit sal graag werk met wat jy ook al oorhandig, sonder om te vra wie anders dit kan sien."
+ },
+ "bd48d7756412aec8": {
+  "en": "Congratulations, you have an AI tool. And your team is probably already using it.",
+  "t": "Baie geluk, jy het 'n KI-instrument. En jou span gebruik dit waarskynlik reeds."
+ },
+ "2f8ec3c26ba373cc": {
+  "en": "Treat AI like a brilliant intern. Not like a vault.",
+  "t": "Behandel KI soos 'n briljante intern. Nie soos 'n kluis nie."
+ },
+ "1b34e9b8bea13206": {
+  "en": "What the intern is great at",
+  "t": "Waarvoor die stagiair uitstekend is"
+ },
+ "6341c0a7c58b8ecb": {
+  "en": "First drafts. Summaries. Brainstorming ten titles when you have none. Turning your messy notes into something a human can read. For this kind of work it is fast, tireless and surprisingly good.",
+  "t": "Eerste konsepte. Opsommings. Breinkragstorm oor tien titels wanneer jy geen het nie. Om jou rommelige aantekeninge in iets te omskep wat 'n mens kan lees. Vir hierdie soort werk is dit vinnig, onvermoeid en verbasend goed."
+ },
+ "f1e0e093e8c1c7bb": {
+  "en": "What it is not good at: knowing your rules, your clients, or when to say 'I'm not sure'. It sounds equally confident when it is right and when it is making things up. That is the thing to remember.",
+  "t": "Waar dit nie goed in is nie: om jou reëls te ken, jou kliënte te ken, of om te weet wanneer om te sê 'Ek is nie seker nie'. Dit klink ewe selfversekerd wanneer dit reg is en wanneer dit dinge uitdink. Dit is die ding om te onthou."
+ },
+ "2a95e4dd1b393a33": {
+  "en": "Rule one: do not hand over the keys",
+  "t": "Reël een: moenie die sleutels oorhandig nie"
+ },
+ "b1e7e704eb230c4d": {
+  "en": "You would not give an intern on day one the company bank card, the passwords and the client list. Same here.",
+  "t": "Jy sou nie vir 'n intern op dag een die maatskappy se bankkaart, die wagwoorde en die kliëntelys gee nie. Dieselfde hier."
+ },
+ "99337929e5607176": {
+  "en": "Noor works in accounting. (Noor is made up, the situation is not.) A supplier sends a long email about a disputed invoice. Noor pastes the whole thing into a free chatbot to get 'a polite reply'. The reply is excellent. The email also contained the supplier's name, bank details and an invoice number, which are now in a place Noor no longer controls.",
+  "t": "Noor werk in rekeningkunde. (Noor is fiktief, die situasie nie.) 'n Verskaffer stuur 'n lang e-pos oor 'n betwiste faktuur. Noor plak die hele ding in 'n gratis chatbot om 'n beleefde antwoord te kry. Die antwoord is uitstekend. Die e-pos het ook die verskaffer se naam, bankbesonderhede en 'n faktuur nommer bevat, wat nou op 'n plek is wat Noor nie meer beheer nie."
+ },
+ "1e19dd5fa33d2e82": {
+  "en": "Nothing dramatic happens. But it did not have to happen at all. The simple test: do not paste anything you would not email to a stranger.",
+  "t": "Niks dramaties gebeur nie. Maar dit moes glad nie gebeur het nie. Die eenvoudige toets: plak niks wat jy nie aan 'n vreemdeling sou e-pos nie."
+ },
+ "20ffead591d95826": {
+  "en": "Rule two: check the work",
+  "t": "Reël twee: kontroleer die werk"
+ },
+ "9eb1b4909d69118c": {
+  "en": "The intern's best skill is sounding right. So check what matters: names, numbers, dates and promises.",
+  "t": "Die intern se beste vaardigheid is om reg te klink. Kontroleer dus wat saak maak: name, nommers, datums en beloftes."
+ },
+ "02d67fbb3ad7887e": {
+  "en": "This is not only about embarrassment. In 2024 a tribunal in Canada held Air Canada responsible for what the chatbot on its own website had told a customer about a refund. If your AI says it, it is your company saying it.",
+  "t": "Dit gaan nie net oor verleentheid nie. In 2024 het 'n tribunaal in Kanada Air Canada verantwoordelik gehou vir wat die chatbot op sy eie webwerf aan 'n kliënt oor 'n terugbetaling gesê het. As jou KI dit sê, sê jou maatskappy dit."
+ },
+ "e659107647393d35": {
+  "en": "Rule three: start with the boring jobs",
+  "t": "Reël drie: begin met die vervelige take."
+ },
+ "5a36bfded2b05d1b": {
+  "en": "Nobody gives a new intern the biggest client in week one. Let the AI prove itself on low-stakes work first: summarising your own meeting notes, drafting a first version of a blog post, suggesting subject lines. When the results are reliable, give it bigger jobs, with a human still reading the output.",
+  "t": "Niemand gee 'n nuwe intern in die eerste week die grootste kliënt nie. Laat die KI eers op lae-risiko take bewys wat dit kan doen: jou eie vergaderingsnotules opsom, 'n eerste weergawe van 'n blogpos opstel, onderwerpslyne voorstel. Wanneer die resultate betroubaar is, gee dit groter take, maar laat 'n mens steeds die uitset lees."
+ },
+ "ffa68b00d41b09eb": {
+  "en": "Rule four: tell people when the intern is talking",
+  "t": "Reël vier: sê vir mense wanneer die stagiair praat."
+ },
+ "b72b44224a0a7c3c": {
+  "en": "If a customer chats with an AI on your website, say so in the first sentence. People forgive a bot for not knowing something. They do not forgive being tricked. (We wrote a whole article about that, because it matters.)",
+  "t": "As 'n kliënt op jou webwerf met 'n KI gesels, sê dit in die eerste sin. Mense vergewe 'n bot daarvoor dat hy iets nie weet nie. Hulle vergewe nie dat hulle mislei word nie. (Ons het 'n hele artikel daaroor geskryf, want dit maak saak.)"
+ },
+ "6cdbe30a95ed9cce": {
+  "en": "Rule five: give the intern a proper desk",
+  "t": "Reël vyf: gee die stagiair 'n behoorlike lessenaar."
+ },
+ "4703720c80070c47": {
+  "en": "Right now, your team probably uses AI the way people use a stray pen: whichever tab is open, whichever account they signed up for. A proper desk looks different:",
+  "t": "Op die oomblik gebruik jou span waarskynlik KI soos mense 'n los pen gebruik: watter oortjie ook al oop is, watter rekening hulle ook al aangemeld het. 'n ordentlike lessenaar lyk anders:"
+ },
+ "fdb1adfece6b5f0b": {
+  "en": "A short list of approved tools, on business plans, with the data settings checked.",
+  "t": "'n Kort lys van goedgekeurde gereedskap vir sakeplanne, met die datainstellings nagegaan."
+ },
+ "208f44770553b654": {
+  "en": "Clear rules about what never goes in.",
+  "t": "Duidelike reëls oor wat nooit ingaan nie."
+ },
+ "d3630b2f9dc132e2": {
+  "en": "Where it makes sense, AI connected to your own systems, such as your CRM or documents, with access rules and a log of what it did, and with personal data removed before anything leaves.",
+  "t": "Waar dit sin maak, KI gekoppel aan jou eie stelsels, soos jou CRM of dokumente, met toegangsreëls en 'n log van wat dit gedoen het, en met persoonlike data verwyder voordat iets uitgaan."
+ },
+ "1f4200eda65760ab": {
+  "en": "That last step is more work than opening a browser tab. It is also the difference between hoping nothing goes wrong and knowing where the data goes.",
+  "t": "Daardie laaste stap verg meer werk as om 'n blaaieroortjie oop te maak. Dit is ook die verskil tussen hoop dat niks verkeerd gaan nie en weet waar die data heen gaan."
+ },
+ "81a2c0a6198fed88": {
+  "en": "The version for the fridge",
+  "t": "Die weergawe vir die yskas"
+ },
+ "eb754187b86a1645": {
+  "en": "If you remember only five sentences:",
+  "t": "As jy net vyf sinne onthou:"
+ },
+ "0db3bcc91d35d71c": {
+  "en": "No passwords, no personal data, no contracts.",
+  "t": "Geen wagwoorde, geen persoonlike data, geen kontrakte."
+ },
+ "fe885d7df72be01e": {
+  "en": "Check names, numbers and promises.",
+  "t": "Kontroleer name, nommers en beloftes."
+ },
+ "d1dca945ebdd015a": {
+  "en": "Start with low-risk tasks.",
+  "t": "Begin met laerisiko-take."
+ },
+ "d413da38fc7d6fc1": {
+  "en": "Say it when AI is talking.",
+  "t": "Sê dit wanneer KI praat."
+ },
+ "e24985300338daae": {
+  "en": "If you slip, say so right away. Nobody gets in trouble for being quick.",
+  "t": "As jy uitgly, sê dit dadelik. Niemand kom in die moeilikheid omdat hy vinnig was nie."
+ },
+ "d4359655bc5dcb85": {
+  "en": "A fair note",
+  "t": "'n billike nota"
+ },
+ "f3a8a9e8825d046e": {
+  "en": "To be fair to the intern: good AI tools on a business plan do not gossip. Reputable providers usually promise that your input is not used for training and give you controls. But 'usually' is not 'always', and the settings differ per tool, so check yours.",
+  "t": "Om regverdig te wees teenoor die stagiair: goeie KI-gereedskap in 'n sakeplan roddel nie. Betroubare verskaffers belowe gewoonlik dat jou insette nie vir opleiding gebruik word nie en gee jou beheer. Maar 'gewoonlik' beteken nie 'altyd' nie, en die instellings verskil per gereedskap, so kontroleer jou eie."
+ },
+ "aad050d639a11398": {
+  "en": "There is also a rule on the books. The EU AI Act expects organisations that use AI to make sure their people understand it well enough for their job. A short team session with real examples is a good start. Ask your adviser what applies to you.",
+  "t": "Daar is ook 'n reël in die wet. Die EU KI-wet verwag dat organisasies wat KI gebruik, verseker dat hul personeel dit goed genoeg verstaan vir hul werk. 'n Kort spanbijeenkoms met werklike voorbeelde is 'n goeie begin. Vra jou adviseur wat op jou van toepassing is."
+ },
+ "847b59ffeee4ab8c": {
+  "en": "Noor does not exist. The intern is real, and starts at six.",
+  "t": "Noor bestaan nie. Die stagiair is werklik en begin om ses."
+ },
+ "a4c3a51c4fb8048a": {
+  "en": "Want your AI intern at a proper desk?",
+  "t": "Wil jy hê jou KI-stagiair moet by 'n behoorlike lessenaar sit?"
+ },
+ "e754f5600ceed4e8": {
+  "en": "We connect AI to your own systems, with access rules and logging, so you decide what it sees and what it does. Tell us what you want it to do. And what you absolutely do not.",
+  "t": "Ons koppel KI aan jou eie stelsels, met toegangsreëls en logboekregistrasie, sodat jy besluit wat dit sien en wat dit doen. Vertel ons wat jy wil hê dit moet doen. En wat jy absoluut nie wil hê dit moet doen nie."
+ },
+ "624c37c3ae0cb12b": {
+  "en": "Corporate",
+  "t": "Korporatief"
+ },
+ "52873611d4666788": {
+  "en": "Your new intern never sleeps, never doubts and has no idea what 'confidential' means | Blog | DRP BuildLab",
+  "t": "Jou nuwe intern slaap nooit, twyfel nooit en het geen idee wat 'vertroulik' beteken nie | Blog | DRP BuildLab"
+ },
+ "9157960da56da5af": {
+  "en": "Your team is probably already using AI. Treat it like a brilliant intern: five simple rules to keep customer data safe and your company out of trouble.",
+  "t": "Jou span gebruik waarskynlik reeds KI. Behandel dit soos 'n briljante intern: vyf eenvoudige reëls om kliëntedata veilig te hou en jou maatskappy uit die moeilikheid te hou."
+ },
+ "df94f2a2cb379fc4": {
+  "en": "Version: <span translate=\"no\">17 november 2026</span>. The Dutch text is the binding version.",
+  "t": "Weergawe: <span translate=\"no\">17 november 2026</span>. Die Nederlandse teks is die bindende weergawe."
+ },
+ "304ba0a22af17423": {
+  "en": "Clients and partners",
+  "t": "Kliënte en vennote"
+ },
+ "a48dabbe70b877eb": {
+  "en": "We’re partnering with Tinrate, and we’re testing it on our own website first",
+  "t": "Ons werk saam met Tinrate en toets dit eers op ons eie webwerf."
+ },
+ "77e9c6e19a3ce1d7": {
+  "en": "Nobody reads websites anymore, they ask. We’ve teamed up with Tinrate and are putting its Concierge on our own website before we recommend it to anyone.",
+  "t": "Niemand lees webwerwe meer nie, vra hulle. Ons het saamgespan met Tinrate en sit hul Concierge op ons eie webwerf voordat ons dit aan enigiemand aanbeveel."
+ },
+ "e4fbdd40e56c55d3": {
+  "en": "2 min read",
+  "t": "2 min lees"
+ },
+ "e0525c70feee5f84": {
+  "en": "Nobody wants to read an entire website anymore. They want to ask a question and get an answer, quickly.",
+  "t": "Niemand wil meer 'n hele webwerf lees nie. Hulle wil 'n vraag vra en vinnig 'n antwoord kry."
+ },
+ "615a560f03f53231": {
+  "en": "That is why I sat down with Gunther Ghysels, the founder of <a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a>, to talk about where we could work together. The result: we are becoming a Tinrate partner, and before we bring it to a single client, we are running it on our own website first.",
+  "t": "Daarom het ek gaan sit met Gunther Ghysels, die stigter van <a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a>, om te praat oor waar ons saam kon werk. Die resultaat: ons word 'n Tinrate-vennoot, en voordat ons dit aan 'n enkele kliënt bekendstel, toets ons dit eers op ons eie webwerf."
+ },
+ "6e016be217cc36a3": {
+  "en": "What Tinrate does",
+  "t": "Wat Tinrate doen"
+ },
+ "43d064bc7f659a0f": {
+  "en": "<a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a> is an AI startup from Ghent, built around one idea: connecting knowledge. Its main product is the marketplace where you can find all sorts of expertise and advise and their newest product is the <strong>Concierge</strong>.",
+  "t": "<a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a> is 'n KI-startup uit Gent, opgebou rondom een idee: kennis verbind. Sy hoofproduk is die markplek waar jy allerhande kundigheid en advies kan vind, en hul nuutste produk is die <strong>Concierge</strong>."
+ },
+ "2d3506422726efc1": {
+  "en": "The Concierge lives on your website and answers visitors on the spot, from your own knowledge. It qualifies them, and it gets every request to the right person in your organisation. If a conversation needs a call, it can book one, free or paid. No more \"we’ll get back to you\", and no more manually forwarding what lands in the info@ inbox. Also connections with every CRM is included.",
+  "t": "Die Concierge woon op jou webwerf en beantwoord besoekers onmiddellik, vanuit jou eie kennis. Dit kwalifiseer hulle en stuur elke versoek na die regte persoon in jou organisasie. As 'n gesprek 'n oproep benodig, kan dit een bespreek, gratis of betaal. Geen meer \"ons kom by jou terug\" nie, en geen meer handmatige deurstuur van wat in die info@-inkassie beland nie. Ook is integrasies met alle CRM's ingesluit."
+ },
+ "b103b8cb161d91d1": {
+  "en": "Apart from conversion Tinrate concierge also gives customer data insights, now you really know what your customers need or what the trends are.",
+  "t": "Afgesien van omskakeling gee Tinrate concierge ook insigte in kliëntedata, nou weet jy regtig wat jou kliënte nodig het of wat die tendense is."
+ },
+ "80810786b4db55e0": {
+  "en": "Why this fits how people search now",
+  "t": "Waarom dit pas by hoe mense nou soek"
+ },
+ "79bd608e604c3ed1": {
+  "en": "Our customers no longer browse menus and skim pages. Just like with GEO (generative engine optimization), they want to ask a question, simplify the process, and speed it up. A website that makes people dig for the answer loses to one that simply answers.",
+  "t": "Ons kliënte blaai nie meer deur spyskaarte en blaai bladsye nie. Net soos met GEO (generative engine optimization) wil hulle 'n vraag vra, die proses vereenvoudig en dit versnel. 'n Webwerf wat mense laat grawe vir die antwoord, verloor teen een wat net antwoord."
+ },
+ "c9525e89a0336b8d": {
+  "en": "What sets Tinrate apart in our opinion",
+  "t": "Wat Tinrate volgens ons anders maak"
+ },
+ "4597e95eeace05cc": {
+  "en": "This morning, our head software engineer, Lathif Sihab Dewantoro, shared his view with me. What stands out to him is that Tinrate distinguishes itself with a workflow configuration that is not technical. The people who know your customers best can decide how questions are handled and who they get routed to, without waiting for a developer.",
+  "t": "Vanoggend het ons hoof-sagteware-ingenieur, Lathif Sihab Dewantoro, sy siening met my gedeel. Wat vir hom uitstaan, is dat Tinrate hom onderskei met 'n werkvloei-konfigurasie wat nie tegnies is nie. Die mense wat jou kliënte die beste ken, kan besluit hoe vrae hanteer word en aan wie hulle gerouteer word, sonder om op 'n ontwikkelaar te wag."
+ },
+ "d3261b0f86c79f57": {
+  "en": "That was the deciding factor for us. A tool that only engineers can configure stays a side project. A tool that the whole team can shape actually gets used.",
+  "t": "Dit was die beslissende faktor vir ons. 'n Gereedskap wat net ingenieurs kan konfigureer, bly 'n byprojek. 'n Gereedskap wat die hele span kan vorm, word werklik gebruik."
+ },
+ "69156b2a94be0e2c": {
+  "en": "Why we test it on ourselves first",
+  "t": "Waarom ons dit eers op onsself toets"
+ },
+ "4e4a9cb86838c099": {
+  "en": "We will not recommend something we have not lived with. So the Concierge is going onto our own website, and we will be looking at:",
+  "t": "Ons sal nie iets aanbeveel wat ons nie self ervaar het nie. Dus gaan die Concierge op ons eie webwerf, en ons gaan na die volgende kyk:"
+ },
+ "d4f1ec50eac6f452": {
+  "en": "how well it answers real visitor questions",
+  "t": "hoe goed dit werklike besoekervrae beantwoord"
+ },
+ "4a9401964c8e5a13": {
+  "en": "how much faster visitors get what they came for",
+  "t": "hoe vinniger besoekers kry waarvoor hulle gekom het"
+ },
+ "ec400af4cb44f33a": {
+  "en": "how easy the configuration is for people who are not engineers",
+  "t": "hoe maklik die konfigurasie is vir mense wat nie ingenieurs is nie"
+ },
+ "732ebfe7d51a6998": {
+  "en": "what needs to improve before we roll it out to clients",
+  "t": "Wat moet verbeter voordat ons dit aan kliënte bekendstel"
+ },
+ "41dc6acfef4d8f48": {
+  "en": "how it affects lead conversion and workflow automation",
+  "t": "hoe dit loodomskakeling en werkvloei-outomatisering beïnvloed"
+ },
+ "6c1fedbc0f094499": {
+  "en": "What’s next",
+  "t": "Wat is volgende?"
+ },
+ "41384633e976341a": {
+  "en": "We will share what we learn along the way, including what does not work. In the meantime, try it on our website and tell us what you think. And if you would like to see the Concierge on your own site, get in touch.",
+  "t": "Ons sal deel wat ons onderweg leer, insluitend wat nie werk nie. Intussen kan jy dit op ons webwerf probeer en vir ons sê wat jy daarvan dink. En as jy die Concierge op jou eie webwerf wil hê, kontak ons."
+ },
+ "c515ef85df437ff6": {
+  "en": "Tinrate DRP BuildLab collaboration partnership",
+  "t": "Tinrate DRP BuildLab samewerkingsvennootskap"
+ },
+ "d8b12afde196d8ed": {
+  "en": "We’re partnering with Tinrate, and we’re testing it on our own website first | Blog | DRP BuildLab",
+  "t": "Ons werk saam met Tinrate, en ons toets dit eers op ons eie webwerf | Blog | DRP BuildLab"
+ },
+ "ca111c360956834c": {
+  "en": "Nobody reads websites anymore, they ask. We’ve teamed up with Tinrate and are putting its Concierge on our own website before we recommend it to anyone.",
+  "t": "Niemand lees webwerwe meer nie, vra hulle. Ons het saamgespan met Tinrate en sit hul Concierge op ons eie webwerf voordat ons dit aan enigiemand aanbeveel."
+ },
+ "2b5ca6cc0c0f49a9": {
+  "en": "Official Tinrate reseller",
+  "t": "Amptelike Tinrate-⁠herverkoper"
+ },
+ "0190459c8809231f": {
+  "en": "Order <span translate=\"no\">Tinrate Concierge</span> <em>through us.</em>",
+  "t": "Bestel <span translate=\"no\">Tinrate Concierge</span> <em>deur ons.</em>"
+ },
+ "94dd1bd8dc9fe993": {
+  "en": "An AI assistant on your website that answers visitors in seconds, day and night, with your own documents, and turns conversations into leads. We set it up on your website, and you try it free for 14 days.",
+  "t": "'n KI-assistent op u webwerf wat besoekers binne sekondes antwoord, dag en nag, met u eie dokumente, en gesprekke in potensiële kliënte omskep. Ons stel dit op u webwerf op, en u probeer dit 14 dae gratis."
+ },
+ "559f9a8fb9c8e43c": {
+  "en": "Order <span translate=\"no\">Concierge</span> <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bestel <span translate=\"no\">Concierge</span> <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "6954367c47da31ec": {
+  "en": "How it works",
+  "t": "Hoe dit werk"
+ },
+ "4fc536b4a5483838": {
+  "en": "Thank you, your order has been received. We will contact you within 24 hours to set up <span translate=\"no\">Concierge</span> on your website.",
+  "t": "Dankie, u bestelling is ontvang. Ons sal u binne 24 uur kontak om <span translate=\"no\">Concierge</span> op u webwerf op te stel."
+ },
+ "66f8a2de77dad977": {
+  "en": "<span translate=\"no\">Tinrate Concierge</span>",
+  "t": "<span translate=\"no\">Tinrate Concierge</span>"
+ },
+ "57590bd92cabe7a0": {
+  "en": "An AI assistant on your website that answers visitors in seconds and turns conversations into leads. We are an official Tinrate reseller.",
+  "t": "'n KI-assistent op u webwerf wat besoekers binne sekondes antwoord en gesprekke in potensiële kliënte omskep. Ons is 'n amptelike herverkoper van Tinrate."
+ },
+ "884c2557f5f72198": {
+  "en": "Free 14-day trial",
+  "t": "Gratis proeftydperk van 14 dae"
+ },
+ "0a12bd96e4d55760": {
+  "en": "Your website, <em>answering in seconds.</em>",
+  "t": "U webwerf <em>antwoord binne sekondes.</em>"
+ },
+ "2cc7905df7ce8045": {
+  "en": "<span translate=\"no\">Tinrate Concierge</span> is an AI assistant on your website. It answers visitors day and night with your own documents, books appointments and turns conversations into leads. Order it through DRP BuildLab: we set it up on your website, and you try it free for 14 days.",
+  "t": "<span translate=\"no\">Tinrate Concierge</span> is 'n KI-assistent op u webwerf. Dit antwoord besoekers dag en nag met u eie dokumente, maak afsprake en omskep gesprekke in potensiële kliënte. Bestel dit deur DRP BuildLab: ons stel dit op u webwerf op, en u probeer dit 14 dae gratis."
+ },
+ "bd6a3bd4c635d1e2": {
+  "en": "What <span translate=\"no\">Concierge</span> <em>does</em>",
+  "t": "Wat <span translate=\"no\">Concierge</span> <em>doen</em>"
+ },
+ "cfdb099ef8294735": {
+  "en": "Visitors who don’t find an answer leave, and nobody knows they were there. <span translate=\"no\">Concierge</span> answers them while they are still on your website.",
+  "t": "Besoekers wat nie 'n antwoord kry nie, gaan weg, en niemand weet dat hulle daar was nie. <span translate=\"no\">Concierge</span> antwoord hulle terwyl hulle nog op u webwerf is."
+ },
+ "6517b5a770c8ee5a": {
+  "en": "Answers in seconds",
+  "t": "Antwoorde binne sekondes"
+ },
+ "5f750a24becf6391": {
+  "en": "Day and night, also at the weekend. No form that waits until the next working day.",
+  "t": "Dag en nag, ook oor die naweek. Geen vorm wat tot die volgende werksdag wag nie."
+ },
+ "fc3d7a571f708e64": {
+  "en": "Knows your business",
+  "t": "Ken u besigheid"
+ },
+ "6a1bbf33ec5593bf": {
+  "en": "Unlike a general chatbot, it answers with the documents and information you give it.",
+  "t": "Anders as 'n algemene chatbot antwoord dit met die dokumente en inligting wat u dit gee."
+ },
+ "e01b5cdd29557d86": {
+  "en": "Turns questions into leads",
+  "t": "Omskep vrae in potensiële kliënte"
+ },
+ "b217570af00d0d9b": {
+  "en": "It collects contact details and books appointments, so a question at 11 at night is a lead in the morning.",
+  "t": "Dit versamel kontakbesonderhede en maak afsprake, sodat 'n vraag om 11 uur die aand teen die oggend 'n potensiële kliënt is."
+ },
+ "4caf792e73f1968c": {
+  "en": "Shows what visitors ask",
+  "t": "Wys wat besoekers vra"
+ },
+ "007c6665927a80a3": {
+  "en": "You see every conversation, every lead and what visitors ask most, so you know what your website brings in.",
+  "t": "U sien elke gesprek, elke potensiële kliënt en wat besoekers die meeste vra, sodat u weet wat u webwerf vir u inbring."
+ },
+ "ccdfb344cd20d758": {
+  "en": "more likely to qualify a lead when you answer within 5 minutes instead of 30. A form waits until the next working day.<small>Source: Lead Response Management Study, MIT and InsideSales.com.</small>",
+  "t": "groter kans om 'n potensiële kliënt te kwalifiseer as u binne 5 minute antwoord in plaas van 30. 'n Vorm wag tot die volgende werksdag.<small>Bron: Lead Response Management Study, MIT en InsideSales.com.</small>"
+ },
+ "2fa510f93d4702c0": {
+  "en": "Why order <em>through us</em>",
+  "t": "Waarom bestel <em>deur ons</em>"
+ },
+ "a642c9e044d9196c": {
+  "en": "The same <span translate=\"no\">Tinrate Concierge</span>, with a team that sets it up for you and stays when you need a change.",
+  "t": "Dieselfde <span translate=\"no\">Tinrate Concierge</span>, met 'n span wat dit vir u opstel en beskikbaar bly wanneer u 'n verandering nodig het."
+ },
+ "92f1282cb8781adf": {
+  "en": "We are an official Tinrate reseller",
+  "t": "Ons is 'n amptelike herverkoper van Tinrate"
+ },
+ "1ab91aa3eaf1f2d8": {
+  "en": "We set up <span translate=\"no\">Concierge</span> on your website for you",
+  "t": "Ons stel <span translate=\"no\">Concierge</span> vir u op u webwerf op"
+ },
+ "3dc94dc5bc9fc6e2": {
+  "en": "It works on any website, also one we did not build",
+  "t": "Dit werk op enige webwerf, ook een wat ons nie gebou het nie"
+ },
+ "0386a4730741bd49": {
+  "en": "We help you choose the documents it answers from",
+  "t": "Ons help u om die dokumente te kies waaruit dit antwoord"
+ },
+ "df36b37c8286084d": {
+  "en": "One point of contact when you want to change something",
+  "t": "Een kontakpunt wanneer u iets wil verander"
+ },
+ "aeb3521ecbd9125b": {
+  "en": "You try it free for 14 days on your own website",
+  "t": "U probeer dit 14 dae gratis op u eie webwerf"
+ },
+ "b61aad5215c04ec9": {
+  "en": "How ordering <em>works</em>",
+  "t": "Hoe die bestelproses <em>werk</em>"
+ },
+ "c6e86f004bb774bf": {
+  "en": "From the form to a working assistant on your website.",
+  "t": "Van die vorm tot 'n werkende assistent op u webwerf."
+ },
+ "a5ad29fa8a2440f6": {
+  "en": "You send the order form",
+  "t": "U stuur die bestelvorm"
+ },
+ "a9b181eb0c0cfc4f": {
+  "en": "Choose a plan, or let us help you choose. It takes about a minute.",
+  "t": "Kies 'n pakket, of laat ons u help kies. Dit neem ongeveer 'n minuut."
+ },
+ "c697586925292259": {
+  "en": "We contact you within 24 hours",
+  "t": "Ons kontak u binne 24 uur"
+ },
+ "33a4c81b012a65e3": {
+  "en": "We look at your website and the documents <span translate=\"no\">Concierge</span> will answer from.",
+  "t": "Ons kyk na u webwerf en die dokumente waaruit <span translate=\"no\">Concierge</span> sal antwoord."
+ },
+ "8097f024ea09bac0": {
+  "en": "We set it up on your website",
+  "t": "Ons stel dit op u webwerf op"
+ },
+ "256088defb5e78e1": {
+  "en": "One tag, no rebuild: your website stays as it is.",
+  "t": "Een stukkie kode, geen herbou nie: u webwerf bly soos dit is."
+ },
+ "34b4f704479b12da": {
+  "en": "You try it free for 14 days",
+  "t": "U probeer dit 14 dae gratis"
+ },
+ "f7a6eee9702df972": {
+  "en": "After the trial, Tinrate bills your plan directly, monthly or yearly.",
+  "t": "Ná die proeftydperk faktureer Tinrate u pakket direk, maandeliks of jaarliks."
+ },
+ "4654b1487694a1e6": {
+  "en": "Three <em>plans</em>",
+  "t": "Drie <em>pakkette</em>"
+ },
+ "0a756b501d3e18ed": {
+  "en": "Not sure which plan fits? Choose “Help me choose” in the form and we advise you. We confirm the price before you start.",
+  "t": "Nie seker watter pakket pas nie? Kies “Help my kies” in die vorm en ons adviseer u. Ons bevestig die prys voordat u begin."
+ },
+ "bb432eaabac0943c": {
+  "en": "To get started",
+  "t": "Om mee te begin"
+ },
+ "cb3d21b78dd4231f": {
+  "en": "<span translate=\"no\">Concierge</span> on your website, answering from your own documents and collecting leads.",
+  "t": "<span translate=\"no\">Concierge</span> op u webwerf, wat uit u eie dokumente antwoord en potensiële kliënte versamel."
+ },
+ "0a0768f063a031a3": {
+  "en": "Order the <span translate=\"no\">Starter</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bestel die <span translate=\"no\">Starter</span>-⁠pakket <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "ea191783b237a572": {
+  "en": "For most businesses",
+  "t": "Vir die meeste besighede"
+ },
+ "3a5858d2bb59cf33": {
+  "en": "Everything in <span translate=\"no\">Starter</span>, without the Tinrate logo on your website.",
+  "t": "Alles in <span translate=\"no\">Starter</span>, sonder die Tinrate-logo op u webwerf."
+ },
+ "f20120837137179a": {
+  "en": "Order the <span translate=\"no\">Business</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bestel die <span translate=\"no\">Business</span>-⁠pakket <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "6e909f15dfb4df23": {
+  "en": "For larger organisations",
+  "t": "Vir groter organisasies"
+ },
+ "358b094e56885a5d": {
+  "en": "For larger organisations, with a plan sized to what you need.",
+  "t": "Vir groter organisasies, met 'n pakket wat op u behoeftes afgestem is."
+ },
+ "01081c824f821e4f": {
+  "en": "Order the <span translate=\"no\">Scale</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bestel die <span translate=\"no\">Scale</span>-⁠pakket <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "13ef9344e5d2a3a4": {
+  "en": "Pay yearly, pay less",
+  "t": "Betaal jaarliks, betaal minder"
+ },
+ "21744f7a5aa98a60": {
+  "en": "A yearly contract costs 15 to 17% less than paying for twelve separate months. Tinrate sends the invoice; we stay your point of contact.",
+  "t": "'n Jaarkontrak kos 15 tot 17% minder as om vir twaalf afsonderlike maande te betaal. Tinrate stuur die faktuur; ons bly u kontakpunt."
+ },
+ "cf215fc6fc3981bc": {
+  "en": "Order with yearly billing <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Bestel met jaarlikse fakturering <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "7d03814354b66697": {
+  "en": "Order <em><span translate=\"no\">Concierge</span></em>",
+  "t": "Bestel <em><span translate=\"no\">Concierge</span></em>"
+ },
+ "8b79d51a05a34d31": {
+  "en": "Fill in the form",
+  "t": "Vul die vorm in"
+ },
+ "2de0cafd56eac90b": {
+  "en": "It takes about a minute. Nothing is charged yet.",
+  "t": "Dit neem ongeveer 'n minuut. Niks word nog gehef nie."
+ },
+ "dbe4342fc956d38c": {
+  "en": "To go through your website and your documents.",
+  "t": "Om deur u webwerf en u dokumente te gaan."
+ },
+ "ab4b92d1e5a0508b": {
+  "en": "Try it free for 14 days",
+  "t": "Probeer dit 14 dae gratis"
+ },
+ "b3d33de4ecff7a9e": {
+  "en": "On your own website, set up by us.",
+  "t": "Op u eie webwerf, deur ons opgestel."
+ },
+ "2b2f8f9380b221c1": {
+  "en": "Order <span translate=\"no\">Tinrate Concierge</span>",
+  "t": "Bestel <span translate=\"no\">Tinrate Concierge</span>"
+ },
+ "8f55197fa38fdd1f": {
+  "en": "Your website address",
+  "t": "U webwerfadres"
+ },
+ "d5db002ca855571a": {
+  "en": "Which plan would you like?",
+  "t": "Watter pakket wil u hê?"
+ },
+ "4d782faf560ab509": {
+  "en": "Help me choose",
+  "t": "Help my kies"
+ },
+ "90a866d5baa20d0d": {
+  "en": "How would you like to pay Tinrate?",
+  "t": "Hoe wil u Tinrate betaal?"
+ },
+ "b2ab45303e0e238a": {
+  "en": "Yearly, 15 to 17% cheaper",
+  "t": "Jaarliks, 15 tot 17% goedkoper"
+ },
+ "9bd2bd2718922b58": {
+  "en": "Every month",
+  "t": "Elke maand"
+ },
+ "503f6a23444d5f5d": {
+  "en": "Anything we should know? <small>(optional)</small>",
+  "t": "Enigiets wat ons moet weet? <small>(opsioneel)</small>"
+ },
+ "de1c17bc4a54c60a": {
+  "en": "<span translate=\"no\">Concierge</span> is a Tinrate service: your subscription is with Tinrate, under Tinrate’s own terms. You try it free for 14 days first.",
+  "t": "<span translate=\"no\">Concierge</span> is 'n Tinrate-diens: u intekening is by Tinrate, onder Tinrate se eie bepalings. U probeer dit eers 14 dae gratis."
+ },
+ "3e1b729f00092f7e": {
+  "en": "Send my order <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Stuur my bestelling <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "337f315cc5e074ba": {
+  "en": "Questions about <em><span translate=\"no\">Concierge</span></em>",
+  "t": "Vrae oor <em><span translate=\"no\">Concierge</span></em>"
+ },
+ "b83740dca6a6f3a3": {
+  "en": "Something else? Write to info@drpbuildlab.com or send us a WhatsApp message.",
+  "t": "Iets anders? Skryf aan info@drpbuildlab.com of stuur vir ons 'n WhatsApp-boodskap."
+ },
+ "cf006e729154dddf": {
+  "en": "Why order through DRP BuildLab and not directly from Tinrate?",
+  "t": "Waarom deur DRP BuildLab bestel en nie direk by Tinrate nie?"
+ },
+ "4dc0389b4dce6fd9": {
+  "en": "You get the same <span translate=\"no\">Tinrate Concierge</span>, plus a team that sets it up on your website, helps you choose what it answers from and is there when you want to change something. We are an official Tinrate reseller.",
+  "t": "U kry dieselfde <span translate=\"no\">Tinrate Concierge</span>, plus 'n span wat dit op u webwerf opstel, u help kies waaruit dit antwoord en daar is wanneer u iets wil verander. Ons is 'n amptelike herverkoper van Tinrate."
+ },
+ "ac440dde37eb8b6a": {
+  "en": "Does it work on a website you did not build?",
+  "t": "Werk dit op 'n webwerf wat u nie gebou het nie?"
+ },
+ "098211ab7c958367": {
+  "en": "Yes. <span translate=\"no\">Concierge</span> is one tag that works on any website, without a rebuild. We look at your website first and set it up for you.",
+  "t": "Ja. <span translate=\"no\">Concierge</span> is een stukkie kode wat op enige webwerf werk, sonder herbou. Ons kyk eers na u webwerf en stel dit vir u op."
+ },
+ "749db68ae71583ce": {
+  "en": "Can I try it before I pay?",
+  "t": "Kan ek dit probeer voordat ek betaal?"
+ },
+ "a5ef7c91fb86a292": {
+  "en": "Yes. You try <span translate=\"no\">Concierge</span> free for 14 days, on your own website.",
+  "t": "Ja. U probeer <span translate=\"no\">Concierge</span> 14 dae gratis, op u eie webwerf."
+ },
+ "afecadeadd00cca3": {
+  "en": "Who sends the invoice?",
+  "t": "Wie stuur die faktuur?"
+ },
+ "90e62389da695861": {
+  "en": "Tinrate bills your plan directly, monthly or yearly. A yearly contract costs 15 to 17% less than paying for twelve separate months.",
+  "t": "Tinrate faktureer u pakket direk, maandeliks of jaarliks. 'n Jaarkontrak kos 15 tot 17% minder as om vir twaalf afsonderlike maande te betaal."
+ },
+ "9500a89d681b3a59": {
+  "en": "Which plan do I need?",
+  "t": "Watter pakket het ek nodig?"
+ },
+ "4a665e6fa455044a": {
+  "en": "<span translate=\"no\">Starter</span> gets you going. From <span translate=\"no\">Business</span> up, the Tinrate logo no longer shows on your website. <span translate=\"no\">Scale</span> is for larger organisations. Not sure? Choose “Help me choose” in the form and we advise you.",
+  "t": "Met <span translate=\"no\">Starter</span> kom u aan die gang. Vanaf <span translate=\"no\">Business</span> verskyn die Tinrate-logo nie meer op u webwerf nie. <span translate=\"no\">Scale</span> is vir groter organisasies. Nie seker nie? Kies “Help my kies” in die vorm en ons adviseer u."
+ },
+ "edf1401ef7861d2e": {
+  "en": "Can you also improve my website itself?",
+  "t": "Kan u ook my webwerf self verbeter?"
+ },
+ "57837badf9705c77": {
+  "en": "Yes, that is our main work. If your website needs an update before the assistant goes on it, we can do that too, in a separate quote.",
+  "t": "Ja, dit is ons hoofwerk. As u webwerf 'n opdatering nodig het voordat die assistent daarop kom, kan ons dit ook doen, met 'n aparte kwotasie."
+ },
+ "20d26dc3964ab63a": {
+  "en": "Partnership visual: DRP BuildLab and Tinrate",
+  "t": "Vennootskapsvisuele voorstelling: DRP BuildLab en Tinrate"
+ },
+ "5fb4b5ba182b0efd": {
+  "en": "Tinrate Concierge | Official reseller | DRP BuildLab",
+  "t": "Tinrate Concierge | Amptelike herverkoper | DRP BuildLab"
+ },
+ "1370b96b2378e362": {
+  "en": "Order Tinrate Concierge through DRP BuildLab, an official Tinrate reseller. An AI assistant that answers your visitors in seconds. We set it up on your website, and you try it free for 14 days.",
+  "t": "Bestel Tinrate Concierge deur DRP BuildLab, 'n amptelike herverkoper van Tinrate. 'n KI-assistent wat u besoekers binne sekondes antwoord. Ons stel dit op u webwerf op, en u probeer dit 14 dae gratis."
+ },
+ "0e203dd283dc4f23": {
+  "en": "<b>Black Friday:</b> a free extra page with every <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> starter package, plus 10% off all extra services. Until Monday 30 November.",
+  "t": "<b>Black Friday:</b> ’n gratis ekstra bladsy by elke beginpakket van <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span>, plus 10% afslag op alle ekstra dienste. Tot Maandag 30 November."
+ },
+ "1f01e8ad9d815676": {
+  "en": "Claim the deal",
+  "t": "Gryp die aanbod"
+ },
+ "8a90c37cebcd6f5e": {
+  "en": "Black Friday · until Monday 30 November",
+  "t": "Black Friday · tot Maandag 30 November"
+ },
+ "3440d22e7918a9b0": {
+  "en": "More website, <em>same price.</em>",
+  "t": "Meer webwerf, <em>dieselfde prys.</em>"
+ },
+ "19196e34c3d0dcb8": {
+  "en": "Order your website before the deal ends and get more for the same budget. We write the deal into your quote.",
+  "t": "Bestel jou webwerf voordat die aanbod verstryk en kry meer vir dieselfde begroting. Ons skryf die aanbod in jou kwotasie in."
+ },
+ "0c7f4e48920aa645": {
+  "en": "Claim the Black Friday deal <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Gryp die Black Friday-aanbod <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "0766d2635330638a": {
+  "en": "Ask us on WhatsApp",
+  "t": "Vra ons op WhatsApp"
+ },
+ "38e5432df5157e1a": {
+  "en": "Free",
+  "t": "Gratis"
+ },
+ "4884c440fea83ecd": {
+  "en": "An extra page",
+  "t": "’n Ekstra bladsy"
+ },
+ "68f85c212cd078fb": {
+  "en": "Worth <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>. With every <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> starter package we add a second page, for your services, prices or portfolio.",
+  "t": "Ter waarde van <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>. By elke beginpakket van <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> voeg ons ’n tweede bladsy by, vir jou dienste, pryse of portefeulje."
+ },
+ "cd9128160a3e2fbd": {
+  "en": "On all extra services",
+  "t": "Op alle ekstra dienste"
+ },
+ "fa0097435de114df": {
+  "en": "SEO, a logo, a multilingual site or a booking integration: 10% off every extra service you order.",
+  "t": "SEO, ’n logo, ’n veeltalige webwerf of ’n besprekingstelsel-koppeling: 10% afslag op elke ekstra diens wat jy bestel."
+ },
+ "bdedc6b08ebf115b": {
+  "en": "Request your quote by Monday 30 November, 23:59 (Brussels time).",
+  "t": "Vra jou kwotasie aan teen Maandag 30 November, 23:59 (Brusselse tyd)."
+ },
+ "ff8eb09e8c67b9f0": {
+  "en": "<b>Black Friday deal:</b> a free extra page and 10% off extra services, added to your quote.",
+  "t": "<b>Black Friday-aanbod:</b> ’n gratis ekstra bladsy en 10% afslag op ekstra dienste, in jou kwotasie ingesluit."
+ },
+ "c00d8b960f07e69c": {
+  "en": "<b>Black Friday:</b> a free extra page, worth <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>, until Monday 30 November.",
+  "t": "<b>Black Friday:</b> ’n gratis ekstra bladsy, ter waarde van <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>, tot Maandag 30 November."
  }
 }

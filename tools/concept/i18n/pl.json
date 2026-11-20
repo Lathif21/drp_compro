@@ -2463,6 +2463,126 @@
   "en": "Partnership visual: DRP BuildLab and BarBabet",
   "t": "Grafika przedstawiająca partnerstwo: DRP BuildLab i BarBabet"
  },
+ "617c03b2aa503f0d": {
+  "en": "Website · Concrete staircases",
+  "t": "Strona internetowa · Schody betonowe"
+ },
+ "4015579284fc718d": {
+  "en": "Website · Garden maintenance",
+  "t": "Strona internetowa · Pielęgnacja ogrodu"
+ },
+ "5e0979223cdeffa4": {
+  "en": "Concrete staircases",
+  "t": "Schody betonowe"
+ },
+ "596a92e152f19191": {
+  "en": "Raf Geerts builds concrete staircases from Westerlo. They do not come from a catalogue: he builds the formwork on site, step by step, between the walls of the house, and strips it once the concrete has set.",
+  "t": "Raf Geerts zajmuje się budową betonowych klatek schodowych w Westerlo. Nie są to produkty z katalogu: szalunek buduje na miejscu, krok po kroku, pomiędzy ścianami domu, a po związaniu betonu go demontuje."
+ },
+ "3e82bec2ef59a7d9": {
+  "en": "His clients are building or renovating, so the site has to explain that craft and turn it into a request for a quote.",
+  "t": "Jego klienci zajmują się budową lub remontem, dlatego strona internetowa musi w przystępny sposób wyjaśnić istotę tych prac i przekształcić tę informację w zapytanie o wycenę."
+ },
+ "e2bbfea52b5ba883": {
+  "en": "We built a bold, dark site in concrete grey and signal red, with the work in four steps: measure, build the formwork, reinforce, strip. A gallery sorted by type of staircase shows the stairs at every stage, because the formwork is where the craft is.",
+  "t": "Stworzyliśmy odważną, mroczną stronę internetową w odcieniach szarości betonu i jaskrawej czerwieni, przedstawiającą proces budowy w czterech etapach: pomiary, montaż szalunku, zbrojenie, rozbiórka szalunku. Galeria uporządkowana według rodzajów schodów pokazuje je na każdym etapie, ponieważ to właśnie w szalunku tkwi prawdziwe rzemiosło."
+ },
+ "e33c3dfc4a2a3b3d": {
+  "en": "The quote form asks for what Raf needs to price a staircase: the type of stair, the floor-to-floor height and a plan or photo, which clients can upload straight from their phone.",
+  "t": "W formularzu wyceny należy podać informacje niezbędne firmie Raf do wyceny klatki schodowej: rodzaj schodów, wysokość między piętrami oraz rysunek lub zdjęcie, które klienci mogą przesłać bezpośrednio ze swojego telefonu."
+ },
+ "c90af30df282cc8d": {
+  "en": "Quote form with plan upload",
+  "t": "Formularz wyceny z możliwością załadowania planu"
+ },
+ "7ed6e9663fb07904": {
+  "en": "Garden maintenance",
+  "t": "Pielęgnacja ogrodu"
+ },
+ "3e94ac9a8df99cde": {
+  "en": "TuinZorg DP looks after gardens for homeowners and businesses across East Flanders, from regular mowing and pruning to new lawns, privacy screens and garden edging.",
+  "t": "Firma TuinZorg DP zajmuje się pielęgnacją ogrodów dla właścicieli domów i przedsiębiorstw w całej Flandrii Wschodniej – od regularnego koszenia i przycinania po zakładanie nowych trawników, montaż osłon zapewniających prywatność oraz obrzeża ogrodowe."
+ },
+ "48c898d35e9dc705": {
+  "en": "Most jobs start with a question about one garden, so the site has to show real work and make asking for a quote easy.",
+  "t": "Większość zleceń zaczyna się od zapytania dotyczącego jednego ogrodu, dlatego strona internetowa musi prezentować rzeczywiste realizacje oraz ułatwiać złożenie zapytania ofertowego."
+ },
+ "cd0c858d91bdf4d0": {
+  "en": "We designed a fresh, green site that lets the gardens do the talking: every service with its own photo, a gallery of real jobs sorted by type of work, and reviews from clients in the area.",
+  "t": "Stworzyliśmy świeżą, ekologiczną stronę internetową, która pozwala ogrodom przemówić same za siebie: każda usługa ma swoje własne zdjęcie, dostępna jest galeria rzeczywistych realizacji posortowanych według rodzaju prac oraz opinie klientów z okolicy."
+ },
+ "d1973ad79e055da8": {
+  "en": "The quote form asks for the job, the size of the garden and the timing, and takes photos of the garden, so the first answer can already be a concrete one.",
+  "t": "W formularzu wyceny należy podać rodzaj zlecenia, wielkość ogrodu oraz termin realizacji; ponadto formularz umożliwia wykonanie zdjęć ogrodu, dzięki czemu już pierwsza odpowiedź może być konkretna."
+ },
+ "f99aa0804b395219": {
+  "en": "Quote form with photos",
+  "t": "Formularz wyceny ze zdjęciami"
+ },
+ "e79c5ccd810a0664": {
+  "en": "Raf Geerts Betontrappen case study",
+  "t": "Studium przypadku firmy Raf Geerts Betontrappen"
+ },
+ "17d6dfb46b9258af": {
+  "en": "Raf Geerts Betontrappen homepage on desktop",
+  "t": "Strona główna firmy Raf Geerts Betontrappen na komputerze stacjonarnym"
+ },
+ "b9230f3e998d3c06": {
+  "en": "Raf Geerts Betontrappen on a phone",
+  "t": "Raf Geerts Betontrappen na telefonie"
+ },
+ "9357e1fe115538f9": {
+  "en": "TuinZorg DP case study",
+  "t": "Studium przypadku firmy TuinZorg DP"
+ },
+ "acca4c77860849f1": {
+  "en": "TuinZorg DP homepage on desktop",
+  "t": "Strona główna serwisu TuinZorg DP na komputerze stacjonarnym"
+ },
+ "3902f26b80b7f95e": {
+  "en": "TuinZorg DP on a phone",
+  "t": "Aplikacja TuinZorg DP na telefonie"
+ },
+ "db01ef5139dd6d7d": {
+  "en": "The full Raf Geerts Betontrappen homepage on desktop",
+  "t": "Pełna strona główna serwisu Raf Geerts Betontrappen na komputerze stacjonarnym"
+ },
+ "fb69ae24940175b0": {
+  "en": "Raf Geerts Betontrappen on a phone, top of the page",
+  "t": "Raf Geerts Betontrappen na telefonie, na górze strony"
+ },
+ "2eac752dade90a67": {
+  "en": "Raf Geerts Betontrappen on a phone, further down the page",
+  "t": "„Raf Geerts Betontrappen” w telefonie, w dalszej części strony"
+ },
+ "3c7026421eae13b7": {
+  "en": "Raf Geerts Betontrappen | Work | DRP BuildLab",
+  "t": "Raf Geerts – schody betonowe | Realizacje | DRP BuildLab"
+ },
+ "cb949705dae511b1": {
+  "en": "A website for Raf Geerts, who casts concrete staircases on site: indoor, outdoor and basement stairs, each one made to fit the house it stands in.",
+  "t": "Strona internetowa poświęcona Rafowi Geertsowi, który wykonuje na miejscu schody betonowe: schody wewnętrzne, zewnętrzne oraz do piwnic, z których każde jest dostosowane do konkretnego domu, w którym się znajduje."
+ },
+ "6a91021cb2c4f4ee": {
+  "en": "The full TuinZorg DP homepage on desktop",
+  "t": "Pełna strona główna serwisu TuinZorg DP na komputerze stacjonarnym"
+ },
+ "391482f62a475fa8": {
+  "en": "TuinZorg DP on a phone, top of the page",
+  "t": "Aplikacja TuinZorg DP na telefonie, górna część strony"
+ },
+ "fad65b9b278f2085": {
+  "en": "TuinZorg DP on a phone, further down the page",
+  "t": "Aplikacja TuinZorg DP na telefonie – w dalszej części strony"
+ },
+ "06b11441c32346d2": {
+  "en": "TuinZorg DP | Work | DRP BuildLab",
+  "t": "TuinZorg DP | Praca | DRP BuildLab"
+ },
+ "f6ec3b97adca51e8": {
+  "en": "A website for a garden maintenance business in East Flanders: mowing, pruning, new lawns, privacy screens and neat borders, with a free quote one tap away.",
+  "t": "Strona internetowa firmy zajmującej się pielęgnacją ogrodów we Flandrii Wschodniej: koszenie, przycinanie, zakładanie nowych trawników, osłony zapewniające prywatność oraz zadbane rabaty – bezpłatna wycena dostępna za jednym kliknięciem."
+ },
  "1676180c17b6ddd4": {
   "en": "Blog",
   "t": "Blog"
@@ -2479,62 +2599,6 @@
   "en": "Technical",
   "t": "Techniczne"
  },
- "648ff62341d5334f": {
-  "en": "Morning Routine",
-  "t": "Poranna rutyna"
- },
- "0d9011521bacc777": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me.",
-  "t": "W pierwszej godzinie poranka, zanim zaczną napływać e-maile, a świat zacznie domagać się Państwa uwagi, kryje się coś cichego i magicznego. Przez ostatnie kilka miesięcy eksperymentowałem z tym, jak wykorzystuję ten czas, a wyniki mnie zaskoczyły."
- },
- "d5f3abfcee4bd063": {
-  "en": "There are no articles in this language yet.",
-  "t": "W tym języku nie ma jeszcze żadnych artykułów."
- },
- "015403fb037dd71c": {
-  "en": "DRP BuildLab blog",
-  "t": "Blog DRP BuildLab"
- },
- "ea4d1c278823d2e0": {
-  "en": "Blog | DRP BuildLab",
-  "t": "Blog | DRP BuildLab"
- },
- "3464d4a673d9b34f": {
-  "en": "How we build websites, webshops and automations, the businesses we work with and the creators we team up with.",
-  "t": "W jaki sposób tworzymy strony internetowe, sklepy internetowe i rozwiązania automatyzacyjne, z jakimi firmami współpracujemy oraz z jakimi twórcami nawiązujemy współpracę."
- },
- "8e83778ea6a8491e": {
-  "en": "logo drpbl",
-  "t": "logo drpbl"
- },
- "0dcf98f684e551ce": {
-  "en": "By <span translate=\"no\">Hilmi Billah</span>",
-  "t": "Autor: <span translate=\"no\">Hilmi Billah</span>"
- },
- "8f1f2230a89a1bac": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me. Instead of reaching for my phone the moment I wake up, I’ve started brewing a slow pot of coffee, opening a notebook, and simply writing whatever comes to mind. Some days it’s a to-do list; other days it’s half-formed ideas for projects I may never start. But that small ritual has become an anchor, a reminder that my day can begin on my own terms. If you’ve been feeling scattered lately, try carving out just fifteen minutes of unplugged time tomorrow morning and see what happens.",
-  "t": "W pierwszej godzinie poranka, zanim zaczną napływać e-maile, a świat zacznie domagać się Państwa uwagi, kryje się coś cichego i magicznego. Przez ostatnie kilka miesięcy eksperymentowałem z tym, jak wykorzystuję ten czas, a wyniki mnie zaskoczyły. Zamiast sięgać po telefon zaraz po przebudzeniu, zacząłem powoli parzyć kawę, otwierać notatnik i po prostu zapisywać wszystko, co przychodzi mi do głowy. Czasami jest to lista zadań do wykonania; innym razem – niedopracowane pomysły na projekty, których być może nigdy nie zrealizuję. Jednak ten niewielki rytuał stał się dla mnie punktem odniesienia, przypomnieniem, że mój dzień może rozpocząć się zgodnie z moimi własnymi zasadami. Jeśli ostatnio czują się Państwo rozkojarzeni, proszę spróbować jutro rano wygospodarować zaledwie piętnaście minut czasu bez dostępu do urządzeń elektronicznych i zobaczyć, co się stanie."
- },
- "fedbf5d04c2f91ee": {
-  "en": "routine",
-  "t": "rutyna"
- },
- "04f1cb5e6ae6bbb6": {
-  "en": "daily",
-  "t": "codziennie"
- },
- "cb7069f979c05962": {
-  "en": "All articles",
-  "t": "Wszystkie artykuły"
- },
- "18d9019fb0edc98a": {
-  "en": "Morning Routine | Blog | DRP BuildLab",
-  "t": "Poranna rutyna | Blog | DRP BuildLab"
- },
- "504be530d49df541": {
-  "en": "There’s something quietly magical about the first hour of the morning, before the emails start rolling in and the world demands your attention. I’ve spent the past few months experimenting with how I use that time, and the results have surprised me.",
-  "t": "W pierwszej godzinie poranka, zanim zaczną napływać e-maile, a świat zacznie domagać się Państwa uwagi, kryje się coś cichego i magicznego. Przez ostatnie kilka miesięcy eksperymentowałem z tym, jak wykorzystuję ten czas, a wyniki mnie zaskoczyły."
- },
  "2b98e7860dd66317": {
   "en": "Checking out without the hassle: what customers expect in 2026",
   "t": "Płynna realizacja transakcji: czego oczekują klienci w 2026 roku"
@@ -2543,21 +2607,9 @@
   "en": "On payment methods, drop-off moments and why the checkout of your webshop matters as much as your shop window. What customers expect in 2026, and how to build a payment flow that does not get in the way.",
   "t": "O metodach płatności, momentach rezygnacji z zakupów oraz o tym, dlaczego proces realizacji transakcji w Państwa sklepie internetowym ma równie duże znaczenie, co witryna sklepowa. Czego oczekują klienci w 2026 roku i jak stworzyć proces płatności, który nie będzie stanowił przeszkody."
  },
- "a9697baaf6e5fd43": {
-  "en": "1 min read",
-  "t": "Czas czytania: 1 minuta"
- },
- "f04a64ec720335fe": {
-  "en": "Need help with your online presence?",
-  "t": "Potrzebują Państwo pomocy w zakresie swojej obecności w Internecie?"
- },
- "e6d047a059ca10de": {
-  "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
-  "t": "Od strony internetowej do sklepu internetowego: pomagamy Państwu opowiedzieć prawdziwą historię, którą ludzie chętnie czytają."
- },
- "27be6e8258c229a5": {
-  "en": "morning",
-  "t": "rano"
+ "d5f3abfcee4bd063": {
+  "en": "There are no articles in this language yet.",
+  "t": "W tym języku nie ma jeszcze żadnych artykułów."
  },
  "f6af7ad52205a96c": {
   "en": "Like",
@@ -2566,6 +2618,14 @@
  "5c58cd85018e00c7": {
   "en": "Share",
   "t": "Udostępnij"
+ },
+ "f04a64ec720335fe": {
+  "en": "Need help with your online presence?",
+  "t": "Potrzebują Państwo pomocy w zakresie swojej obecności w Internecie?"
+ },
+ "e6d047a059ca10de": {
+  "en": "From website to webshop: we help you tell a story that is true, and that people enjoy reading.",
+  "t": "Od strony internetowej do sklepu internetowego: pomagamy Państwu opowiedzieć prawdziwą historię, którą ludzie chętnie czytają."
  },
  "dbcd9b51e0f4d64c": {
   "en": "Comments <span class=\"cm-n\" translate=\"no\"></span>",
@@ -2615,6 +2675,22 @@
   "en": "Sending failed. Please try again later.",
   "t": "Wysyłanie nie powiodło się. Proszę spróbować ponownie później."
  },
+ "cb7069f979c05962": {
+  "en": "All articles",
+  "t": "Wszystkie artykuły"
+ },
+ "015403fb037dd71c": {
+  "en": "DRP BuildLab blog",
+  "t": "Blog DRP BuildLab"
+ },
+ "ea4d1c278823d2e0": {
+  "en": "Blog | DRP BuildLab",
+  "t": "Blog | DRP BuildLab"
+ },
+ "3464d4a673d9b34f": {
+  "en": "How we build websites, webshops and automations, the businesses we work with and the creators we team up with.",
+  "t": "W jaki sposób tworzymy strony internetowe, sklepy internetowe i rozwiązania automatyzacyjne, z jakimi firmami współpracujemy oraz z jakimi twórcami nawiązujemy współpracę."
+ },
  "9c6152e6ce9a6889": {
   "en": "Reactions",
   "t": "Reakcje"
@@ -2657,7 +2733,7 @@
  },
  "86ccd2822fbe3ae5": {
   "en": "Jef fills his basket, taps checkout and is then faced with a form of twelve fields and one payment method he never uses. He closes the tab. You have lost him in the very last metre.",
-  "t": "Jef napełnia swój koszyk, klika „do kasy”, a następnie widzi formularz zawierający dwanaście pól oraz jedną metodę płatności, z której nigdy nie korzysta. Zamyka kartę. Stracili Państwo tego klienta na samym finiszu."
+  "t": "Jef napełnia swój koszyk, klika „do kasy”, po czym pojawia się formularz zawierający dwanaście pól oraz jedną metodę płatności, z której nigdy nie korzysta. Zamyka kartę. Stracili Państwo tego klienta na samym finiszu."
  },
  "c20f5ca22f7aff95": {
   "en": "That is the nasty thing about selling online: the hardest work, convincing the customer, is done, and then the checkout throws it away.",
@@ -2769,7 +2845,7 @@
  },
  "b7c0d4643a13b44f": {
   "en": "A refund should be a small action, not a project. Keep your records in good order: who, what and when. When a customer disputes a payment, a tidy administration is what wins it.",
-  "t": "Zwrot kosztów powinien być prostą czynnością, a nie skomplikowanym przedsięwzięciem. Proszę dbać o porządek w dokumentacji: kto, co i kiedy. Gdy klient kwestionuje płatność, to właśnie uporządkowana dokumentacja pozwala wygrać sprawę."
+  "t": "Zwrot kosztów powinien być prostą czynnością, a nie skomplikowanym przedsięwzięciem. Proszę dbać o porządek w dokumentacji: kto, co i kiedy. Gdy klient kwestionuje płatność, to właśnie uporządkowana dokumentacja decyduje o sukcesie."
  },
  "5f2775f081cf14ae": {
   "en": "Paying safely",
@@ -2829,7 +2905,7 @@
  },
  "7ec2b8cb59b420f6": {
   "en": "Jef does not exist. His closed tab does, somewhere.",
-  "t": "Jef nie istnieje. Jego zamknięta karta jednak istnieje – gdzieś."
+  "t": "Jef nie istnieje. Jego zamknięta karta jednak gdzieś istnieje."
  },
  "041d86c235f3b748": {
   "en": "A checkout that does not get in the way?",
@@ -2878,5 +2954,2097 @@
  "cb4f85d99edd1f29": {
   "en": "On payment methods, drop-off moments and why the checkout of your webshop matters as much as your shop window. What customers expect in 2026, and how to build a payment flow that does not get in the way.",
   "t": "O metodach płatności, momentach rezygnacji z zakupów oraz o tym, dlaczego proces realizacji transakcji w Państwa sklepie internetowym ma równie duże znaczenie, co witryna sklepowa. Czego oczekują klienci w 2026 roku i jak stworzyć proces płatności, który nie będzie stanowił przeszkody."
+ },
+ "60f80f4fce33ff8b": {
+  "en": "Why we don't start at nine o'clock",
+  "t": "Dlaczego nie zaczynamy o dziewiątej?"
+ },
+ "9eb09ab8ebb27777": {
+  "en": "On working when you are sharp, and why at our place the clock mostly ticks for the client. How we agree on results instead of hours, what can go wrong, and how to start yourself.",
+  "t": "O pracy w momentach największej wydajności oraz o tym, dlaczego w naszej firmie zegar zazwyczaj tyka na korzyść klienta. Jak uzgadniamy wyniki zamiast godzin pracy, co może pójść nie tak i jak samodzielnie rozpocząć działalność."
+ },
+ "130eea0d85449f7e": {
+  "en": "5 min read",
+  "t": "Czas czytania: 5 minut"
+ },
+ "c6315d22d1a6ade5": {
+  "en": "At nine in the morning, most people are sitting at their screens. Some are awake. Others are reading the same sentence in an email for the third time. Everyone is at work. Not everyone is working.",
+  "t": "O dziewiątej rano większość ludzi siedzi przed ekranami. Niektórzy są już na nogach. Inni po raz trzeci czytają to samo zdanie w wiadomości e-mail. Wszyscy są w pracy. Nie wszyscy jednak pracują."
+ },
+ "1288e0f9c1e60c76": {
+  "en": "We think that is a strange trade. You pay someone to be present, while what you actually want is results. It is like paying a baker per hour he stands in the shop, and then being surprised the bread doesn't get any better.",
+  "t": "Uważamy, że to dziwna transakcja. Płaci się komuś za samą obecność, podczas gdy tak naprawdę zależy nam na wynikach. To tak, jakby płacić piekarzowi za każdą godzinę, którą spędza w sklepie, a potem dziwić się, że chleb nie staje się lepszy."
+ },
+ "6166713ca9f95f01": {
+  "en": "That is why at DRP BuildLab we work with a simple idea: the work counts, not the clock.",
+  "t": "Właśnie dlatego w DRP BuildLab kierujemy się prostą zasadą: liczy się praca, a nie czas."
+ },
+ "f2e8ca7e96ff4e40": {
+  "en": "Presence is not performance. Finished work is.",
+  "t": "Sama obecność to nie to samo, co osiągnięcia. Liczy się ukończona praca."
+ },
+ "67d5752b55e758c9": {
+  "en": "Where the idea comes from",
+  "t": "Skąd wziął się ten pomysł"
+ },
+ "2dcec8ecfb0f4f48": {
+  "en": "Knowledge work is strange work. A good idea doesn't fit in a nine-to-five box, and a bad day can't be fixed by sitting there longer. People also really differ in when they are sharp: one is up at six in the morning, the other only gets going after dinner. That is not laziness. That is simply how people are wired.",
+  "t": "Praca umysłowa to dziwna praca. Dobry pomysł nie mieści się w ramach pracy od dziewiątej do piątej, a złego dnia nie da się naprawić, siedząc przy biurku dłużej. Ludzie bardzo się również różnią pod względem tego, kiedy są w najlepszej formie: jedni wstają o szóstej rano, inni zaczynają działać dopiero po kolacji. To nie jest lenistwo. Tak po prostu są skonstruowani ludzie."
+ },
+ "df7782bb430bd679": {
+  "en": "Most companies know that, and still put everyone on the same schedule. Out of habit, out of convenience, and because a schedule is easier to check than a result. We choose the harder option: checking the result.",
+  "t": "Większość firm zdaje sobie z tego sprawę, a mimo to nakłada na wszystkich ten sam harmonogram. Z przyzwyczajenia, dla wygody oraz dlatego, że łatwiej jest sprawdzić harmonogram niż wynik. My wybieramy trudniejszą opcję: sprawdzanie wyniku."
+ },
+ "c0c49bb83b8dc815": {
+  "en": "What it looks like in practice",
+  "t": "Jak to wygląda w praktyce"
+ },
+ "2ef1ecda7ca6a8d9": {
+  "en": "Take Jonas, a made-up developer with a very real problem: at half past eight in the morning he is about as sharp as a chair. At ten at night he solves in twenty minutes a bug he stared at for half a day.",
+  "t": "Weźmy na przykład Jonasa, fikcyjnego programistę borykającego się z bardzo realnym problemem: o wpół do dziewiątej rano jest tak bystry jak krzesło. O dziesiątej wieczorem w ciągu dwudziestu minut rozwiązuje błąd, na który wpatrywał się przez pół dnia."
+ },
+ "ccb5e5c01980273e": {
+  "en": "His colleague Sanne (also made up, also recognisable) is the opposite. She is awake at six, three tasks in by eight and done by two. Then she goes to play padel, where, in her own words, she gets the best ideas of the week. Mostly against a wall.",
+  "t": "Jego koleżanka Sanne (również fikcyjna postać, ale również łatwa do rozpoznania) jest jej przeciwieństwem. Budzi się o szóstej, do ósmej ma już za sobą trzy zadania, a o drugiej kończy pracę. Następnie idzie pograć w padla, gdzie – jak sama twierdzi – przychodzą jej do głowy najlepsze pomysły tygodnia. Najczęściej grając o ścianę."
+ },
+ "83ee5d105965d650": {
+  "en": "A time clock forces the two to work together in the middle: both half-hearted, both from nine o'clock. We let them work when they are good, and we ask one thing: that it is finished, that it is right, and that the client knows where they stand.",
+  "t": "Zegar rejestrujący czas pracy zmusza tę dwójkę do współpracy w godzinach środkowych: oboje pracują bez przekonania, oboje od godziny dziewiątej. Pozwalamy im pracować, gdy są w dobrej formie, i wymagamy tylko jednego: aby zadanie zostało wykonane, aby było wykonane prawidłowo oraz aby klient wiedział, na czym stoi."
+ },
+ "3afe2249967d3c84": {
+  "en": "Sounds soft? It is actually stricter than a time clock. A time clock asks you to be there. We ask that it is done. For the client, one thing changes as a result: they get a fixed response time and a delivery date that is met, instead of office hours.",
+  "t": "Brzmi łagodnie? W rzeczywistości jest to bardziej rygorystyczne niż rejestracja czasu pracy. Rejestracja czasu pracy wymaga jedynie Państwa obecności. My natomiast wymagamy wykonania zadania. Dla klienta oznacza to jedną istotną zmianę: zamiast godzin pracy otrzymuje on gwarantowany czas odpowiedzi oraz termin realizacji, który jest dotrzymywany."
+ },
+ "efd3b178a301d54b": {
+  "en": "How we make agreements",
+  "t": "W jaki sposób zawieramy umowy"
+ },
+ "908a820c3ef9a7e0": {
+  "en": "Freedom starts with clarity. For every piece of work we answer three questions in advance:",
+  "t": "Wolność zaczyna się od jasności. W przypadku każdego zlecenia z góry odpowiadamy na trzy pytania:"
+ },
+ "6b7bece09761290b": {
+  "en": "<strong>What is done?</strong> We describe the result in one sentence, so nobody can say later that they understood it differently.",
+  "t": "<strong>Co zostało zrobione?</strong> Opisujemy wynik w jednym zdaniu, aby nikt nie mógł później twierdzić, że zrozumiał to inaczej."
+ },
+ "a358429d954acbf2": {
+  "en": "<strong>When?</strong> A date, not 'soon'.",
+  "t": "<strong>Kiedy? Proszę podać</strong> konkretną datę, a nie „wkrótce”."
+ },
+ "72e38ae668c5e99f": {
+  "en": "<strong>Who decides?</strong> One owner, who knows when they may ask for help.",
+  "t": "<strong>Kto o tym decyduje?</strong> Jeden właściciel, który wie, kiedy może poprosić o pomoc."
+ },
+ "adf208d9f3b7453b": {
+  "en": "After that it is up to the owner. When they work is their business. What they deliver is not.",
+  "t": "Dalej to już zależy od właściciela. Kiedy wykonuje pracę, to jego sprawa. To, co dostarcza, już nie."
+ },
+ "ff5f672b7f1c3bd2": {
+  "en": "What it can deliver",
+  "t": "Co może zaoferować"
+ },
+ "69c70038110779d0": {
+  "en": "<strong>Sharper work.</strong> You do the hard work when you are ready for it, not when the calendar says so.",
+  "t": "<strong>Bardziej efektywna praca.</strong> Ciężką pracę wykonuje się wtedy, gdy jest się na to gotowym, a nie wtedy, gdy tak nakazuje kalendarz."
+ },
+ "97491db715b34d7d": {
+  "en": "<strong>Less drudgery.</strong> No sitting out hours on a day when nothing comes out of your hands. We all know the day of three coffees and one line of code.",
+  "t": "<strong>Mniej żmudnej pracy.</strong> Koniec z wielogodzinnym siedzeniem bezczynnie w dni, kiedy nic nie wychodzi z rąk. Wszyscy znamy te dni, kiedy wypijamy trzy kawy, a napisaliśmy zaledwie jedną linię kodu."
+ },
+ "fd6e7938e8f17e45": {
+  "en": "<strong>Fairer agreements.</strong> You measure the work, not the chair.",
+  "t": "<strong>Sprawiedliwsze umowy.</strong> Ocenia się pracę, a nie obecność na stanowisku."
+ },
+ "9155620b018306ff": {
+  "en": "<strong>More responsibility.</strong> People who are given freedom usually handle it more carefully.",
+  "t": "<strong>Większa odpowiedzialność.</strong> Osoby, którym przyznaje się swobodę, zazwyczaj korzystają z niej w sposób bardziej rozważny."
+ },
+ "c6821b60525455ae": {
+  "en": "<strong>A wider choice of people.</strong> Talent doesn't only live within thirty kilometres and a 9-to-5 rhythm.",
+  "t": "<strong>Szerszy wybór kandydatów.</strong> Talenty nie ograniczają się wyłącznie do obszaru w promieniu trzydziestu kilometrów i trybu pracy od 9 do 17."
+ },
+ "caef9c73a5f84195": {
+  "en": "Where it goes wrong, and how to prevent it",
+  "t": "Gdzie pojawiają się problemy i jak im zapobiegać"
+ },
+ "8a36da7500f3d229": {
+  "en": "Freedom without agreements is called chaos. A liberal work schedule only works if the edges are sharp. These are the rules of thumb:",
+  "t": "Wolność bez ustaleń nazywa się chaosem. Elastyczny harmonogram pracy sprawdza się tylko wtedy, gdy jego granice są jasno określone. Oto kilka praktycznych wskazówek:"
+ },
+ "ca9edeb587ab1a82": {
+  "en": "<strong>One owner per task.</strong> Everyone knows who signs for what.",
+  "t": "<strong>Jedna osoba odpowiedzialna za każde zadanie.</strong> Każdy wie, za co odpowiada."
+ },
+ "a085349f90653cb8": {
+  "en": "<strong>A short fixed check-in.</strong> So nobody sits guessing alone.",
+  "t": "<strong>Krótka, ustalona procedura rejestracji.</strong> Dzięki temu nikt nie będzie musiał sam zgadywać."
+ },
+ "e9357143f9c6c011": {
+  "en": "<strong>An agreed response time for clients.</strong> Even if you work late yourself. A response time is not a reply at two in the morning.",
+  "t": "<strong>Uzgodniony czas reakcji wobec klientów.</strong> Nawet jeśli sam Pan/Pani pracuje do późna. Czas reakcji nie oznacza udzielenia odpowiedzi o drugiej w nocy."
+ },
+ "5824e8d9d241091c": {
+  "en": "<strong>A tidy handover.</strong> What is done, what is open, what the next person needs.",
+  "t": "<strong>Przejrzyste przekazanie obowiązków.</strong> Co zostało zrobione, co pozostaje do załatwienia, czego potrzebuje następna osoba."
+ },
+ "a851974bf70e172b": {
+  "en": "<strong>Trust is a credit.</strong> Whoever doesn't keep agreements gets less freedom, until it works again.",
+  "t": "<strong>Zaufanie to kapitał.</strong> Kto nie dotrzymuje umów, traci część swojej swobody, dopóki nie zacznie znów działać zgodnie z zasadami."
+ },
+ "282681fc99e1408c": {
+  "en": "There are also moments when fixed hours do work better: the first weeks of a new colleague, a crisis at a client, a day full of appointments. Then we simply work at the same time, and let nobody guess.",
+  "t": "Są też sytuacje, w których stałe godziny pracy sprawdzają się lepiej: pierwsze tygodnie nowego współpracownika, kryzys u klienta, dzień wypełniony spotkaniami. Wtedy po prostu pracujemy w tych samych godzinach i nie dajemy nikomu okazji do spekulacji."
+ },
+ "8c65d0afbc2b1623": {
+  "en": "Questions we always get",
+  "t": "Pytania, które często otrzymujemy"
+ },
+ "622bb9c8906ac8aa": {
+  "en": "<strong>But how do you know they are really working?</strong> By what they deliver. A warm chair proves nothing.",
+  "t": "<strong>Skąd jednak wiadomo, czy rzeczywiście są skuteczne?</strong> Po ich efektach. Samo wygodne krzesło niczego nie dowodzi."
+ },
+ "c61b463bc7c00a51": {
+  "en": "<strong>How do you measure performance then?</strong> By delivered work, quality and the client's reaction. Not by the number of hours in a system.",
+  "t": "<strong>W jaki sposób mierzy się zatem wyniki?</strong> Na podstawie wykonanej pracy, jakości oraz reakcji klienta. Nie na podstawie liczby godzin zarejestrowanych w systemie."
+ },
+ "e7ef873d91c720f9": {
+  "en": "<strong>And meetings?</strong> As few as possible, and always with an agenda. Whoever invites without an agenda buys the coffee.",
+  "t": "<strong>A spotkania?</strong> Jak najmniej, i zawsze z ustalonym porządkiem obrad. Kto zaprasza bez porządku obrad, ten stawia kawę."
+ },
+ "d34661e92fc81e52": {
+  "en": "<strong>What if someone abuses it?</strong> Then you see it quickly, because the agreements are visible. Then we talk, and the freedom adjusts.",
+  "t": "<strong>A co, jeśli ktoś to nadużyje?</strong> Wtedy szybko to zauważycie, ponieważ ustalenia są jawne. Wówczas porozmawiamy, a zakres swobody zostanie odpowiednio dostosowany."
+ },
+ "f53657ea4c74e383": {
+  "en": "<strong>Does it suit everyone?</strong> No. For some tasks and some people fixed hours work better. That is why it is an agreement and not a dogma.",
+  "t": "<strong>Czy to rozwiązanie odpowiada wszystkim?</strong> Nie. W przypadku niektórych zadań i niektórych osób stałe godziny pracy sprawdzają się lepiej. Dlatego jest to porozumienie, a nie dogmat."
+ },
+ "268028fadc6bc2dc": {
+  "en": "How to start yourself",
+  "t": "Jak rozpocząć samodzielną działalność"
+ },
+ "c3677994a474b8f0": {
+  "en": "<strong>Start small.</strong> One team or one type of task, not the whole company at once.",
+  "t": "<strong>Zacznijcie od niewielkich kroków. Od</strong> jednego zespołu lub jednego rodzaju zadania, a nie od całej firmy naraz."
+ },
+ "3f108584ccc51126": {
+  "en": "<strong>Agree a core overlap.</strong> For example two hours a day when everyone is reachable.",
+  "t": "<strong>Proszę uzgodnić wspólny przedział czasowy.</strong> Na przykład dwie godziny dziennie, w których wszyscy są dostępni."
+ },
+ "8cb03c1b6eb9d15b": {
+  "en": "<strong>Write down what 'done' means,</strong> per task.",
+  "t": "<strong>Proszę zapisać, co oznacza „zakończone”</strong> w odniesieniu do każdego zadania."
+ },
+ "7f1da070620ff902": {
+  "en": "<strong>Make the handover visible.</strong> A shared board or document where everyone can see what is running.",
+  "t": "<strong>Proszę zadbać o przejrzystość procesu przekazywania zadań.</strong> Wspólna tablica lub dokument, dzięki którym wszyscy mogą śledzić, jakie zadania są aktualnie realizowane."
+ },
+ "797a568bd9f27493": {
+  "en": "<strong>Evaluate after four weeks.</strong> What went well, where did something get stuck?",
+  "t": "<strong>Proszę dokonać oceny po czterech tygodniach.</strong> Co poszło dobrze, a gdzie pojawiły się trudności?"
+ },
+ "68c5d063796e1fba": {
+  "en": "<strong>Adjust.</strong> A rule that doesn't work may change.",
+  "t": "<strong>Dostosowanie.</strong> Zasada, która się nie sprawdza, może ulec zmianie."
+ },
+ "7a27df5fa57cb0f1": {
+  "en": "And yes, we also answer emails at nine in the morning. If we are awake by then.",
+  "t": "I tak, odpowiadamy na e-maile również o dziewiątej rano. O ile do tego czasu już nie śpimy."
+ },
+ "2b5cc281d516e73a": {
+  "en": "Jonas and Sanne don't exist. Their working rhythm does.",
+  "t": "Jonas i Sanne nie istnieją. Istnieje natomiast ich rytm pracy."
+ },
+ "52537e8150d972a0": {
+  "en": "Fancy doing it this way?",
+  "t": "Czy zechciałby Pan/Pani to zrobić w ten sposób?"
+ },
+ "c2e02a43dd97a026": {
+  "en": "Do you want to work with us, or are you considering trying this in your own company? Talk to us, we are happy to explain how we approach it.",
+  "t": "Czy chcieliby Państwo podjąć z nami współpracę, czy też rozważają Państwo wdrożenie tego rozwiązania we własnej firmie? Prosimy o kontakt – z przyjemnością wyjaśnimy, w jaki sposób podchodzimy do tej kwestii."
+ },
+ "4ee302780cdb7981": {
+  "en": "OpenAI Playground 2026 11 06 at 11.52.31",
+  "t": "OpenAI Playground, 6 listopada 2026 r., godz. 11:52:31"
+ },
+ "70a42747ffd34b74": {
+  "en": "Why we don't start at nine o'clock | Blog | DRP BuildLab",
+  "t": "Dlaczego nie zaczynamy o dziewiątej | Blog | DRP BuildLab"
+ },
+ "4819ba9333e5ddcc": {
+  "en": "On working when you are sharp, and why at our place the clock mostly ticks for the client. How we agree on results instead of hours, what can go wrong, and how to start yourself.",
+  "t": "O pracy w momentach największej wydajności oraz o tym, dlaczego w naszej firmie zegar zazwyczaj tyka na korzyść klienta. Jak uzgadniamy wyniki zamiast godzin pracy, co może pójść nie tak i jak samodzielnie rozpocząć działalność."
+ },
+ "673dca72d248d622": {
+  "en": "Almost done. We have sent you an email: click the link in it to confirm your subscription.",
+  "t": "Już prawie gotowe. Wysłaliśmy do Państwa wiadomość e-mail: proszę kliknąć zawarty w niej link, aby potwierdzić subskrypcję."
+ },
+ "22fb9ed7e0e7b791": {
+  "en": "Subscribing did not work. Please try again in a moment.",
+  "t": "Subskrypcja nie powiodła się. Proszę spróbować ponownie za chwilę."
+ },
+ "6aca1eba60a1a1fb": {
+  "en": "Get our new articles <em>by email</em>",
+  "t": "Otrzymuj nasze najnowsze artykuły <em>pocztą elektroniczną</em>"
+ },
+ "45711858dfc63351": {
+  "en": "One email whenever we publish a new article. No spam, and you can unsubscribe at any time.",
+  "t": "Jeden e-mail za każdym razem, gdy opublikujemy nowy artykuł. Żadnego spamu, a subskrypcję można anulować w dowolnym momencie."
+ },
+ "0da9f02d9c1ed311": {
+  "en": "Your email address",
+  "t": "Pański adres e-mail"
+ },
+ "e51ca203ca4f00c3": {
+  "en": "Subscribe to the blog",
+  "t": "Zapisz się do newslettera"
+ },
+ "00e1df239ae9897a": {
+  "en": "Newsletter",
+  "t": "Biuletyn informacyjny"
+ },
+ "31f37182527f93bd": {
+  "en": "Confirm my subscription <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Potwierdź moją subskrypcję <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "650c8873464704c9": {
+  "en": "One moment, we are confirming your subscription.",
+  "t": "Proszę chwilę poczekać, sprawdzamy Pańską subskrypcję."
+ },
+ "3c52eaf9e800d705": {
+  "en": "You are subscribed. We will email you when we publish a new article.",
+  "t": "Został Pan/Pani zapisany. Wyślemy Panu/Pani wiadomość e-mail, gdy opublikujemy nowy artykuł."
+ },
+ "cc117ff1647fb0d8": {
+  "en": "This confirmation link has expired. Subscribe again on the blog and we will send you a new link.",
+  "t": "Ten link potwierdzający stracił ważność. Prosimy o ponowne zapisanie się na blogu, a prześlemy Państwu nowy link."
+ },
+ "0bf684b0f53de7c6": {
+  "en": "This confirmation link is not valid. Use the link from the email we sent you, or subscribe again on the blog.",
+  "t": "Ten link potwierdzający jest nieprawidłowy. Prosimy skorzystać z linku zawartego w wiadomości e-mail, którą Państwu wysłaliśmy, lub ponownie zapisać się na blogu."
+ },
+ "2ba72a0403d12bfb": {
+  "en": "Something went wrong while confirming your subscription. Please try again in a moment.",
+  "t": "Wystąpił błąd podczas potwierdzania subskrypcji. Proszę spróbować ponownie za chwilę."
+ },
+ "017d59261d11b963": {
+  "en": "Back to the blog",
+  "t": "Powrót do bloga"
+ },
+ "8478e3715efe7def": {
+  "en": "Please confirm your subscription to the DRP BuildLab blog",
+  "t": "Prosimy o potwierdzenie subskrypcji bloga DRP BuildLab"
+ },
+ "2a216a9187bb6aa9": {
+  "en": "Confirm your subscription",
+  "t": "Potwierdź swoją subskrypcję"
+ },
+ "5ae791b09a8256c0": {
+  "en": "You asked to receive new articles from the DRP BuildLab blog by email. Click the button below to confirm your email address.",
+  "t": "Wyraziłeś chęć otrzymywania nowych artykułów z bloga DRP BuildLab pocztą elektroniczną. Proszę kliknąć poniższy przycisk, aby potwierdzić swój adres e-mail."
+ },
+ "7c39279ff9d2a16d": {
+  "en": "Confirm my subscription",
+  "t": "Potwierdź moją subskrypcję"
+ },
+ "049d0210bae380bf": {
+  "en": "This link is valid for 7 days.",
+  "t": "Ten link jest ważny przez 7 dni."
+ },
+ "df3612aecdb4be16": {
+  "en": "Did you not ask for this? Then you can ignore this email. We will not send you anything else.",
+  "t": "Czy nie prosili Państwo o tę wiadomość? W takim razie mogą Państwo zignorować ten e-mail. Nie będziemy wysyłać Państwu żadnych dalszych wiadomości."
+ },
+ "45e67976d33e8f88": {
+  "en": "New on the DRP BuildLab blog",
+  "t": "Nowości na blogu DRP BuildLab"
+ },
+ "8789b1afbd46bdce": {
+  "en": "Read the full article",
+  "t": "Przeczytaj cały artykuł"
+ },
+ "e2298f2e9de01c3b": {
+  "en": "You receive this email because you subscribed to the DRP BuildLab blog.",
+  "t": "Otrzymują Państwo tę wiadomość e-mail, ponieważ zapisali się Państwo do subskrypcji bloga DRP BuildLab."
+ },
+ "295eccb47390a4cd": {
+  "en": "Unsubscribe from these emails",
+  "t": "Zrezygnuj z subskrypcji tych wiadomości e-mail"
+ },
+ "3f85b2cd26f9675a": {
+  "en": "Confirm that you want to receive new articles from the DRP BuildLab blog by email.",
+  "t": "Proszę potwierdzić, że chcą Państwo otrzymywać nowe artykuły z bloga DRP BuildLab pocztą elektroniczną."
+ },
+ "579dddcaf51b8d21": {
+  "en": "Is your visitor talking to a human? Say so honestly.",
+  "t": "Czy osoba odwiedzająca Państwa stronę rozmawia z prawdziwym człowiekiem? Proszę szczerze to potwierdzić."
+ },
+ "9d8fd4837be12999": {
+  "en": "Why a chatbot on your website should play with open cards, and how to do that without it getting awkward. What the rules say, how to test your bot and which questions to ask your supplier.",
+  "t": "Dlaczego chatbot na Państwa stronie internetowej powinien działać w sposób przejrzysty i jak to osiągnąć, unikając niezręcznych sytuacji. Jakie są wytyczne w tym zakresie, jak przetestować bota oraz o co należy zapytać dostawcę."
+ },
+ "335a0776c61c97ab": {
+  "en": "A visitor types: 'Hi Sarah, can I still order today?' Sarah answers within a second, friendly and flawless. Too flawless. Sarah turns out to be a script. And the visitor doesn't feel helped, but deceived.",
+  "t": "Odwiedzający wpisuje: „Witam, Sarah, czy mogę jeszcze dzisiaj złożyć zamówienie?”. Sarah odpowiada w ciągu sekundy, w przyjazny i bezbłędny sposób. Zbyt bezbłędny. Okazuje się, że Sarah to tylko skrypt. Odwiedzający nie czuje się zatem obsłużony, lecz oszukany."
+ },
+ "82ca628fb4b900c8": {
+  "en": "Chatbots have become much better in recent years. That makes the temptation big to give them a human name, a profile photo and a friendly little sigh. Bad idea.",
+  "t": "W ostatnich latach chatboty znacznie się poprawiły. To sprawia, że pokusa nadania im ludzkiego imienia, zdjęcia profilowego i przyjaznego westchnienia jest ogromna. To zły pomysł."
+ },
+ "825fe4c3007bbc4b": {
+  "en": "A bot that pretends to be human wins a conversation and loses a customer.",
+  "t": "Bot udający człowieka wygrywa rozmowę, ale traci klienta."
+ },
+ "927170ca75216705": {
+  "en": "What the rules say",
+  "t": "Co przewidują przepisy"
+ },
+ "c5c1493d1ce06e1b": {
+  "en": "In essence, the European AI Act requires that people know they are talking to an AI, unless that is obvious. The exact dates and exceptions are still being adjusted and your situation may differ, so check them with your legal adviser or the authorities. One thing doesn't change: being honest costs nothing.",
+  "t": "Zasadniczo europejska ustawa o sztucznej inteligencji wymaga, aby ludzie mieli świadomość, że rozmawiają z systemem opartym na sztucznej inteligencji, chyba że jest to oczywiste. Dokładne terminy i wyjątki są nadal dopracowywane, a Państwa sytuacja może się różnić, dlatego prosimy o zasięgnięcie informacji u doradcy prawnego lub odpowiednich organów. Jedno pozostaje niezmienne: uczciwość nic nie kosztuje."
+ },
+ "4c42bb5a92e7c8fa": {
+  "en": "Why honesty is also good sales",
+  "t": "Dlaczego uczciwość sprzyja również sprzedaży"
+ },
+ "b0308d650c8bbc71": {
+  "en": "Honesty is not only an obligation. Visitors who know they are talking to a bot expect less of it and are therefore less easily disappointed. Visitors who discover they have been misled tell others.",
+  "t": "Szczerość to nie tylko obowiązek. Odwiedzający, którzy wiedzą, że rozmawiają z botem, mają wobec niego mniejsze oczekiwania i dlatego rzadziej odczuwają rozczarowanie. Odwiedzający, którzy odkrywają, że zostali wprowadzeni w błąd, informują o tym innych."
+ },
+ "f6a21347c6361d26": {
+  "en": "A bot that knows its limits also comes across as more reliable than a bot that has an answer for everything. 'I don't know that, I'll connect you with a colleague' is sometimes the best sentence it can say.",
+  "t": "Bot, który zna swoje ograniczenia, sprawia również wrażenie bardziej wiarygodnego niż ten, który ma odpowiedź na każde pytanie. „Nie znam odpowiedzi na to pytanie, połączę Pana/Panią z kolegą” to czasami najlepsza rzecz, jaką może powiedzieć."
+ },
+ "d13879894791e003": {
+  "en": "Don't, do",
+  "t": "Nie, proszę"
+ },
+ "9e233dd3968cf1ac": {
+  "en": "Don't",
+  "t": "Proszę nie"
+ },
+ "db907b2dd303595d": {
+  "en": "'Hi, I'm Sarah!'",
+  "t": "„Witam, nazywam się Sarah!”"
+ },
+ "4c92bd2b6a577881": {
+  "en": "'I think you'll definitely get twenty percent off.'",
+  "t": "„Myślę, że na pewno otrzyma Pan dwadzieścia procent zniżki”."
+ },
+ "41aaa7968cf76cf1": {
+  "en": "'I'll always help you, until the end of time.'",
+  "t": "„Zawsze będę Panu pomagać, aż do końca świata.”"
+ },
+ "5959ee951cc241bf": {
+  "en": "Do",
+  "t": "Czy"
+ },
+ "8a4cdbbd7c2cb003": {
+  "en": "'Hi, I'm this company's AI assistant. How can I help?'",
+  "t": "„Witam, jestem asystentem AI tej firmy. W czym mogę pomóc?”"
+ },
+ "28acaf6d9de9968c": {
+  "en": "'For prices and discounts, a colleague will gladly help you further.'",
+  "t": "„W kwestii cen i rabatów jeden z naszych pracowników chętnie udzieli Państwu dalszej pomocy”."
+ },
+ "b4baf3e661396f3a": {
+  "en": "'If I can't work it out, I'll say so and bring in a human.'",
+  "t": "„Jeśli nie dam sobie z tym rady, powiem o tym i poproszę o pomoc kogoś z personelu”."
+ },
+ "618c95c9a1b5fc45": {
+  "en": "What your bot had better not answer itself",
+  "t": "Na jakie pytania Państwa bot nie powinien odpowiadać samodzielnie"
+ },
+ "c5b714c905ae10f7": {
+  "en": "<strong>Prices and discounts,</strong> unless they are fixed and up to date.",
+  "t": "<strong>Ceny i rabaty,</strong> o ile nie są one stałe i aktualne."
+ },
+ "adcf5d5bea0d58c4": {
+  "en": "Legal, medical or financial advice.",
+  "t": "Porady prawne, medyczne lub finansowe."
+ },
+ "775d30de5d4dfe39": {
+  "en": "<strong>Complaints and conflicts.</strong> A human belongs there.",
+  "t": "<strong>Skargi i spory.</strong> To miejsce jest przeznaczone dla człowieka."
+ },
+ "108eb59c476b9ba8": {
+  "en": "<strong>Data about other customers,</strong> in any form.",
+  "t": "<strong>Dane dotyczące innych klientów,</strong> niezależnie od ich formy."
+ },
+ "e623f791f54c7929": {
+  "en": "<strong>Promises about delivery times</strong> it can't check.",
+  "t": "<strong>Obietnice dotyczące terminów dostaw,</strong> których nie jest w stanie zweryfikować."
+ },
+ "6a2be2d10eedb045": {
+  "en": "Your checklist for an honest chatbot",
+  "t": "Lista kontrolna dotycząca rzetelnego chatbota"
+ },
+ "a7ecce39070abe6f": {
+  "en": "<strong>Give it an honest name.</strong> 'Assistant' or 'Concierge', not Sarah.",
+  "t": "<strong>Proszę nadać temu stanowisku odpowiednią nazwę.</strong> „Asystent” lub „konsjerż”, a nie „Sarah”."
+ },
+ "d02a87eec8850a23": {
+  "en": "<strong>Say it in the first sentence.</strong> That it is an AI, and what it can do.",
+  "t": "<strong>Proszę to zaznaczyć już w pierwszym zdaniu. Proszę zaznaczyć</strong>, że chodzi o sztuczną inteligencję oraz opisać, do czego służy."
+ },
+ "29bd201d3ff4aa82": {
+  "en": "<strong>Always leave a way to a human open.</strong> A button, an email address, a phone number.",
+  "t": "<strong>Zawsze należy zapewnić możliwość skontaktowania się z osobą.</strong> Przycisk, adres e-mail, numer telefonu."
+ },
+ "bfb2c83a36d8ccf0": {
+  "en": "<strong>Be clear about privacy.</strong> What do you do with the conversations? And let the chat load only after consent for cookies.",
+  "t": "<strong>Proszę jasno określić zasady dotyczące prywatności.</strong> Co dzieje się z treścią rozmów? Proszę również zadbać o to, by czat ładował się dopiero po wyrażeniu zgody na pliki cookie."
+ },
+ "f88c1cd273a30a64": {
+  "en": "<strong>Limit what it talks about.</strong> Prices, legal and medical advice: refer onwards.",
+  "t": "<strong>Proszę ograniczyć zakres poruszanych tematów.</strong> Ceny, porady prawne i medyczne: proszę przekierować do odpowiednich podmiotów."
+ },
+ "79ec56b8ff18136a": {
+  "en": "How to test it before you let it loose",
+  "t": "Jak to przetestować, zanim wprowadzą Państwo produkt na rynek"
+ },
+ "bc7b0258bb54aca8": {
+  "en": "<strong>Make a list of twenty real customer questions</strong> and look at the answers.",
+  "t": "<strong>Proszę sporządzić listę dwudziestu prawdziwych pytań zadanych przez klientów</strong> i zapoznać się z odpowiedziami."
+ },
+ "d51bd9918d5595a6": {
+  "en": "<strong>Try to mislead it.</strong> Ask questions it must not answer, and see if it politely declines.",
+  "t": "<strong>Proszę spróbować wprowadzić go w błąd. Proszę</strong> zadawać pytania, na które nie powinien odpowiadać, i sprawdzić, czy grzecznie odmówi."
+ },
+ "023eb49944d89ad0": {
+  "en": "<strong>Check the tone.</strong> Does it sound like you, or like a leaflet?",
+  "t": "<strong>Proszę zwrócić uwagę na ton wypowiedzi.</strong> Czy brzmi to jak Państwa własny głos, czy raczej jak ulotka?"
+ },
+ "235e7f33eea2658e": {
+  "en": "<strong>Read every conversation in the first weeks,</strong> with respect for privacy.",
+  "t": "<strong>Proszę zapoznać się z każdą rozmową z pierwszych tygodni,</strong> zachowując przy tym poszanowanie prywatności."
+ },
+ "f0f3d344ac36eaf5": {
+  "en": "<strong>Adjust and repeat.</strong> A bot is never finished.",
+  "t": "<strong>Dopasuj i powtórz.</strong> Bot nigdy nie jest gotowy."
+ },
+ "773679df53a4dff1": {
+  "en": "Questions for your supplier",
+  "t": "Pytania do dostawcy"
+ },
+ "02742b2856ff8298": {
+  "en": "Where is the data stored, and in which country?",
+  "t": "Gdzie są przechowywane dane i w jakim kraju?"
+ },
+ "7106fdeadaee763e": {
+  "en": "Are conversations used to train models?",
+  "t": "Czy do szkolenia modeli wykorzystuje się rozmowy?"
+ },
+ "de4d31642f93f37d": {
+  "en": "Who helps with a wrong answer, and how fast?",
+  "t": "Kto udziela pomocy w przypadku błędnej odpowiedzi i jak szybko?"
+ },
+ "c9a7539f31b9fd00": {
+  "en": "Can I view, export and delete conversations?",
+  "t": "Czy mogę przeglądać, eksportować i usuwać rozmowy?"
+ },
+ "ef9d4cc4e72c0244": {
+  "en": "Does the contract say who is liable for a mistake?",
+  "t": "Czy w umowie określono, kto ponosi odpowiedzialność za popełniony błąd?"
+ },
+ "a83701c307f24626": {
+  "en": "Can I set myself what the bot may not talk about?",
+  "t": "Czy mogę samodzielnie określić, o czym bot nie może rozmawiać?"
+ },
+ "7cd6543cee3139bd": {
+  "en": "Who is responsible if the bot gets it wrong?",
+  "t": "Kto ponosi odpowiedzialność, jeśli bot popełni błąd?"
+ },
+ "112fdd8d29662c92": {
+  "en": "You are. To your customer, you are the sender, even if someone else's system writes the sentences. So agree in advance who gives support for a wrong answer and how fast. A bot may be funny. It may not lie about who it is.",
+  "t": "To właśnie Pan/Pani. Dla Państwa klienta to Pan/Pani jest nadawcą, nawet jeśli zdania generuje system należący do kogoś innego. Dlatego proszę z góry uzgodnić, kto udzieli pomocy w przypadku błędnej odpowiedzi i w jakim terminie. Bot może być zabawny. Nie powinien jednak kłamać na temat tego, kim jest."
+ },
+ "e9c250d76134d7fb": {
+  "en": "These are also our own requirements when we put an assistant on a website.",
+  "t": "Są to również nasze własne wymagania, gdy umieszczamy asystenta na stronie internetowej."
+ },
+ "d1ec149055da28bc": {
+  "en": "Sarah doesn't exist. Her sigh of relief doesn't either.",
+  "t": "Sarah nie istnieje. Jej westchnienie ulgi również nie istnieje."
+ },
+ "b71db57a139445c6": {
+  "en": "An assistant on your website?",
+  "t": "Asystent na Państwa stronie internetowej?"
+ },
+ "0feefa4142470f99": {
+  "en": "We are happy to think along about an approach that is honest, clear and legally sensible.",
+  "t": "Z przyjemnością wspólnie zastanowimy się nad podejściem, które będzie uczciwe, przejrzyste i rozsądne z prawnego punktu widzenia."
+ },
+ "29ec8d63dfa0e93f": {
+  "en": "Woman talking with AI Chat",
+  "t": "Kobieta rozmawiająca z botem AI"
+ },
+ "123462fd20c5fa9c": {
+  "en": "Is your visitor talking to a human? Say so honestly. | Blog | DRP BuildLab",
+  "t": "Czy Państwa gość rozmawia z prawdziwą osobą? Proszę szczerze to potwierdzić. | Blog | DRP BuildLab"
+ },
+ "ef3767c060e68a90": {
+  "en": "Why a chatbot on your website should play with open cards, and how to do that without it getting awkward. What the rules say, how to test your bot and which questions to ask your supplier.",
+  "t": "Dlaczego chatbot na Państwa stronie internetowej powinien działać w sposób przejrzysty i jak to osiągnąć, unikając niezręcznych sytuacji. Jakie są wytyczne w tym zakresie, jak przetestować bota oraz o co należy zapytać dostawcę."
+ },
+ "b5eea3de3080bdc6": {
+  "en": "Thank you for <em>subscribing</em>",
+  "t": "Dziękujemy za <em>subskrypcję</em>"
+ },
+ "bafaa0d59efa875c": {
+  "en": "Your subscription is <em>not confirmed</em>",
+  "t": "Państwa subskrypcja <em>nie</em> została <em>potwierdzona</em>"
+ },
+ "3b5970733445889d": {
+  "en": "Thank you for subscribing | Blog | DRP BuildLab",
+  "t": "Dziękujemy za subskrypcję | Blog | DRP BuildLab"
+ },
+ "6943b6614ce422b7": {
+  "en": "Your customer no longer googles. They ask.",
+  "t": "Państwa klienci nie szukają już informacji w Google. Po prostu pytają."
+ },
+ "5f7a85efe3604494": {
+  "en": "What changes for your website when people increasingly ask an AI instead of searching, and what you can do about it tomorrow. A checklist, an example service page and a way to check whether it works.",
+  "t": "Jakie zmiany czekają Państwa stronę internetową, gdy użytkownicy coraz częściej zwracają się do sztucznej inteligencji zamiast korzystać z wyszukiwarki, oraz co mogą Państwo z tym zrobić już jutro. Lista kontrolna, przykładowa strona z ofertą usług oraz sposób na sprawdzenie, czy rozwiązanie to działa."
+ },
+ "646e19ee405002ed": {
+  "en": "4 min read",
+  "t": "Czas czytania: 4 minuty"
+ },
+ "b9fc8b798befebd4": {
+  "en": "Saturday evening, a quarter to nine. The water in Els's bathroom is a centimetre deep. She doesn't open Google, doesn't scroll past four ads and doesn't click through ten websites. She types one sentence into a chat window: 'My bathroom is flooding, who can still come tonight in Mechelen?' And one answer comes back. With three names.",
+  "t": "Sobota wieczorem, kwadrans przed dziewiątą. W łazience Els woda sięga jednego centymetra. Nie otwiera ona przeglądarki Google, nie przewija czterech reklam ani nie klika dziesięciu stron internetowych. W oknie czatu wpisuje jedno zdanie: „Moja łazienka jest zalana, kto może jeszcze dziś wieczorem przyjechać do Mechelen?”. Otrzymuje jedną odpowiedź. Zawierającą trzy nazwiska."
+ },
+ "6402dc9a705ea0f0": {
+  "en": "Whether your business is among them depends on something most entrepreneurs have never looked at: can a machine read your website?",
+  "t": "To, czy Państwa firma znajduje się wśród nich, zależy od czynnika, na który większość przedsiębiorców nigdy nie zwróciła uwagi: czy maszyna jest w stanie odczytać Państwa stronę internetową?"
+ },
+ "c9842ff747227b14": {
+  "en": "Your website has two kinds of visitors: people, and machines that read on behalf of people.",
+  "t": "Państwa strona internetowa ma dwa rodzaje odwiedzających: ludzi oraz maszyny, które przeglądają ją w imieniu ludzi."
+ },
+ "9a87e902228a93ea": {
+  "en": "What is changing",
+  "t": "Co się zmienia"
+ },
+ "99155a1c3e7f957e": {
+  "en": "More and more people let an AI assistant, such as ChatGPT, Perplexity, Gemini or Claude, look up the answer instead of browsing themselves. Such an assistant reads websites, pulls out the facts and summarises them. The clearer your facts, the easier it is for it to use them.",
+  "t": "Coraz więcej osób zamiast samodzielnie przeszukiwać strony internetowe, zleca znalezienie odpowiedzi asystentowi opartemu na sztucznej inteligencji, takiemu jak ChatGPT, Perplexity, Gemini czy Claude. Taki asystent analizuje treści stron internetowych, wyodrębnia fakty i sporządza ich podsumowanie. Im bardziej przejrzyste są te fakty, tym łatwiej jest mu z nich skorzystać."
+ },
+ "255204c3f6698871": {
+  "en": "Nobody can promise that an AI will mention you. But a site that a machine understands is also understood faster by people. And a photo of your van tells a machine nothing. A sentence under that photo does.",
+  "t": "Nikt nie może obiecać, że sztuczna inteligencja o Państwu wspomni. Jednak strona, którą rozumie maszyna, jest również szybciej rozumiana przez ludzi. A zdjęcie Państwa furgonetki nic nie mówi maszynie. Natomiast zdanie umieszczone pod tym zdjęciem – już tak."
+ },
+ "6b21387bf0ae989a": {
+  "en": "How an assistant arrives at its answer",
+  "t": "W jaki sposób asystent dochodzi do odpowiedzi"
+ },
+ "e00088f8355f0e7d": {
+  "en": "How an assistant works exactly differs per product and changes quickly. Some search the web live and name their sources, others answer mostly from what they learned earlier. For you it comes down to the same thing: the clearer, more current and more consistent your information is on the web, the greater the chance an assistant reflects it well. There is no guarantee.",
+  "t": "Sposób działania asystenta różni się w zależności od produktu i ulega szybkim zmianom. Niektórzy z nich na bieżąco przeszukują Internet i podają źródła informacji, inni natomiast udzielają odpowiedzi głównie na podstawie wiedzy zdobytej wcześniej. Dla Państwa ma to jednak takie samo znaczenie: im jaśniejsze, aktualniejsze i spójniejsze są Państwa informacje w Internecie, tym większa jest szansa, że asystent je właściwie odzwierciedli. Nie ma jednak żadnej gwarancji."
+ },
+ "a7a34ef4546e3ae2": {
+  "en": "What a machine wants to find on your site",
+  "t": "Co robot indeksujący chce znaleźć na Państwa stronie"
+ },
+ "7833ffa02cc17844": {
+  "en": "What you do, in plain words.",
+  "t": "Czym się Państwo zajmują – mówiąc wprost."
+ },
+ "eb20a39a1fb87882": {
+  "en": "Where you work: municipalities or region.",
+  "t": "Miejsce pracy: gminy lub region."
+ },
+ "bcb10aea1bc0fa19": {
+  "en": "Who you work for.",
+  "t": "Dla kogo Pan/Pani pracuje."
+ },
+ "08352f8b82058e53": {
+  "en": "Roughly what it costs, or how a customer can work that out.",
+  "t": "W przybliżeniu, ile to kosztuje, lub w jaki sposób klient może to obliczyć."
+ },
+ "e40d3d6ac30188ef": {
+  "en": "How and when you can be reached.",
+  "t": "W jaki sposób i kiedy można się z Państwem skontaktować."
+ },
+ "f93fde615ec17a5e": {
+  "en": "The questions you always get, with an honest answer.",
+  "t": "Pytania, które zawsze Państwo słyszą, wraz z szczerą odpowiedzią."
+ },
+ "6817e745234df520": {
+  "en": "A service page that machines understand",
+  "t": "Strona serwisowa zrozumiała dla maszyn"
+ },
+ "7d075a0b966026d3": {
+  "en": "An example, for a made-up plumber in Mechelen. Note how each part is a short, factual sentence:",
+  "t": "Przykład dotyczący fikcyjnego hydraulika z Mechelen. Proszę zwrócić uwagę, że każda część stanowi krótkie, oparte na faktach zdanie:"
+ },
+ "3d9b3d6becfddb25": {
+  "en": "<strong>What:</strong> Leak detection, repairs and emergency call-outs for homes and small businesses.",
+  "t": "<strong>Zakres usług:</strong> Wykrywanie wycieków, naprawy oraz interwencje awaryjne w domach i małych firmach."
+ },
+ "5ab9ac8a15fd3508": {
+  "en": "<strong>Where:</strong> Mechelen, Duffel and surrounding municipalities.",
+  "t": "<strong>Gdzie:</strong> Mechelen, Duffel i okoliczne gminy."
+ },
+ "d72006170458e3d8": {
+  "en": "<strong>For whom:</strong> Private customers and small businesses.",
+  "t": "<strong>Dla kogo:</strong> Klienci indywidualni i małe przedsiębiorstwa."
+ },
+ "f30aa740f1350efb": {
+  "en": "<strong>Price:</strong> Call-out from [amount], travel included. Quote for larger jobs.",
+  "t": "<strong>Cena:</strong> Opłata za dojazd od [kwota], w tym koszty dojazdu. W przypadku większych zleceń prosimy o wycenę."
+ },
+ "0cb90021be67f303": {
+  "en": "<strong>Reachable:</strong> Every day from 7 am to 9 pm, emergency number day and night.",
+  "t": "<strong>Dostępność:</strong> Codziennie od godz. 7:00 do 21:00; numer alarmowy czynny przez całą dobę."
+ },
+ "3e1318e45bb678f9": {
+  "en": "<strong>Questions:</strong> What does an emergency call-out cost? When can you be there? Does my insurance cover this?",
+  "t": "<strong>Pytania:</strong> Ile kosztuje interwencja w nagłym wypadku? Kiedy mogą Państwo przybyć na miejsce? Czy moje ubezpieczenie pokrywa te koszty?"
+ },
+ "12aba7d91721871a": {
+  "en": "What doesn't work",
+  "t": "Co nie działa"
+ },
+ "6015aa65949fd471": {
+  "en": "<strong>Stuffing words.</strong> 'Cheap plumber Mechelen, plumber Mechelen cheap.' Nobody reads that, human or machine.",
+  "t": "<strong>Słowa wypełniające.</strong> „Tani hydraulik w Mechelen, hydraulik w Mechelen – tanio”. Nikt tego nie czyta – ani człowiek, ani maszyna."
+ },
+ "04dd82460845a935": {
+  "en": "<strong>Contradictory details.</strong> A different address on your site, your Google profile and your social media.",
+  "t": "<strong>Niespójne dane.</strong> Różne adresy podane na Państwa stronie internetowej, w profilu w Google oraz w mediach społecznościowych."
+ },
+ "c3fc1bcf2df713bd": {
+  "en": "<strong>Outdated prices and hours.</strong> An assistant that repeats your old details does neither you nor your customer any favours.",
+  "t": "<strong>Nieaktualne ceny i godziny otwarcia.</strong> Asystent, który powtarza nieaktualne informacje, nie wyświadcza przysługi ani Państwu, ani Państwa klientom."
+ },
+ "1b5bf0f2f11c5ff8": {
+  "en": "<strong>Everything in images or PDFs.</strong> Without plain text there is nothing to read.",
+  "t": "<strong>Wszystko jest w postaci obrazów lub plików PDF.</strong> Bez zwykłego tekstu nie ma czego czytać."
+ },
+ "9e7e1fae341734d8": {
+  "en": "What you can do tomorrow",
+  "t": "Co mogą Państwo zrobić jutro"
+ },
+ "389c43ee23a000e4": {
+  "en": "<strong>Put the basics in plain text on your homepage.</strong> No text that only exists inside an image.",
+  "t": "<strong>Proszę umieścić podstawowe informacje w postaci zwykłego tekstu na swojej stronie głównej.</strong> Proszę unikać umieszczania tekstu wyłącznie wewnątrz obrazów."
+ },
+ "b6dd8f231f80499f": {
+  "en": "<strong>Write a page with frequently asked questions.</strong> With the real questions customers ask, and honest answers.",
+  "t": "<strong>Proszę stworzyć stronę zawierającą najczęściej zadawane pytania.</strong> Należy zamieścić na niej rzeczywiste pytania zadawane przez klientów oraz szczere odpowiedzi."
+ },
+ "6bda111c47686653": {
+  "en": "<strong>Add structured data.</strong> These are labels that tell machines what a service is, where you are and what it costs.",
+  "t": "<strong>Proszę dodać dane strukturalne.</strong> Są to opisy, które informują systemy komputerowe, czym jest dana usługa, gdzie się Państwo znajdują oraz ile ona kosztuje."
+ },
+ "8ad65de4f4868aaf": {
+  "en": "<strong>Keep your details the same everywhere.</strong> Website, Google Business Profile and social media must say the same thing.",
+  "t": "<strong>Proszę zadbać o to, aby Państwa dane były wszędzie spójne. Informacje</strong> na stronie internetowej, w profilu Google Moja Firma oraz w mediach społecznościowych muszą być zgodne."
+ },
+ "1a0010419d4c68d2": {
+  "en": "<strong>Don't block assistants.</strong> Check your robots.txt, and consider a short plain-text summary for assistants. A proposal for that is called llms.txt. Whether it works is not yet proven.",
+  "t": "<strong>Proszę nie blokować asystentów.</strong> Proszę sprawdzić plik robots.txt i rozważyć dodanie krótkiego streszczenia w postaci zwykłego tekstu przeznaczonego dla asystentów. Jedną z propozycji w tym zakresie jest plik o nazwie llms.txt. Nie zostało jeszcze potwierdzone, czy rozwiązanie to jest skuteczne."
+ },
+ "8b3ec85d14d0206a": {
+  "en": "How to check whether it works",
+  "t": "Jak sprawdzić, czy to działa"
+ },
+ "9145a2ab72e8f828": {
+  "en": "Ask a few assistants the questions your customers ask, for example: 'Who is a good plumber in Mechelen?' See whether you are mentioned, and above all whether the facts are right. Do this every month, write down what you see and don't count on a single result: answers differ per day and per assistant.",
+  "t": "Zadaj kilku pracownikom pytania, które zadają Państwa klienci, na przykład: „Kto jest dobrym hydraulikiem w Mechelen?”. Sprawdź, czy padają Państwa nazwiska, a przede wszystkim, czy podane informacje są zgodne z prawdą. Proszę to robić co miesiąc, zapisywać swoje spostrzeżenia i nie opierać się na jednym wyniku: odpowiedzi różnią się w zależności od dnia i od konkretnego pracownika."
+ },
+ "740478e9866e3778": {
+  "en": "An honest note",
+  "t": "Szczera uwaga"
+ },
+ "8af519254a734c12": {
+  "en": "Whoever promises to put you at the top of ChatGPT is selling hot air. Nobody controls the answers of an AI. What you can do is offer clear information. That always wins, with people and with machines. A website that a robot understands, your aunt understands too.",
+  "t": "Każdy, kto obiecuje umieścić Państwa na pierwszym miejscu w ChatGPT, sprzedaje tylko puste obietnice. Nikt nie ma kontroli nad odpowiedziami sztucznej inteligencji. To, co mogą Państwo zrobić, to przedstawić jasne informacje. To zawsze się sprawdza – zarówno w przypadku ludzi, jak i maszyn. Strona internetowa, którą rozumie robot, jest zrozumiała również dla Państwa ciotki."
+ },
+ "8410d802b61e95f4": {
+  "en": "Els doesn't exist. Her flooded bathroom does, for someone, right now.",
+  "t": "Els nie istnieje. Jej zalana łazienka natomiast istnieje – dla kogoś, właśnie teraz."
+ },
+ "e71294b44bc5048b": {
+  "en": "How readable is your site for machines?",
+  "t": "W jakim stopniu Państwa strona internetowa jest czytelna dla maszyn?"
+ },
+ "ed978a50257e02e5": {
+  "en": "We are happy to look at your website through the eyes of an AI assistant, and tell you honestly what could be better.",
+  "t": "Z przyjemnością przyjrzymy się Państwa stronie internetowej z perspektywy asystenta opartego na sztucznej inteligencji i szczerze wskażemy, co można by poprawić."
+ },
+ "b17c7b5b75eef581": {
+  "en": "OpenAI Playground 2026 11 09 at 12.44.26",
+  "t": "OpenAI Playground, 9 listopada 2026 r., godz. 12:44:26"
+ },
+ "ef641c900ac9bbf0": {
+  "en": "Your customer no longer googles. They ask. | Blog | DRP BuildLab",
+  "t": "Państwa klienci nie szukają już informacji w Google. Po prostu pytają. | Blog | DRP BuildLab"
+ },
+ "595294e20ebc453a": {
+  "en": "What changes for your website when people increasingly ask an AI instead of searching, and what you can do about it tomorrow. A checklist, an example service page and a way to check whether it works.",
+  "t": "Jakie zmiany czekają Państwa stronę internetową, gdy użytkownicy coraz częściej zwracają się do sztucznej inteligencji zamiast korzystać z wyszukiwarki, oraz co mogą Państwo z tym zrobić już jutro. Lista kontrolna, przykładowa strona z ofertą usług oraz sposób na sprawdzenie, czy rozwiązanie to działa."
+ },
+ "89ceac33ca4bd7ee": {
+  "en": "Short video is not a hype. You just don't have to dance in it.",
+  "t": "Krótkie filmiki to nie tylko chwilowa moda. Po prostu nie trzeba w nich tańczyć."
+ },
+ "abd01dbbc8cbabe6": {
+  "en": "Why short video is here to stay for small businesses, what to film, what to skip and how to fit it into your week. A scenario in four sentences, a practical five-step guide and a note on rights and consent.",
+  "t": "Dlaczego krótkie filmy wideo staną się stałym elementem działalności małych firm, co warto filmować, czego należy unikać i jak wpasować to w Państwa harmonogram tygodniowy. Scenariusz w czterech zdaniach, praktyczny przewodnik w pięciu krokach oraz uwaga dotycząca praw i zgody."
+ },
+ "5a6b315b18aff18b": {
+  "en": "There comes a moment in every entrepreneur's life when someone says: you should do something with video. A silence usually follows, and an image of yourself dancing in your workshop.",
+  "t": "W życiu każdego przedsiębiorcy przychodzi moment, kiedy ktoś mówi: „Powinien Pan/Pani zająć się filmami”. Zazwyczaj następuje cisza, a po niej pojawia się obraz Pana/Pani tańczącego/tańczącej w swoim warsztacie."
+ },
+ "2f4daf27bf18eb11": {
+  "en": "We believe short video is here to stay. Not because an algorithm wants it, but because people want to see who they are going to buy from. That is an opinion, and one we apply ourselves. Just without the choreography.",
+  "t": "Uważamy, że krótkie filmy to trend, który się utrzyma. Nie dlatego, że tak chce algorytm, ale dlatego, że ludzie chcą wiedzieć, od kogo zamierzają dokonać zakupu. To nasza opinia, którą sami stosujemy w praktyce. Tylko bez tej całej choreografii."
+ },
+ "04832bef22360e60": {
+  "en": "A customer buys from a person. A video shows that the person exists.",
+  "t": "Klient dokonuje zakupu od danej osoby. Film pokazuje, że osoba ta rzeczywiście istnieje."
+ },
+ "f7550f33cdf4b364": {
+  "en": "Why it works",
+  "t": "Dlaczego to działa"
+ },
+ "cd2a4f561099d903": {
+  "en": "<strong>People want to see who you are.</strong> A face and a voice do in thirty seconds what text can't do in three pages.",
+  "t": "<strong>Ludzie chcą zobaczyć, kim Pan/Pani jest.</strong> Twarz i głos potrafią w ciągu trzydziestu sekund przekazać to, czego tekst nie jest w stanie wyrazić na trzech stronach."
+ },
+ "ccf2d5b1977009aa": {
+  "en": "<strong>It is low-threshold.</strong> Watching thirty seconds costs nobody any effort.",
+  "t": "<strong>To rozwiązanie o niskim progu dostępu.</strong> Obejrzenie trzydziestosekundowego materiału nie wymaga od nikogo żadnego wysiłku."
+ },
+ "e231410cb9d6f483": {
+  "en": "<strong>You can reuse it.</strong> The same video fits on your site, in a newsletter and on social media.",
+  "t": "<strong>Można go wykorzystać ponownie.</strong> Ten sam filmik sprawdzi się zarówno na Państwa stronie internetowej, jak i w biuletynie informacyjnym oraz w mediach społecznościowych."
+ },
+ "0d6d0fb164bf0b4e": {
+  "en": "What you can film",
+  "t": "Co można filmować"
+ },
+ "f0e3b777b7f498c7": {
+  "en": "<strong>A day in your workshop,</strong> in thirty seconds.",
+  "t": "<strong>Jeden dzień w Państwa warsztacie</strong> w trzydzieści sekund."
+ },
+ "70066c86eaacf3cb": {
+  "en": "<strong>Before and after.</strong> A bare garden and a garden with life. An old website and a new one.",
+  "t": "<strong>Przed i po.</strong> Pusty ogród i ogród tętniący życiem. Stara strona internetowa i nowa."
+ },
+ "6cbc0d32c35fb324": {
+  "en": "<strong>A customer's question,</strong> answered in one minute.",
+  "t": "<strong>Odpowiedź na pytanie klienta</strong> udzielona w ciągu jednej minuty."
+ },
+ "bdd4872c67edeee9": {
+  "en": "<strong>A mistake you almost made,</strong> and what you learned from it.",
+  "t": "<strong>Błąd, który omal nie popełnił Pan/Pani,</strong> oraz wnioski, jakie z niego wyciągnął Pan/Pani."
+ },
+ "82018f6bfe7daa0e": {
+  "en": "<strong>How something is made.</strong> People enjoy watching craftsmanship.",
+  "t": "<strong>Jak powstaje dana rzecz.</strong> Ludziom sprawia przyjemność obserwowanie kunsztu rzemieślniczego."
+ },
+ "8c1ca16a672e6f83": {
+  "en": "A scenario in four sentences",
+  "t": "Scenariusz w czterech zdaniach"
+ },
+ "e8a0c7e1153f71a8": {
+  "en": "Suppose you have a garden company. A video of thirty seconds can go like this: a corner of a bare garden (the hook), what the customer wanted (the problem), two days of work in ten seconds (the work), and the finished garden with one sentence from the customer (the result).",
+  "t": "Załóżmy, że prowadzą Państwo firmę zajmującą się zagospodarowaniem ogrodów. Trzydziestosekundowy film mógłby wyglądać następująco: kąt pustego ogrodu (wstęp), to, czego oczekiwał klient (problem), dwa dni pracy przedstawione w dziesięciu sekundach (praca) oraz gotowy ogród wraz z jednym zdaniem klienta (rezultat)."
+ },
+ "5c642424664788bc": {
+  "en": "Four pieces, one story. You don't need more.",
+  "t": "Cztery elementy, jedna historia. Nie potrzebują Państwo niczego więcej."
+ },
+ "b89cdaf37060a30d": {
+  "en": "What to skip",
+  "t": "Czego należy unikać"
+ },
+ "614db28a7da75676": {
+  "en": "Copy a trend that has nothing to do with your trade.",
+  "t": "Proszę naśladować trend, który nie ma nic wspólnego z Państwa transakcją."
+ },
+ "ce60eb729a81d202": {
+  "en": "Open with a ten-second intro with music.",
+  "t": "Proszę rozpocząć od dziesięciosekundowego wstępu z podkładem muzycznym."
+ },
+ "512b4fa2904e4697": {
+  "en": "Let AI invent and edit everything.",
+  "t": "Niech sztuczna inteligencja wymyśla i edytuje wszystko."
+ },
+ "04af33153eee799c": {
+  "en": "Film something only you can: your work.",
+  "t": "Sfilmuj coś, co tylko Państwo potrafią: swoją pracę."
+ },
+ "7be2903693cb254a": {
+  "en": "Start with the result or the question.",
+  "t": "Zacznij od wyniku lub od pytania."
+ },
+ "b6142ef9815e6e90": {
+  "en": "Use an honest image with a short sentence of your own.",
+  "t": "Proszę zamieścić autentyczne zdjęcie wraz z krótkim, własnym opisem."
+ },
+ "87d943fca9c9daf5": {
+  "en": "How to fit it into your week",
+  "t": "Jak włączyć to do swojego tygodniowego harmonogramu"
+ },
+ "8090285e5a80295a": {
+  "en": "<strong>Film in batches.</strong> One hour, five videos.",
+  "t": "<strong>Nagrywajcie filmy partiami.</strong> Jedna godzina, pięć filmów."
+ },
+ "06e634137242b247": {
+  "en": "<strong>Use a fixed template.</strong> Hook, problem, work, result.",
+  "t": "<strong>Proszę stosować stały schemat:</strong> wprowadzenie, problem, działania, wynik."
+ },
+ "f667fc53f8089159": {
+  "en": "<strong>Pick a fixed moment each week</strong> to film or edit.",
+  "t": "<strong>Proszę wybrać stały termin w każdym tygodniu</strong> na nagrywanie lub montaż."
+ },
+ "0274fceba8bad1a2": {
+  "en": "<strong>Keep everything in one place,</strong> with a clear file name.",
+  "t": "<strong>Proszę przechowywać wszystko w jednym miejscu,</strong> nadając plikom jasne nazwy."
+ },
+ "ac117b0ba1b3a938": {
+  "en": "<strong>Let someone else edit</strong> if that saves you time.",
+  "t": "<strong>Proszę pozwolić, aby ktoś inny zajął się redagowaniem,</strong> jeśli pozwoli to Panu/Pani zaoszczędzić czas."
+ },
+ "1dc4ad39b0e354e2": {
+  "en": "What to measure",
+  "t": "Co należy mierzyć"
+ },
+ "b13bbc50c1d57d0d": {
+  "en": "Views are nice, enquiries are better. Look at how long people keep watching, who responds and above all how many people get in touch afterwards. A video with few views and three quote requests is a better video than one with thousands of views and none.",
+  "t": "Liczba wyświetleń jest ważna, ale zapytania są jeszcze ważniejsze. Proszę zwrócić uwagę na to, jak długo widzowie oglądają film, kto na niego reaguje, a przede wszystkim ile osób kontaktuje się z Państwem po jego obejrzeniu. Film, który ma niewiele wyświetleń, ale trzy zapytania o wycenę, jest lepszy niż ten, który ma tysiące wyświetleń, ale żadnego zapytania."
+ },
+ "fbff6dec31abcf8c": {
+  "en": "Rights and consent",
+  "t": "Prawa i zgoda"
+ },
+ "cd49f2681bf8487d": {
+  "en": "<strong>People on camera.</strong> Ask permission, especially from customers and employees.",
+  "t": "<strong>Osoby ujęte w kadrze.</strong> Proszę poprosić o zgodę, zwłaszcza w przypadku klientów i pracowników."
+ },
+ "c096ed3c01b1a20a": {
+  "en": "<strong>Music.</strong> Only use music you have the rights to, for example from the platform's library.",
+  "t": "<strong>Muzyka.</strong> Prosimy korzystać wyłącznie z utworów, do których posiadają Państwo prawa, na przykład z biblioteki platformy."
+ },
+ "bb178f407c154b79": {
+  "en": "<strong>Brands and other people's work.</strong> Leave out third-party logos and photos, or ask.",
+  "t": "<strong>Marki i dzieła innych osób.</strong> Prosimy o nieumieszczanie logo i zdjęć osób trzecich lub o uzyskanie na to zgody."
+ },
+ "305bb71bfc702612": {
+  "en": "<strong>Children.</strong> Don't film them without explicit permission from their parents.",
+  "t": "<strong>Dzieci.</strong> Proszę nie filmować ich bez wyraźnej zgody rodziców."
+ },
+ "fdcaf506a8999000": {
+  "en": "Practical, in five steps",
+  "t": "Praktyczne wskazówki w pięciu krokach"
+ },
+ "258dbc82c92be7c8": {
+  "en": "<strong>Hold your phone upright.</strong> Vertical is the norm.",
+  "t": "<strong>Proszę trzymać telefon w pozycji pionowej.</strong> Pozycja pionowa jest standardem."
+ },
+ "b9ddeff003e42bee": {
+  "en": "<strong>Find light by a window.</strong> You need nothing more.",
+  "t": "<strong>Znajdź światło przy oknie.</strong> Nie potrzebuje Pan niczego więcej."
+ },
+ "29eeebc793d0c47e": {
+  "en": "<strong>One idea per video,</strong> no longer than a minute.",
+  "t": "<strong>Jeden pomysł na film, trwający</strong> nie dłużej niż minutę."
+ },
+ "213addb343bf60df": {
+  "en": "<strong>Add subtitles.</strong> Many people watch without sound.",
+  "t": "<strong>Proszę dodać napisy.</strong> Wiele osób ogląda filmy bez dźwięku."
+ },
+ "955dcde2066a6f2d": {
+  "en": "<strong>Put it on your website too,</strong> with the right service or project.",
+  "t": "<strong>Umieść to również na swojej stronie internetowej,</strong> przypisując do odpowiedniej usługi lub projektu."
+ },
+ "ac136cf5881f6c21": {
+  "en": "The worst thing you can do is wait until your video is perfect. The second worst is dancing.",
+  "t": "Najgorszą rzeczą, jaką może Pan/Pani zrobić, jest czekanie, aż film będzie idealny. Drugą najgorszą rzeczą jest taniec."
+ },
+ "5074e8a91e5ab3e9": {
+  "en": "Video on your website?",
+  "t": "Film na Państwa stronie internetowej?"
+ },
+ "a8f6c84992dd7c31": {
+  "en": "We build the place where your short videos look their best, on your site and with your projects.",
+  "t": "Tworzymy przestrzeń, w której Państwa krótkie filmy prezentują się najlepiej – zarówno na Państwa stronie internetowej, jak i w ramach realizowanych przez Państwa projektów."
+ },
+ "20b5bff2ec25909d": {
+  "en": "Social media content creating entrepreneur",
+  "t": "Przedsiębiorca zajmujący się tworzeniem treści w mediach społecznościowych"
+ },
+ "32228651aa31b4be": {
+  "en": "Short video is not a hype. You just don't have to dance in it. | Blog | DRP BuildLab",
+  "t": "Krótkie filmy to nie tylko chwilowa moda. Po prostu nie trzeba w nich tańczyć. | Blog | DRP BuildLab"
+ },
+ "81b1fc11a9a41ff4": {
+  "en": "Why short video is here to stay for small businesses, what to film, what to skip and how to fit it into your week. A scenario in four sentences, a practical five-step guide and a note on rights and consent.",
+  "t": "Dlaczego krótkie filmy wideo staną się stałym elementem działalności małych firm, co warto filmować, czego należy unikać i jak wpasować to w Państwa harmonogram tygodniowy. Scenariusz w czterech zdaniach, praktyczny przewodnik w pięciu krokach oraz uwaga dotycząca praw i zgody."
+ },
+ "d12511991517cef7": {
+  "en": "Also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. Optional; withdraw any time.",
+  "t": "Proszę również o przesyłanie mi od czasu do czasu ofert od DRP BuildLab i wybranych partnerów, takich jak Tinrate, na podstawie artykułów, które czytam. Opcjonalnie; można zrezygnować w dowolnym momencie."
+ },
+ "4214127a3b866b09": {
+  "en": "Without the box ticked, we only use your email address to send you new articles. <a href=\"/privacy/\">Privacy policy</a> · <a href=\"/offers-terms/\">Offers terms</a>",
+  "t": "Jeśli pole nie zostało zaznaczone, wykorzystujemy Państwa adres e-mail wyłącznie w celu wysyłania Państwu nowych artykułów. <a href=\"/privacy/\">Polityka prywatności</a> · <a href=\"/offers-terms/\">Warunki ofert</a>"
+ },
+ "4a1e1946b99bfdc1": {
+  "en": "Offers",
+  "t": "Oferty"
+ },
+ "7aebf959c4012066": {
+  "en": "Offers from DRP BuildLab <em>and partners</em>",
+  "t": "Oferty firmy DRP BuildLab <em>i jej partnerów</em>"
+ },
+ "5fa8aebd9955113a": {
+  "en": "Your choice is <em>not saved</em>",
+  "t": "Pański wybór <em>nie</em> został <em>zapisany</em>"
+ },
+ "c3c79053b4be44fc": {
+  "en": "You already receive every new article from the DRP BuildLab blog. That does not change, whatever you choose here.",
+  "t": "Już teraz otrzymują Państwo wszystkie nowe artykuły z bloga DRP BuildLab. Nie ulegnie to zmianie, niezależnie od tego, jaki wybór Państwo tutaj dokonają."
+ },
+ "1c2e041b9cfc1a82": {
+  "en": "If you agree, we may also email you occasional offers from DRP BuildLab and from selected partners, such as Tinrate. To choose offers that suit you, we look at which blog articles you click in our emails. We do not give your email address to partners: offers always come from us.",
+  "t": "Jeśli wyrażą Państwo zgodę, możemy również sporadycznie wysyłać Państwu pocztą elektroniczną oferty od DRP BuildLab oraz od wybranych partnerów, takich jak Tinrate. Aby dobrać oferty dostosowane do Państwa potrzeb, analizujemy, które artykuły na blogu klikają Państwo w naszych wiadomościach e-mail. Nie udostępniamy Państwa adresu e-mail partnerom: oferty zawsze pochodzą od nas."
+ },
+ "f7c1d3cf8adddb50": {
+  "en": "This is optional. Every offer email has a link to withdraw, and then we delete the record of the articles you clicked. <a href=\"/offers-terms/\">Offers terms</a> · <a href=\"/privacy/\">Privacy policy</a>",
+  "t": "Jest to opcjonalne. Każda wiadomość e-mail z ofertą zawiera link umożliwiający rezygnację, a po jej kliknięciu usuwamy zapis dotyczący artykułów, które Państwo wyklikali. <a href=\"/offers-terms/\">Warunki ofert</a> · <a href=\"/privacy/\">Polityka prywatności</a>"
+ },
+ "3bdc0957f7fdf48d": {
+  "en": "Yes, also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. I can withdraw any time.",
+  "t": "Tak, proszę również o przesyłanie mi od czasu do czasu ofert od DRP BuildLab oraz wybranych partnerów, takich jak Tinrate, na podstawie artykułów, które czytam. Mogę zrezygnować w dowolnym momencie."
+ },
+ "65bf204c1bf9b148": {
+  "en": "Save my choice <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zapisz mój wybór <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "86c0e6335ffb00d0": {
+  "en": "One moment, we are saving your choice.",
+  "t": "Proszę chwilę poczekać, zapisujemy Państwa wybór."
+ },
+ "75cf7de8113e96bc": {
+  "en": "Saved. Besides new articles, we may now also email you offers. Each offer email has a link to withdraw.",
+  "t": "Zapisano. Oprócz nowych artykułów możemy teraz wysyłać Państwu również oferty pocztą elektroniczną. Każda wiadomość e-mail z ofertą zawiera link umożliwiający rezygnację."
+ },
+ "b2ebd63f4648fb05": {
+  "en": "This link has expired, and nothing was changed. Ask us for a new link at info@drpbuildlab.com.",
+  "t": "Ten link stracił ważność, a treść nie uległa zmianie. Prosimy o kontakt pod adresem info@drpbuildlab.com w celu uzyskania nowego linku."
+ },
+ "6032971e17c3bf30": {
+  "en": "This link is not valid, and nothing was changed. Use the link from the email we sent you.",
+  "t": "Ten link jest nieprawidłowy i nie wprowadzono żadnych zmian. Proszę skorzystać z linku zawartego w wiadomości e-mail, którą Państwu wysłaliśmy."
+ },
+ "6fffcb13bdc60736": {
+  "en": "This email address is not subscribed to the blog (any more), so nothing was saved. Subscribe again on the blog if you want our articles.",
+  "t": "Ten adres e-mail nie jest już zapisany jako subskrybent bloga, więc nic nie zostało zapisane. Jeśli chcą Państwo otrzymywać nasze artykuły, prosimy o ponowne zapisanie się na blogu."
+ },
+ "6628934fda0ccf61": {
+  "en": "Something went wrong while saving your choice. Please try again in a moment.",
+  "t": "Wystąpił błąd podczas zapisywania Państwa wyboru. Proszę spróbować ponownie za chwilę."
+ },
+ "f39c5e07aba23f8e": {
+  "en": "Would you also like offers from DRP BuildLab and our partners?",
+  "t": "Czy chcieliby Państwo otrzymywać również oferty od firmy DRP BuildLab i naszych partnerów?"
+ },
+ "e1828996bd717972": {
+  "en": "Offers that match what you read",
+  "t": "Oferty pasujące do tego, co Pan/Pani przeczytał(a)"
+ },
+ "3561948313899ef0": {
+  "en": "You receive new articles from the DRP BuildLab blog. We would also like to email you occasional offers from DRP BuildLab and selected partners, such as Tinrate, chosen by the articles you click in our emails. This is optional: you keep receiving every new article either way. To agree, open the page below and tick the box.",
+  "t": "Otrzymują Państwo nowe artykuły z bloga DRP BuildLab. Chcielibyśmy również od czasu do czasu przesyłać Państwu pocztą elektroniczną oferty od DRP BuildLab oraz wybranych partnerów, takich jak Tinrate, dobrane na podstawie artykułów, które klikają Państwo w naszych wiadomościach e-mail. Jest to opcjonalne: niezależnie od tego, czy wyrażą Państwo zgodę, czy nie, będą Państwo nadal otrzymywać każdy nowy artykuł. Aby wyrazić zgodę, prosimy otworzyć poniższą stronę i zaznaczyć odpowiednie pole."
+ },
+ "3d1075b0fd2a6de0": {
+  "en": "Choose on our website",
+  "t": "Prosimy o dokonanie wyboru na naszej stronie internetowej"
+ },
+ "f393177bccae069a": {
+  "en": "This link is valid for 30 days.",
+  "t": "Ten link jest ważny przez 30 dni."
+ },
+ "b19efcfbe22a7330": {
+  "en": "Not interested? Then ignore this email. Nothing changes.",
+  "t": "Nie są Państwo zainteresowani? W takim razie proszę zignorować ten e-mail. Nic się nie zmienia."
+ },
+ "811360f25e4e0da3": {
+  "en": "An offer from our partner",
+  "t": "Oferta od naszego partnera"
+ },
+ "cb42b79759aebee1": {
+  "en": "You receive this email because you agreed to receive offers from DRP BuildLab and selected partners. We chose it based on the articles you clicked in our emails.",
+  "t": "Otrzymują Państwo tę wiadomość e-mail, ponieważ wyrazili Państwo zgodę na otrzymywanie ofert od DRP BuildLab i wybranych partnerów. Wybraliśmy tę ofertę na podstawie artykułów, które kliknęli Państwo w naszych wiadomościach e-mail."
+ },
+ "d88513c5fa41cb86": {
+  "en": "Stop offers or manage your emails",
+  "t": "Zrezygnuj z ofert lub zarządzaj swoimi wiadomościami e-mail"
+ },
+ "153125c282ff37b3": {
+  "en": "Offers terms",
+  "t": "Warunki ofert"
+ },
+ "3b3372911839c2a1": {
+  "en": "Version <span translate=\"no\">2026-11-v1</span>, <span translate=\"no\">10 November 2026</span>. These terms exist in English only.",
+  "t": "Wersja <span translate=\"no\">2026-11-v1</span>, <span translate=\"no\">10 November 2026</span> r. Niniejsze warunki są dostępne wyłącznie w języku angielskim."
+ },
+ "0b7187dc02a8ddcb": {
+  "en": "Offers from DRP BuildLab and partners | Blog | DRP BuildLab",
+  "t": "Oferty firmy DRP BuildLab i jej partnerów | Blog | DRP BuildLab"
+ },
+ "2a867ba949608305": {
+  "en": "Choose whether you also want to receive offers from DRP BuildLab and selected partners by email.",
+  "t": "Proszę zdecydować, czy chcą Państwo otrzymywać również oferty od DRP BuildLab i wybranych partnerów pocztą elektroniczną."
+ },
+ "2bedd19131fc66db": {
+  "en": "Offers terms | DRP BuildLab",
+  "t": "Warunki oferty | DRP BuildLab"
+ },
+ "1a240a718b4e0037": {
+  "en": "The terms of the optional offers emails from DRP BuildLab and selected partners, for subscribers to the DRP BuildLab blog.",
+  "t": "Warunki dotyczące e-maili z ofertami opcjonalnymi od DRP BuildLab i wybranych partnerów, skierowanych do subskrybentów bloga DRP BuildLab."
+ },
+ "07bab5adae42eaa0": {
+  "en": "Small business, big target? Cybersecurity in plain language",
+  "t": "Małe przedsiębiorstwo – łatwy cel? Cyberbezpieczeństwo prostym językiem"
+ },
+ "013cc87e86b9ca17": {
+  "en": "Why small businesses are in the picture too, why most attacks start with a person, and what you can do about it. Plus what we check and set up on your website, explained in plain language.",
+  "t": "Dlaczego małe firmy również są narażone, dlaczego większość ataków ma swój początek w działaniach konkretnej osoby oraz co mogą Państwo z tym zrobić. Ponadto w przystępny sposób wyjaśniamy, co sprawdzamy i konfigurujemy na Państwa stronie internetowej."
+ },
+ "f4fd5b726ceefbdc": {
+  "en": "Most people picture a cyberattack as hackers in hoodies breaking into a bank. Reality is more mundane. It is an email that looks like an invoice. A password used on five different sites. A message 'from the boss' asking for an urgent payment.",
+  "t": "Większość ludzi wyobraża sobie cyberatak jako hakerów w bluzach z kapturem włamujących się do banku. Rzeczywistość jest znacznie prozaiczniejsza. To wiadomość e-mail, która wygląda jak faktura. Hasło używane na pięciu różnych stronach internetowych. Wiadomość „od szefa” z prośbą o pilną płatność."
+ },
+ "4683a1ff931b9225": {
+  "en": "The weak point is rarely the software. It is usually a Tuesday afternoon and someone in a hurry.",
+  "t": "Słabym punktem rzadko jest oprogramowanie. Zazwyczaj jest to wtorkowe popołudnie i ktoś, kto się spieszy."
+ },
+ "92fe5fbe2ee09b6f": {
+  "en": "Why small businesses are in the picture too",
+  "t": "Dlaczego małe przedsiębiorstwa również odgrywają tu ważną rolę"
+ },
+ "9f5ee380cfcd0e91": {
+  "en": "Criminals scan the internet automatically. They don't care how big you are, only how easy you are to get into. A small business with a forgotten admin page, a reused password or an outdated plugin is as interesting as a big one, and sometimes a stepping stone to a bigger partner.",
+  "t": "Przestępcy automatycznie przeszukują internet. Nie ma dla nich znaczenia, jak duża jest Państwa firma, liczy się jedynie to, jak łatwo można się do niej włamać. Mała firma z zapomnianą stroną administracyjną, ponownie używanym hasłem lub nieaktualną wtyczką jest równie interesująca jak duża firma, a czasami stanowi punkt wyjścia do ataku na większego partnera."
+ },
+ "ab4c37422ee5ffb7": {
+  "en": "Cyberattacks keep making the news, and that is a good reason to look at your own situation calmly, not with panic.",
+  "t": "W mediach nieustannie pojawiają się doniesienia o cyberatakach, co stanowi dobry powód, by spojrzeć na własną sytuację z dystansem, a nie w panice."
+ },
+ "cfaa4bddb2e4f877": {
+  "en": "Most attacks start with a person",
+  "t": "Większość ataków rozpoczyna się od konkretnej osoby"
+ },
+ "3bd3087991b516f3": {
+  "en": "Industry reports consistently find a human element in most breaches. In daily life that looks like this:",
+  "t": "Raporty branżowe nieustannie wskazują na czynnik ludzki jako przyczynę większości naruszeń bezpieczeństwa. W życiu codziennym wygląda to następująco:"
+ },
+ "5c4ce99e480ff976": {
+  "en": "<strong>A convincing email</strong> that asks you to log in, pay or open an attachment.",
+  "t": "<strong>Przekonujący e-mail</strong>, w którym prosi się Państwa o zalogowanie się, dokonanie płatności lub otwarcie załącznika."
+ },
+ "3c49748493196614": {
+  "en": "<strong>A password used everywhere,</strong> so one leak opens many doors.",
+  "t": "<strong>Hasło używane wszędzie,</strong> więc jeden wyciek otwiera wiele drzwi."
+ },
+ "67f6a13df63cf6ac": {
+  "en": "<strong>A fake invoice,</strong> or a real one with changed bank details.",
+  "t": "<strong>Fałszywa faktura</strong> lub prawdziwa faktura z zmienionymi danymi bankowymi."
+ },
+ "7fd02739aa247fc6": {
+  "en": "<strong>Access given by mistake,</strong> such as a shared login or a link clicked in a hurry.",
+  "t": "<strong>Dostęp przyznany przez pomyłkę,</strong> np. w wyniku udostępnienia danych logowania lub kliknięcia linku w pośpiechu."
+ },
+ "8ecab51cf1debb48": {
+  "en": "Fixing the website alone isn't enough. Protection has to cover both the systems and the people who use them.",
+  "t": "Samo zabezpieczenie strony internetowej nie wystarczy. Ochrona musi obejmować zarówno systemy, jak i osoby, które z nich korzystają."
+ },
+ "b867539b1e4d7785": {
+  "en": "AI makes scams look better",
+  "t": "Sztuczna inteligencja sprawia, że oszustwa wydają się bardziej przekonujące"
+ },
+ "77f3a5eb6c78c593": {
+  "en": "Criminals also use AI tools to write emails with no typos, in fluent Dutch, French or English, and some experiment with tools that have fewer safeguards. Voices can be imitated too.",
+  "t": "Przestępcy wykorzystują również narzędzia oparte na sztucznej inteligencji do tworzenia wiadomości e-mail bez błędów ortograficznych, napisanych płynnym językiem holenderskim, francuskim lub angielskim, a niektórzy z nich eksperymentują z narzędziami, które mają mniej zabezpieczeń. Możliwe jest również naśladowanie głosów."
+ },
+ "b2bf3e3dac7fbee1": {
+  "en": "That changes one rule of thumb: <strong>looking professional is no longer proof that something is real.</strong> What helps is checking through a second channel. A message from the boss asking for an urgent payment is confirmed by a phone call to a number you already know.",
+  "t": "To zmienia jedną z ogólnych zasad: <strong>profesjonalny wygląd nie jest już dowodem na to, że coś jest prawdziwe.</strong> Pomocne jest zweryfikowanie informacji za pośrednictwem drugiego kanału. Wiadomość od przełożonego z prośbą o pilną płatność należy potwierdzić, dzwoniąc pod numer, który już Państwo znają."
+ },
+ "046def236adbe50d": {
+  "en": "Six habits that help this week",
+  "t": "Sześć nawyków, które pomogą Państwu w tym tygodniu"
+ },
+ "447b276485168b71": {
+  "en": "<strong>Use a password manager</strong> and a unique password for every account.",
+  "t": "<strong>Proszę korzystać z menedżera haseł</strong> i ustalać unikalne hasło dla każdego konta."
+ },
+ "4f64db2a1d38aa65": {
+  "en": "<strong>Turn on two-step login</strong> (MFA), especially for email and for admin accounts.",
+  "t": "<strong>Prosimy o włączenie logowania dwuetapowego</strong> (MFA), zwłaszcza w przypadku kont e-mailowych oraz kont administracyjnych."
+ },
+ "5e98aee348c23bfe": {
+  "en": "<strong>Check every change of bank details by phone,</strong> using a number you already have.",
+  "t": "<strong>Prosimy o telefoniczne weryfikowanie każdej zmiany danych bankowych,</strong> korzystając z numeru, który już Państwo posiadają."
+ },
+ "db365c4e08b95bdb": {
+  "en": "<strong>Make it easy to report suspicious mail,</strong> and never blame the person who clicked.",
+  "t": "<strong>Proszę ułatwić zgłaszanie podejrzanych wiadomości e-mail</strong> i nigdy nie obwiniać osoby, która je otworzyła."
+ },
+ "f4dc554d34de2119": {
+  "en": "<strong>Keep software up to date,</strong> including plugins and the system behind your website.",
+  "t": "<strong>Prosimy o regularne aktualizowanie oprogramowania,</strong> w tym wtyczek oraz systemu, na którym opiera się Państwa strona internetowa."
+ },
+ "c44b8af839107262": {
+  "en": "<strong>Have a backup that has been tested,</strong> not only one that exists.",
+  "t": "<strong>Proszę zadbać o kopię zapasową, która została przetestowana, a</strong> nie tylko <strong>o</strong> taką, która po prostu istnieje."
+ },
+ "7c9ee7fbf41c7eea": {
+  "en": "What we do for your website, in plain words",
+  "t": "Czym się zajmujemy w odniesieniu do Państwa strony internetowej – w prostych słowach"
+ },
+ "399b110d8e6d4ea1": {
+  "en": "We look at the part of security we can influence: your website and the systems behind it.",
+  "t": "Zajmujemy się tymi aspektami bezpieczeństwa, na które możemy wpłynąć: Państwa stroną internetową oraz systemami, które ją obsługują."
+ },
+ "5a012c768b020585": {
+  "en": "<strong>Forms that resist abuse.</strong> Input is checked on the server, the number of requests is limited and bot protection stops automated spam and attacks.",
+  "t": "<strong>Formularze odporne na nadużycia.</strong> Dane wprowadzane przez użytkowników są sprawdzane na serwerze, liczba żądań jest ograniczona, a zabezpieczenia przed botami zapobiegają automatycznemu spamowi i atakom."
+ },
+ "ee658d5e55bef41a": {
+  "en": "<strong>A check of what is exposed.</strong> We look at databases, API access rules, admin pages and dashboards, and make sure important accounts use two-step login.",
+  "t": "<strong>Sprawdzamy, jakie elementy są narażone na ryzyko.</strong> Analizujemy bazy danych, zasady dostępu do interfejsów API, strony administracyjne i pulpity nawigacyjne oraz upewniamy się, że ważne konta korzystają z logowania dwuetapowego."
+ },
+ "82ca1cf03883a5ed": {
+  "en": "<strong>A firewall that is set up properly.</strong> We put a protective layer in front of your site (Cloudflare) and tune its rules, instead of leaving defaults on.",
+  "t": "<strong>Prawidłowo skonfigurowana zapora sieciowa.</strong> Przed Państwa witryną umieszczamy warstwę ochronną (Cloudflare) i dostosowujemy jej reguły, zamiast pozostawiać ustawienia domyślne."
+ },
+ "024997123f656982": {
+  "en": "<strong>Updates and alerts.</strong> We monitor the building blocks of your site and warn you when one has a known weak spot.",
+  "t": "<strong>Aktualizacje i powiadomienia.</strong> Monitorujemy poszczególne elementy składowe Państwa witryny i ostrzegamy Państwa, gdy w którymś z nich wykryjemy znaną lukę w zabezpieczeniach."
+ },
+ "818684d0ce60d4bd": {
+  "en": "<strong>Backups we actually test.</strong> We check the backups your provider makes, keep independent copies and test restoring them on a regular basis.",
+  "t": "<strong>Kopie zapasowe, które faktycznie testujemy.</strong> Sprawdzamy kopie zapasowe tworzone przez Państwa dostawcę, przechowujemy niezależne kopie i regularnie testujemy ich przywracanie."
+ },
+ "7388a071cdad0462": {
+  "en": "<strong>A monthly report in plain language,</strong> built from the data of the tools we use, so you can see what happened and what we did.",
+  "t": "<strong>Miesięczny raport napisany prostym językiem,</strong> oparty na danych pochodzących z narzędzi, z których korzystamy, dzięki czemu mogą Państwo zapoznać się z tym, co się wydarzyło i jakie działania podjęliśmy."
+ },
+ "ae0e906c778060f0": {
+  "en": "An honest note: nobody can promise zero risk. The goal is to make you a harder target, to notice problems sooner and to recover quickly when something goes wrong.",
+  "t": "Szczera uwaga: nikt nie może obiecać całkowitego braku ryzyka. Celem jest uczynienie Państwa trudniejszym celem, szybsze wykrywanie problemów oraz szybkie przywrócenie sprawności w przypadku wystąpienia nieprzewidzianych sytuacji."
+ },
+ "daa792eaca9cc1b1": {
+  "en": "If something does go wrong",
+  "t": "Gdyby jednak coś poszło nie tak"
+ },
+ "feff65a5cc87c32a": {
+  "en": "<strong>Stay calm and stop the damage.</strong> Disconnect the affected device, change passwords and tell your colleagues.",
+  "t": "<strong>Zachowajcie spokój i zapobiegajcie dalszym szkodom.</strong> Odłączcie urządzenie, na którym wystąpił problem, zmieńcie hasła i poinformujcie o tym swoich współpracowników."
+ },
+ "4c5053d865a2e63e": {
+  "en": "<strong>Call your bank straight away</strong> if money or payment details are involved.",
+  "t": "W przypadku gdy sprawa dotyczy pieniędzy lub danych dotyczących płatności, <strong>prosimy o niezwłoczny kontakt z Państwa bankiem</strong>."
+ },
+ "9d693a17e1c6ad2c": {
+  "en": "<strong>Report suspicious emails</strong> to <a href=\"mailto:suspect@safeonweb.be\">suspect@safeonweb.be</a>, the address of the Belgian Centre for Cybersecurity (check safeonweb.be for the current instructions).",
+  "t": "<strong>Prosimy o zgłaszanie podejrzanych wiadomości e-mail</strong> na adres <a href=\"mailto:suspect@safeonweb.be\">suspect@safeonweb.be</a>, należący do Belgijskiego Centrum ds. Cyberbezpieczeństwa (aktualne wytyczne można znaleźć na stronie safeonweb.be)."
+ },
+ "01bc8b433be9a8a0": {
+  "en": "<strong>Think about personal data.</strong> If customer data may be affected, you may have to notify the Data Protection Authority within 72 hours. Ask your adviser.",
+  "t": "<strong>Proszę wziąć pod uwagę kwestię danych osobowych.</strong> Jeśli zdarzenie może mieć wpływ na dane klientów, może zaistnieć konieczność powiadomienia organu ochrony danych w ciągu 72 godzin. Proszę skonsultować się ze swoim doradcą."
+ },
+ "bb315f3aaba922f7": {
+  "en": "How exposed is your website?",
+  "t": "W jakim stopniu Państwa strona internetowa jest narażona na zagrożenia?"
+ },
+ "ef350a55805704cb": {
+  "en": "We are happy to look at your website with you and explain what we find in plain language.",
+  "t": "Z przyjemnością przejrzymy Państwa stronę internetową wraz z Państwem i w przystępny sposób wyjaśnimy nasze spostrzeżenia."
+ },
+ "d8ce0e4269354452": {
+  "en": "Cyberattack protection, woman behind laptop with hacker",
+  "t": "Ochrona przed cyberatakami – kobieta siedząca przy laptopie z hakerem"
+ },
+ "fa1585d8796aa250": {
+  "en": "Small business, big target? Cybersecurity in plain language | Blog | DRP BuildLab",
+  "t": "Małe przedsiębiorstwo – łatwy cel? Cyberbezpieczeństwo prostym językiem | Blog | DRP BuildLab"
+ },
+ "f59308c3a43d9f36": {
+  "en": "Why small businesses are in the picture too, why most attacks start with a person, and what you can do about it. Plus what we check and set up on your website, explained in plain language.",
+  "t": "Dlaczego małe firmy również są narażone, dlaczego większość ataków ma swój początek w działaniach konkretnej osoby oraz co mogą Państwo z tym zrobić. Ponadto w przystępny sposób wyjaśniamy, co sprawdzamy i konfigurujemy na Państwa stronie internetowej."
+ },
+ "27b842ac3d41707c": {
+  "en": "What a CRM actually does for a small business (and when you don't need one)",
+  "t": "Jakie korzyści faktycznie przynosi system CRM małej firmie (i kiedy nie jest on potrzebny)"
+ },
+ "9d611f519aa67130": {
+  "en": "What a CRM really does for a small business, five signs you have outgrown the spreadsheet, when you don't need one yet, and how to start in one week.",
+  "t": "Jakie korzyści naprawdę przynosi system CRM małej firmie, pięć oznak, że arkusz kalkulacyjny przestał już wystarczać, kiedy nie jest on jeszcze potrzebny oraz jak rozpocząć korzystanie z niego w ciągu tygodnia."
+ },
+ "c00740f2ac6f6273": {
+  "en": "Ask ten small business owners what a CRM is and you will get eleven answers. A fancy address book. An expensive spreadsheet. Something the sales team of a big company uses.",
+  "t": "Zapytaj dziesięciu właścicieli małych firm, czym jest CRM, a usłyszysz jedenaście odpowiedzi. Wyrafinowana książka adresowa. Drogi arkusz kalkulacyjny. Coś, z czego korzysta zespół sprzedaży w dużej firmie."
+ },
+ "0432f9631cd852cb": {
+  "en": "The honest answer is simpler: a CRM is a shared memory. It remembers who you talked to, what you promised and what happens next, so that it does not all live in one person's head.",
+  "t": "Szczera odpowiedź jest prostsza: system CRM to wspólna pamięć. Zapamiętuje on, z kim rozmawiali Państwo, co Państwo obiecali i jakie są kolejne kroki, dzięki czemu te informacje nie pozostają wyłącznie w głowie jednej osoby."
+ },
+ "70a7f0086bdb457a": {
+  "en": "A CRM does not win you customers. It stops you from forgetting the ones you already have.",
+  "t": "System CRM nie pozyskuje dla Państwa klientów. Zapobiega natomiast zapomnieniu o tych, których już Państwo mają."
+ },
+ "5df7b932d9cf80a5": {
+  "en": "Signs you have outgrown the spreadsheet",
+  "t": "Oznaki, że arkusz kalkulacyjny przestał już Państwu wystarczać"
+ },
+ "06a42c4579fee014": {
+  "en": "If three of these sound familiar, your customers deserve better than a tab called 'Sheet2':",
+  "t": "Jeśli trzy z tych przykładów wydają się Państwu znajome, Państwa klienci zasługują na coś lepszego niż zakładkę o nazwie „Arkusz2”:"
+ },
+ "6d70dd919f3a3859": {
+  "en": "Two people keep their own list of the same customers.",
+  "t": "Dwie osoby prowadzą własne listy tych samych klientów."
+ },
+ "00b7b2258c159487": {
+  "en": "Follow-ups depend on someone remembering to 'call them next week'.",
+  "t": "Dalsze działania zależą od tego, czy ktoś pamięta, aby „zadzwonić do nich w przyszłym tygodniu”."
+ },
+ "8947f59e902f1221": {
+  "en": "You cannot answer 'how many quotes are still open?' without asking around.",
+  "t": "Nie da się odpowiedzieć na pytanie „ile ofert jest nadal aktualnych?”, nie zapytując o to innych."
+ },
+ "e504ebd6e6cc31b6": {
+  "en": "A customer asks for a copy of an invoice and it takes three people and two inboxes.",
+  "t": "Klient prosi o kopię faktury, a załatwienie tej sprawy wymaga zaangażowania trzech osób i dwóch skrzynek odbiorczych."
+ },
+ "cb354cb739b7db35": {
+  "en": "When someone goes on holiday, their customers go quiet.",
+  "t": "Kiedy ktoś wyjeżdża na urlop, jego klienci przestają się odzywać."
+ },
+ "5a7f444ca9d6e4fb": {
+  "en": "What a good CRM does for a small business",
+  "t": "Jakie korzyści przynosi małej firmie dobry system CRM"
+ },
+ "88520cb1c248b182": {
+  "en": "Five things, in plain words:",
+  "t": "Pięć rzeczy, prostym językiem:"
+ },
+ "5c4844f95f431ba3": {
+  "en": "<strong>One place per customer.</strong> Contact details, emails, quotes, invoices and notes together.",
+  "t": "<strong>Jedno miejsce dla każdego klienta.</strong> Dane kontaktowe, wiadomości e-mail, oferty, faktury i notatki w jednym miejscu."
+ },
+ "dfc0fb3c24c2b682": {
+  "en": "<strong>A history you can read in thirty seconds.</strong> Before a call you see what was said last time.",
+  "t": "<strong>Historia rozmów, którą można przeczytać w trzydzieści sekund.</strong> Przed nawiązaniem połączenia widzą Państwo, o czym rozmawialiśmy ostatnio."
+ },
+ "41cc07e5fecdb5fb": {
+  "en": "<strong>Follow-ups that remind you.</strong> You set a date once, and the system nudges you instead of your memory.",
+  "t": "<strong>Przypomnienia, które o tym przypominają.</strong> Wystarczy raz ustalić termin, a system sam o nim przypomni, zamiast polegać na Państwa pamięci."
+ },
+ "a055809f11bd2d53": {
+  "en": "<strong>A simple pipeline.</strong> Stages such as new request, quote sent, accepted and done, so you can see where work gets stuck.",
+  "t": "<strong>Prosty proces.</strong> Etapy, takie jak: nowe zlecenie, wysłana oferta, przyjęta oferta i zrealizowane zlecenie, dzięki czemu można sprawdzić, na którym etapie praca utknęła."
+ },
+ "0615f11f0cafed06": {
+  "en": "<strong>Connections to the tools you already use.</strong> Website forms, email, calendar, invoicing and payments, so nobody retypes the same data.",
+  "t": "<strong>Integracja z narzędziami, z których już Państwo korzystają.</strong> Formularze internetowe, poczta elektroniczna, kalendarz, fakturowanie i płatności – dzięki temu nikt nie musi ponownie wpisywać tych samych danych."
+ },
+ "6e55d72b6004b437": {
+  "en": "A small example",
+  "t": "Krótki przykład"
+ },
+ "876ef0ab47d2fe70": {
+  "en": "Marc runs a three-person tiling company. (Marc is made up, his problem is not.) Requests arrive through the website form, WhatsApp and the phone. Quotes live in Word documents with names like quote_final_v3_FINAL.docx.",
+  "t": "Marc prowadzi trzyosobową firmę zajmującą się układaniem płytek. (Postać Marca jest fikcyjna, ale jego problem jest prawdziwy.) Zlecenia napływają za pośrednictwem formularza na stronie internetowej, przez WhatsApp oraz telefonicznie. Oferty są zapisywane w dokumentach programu Word o nazwach takich jak quote_final_v3_FINAL.docx."
+ },
+ "519a800eeeb204eb": {
+  "en": "With a CRM, every request becomes one card. A website request appears automatically, the quote is attached, a reminder is set for three days later and the status moves to 'accepted' when the customer says yes. An accepted quote can start an invoice draft. What used to be a weekly hunt through messages becomes a short look at one screen.",
+  "t": "Dzięki systemowi CRM każde zgłoszenie staje się jedną kartą. Zgłoszenie z witryny internetowej pojawia się automatycznie, dołączana jest oferta, ustalane jest przypomnienie na trzy dni później, a status zmienia się na „zaakceptowane”, gdy klient wyrazi zgodę. Zaakceptowana oferta może posłużyć do utworzenia projektu faktury. To, co kiedyś wymagało cotygodniowego przeszukiwania wiadomości, teraz sprowadza się do szybkiego spojrzenia na jeden ekran."
+ },
+ "df246e01df469fc4": {
+  "en": "When you don't need a CRM",
+  "t": "Kiedy nie potrzebują Państwo systemu CRM"
+ },
+ "1099d027ba5a8496": {
+  "en": "Be honest with yourself. You can skip it if:",
+  "t": "Proszę być ze sobą szczerym. Może Pan/Pani to pominąć, jeśli:"
+ },
+ "eb7134e99aee2a22": {
+  "en": "You have a handful of repeat customers and know them all by heart.",
+  "t": "Mają Państwo garstkę stałych klientów i znają ich wszystkich na pamięć."
+ },
+ "c36457a2a3c57cfc": {
+  "en": "Only one person ever talks to customers.",
+  "t": "Z klientami rozmawia zawsze tylko jedna osoba."
+ },
+ "a7bcba95f4a8c9a0": {
+  "en": "You will not keep it up to date. A CRM with empty fields is worse than a spreadsheet.",
+  "t": "Nie będą Państwo tego na bieżąco aktualizować. System CRM z pustymi polami jest gorszy niż arkusz kalkulacyjny."
+ },
+ "00283a8542104f76": {
+  "en": "Start with a plain spreadsheet that has five columns: name, contact details, last contact, next step and the date of that next step. If you keep that tidy for a month, you know what you need.",
+  "t": "Proszę zacząć od prostego arkusza kalkulacyjnego zawierającego pięć kolumn: imię i nazwisko, dane kontaktowe, data ostatniego kontaktu, kolejny krok oraz data realizacji tego kroku. Jeśli przez miesiąc będą Państwo starannie go prowadzić, zorientują się Państwo, czego Państwu potrzeba."
+ },
+ "9c8cfea56f2ba73f": {
+  "en": "Buy or build?",
+  "t": "Kupić czy zbudować?"
+ },
+ "08196bb834341a85": {
+  "en": "Ready-made tools are cheap to start with and fine for standard sales processes. They get awkward when your process is not standard: you quote by area, you need an approval step, or you have to connect to a supplier system. Then you spend more time bending the tool than using it.",
+  "t": "Gotowe narzędzia są początkowo niedrogie i sprawdzają się w przypadku standardowych procesów sprzedaży. Stają się jednak kłopotliwe, gdy Państwa proces nie jest standardowy: gdy sporządzają Państwo oferty według obszaru, gdy wymagany jest etap zatwierdzania lub gdy muszą Państwo połączyć się z systemem dostawcy. Wówczas więcej czasu poświęcają Państwo na dostosowywanie narzędzia do swoich potrzeb niż na jego użytkowanie."
+ },
+ "56de7c83cd54083f": {
+  "en": "A custom CRM is built around your process. It holds only the fields and steps you actually use and connects directly to your website, invoicing and payments. The price is a higher upfront cost and someone who maintains it. Whether that is worth it depends on how much of your day goes into admin that a system could do.",
+  "t": "Indywidualnie dostosowany system CRM jest zbudowany w oparciu o Państwa procesy. Zawiera wyłącznie te pola i etapy, z których faktycznie Państwo korzystają, oraz łączy się bezpośrednio z Państwa stroną internetową, systemem fakturowania i płatnościami. Wiąże się to z wyższymi kosztami początkowymi oraz koniecznością zatrudnienia osoby odpowiedzialnej za jego utrzymanie. To, czy jest to opłacalne, zależy od tego, ile czasu w ciągu dnia poświęcają Państwo na zadania administracyjne, które mógłby przejąć system."
+ },
+ "8b4194c38d4aefec": {
+  "en": "Start in one week",
+  "t": "Rozpoczęcie za tydzień"
+ },
+ "424255555b69e8c6": {
+  "en": "<strong>Monday:</strong> write down your real process in five steps, from first request to paid invoice.",
+  "t": "<strong>Poniedziałek:</strong> proszę opisać Państwa rzeczywisty proces w pięciu krokach, od pierwszego zlecenia do zapłaconej faktury."
+ },
+ "01cb68d36159accf": {
+  "en": "<strong>Tuesday:</strong> list what you want to see at a glance, such as open quotes and overdue follow-ups.",
+  "t": "<strong>Wtorek:</strong> sporządź listę spraw, które chcesz mieć na oku, takich jak otwarte oferty i zaległe działania następcze."
+ },
+ "80ab7ff25b5b1409": {
+  "en": "<strong>Wednesday:</strong> move your customers into one list and remove duplicates.",
+  "t": "<strong>Środa: proszę</strong> przenieść Państwa klientów do jednej listy i usunąć duplikaty."
+ },
+ "bc1460c88dd8d1a3": {
+  "en": "<strong>Thursday:</strong> make one rule: every contact gets a next step and a date.",
+  "t": "<strong>Czwartek:</strong> ustalcie jedną zasadę: dla każdego kontaktu należy określić kolejny krok oraz termin."
+ },
+ "3accd850ff4be1b8": {
+  "en": "<strong>Friday:</strong> review for ten minutes. Decide whether a spreadsheet is enough or whether you need a tool.",
+  "t": "<strong>Piątek:</strong> poświęć dziesięć minut na przegląd. Zastanów się, czy wystarczy arkusz kalkulacyjny, czy też potrzebne jest specjalne narzędzie."
+ },
+ "42ffed47c87a5ba9": {
+  "en": "No tool fixes a process nobody follows. A CRM only works if the habit comes first: write it down, set the next step, look at it once a week. The software just makes that habit easier.",
+  "t": "Żadne narzędzie nie naprawi procesu, którego nikt nie stosuje. System CRM działa tylko wtedy, gdy najpierw wykształci się odpowiedni nawyk: zapisywanie informacji, ustalanie kolejnego kroku, przeglądanie danych raz w tygodniu. Oprogramowanie jedynie ułatwia wyrobienie tego nawyku."
+ },
+ "c75be7156da7daa4": {
+  "en": "Marc does not exist. His quote_final_v3_FINAL.docx does, in someone's folder.",
+  "t": "Marc nie istnieje. Istnieje natomiast jego plik „quote_final_v3_FINAL.docx”, który znajduje się w folderze jakiejś osoby."
+ },
+ "91950f4987446089": {
+  "en": "Not sure what you need?",
+  "t": "Nie są Państwo pewni, czego Państwo potrzebują?"
+ },
+ "5f4f954266c1bd92": {
+  "en": "We are happy to look at your process with you and tell you honestly whether a spreadsheet is enough or whether a custom CRM would pay off.",
+  "t": "Z przyjemnością przeanalizujemy wraz z Państwem Państwa procesy i szczerze doradzimy, czy wystarczy arkusz kalkulacyjny, czy też opłacałoby się wdrożyć dostosowany do potrzeb system CRM."
+ },
+ "e4cb6fde468e384c": {
+  "en": "pexels b s 78158866 27155428",
+  "t": "pexels b s 78158866 27155428"
+ },
+ "d9bad97dcce274d3": {
+  "en": "What a CRM actually does for a small business (and when you don't need one) | Blog | DRP BuildLab",
+  "t": "Jakie korzyści przynosi system CRM małej firmie (i kiedy nie jest on potrzebny) | Blog | DRP BuildLab"
+ },
+ "e99e0c4794ea55c7": {
+  "en": "What a CRM really does for a small business, five signs you have outgrown the spreadsheet, when you don't need one yet, and how to start in one week.",
+  "t": "Jakie korzyści naprawdę przynosi system CRM małej firmie, pięć oznak, że arkusz kalkulacyjny przestał już wystarczać, kiedy jeszcze nie jest on Państwu potrzebny oraz jak rozpocząć korzystanie z niego w ciągu tygodnia."
+ },
+ "8fd92af153d7bda8": {
+  "en": "Your new intern never sleeps, never doubts and has no idea what 'confidential' means",
+  "t": "Pański nowy stażysta nigdy nie śpi, nigdy nie ma wątpliwości i nie ma pojęcia, co oznacza słowo „poufne”"
+ },
+ "1837a886063d8fd5": {
+  "en": "Your team is probably already using AI. Treat it like a brilliant intern: five simple rules to keep customer data safe and your company out of trouble.",
+  "t": "Prawdopodobnie Państwa zespół już korzysta ze sztucznej inteligencji. Potraktujcie ją jak znakomitego stażystę: pięć prostych zasad, które zapewnią bezpieczeństwo danych klientów i uchronią Państwa firmę przed kłopotami."
+ },
+ "0a82afc2c20767e4": {
+  "en": "Meet the best intern you have ever had. Starts at six in the morning. Never complains. Has read most of the internet. Writes a decent email in four seconds.",
+  "t": "Poznaj najlepszego stażystę, jakiego kiedykolwiek mieli Państwo w zespole. Zaczyna pracę o szóstej rano. Nigdy nie narzeka. Przeczytał już prawie cały internet. Potrafi napisać porządny e-mail w cztery sekundy."
+ },
+ "596d6732925edb37": {
+  "en": "There are three small problems. The intern is very sure of itself, even when it is wrong. It does not know what 'confidential' means. And it will happily work with whatever you hand over, without asking who else might see it.",
+  "t": "Istnieją trzy drobne problemy. Stażysta jest bardzo pewny siebie, nawet gdy się myli. Nie wie, co oznacza słowo „poufne”. Ponadto chętnie zajmie się wszystkim, co mu Pan/Pani przekaże, nie pytając, kto jeszcze może to zobaczyć."
+ },
+ "bd48d7756412aec8": {
+  "en": "Congratulations, you have an AI tool. And your team is probably already using it.",
+  "t": "Gratulujemy – dysponują Państwo narzędziem opartym na sztucznej inteligencji. Państwa zespół prawdopodobnie już z niego korzysta."
+ },
+ "2f8ec3c26ba373cc": {
+  "en": "Treat AI like a brilliant intern. Not like a vault.",
+  "t": "Traktujcie sztuczną inteligencję jak znakomitego stażystę, a nie jak sejf."
+ },
+ "1b34e9b8bea13206": {
+  "en": "What the intern is great at",
+  "t": "W czym stażysta się wyróżnia"
+ },
+ "6341c0a7c58b8ecb": {
+  "en": "First drafts. Summaries. Brainstorming ten titles when you have none. Turning your messy notes into something a human can read. For this kind of work it is fast, tireless and surprisingly good.",
+  "t": "Pierwsze szkice. Streszczenia. Wymyślanie dziesięciu tytułów, gdy nie ma się żadnego. Przekształcanie chaotycznych notatek w tekst zrozumiały dla człowieka. W tego rodzaju zadaniach program ten działa szybko, niestrudzenie i zaskakująco dobrze."
+ },
+ "f1e0e093e8c1c7bb": {
+  "en": "What it is not good at: knowing your rules, your clients, or when to say 'I'm not sure'. It sounds equally confident when it is right and when it is making things up. That is the thing to remember.",
+  "t": "W czym nie jest dobry: w znajomości Państwa zasad, Państwa klientów ani w tym, kiedy należy powiedzieć „nie jestem pewien”. Brzmi równie pewnie, gdy ma rację, jak i wtedy, gdy coś zmyśla. Należy o tym pamiętać."
+ },
+ "2a95e4dd1b393a33": {
+  "en": "Rule one: do not hand over the keys",
+  "t": "Zasada pierwsza: nie należy przekazywać kluczy"
+ },
+ "b1e7e704eb230c4d": {
+  "en": "You would not give an intern on day one the company bank card, the passwords and the client list. Same here.",
+  "t": "Nie przekazałby Pan stażystowi już pierwszego dnia firmowej karty bankowej, haseł ani listy klientów. Tutaj jest podobnie."
+ },
+ "99337929e5607176": {
+  "en": "Noor works in accounting. (Noor is made up, the situation is not.) A supplier sends a long email about a disputed invoice. Noor pastes the whole thing into a free chatbot to get 'a polite reply'. The reply is excellent. The email also contained the supplier's name, bank details and an invoice number, which are now in a place Noor no longer controls.",
+  "t": "Noor pracuje w dziale księgowości. (Imię Noor jest fikcyjne, ale sytuacja jest prawdziwa.) Dostawca wysyła długą wiadomość e-mail dotyczącą spornej faktury. Noor wkleja całą treść do bezpłatnego chatbota, aby uzyskać „uprzejmą odpowiedź”. Odpowiedź jest znakomita. E-mail zawierał również nazwę dostawcy, dane bankowe oraz numer faktury, które obecnie znajdują się w miejscu, nad którym Noor nie ma już kontroli."
+ },
+ "1e19dd5fa33d2e82": {
+  "en": "Nothing dramatic happens. But it did not have to happen at all. The simple test: do not paste anything you would not email to a stranger.",
+  "t": "Nie dzieje się nic dramatycznego. Ale w ogóle nie musiało do tego dojść. Prosty test: nie wklejaj niczego, czego nie wysłałby Pan/Pani w e-mailu do nieznajomego."
+ },
+ "20ffead591d95826": {
+  "en": "Rule two: check the work",
+  "t": "Zasada druga: należy sprawdzić wykonaną pracę"
+ },
+ "9eb1b4909d69118c": {
+  "en": "The intern's best skill is sounding right. So check what matters: names, numbers, dates and promises.",
+  "t": "Największą zaletą stażysty jest to, że potrafi brzmieć przekonująco. Proszę więc sprawdzić to, co ma znaczenie: nazwiska, liczby, daty i obietnice."
+ },
+ "02d67fbb3ad7887e": {
+  "en": "This is not only about embarrassment. In 2024 a tribunal in Canada held Air Canada responsible for what the chatbot on its own website had told a customer about a refund. If your AI says it, it is your company saying it.",
+  "t": "Nie chodzi tu wyłącznie o wstyd. W 2024 roku sąd w Kanadzie uznał linię lotniczą Air Canada za odpowiedzialną za informacje dotyczące zwrotu kosztów, które chatbot na jej własnej stronie internetowej przekazał klientowi. Jeśli tak twierdzi Państwa sztuczna inteligencja, to tak twierdzi Państwa firma."
+ },
+ "e659107647393d35": {
+  "en": "Rule three: start with the boring jobs",
+  "t": "Zasada trzecia: zacznij od nudnych zadań"
+ },
+ "5a36bfded2b05d1b": {
+  "en": "Nobody gives a new intern the biggest client in week one. Let the AI prove itself on low-stakes work first: summarising your own meeting notes, drafting a first version of a blog post, suggesting subject lines. When the results are reliable, give it bigger jobs, with a human still reading the output.",
+  "t": "Nikt nie powierza nowemu stażystowi najważniejszego klienta już w pierwszym tygodniu. Niech sztuczna inteligencja najpierw sprawdzi się przy zadaniach o niewielkiej wadze: podsumowywaniu własnych notatek ze spotkań, przygotowywaniu wstępnej wersji wpisu na blogu, proponowaniu tematów wiadomości e-mail. Gdy wyniki będą wiarygodne, powierzcie jej większe zadania, przy czym wynik pracy powinien nadal być sprawdzany przez człowieka."
+ },
+ "ffa68b00d41b09eb": {
+  "en": "Rule four: tell people when the intern is talking",
+  "t": "Zasada czwarta: proszę poinformować obecnych, kiedy zabiera głos stażysta"
+ },
+ "b72b44224a0a7c3c": {
+  "en": "If a customer chats with an AI on your website, say so in the first sentence. People forgive a bot for not knowing something. They do not forgive being tricked. (We wrote a whole article about that, because it matters.)",
+  "t": "Jeśli klient rozmawia na czacie z botem opartym na sztucznej inteligencji na Państwa stronie internetowej, proszę zaznaczyć to już w pierwszym zdaniu. Ludzie wybaczają botowi, że czegoś nie wie. Nie wybaczają jednak, gdy są wprowadzani w błąd. (Napisaliśmy na ten temat cały artykuł, ponieważ jest to istotna kwestia.)"
+ },
+ "6cdbe30a95ed9cce": {
+  "en": "Rule five: give the intern a proper desk",
+  "t": "Zasada piąta: zapewnijcie stażystowi odpowiednie biurko"
+ },
+ "4703720c80070c47": {
+  "en": "Right now, your team probably uses AI the way people use a stray pen: whichever tab is open, whichever account they signed up for. A proper desk looks different:",
+  "t": "Obecnie Państwa zespół prawdopodobnie korzysta ze sztucznej inteligencji tak samo, jak ludzie korzystają z przypadkowego długopisu: niezależnie od tego, która karta jest otwarta lub na którym koncie się zarejestrowali. Prawidłowo zorganizowane stanowisko pracy wygląda inaczej:"
+ },
+ "fdb1adfece6b5f0b": {
+  "en": "A short list of approved tools, on business plans, with the data settings checked.",
+  "t": "Krótka lista zatwierdzonych narzędzi, w ramach planów biznesowych, z zaznaczonymi ustawieniami danych."
+ },
+ "208f44770553b654": {
+  "en": "Clear rules about what never goes in.",
+  "t": "Jasne zasady dotyczące tego, czego nigdy nie wolno wkładać do środka."
+ },
+ "d3630b2f9dc132e2": {
+  "en": "Where it makes sense, AI connected to your own systems, such as your CRM or documents, with access rules and a log of what it did, and with personal data removed before anything leaves.",
+  "t": "W uzasadnionych przypadkach sztuczna inteligencja powinna być połączona z Państwa własnymi systemami, takimi jak system CRM lub system zarządzania dokumentami, z zastosowaniem reguł dostępu oraz rejestru wykonanych czynności, a także z zapewnieniem usunięcia danych osobowych przed przekazaniem jakichkolwiek informacji na zewnątrz."
+ },
+ "1f4200eda65760ab": {
+  "en": "That last step is more work than opening a browser tab. It is also the difference between hoping nothing goes wrong and knowing where the data goes.",
+  "t": "Ten ostatni krok wymaga więcej wysiłku niż otwarcie karty w przeglądarce. Stanowi on również różnicę między liczeniem na to, że nic nie pójdzie nie tak, a świadomością tego, dokąd trafiają dane."
+ },
+ "81a2c0a6198fed88": {
+  "en": "The version for the fridge",
+  "t": "Wersja do lodówki"
+ },
+ "eb754187b86a1645": {
+  "en": "If you remember only five sentences:",
+  "t": "Jeśli mają Państwo zapamiętać tylko pięć zdań:"
+ },
+ "0db3bcc91d35d71c": {
+  "en": "No passwords, no personal data, no contracts.",
+  "t": "Bez haseł, bez danych osobowych, bez umów."
+ },
+ "fe885d7df72be01e": {
+  "en": "Check names, numbers and promises.",
+  "t": "Proszę sprawdzić nazwiska, numery i zobowiązania."
+ },
+ "d1dca945ebdd015a": {
+  "en": "Start with low-risk tasks.",
+  "t": "Proszę zacząć od zadań o niskim stopniu ryzyka."
+ },
+ "d413da38fc7d6fc1": {
+  "en": "Say it when AI is talking.",
+  "t": "Proszę to powiedzieć, gdy mówi sztuczna inteligencja."
+ },
+ "e24985300338daae": {
+  "en": "If you slip, say so right away. Nobody gets in trouble for being quick.",
+  "t": "Jeśli popełni Pan/Pani błąd, proszę o tym od razu poinformować. Nikt nie ponosi konsekwencji za to, że zareagował szybko."
+ },
+ "d4359655bc5dcb85": {
+  "en": "A fair note",
+  "t": "Uwaga dotycząca uczciwości"
+ },
+ "f3a8a9e8825d046e": {
+  "en": "To be fair to the intern: good AI tools on a business plan do not gossip. Reputable providers usually promise that your input is not used for training and give you controls. But 'usually' is not 'always', and the settings differ per tool, so check yours.",
+  "t": "Aby być uczciwym wobec stażysty: dobre narzędzia AI w ramach planu biznesowego nie plotkują. Renomowani dostawcy zazwyczaj gwarantują, że wprowadzone przez Państwa dane nie są wykorzystywane do szkolenia modelu, oraz zapewniają Państwu możliwość kontroli nad tym procesem. Jednak „zazwyczaj” nie oznacza „zawsze”, a ustawienia różnią się w zależności od narzędzia, dlatego proszę sprawdzić ustawienia swojego narzędzia."
+ },
+ "aad050d639a11398": {
+  "en": "There is also a rule on the books. The EU AI Act expects organisations that use AI to make sure their people understand it well enough for their job. A short team session with real examples is a good start. Ask your adviser what applies to you.",
+  "t": "Istnieje również odpowiedni przepis. Unijna ustawa o sztucznej inteligencji nakłada na organizacje korzystające ze sztucznej inteligencji obowiązek zapewnienia, by ich pracownicy rozumieli tę technologię w stopniu wystarczającym do wykonywania swoich obowiązków. Dobrym początkiem jest krótkie spotkanie zespołu z wykorzystaniem rzeczywistych przykładów. Proszę zapytać swojego doradcę, jakie przepisy mają zastosowanie w Państwa przypadku."
+ },
+ "847b59ffeee4ab8c": {
+  "en": "Noor does not exist. The intern is real, and starts at six.",
+  "t": "Noor nie istnieje. Stażysta jest prawdziwy i zaczyna o szóstej."
+ },
+ "a4c3a51c4fb8048a": {
+  "en": "Want your AI intern at a proper desk?",
+  "t": "Czy chcą Państwo, aby Państwa stażysta zajmujący się sztuczną inteligencją miał do dyspozycji odpowiednie biurko?"
+ },
+ "e754f5600ceed4e8": {
+  "en": "We connect AI to your own systems, with access rules and logging, so you decide what it sees and what it does. Tell us what you want it to do. And what you absolutely do not.",
+  "t": "Łączymy sztuczną inteligencję z Państwa systemami, zapewniając reguły dostępu i rejestrowanie działań, dzięki czemu to Państwo decydują, co system widzi i co robi. Prosimy poinformować nas, co ma robić. A także, czego absolutnie nie wolno mu robić."
+ },
+ "624c37c3ae0cb12b": {
+  "en": "Corporate",
+  "t": "Korporacyjne"
+ },
+ "52873611d4666788": {
+  "en": "Your new intern never sleeps, never doubts and has no idea what 'confidential' means | Blog | DRP BuildLab",
+  "t": "Państwa nowy stażysta nigdy nie śpi, nigdy nie ma wątpliwości i nie ma pojęcia, co oznacza słowo „poufne” | Blog | DRP BuildLab"
+ },
+ "9157960da56da5af": {
+  "en": "Your team is probably already using AI. Treat it like a brilliant intern: five simple rules to keep customer data safe and your company out of trouble.",
+  "t": "Prawdopodobnie Państwa zespół już korzysta ze sztucznej inteligencji. Potraktujcie ją jak znakomitego stażystę: pięć prostych zasad, które pozwolą zapewnić bezpieczeństwo danych klientów i uchronić Państwa firmę przed kłopotami."
+ },
+ "df94f2a2cb379fc4": {
+  "en": "Version: <span translate=\"no\">17 november 2026</span>. The Dutch text is the binding version.",
+  "t": "Wersja z dnia<span translate=\"no\">17 november 2026</span> r. Tekst w języku niderlandzkim stanowi wersję wiążącą."
+ },
+ "304ba0a22af17423": {
+  "en": "Clients and partners",
+  "t": "Klienci i partnerzy"
+ },
+ "a48dabbe70b877eb": {
+  "en": "We’re partnering with Tinrate, and we’re testing it on our own website first",
+  "t": "Nawiązaliśmy współpracę z firmą Tinrate i najpierw testujemy tę usługę na naszej własnej stronie internetowej"
+ },
+ "77e9c6e19a3ce1d7": {
+  "en": "Nobody reads websites anymore, they ask. We’ve teamed up with Tinrate and are putting its Concierge on our own website before we recommend it to anyone.",
+  "t": "„Nikt już nie czyta stron internetowych” – pytają. Nawiązaliśmy współpracę z firmą Tinrate i zamierzamy wdrożyć jej narzędzie Concierge na naszej własnej stronie internetowej, zanim polecimy je komukolwiek."
+ },
+ "e4fbdd40e56c55d3": {
+  "en": "2 min read",
+  "t": "Czas czytania: 2 minuty"
+ },
+ "e0525c70feee5f84": {
+  "en": "Nobody wants to read an entire website anymore. They want to ask a question and get an answer, quickly.",
+  "t": "Nikt już nie chce czytać całej strony internetowej. Użytkownicy chcą zadać pytanie i szybko uzyskać odpowiedź."
+ },
+ "615a560f03f53231": {
+  "en": "That is why I sat down with Gunther Ghysels, the founder of <a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a>, to talk about where we could work together. The result: we are becoming a Tinrate partner, and before we bring it to a single client, we are running it on our own website first.",
+  "t": "Właśnie dlatego spotkałem się z Guntherem Ghyselsem, założycielem firmy <a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a>, aby omówić możliwości naszej współpracy. W rezultacie stajemy się partnerem firmy Tinrate, a zanim udostępnimy to rozwiązanie jakiemukolwiek klientowi, najpierw uruchomimy je na naszej własnej stronie internetowej."
+ },
+ "6e016be217cc36a3": {
+  "en": "What Tinrate does",
+  "t": "Czym zajmuje się firma Tinrate"
+ },
+ "43d064bc7f659a0f": {
+  "en": "<a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a> is an AI startup from Ghent, built around one idea: connecting knowledge. Its main product is the marketplace where you can find all sorts of expertise and advise and their newest product is the <strong>Concierge</strong>.",
+  "t": "<a href=\"https://tinrate.com/\" target=\"_blank\" rel=\"noopener\">Tinrate</a> to startup z Gandawy zajmujący się sztuczną inteligencją, którego działalność opiera się na jednej idei: łączeniu wiedzy. Jego głównym produktem jest platforma, na której można znaleźć różnego rodzaju specjalistyczną wiedzę i porady, a najnowszym produktem jest usługa <strong>Concierge</strong>."
+ },
+ "2d3506422726efc1": {
+  "en": "The Concierge lives on your website and answers visitors on the spot, from your own knowledge. It qualifies them, and it gets every request to the right person in your organisation. If a conversation needs a call, it can book one, free or paid. No more \"we’ll get back to you\", and no more manually forwarding what lands in the info@ inbox. Also connections with every CRM is included.",
+  "t": "Concierge działa na Państwa stronie internetowej i odpowiada odwiedzającym na bieżąco, korzystając z Państwa wiedzy. Dokonuje wstępnej kwalifikacji zapytań i przekazuje każde zgłoszenie do odpowiedniej osoby w Państwa organizacji. Jeśli rozmowa wymaga połączenia telefonicznego, może je zarezerwować – bezpłatnie lub za opłatą. Koniec z odpowiedziami typu „skontaktujemy się z Państwem” oraz ręcznym przekazywaniem wiadomości przychodzących na skrzynkę info@. W pakiecie zawarta jest również integracja z każdym systemem CRM."
+ },
+ "b103b8cb161d91d1": {
+  "en": "Apart from conversion Tinrate concierge also gives customer data insights, now you really know what your customers need or what the trends are.",
+  "t": "Oprócz wskaźnika konwersji usługa Tinrate Concierge zapewnia również wgląd w dane dotyczące klientów, dzięki czemu mogą Państwo naprawdę dowiedzieć się, czego potrzebują Państwa klienci i jakie są aktualne trendy."
+ },
+ "80810786b4db55e0": {
+  "en": "Why this fits how people search now",
+  "t": "Dlaczego to odpowiada obecnym zwyczajom wyszukiwania"
+ },
+ "79bd608e604c3ed1": {
+  "en": "Our customers no longer browse menus and skim pages. Just like with GEO (generative engine optimization), they want to ask a question, simplify the process, and speed it up. A website that makes people dig for the answer loses to one that simply answers.",
+  "t": "Nasi klienci nie przeglądają już menu ani nie przeglądają stron. Podobnie jak w przypadku GEO (generatywnej optymalizacji wyszukiwarek), chcą zadać pytanie, uprościć proces i przyspieszyć go. Strona internetowa, która zmusza użytkowników do szukania odpowiedzi, przegrywa z tą, która po prostu udziela odpowiedzi."
+ },
+ "c9525e89a0336b8d": {
+  "en": "What sets Tinrate apart in our opinion",
+  "t": "Co naszym zdaniem wyróżnia Tinrate"
+ },
+ "4597e95eeace05cc": {
+  "en": "This morning, our head software engineer, Lathif Sihab Dewantoro, shared his view with me. What stands out to him is that Tinrate distinguishes itself with a workflow configuration that is not technical. The people who know your customers best can decide how questions are handled and who they get routed to, without waiting for a developer.",
+  "t": "Dziś rano nasz główny inżynier oprogramowania, Lathif Sihab Dewantoro, podzielił się ze mną swoją opinią. Jego zdaniem Tinrate wyróżnia się tym, że konfiguracja przepływu pracy nie ma charakteru technicznego. Osoby, które najlepiej znają Państwa klientów, mogą samodzielnie decydować o sposobie obsługi zapytań oraz o tym, do kogo mają one być kierowane, bez konieczności oczekiwania na pomoc programisty."
+ },
+ "d3261b0f86c79f57": {
+  "en": "That was the deciding factor for us. A tool that only engineers can configure stays a side project. A tool that the whole team can shape actually gets used.",
+  "t": "To był dla nas czynnik decydujący. Narzędzie, które mogą konfigurować wyłącznie inżynierowie, pozostaje projektem pobocznym. Natomiast narzędzie, które może dostosowywać cały zespół, jest faktycznie wykorzystywane."
+ },
+ "69156b2a94be0e2c": {
+  "en": "Why we test it on ourselves first",
+  "t": "Dlaczego najpierw testujemy to na sobie"
+ },
+ "4e4a9cb86838c099": {
+  "en": "We will not recommend something we have not lived with. So the Concierge is going onto our own website, and we will be looking at:",
+  "t": "Nie będziemy Państwu polecać niczego, z czym sami nie mieliśmy okazji się zapoznać. W związku z tym usługa Concierge zostanie umieszczona na naszej własnej stronie internetowej, a my przyjrzymy się następującym kwestiom:"
+ },
+ "d4f1ec50eac6f452": {
+  "en": "how well it answers real visitor questions",
+  "t": "w jakim stopniu odpowiada on na rzeczywiste pytania odwiedzających"
+ },
+ "4a9401964c8e5a13": {
+  "en": "how much faster visitors get what they came for",
+  "t": "o ile szybciej odwiedzający uzyskują to, po co przyszli"
+ },
+ "ec400af4cb44f33a": {
+  "en": "how easy the configuration is for people who are not engineers",
+  "t": "jak łatwa jest konfiguracja dla osób, które nie są inżynierami"
+ },
+ "732ebfe7d51a6998": {
+  "en": "what needs to improve before we roll it out to clients",
+  "t": "co należy poprawić, zanim udostępnimy to klientom"
+ },
+ "41dc6acfef4d8f48": {
+  "en": "how it affects lead conversion and workflow automation",
+  "t": "jak wpływa to na konwersję potencjalnych klientów oraz automatyzację procesów roboczych"
+ },
+ "6c1fedbc0f094499": {
+  "en": "What’s next",
+  "t": "Co dalej?"
+ },
+ "41384633e976341a": {
+  "en": "We will share what we learn along the way, including what does not work. In the meantime, try it on our website and tell us what you think. And if you would like to see the Concierge on your own site, get in touch.",
+  "t": "Będziemy dzielić się z Państwem naszymi spostrzeżeniami zebranymi w trakcie pracy, w tym również tym, co się nie sprawdza. W międzyczasie zapraszamy do wypróbowania tej funkcji na naszej stronie internetowej i podzielenia się z nami Państwa opinią. A jeśli chcieliby Państwo umieścić funkcję „Concierge” na swojej własnej stronie, prosimy o kontakt."
+ },
+ "c515ef85df437ff6": {
+  "en": "Tinrate DRP BuildLab collaboration partnership",
+  "t": "Współpraca partnerska między firmami Tinrate, DRP i BuildLab"
+ },
+ "d8b12afde196d8ed": {
+  "en": "We’re partnering with Tinrate, and we’re testing it on our own website first | Blog | DRP BuildLab",
+  "t": "Nawiązaliśmy współpracę z firmą Tinrate i najpierw testujemy to rozwiązanie na naszej własnej stronie internetowej | Blog | DRP BuildLab"
+ },
+ "ca111c360956834c": {
+  "en": "Nobody reads websites anymore, they ask. We’ve teamed up with Tinrate and are putting its Concierge on our own website before we recommend it to anyone.",
+  "t": "„Nikt już nie czyta stron internetowych” – pytają. Nawiązaliśmy współpracę z firmą Tinrate i zamierzamy wdrożyć jej narzędzie Concierge na naszej własnej stronie internetowej, zanim polecimy je komukolwiek."
+ },
+ "2b5ca6cc0c0f49a9": {
+  "en": "Official Tinrate reseller",
+  "t": "Oficjalny sprzedawca Tinrate"
+ },
+ "0190459c8809231f": {
+  "en": "Order <span translate=\"no\">Tinrate Concierge</span> <em>through us.</em>",
+  "t": "Zamów <span translate=\"no\">Tinrate Concierge</span> <em>za naszym pośrednictwem.</em>"
+ },
+ "94dd1bd8dc9fe993": {
+  "en": "An AI assistant on your website that answers visitors in seconds, day and night, with your own documents, and turns conversations into leads. We set it up on your website, and you try it free for 14 days.",
+  "t": "Asystent AI na Państwa stronie internetowej, który w kilka sekund odpowiada odwiedzającym, w dzień i w nocy, na podstawie Państwa własnych dokumentów, i zamienia rozmowy w potencjalnych klientów. Konfigurujemy go na Państwa stronie, a Państwo testują go bezpłatnie przez 14 dni."
+ },
+ "559f9a8fb9c8e43c": {
+  "en": "Order <span translate=\"no\">Concierge</span> <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zamów <span translate=\"no\">Concierge</span> <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "6954367c47da31ec": {
+  "en": "How it works",
+  "t": "Jak to działa"
+ },
+ "4fc536b4a5483838": {
+  "en": "Thank you, your order has been received. We will contact you within 24 hours to set up <span translate=\"no\">Concierge</span> on your website.",
+  "t": "Dziękujemy, Państwa zamówienie zostało przyjęte. Skontaktujemy się z Państwem w ciągu 24 godzin, aby skonfigurować <span translate=\"no\">Concierge</span> na Państwa stronie internetowej."
+ },
+ "66f8a2de77dad977": {
+  "en": "<span translate=\"no\">Tinrate Concierge</span>",
+  "t": "<span translate=\"no\">Tinrate Concierge</span>"
+ },
+ "57590bd92cabe7a0": {
+  "en": "An AI assistant on your website that answers visitors in seconds and turns conversations into leads. We are an official Tinrate reseller.",
+  "t": "Asystent AI na Państwa stronie internetowej, który w kilka sekund odpowiada odwiedzającym i zamienia rozmowy w potencjalnych klientów. Jesteśmy oficjalnym sprzedawcą Tinrate."
+ },
+ "884c2557f5f72198": {
+  "en": "Free 14-day trial",
+  "t": "Bezpłatny 14-dniowy okres próbny"
+ },
+ "0a12bd96e4d55760": {
+  "en": "Your website, <em>answering in seconds.</em>",
+  "t": "Państwa strona <em>odpowiada w kilka sekund.</em>"
+ },
+ "2cc7905df7ce8045": {
+  "en": "<span translate=\"no\">Tinrate Concierge</span> is an AI assistant on your website. It answers visitors day and night with your own documents, books appointments and turns conversations into leads. Order it through DRP BuildLab: we set it up on your website, and you try it free for 14 days.",
+  "t": "<span translate=\"no\">Tinrate Concierge</span> to asystent AI na Państwa stronie internetowej. Odpowiada odwiedzającym w dzień i w nocy na podstawie Państwa własnych dokumentów, umawia spotkania i zamienia rozmowy w potencjalnych klientów. Można go zamówić za pośrednictwem DRP BuildLab: konfigurujemy go na Państwa stronie, a Państwo testują go bezpłatnie przez 14 dni."
+ },
+ "bd6a3bd4c635d1e2": {
+  "en": "What <span translate=\"no\">Concierge</span> <em>does</em>",
+  "t": "Co <span translate=\"no\">Concierge</span> <em>potrafi</em>"
+ },
+ "cfdb099ef8294735": {
+  "en": "Visitors who don’t find an answer leave, and nobody knows they were there. <span translate=\"no\">Concierge</span> answers them while they are still on your website.",
+  "t": "Odwiedzający, którzy nie znajdą odpowiedzi, odchodzą, a nikt nie wie, że w ogóle byli. <span translate=\"no\">Concierge</span> odpowiada im, gdy wciąż są na Państwa stronie."
+ },
+ "6517b5a770c8ee5a": {
+  "en": "Answers in seconds",
+  "t": "Odpowiada w kilka sekund"
+ },
+ "5f750a24becf6391": {
+  "en": "Day and night, also at the weekend. No form that waits until the next working day.",
+  "t": "W dzień i w nocy, także w weekendy. Żadnego formularza, który czeka do następnego dnia roboczego."
+ },
+ "fc3d7a571f708e64": {
+  "en": "Knows your business",
+  "t": "Zna Państwa firmę"
+ },
+ "6a1bbf33ec5593bf": {
+  "en": "Unlike a general chatbot, it answers with the documents and information you give it.",
+  "t": "W przeciwieństwie do zwykłego chatbota odpowiada na podstawie dokumentów i informacji, które Państwo mu przekażą."
+ },
+ "e01b5cdd29557d86": {
+  "en": "Turns questions into leads",
+  "t": "Zamienia pytania w potencjalnych klientów"
+ },
+ "b217570af00d0d9b": {
+  "en": "It collects contact details and books appointments, so a question at 11 at night is a lead in the morning.",
+  "t": "Zbiera dane kontaktowe i umawia spotkania, dzięki czemu rano mają Państwo potencjalnego klienta z pytania zadanego o 23:00."
+ },
+ "4caf792e73f1968c": {
+  "en": "Shows what visitors ask",
+  "t": "Pokazuje, o co pytają odwiedzający"
+ },
+ "007c6665927a80a3": {
+  "en": "You see every conversation, every lead and what visitors ask most, so you know what your website brings in.",
+  "t": "Widzą Państwo każdą rozmowę, każdego potencjalnego klienta i to, o co odwiedzający pytają najczęściej, więc wiedzą Państwo, co przynosi Państwa strona."
+ },
+ "ccdfb344cd20d758": {
+  "en": "more likely to qualify a lead when you answer within 5 minutes instead of 30. A form waits until the next working day.<small>Source: Lead Response Management Study, MIT and InsideSales.com.</small>",
+  "t": "większa szansa na zakwalifikowanie potencjalnego klienta, gdy odpowiedź pada w ciągu 5 minut, a nie 30. Formularz czeka do następnego dnia roboczego.<small>Źródło: Lead Response Management Study, MIT i InsideSales.com.</small>"
+ },
+ "2fa510f93d4702c0": {
+  "en": "Why order <em>through us</em>",
+  "t": "Dlaczego zamawiać <em>za naszym pośrednictwem</em>"
+ },
+ "a642c9e044d9196c": {
+  "en": "The same <span translate=\"no\">Tinrate Concierge</span>, with a team that sets it up for you and stays when you need a change.",
+  "t": "Ten sam <span translate=\"no\">Tinrate Concierge</span>, z zespołem, który go dla Państwa konfiguruje i pozostaje do dyspozycji, gdy potrzebna jest zmiana."
+ },
+ "92f1282cb8781adf": {
+  "en": "We are an official Tinrate reseller",
+  "t": "Jesteśmy oficjalnym sprzedawcą Tinrate"
+ },
+ "1ab91aa3eaf1f2d8": {
+  "en": "We set up <span translate=\"no\">Concierge</span> on your website for you",
+  "t": "Konfigurujemy <span translate=\"no\">Concierge</span> na Państwa stronie za Państwa"
+ },
+ "3dc94dc5bc9fc6e2": {
+  "en": "It works on any website, also one we did not build",
+  "t": "Działa na każdej stronie internetowej, także takiej, której nie stworzyliśmy"
+ },
+ "0386a4730741bd49": {
+  "en": "We help you choose the documents it answers from",
+  "t": "Pomagamy wybrać dokumenty, na podstawie których odpowiada"
+ },
+ "df36b37c8286084d": {
+  "en": "One point of contact when you want to change something",
+  "t": "Jedna osoba kontaktowa, gdy chcą Państwo coś zmienić"
+ },
+ "aeb3521ecbd9125b": {
+  "en": "You try it free for 14 days on your own website",
+  "t": "Testują go Państwo bezpłatnie przez 14 dni na własnej stronie"
+ },
+ "b61aad5215c04ec9": {
+  "en": "How ordering <em>works</em>",
+  "t": "Jak przebiega <em>zamówienie</em>"
+ },
+ "c6e86f004bb774bf": {
+  "en": "From the form to a working assistant on your website.",
+  "t": "Od formularza do działającego asystenta na Państwa stronie."
+ },
+ "a5ad29fa8a2440f6": {
+  "en": "You send the order form",
+  "t": "Wysyłają Państwo formularz zamówienia"
+ },
+ "a9b181eb0c0cfc4f": {
+  "en": "Choose a plan, or let us help you choose. It takes about a minute.",
+  "t": "Proszę wybrać plan lub pozwolić nam pomóc w wyborze. Zajmuje to około minuty."
+ },
+ "c697586925292259": {
+  "en": "We contact you within 24 hours",
+  "t": "Kontaktujemy się z Państwem w ciągu 24 godzin"
+ },
+ "33a4c81b012a65e3": {
+  "en": "We look at your website and the documents <span translate=\"no\">Concierge</span> will answer from.",
+  "t": "Przeglądamy Państwa stronę i dokumenty, na podstawie których <span translate=\"no\">Concierge</span> będzie odpowiadać."
+ },
+ "8097f024ea09bac0": {
+  "en": "We set it up on your website",
+  "t": "Konfigurujemy go na Państwa stronie"
+ },
+ "256088defb5e78e1": {
+  "en": "One tag, no rebuild: your website stays as it is.",
+  "t": "Jeden znacznik, bez przebudowy: Państwa strona pozostaje taka, jaka jest."
+ },
+ "34b4f704479b12da": {
+  "en": "You try it free for 14 days",
+  "t": "Testują go Państwo bezpłatnie przez 14 dni"
+ },
+ "f7a6eee9702df972": {
+  "en": "After the trial, Tinrate bills your plan directly, monthly or yearly.",
+  "t": "Po okresie próbnym Tinrate wystawia Państwu fakturę za plan bezpośrednio, co miesiąc lub co rok."
+ },
+ "4654b1487694a1e6": {
+  "en": "Three <em>plans</em>",
+  "t": "Trzy <em>plany</em>"
+ },
+ "0a756b501d3e18ed": {
+  "en": "Not sure which plan fits? Choose “Help me choose” in the form and we advise you. We confirm the price before you start.",
+  "t": "Nie wiedzą Państwo, który plan wybrać? Proszę zaznaczyć w formularzu „Potrzebuję pomocy w wyborze”, a doradzimy. Potwierdzamy cenę przed rozpoczęciem."
+ },
+ "bb432eaabac0943c": {
+  "en": "To get started",
+  "t": "Na początek"
+ },
+ "cb3d21b78dd4231f": {
+  "en": "<span translate=\"no\">Concierge</span> on your website, answering from your own documents and collecting leads.",
+  "t": "<span translate=\"no\">Concierge</span> na Państwa stronie, odpowiadający na podstawie Państwa własnych dokumentów i zbierający potencjalnych klientów."
+ },
+ "0a0768f063a031a3": {
+  "en": "Order the <span translate=\"no\">Starter</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zamów plan <span translate=\"no\">Starter</span> <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "ea191783b237a572": {
+  "en": "For most businesses",
+  "t": "Dla większości firm"
+ },
+ "3a5858d2bb59cf33": {
+  "en": "Everything in <span translate=\"no\">Starter</span>, without the Tinrate logo on your website.",
+  "t": "Wszystko, co w planie <span translate=\"no\">Starter</span>, bez logo Tinrate na Państwa stronie."
+ },
+ "f20120837137179a": {
+  "en": "Order the <span translate=\"no\">Business</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zamów plan <span translate=\"no\">Business</span> <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "6e909f15dfb4df23": {
+  "en": "For larger organisations",
+  "t": "Dla większych organizacji"
+ },
+ "358b094e56885a5d": {
+  "en": "For larger organisations, with a plan sized to what you need.",
+  "t": "Dla większych organizacji, z planem dopasowanym do Państwa potrzeb."
+ },
+ "01081c824f821e4f": {
+  "en": "Order the <span translate=\"no\">Scale</span> plan <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zamów plan <span translate=\"no\">Scale</span> <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "13ef9344e5d2a3a4": {
+  "en": "Pay yearly, pay less",
+  "t": "Płatność roczna to niższa cena"
+ },
+ "21744f7a5aa98a60": {
+  "en": "A yearly contract costs 15 to 17% less than paying for twelve separate months. Tinrate sends the invoice; we stay your point of contact.",
+  "t": "Umowa roczna kosztuje o 15–17% mniej niż opłacanie dwunastu miesięcy osobno. Fakturę wystawia Tinrate; my pozostajemy Państwa punktem kontaktowym."
+ },
+ "cf215fc6fc3981bc": {
+  "en": "Order with yearly billing <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Zamów z płatnością roczną <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "7d03814354b66697": {
+  "en": "Order <em><span translate=\"no\">Concierge</span></em>",
+  "t": "Zamów <em><span translate=\"no\">Concierge</span></em>"
+ },
+ "8b79d51a05a34d31": {
+  "en": "Fill in the form",
+  "t": "Proszę wypełnić formularz"
+ },
+ "2de0cafd56eac90b": {
+  "en": "It takes about a minute. Nothing is charged yet.",
+  "t": "Zajmuje to około minuty. Na razie nie są pobierane żadne opłaty."
+ },
+ "dbe4342fc956d38c": {
+  "en": "To go through your website and your documents.",
+  "t": "Aby przejrzeć Państwa stronę i dokumenty."
+ },
+ "ab4b92d1e5a0508b": {
+  "en": "Try it free for 14 days",
+  "t": "Bezpłatny test przez 14 dni"
+ },
+ "b3d33de4ecff7a9e": {
+  "en": "On your own website, set up by us.",
+  "t": "Na Państwa własnej stronie, skonfigurowany przez nas."
+ },
+ "2b2f8f9380b221c1": {
+  "en": "Order <span translate=\"no\">Tinrate Concierge</span>",
+  "t": "Zamów <span translate=\"no\">Tinrate Concierge</span>"
+ },
+ "8f55197fa38fdd1f": {
+  "en": "Your website address",
+  "t": "Adres Państwa strony internetowej"
+ },
+ "d5db002ca855571a": {
+  "en": "Which plan would you like?",
+  "t": "Który plan Państwa interesuje?"
+ },
+ "4d782faf560ab509": {
+  "en": "Help me choose",
+  "t": "Potrzebuję pomocy w wyborze"
+ },
+ "90a866d5baa20d0d": {
+  "en": "How would you like to pay Tinrate?",
+  "t": "Jak chcą Państwo płacić Tinrate?"
+ },
+ "b2ab45303e0e238a": {
+  "en": "Yearly, 15 to 17% cheaper",
+  "t": "Rocznie, o 15–17% taniej"
+ },
+ "9bd2bd2718922b58": {
+  "en": "Every month",
+  "t": "Miesięcznie"
+ },
+ "503f6a23444d5f5d": {
+  "en": "Anything we should know? <small>(optional)</small>",
+  "t": "Czy jest coś, o czym powinniśmy wiedzieć? <small>(opcjonalnie)</small>"
+ },
+ "de1c17bc4a54c60a": {
+  "en": "<span translate=\"no\">Concierge</span> is a Tinrate service: your subscription is with Tinrate, under Tinrate’s own terms. You try it free for 14 days first.",
+  "t": "<span translate=\"no\">Concierge</span> to usługa Tinrate: subskrypcję zawierają Państwo z Tinrate, na warunkach Tinrate. Najpierw testują ją Państwo bezpłatnie przez 14 dni."
+ },
+ "3e1b729f00092f7e": {
+  "en": "Send my order <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Wyślij zamówienie <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "337f315cc5e074ba": {
+  "en": "Questions about <em><span translate=\"no\">Concierge</span></em>",
+  "t": "Pytania dotyczące <em><span translate=\"no\">Concierge</span></em>"
+ },
+ "b83740dca6a6f3a3": {
+  "en": "Something else? Write to info@drpbuildlab.com or send us a WhatsApp message.",
+  "t": "Coś jeszcze? Prosimy napisać na adres info@drpbuildlab.com lub wysłać nam wiadomość na WhatsApp."
+ },
+ "cf006e729154dddf": {
+  "en": "Why order through DRP BuildLab and not directly from Tinrate?",
+  "t": "Dlaczego zamawiać przez DRP BuildLab, a nie bezpośrednio w Tinrate?"
+ },
+ "4dc0389b4dce6fd9": {
+  "en": "You get the same <span translate=\"no\">Tinrate Concierge</span>, plus a team that sets it up on your website, helps you choose what it answers from and is there when you want to change something. We are an official Tinrate reseller.",
+  "t": "Otrzymują Państwo ten sam <span translate=\"no\">Tinrate Concierge</span>, a do tego zespół, który konfiguruje go na Państwa stronie, pomaga wybrać, na podstawie czego ma odpowiadać, i jest do dyspozycji, gdy chcą Państwo coś zmienić. Jesteśmy oficjalnym sprzedawcą Tinrate."
+ },
+ "ac440dde37eb8b6a": {
+  "en": "Does it work on a website you did not build?",
+  "t": "Czy działa na stronie internetowej stworzonej przez kogoś innego?"
+ },
+ "098211ab7c958367": {
+  "en": "Yes. <span translate=\"no\">Concierge</span> is one tag that works on any website, without a rebuild. We look at your website first and set it up for you.",
+  "t": "Tak. <span translate=\"no\">Concierge</span> to jeden znacznik, który działa na każdej stronie internetowej, bez przebudowy. Najpierw przeglądamy Państwa stronę, a potem konfigurujemy go za Państwa."
+ },
+ "749db68ae71583ce": {
+  "en": "Can I try it before I pay?",
+  "t": "Czy mogę go przetestować przed zapłatą?"
+ },
+ "a5ef7c91fb86a292": {
+  "en": "Yes. You try <span translate=\"no\">Concierge</span> free for 14 days, on your own website.",
+  "t": "Tak. Testują Państwo <span translate=\"no\">Concierge</span> bezpłatnie przez 14 dni na własnej stronie internetowej."
+ },
+ "afecadeadd00cca3": {
+  "en": "Who sends the invoice?",
+  "t": "Kto wystawia fakturę?"
+ },
+ "90e62389da695861": {
+  "en": "Tinrate bills your plan directly, monthly or yearly. A yearly contract costs 15 to 17% less than paying for twelve separate months.",
+  "t": "Tinrate wystawia Państwu fakturę za plan bezpośrednio, co miesiąc lub co rok. Umowa roczna kosztuje o 15–17% mniej niż opłacanie dwunastu miesięcy osobno."
+ },
+ "9500a89d681b3a59": {
+  "en": "Which plan do I need?",
+  "t": "Którego planu potrzebuję?"
+ },
+ "4a665e6fa455044a": {
+  "en": "<span translate=\"no\">Starter</span> gets you going. From <span translate=\"no\">Business</span> up, the Tinrate logo no longer shows on your website. <span translate=\"no\">Scale</span> is for larger organisations. Not sure? Choose “Help me choose” in the form and we advise you.",
+  "t": "<span translate=\"no\">Starter</span> pozwala zacząć. Od planu <span translate=\"no\">Business</span> wzwyż logo Tinrate nie jest już wyświetlane na Państwa stronie. <span translate=\"no\">Scale</span> jest przeznaczony dla większych organizacji. Nie są Państwo pewni? Proszę zaznaczyć w formularzu „Potrzebuję pomocy w wyborze”, a doradzimy."
+ },
+ "edf1401ef7861d2e": {
+  "en": "Can you also improve my website itself?",
+  "t": "Czy mogą Państwo ulepszyć także samą moją stronę?"
+ },
+ "57837badf9705c77": {
+  "en": "Yes, that is our main work. If your website needs an update before the assistant goes on it, we can do that too, in a separate quote.",
+  "t": "Tak, to nasza główna działalność. Jeśli Państwa strona wymaga aktualizacji, zanim pojawi się na niej asystent, możemy się tym również zająć w ramach osobnej wyceny."
+ },
+ "20d26dc3964ab63a": {
+  "en": "Partnership visual: DRP BuildLab and Tinrate",
+  "t": "Grafika przedstawiająca partnerstwo: DRP BuildLab i Tinrate"
+ },
+ "5fb4b5ba182b0efd": {
+  "en": "Tinrate Concierge | Official reseller | DRP BuildLab",
+  "t": "Tinrate Concierge | Oficjalny sprzedawca | DRP BuildLab"
+ },
+ "1370b96b2378e362": {
+  "en": "Order Tinrate Concierge through DRP BuildLab, an official Tinrate reseller. An AI assistant that answers your visitors in seconds. We set it up on your website, and you try it free for 14 days.",
+  "t": "Zamów Tinrate Concierge za pośrednictwem DRP BuildLab, oficjalnego sprzedawcy Tinrate. Asystent AI, który w kilka sekund odpowiada Państwa odwiedzającym. Konfigurujemy go na Państwa stronie, a Państwo testują go bezpłatnie przez 14 dni."
+ },
+ "0e203dd283dc4f23": {
+  "en": "<b>Black Friday:</b> a free extra page with every <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> starter package, plus 10% off all extra services. Until Monday 30 November.",
+  "t": "<b>Black Friday:</b> dodatkowa podstrona gratis do każdego pakietu startowego za <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> oraz 10% rabatu na wszystkie usługi dodatkowe. Do poniedziałku 30 listopada."
+ },
+ "1f01e8ad9d815676": {
+  "en": "Claim the deal",
+  "t": "Skorzystaj z oferty"
+ },
+ "8a90c37cebcd6f5e": {
+  "en": "Black Friday · until Monday 30 November",
+  "t": "Black Friday · do poniedziałku 30 listopada"
+ },
+ "3440d22e7918a9b0": {
+  "en": "More website, <em>same price.</em>",
+  "t": "Więcej za <em>tę samą cenę.</em>"
+ },
+ "19196e34c3d0dcb8": {
+  "en": "Order your website before the deal ends and get more for the same budget. We write the deal into your quote.",
+  "t": "Zamów stronę internetową przed końcem promocji i otrzymaj więcej w tym samym budżecie. Promocję wpisujemy do Twojej wyceny."
+ },
+ "0c7f4e48920aa645": {
+  "en": "Claim the Black Friday deal <span class=\"arr\" aria-hidden=\"true\">→</span>",
+  "t": "Skorzystaj z oferty Black Friday <span class=\"arr\" aria-hidden=\"true\">→</span>"
+ },
+ "0766d2635330638a": {
+  "en": "Ask us on WhatsApp",
+  "t": "Zapytaj nas na WhatsAppie"
+ },
+ "38e5432df5157e1a": {
+  "en": "Free",
+  "t": "Gratis"
+ },
+ "4884c440fea83ecd": {
+  "en": "An extra page",
+  "t": "Dodatkowa podstrona"
+ },
+ "68f85c212cd078fb": {
+  "en": "Worth <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>. With every <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> starter package we add a second page, for your services, prices or portfolio.",
+  "t": "O wartości <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>. Do każdego pakietu startowego za <span class=\"money\" data-eur=\"499\" translate=\"no\">€499</span> dodajemy drugą podstronę, na Twoje usługi, cennik lub portfolio."
+ },
+ "cd9128160a3e2fbd": {
+  "en": "On all extra services",
+  "t": "Na wszystkie usługi dodatkowe"
+ },
+ "fa0097435de114df": {
+  "en": "SEO, a logo, a multilingual site or a booking integration: 10% off every extra service you order.",
+  "t": "SEO, logo, strona wielojęzyczna czy integracja z systemem rezerwacji: 10% rabatu na każdą zamówioną usługę dodatkową."
+ },
+ "bdedc6b08ebf115b": {
+  "en": "Request your quote by Monday 30 November, 23:59 (Brussels time).",
+  "t": "Poproś o wycenę do poniedziałku 30 listopada, godz. 23:59 (czasu brukselskiego)."
+ },
+ "ff8eb09e8c67b9f0": {
+  "en": "<b>Black Friday deal:</b> a free extra page and 10% off extra services, added to your quote.",
+  "t": "<b>Promocja Black Friday:</b> dodatkowa podstrona gratis i 10% rabatu na usługi dodatkowe, uwzględnione w Twojej wycenie."
+ },
+ "c00d8b960f07e69c": {
+  "en": "<b>Black Friday:</b> a free extra page, worth <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>, until Monday 30 November.",
+  "t": "<b>Black Friday:</b> dodatkowa podstrona gratis, o wartości <span class=\"money\" data-eur=\"79\" translate=\"no\">€79</span>, do poniedziałku 30 listopada."
  }
 }

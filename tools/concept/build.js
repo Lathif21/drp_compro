@@ -24,6 +24,31 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const eur = n => '€' + n.toLocaleString('en-GB', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2 });
 const arr = '<span class="arr" aria-hidden="true">→</span>';
 
+/* Black Friday 2026: a free extra page (the catalogue's €79 "extra-pagina")
+   with every €499 starter package, and 10% off all extra services, until
+   Monday 30 November, Brussels time. site.js removes everything marked
+   data-deal once DEAL_END has passed, and tags quote requests sent before
+   then; take these and their uses out after the deal. */
+const DEAL_END = '2026-12-01T00:00:00+01:00';
+const dealBar = () => `<div class="deal-bar" data-deal data-deal-end="${DEAL_END}"><div class="wrap deal-bar-in"><p><b>Black Friday:</b> a free extra page with every €499 starter package, plus 10% off all extra services. Until Monday 30 November.</p><a href="${B}/#deal">Claim the deal</a></div></div>`;
+const dealNote = '<p class="deal-note" data-deal><b>Black Friday deal:</b> a free extra page and 10% off extra services, added to your quote.</p>';
+const dealSection = () => `
+<section class="sec deal" id="deal" data-deal aria-labelledby="deal-h"><div class="wrap deal-in">
+  <div>
+    <p class="deal-tag">Black Friday · until Monday 30 November</p>
+    <h2 class="h2" id="deal-h">More website, <em>same price.</em></h2>
+    <p class="lede">Order your website before the deal ends and get more for the same budget. We write the deal into your quote.</p>
+    <div class="acts"><a class="btn" href="#demo">Claim the Black Friday deal ${arr}</a><a class="btn ghost" href="https://wa.me/32473744431" target="_blank" rel="noopener">Ask us on WhatsApp</a></div>
+  </div>
+  <div>
+    <ul class="deal-offers">
+      <li><span class="deal-big">Free</span><h3>An extra page</h3><p>Worth €79. With every €499 starter package we add a second page, for your services, prices or portfolio.</p></li>
+      <li><span class="deal-big" dir="ltr">−10%</span><h3>On all extra services</h3><p>SEO, a logo, a multilingual site or a booking integration: 10% off every extra service you order.</p></li>
+    </ul>
+    <p class="deal-small">Request your quote by Monday 30 November, 23:59 (Brussels time).</p>
+  </div>
+</div></section>`;
+
 /* blog articles from content/blog/ (see tools/concept/blog.js); throws on a malformed file */
 const blog = require('./blog');
 const POSTS = blog.loadPosts();
@@ -104,6 +129,26 @@ const CASES_RAW = [
     hDesk: 5200, hMob: 3600, phoneImg: 'welkomthuis-mob'
   },
   {
+    slug: 'raf-geerts-betontrappen', name: 'Raf Geerts Betontrappen', em: 'Raf Geerts <em>Betontrappen</em>',
+    url: 'betontrappenraf.be', href: 'https://www.betontrappenraf.be/', img: 'raf',
+    sector: 'Concrete staircases', where: 'Westerlo, Belgium', scope: 'Design and development',
+    tags: ['Design', 'Development', 'Quote form with plan upload', 'Responsive'], kinds: 'Website',
+    short: 'A website for Raf Geerts, who casts concrete staircases on site: indoor, outdoor and basement stairs, each one made to fit the house it stands in.',
+    brief: ['Raf Geerts builds concrete staircases from Westerlo. They do not come from a catalogue: he builds the formwork on site, step by step, between the walls of the house, and strips it once the concrete has set.', 'His clients are building or renovating, so the site has to explain that craft and turn it into a request for a quote.'],
+    did: ['We built a bold, dark site in concrete grey and signal red, with the work in four steps: measure, build the formwork, reinforce, strip. A gallery sorted by type of staircase shows the stairs at every stage, because the formwork is where the craft is.', 'The quote form asks for what Raf needs to price a staircase: the type of stair, the floor-to-floor height and a plan or photo, which clients can upload straight from their phone.'],
+    hDesk: 5200, hMob: 3600, phoneImg: 'raf-mob'
+  },
+  {
+    slug: 'tuinzorg-dp', name: 'TuinZorg DP', em: 'TuinZorg <em>DP</em>',
+    url: 'tuinzorgdp.com', href: 'https://tuinzorgdp.com/', img: 'tuinzorg',
+    sector: 'Garden maintenance', where: 'Desteldonk, Belgium', scope: 'Design and development',
+    tags: ['Design', 'Development', 'Quote form with photos', 'Responsive'], kinds: 'Website',
+    short: 'A website for a garden maintenance business in East Flanders: mowing, pruning, new lawns, privacy screens and neat borders, with a free quote one tap away.',
+    brief: ['TuinZorg DP looks after gardens for homeowners and businesses across East Flanders, from regular mowing and pruning to new lawns, privacy screens and garden edging.', 'Most jobs start with a question about one garden, so the site has to show real work and make asking for a quote easy.'],
+    did: ['We designed a fresh, green site that lets the gardens do the talking: every service with its own photo, a gallery of real jobs sorted by type of work, and reviews from clients in the area.', 'The quote form asks for the job, the size of the garden and the timing, and takes photos of the garden, so the first answer can already be a concrete one.'],
+    hDesk: 5200, hMob: 3600, phoneImg: 'tuinzorg-mob'
+  },
+  {
     slug: '0-procent-experiment', name: '0% Experiment', em: '0% <em>Experiment</em>',
     url: '0procentexperiment.com', href: 'https://0procentexperiment.com/', img: 'nulprocent',
     sector: 'Digital workbook', where: 'Online', scope: 'Design and development',
@@ -163,7 +208,7 @@ const SERVICES = [
   }
 ];
 
-const CASE_ORDER = ['kasteel-warmelo', 'prestige-automotive', 'start-to-business', 'vonckx-performance', 'welkomthuis', 'hermosa-antwerp', '0-procent-experiment', 'de-smedt-meridian'];
+const CASE_ORDER = ['kasteel-warmelo', 'prestige-automotive', 'start-to-business', 'vonckx-performance', 'welkomthuis', 'raf-geerts-betontrappen', 'tuinzorg-dp', 'hermosa-antwerp', '0-procent-experiment', 'de-smedt-meridian'];
 const CASES = CASE_ORDER.map(k => CASES_RAW.find(c => c.slug === k));
 const caseBy = k => CASES.find(c => c.slug === k);
 
@@ -179,6 +224,14 @@ const PUBLIC_PRICES = ['onepager', 'onderhoud-maandelijks'];
 const priceOf = id => { const x = PRICE[id]; if (!x) throw new Error('No price for ' + id); return PUBLIC_PRICES.includes(id) ? eur(x.p) + (UNIT[x.u] || '') : 'On demand'; };
 
 const OTHER = { href: '/contact/', name: 'Other services', short: 'Logo design, photography, Google Ads, hosting moves, integrations and whatever else your site needs. Just ask.', from: 'On demand' };
+/* Tinrate Concierge, which we sell as an official Tinrate reseller (since
+   18 Nov 2026). Its page /tinrate/ has the order form; the home page features
+   it under "Who we work with", and the services lists and the footer link to
+   it. "Concierge" is a word in Dutch and French, so the product name always
+   carries translate="no". No Tinrate prices: the site shows only the €499
+   one-pager and the €29 plan (PUBLIC_PRICES). Tinrate bills the client. */
+const TC = N('Concierge'), TTC = N('Tinrate Concierge');
+const TINRATE = { href: '/tinrate/', name: TTC, short: 'An AI assistant on your website that answers visitors in seconds and turns conversations into leads. We are an official Tinrate reseller.', from: 'Free 14-day trial' };
 const svcRow = s => `<li><a href="${B}${s.href || `/diensten/${s.slug}/`}"><h3>${s.name}</h3><p>${s.short}</p><span class="price"><span>${s.from}</span> <span class="ar" aria-hidden="true">→</span></span></a></li>`;
 
 const NOT_DONE = ['Printed matter such as business cards, flyers and brochures. We design the logo itself.', 'Mobile apps. We build websites and webshops only.', 'Day-to-day management of ad campaigns. We set up your first Google Ads campaign.', 'Accounting, legal or financial advice.', 'Writing all your content from scratch. We work with the texts you provide, unless agreed otherwise.'];
@@ -194,7 +247,8 @@ const LANGS = [['NL', 'Nederlands'], ['EN', 'English'], ['FR', 'Français'], ['E
 const ICON = {
   instagram: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',
   facebook: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>',
-  tiktok: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14.5V2a5 5 0 0 0 5 5"/><circle cx="11.5" cy="14.5" r="4.5"/></svg>'
+  tiktok: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 14.5V2a5 5 0 0 0 5 5"/><circle cx="11.5" cy="14.5" r="4.5"/></svg>',
+  linkedin: '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>'
 };
 /* payment marks, as on the live footer */
 const PAY = [
@@ -210,6 +264,7 @@ const logo = (label = 'DRP BuildLab home') => `<a class="logo" href="${B}/" aria
 function header(cur) {
   const links = NAV.map(([k, t, h]) => `<a href="${B}${h}"${k === cur ? ' aria-current="page"' : ''}>${t}</a>`).join('');
   return `<a class="skip" href="#main">Skip to content</a>
+${dealBar()}
 <header class="hdr" id="hdr"><div class="wrap hdr-in">
   ${logo()}
   <nav class="nav" aria-label="Main menu">${links}</nav>
@@ -237,9 +292,9 @@ const footer = () => `<footer class="ftr"><div class="wrap">
   </div>
   <div class="ft-cols">
     <nav aria-label="Footer menu"><h2>Site</h2><ul>${NAV.map(([, t, h]) => `<li><a href="${B}${h}">${t}</a></li>`).join('')}</ul></nav>
-    <div><h2>Services</h2><ul>${SERVICES.map(s => `<li><a href="${B}/diensten/${s.slug}/">${s.name}</a></li>`).join('')}</ul></div>
+    <div><h2>Services</h2><ul>${SERVICES.map(s => `<li><a href="${B}/diensten/${s.slug}/">${s.name}</a></li>`).join('')}<li><a href="${B}/tinrate/" translate="no">Tinrate Concierge</a></li></ul></div>
     <div><h2>Studio</h2><address><span translate="no">Honingstraat 1D<br>2220 Hallaar,</span> Belgium</address><p>Monday to Friday, 9:00 to 18:00</p><p><a href="tel:+32473744431" translate="no">+32 473 74 44 31</a></p><h2 class="ft-pay-h">We accept</h2><ul class="ft-pay">${PAY.map(([n, svg, cls]) => `<li title="${n}"${cls ? ` class="${cls}"` : ''}${n === 'Bank transfer' ? '' : ' translate="no"'}>${svg}</li>`).join('')}</ul></div>
-    <div><h2>Follow</h2><ul class="ft-social" translate="no">${[['instagram', 'Instagram', '@drp_buildlab', 'https://www.instagram.com/drp_buildlab/'], ['facebook', 'Facebook', 'DRP BuildLab', 'https://www.facebook.com/share/1Hz1mJG22E/'], ['tiktok', 'TikTok', '@drpbuildlab', 'https://www.tiktok.com/@drpbuildlab']].map(([k, n, h, u]) => `<li><a href="${u}" target="_blank" rel="noopener"><span class="ico">${ICON[k]}</span><span><b>${n}</b><small>${h}</small></span></a></li>`).join('')}</ul></div>
+    <div><h2>Follow</h2><ul class="ft-social" translate="no">${[['instagram', 'Instagram', '@drp_buildlab', 'https://www.instagram.com/drp_buildlab/'], ['facebook', 'Facebook', 'DRP BuildLab', 'https://www.facebook.com/share/1Hz1mJG22E/'], ['tiktok', 'TikTok', '@drpbuildlab', 'https://www.tiktok.com/@drpbuildlab'], ['linkedin', 'LinkedIn', 'DRP BuildLab', 'https://www.linkedin.com/company/drpbuildlab/']].map(([k, n, h, u]) => `<li><a href="${u}" target="_blank" rel="noopener"><span class="ico">${ICON[k]}</span><span><b>${n}</b><small>${h}</small></span></a></li>`).join('')}</ul></div>
   </div>
   <div class="ft-bot">
     ${logo()}
@@ -279,7 +334,7 @@ ${body}
 </main>
 ${footer()}
 ${cursor ? '<div class="cur" id="cur" aria-hidden="true">View</div>' : ''}
-<div id="ui" hidden><span data-k="play">Play</span><span data-k="pause">Pause</span><span data-k="email">Please enter a valid email address so we can reach you.</span><span data-k="tick">Please tick the box so we may contact you about this request.</span><span data-k="fill">Please fill in this field:</span><span data-k="sent">Thank you, your request has been received. We will contact you within 24 hours.</span><span data-k="psent">Thank you, your application has been received. We review it personally and send your link within a few working days.</span><span data-k="failed">Sending failed. Please try again, or email us at info@drpbuildlab.com.</span></div>
+<div id="ui" hidden><span data-k="play">Play</span><span data-k="pause">Pause</span><span data-k="email">Please enter a valid email address so we can reach you.</span><span data-k="tick">Please tick the box so we may contact you about this request.</span><span data-k="fill">Please fill in this field:</span><span data-k="sent">Thank you, your request has been received. We will contact you within 24 hours.</span><span data-k="psent">Thank you, your application has been received. We review it personally and send your link within a few working days.</span><span data-k="tsent">Thank you, your order has been received. We will contact you within 24 hours to set up ${TC} on your website.</span><span data-k="failed">Sending failed. Please try again, or email us at info@drpbuildlab.com.</span><span data-k="nlsent">Almost done. We have sent you an email: click the link in it to confirm your subscription.</span><span data-k="nlfail">Subscribing did not work. Please try again in a moment.</span></div>
 <a href="https://wa.me/32473744431" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp us"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.49.648 4.829 1.782 6.86L2 30l7.347-1.758A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.6a11.56 11.56 0 0 1-5.89-1.608l-.422-.25-4.36 1.043 1.072-4.25-.276-.436A11.56 11.56 0 0 1 4.4 16C4.4 9.59 9.59 4.4 16 4.4S27.6 9.59 27.6 16 22.41 27.6 16 27.6zm6.34-8.66c-.348-.174-2.06-1.016-2.38-1.132-.318-.116-.55-.174-.78.174-.232.348-.898 1.132-1.1 1.364-.202.232-.404.26-.752.086-.348-.174-1.468-.54-2.796-1.724-1.034-.92-1.73-2.056-1.934-2.404-.202-.348-.022-.536.152-.71.156-.154.348-.404.522-.606.174-.202.232-.348.348-.58.116-.232.058-.434-.028-.608-.086-.174-.78-1.882-1.07-2.576-.282-.676-.568-.584-.78-.594l-.664-.012c-.232 0-.608.086-.926.434-.318.348-1.216 1.188-1.216 2.896s1.244 3.356 1.418 3.588c.174.232 2.448 3.736 5.932 5.238.83.358 1.478.572 1.982.732.832.264 1.59.226 2.188.138.668-.1 2.06-.842 2.35-1.656.29-.814.29-1.512.204-1.656-.086-.144-.318-.232-.666-.406z"/></svg></a>
 </body>
 </html>
@@ -337,6 +392,7 @@ const demoForm = (id, title = 'Request your free demo website') => `<form class=
   <input type="hidden" name="subject" value="Nieuwe offerteaanvraag — DRP BuildLab">
   <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
   <h3>${title}</h3>
+  ${dealNote}
   <div class="frow">
     <div class="fld"><label for="${id}-name">Your name</label><input id="${id}-name" name="voornaam" autocomplete="name" required></div>
     <div class="fld"><label for="${id}-tel">Phone</label><input id="${id}-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
@@ -357,6 +413,32 @@ const demoForm = (id, title = 'Request your free demo website') => `<form class=
   <small>We reply within 24 hours.</small>
 </form>`;
 
+/* Blog newsletter sign-up, on /blog/ and under every article. It posts to
+   /api/subscribe (netlify/edge-functions/subscribe.js), which emails a
+   confirmation link; only a confirmed address is added to Resend. No name
+   attribute and no data-event: this is not a Netlify form, and the quote-form
+   handler in site.js leaves it alone. */
+const subscribeBox = id => `<aside class="nl-box" aria-labelledby="${id}-h">
+  <div class="nl-text">
+    <h2 id="${id}-h">Get our new articles <em>by email</em></h2>
+    <p>One email whenever we publish a new article. No spam, and you can unsubscribe at any time.</p>
+  </div>
+  <form class="nl-form" id="${id}" method="POST" action="/api/subscribe" novalidate data-newsletter>
+    <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <div class="nl-row">
+      <label class="nl-label" for="${id}-email">Your email address</label>
+      <input id="${id}-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+      <button class="btn" type="submit">Subscribe to the blog</button>
+    </div>
+    ${/* LEGAL DRAFT: awaiting lawyer approval. Optional and unticked: the
+         subscription never depends on it, and subscribe.js ignores it until
+         MARKETING_CONSENT_VERSION is set (drp_cms docs/offers-consent-contract.md). */ ''}
+    <label class="check nl-offers" for="${id}-offers"><input type="checkbox" id="${id}-offers" name="offers" value="yes"><span>Also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. Optional; withdraw any time.</span></label>
+    <p class="nl-note">Without the box ticked, we only use your email address to send you new articles. <a href="${B}/privacy/">Privacy policy</a> · <a href="${B}/offers-terms/">Offers terms</a></p>
+    <p class="ok" role="status" aria-live="polite"></p>
+  </form>
+</aside>`;
+
 /* ── Pages ────────────────────────────────────────────────────────────── */
 
 const pages = {};
@@ -374,6 +456,7 @@ pages[''] = page({
   </div>
   <ul class="facts"><li>Custom built, no templates</li><li>Websites from €499</li><li>Maintenance plans at €29 a month</li><li>One point of contact</li></ul>
 </div></section>
+${dealSection()}
 
 <section class="reel-sec" id="reel" aria-label="Showreel">
   <div class="reel" id="reelBox">
@@ -424,6 +507,15 @@ pages[''] = page({
 
 <section class="sec fog"><div class="wrap">
   <div class="sec-head"><h2 class="h2 rv">Who we <em>work with</em></h2><p class="sub rv">The businesses that rely on us, and an open invitation to grow with us.</p></div>
+  <div class="prt-feat rv">
+    <a class="img" href="${B}/tinrate/" tabindex="-1"><img src="${B}/img/p-tinrate.webp" width="1000" height="1200" loading="lazy" decoding="async" alt="Partnership visual: DRP BuildLab and Tinrate"></a>
+    <div class="body">
+      <p class="tr-badge">Official Tinrate reseller</p>
+      <h3>Order ${TTC} <em>through us.</em></h3>
+      <p>An AI assistant on your website that answers visitors in seconds, day and night, with your own documents, and turns conversations into leads. We set it up on your website, and you try it free for 14 days.</p>
+      <div class="acts"><a class="btn" href="${B}/tinrate/#order">Order ${TC} ${arr}</a><a class="tlink" href="${B}/tinrate/">How it works</a></div>
+    </div>
+  </div>
   <div class="prt">
     <a class="prt-card rv" href="${B}/werk/start-to-business/"><div class="img"><img src="${B}/img/p-stb.webp" width="1000" height="1200" loading="lazy" decoding="async" alt="Partnership visual: DRP BuildLab and Start to Business"></div><div class="body"><h3 translate="no">Start to Business</h3><p>We developed their website and still maintain it.</p><p class="q" translate="no" lang="en">“Ideas deserve a strong online foundation.”</p></div></a>
     <a class="prt-card rv" href="${B}/werk/hermosa-antwerp/"><div class="img"><img src="${B}/img/p-hermosa.webp" width="1000" height="1200" loading="lazy" decoding="async" alt="Partnership visual: DRP BuildLab and Hermosa Antwerp"></div><div class="body"><h3 translate="no">Hermosa Antwerp</h3><p>DRP BuildLab is Hermosa’s IT maintenance partner.</p><p class="q" translate="no" lang="en">“Technology supports beauty.”</p></div></a>
@@ -530,6 +622,7 @@ const FEED = POSTS.length ? '\n<link rel="alternate" type="application/rss+xml" 
 <section class="sec light posts-sec"><div class="wrap">
   <ul class="posts">${POSTS.map(card).join('')}</ul>
   <p class="post-empty" hidden>${POSTS.length ? 'There are no articles in this language yet.' : 'Our first articles are on their way.'}</p>
+  ${subscribeBox('nl-index')}
 </div></section>
 ${ctaBand()}`
   });
@@ -562,6 +655,7 @@ ${ctaBand()}`
     <p>From website to webshop: we help you tell a story that is true, and that people enjoy reading.</p>
     <p class="acta-links"><a class="btn" href="${B}/contact/">Request your free demo website ${arr}</a><a class="acta-mail" href="mailto:info@drpbuildlab.com" translate="no">info@drpbuildlab.com</a></p>
   </aside>
+  ${subscribeBox('nl-post')}
   ${comments(p.slug)}
   <p class="post-back"><a class="tlink" href="${B}/blog/">All articles</a></p>
 </div></section>
@@ -570,11 +664,92 @@ ${ctaBand()}`
   });
 }
 
+/* Newsletter confirmation. The email links here with the token in the URL
+   fragment (never sent to a server or an analytics tag). The button in the
+   email is the confirmation: site.js confirms as soon as the page is on
+   screen, so the visitor only sees the thank-you. The button on the page is
+   shown only to retry after a failure; the error heading replaces the h1.
+   #mail holds the email texts. It is translated with the page like #ui, and
+   read back by netlify/edge-functions/subscribe.js (confirmation email) and
+   tools/concept/newsletter.js (new-article email) from each market's copy, so
+   every email string goes through the same DeepL cache and review. */
+pages['blog/subscribe'] = page({
+  title: 'Thank you for subscribing | Blog | DRP BuildLab', desc: 'Confirm that you want to receive new articles from the DRP BuildLab blog by email.', nav: 'blog',
+  head: '\n<meta name="robots" content="noindex">',
+  body: `${phero({ crumbs: [['Blog', '/blog/'], ['Newsletter']], h1: 'Thank you for <em>subscribing</em>', lede: '' })}
+<section class="sec light"><div class="wrap nl-confirm" id="nl-confirm">
+  <span hidden data-h1="error">Your subscription is <em>not confirmed</em></span>
+  <div data-state="ask" hidden><button class="btn dark" type="button" id="nl-confirm-btn">Confirm my subscription ${arr}</button></div>
+  <div data-state="busy"><p class="ok show" role="status">One moment, we are confirming your subscription.</p></div>
+  <div data-state="done" hidden><p class="ok show sent" role="status">You are subscribed. We will email you when we publish a new article.</p></div>
+  <div data-state="expired" hidden><p class="ok show" role="status">This confirmation link has expired. Subscribe again on the blog and we will send you a new link.</p></div>
+  <div data-state="invalid" hidden><p class="ok show" role="status">This confirmation link is not valid. Use the link from the email we sent you, or subscribe again on the blog.</p></div>
+  <div data-state="failed" hidden><p class="ok show" role="status">Something went wrong while confirming your subscription. Please try again in a moment.</p></div>
+  <p class="post-back"><a class="tlink" href="${B}/blog/">Back to the blog</a></p>
+</div></section>
+<div id="mail" hidden>
+  <span data-k="csubj">Please confirm your subscription to the DRP BuildLab blog</span>
+  <span data-k="chead">Confirm your subscription</span>
+  <span data-k="cbody">You asked to receive new articles from the DRP BuildLab blog by email. Click the button below to confirm your email address.</span>
+  <span data-k="cbtn">Confirm my subscription</span>
+  <span data-k="cvalid">This link is valid for 7 days.</span>
+  <span data-k="cignore">Did you not ask for this? Then you can ignore this email. We will not send you anything else.</span>
+  <span data-k="ahead">New on the DRP BuildLab blog</span>
+  <span data-k="abtn">Read the full article</span>
+  <span data-k="afoot">You receive this email because you subscribed to the DRP BuildLab blog.</span>
+  <span data-k="aunsub">Unsubscribe from these emails</span>
+</div>`
+});
+
+/* Offers consent for people who are already subscribed (Phase 2). The CMS
+   (cms.drpbuildlab.com, Insights) emails a link here with a consent-request
+   token in the fragment (#t=…). Unlike /blog/subscribe/, nothing happens on
+   load: consent needs the box ticked and the button clicked. site.js posts
+   to /api/subscribe/offers. #mail holds the consent-request email and the
+   offer-email footer, translated with the page and read back by the CMS from
+   each market's copy (drp_cms docs/offers-consent-contract.md).
+   LEGAL DRAFT: awaiting lawyer approval. Not to be merged before that. */
+pages['blog/offers'] = page({
+  title: 'Offers from DRP BuildLab and partners | Blog | DRP BuildLab', desc: 'Choose whether you also want to receive offers from DRP BuildLab and selected partners by email.', nav: 'blog',
+  head: '\n<meta name="robots" content="noindex">',
+  body: `${phero({ crumbs: [['Blog', '/blog/'], ['Offers']], h1: 'Offers from DRP BuildLab <em>and partners</em>', lede: '' })}
+<section class="sec light"><div class="wrap nl-confirm nl-offers-page" id="nl-offers">
+  <span hidden data-h1="error">Your choice is <em>not saved</em></span>
+  <div data-state="ask" hidden>
+    <p>You already receive every new article from the DRP BuildLab blog. That does not change, whatever you choose here.</p>
+    <p>If you agree, we may also email you occasional offers from DRP BuildLab and from selected partners, such as Tinrate. To choose offers that suit you, we look at which blog articles you click in our emails. We do not give your email address to partners: offers always come from us.</p>
+    <p>This is optional. Every offer email has a link to withdraw, and then we delete the record of the articles you clicked. <a href="${B}/offers-terms/">Offers terms</a> · <a href="${B}/privacy/">Privacy policy</a></p>
+    <form class="nl-offers-form" novalidate>
+      <label class="check" for="nl-offers-agree"><input type="checkbox" id="nl-offers-agree" name="agree" value="yes"><span>Yes, also send me occasional offers from DRP BuildLab and selected partners, such as Tinrate, based on the articles I read. I can withdraw any time.</span></label>
+      <button class="btn dark" type="submit" id="nl-offers-btn" disabled>Save my choice ${arr}</button>
+    </form>
+  </div>
+  <div data-state="busy" hidden><p class="ok show" role="status">One moment, we are saving your choice.</p></div>
+  <div data-state="done" hidden><p class="ok show sent" role="status">Saved. Besides new articles, we may now also email you offers. Each offer email has a link to withdraw.</p></div>
+  <div data-state="expired" hidden><p class="ok show" role="status">This link has expired, and nothing was changed. Ask us for a new link at info@drpbuildlab.com.</p></div>
+  <div data-state="invalid" hidden><p class="ok show" role="status">This link is not valid, and nothing was changed. Use the link from the email we sent you.</p></div>
+  <div data-state="notsubscribed" hidden><p class="ok show" role="status">This email address is not subscribed to the blog (any more), so nothing was saved. Subscribe again on the blog if you want our articles.</p></div>
+  <div data-state="failed" hidden><p class="ok show" role="status">Something went wrong while saving your choice. Please try again in a moment.</p></div>
+  <p class="post-back"><a class="tlink" href="${B}/blog/">Back to the blog</a></p>
+</div></section>
+<div id="mail" hidden>
+  <span data-k="osubj">Would you also like offers from DRP BuildLab and our partners?</span>
+  <span data-k="ohead">Offers that match what you read</span>
+  <span data-k="obody">You receive new articles from the DRP BuildLab blog. We would also like to email you occasional offers from DRP BuildLab and selected partners, such as Tinrate, chosen by the articles you click in our emails. This is optional: you keep receiving every new article either way. To agree, open the page below and tick the box.</span>
+  <span data-k="obtn">Choose on our website</span>
+  <span data-k="ovalid">This link is valid for 30 days.</span>
+  <span data-k="oignore">Not interested? Then ignore this email. Nothing changes.</span>
+  <span data-k="ppartner">An offer from our partner</span>
+  <span data-k="pfoot">You receive this email because you agreed to receive offers from DRP BuildLab and selected partners. We chose it based on the articles you clicked in our emails.</span>
+  <span data-k="punsub">Stop offers or manage your emails</span>
+</div>`
+});
+
 pages['diensten'] = page({
   title: 'Services | DRP BuildLab', desc: 'Custom websites, webshops and Shopify, redesigns, maintenance plans and add-ons, with prices shown up front.', nav: 'services',
   body: `${phero({ h1: 'What we <em>build</em>', lede: 'Five services, each with its own page, what is included and a starting price. Every price is confirmed in a written quote.', acts: `<a class="btn" href="${B}/contact/">Request your free demo website ${arr}</a><a class="btn ghost" href="${B}/prijzen/">See all prices</a>` })}
 <section class="sec light"><div class="wrap">
-  <ul class="svc">${[...SERVICES, OTHER].map(svcRow).join('')}</ul>
+  <ul class="svc">${[...SERVICES, TINRATE, OTHER].map(svcRow).join('')}</ul>
 </div></section>
 <section class="sec fog"><div class="wrap">
   <div class="sec-head"><h2 class="h2">What we <em>don’t</em> do</h2><p class="sub">So you know in advance. If you need one of these, we are happy to point you to someone who does.</p></div>
@@ -604,7 +779,7 @@ ${c ? `<section class="sec"><div class="wrap"><div class="cases">${caseRow(c, fa
 </div></section>
 <section class="sec light" style="padding-top:0"><div class="wrap">
   <h2 class="h3" style="margin-bottom:24px">Other services</h2>
-  <ul class="svc">${[...others, OTHER].map(svcRow).join('')}</ul>
+  <ul class="svc">${[...others, TINRATE, OTHER].map(svcRow).join('')}</ul>
 </div></section>
 ${ctaBand()}`
   });
@@ -688,7 +863,7 @@ pages['prijzen'] = page({
   body: `${phero({ h1: 'Fair prices, <em>no surprises</em>', lede: 'A one-page website with contact form from €499. Everything else is priced on demand, in a quote made to measure. Maintenance is optional at €29 a month.', acts: `<a class="btn" href="${B}/contact/">Request your free demo website ${arr}</a>` })}
 <section class="sec fog"><div class="wrap">
   <div class="plans">
-    <div class="plan rv"><p class="for">For new and small businesses</p><h2>Starter package</h2><p class="amount">€499<small>one-off</small></p><p class="note">A one-page website with a contact form, made for your business. For businesses that have just started, or want their current site turned into a modern, professional one.</p>
+    <div class="plan rv"><p class="for">For new and small businesses</p><h2>Starter package</h2><p class="amount">€499<small>one-off</small></p><p class="deal-note" data-deal><b>Black Friday:</b> a free extra page, worth €79, until Monday 30 November.</p><p class="note">A one-page website with a contact form, made for your business. For businesses that have just started, or want their current site turned into a modern, professional one.</p>
       <ul><li>A website fully made for your business</li><li>Works on every phone and tablet</li><li>Contact form and WhatsApp button</li><li>Google Maps and basic SEO</li><li>Personal guidance from start to launch</li></ul>
       <a class="btn dark" href="${B}/contact/">Request a free quote ${arr}</a></div>
     <div class="plan dark rv"><p class="for">For bigger or more complex projects</p><h2>Made to measure</h2><p class="amount" style="font-size:clamp(48px,5vw,76px)">On demand</p><p class="note">Webshops, booking systems, multilingual sites, integrations or features nobody else has. We price it on the scope of your project.</p>
@@ -745,6 +920,7 @@ pages['contact'] = page({
   <input type="hidden" name="subject" value="Nieuwe offerteaanvraag — DRP BuildLab">
   <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
     <h3>Request your free demo website</h3>
+    ${dealNote}
     <div class="frow">
       <div class="fld"><label for="q-first">First name</label><input id="q-first" name="voornaam" autocomplete="given-name" required></div>
       <div class="fld"><label for="q-last">Last name</label><input id="q-last" name="achternaam" autocomplete="family-name"></div>
@@ -832,6 +1008,134 @@ pages['partner-worden'] = page({
 </div></section>`
 });
 
+/* Tinrate Concierge, sold by us as an official Tinrate reseller. The order
+   form is the quote form (offerte-aanvraag), so an order reaches the client
+   zone and the Resend email like any other request: the plan goes in
+   "dienst", plus two fields of its own, "website" and "facturatie" (only the
+   form email and Netlify keep those two). A plan card's button selects its
+   plan in the form (site.js, a[data-plan]). Product facts come from Tinrate's
+   reseller one-pager (Nov 2026): 14-day free trial, one tag on any website,
+   answers from the client's own documents, no Tinrate logo from Business up,
+   Tinrate bills the client, a yearly contract is 15 to 17% cheaper. */
+{
+  const PLANS = [
+    ['starter', 'Starter', 'To get started', `${TC} on your website, answering from your own documents and collecting leads.`],
+    ['business', 'Business', 'For most businesses', `Everything in ${N('Starter')}, without the Tinrate logo on your website.`],
+    ['scale', 'Scale', 'For larger organisations', `For larger organisations, with a plan sized to what you need.`]
+  ];
+  pages['tinrate'] = page({
+    title: 'Tinrate Concierge | Official reseller | DRP BuildLab', desc: 'Order Tinrate Concierge through DRP BuildLab, an official Tinrate reseller. An AI assistant that answers your visitors in seconds. We set it up on your website, and you try it free for 14 days.', nav: 'partner',
+    body: `<div class="tr-page">
+<section class="phero tr-hero"><div class="wrap tr-hero-in">
+  <div>
+    <p class="tr-badge">Official Tinrate reseller</p>
+    <h1 class="h1 md">Your website, <em>answering in seconds.</em></h1>
+    <p class="lede">${TTC} is an AI assistant on your website. It answers visitors day and night with your own documents, books appointments and turns conversations into leads. Order it through DRP BuildLab: we set it up on your website, and you try it free for 14 days.</p>
+    <div class="acts"><a class="btn" href="#order">Order ${TC} ${arr}</a><a class="btn ghost" href="#how">How it works</a></div>
+  </div>
+  <figure class="tr-visual"><img src="${B}/img/p-tinrate.webp" width="1000" height="1200" decoding="async" alt="Partnership visual: DRP BuildLab and Tinrate"></figure>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><h2 class="h2 rv">What ${TC} <em>does</em></h2><p class="sub rv">Visitors who don’t find an answer leave, and nobody knows they were there. ${TC} answers them while they are still on your website.</p></div>
+  <div class="rows">
+    <div class="row rv"><h3>Answers in seconds</h3><p>Day and night, also at the weekend. No form that waits until the next working day.</p></div>
+    <div class="row rv"><h3>Knows your business</h3><p>Unlike a general chatbot, it answers with the documents and information you give it.</p></div>
+    <div class="row rv"><h3>Turns questions into leads</h3><p>It collects contact details and books appointments, so a question at 11 at night is a lead in the morning.</p></div>
+    <div class="row rv"><h3>Shows what visitors ask</h3><p>You see every conversation, every lead and what visitors ask most, so you know what your website brings in.</p></div>
+  </div>
+  <div class="tr-stat rv"><b translate="no">21×</b><p>more likely to qualify a lead when you answer within 5 minutes instead of 30. A form waits until the next working day.<small>Source: Lead Response Management Study, MIT and InsideSales.com.</small></p></div>
+</div></section>
+
+<section class="sec light"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">Why order <em>through us</em></h2><p class="sub">The same ${TTC}, with a team that sets it up for you and stays when you need a change.</p></div>
+  <ul class="incl">
+    <li>We are an official Tinrate reseller</li>
+    <li>We set up ${TC} on your website for you</li>
+    <li>It works on any website, also one we did not build</li>
+    <li>We help you choose the documents it answers from</li>
+    <li>One point of contact when you want to change something</li>
+    <li>You try it free for 14 days on your own website</li>
+  </ul>
+</div></section>
+
+<section class="sec light" id="how" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">How ordering <em>works</em></h2><p class="sub">From the form to a working assistant on your website.</p></div>
+  <ol class="steps" style="margin:0">
+    <li><b>You send the order form</b><span>Choose a plan, or let us help you choose. It takes about a minute.</span></li>
+    <li><b>We contact you within 24 hours</b><span>We look at your website and the documents ${TC} will answer from.</span></li>
+    <li><b>We set it up on your website</b><span>One tag, no rebuild: your website stays as it is.</span></li>
+    <li><b>You try it free for 14 days</b><span>After the trial, Tinrate bills your plan directly, monthly or yearly.</span></li>
+  </ol>
+</div></section>
+
+<section class="sec fog"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">Three <em>plans</em></h2><p class="sub">Not sure which plan fits? Choose “Help me choose” in the form and we advise you. We confirm the price before you start.</p></div>
+  <div class="plans tr-plans">
+    ${PLANS.map(([k, n, f, d]) => `<div class="plan${k === 'business' ? ' dark' : ''} rv"><p class="for">${f}</p><h2 translate="no">${n}</h2><p class="note">${d}</p><a class="btn${k === 'business' ? '' : ' dark'}" href="#order" data-plan="t-plan-${k}">Order the <span translate="no">${n}</span> plan ${arr}</a></div>`).join('')}
+  </div>
+  <div class="care tr-year rv"><div><h2>Pay yearly, pay less</h2><p>A yearly contract costs 15 to 17% less than paying for twelve separate months. Tinrate sends the invoice; we stay your point of contact.</p></div><a class="btn dark" href="#order" data-bill="t-bill-year">Order with yearly billing ${arr}</a></div>
+</div></section>
+
+<section class="sec blue cta tr-order" id="order"><div class="wrap cta-grid">
+  <div>
+    <h2 class="h2">Order <em>${TC}</em></h2>
+    <ol class="steps">
+      <li><b>Fill in the form</b><span>It takes about a minute. Nothing is charged yet.</span></li>
+      <li><b>We contact you within 24 hours</b><span>To go through your website and your documents.</span></li>
+      <li><b>Try it free for 14 days</b><span>On your own website, set up by us.</span></li>
+    </ol>
+    <p class="alt" translate="no"><span>info@drpbuildlab.com</span><span>WhatsApp +32 473 74 44 31</span></p>
+  </div>
+  <form class="form" id="tinrate-order" name="offerte-aanvraag" method="POST" novalidate data-event="demo_request" data-sent="tsent">
+    <input type="hidden" name="form-name" value="offerte-aanvraag">
+    <input type="hidden" name="subject" value="Nieuwe bestelling Tinrate Concierge — DRP BuildLab">
+    <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <h3>Order ${TTC}</h3>
+    <div class="frow">
+      <div class="fld"><label for="t-name">Your name</label><input id="t-name" name="voornaam" autocomplete="name" required></div>
+      <div class="fld"><label for="t-tel">Phone</label><input id="t-tel" name="telefoon" type="tel" autocomplete="tel" required></div>
+    </div>
+    <div class="fld"><label for="t-email">Email</label><input id="t-email" name="email" type="email" autocomplete="email" required></div>
+    <div class="frow">
+      <div class="fld"><label for="t-company">Company name</label><input id="t-company" name="bedrijf" autocomplete="organization" required></div>
+      <div class="fld"><label for="t-site">Your website address</label><input id="t-site" name="website" inputmode="url" autocomplete="url" spellcheck="false" maxlength="200" required></div>
+    </div>
+    <fieldset class="chips"><legend>Which plan would you like?</legend>
+      <input type="radio" name="dienst" id="t-plan-starter" value="Tinrate Concierge — Starter" data-slug="tinrate-starter"><label for="t-plan-starter" translate="no">Starter</label>
+      <input type="radio" name="dienst" id="t-plan-business" value="Tinrate Concierge — Business" data-slug="tinrate-business"><label for="t-plan-business" translate="no">Business</label>
+      <input type="radio" name="dienst" id="t-plan-scale" value="Tinrate Concierge — Scale" data-slug="tinrate-scale"><label for="t-plan-scale" translate="no">Scale</label>
+      <input type="radio" name="dienst" id="t-plan-help" value="Tinrate Concierge — advies over het plan" data-slug="tinrate-undecided" checked><label for="t-plan-help">Help me choose</label>
+    </fieldset>
+    <fieldset class="chips"><legend>How would you like to pay Tinrate?</legend>
+      <input type="radio" name="facturatie" id="t-bill-year" value="Jaarlijks" checked><label for="t-bill-year">Yearly, 15 to 17% cheaper</label>
+      <input type="radio" name="facturatie" id="t-bill-month" value="Maandelijks"><label for="t-bill-month">Every month</label>
+    </fieldset>
+    <input type="hidden" name="ref" value="">
+    <div class="fld"><label for="t-msg">Anything we should know? <small>(optional)</small></label><textarea id="t-msg" name="bericht"></textarea></div>
+    <label class="check" for="t-consent"><input type="checkbox" id="t-consent" name="toestemming" value="ja" required><span>I agree that DRP BuildLab uses the details in this form to contact me about this request. <a href="${B}/privacy/">Privacy policy</a></span></label>
+    <p class="fnote">${TC} is a Tinrate service: your subscription is with Tinrate, under Tinrate’s own terms. You try it free for 14 days first.</p>
+    <button class="btn dark" type="submit">Send my order ${arr}</button>
+    <p class="ok" role="status" aria-live="polite"></p>
+    <small>We reply within 24 hours.</small>
+  </form>
+</div></section>
+
+<section class="sec light"><div class="wrap">
+  <div class="sec-head"><h2 class="h2">Questions about <em>${TC}</em></h2><p class="sub">Something else? Write to info@drpbuildlab.com or send us a WhatsApp message.</p></div>
+  ${faqBlock([
+    ['Why order through DRP BuildLab and not directly from Tinrate?', `You get the same ${TTC}, plus a team that sets it up on your website, helps you choose what it answers from and is there when you want to change something. We are an official Tinrate reseller.`],
+    ['Does it work on a website you did not build?', `Yes. ${TC} is one tag that works on any website, without a rebuild. We look at your website first and set it up for you.`],
+    ['Can I try it before I pay?', `Yes. You try ${TC} free for 14 days, on your own website.`],
+    ['Who sends the invoice?', 'Tinrate bills your plan directly, monthly or yearly. A yearly contract costs 15 to 17% less than paying for twelve separate months.'],
+    ['Which plan do I need?', `${N('Starter')} gets you going. From ${N('Business')} up, the Tinrate logo no longer shows on your website. ${N('Scale')} is for larger organisations. Not sure? Choose “Help me choose” in the form and we advise you.`],
+    ['Can you also improve my website itself?', 'Yes, that is our main work. If your website needs an update before the assistant goes on it, we can do that too, in a separate quote.']
+  ])}
+</div></section>
+</div>`
+  });
+}
+
 /* legal pages: the English half of the live pages, as they are today */
 function legal(slug, title) {
   const html = fs.readFileSync(path.join(ROOT, 'src', slug, 'index.html'), 'utf8');
@@ -839,7 +1143,7 @@ function legal(slug, title) {
   const nl = html.match(/<article class="legal-body" lang="nl">([\s\S]*?)<\/article>/);
   if (!en || !nl) throw new Error('No legal text in src/' + slug);
   const ver = (html.match(/Versie \/ Version: ([^<·]+)/) || [])[1];
-  const fix = t => t.replace(/<h2 class="legal-lang">[\s\S]*?<\/h2>/, '').replace(/href="\/(privacy|algemene-voorwaarden|contact)"/g, `href="${B}/$1/"`);
+  const fix = t => t.replace(/<h2 class="legal-lang">[\s\S]*?<\/h2>/, '').replace(/href="\/(privacy|algemene-voorwaarden|offers-terms|contact)"/g, `href="${B}/$1/"`);
   return page({
     title: `${title} | DRP BuildLab`, desc: `${title} of DRP BuildLab.`, nav: '',
     body: `${phero({ h1: title, lede: ver ? `Version: <span translate="no">${ver.trim()}</span>. The Dutch text is the binding version.` : 'The Dutch text is the binding version.' })}
@@ -848,6 +1152,55 @@ function legal(slug, title) {
 }
 pages['algemene-voorwaarden'] = legal('algemene-voorwaarden', 'Terms and conditions');
 pages['privacy'] = legal('privacy', 'Privacy policy');
+
+/* Terms of the offers emails (Phase 2 of the blog newsletter). English only,
+   in every market: unlike the general terms and the privacy policy there is
+   no Dutch text. OFFERS_TERMS_VERSION is the value MARKETING_CONSENT_VERSION
+   gets on the site and in the CMS once these terms and the consent texts are
+   approved; a change to what people agree to needs a new version (and new
+   consent), see section 9.
+   LEGAL DRAFT: awaiting lawyer approval. Not to be merged before that. */
+const OFFERS_TERMS_VERSION = '2026-11-v1';
+const OFFERS_TERMS_DATE = '10 November 2026';
+pages['offers-terms'] = page({
+  title: 'Offers terms | DRP BuildLab', desc: 'The terms of the optional offers emails from DRP BuildLab and selected partners, for subscribers to the DRP BuildLab blog.', nav: '',
+  body: `${phero({ h1: 'Offers terms', lede: `Version <span translate="no">${OFFERS_TERMS_VERSION}</span>, <span translate="no">${OFFERS_TERMS_DATE}</span>. These terms exist in English only.` })}
+<section class="sec light"><div class="wrap"><article class="legal" lang="en" translate="no">
+<h2>1. Who we are</h2>
+<p>These terms apply to the offers emails of De Smedt Meridian CommV, trading as DRP BuildLab, Honingstraat 1D, 2220 Hallaar, Belgium, company number 1033.313.383 (VAT BE 1033.313.383), <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a> ("DRP BuildLab", "we").</p>
+<h2>2. What the offers are</h2>
+<p>Subscribers to the DRP BuildLab blog newsletter can also choose to receive occasional offers by email from DRP BuildLab and from partners we select, such as Tinrate. Taking part is free and optional.</p>
+<p>The offers are separate from the newsletter. You receive every new article whether or not you take part, and you can stop the offers without stopping the newsletter.</p>
+<h2>3. How you join</h2>
+<p>You join only by ticking the offers box yourself: when you subscribe to the newsletter, or on the page we link to in an email asking whether you would like offers. The box is never ticked in advance, and the newsletter never depends on it. An invitation link is valid for 30 days.</p>
+<p>When you join, we record which version of these terms and of the consent text you agreed to, when, and how (when subscribing or through our email), so that we can show what you agreed to.</p>
+<h2>4. What you receive</h2>
+<ul>
+<li>Offers from DRP BuildLab and from partners we select. Every offer email makes clear that it is an offer and who makes it.</li>
+<li>Always sent by us, from our own address. We do not sell, rent or give your email address to partners. A partner only learns who you are if you contact it or use its offer.</li>
+<li>Occasionally, when we have an offer we think is relevant to you. There is no fixed schedule.</li>
+<li>In the language you subscribed in, when the offer exists in that language.</li>
+</ul>
+<h2>5. How we choose offers for you</h2>
+<p>To choose offers that suit you, we look at which blog articles you click in our emails, and at the topics of those articles. We do this only for subscribers who joined the offers. It decides which offers we send you and nothing else: it has no effect on prices, on your rights, or on anything outside these emails. Our <a href="${B}/privacy/">privacy policy</a> explains how we handle this data.</p>
+<h2>6. Offers from partners</h2>
+<p>When you take up a partner's offer, your agreement is with that partner, under its own terms and privacy policy. We are not a party to it and are not responsible for the partner's products, services, delivery or support; questions about them go to the partner. A partner may pay us for including its offer.</p>
+<h2>7. The conditions of an offer</h2>
+<p>Each offer states its own conditions, such as the price or discount, how long it is valid and how to use it. Those conditions apply to that offer. An obvious mistake in an offer, such as a clearly wrong price, binds neither us nor the partner.</p>
+<h2>8. Stopping</h2>
+<p>You can stop the offers at any time, free of charge, through the link at the bottom of every offer email or by emailing <a href="mailto:info@drpbuildlab.com">info@drpbuildlab.com</a>. You keep receiving the newsletter. When you stop, we delete our record of the articles you clicked.</p>
+<p>If you unsubscribe from the newsletter altogether, the offers stop too. Subscribing again later does not restart them unless you join the offers again.</p>
+<p>We may end the offers, for everyone or for one subscriber, at any time, for example when emails to an address keep failing.</p>
+<h2>9. Changes</h2>
+<p>If we change these terms in a way that affects what you agreed to, for example a new use of your data, we ask for your consent again before the change applies to you. Other changes, such as corrections, take effect when we publish the new version on this page.</p>
+<h2>10. Liability</h2>
+<p>We choose our partners and offers with care, but we are not liable for loss caused by a partner's products or services, or for indirect loss. These limits do not apply in case of intent or gross negligence, or where the law forbids them, in particular towards consumers.</p>
+<h2>11. Law and disputes</h2>
+<p>Belgian law governs these terms. Disputes go to the courts of the judicial district of Antwerp, without prejudice to a consumer's right to choose the court of their domicile. Consumers may also contact the Consumer Ombudsman Service (consumentenombudsdienst.be).</p>
+<h2>12. Other documents</h2>
+<p>Our <a href="${B}/privacy/">privacy policy</a> describes how we process personal data. Our <a href="${B}/algemene-voorwaarden/">general terms</a> apply to orders placed with DRP BuildLab, not to these emails.</p>
+</article></div></section>`
+});
 
 const notFound = page({
   title: 'Page not found | DRP BuildLab', desc: 'This page does not exist.', nav: '',

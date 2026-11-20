@@ -1,0 +1,211 @@
+#!/usr/bin/env node
+/* Emails newly published blog articles to newsletter subscribers.
+   Run by .github/workflows/blog.yml after the site is rebuilt.
+
+     node tools/concept/newsletter.js --before=<sha> --after=<sha> [--mode=production|preview] [--dry-run]
+     node tools/concept/newsletter.js --slug=<slug>[,<slug>] ...     (by hand, e.g. a workflow_dispatch)
+
+   "Newly published" means: published now (not a draft), and absent or a draft
+   at <before>. An edit to a published article never sends again.
+
+   production  one Resend Broadcast per article and language, to the
+               "Blog newsletter" segment limited to that language's topic
+               ("Blog newsletter (nl)"), once the article answers on
+               drpbuildlab.com. It is created unsent and read back first: if
+               Resend did not keep the topic, it would reach every language,
+               so it is deleted instead of sent. A broadcast is named
+               blog:<slug>:<lang> (shortened when over Resend's 70
+               characters, see broadcastName), and a sent name is skipped, so running
+               this twice never emails anyone twice.
+   preview     (staging) nothing goes to subscribers; ADMIN_EMAIL gets the
+               English email, marked as a preview.
+
+   Each email is built from the localized pages in concept/: the title and
+   intro of /<market>/blog/<slug>/, and the texts of /<market>/blog/subscribe/.
+
+   Needs RESEND_API_KEY and MAIL_FROM (and ADMIN_EMAIL for a preview). */
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+const { execFileSync } = require('child_process');
+const { pathToFileURL } = require('url');
+const YAML = require('yaml');
+
+const ROOT = path.join(__dirname, '..', '..');
+const SITE = path.join(ROOT, 'concept');
+const ORIGIN = 'https://drpbuildlab.com';
+const argv = process.argv.slice(2);
+const arg = k => (argv.find(a => a.startsWith(`--${k}=`)) || '').split('=').slice(1).join('=');
+const DRY = argv.includes('--dry-run');
+const MODE = arg('mode') || 'preview';
+const WAIT_MS = 15 * 60 * 1000;
+
+const git = (...a) => execFileSync('git', a, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+
+/* the slugs this push published */
+function newlyPublished(published) {
+  const manual = arg('slug');
+  if (manual) return manual.split(',').map(s => s.trim()).filter(Boolean);
+  const before = arg('before'), after = arg('after') || 'HEAD';
+  if (!/^[0-9a-f]{7,40}$/.test(before) || /^0+$/.test(before)) { console.log('newsletter: no previous commit to compare with; nothing to send.'); return []; }
+  try { git('cat-file', '-e', before + '^{commit}'); }
+  catch { try { git('fetch', '--depth=1', 'origin', before); } catch (e) { throw new Error(`cannot read commit ${before}: ${e.message}`); } }
+  const files = git('diff', '--name-only', before, after, '--', 'content/blog/')
+    .split('\n').map(f => f.trim()).filter(f => /^content\/blog\/[a-z0-9-]+\.md$/.test(f));
+  const out = [];
+  for (const f of files) {
+    const slug = path.basename(f, '.md');
+    if (!published.has(slug)) continue;
+    let was = null;
+    try { was = git('show', `${before}:${f}`); } catch { /* the file did not exist yet */ }
+    const fm = was && /^---\r?\n([\s\S]*?)\r?\n---/.exec(was);
+    const wasDraft = fm ? (YAML.parse(fm[1]) || {}).draft === true : false;
+    if (!was || wasDraft) out.push(slug);
+  }
+  return out;
+}
+
+/* Resend refuses a broadcast name over 70 characters, and a slug can run to 80.
+   A slug too long for blog:<slug>:<lang> is cut, and a hash of the whole slug
+   keeps it unique: blog:<start of slug>~<8 hex>:<lang>. Names that fit are
+   unchanged, so what was sent before is still recognised and skipped.
+   drp_cms reads these names back (src/lib/insights/newsletter.ts,
+   broadcastSlugKey); change both together. */
+const NAME_MAX = 70;
+function broadcastName(slug, lang) {
+  const name = `blog:${slug}:${lang}`;
+  if (name.length <= NAME_MAX) return name;
+  let h = 0x811c9dc5; // FNV-1a, 32 bits
+  for (let i = 0; i < slug.length; i++) h = Math.imul(h ^ slug.charCodeAt(i), 0x01000193) >>> 0;
+  const tag = '~' + h.toString(16).padStart(8, '0');
+  const start = slug.slice(0, NAME_MAX - `blog:${tag}:${lang}`.length).replace(/-+$/, '');
+  return `blog:${start}${tag}:${lang}`;
+}
+
+const read = p => fs.readFileSync(path.join(SITE, p), 'utf8');
+const text = s => String(s || '').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+
+async function main() {
+  const nl = await import(pathToFileURL(path.join(ROOT, 'netlify', 'shared', 'newsletter.mjs')).href);
+  const posts = require('./blog').loadPosts();
+  const bySlug = new Map(posts.map(p => [p.slug, p]));
+  const slugs = newlyPublished(new Set(bySlug.keys()));
+  if (!slugs.length) { console.log('newsletter: no newly published articles.'); return; }
+
+  /* build every email first: a missing page or string stops before anything is sent */
+  const mails = [];
+  for (const slug of slugs) {
+    const post = bySlug.get(slug);
+    if (!post) throw new Error(`newsletter: "${slug}" is not a published article`);
+    for (const lang of post.langs) {
+      const prefix = nl.prefixOf(nl.LANG_HOME[lang]);
+      const page = read(`${prefix}/blog/${slug}/index.html`);
+      const title = text((page.match(/<h1 class="ah1"[^>]*>([\s\S]*?)<\/h1>/) || [])[1]);
+      const excerpt = text((page.match(/<p class="asub"[^>]*>([\s\S]*?)<\/p>/) || [])[1]);
+      if (!title) throw new Error(`newsletter: no title in concept/${prefix}/blog/${slug}/`);
+      const s = nl.mailStrings(read(`${prefix}/blog/subscribe/index.html`));
+      const url = `${ORIGIN}/${prefix}/blog/${slug}/`;
+      const input = { s, lang, title, excerpt, url, image: post.cover ? ORIGIN + post.cover.src : null };
+      mails.push({ slug, lang, url, input, name: broadcastName(slug, lang), ...nl.articleEmail(input) });
+    }
+  }
+  console.log(`newsletter: ${mails.length} email(s): ${mails.map(m => m.name).join(', ')}`);
+  if (DRY) {
+    const out = arg('out') || path.join(os.tmpdir(), 'drp-newsletter-preview');
+    fs.mkdirSync(out, { recursive: true });
+    for (const m of mails) fs.writeFileSync(path.join(out, `${m.slug}.${m.lang}.html`), m.html);
+    console.log(`newsletter: dry run, nothing sent; the emails are in ${out}`);
+    return;
+  }
+
+  const apiKey = process.env.RESEND_API_KEY, from = process.env.MAIL_FROM;
+  if (!apiKey || !from) throw new Error('newsletter: RESEND_API_KEY or MAIL_FROM is not set');
+
+  if (MODE !== 'production') {
+    const to = String(process.env.ADMIN_EMAIL || '').split(',').map(a => a.trim()).filter(Boolean);
+    if (!to.length) throw new Error('newsletter: ADMIN_EMAIL is not set; no preview sent');
+    for (const slug of slugs) {
+      const m = mails.find(x => x.slug === slug && x.lang === 'en');
+      const langs = mails.filter(x => x.slug === slug).map(x => x.lang).join(', ');
+      const banner = `Preview from staging. Nothing was sent to subscribers. On drpbuildlab.com this article goes to the subscribers in: ${langs}. The links work once the article is live there.`;
+      const p = nl.articleEmail({ ...m.input, banner });
+      const r = await nl.resend(apiKey, 'POST', '/emails', {
+        from, to, subject: `[Preview] ${p.subject}`,
+        html: p.html.split(nl.UNSUBSCRIBE).join('#'),
+        text: p.text.split(nl.UNSUBSCRIBE).join('(unsubscribe link)'),
+      }, { 'idempotency-key': `nl-preview-${m.name}-${arg('after') || 'manual'}`.slice(0, 256) });
+      if (!r.ok && r.status !== 409) throw new Error(`newsletter: preview failed, Resend ${r.status}: ${JSON.stringify(r.data).slice(0, 300)}`);
+      console.log(`newsletter: preview of ${slug} sent to ${to.join(', ')}`);
+    }
+    return;
+  }
+
+  /* production */
+  const segment = await nl.blogSegment(apiKey);
+  const topics = await nl.blogTopics(apiKey);
+  const topicOf = lang => topics.find(t => t.lang === lang);
+  /* sent ones are skipped; an unsent one with the same name is a run that
+     stopped between creating and sending, and is replaced */
+  const sent = new Set(), drafts = new Map();
+  for (const b of await nl.listAll(apiKey, '/broadcasts')) {
+    if (!b.name) continue;
+    if (b.status === 'draft') drafts.set(b.name, b.id);
+    else sent.add(b.name);
+  }
+
+  const live = new Map();
+  const isLive = async url => {
+    if (live.has(url)) return live.get(url);
+    const until = Date.now() + WAIT_MS;
+    let ok = false;
+    for (;;) {
+      const res = await fetch(url, { redirect: 'manual' }).catch(() => null);
+      if (res && res.status === 200) { ok = true; break; }
+      if (Date.now() > until) break;
+      console.log(`newsletter: waiting for ${url} to go live (${res ? res.status : 'no answer'})`);
+      await new Promise(r => setTimeout(r, 20000));
+    }
+    live.set(url, ok);
+    return ok;
+  };
+
+  const failed = [];
+  for (const m of mails) {
+    if (sent.has(m.name)) { console.log(`newsletter: ${m.name} was already sent; skipped`); continue; }
+    const topic = topicOf(m.lang);
+    if (!segment || !topic) { console.log(`newsletter: no subscribers in ${m.lang} yet; ${m.name} skipped`); continue; }
+    if (!(await isLive(m.url))) { failed.push(`${m.name}: ${m.url} is not live after 15 minutes`); continue; }
+    try {
+      const id = await sendToTopic(nl, apiKey, { segment, topic: topic.id, draft: drafts.get(m.name), from, m });
+      if (!id) { console.log(`newsletter: no subscribers in ${m.lang} yet; ${m.name} skipped`); continue; }
+      console.log(`newsletter: ${m.name} sent to "${nl.BLOG_SEGMENT}", topic "${topic.name}" (broadcast ${id})`);
+    } catch (e) { failed.push(`${m.name}: ${e.message}`); }
+  }
+  if (failed.length) throw new Error('newsletter: not sent:\n  ' + failed.join('\n  ') + '\nRun the Blog workflow again (or this script with --slug) once fixed; what was sent is skipped.');
+}
+
+/* Creates the broadcast unsent, checks Resend kept segment and topic, sends.
+   A language topic can exist with nobody opted in (everyone left, or it was
+   made ahead of its first subscriber); Resend refuses to send to it, so the
+   broadcast is deleted and null returned: nothing to send, not a failure. */
+async function sendToTopic(nl, apiKey, { segment, topic, draft, from, m }) {
+  if (draft) await nl.resend(apiKey, 'DELETE', `/broadcasts/${draft}`);
+  const c = await nl.resend(apiKey, 'POST', '/broadcasts', { segment_id: segment, topic_id: topic, from, subject: m.subject, html: m.html, text: m.text, name: m.name });
+  if (!c.ok || !c.data?.id) throw new Error(`Resend ${c.status} ${JSON.stringify(c.data).slice(0, 200)}`);
+  const id = c.data.id;
+  const back = await nl.resend(apiKey, 'GET', `/broadcasts/${id}`);
+  if (!back.ok || back.data?.topic_id !== topic || back.data?.segment_id !== segment) {
+    await nl.resend(apiKey, 'DELETE', `/broadcasts/${id}`);
+    throw new Error(`Resend did not keep the language topic on the broadcast (${back.status}); deleted, nothing sent`);
+  }
+  const s = await nl.resend(apiKey, 'POST', `/broadcasts/${id}/send`, {});
+  if (s.status === 422 && /has no contacts/i.test(String(s.data?.message))) {
+    await nl.resend(apiKey, 'DELETE', `/broadcasts/${id}`);
+    return null;
+  }
+  if (!s.ok) throw new Error(`send ${s.status} ${JSON.stringify(s.data).slice(0, 200)}`);
+  return id;
+}
+
+main().catch(e => { console.error(e.message || e); process.exit(1); });

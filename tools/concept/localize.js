@@ -87,7 +87,7 @@ const saveCache = (l, c) => { fs.mkdirSync(I18N, { recursive: true }); fs.writeF
 /* ── in-page work (runs inside Chromium) ─────────────────────────────── */
 function pageExtract() {
   /* prices that convert per market */
-  const PUBLIC = new Set(['499', '29']);
+  const PUBLIC = new Set(['499', '29', '79']); // 79: the Black Friday extra page, until 30 Nov 2026
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   const hits = [];
   while (walker.nextNode()) { const n = walker.currentNode; if (/€\s?\d/.test(n.nodeValue) && !n.parentElement.closest('script,style,.money,option,select,textarea,title')) hits.push(n); }
@@ -170,7 +170,7 @@ function orgJsonLd(m) {
     logo: ORIGIN + '/assets/icons/icon-512.png', image: ORIGIN + '/assets/img/og-image.png', telephone: '+32473744431', email: 'info@drpbuildlab.com', vatID: 'BE1033313383',
     address: { '@type': 'PostalAddress', streetAddress: 'Honingstraat 1D', addressLocality: 'Hallaar', postalCode: '2220', addressRegion: 'Antwerpen', addressCountry: 'BE' },
     areaServed: 'Worldwide', knowsLanguage: Object.keys(LANG_NAME),
-    sameAs: ['https://www.instagram.com/drp_buildlab/', 'https://www.facebook.com/share/1Hz1mJG22E/', 'https://www.tiktok.com/@drpbuildlab'],
+    sameAs: ['https://www.instagram.com/drp_buildlab/', 'https://www.facebook.com/share/1Hz1mJG22E/', 'https://www.tiktok.com/@drpbuildlab', 'https://www.linkedin.com/company/drpbuildlab/'],
     makesOffer: [
       { '@type': 'Offer', name: 'One-page website with contact form', price: '499', priceCurrency: 'EUR' },
       { '@type': 'Offer', name: 'Website care plan', priceSpecification: { '@type': 'UnitPriceSpecification', price: '29', priceCurrency: 'EUR', unitCode: 'MON' } }
@@ -378,7 +378,10 @@ ${items.join('\n')}
   /* 4. sitemap, with every market version of each page as an alternate */
   const today = new Date().toISOString().slice(0, 10);
   const sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'];
+  /* a page marked noindex (the newsletter confirmation) stays out of the sitemap */
+  const noindex = new Set(pages.filter(p => /<meta name="robots" content="noindex/.test(fs.readFileSync(path.join(BASE, p, 'index.html'), 'utf8'))));
   for (const { m, p } of urls) {
+    if (noindex.has(p)) continue;
     const fb = has(p, 'en') ? MK.find(x => x.key === FALLBACK) : mkFor(p)[0];
     sm.push(`<url><loc>${url(m, p)}</loc><lastmod>${today}</lastmod>${mkFor(p).map(x => `<xhtml:link rel="alternate" hreflang="${x.hreflang}" href="${url(x, p)}"/>`).join('')}<xhtml:link rel="alternate" hreflang="x-default" href="${url(fb, p)}"/></url>`);
   }

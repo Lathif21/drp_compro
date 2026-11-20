@@ -86,6 +86,14 @@ if (cur && matchMedia('(hover:hover)').matches && !reduce) {
 /* strings the scripts show, translated with the page (#ui in every page) */
 const ui = k => ($(`#ui [data-k="${k}"]`) || {}).textContent || '';
 
+/* Black Friday 2026 (DEAL_END in tools/concept/build.js): the deal bar,
+   section and notes go once the deal has ended. While it runs, every quote
+   request says so in its message, for the team and the client zone. */
+const dealEnd = Date.parse(($('[data-deal-end]') || { dataset: {} }).dataset.dealEnd);
+const dealOn = dealEnd > Date.now();
+if (!dealOn) $$('[data-deal]').forEach(el => el.remove());
+const DEAL_TAG = 'Black Friday-actie: gratis extra pagina bij het startpakket + 10% korting op extra diensten';
+
 /* quote form: company fields only for a business, and disabled otherwise so
    a company typed before switching to "private" is not submitted */
 (() => {
@@ -114,7 +122,7 @@ function track(f) {
     ev = { event: 'partner_request', partner_channel: PARTNER_CHANNEL[ch ? ch.selectedIndex : -1] || 'unknown', partner_reach: reach && reach.selectedIndex > 0 ? reach.selectedIndex : 0, ...base };
   } else {
     const sel = $('select[name="dienst"]', f), chip = $('input[name="dienst"]:checked', f);
-    ev = { event: 'demo_request', demo_service: sel ? (DEMO_SERVICE[sel.selectedIndex] || 'unknown') : (chip ? chip.dataset.slug : 'unknown'), demo_form: f.id, ...base };
+    ev = { event: 'demo_request', demo_service: sel ? (DEMO_SERVICE[sel.selectedIndex] || 'unknown') : (chip ? chip.dataset.slug : 'unknown'), demo_form: f.id, demo_offer: dealOn && f.dataset.sent === 'sent' ? 'black_friday' : '', ...base };
   }
   window.dataLayer = window.dataLayer || []; window.dataLayer.push(ev);
 }
@@ -128,16 +136,18 @@ $$('form[data-event]').forEach(f => f.addEventListener('submit', e => {
     msg.classList.add('show'); bad.focus(); return;
   }
   btn.disabled = true; msg.classList.remove('show');
-  /* The same body also goes to /api/form, which emails it through Resend:
-     Netlify's spam filter files real enquiries under Spam without a word, so
-     its notification can't be the only one. Either one arriving counts as
-     sent. The id stays with this filled-in form, so a retry is not emailed twice. */
-  const body = new URLSearchParams(new FormData(f));
+  /* The same body also goes to /api/form, which emails it through Resend
+     and hands it to the client zone itself: Netlify's spam filter files real
+     enquiries under Spam without a word, and never forwards those. Either
+     one arriving counts as sent. Both get the same submission-id, kept with
+     this filled-in form: a retry is not emailed twice, and the client zone
+     makes one lead of the two deliveries. */
   f.dataset.sid = f.dataset.sid || (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2));
+  const body = new URLSearchParams(new FormData(f)); body.set('submission-id', f.dataset.sid);
+  if (dealOn && f.dataset.event === 'demo_request' && f.dataset.sent === 'sent') body.set('bericht', [DEAL_TAG, body.get('bericht')].filter(Boolean).join('\n\n'));
   const post = (url, b) => fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: b.toString() })
     .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); });
-  const mail = new URLSearchParams(body); mail.set('submission-id', f.dataset.sid);
-  Promise.any([post(location.pathname, body), post('/api/form', mail)])
+  Promise.any([post(location.pathname, body), post('/api/form', body)])
     .then(() => {
       track(f);
       const done = document.createElement('p'); done.className = 'ok show sent'; done.setAttribute('role', 'status'); done.textContent = ui(f.dataset.sent || 'sent');
@@ -145,6 +155,131 @@ $$('form[data-event]').forEach(f => f.addEventListener('submit', e => {
     })
     .catch(() => { btn.disabled = false; msg.textContent = ui('failed'); msg.classList.add('show'); });
 }));
+
+/* Tinrate page: a plan card's button (or the yearly band) jumps to the order
+   form with that plan, or yearly billing, already selected. */
+$$('a[data-plan],a[data-bill]').forEach(a => a.addEventListener('click', () => {
+  const r = document.getElementById(a.dataset.plan || a.dataset.bill);
+  if (r) r.checked = true;
+}));
+
+/* blog newsletter: the sign-up only asks /api/subscribe to email a
+   confirmation link. The market goes along; the server reads that market's
+   language itself, so the emails arrive in the language the visitor reads. */
+$$('form[data-newsletter]').forEach(f => f.addEventListener('submit', e => {
+  e.preventDefault();
+  const msg = $('.ok', f), btn = $('button[type="submit"]', f), input = $('input[type="email"]', f);
+  msg.classList.remove('show');
+  if (!input.value.trim() || !input.checkValidity()) { msg.textContent = ui('email'); msg.classList.add('show'); input.focus(); return; }
+  btn.disabled = true;
+  const body = new URLSearchParams(new FormData(f));
+  body.set('market', window.__DRP_MARKET__ || '');
+  fetch('/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() })
+    .then(res => { if (!res.ok) throw new Error('HTTP ' + res.status); })
+    .then(() => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'newsletter_signup', demo_market: window.__DRP_MARKET__ || '', demo_language: document.documentElement.lang || '' });
+      $$('.nl-row, .nl-note, .nl-offers', f).forEach(el => { el.hidden = true; });
+      msg.textContent = ui('nlsent'); msg.classList.add('show', 'sent');
+    })
+    .catch(() => { btn.disabled = false; msg.textContent = ui('nlfail'); msg.classList.add('show'); });
+}));
+
+/* newsletter confirmation page: the token is in the fragment (#t=…) and is
+   taken out of the address bar straight away. The button in the email is the
+   confirmation, so the page confirms by itself and shows the thank-you.
+   It waits until the page is on screen, so a tab opened in the background or
+   prerendered does not confirm unseen. The token is kept for this tab, so a
+   reload confirms again (harmless) instead of calling the link invalid. */
+(() => {
+  const box = $('#nl-confirm');
+  if (!box) return;
+  let token = (new URLSearchParams(location.hash.slice(1))).get('t') || '';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  try {
+    if (token) sessionStorage.setItem('nl-t', token);
+    else token = sessionStorage.getItem('nl-t') || '';
+  } catch (e) { /* storage blocked: a reload then shows "invalid" */ }
+  const forget = () => { try { sessionStorage.removeItem('nl-t'); } catch (e) { /* blocked */ } };
+  const h1 = $('.phero h1'), errH1 = $('[data-h1="error"]', box), thanks = h1 && h1.innerHTML;
+  /* a failed attempt shows the button, so the visitor can try again */
+  const show = s => {
+    $$('[data-state]', box).forEach(el => { el.hidden = !(el.dataset.state === s || (s === 'failed' && el.dataset.state === 'ask')); });
+    if (h1 && errH1) h1.innerHTML = s === 'busy' || s === 'done' ? thanks : errH1.innerHTML;
+    const status = $(`[data-state="${s}"] .ok`, box);
+    if (status) { status.tabIndex = -1; status.focus(); }
+  };
+  if (!/^[A-Za-z0-9_-]{40,2000}$/.test(token)) { forget(); show('invalid'); return; }
+  let running = false;
+  const confirm = () => {
+    if (running) return;
+    running = true;
+    show('busy');
+    fetch('/api/subscribe/confirm', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ t: token }).toString() })
+      .then(res => {
+        if (res.ok) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'newsletter_confirm', demo_market: window.__DRP_MARKET__ || '', demo_language: document.documentElement.lang || '' });
+          return show('done');
+        }
+        if (res.status === 410 || res.status === 400) forget();
+        show(res.status === 410 ? 'expired' : res.status === 400 ? 'invalid' : 'failed');
+      })
+      .catch(() => show('failed'))
+      .finally(() => { running = false; });
+  };
+  $('#nl-confirm-btn').addEventListener('click', confirm);
+  if (document.visibilityState === 'visible') confirm();
+  else document.addEventListener('visibilitychange', function once() {
+    if (document.visibilityState !== 'visible') return;
+    document.removeEventListener('visibilitychange', once);
+    confirm();
+  });
+})();
+
+/* offers consent page (Phase 2): the CMS emails existing subscribers a link
+   with a consent-request token in the fragment (#t=…). Unlike the
+   subscription confirmation above, nothing is sent on load: consent is the
+   visitor ticking the box and pressing the button. */
+(() => {
+  const box = $('#nl-offers');
+  if (!box) return;
+  let token = (new URLSearchParams(location.hash.slice(1))).get('t') || '';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  try {
+    if (token) sessionStorage.setItem('nl-o', token);
+    else token = sessionStorage.getItem('nl-o') || '';
+  } catch (e) { /* storage blocked: a reload then shows "invalid" */ }
+  const forget = () => { try { sessionStorage.removeItem('nl-o'); } catch (e) { /* blocked */ } };
+  const h1 = $('.phero h1'), errH1 = $('[data-h1="error"]', box), title = h1 && h1.innerHTML;
+  const form = $('.nl-offers-form', box), agree = $('#nl-offers-agree', box), btn = $('#nl-offers-btn', box);
+  /* a failed attempt shows the form again, so the visitor can retry */
+  const show = s => {
+    $$('[data-state]', box).forEach(el => { el.hidden = !(el.dataset.state === s || (s === 'failed' && el.dataset.state === 'ask')); });
+    if (h1 && errH1) h1.innerHTML = ['ask', 'busy', 'done'].includes(s) ? title : errH1.innerHTML;
+    const status = $(`[data-state="${s}"] .ok`, box);
+    if (status) { status.tabIndex = -1; status.focus(); }
+  };
+  if (!/^[A-Za-z0-9_-]{40,2000}$/.test(token)) { forget(); show('invalid'); return; }
+  show('ask');
+  agree.addEventListener('change', () => { btn.disabled = !agree.checked; });
+  let running = false;
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if (running || !agree.checked) return;
+    running = true;
+    btn.disabled = true;
+    show('busy');
+    fetch('/api/subscribe/offers', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ t: token, agree: 'yes' }).toString() })
+      .then(res => {
+        if (res.ok) { forget(); return show('done'); }
+        if (res.status === 410 || res.status === 400 || res.status === 409) forget();
+        show(res.status === 410 ? 'expired' : res.status === 400 ? 'invalid' : res.status === 409 ? 'notsubscribed' : 'failed');
+      })
+      .catch(() => show('failed'))
+      .finally(() => { running = false; btn.disabled = !agree.checked; });
+  });
+})();
 
 /* prices: written in euro, shown in the market's own currency when it has
    another one, from the same /api/rates the previous site used */
